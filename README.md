@@ -9,15 +9,14 @@ edit /etc/pacman.conf
 
 [kde]
 Include = /etc/pacman.d/mirrorlist.kde
-
-create /etc/pacman.d/mirrorlist.kde
-
-Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/0.1/
-
+```
+$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/0.1/' > /etc/pacman.d/mirrorlist.kde 
+```
 ### 2. Update pacman db
 
 ```
-pacman -Sy
+$ pacman -Sy
+
 error: kde: key "CBD471804F360D3F" is unknown
 :: Import PGP key 4096R/88ABBE3705D3B232380AAAE5CBD471804F360D3F, "Anthony Campbell (claydonkey) <anthony@claydonkey.com>", created:      2017-07-25? [Y/n] Y
 :: Synchronizing package databases...
@@ -25,11 +24,11 @@ error: kde: key "CBD471804F360D3F" is unknown
 
 ### 3. Add gpg to pacman:
 ```
-pacman-key --lsign-key CBD471804F360D3F
+$ pacman-key --lsign-key CBD471804F360D3F
 ```
 check imported correctly
 ```
-gpg --homedir /etc/pacman.d/gnupg/ --list-keys --keyid-format long
+$ gpg --homedir /etc/pacman.d/gnupg/ --list-keys --keyid-format long
 ...
 pub   4096R/CBD471804F360D3F 2017-07-25
 uid                          Anthony Campbell (claydonkey) <anthony@claydonkey.com>
