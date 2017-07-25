@@ -1,0 +1,12 @@
+--- src/ktextwidgets-5.26.0/CMakeLists.txt	2017-07-02 22:18:33.845693000 +0200
++++ src/ktextwidgets-5.26.0/CMakeLists.txt	2017-07-02 22:20:04.979238900 +0200
+@@ -2,6 +2,9 @@
+ 
+ project(KTextWidgets)
+ 
++cmake_policy(SET CMP0020 NEW)
++cmake_policy(SET CMP0053 NEW)
++
+ # ECM setup
+ include(FeatureSummary)
+ find_package(ECM 5.26.0  NO_MODULE)

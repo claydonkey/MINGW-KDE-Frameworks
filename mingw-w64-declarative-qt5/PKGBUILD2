@@ -1,0 +1,103 @@
+# Maintainer: Claydonkey <anthony@claydonkey.com>
+# Contributor: Filip Brcic <brcha@gna.org>
+# Contributor: ohmyarch
+
+# All my PKGBUILDs are managed at https://github.com/Martchus/PKGBUILDs where
+# you also find the URL of a binary repository.
+
+# Includes dynamic and static versions; if only one version is requried, just
+# set $NO_STATIC_LIBS or $NO_SHARED_LIBS.
+
+_variant=-${KF5_VARIANT:-shared}
+_qt_module=qtdeclarative
+pkgname=mingw-w64-x86_64-declarative-qt5
+pkgver=5.9.0
+pkgrel=1
+arch=('any')
+pkgdesc='Classes for QML and JavaScript languages (mingw-w64)'
+depends=()
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" )
+options=('!strip' '!buildflags' 'staticlibs')
+groups=('mingw-w64-qt5')
+license=('GPL3' 'LGPL3' 'FDL' 'custom')
+url='https://www.qt.io/'
+_pkgfqn="${_qt_module}-opensource-src-${pkgver}"
+source=("https://download.qt.io/official_releases/qt/${pkgver:0:3}/${pkgver}/submodules/${_pkgfqn}.tar.xz"
+        '0001-Build-QML-dev-tools-as-shared-library.patch'
+        '0002-Ensure-static-plugins-are-exported.patch'
+        '0003-Prevent-exporting-QML-parser-symbols-on-static-build.patch')
+sha256sums=('3c9b72098f952155e943c4890c67f9a7dd81737ff69b482a401a2b2af0f93ebd'
+            'ff9799217cfa4f0a1abac8c91680f1df45e04f5519e3cbd01be9cb3586ba89b4'
+            '1b7795c7faf53e9a8125a74787949b42ca8b6c0e6466c40e4ab5116c1186a5ec'
+            'ab86e9a35b37db5bb1112466fffc8589eb28cb9c91a4be5827cc4a314c24839c')
+
+
+ 
+  if [ "${_variant}" = "-static" ]; then
+    makedepends+=('mingw-w64-qt5-base-static') \
+  optdepends+=('mingw-w64-qt5-base-static: use of static libraries') \
+  _configurations+=('CONFIG+=static')
+  else
+     _configurations+=('CONFIG+=shared')
+  fi
+
+ 
+prepare() {
+ 
+    pushd "${srcdir}/${_pkgfqn}"
+    patch -p1 -i ../0001-Build-QML-dev-tools-as-shared-library.patch
+	patch -p1 -i ../0002-Ensure-static-plugins-are-exported.patch
+    patch -p1 -i ../0003-Prevent-exporting-QML-parser-symbols-on-static-build.patch
+	popd
+}
+
+build() {
+
+   local -a extra_config
+    for _config in "${_configurations[@]}"; do
+      msg2 "Building ${_config##*=} version for ${CARCH}"
+      mkdir -p build-${MINGW_CHOST}-${_config##*=} && pushd build-${MINGW_CHOST}-${_config##*=}
+      qmake "${srcdir}/${_pkgfqn}"/${_qt_module}.pro ${_config}
+#qmake ../${_pkgfqn}/${_qt_module}.pro ${_config}
+      # Search paths for host standard library (/usr/lib) and for Qt5Bootstrap (/usr/${CARCH}/lib) are not set correctly by qmake
+      # hence we need insert those paths manually
+     make qmake_all
+     # find ./src/qmldevtools -type f -iname 'Makefile' -exec sed -i "s|-L/usr/{$CARCH}/lib -lQt5Bootstrap|-L/usr/lib /usr/${CARCH}/lib/libQt5Bootstrap.so|g" {} \;
+     # find ./src/qmldevtools -type f -iname 'Makefile' -exec sed -i "s|-L/usr/{$CARCH}/lib -lQt5Bootstrap|-L/usr/lib /usr/${CARCH}/lib/libQt5Bootstrap.so|g" {} \;
+   #   find . -type f -iname 'Makefile' -exec sed -i "s|-L$PWD/lib -L/usr/{$CARCH}/lib -lQt5Bootstrap|-L/usr/lib -L$PWD/lib /usr/${CARCH}/lib/libQt5Bootstrap.so|g" {} \;
+    #  find . -type f -iname 'Makefile' -exec sed -i "s|-L/usr/{$CARCH}/lib -lQt5Bootstrap|-L/usr/lib /usr/${CARCH}/lib/libQt5Bootstrap.so|g" {} \;
+   #   [ ${_config##*=} == 'shared' ] && local _ext='so' || local _ext='a'
+  #    find . -tymake qmakepe f -iname 'Makefile' -exec sed -i "s|-L$PWD/lib -lQt5QmlDevTools|-L/usr/lib -L$PWD/lib ${srcdir}/${_pkgfqn}/build-${$CARCH}-${_config##*=}/lib/libQt5QmlDevTools.${_ext}|g" {} \;
+   #   find . -type f -iname 'Makefile' -exec sed -i "s|-lQt5QmlDevTools|-L/usr/lib ${srcdir}/${_pkgfqn}/build-${{CARCH}-${_config##*=}/lib/libQt5QmlDevTools.${_ext}|g" {} \;
+      make 
+      popd
+    done
+}
+
+package() {
+  #cd build-${MINGW_CHOST}-${_variant}
+    for _config in "${_configurations[@]}"; do
+      pushd build-${MINGW_CHOST}-${_config##*=}
+      make INSTALL_ROOT="$pkgdir" install
+	   msg2 "INSTALL_ROOT={$pkgdir} install"
+   #   find "${pkgdir}/usr/${CARCH}/lib" -maxdepth 1 -name "*.dll" -exec rm {} \;
+    #  [ "$NO_STATIC_EXECUTABLES" -a "${_config##*=}" = static -o "$NO_EXECUTABLES" ] && \
+      #  find "${pkgdir}/usr/${CARCH}" -name "*.exe" -exec rm {} \; || \
+        # find "${pkgdir}/usr/${CARCH}" -name "*.exe" -exec ${CARCH}-strip --strip-all {} \;
+      # find "${pkgdir}/usr/${CARCH}" -name "*.dll" -exec ${CARCH}-strip --strip-unneeded {} \;
+     # find "${pkgdir}/usr/${CARCH}" -name "*.a" -exec ${CARCH}-strip -g {} \;
+    #  [[ -d "${pkgdir}/usr/${CARCH}/lib/qt/bin/" ]] && \
+     #   find "${pkgdir}/usr/${CARCH}/lib/qt/bin/" -exec strip --strip-all {} \;
+    #  find "${pkgdir}/usr/${CARCH}/lib/" -iname "*.so.$pkgver" -exec strip --strip-unneeded {} \;
+      popd
+  done
+
+  # Make sure the executables don't conflict with their mingw-qt4 counterpart
+  # Actually only qmlplugindump.exe conflicts, but for consistency all executables
+  # will be suffixed.
+   
+  #  for exe_file in "${pkgdir}/usr/${CARCH}/bin/"*.exe; do
+    #  [[ -f $exe_file ]] && mv "${exe_file}" "${exe_file%.exe}-qt5.exe"
+   # done
+ 
+}
