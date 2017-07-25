@@ -28,11 +28,12 @@ error: kde: key "CBD471804F360D3F" is unknown
 pacman-key --lsign-key CBD471804F360D3F
 ```
 check imported correctly
-```gpg --homedir /etc/pacman.d/gnupg/ --list-keys --keyid-format long
-
+```
+gpg --homedir /etc/pacman.d/gnupg/ --list-keys --keyid-format long
+...
 pub   4096R/CBD471804F360D3F 2017-07-25
 uid                          Anthony Campbell (claydonkey) <anthony@claydonkey.com>
-sub   4096R/7C0FB3AA58C95EA8 2017-07-25
+...
 ```
 
 ### 4. Update pacman db
