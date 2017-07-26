@@ -1,4 +1,4 @@
-## MINGW-KDE-Frameworks
+v## MINGW-KDE-Frameworks
 Initial MINGW-KDE-Frameworks
 The KDE Frameworks build on the Qt framework, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful KIO multi-protocol file access framework).
 
@@ -13,7 +13,7 @@ Include = /etc/pacman.d/mirrorlist.kde
 $ patch  -i pacmanconf.patch  /etc/pacman.conf
 ```
 ```
-$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/0.1/' > /etc/pacman.d/mirrorlist.kde 
+$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/v0.1/' > /etc/pacman.d/mirrorlist.kde 
 ```
 ### 2. Update pacman db
 
