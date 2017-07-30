@@ -1,0 +1,86 @@
+# $Id$
+# Maintainer: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+_variant=-${KF5_VARIANT:-shared}
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_kde_f5_init_package "${_variant}" "phonon"
+pkgver=4.9.1
+pkgrel=4
+arch=('any')
+url='http://phonon.kde.org/'
+license=('LGPL')
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-qt4${_namesuff}" )
+#)"${MINGW_PACKAGE_PREFIX}-automoc4" "${MINGW_PACKAGE_PREFIX}-libpulse" 
+source=("http://download.kde.org/stable/${_basename}/${pkgver}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('67bee986f85ca8b575186c8ba58a85886cb3b1c3567c86a118d56129f221e69c')
+ 
+
+prepare() {
+  mkdir -p build-${CARCH}${_variant}
+}
+
+build() {
+ local -a extra_config
+  cd build-${CARCH}${_variant}
+  if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi
+    MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
+    cmake ../${_basename}-${pkgver} \
+      -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
+      -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+      -DKDE_INSTALL_LIBDIR=lib \
+      -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
+      -DBUILD_TESTING=OFF \
+      -DECM_DIR=${MINGW_PREFIX}/share/ECM \
+      "${extra_config[@]}" \
+      -G'MSYS Makefiles'
+  make
+
+#  cd ../build-qt5
+#  cmake ../${pkgbase}-${pkgver} \
+#    -DCMAKE_BUILD_TYPE=Release \
+#    -DCMAKE_SKIP_RPATH=ON \
+#    -DCMAKE_INSTALL_PREFIX=/usr \
+#    -DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=ON \
+#    -DPHONON_BUILD_PHONON4QT5=ON \
+#    -D__KDE_HAVE_GCC_VISIBILITY=NO \
+#    -DCMAKE_INSTALL_LIBDIR=lib
+#  make
+}
+
+package_phonon-qt4(){
+  pkgdesc="The multimedia framework for KDE4"
+  depends=('qt4' 'libpulse' 'phonon-qt4-backend')
+  optdepends=('pulseaudio: PulseAudio support')
+
+  cd build
+  make DESTDIR="${pkgdir}" install
+
+  # Install headers into the Qt4 dir
+  install -d "${pkgdir}"/usr/include/qt4
+  mv "${pkgdir}"/usr/include/{phonon,KDE} "${pkgdir}"/usr/include/qt4/
+
+  sed -i 's#includedir=/usr/include#includedir=/usr/include/qt4#' \
+    "${pkgdir}/usr/lib/pkgconfig/phonon.pc"
+}
+
+package_phonon-qt5(){
+  pkgdesc="The multimedia framework for KF5"
+  depends=('libpulse' 'qt4-base' 'phonon-qt4-backend')
+  optdepends=('pulseaudio: PulseAudio support')
+
+  cd build-qt4
+  make DESTDIR="${pkgdir}" install
+}
+
+package() {
+  cd build-${CARCH}${_variant}
+  make DESTDIR="${pkgdir}" install
+}
+

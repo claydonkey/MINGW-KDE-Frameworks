@@ -1,6 +1,6 @@
 #!/bin/bash
 root=$PWD
- makepkg -f --sign
+# makepkg -f --sign
 for f in $root/mingw-w64* 
 do 
 	echo "uploading $(basename $f)"
@@ -9,8 +9,8 @@ done
 for f in $root/mingw-w64*.pkg.tar.xz
 do
 	echo "adding $(basename $f) to db"
-	 repo-add -s ../kde.db.tar.xz $f -k 
+	 repo-add -s ../kde.db.tar.xz $f  
 done
-cd ..
-./createdb.sh
+#cd ..
+#./createdb.sh
 

@@ -8,15 +8,19 @@ pkgrel=1
 arch=('any')
 pkgdesc="Framework for managing menu and toolbar actions (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-attica-qt5")
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-attica-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5-static" "${MINGW_PACKAGE_PREFIX}-attica-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('9fc0ab12de853860084cd9a84239c84c6cc6c89b119f27b682378ae77c0c84a3')
+source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+"0001-CMakePolicy.patch" "0002-CMakePolicy.patch")
+sha256sums=('9fc0ab12de853860084cd9a84239c84c6cc6c89b119f27b682378ae77c0c84a3'
+'416327a06b9d64eb2b211a121a6e0c9655bf2b728a8edaa60a3b412f3f53f163' '24d6ecb250e568250437176136f3d583b52504ef3e10e70e94f6951d098c55a3')
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
+  patch -Np1 -i ${srcdir}/0001-CMakePolicy.patch
+  patch -Np1 -i ${srcdir}/0002-CMakePolicy.patch
 }
 
 build() {

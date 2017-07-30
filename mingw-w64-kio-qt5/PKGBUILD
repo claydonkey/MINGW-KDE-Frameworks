@@ -6,10 +6,11 @@ _kde_f5_init_package "${_variant}" "kio"
 pkgver=5.26.0
 pkgrel=1
 arch=('any')
-pkgdesc = "Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
+pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5" "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-kded-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5" )
-depends=( "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5" "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-kded-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2")
+depends=( )
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5" "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-kded-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
         001-cmakepolicy-0020.patch)
