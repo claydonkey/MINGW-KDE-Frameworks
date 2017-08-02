@@ -5,12 +5,12 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _kde_f5_init_package "${_variant}" "kdnssd"
 pkgver=5.26.0
 pkgrel=1
-pkgdesc='Support for downloading application assets from the network'
+pkgdesc='Network service discovery using Zeroconf'
 arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
 depends=()
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-doxygen" )
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 groups=('kf5')
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('03030e86da46b8e8a4debff42ea1a9b6d18b64857c87f92557a0dccecffe5549'

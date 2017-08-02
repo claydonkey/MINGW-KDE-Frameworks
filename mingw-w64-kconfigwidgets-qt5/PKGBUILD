@@ -2,7 +2,7 @@
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
-_variant=-${KF5_VARIANT:-static}
+_variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kconfigwidgets"
 pkgver=5.26.0
@@ -12,7 +12,7 @@ pkgdesc="Widgets for configuration dialogs (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5"
  )
-depends=("${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5")
+depends=("${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"

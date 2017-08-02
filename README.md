@@ -1,4 +1,4 @@
-v## MINGW-KDE-Frameworks
+### MINGW-KDE-Frameworks
 Initial MINGW-KDE-Frameworks
 The KDE Frameworks build on the Qt framework, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful KIO multi-protocol file access framework).
 
