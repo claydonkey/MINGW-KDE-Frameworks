@@ -2,23 +2,24 @@
 
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "knotifications"
+_kde_f5_init_package "${_variant}" "frameworkintegration"
 pkgver=5.26.0
 pkgrel=1
 arch=('any')
-pkgdesc="Desktop notifications (mingw-w64-qt5${_namesuff})"
+pkgdesc="Workspace and cross-framework integration plugins  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5" ) 
-depends=( "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-phonon-qt5"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2" )
-_kde_f5_add_depends  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-phonon-qt5"   "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"  "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2")
+depends=( "${MINGW_PACKAGE_PREFIX}-kio-qt5"  )
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kio-qt5"  
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
-)
-sha256sums=('f88ae5b10e072ceb538c02d68b92e14ec93ff76a2d028963511162da485cdb05'
-)
+        )
+sha256sums=('374db7d9b69486aa16fccf1391869f058679bf2aa7adf6f109ba29d3f4e31653' 
+         )
 
 prepare() {
-  mkdir -p build-${CARCH}${_variant}
+	mkdir -p build-${CARCH}${_variant}
+ 
 }
 
 build() {

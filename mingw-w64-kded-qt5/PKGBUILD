@@ -8,9 +8,9 @@ pkgrel=1
 arch=('any')
 pkgdesc="Icon GUI utilities (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
-depends=() 
-_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kinit-qt5" )
+depends=("${MINGW_PACKAGE_PREFIX}-kinit-qt5" ) 
+_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"   "${MINGW_PACKAGE_PREFIX}-kinit-qt5" 
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('145892109c2984ee62e3cb485b2f62f9c29a9d88e181c7e475989bb700946866')

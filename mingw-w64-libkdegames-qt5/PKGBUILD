@@ -9,7 +9,7 @@ pkgdesc="Common code and data for many KDE games"
 url="https://www.kde.org/applications/games/"
 arch=('any')
 license=('GPL' 'LGPL' 'FDL')
-#depends=('kdelibs4support' 'kdeclarative' 'kdnssd' 'knewstuff' 'openal')
+depends=('kdelibs4support' 'kdeclarative' 'kdnssd' 'knewstuff' 'openal')
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5")
 source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
