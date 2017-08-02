@@ -9,7 +9,7 @@ done
 for f in $root/mingw-w64*.pkg.tar.xz
 do
 	echo "adding $(basename $f) to db"
-	 repo-add -s ~/Documents/Minnow/Source/MinGW/MINGW-KDE-Frameworks/kde.db.tar.xz $f  
+	 repo-add -s ~/Documents/Minnow/Source/MinGW/MINGW-KDE-Frameworks/DB/kde.db.tar.xz $f  
 done
 #cd ..
 #./createdb.sh
