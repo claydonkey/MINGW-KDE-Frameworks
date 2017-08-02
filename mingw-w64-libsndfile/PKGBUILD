@@ -1,0 +1,42 @@
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+
+pkgname=mingw-w64-libsndfile
+pkgver=1.0.27
+pkgrel=1
+pkgdesc="A C library for reading and writing files containing sampled sound (mingw-w64)"
+arch=('any')
+url="http://www.mega-nerd.com/libsndfile"
+license=('LGPL')
+#makedepends=("${MINGW_PACKAGE_PREFIX}-configure")
+depends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKAGE_PREFIX}-crt-git")
+options=('staticlibs' '!strip' '!buildflags')
+source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-${pkgver}.tar.gz)
+md5sums=('fd1d97c6077f03b5d984d7956ffedb7a')
+
+ 
+
+build() {
+  local -a extra_config 
+
+    mkdir -p build-${CARCH}${_variant} && pushd build-${CARCH}${_variant}
+    LIBS="`pkg-config --libs vorbis ogg`"
+
+   ${srcdir}/libsndfile-${pkgver}/configure \
+     --prefix=${MINGW_PREFIX} \
+     --build=${MINGW_CHOST} \
+     --host=${MINGW_CHOST} \
+     --enable-introspection \
+     --disable-debug \
+     --enable-shared \
+     --enable-static
+   make
+       popd
+
+}
+
+package() {
+  cd build-${CARCH}${_variant}
+  make DESTDIR=${pkgdir} install
+
+  #install -Dm644 "${srcdir}/${_realname}-${pkgver}/COPYING" "${pkgdir}${MINGW_PREFIX}/share/licenses/${_realname}/COPYING"
+}

@@ -1,4 +1,4 @@
-# Maintainer (MSYS1): Ray Donnelly <mingw.android@gmail.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
@@ -13,14 +13,19 @@ depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5-static" "${MINGW_PACKAGE_PREFIX}-attica-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
-"0001-CMakePolicy.patch" "0002-CMakePolicy.patch")
+"0001-CMakePolicy.patch" "0002-CMakePolicy.patch" "0003-CMakePolicy.patch" "0004-CMakeList.patch")
 sha256sums=('9fc0ab12de853860084cd9a84239c84c6cc6c89b119f27b682378ae77c0c84a3'
-'416327a06b9d64eb2b211a121a6e0c9655bf2b728a8edaa60a3b412f3f53f163' '24d6ecb250e568250437176136f3d583b52504ef3e10e70e94f6951d098c55a3')
+'416327a06b9d64eb2b211a121a6e0c9655bf2b728a8edaa60a3b412f3f53f163' '24d6ecb250e568250437176136f3d583b52504ef3e10e70e94f6951d098c55a3'
+'0a1a7ee3a1d661ded123a1c226e4e7571145c9c72cf3fe3aac7c44bb973fe558'
+'88f7596e084af7877b749aa275f114779aa9435e2725da6b8a3280b67c909175'
+)
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
   patch -Np1 -i ${srcdir}/0001-CMakePolicy.patch
   patch -Np1 -i ${srcdir}/0002-CMakePolicy.patch
+  patch -Np1 -i ${srcdir}/0003-CMakePolicy.patch
+  patch -Np1 -i ${srcdir}/0004-CMakeList.patch
 }
 
 build() {

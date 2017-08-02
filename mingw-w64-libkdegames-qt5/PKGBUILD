@@ -1,0 +1,54 @@
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+
+_variant=-${KF5_VARIANT:-shared}
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_kde_f5_init_package "${_variant}" "libkdegames"
+pkgver=17.04.3
+pkgrel=1
+pkgdesc="Common code and data for many KDE games"
+url="https://www.kde.org/applications/games/"
+arch=('any')
+license=('GPL' 'LGPL' 'FDL')
+#depends=('kdelibs4support' 'kdeclarative' 'kdnssd' 'knewstuff' 'openal')
+_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5")
+source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
+sha256sums=('e80ae48e631f0a4af496f6a1ba055784c9f267fdd0fc6a3770afda6e579d450a' 
+'6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')
+ 
+   
+   prepare() {
+ mkdir -p build-${CARCH}${_variant}
+   patch -Np1 -i ${srcdir}/0001-Sleep.patch
+}
+   
+build() {
+
+  local -a extra_config
+  cd build-${CARCH}${_variant}
+  if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi
+
+
+  MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
+    cmake ../${_basename}-${pkgver} \
+      -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
+      -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+      -DKDE_INSTALL_LIBDIR=lib \
+      -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
+      -DBUILD_TESTING=OFF \
+      -DECM_DIR=${MINGW_PREFIX}/share/ECM \
+      "${extra_config[@]}" \
+      -G'MSYS Makefiles'
+make
+}
+
+package() {
+cd build-${CARCH}${_variant}
+  make DESTDIR="${pkgdir}" install
+}

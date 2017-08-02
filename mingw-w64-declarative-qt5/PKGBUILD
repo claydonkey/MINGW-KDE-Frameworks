@@ -10,15 +10,17 @@
 
 _variant=-${KF5_VARIANT:-shared}
 _qt_module=qtdeclarative
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_kde_f5_init_package "${_variant}" "kdeclarative"
 pkgname=mingw-w64-x86_64-declarative-qt5
 pkgver=5.9.0
-pkgrel=2
-arch=('i686' 'x86_64')
+pkgrel=1
+arch=('any')
 pkgdesc='Classes for QML and JavaScript languages (mingw-w64)'
 depends=()
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" )
-options=('!strip' '!buildflags' 'staticlibs')
-groups=('mingw-w64-qt5')
+#options=('!strip' '!buildflags' 'staticlibs')
+groups=('kde')
 license=('GPL3' 'LGPL3' 'FDL' 'custom')
 url='https://www.qt.io/'
 _pkgfqn="${_qt_module}-opensource-src-${pkgver}"

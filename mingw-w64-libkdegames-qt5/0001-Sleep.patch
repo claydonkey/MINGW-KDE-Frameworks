@@ -1,0 +1,15 @@
+--- src/libkdegames-17.04.3/highscore/khighscore.cpp	2017-08-01 18:54:23.307305300 +0100
++++ src/libkdegames-17.04.3/highscore/khighscore.cpp	2017-08-01 18:54:33.589551000 +0100
+@@ -158,11 +158,7 @@
+             int res = KMessageBox::warningContinueCancel(widget, i18n("Cannot access the highscore file. Another user is probably currently writing to it."), QString(), item, KStandardGuiItem::cancel(), QStringLiteral( "ask_lock_global_highscore_file" ));
+             if ( res==KMessageBox::Cancel ) break;
+         } else {
+-#ifdef WIN32
+-            Sleep(1000);
+-#else
+-            sleep(1);
+-#endif
++            _sleep(1);
+         }
+         first = false;
+     }

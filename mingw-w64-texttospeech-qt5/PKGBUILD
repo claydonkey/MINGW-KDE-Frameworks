@@ -1,0 +1,64 @@
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+
+sourcename=qt5-speech
+pkgname=${MINGW_PACKAGE_PREFIX}-texttospeech-qt5
+_qtver=5.9.1
+pkgver=${_qtver/-/}
+_qt_module=qtspeech
+pkgrel=1
+arch=('any')
+url='http://qt-project.org/'
+license=(GPL3 LGPL3 FDL custom)
+pkgdesc='Qt module to make text to speech and speech recognition easy'
+depends=(${MINGW_PACKAGE_PREFIX}-qt5${_namesuff})
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-docbook-xsl" "${MINGW_PACKAGE_PREFIX}-docbook-xml")
+optdepends=('flite: flite TTS backend' 'speech-dispatcher: speech-dispatcher TTS backend')
+groups=('qt ''qt5')
+_pkgfqn="${sourcename/5-/}-opensource-src-${_qtver}"
+source=("http://download.qt.io/official_releases/qt/${pkgver%.*}/${_qtver}/submodules/${_pkgfqn}.tar.xz")
+sha256sums=('ac9cef10637b54fa8d0bfe83f5b98c1c295cb68e63cf0973b2c6f188dcecaa01')
+
+
+  if [ "${_variant}" = "-static" ]; then
+    makedepends+=('mingw-w64-qt5-base-static') \
+  optdepends+=('mingw-w64-qt5-base-static: use of static libraries') \
+  _configurations+=('CONFIG+=static')
+  else
+     _configurations+=('CONFIG+=shared')
+  fi
+
+prepare() {
+    pushd "${srcdir}/${_pkgfqn}"
+popd
+	}
+
+build() {
+  local -a extra_config
+    for _config in "${_configurations[@]}"; do
+      msg2 "Building ${_config##*=} version for ${CARCH} ${_variant} "
+      mkdir -p build-${CARCH}-${_config##*=} && pushd build-${CARCH}-${_config##*=}
+      qmake  -spec win32-g++ "${srcdir}/${_pkgfqn}"/${_qt_module}.pro ${_config}
+ if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi
+
+      make qmake_all
+      find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
+	  #workaround - Remove windows drive letter from Makefile.Debug and Makefile.Release.
+      popd
+    done
+}
+
+package() { 
+  cd "${srcdir}"
+   msg2 "Package to $(cygpath -m ${pkgdir} for ${pkgdir}${MINGW_PREFIX}  $(cygpath -u ${MINGW_PREFIX}))"
+    for _config in "${_configurations[@]}"; do
+      pushd build-${CARCH}-${_config##*=}
+	  make  INSTALL_ROOT=${pkgdir} install
+      popd
+  done
+}

@@ -1,0 +1,13 @@
+--- src/kxmlgui-5.26.0/CMakeLists.txt	2016-09-06 13:24:51.000000000 +0100
++++ src/kxmlgui-5.26.0/CMakeLists3.txt	2017-07-29 12:10:20.691501200 +0100
+@@ -2,6 +2,10 @@
+ 
+ project(KXmlGui)
+ 
++if (POLICY CMP0065)
++    cmake_policy(SET CMP0065 OLD)
++endif()
++
+ # ECM setup
+ include(FeatureSummary)
+ find_package(ECM 5.26.0  NO_MODULE)
