@@ -9,8 +9,8 @@ arch=('any')
 pkgdesc="Framework for managing menu and toolbar actions (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
-depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5-static" "${MINGW_PACKAGE_PREFIX}-attica-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+depends=("${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-attica-qt5")
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kglobalaccel-qt5" "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-attica-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 "0001-CMakePolicy.patch" "0002-CMakePolicy.patch" "0003-CMakePolicy.patch" "0004-CMakeList.patch")

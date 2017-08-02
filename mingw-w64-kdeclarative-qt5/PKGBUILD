@@ -5,13 +5,13 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _kde_f5_init_package "${_variant}" "kdeclarative"
 pkgver=5.26.0
 pkgrel=1
-pkgdesc='Support for downloading application assets from the network'
+pkgdesc='Provides integration of QML and KDE Frameworks'
 arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
-_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kio-qt5" "${MINGW_PACKAGE_PREFIX}-kpackage-qt5" 
-depends=("${MINGW_PACKAGE_PREFIX}-kpackage-qt5")
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-doxygen" )
+_kde_f5_add_depends "${_variant}"    "${MINGW_PACKAGE_PREFIX}-kio-qt5" "${MINGW_PACKAGE_PREFIX}-kpackage-qt5" 
+depends=("${MINGW_PACKAGE_PREFIX}-kio-qt5" "${MINGW_PACKAGE_PREFIX}-kpackage-qt5"  )
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 groups=('kf5')
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakePathMax.patch" "0002-CMakePolicy.patch")
 sha256sums=('6872df49e35e6556b9d1398700f1b75295a4c5e2ff8bc3357529a652a402b242'

@@ -1,5 +1,4 @@
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
@@ -11,9 +10,9 @@ pkgrel=1
 arch=('any')
 pkgdesc="Global desktop keyboard shortcuts (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kcrash-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kdbusaddons-qt5") 
-depends=() 
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kcrash-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kdbusaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kservice-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
+depends=("${MINGW_PACKAGE_PREFIX}-kcrash-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kdbusaddons-qt5" ) 
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kcrash-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kdbusaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('adfd2925bc5595bbfd4bb186ea4e31cc7ea1a28a4b233ed3ad0e59e2e24d3828')
