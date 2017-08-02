@@ -1,6 +1,4 @@
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
@@ -8,7 +6,7 @@ _kde_f5_init_package "${_variant}" "kitemviews"
 pkgver=5.26.0
 pkgrel=1
 arch=('any')
-pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
+pkgdesc="Widget addons for Qt Model/View system(mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=()
