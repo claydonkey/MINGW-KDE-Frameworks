@@ -11,12 +11,13 @@ url='https://community.kde.org/Frameworks'
 license=('LGPL')
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kio-qt5"
 depends=("${MINGW_PACKAGE_PREFIX}-kio-qt5")
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules") 
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "doxygen") 
 groups=('kf5')
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('c4e70933e535c427a99715dcd557ffb4e452ccca1c374e666b8188df2a07a849'
             )
 #validpgpkeys=(53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB) # David Faure <faure@kde.org>
+options=('!strip')
 
 prepare() {
  mkdir -p build-${CARCH}${_variant}
@@ -40,7 +41,7 @@ build() {
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
       -DKDE_INSTALL_LIBDIR=lib \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
-      -DBUILD_TESTING=OFF \
+      -DBUILD_TESTING=ON \
       -DECM_DIR=${MINGW_PREFIX}/share/ECM \
       "${extra_config[@]}" \
       -G'MSYS Makefiles'

@@ -1,8 +1,7 @@
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
+# Contributor (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
-_variant=-${KF5_VARIANT:-shared}
+_variant=-${KF5_VARIANT:-static}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kconfigwidgets"
 pkgver=5.26.0
@@ -10,15 +9,15 @@ pkgrel=1
 arch=('any')
 pkgdesc="Widgets for configuration dialogs (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5"
- )
-depends=("${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5")
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
+depends=("${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" )
+_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
        001-cmakepolicy-0053.patch)
 sha256sums=('9111a98a6436e77d1dc37bf13f451c066f75c946b0e375042a283a0461365922'
              'bf3bf7c95d18b3b12fa1f7416cf65266e5be15a53146e667347fc978d3c3ce3e')
+options=('!strip')
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

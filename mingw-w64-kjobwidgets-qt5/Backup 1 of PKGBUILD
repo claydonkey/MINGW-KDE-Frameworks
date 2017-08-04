@@ -1,21 +1,21 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
-# Contributor (MSYS1): Ray Donnelly <mingw.android@gmail.com>
+# Maintainer (MSYS1): Ray Donnelly <mingw.android@gmail.com>
 
-_variant=-${KF5_VARIANT:-shared}
+_variant=-${KF5_VARIANT:-static}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kcompletion"
+_kde_f5_init_package "${_variant}" "kjobwidgets"
 pkgver=5.26.0
 pkgrel=1
 arch=('any')
-pkgdesc="Powerful completion framework, including completion-enabled lineedit and combobox (mingw-w64-qt5${_namesuff})"
+pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules") 
-depends=( "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5")
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" )
+depends=( "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"   "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2" )
+_kde_f5_add_depends  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" 
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('fa50bb46867cbbb531d7ed1ed306f201526155ff13a7e47ed1ad697c333670b8')
-options=('!strip')
+source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+)
+sha256sums=('6bc57a8a4ed63ccee07631417dc26bb4286ba85b562a5f5a457ce86ce13b5050'
+)
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

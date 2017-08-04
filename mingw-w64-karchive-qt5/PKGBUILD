@@ -1,8 +1,5 @@
-# $Id$
-# Maintainer (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
+
 
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
@@ -18,6 +15,7 @@ _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${M
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('af082dc3a8bd48302d5c36c0a70e2d2c796cb852e3f6ee64cb5059fb7f9adaeb')
+options=('!strip')
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
@@ -39,7 +37,6 @@ build() {
       -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
       -DKDE_INSTALL_LIBDIR=lib \
-      -DBUILD_SHARED_LIBS=OFF \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
       -DBUILD_TESTING=OFF \
       -DECM_DIR=${MINGW_PREFIX}/share/ECM \

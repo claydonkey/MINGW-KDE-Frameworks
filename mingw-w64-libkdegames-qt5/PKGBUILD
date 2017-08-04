@@ -3,23 +3,25 @@
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkdegames"
-pkgver=17.04.3
+pkgver=17.04.2
 pkgrel=1
 pkgdesc="Common code and data for many KDE games"
 url="https://www.kde.org/applications/games/"
 arch=('any')
+groups=('kf5')
 license=('GPL' 'LGPL' 'FDL')
-depends=('kdelibs4support' 'kdeclarative' 'kdnssd' 'knewstuff' 'openal')
+depends=(  "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-openal")
+#"${MINGW_PACKAGE_PREFIX}-kdelibs4support-qt5" 
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5")
 source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
-sha256sums=('e80ae48e631f0a4af496f6a1ba055784c9f267fdd0fc6a3770afda6e579d450a' 
+sha256sums=('9348f5d1599d0fab0ad6a793133c552d313cb8b9a726a5fe86e61d7e0e107a1f' 
 '6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')
- 
+ options=('!strip')
    
-   prepare() {
- mkdir -p build-${CARCH}${_variant}
-   patch -Np1 -i ${srcdir}/0001-Sleep.patch
+prepare() {
+   mkdir -p build-${CARCH}${_variant}
+#  patch -Np1 -i ${srcdir}/0001-Sleep.patch
 }
    
 build() {
@@ -41,7 +43,7 @@ build() {
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
       -DKDE_INSTALL_LIBDIR=lib \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
-      -DBUILD_TESTING=OFF \
+      -DBUILD_TESTING=ON \
       -DECM_DIR=${MINGW_PREFIX}/share/ECM \
       "${extra_config[@]}" \
       -G'MSYS Makefiles'

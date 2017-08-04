@@ -12,7 +12,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${M
 options=('staticlibs' '!strip' '!buildflags')
 source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-${pkgver}.tar.gz)
 md5sums=('fd1d97c6077f03b5d984d7956ffedb7a')
-
+options=('!strip')
  
 
 build() {

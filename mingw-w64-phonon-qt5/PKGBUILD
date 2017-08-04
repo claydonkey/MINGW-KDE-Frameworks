@@ -14,6 +14,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREF
 source=("http://download.kde.org/stable/${_basename}/${pkgver}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('67bee986f85ca8b575186c8ba58a85886cb3b1c3567c86a118d56129f221e69c')
 groups=('kf5')
+options=('!strip')
  
 prepare() {
  mkdir -p build-${CARCH}${_variant}

@@ -1,9 +1,6 @@
 # Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
-#_variant=-static
-#_variant=-shared
+_variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkcw"
 pkgver=5.26.0
@@ -12,16 +9,14 @@ arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
-depends=()
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" )
+depends=("${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("${_realname}"::"git://anongit.kde.org/${_basename}.git")
 sha256sums=('SKIP')
 
-prepare() {
- #echo "${_basename} HERE"
-}
+
 
 #pkgver() {
  # cd "${srcdir}/${_realname}"

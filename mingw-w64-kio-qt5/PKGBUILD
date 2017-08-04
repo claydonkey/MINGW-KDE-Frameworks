@@ -1,4 +1,5 @@
-# Maintainer (MSYS1): Ray Donnelly <mingw.android@gmail.com>
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Contributor (MSYS1): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
@@ -9,8 +10,8 @@ arch=('any')
 pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2")
-depends=( "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5"  "${MINGW_PACKAGE_PREFIX}-kded-qt5"  "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5")
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5"  "${MINGW_PACKAGE_PREFIX}-kded-qt5"  "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5"
+depends=( "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5"  "${MINGW_PACKAGE_PREFIX}-kinit-qt5"  "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5"  "${MINGW_PACKAGE_PREFIX}-kded-qt5"  "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5")
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kinit-qt5"   "${MINGW_PACKAGE_PREFIX}-kjobwidgets-qt5" "${MINGW_PACKAGE_PREFIX}-kbookmarks-qt5"  "${MINGW_PACKAGE_PREFIX}-kded-qt5"  "${MINGW_PACKAGE_PREFIX}-kwallet-qt5" "${MINGW_PACKAGE_PREFIX}-solid-qt5"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 "0001-QT5TextToSpeech.patch"
@@ -22,6 +23,7 @@ sha256sums=('40d546074af313be97f64b644daad46fc9c287dbcf4bc41ca9fb5ff6c02976cf'
 'bb647b801402d3d8896748dfa9d207d1ffa627dd685f7749074f5bce539e8b0f'
 '77808738b999f475a326db23639c693f7c07e56feb6665b0eb96147f4ab634cc'
          )
+options=('!strip')
 
 prepare() {
 	mkdir -p build-${CARCH}${_variant}
