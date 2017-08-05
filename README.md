@@ -42,7 +42,7 @@ uid                          Anthony Campbell (claydonkey) <anthony@claydonkey.c
 ```
 pacman -Sy
 ```
-### To Do:
+
 
 ### Building all packages:
 
@@ -53,5 +53,6 @@ cd mingw-w64-PKGBUILD-common/
 
 ```
 
+### To Do:
 
 kdelib4support
