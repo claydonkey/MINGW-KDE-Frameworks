@@ -1,6 +1,8 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kinit"
 pkgver=5.26.0
@@ -9,11 +11,12 @@ arch=('any')
 pkgdesc="Helper library to speed up start of applications on KDE workspaces (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
-depends=() 
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kio-qt5"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+depends=("${MINGW_PACKAGE_PREFIX}-bzip2") 
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kio-qt5"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" 
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('a95b118dbd303ac62c985f5aa27a4a9bfd20720aa013d5c0e971571cad953c0c')
+options=('!strip')
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
@@ -33,6 +36,7 @@ build() {
   MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
     cmake ../${_basename}-${pkgver} \
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+	  -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
       -DKDE_INSTALL_LIBDIR=lib \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
       -DBUILD_TESTING=OFF \

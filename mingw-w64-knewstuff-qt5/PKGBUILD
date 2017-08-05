@@ -1,6 +1,8 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "knewstuff"
 pkgver=5.26.0
@@ -10,7 +12,7 @@ arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kio-qt5"
-depends=("${MINGW_PACKAGE_PREFIX}-kio-qt5")
+depends=()
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "doxygen") 
 groups=('kf5')
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")

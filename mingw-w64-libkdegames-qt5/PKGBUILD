@@ -1,6 +1,8 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkdegames"
 pkgver=17.04.2
@@ -10,10 +12,10 @@ url="https://www.kde.org/applications/games/"
 arch=('any')
 groups=('kf5')
 license=('GPL' 'LGPL' 'FDL')
-depends=(  "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-openal")
+depends=( "${MINGW_PACKAGE_PREFIX}-openal")
 #"${MINGW_PACKAGE_PREFIX}-kdelibs4support-qt5" 
-_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5")
+_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"  "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5" 
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python")
 source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
 sha256sums=('9348f5d1599d0fab0ad6a793133c552d313cb8b9a726a5fe86e61d7e0e107a1f' 
 '6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')

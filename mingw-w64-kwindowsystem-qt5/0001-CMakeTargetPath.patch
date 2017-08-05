@@ -1,0 +1,18 @@
+--- src/kwindowsystem-5.26.0/src/CMakeLists.txt	2017-08-04 16:05:43.382246700 +0100
++++ src/kwindowsystem-5.26.0/src/CMakeLists.txt	2017-08-04 16:06:27.854814300 +0100
+@@ -85,11 +85,11 @@
+     target_include_directories(KF5WindowSystem PUBLIC ${XCB_XCB_INCLUDE_DIR} ${X11_X11_INCLUDE_PATH})
+ endif()
+ 
+-if(IS_ABSOLUTE "${KDE_INSTALL_INCLUDEDIR_KF5}")
++#if(IS_ABSOLUTE "${KDE_INSTALL_INCLUDEDIR_KF5}")
+   target_include_directories(KF5WindowSystem INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}>" )
+-else()
+-  target_include_directories(KF5WindowSystem INTERFACE "$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/${KDE_INSTALL_INCLUDEDIR_KF5}>" )
+-endif()
++#else()
++ # target_include_directories(KF5WindowSystem INTERFACE "$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/${KDE_INSTALL_INCLUDEDIR_KF5}>" )
++#endif()
+ 
+ set_target_properties(KF5WindowSystem PROPERTIES VERSION   ${KWINDOWSYSTEM_VERSION_STRING}
+                                                  SOVERSION ${KWINDOWSYSTEM_SOVERSION}

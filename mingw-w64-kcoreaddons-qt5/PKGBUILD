@@ -1,10 +1,10 @@
-# $Id$
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcoreaddons"
 pkgver=5.26.0
@@ -12,14 +12,15 @@ pkgrel=1
 arch=('any')
 pkgdesc="Classes built on top of QtCore to perform various tasks (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-bzip2")
 depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
        001-kuser-win.patch)
 sha256sums=('1fab3ca827cf74f0fdadd30d8b9b3fe53d4ba2d1afe7f23a90f3ff55f3c77982'
             '7a9c0a5ce7b8ee2541100944f97c0d3aed111050a940c8250e87d7b3d491dba1')
+options=('!strip')
 
 prepare() {
    mkdir -p build-${CARCH}${_variant}

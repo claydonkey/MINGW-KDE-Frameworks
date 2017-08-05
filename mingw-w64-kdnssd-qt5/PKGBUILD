@@ -1,6 +1,8 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdnssd"
 pkgver=5.26.0

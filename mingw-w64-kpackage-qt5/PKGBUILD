@@ -1,6 +1,8 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kpackage"
 pkgver=5.26.0
@@ -9,17 +11,19 @@ pkgdesc='Support for downloading application assets from the network'
 arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
-depends=( "${MINGW_PACKAGE_PREFIX}-karchive-qt5"  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" )
-_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-karchive-qt5"  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"
+
+_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-karchive-qt5" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5"  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PACKAGE_PREFIX}-doxygen" )
 groups=('kf5')
+optdepends=("${MINGW_PACKAGE_PREFIX}-doctools-qt5")
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('0fabacce5e7670ad2b80cc796d3c779e73805b0c85dbf4e533f61d139f4858d1'
             )
+options=('!strip')
 
 prepare() {
  mkdir -p build-${CARCH}${_variant}
-  patch -Np1 -i ${srcdir}/001-cmakepolicy-0020.patch
+
 }
 
 build() {

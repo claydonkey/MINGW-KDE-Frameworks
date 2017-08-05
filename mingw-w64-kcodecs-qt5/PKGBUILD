@@ -1,10 +1,10 @@
-# $Id$
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcodecs"
 pkgver=5.26.0
@@ -12,12 +12,14 @@ pkgrel=1
 arch=('any')
 pkgdesc="Plugins allowing Qt applications to access further types of images (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-bzip2")
 depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('931fb21946604ef5f4a4a36a6c7bdd40347d7a44a98edf291f361fe24becbfa3')
+options=('!strip')
+
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

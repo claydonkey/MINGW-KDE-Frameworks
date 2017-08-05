@@ -3,6 +3,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "phonon"
 pkgver=4.9.1

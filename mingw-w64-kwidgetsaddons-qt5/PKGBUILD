@@ -1,7 +1,9 @@
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kwidgetsaddons"
 pkgver=5.26.0
@@ -10,8 +12,8 @@ arch=('any')
 pkgdesc="Addons to QtWidgets (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-clang"   "${MINGW_PACKAGE_PREFIX}-python2-pyqt5" "${MINGW_PACKAGE_PREFIX}-python3-pyqt5" "doxygen" )
-depends=("${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}")
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+depends=("${MINGW_PACKAGE_PREFIX}-bzip2")
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" 
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakepolicy0053.patch")
 sha256sums=('9601108491e9564630a6152f296de8143decb91bd63c6ea15f91a591d02155c9'

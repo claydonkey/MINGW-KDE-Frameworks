@@ -1,20 +1,22 @@
-# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdewebkit"
-pkgver=5.26.0
+pkgver=5.36.0
 pkgrel=1
 pkgdesc='Integration of the HTML rendering engine WebKit'
 arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
-depends=( "${MINGW_PACKAGE_PREFIX}-kparts-qt5" "${MINGW_PACKAGE_PREFIX}-qtwebkit"     )
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
+depends=()
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-qtwebkit")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kparts-qt5" "${MINGW_PACKAGE_PREFIX}-qtwebkit"  
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('b532649a2f1ff03de447bc37900b6aa871118ebe6c7f7f665b7ad6fb5195c6fc'  )
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('3aad10187eba6385c568b43294311606917d9230543a6c46a7db7b1cec7fa3f4'  )
 options=('!strip')
 
 prepare() {

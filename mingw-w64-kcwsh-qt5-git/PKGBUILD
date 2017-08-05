@@ -1,8 +1,9 @@
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
-_variant=-${KF5_VARIANT:-static}
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcwsh"
 _ver_base=0.1.0
@@ -26,6 +27,7 @@ sha256sums=('SKIP'
             '8d34b0c0d129c64877fc1c64ff9875f6b6dedecbf7fbc664c61255a09ce6a987'
             '0023036cce30018cf90d69b839a81beb06d378766e9fba64ffc0ebf6eb481166'
             'a4b9afe82d6a63bd26bd0bcee3eccd259e6f9801d2b1ea809e130313d8475660')
+options=('!strip')
 
 #pkgver() {
  # cd "${srcdir}"/${_realname}
@@ -64,7 +66,7 @@ build() {
     -DECM_DIR=${MINGW_PREFIX}/share/ECM \
     "${extra_config[@]}" \
     -G'MSYS Makefiles'
-  make VERBOSE=1
+  make 
 }
 
 package() {

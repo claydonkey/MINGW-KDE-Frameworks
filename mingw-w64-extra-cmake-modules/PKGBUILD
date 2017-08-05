@@ -1,13 +1,11 @@
-# $Id$
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 # Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _realname=extra-cmake-modules
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=5.32.0
+pkgver=5.36.0
 pkgrel=1
 pkgdesc='Extra CMake modules (mingw-w64)'
 arch=('any')
@@ -18,9 +16,11 @@ depends=("${MINGW_PACKAGE_PREFIX}-cmake"
 makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx") # qt5-tools for QtHelp pages
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_realname}-${pkgver}.tar.xz"
         "set-AUTOSTATICPLUGINS.patch")
-sha256sums=('b1d87be86f36c20ec1f4ad7946f702fd1a7cab0e2ea2e81f4f9a2d937f9f0ac7'
-            'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
+sha256sums=(
+'6e120bb40411ef559583ef693c0c03a41df3bb40a932bf7444c97e04266d5daf'
+  'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
 
+#'6e120bb40411ef559583ef693c0c03a41df3bb40a932bf7444c97e04266d5daf'
 prepare() {
   mkdir -p build-${CARCH}
 

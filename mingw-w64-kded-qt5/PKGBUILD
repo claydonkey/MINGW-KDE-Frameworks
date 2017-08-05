@@ -1,6 +1,8 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kded"
 pkgver=5.26.0
@@ -8,12 +10,13 @@ pkgrel=1
 arch=('any')
 pkgdesc="Icon GUI utilities (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kinit-qt5" )
-depends=("${MINGW_PACKAGE_PREFIX}-kinit-qt5" ) 
-_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"   "${MINGW_PACKAGE_PREFIX}-kinit-qt5" 
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
+depends=( "${MINGW_PACKAGE_PREFIX}-bzip2"   ) 
+_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-kinit-qt5" 
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('145892109c2984ee62e3cb485b2f62f9c29a9d88e181c7e475989bb700946866')
+options=('!strip')
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

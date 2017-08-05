@@ -9,68 +9,90 @@ else
   exit 1
 fi
 
+if [[ "$2" == "debug" ]]; then
+  echo "Building debug"
+elif [[ "$2" == "release" ]]; then
+  echo "Building release"
+else
+  echo "${0} :: Error :: Please pass debug or release"
+  exit 1
+fi
+
+
+if [[ "$3" == "!strip" ]]; then
+  echo "Not stripping library"
+else
+  echo "Stripping library"
+  set $3 ='strip'
+fi
+
 THISDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Listed in tier-order
 declare -a pkgs=(
-#extra-cmake-modules
-#libogg
-#libsndfile
+extra-cmake-modules
+solid-qt5
+phonon-qt5
 attica-qt5
-hicolor-icon-theme
-karchive-qt5
-kauth-qt5
-kbookmarks-qt5
-kcodecs-qt5
-kcompletion-qt5
-kconfig-qt5
-kconfigwidgets-qt5
-kcoreaddons-qt5
-kcrash-qt5
-kcwsh-qt5-git
-kdbusaddons-qt5
-kdeclarative-qt5
-kded-qt5
-kdelibs4support-qt5
-kdewebkit-qt5
-kdnssd-qt5
-kdoctools-qt5
-kframeworkintegration-qt5
-kglobalaccel-qt5
+sonnet-qt5
+#kjs-qt5  # problem in batch pacman 
 kguiaddons-qt5
+kitemviews-qt5
+karchive-qt5
 ki18n-qt5
+kdoctools-qt5
+kcoreaddons-qt5
+kconfig-qt5
+kpackage-qt5
+kcodecs-qt5
+kwindowsystem-qt5
+knotifications-qt5
+kjobwidgets-qt5
+kwallet-qt5
+kded-qt5
+kservice-qt5
+kitemviews-qt5
+kauth-qt5
+kconfigwidgets-qt5
+texttospeech-qt5
 kiconthemes-qt5
+ktextwidgets-qt5
+kdbusaddons-qt5
+kcrash-qt5
+kglobalaccel-qt5
+kxmlgui-qt5
+kbookmarks-qt5
+kwidgetsaddons-qt5
+kcompletion-qt5
+kio-qt5
+kinit-qt5
+knewstuff-qt5
+kdnssd-qt5
+kdeclarative-qt5
+kplotting-qt5
+hicolor-icon-theme
+kcwsh-qt5-git omit this....
+kframeworkintegration-qt5
 kidletime-qt5
 kimageformats-qt5
-kinit-qt5makepkg --help
-kio-qt5
 kitemmodels-qt5
-kitemviews-qt5
-kjobwidgets-qt5
-kjs-qt5
-knewstuff-qt5
-knotifications-qt5
-kpackage-qt5
 kparts-qt5
-kplotting-qt5
-kservice-qt5
-ktextwidgets-qt5
+#kdewebkit-qt5 #needs attention (Qt5Network version)
 kunitconversion-qt5
-kwallet-qt5
-kwidgetsaddons-qt5
-kwindowsystem-qt5
-kxmlgui-qt5
-libkcw-git-qt5
-libkcw-qt5
+kdesignerplugin-qt5
+kdewin-git
+kdelibs4support-qt5
+#libkcw-git-qt5
+#libkcw-qt5
 libkdegames-qt5
-multimedia-qt5
-phonon-qt5
 )
 
 for pkg in "${pkgs[@]}"; do
   pushd ${THISDIR}/../mingw-w64-${pkg}
   export KF5_VARIANT=$1
+  export KF5_STRIP=$3
+  export KF5_RELEASE=$2
   rm -rf *pkg*xz src pkg
-  makepkg -f --noconfirm || exit 1 #-siL  dependencies, install, log
+  makepkg -fsi --noconfirm || exit 1 #-siL  dependencies, install, log
   popd
 done
