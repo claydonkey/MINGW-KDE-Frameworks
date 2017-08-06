@@ -91,24 +91,24 @@ declare -a pkgs=(
 #kio-qt5
 kinit-qt5
 knewstuff-qt5
-kdnssd-qt5
-kdeclarative-qt5
-kplotting-qt5
-hicolor-icon-theme
-kcwsh-qt5-git omit this....
-kframeworkintegration-qt5
-kidletime-qt5
-kimageformats-qt5
-kitemmodels-qt5
-kparts-qt5
+#kdnssd-qt5
+#kdeclarative-qt5
+#kplotting-qt5
+#hicolor-icon-theme
+#kcwsh-qt5-git omit this....
+# kframeworkintegration-qt5
+# kidletime-qt5
+# kimageformats-qt5
+# kitemmodels-qt5
+# kparts-qt5
 #kdewebkit-qt5 #needs attention (Qt5Network version)
-kunitconversion-qt5
-kdesignerplugin-qt5
-kdewin-git
-kdelibs4support-qt5
+# kunitconversion-qt5
+# kdesignerplugin-qt5
+# kdewin-git
+# kdelibs4support-qt5
 #libkcw-git-qt5
 #libkcw-qt5
-libkdegames-qt5
+# libkdegames-qt5
 )
 
 for pkg in "${pkgs[@]}"; do
@@ -116,7 +116,8 @@ for pkg in "${pkgs[@]}"; do
   export KF5_VARIANT=$_VARIANT
   export KF5_STRIP=$_STRIP
   export KF5_RELEASE=$_BUILDTYPE
-  rm -rf *pkg*xz src pkg sig
+  rm -rf *pkg*xz src pkg 
+  rm  -f *sig
   makepkg -fsi --noconfirm || exit 1 #-siL  dependencies, install, log
    if [[ ${_OPTIONS} == *"sign"* ]]; then
  echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 *-any.pkg.tar.xz
@@ -124,13 +125,20 @@ fi
 if [[ ${_OPTIONS} == *"upload"* ]]; then
 for f in $PWD/mingw-w64* 
 do 
-	echo "uploading $(basename $f)"
-	 github-release.exe upload -R -u claydonkey -n $(basename $f) -r mingw-KDE-Frameworks -t v0.1 -f $f
+	echo -e "\e[34m\e[1m==> [Uploading]\e[39m $(basename $f)"
+	github-release.exe upload -R -u claydonkey -n $(basename $f) -r mingw-KDE-Frameworks -t v0.1 -f $f
 done
 for f in $PWD/mingw-w64*.pkg.tar.xz
 do
-	echo "adding $(basename $f) to db"
-	 repo-add -s ~/Documents/Minnow/Source/MinGW/MINGW-KDE-Frameworks/DB/kde.db.tar.xz $f  
+pushd  $PWD/../DB
+rm  -f *sig
+echo  $PWD
+	echo -e "\e[34m\e[1m==> [Adding] \e[39m $(basename $f) to Database"
+	repo-add  kde.db.tar.xz $f  	
+	for dbfile in $PWD/*  ; do
+	echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 ${dbfile}
+	done
+popd	
 done
    fi   
    
