@@ -19,7 +19,7 @@ source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pk
 sha256sums=('9601108491e9564630a6152f296de8143decb91bd63c6ea15f91a591d02155c9'
 '2a47a2ccfde6bec73468f38905bdc0d87cfc12ddad2c4f1c26fc0b25c8eaa041'
 )
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

@@ -21,7 +21,7 @@ sha256sums=('9fc0ab12de853860084cd9a84239c84c6cc6c89b119f27b682378ae77c0c84a3'
 '0a1a7ee3a1d661ded123a1c226e4e7571145c9c72cf3fe3aac7c44bb973fe558'
 '88f7596e084af7877b749aa275f114779aa9435e2725da6b8a3280b67c909175'
 )
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

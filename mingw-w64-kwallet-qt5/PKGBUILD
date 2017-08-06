@@ -18,7 +18,7 @@ groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )
 sha256sums=('5a766b2be10d936f149bd1b9bbf3bee32239eb66a053d126af0bf9fcd3017428')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

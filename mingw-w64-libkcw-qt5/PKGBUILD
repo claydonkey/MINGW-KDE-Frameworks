@@ -17,7 +17,7 @@ _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${M
 groups=('kf5')
 source=("${_realname}"::"git://anongit.kde.org/${_basename}.git")
 sha256sums=('SKIP')
- options=('!strip')
+ options=(${_stripped} ${_releasetype})
 
 
 #pkgver() {

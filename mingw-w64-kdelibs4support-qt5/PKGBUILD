@@ -18,7 +18,7 @@ groups=('kf5')
 source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/portingAids/${_basename}-${pkgver}.tar.xz" "0001-CMakeTargetInclude.patch")
 sha256sums=('e8336d25de7911c4536f6ebeca5a10efb00d4de967dae8ddcee258763f2e8049'  
 '3c022e5cb94154b39700a3b140463ac128f0c86a140a8e291a3eaa8a4fff0ee1')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
  mkdir -p build-${CARCH}${_variant}

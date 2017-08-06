@@ -16,9 +16,12 @@ _kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "$
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('145892109c2984ee62e3cb485b2f62f9c29a9d88e181c7e475989bb700946866')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
+echo  ${KF5_VARIANT}
+echo  ${KF5_STRIP}
+echo  ${KF5_RELEASE}
   mkdir -p build-${CARCH}${_variant}
 }
 

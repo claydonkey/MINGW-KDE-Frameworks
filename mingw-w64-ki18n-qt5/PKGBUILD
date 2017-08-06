@@ -19,7 +19,7 @@ source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pk
         "build-ktranscript-plugin-statically-if-not-shared.patch")
 sha256sums=('878808b60a459b15402f6ddea9bdd643c3407a252f37733be829d6a9bfc8bdb8'
             'fb05bcdf56feec1cae600a10b9706c6573bc9b39becea0e1061b10a65dc68a40')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

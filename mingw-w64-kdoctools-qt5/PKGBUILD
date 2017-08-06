@@ -18,7 +18,7 @@ source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pk
      001-docbookxml-find.patch)
 sha256sums=('48c9f4c3f5c68c9f82cd526bf9bfe136319fd64b16acc5f7ec0c70c5c353068c'
      '59009ed1173dc664e15cf1be0b7f4a6839f7efae78c4a5542f2d5d44b3aa6da8')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 	 
 prepare() {

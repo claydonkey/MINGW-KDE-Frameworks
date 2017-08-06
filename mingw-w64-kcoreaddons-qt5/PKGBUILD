@@ -20,7 +20,7 @@ source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pk
        001-kuser-win.patch)
 sha256sums=('1fab3ca827cf74f0fdadd30d8b9b3fe53d4ba2d1afe7f23a90f3ff55f3c77982'
             '7a9c0a5ce7b8ee2541100944f97c0d3aed111050a940c8250e87d7b3d491dba1')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
    mkdir -p build-${CARCH}${_variant}

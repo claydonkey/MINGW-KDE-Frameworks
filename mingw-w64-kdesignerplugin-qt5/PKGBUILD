@@ -16,7 +16,7 @@ _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kplotting-qt5"  "${MI
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('52586f6524eace88b09500d0e2e8fde0a2a06f69c4f65cd0791423fa076a8881')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

@@ -20,7 +20,7 @@ source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/portingAids/${_ba
 sha256sums=('faa68493b57f7f3a3e1b05775da0a0477320f712e62cde499f6d0f0befb54caa'
 '8f7cc873f5c046c3983fbf4097d820274c0efccaf02f942c7ddc5a0ed8dd943d')
 
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

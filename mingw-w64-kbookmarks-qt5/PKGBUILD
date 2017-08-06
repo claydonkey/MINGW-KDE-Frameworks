@@ -17,7 +17,7 @@ _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kxmlgui-qt5"
 groups=('kf5')
 source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
 sha256sums=('f21439ad5dc53090b5a895af50c811ac539c4fe7dd741477713e86b07b71105e')
-options=('!strip')
+options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}

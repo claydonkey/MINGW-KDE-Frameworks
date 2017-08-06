@@ -19,7 +19,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python")
 source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
 sha256sums=('9348f5d1599d0fab0ad6a793133c552d313cb8b9a726a5fe86e61d7e0e107a1f' 
 '6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')
- options=('!strip')
+ options=(${_stripped} ${_releasetype})
    
 prepare() {
    mkdir -p build-${CARCH}${_variant}

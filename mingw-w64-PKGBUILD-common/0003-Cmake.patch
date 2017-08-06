@@ -1,28 +1,28 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
-````
+
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "ktextwidgets"
+_kde_f5_init_package "${_variant}" "kded"
 pkgver=5.26.0
 pkgrel=1
 arch=('any')
-pkgdesc="Text editing widgets (mingw-w64-qt5${_namesuff})"
+pkgdesc="Icon GUI utilities (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "doxygen")
-_kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5" "${MINGW_PACKAGE_PREFIX}-kservice-qt5" "${MINGW_PACKAGE_PREFIX}-kcompletion-qt5"  "${MINGW_PACKAGE_PREFIX}-sonnet-qt5" "${MINGW_PACKAGE_PREFIX}-texttospeech-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
-depends=(  "${MINGW_PACKAGE_PREFIX}-bzip2"  )
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
+depends=( "${MINGW_PACKAGE_PREFIX}-bzip2"   ) 
+_kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-kinit-qt5" 
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
-        001-cmakepolicy-0020.patch)
-sha256sums=('822cd35ee7b4211328de94754217c72b2b43a08ed5e890d50d77e1363fb54e61'
-            'ed76675ec5927c949cd623dd9ea3712e6d87a8a8b132dac92b7439718d273878')
-options=(${_stripped} ${_releasetype})
+source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('145yyyy892109c2984ee62e3cb485b2f62f9c29a9d88e181c7e475989bb700946866')
+options=('!strip')
 
 prepare() {
+echo  ${KF5_VARIANT}
+echo  ${KF5_STRIP}
+echo  ${KF5_RELEASE}
   mkdir -p build-${CARCH}${_variant}
-  patch -Np1 -i ${srcdir}/001-cmakepolicy-0020.patch
 }
 
 build() {
@@ -50,8 +50,6 @@ make
 }
 
 package() {
-msg2 "PKGDIR=${pkgdir}"  
-cd build-${CARCH}${_variant}
+  cd build-${CARCH}${_variant}
   make DESTDIR="${pkgdir}" install
 }
-
