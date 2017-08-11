@@ -17,8 +17,11 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=(${_realname}::git+https://github.com/KDE/kdewin.git)
-sha256sums=('SKIP')
+source=(${_realname}::git+https://github.com/KDE/kdewin.git
+0001-CMakeFindPath.patch
+)
+sha256sums=('SKIP'
+'1a6b463830466b46dde933754daa771a6a667bd469630a32dcc19e26df55ff42')
 
 
 pkgver() {
@@ -26,9 +29,15 @@ pkgver() {
   printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
+prepare()
+{
+   patch -Np1 -i ${srcdir}/0001-CMakeFindPath.patch
+   mkdir -p build-${CARCH}${_variant}
+
+}
+
 build() {
   local -a extra_config
-  mkdir -p build-${CARCH}${_variant}
   cd build-${CARCH}${_variant}
   if [ "${_variant}" = "-static" ]; then
     extra_config+=( -DBUILD_SHARED_LIBS=NO )
@@ -49,7 +58,7 @@ build() {
     -DECM_DIR=${MINGW_PREFIX}/share/ECM \
     "${extra_config[@]}" \
     -G'MSYS Makefiles'
-  make VERBOSE=1
+  make 
 }
 
 package() {

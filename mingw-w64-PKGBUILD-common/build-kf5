@@ -2,76 +2,100 @@
 
 
 _OPTIONS="'$*'"
-echo  $*
- 
+
 for (( i=1; i<=$#; i++)); do
-     if [[  ${!i} == *"passphrase"* ]]; then
+    if [[  ${!i} == *"email"* ]]; then
+		j=$((i+1))
+		_EMAIL=${!j}
+	fi		
+ 
+	
+	if [[  ${!i} == *"-version"* ]]; then
+		j=$((i+1))
+		_VERSION=${!j}
+	fi		
+	
+	if [[  ${!i} == *"sign"* ]]; then
 		j=$((i+1))
 		_PASSPHRASE=${!j}
 	fi		
 done
 
+if [[ ${_OPTIONS} == *"install"* ]]; then
+  echo -e "\e[34m\e[1m==>\e[39m Installing locally"
+     _INSTALL="i"
+else
+   _INSTALL=""
+   fi
 
 
 if [[ ${_OPTIONS} == *"static"* ]]; then
-  echo "Building static"
+  echo -e "\e[34m\e[1m==>\e[39m Building static"
      _VARIANT="static"
 else
-  echo "Building shared"
+  echo -e "\e[34m\e[1m==>\e[39m Building shared"
    _VARIANT="shared"
    fi
 
-if [[ ${_OPTIONS} == *"upload"* ]]; then
-  echo "Building static"
-     _UPLOAD=1
-   fi   
+if [[ ${_OPTIONS} == *"upload-version"* ]]; then
+  echo  -e "\e[34m\e[1m==>\e[39m Uploading to release repository"
+    _UPLOAD=1
+	else
+	  _UPLOAD=0
+fi   
    
 if [[ ${_OPTIONS} == *"debug"* ]]; then
-    _BUILDTYPE=debug
-	echo "Building debug"
+    _BUILDTYPE="'debug"
+	  _BFLAG='d'
+	echo  -e "\e[34m\e[1m==>\e[39m Building debug"
 else
-  echo "Building release"
-    _BUILDTYPE=!debug
+  echo -e "\e[34m\e[1m==>\e[39m Building release"
+  _BFLAG='r'
+    _BUILDTYPE="'!debug"
 	fi
 
 
 if [[ ${_OPTIONS} == *"nostrip"* ]]; then
-  echo "Not stripping library"
-      _STRIP='!strip'
+  echo -e "\e[34m\e[1m==>\e[39m Not stripping library"
+      _SFLAG='n'
+      _STRIP="!strip"
 else
-  echo "Stripping library"
-   _STRIP='strip'
+  echo -e "\e[34m\e[1m==>\e[39m Stripping library"
+  _SFLAG='s'
+   _STRIP="strip"
 fi
 
+ 
+
 if [[ ${_OPTIONS} == *"sign"* ]]; then
-  echo "Signing"
+  echo -e "\e[34m\e[1m==>\e[39m Signing"
   _SIGNING="--sign"
 fi
 
-
+#echo -e "\e[39m"
 THISDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Listed in tier-order
 declare -a pkgs=(
-# extra-cmake-modules
-# solid-qt5
-# phonon-qt5
-# attica-qt5
-# sonnet-qt5
-#kjs-qt5  # problem in batch pacman 
-# kguiaddons-qt5
-# kitemviews-qt5
-# karchive-qt5
-# ki18n-qt5
-# kdoctools-qt5
-# kcoreaddons-qt5
-# kconfig-qt5
-# kpackage-qt5
-# kcodecs-qt5
-# kwindowsystem-qt5
-# knotifications-qt5
-# kjobwidgets-qt5
-# kconfigwidgets-qt5
+#extra-cmake-modules
+#solid-qt5
+#phonon-qt5
+#attica-qt5
+#sonnet-qt5
+##kjs-qt5  # problem in batch pacman 
+#kguiaddons-qt5
+#kitemviews-qt5
+#karchive-qt5
+#ki18n-qt5
+#kdoctools-qt5
+#kcoreaddons-qt5
+#kconfig-qt5
+#kpackage-qt5
+#kcodecs-qt5
+#kwindowsystem-qt5
+#knotifications-qt5
+#kjobwidgets-qt5
+#kconfigwidgets-qt5
 #kdbusaddons-qt5
 #kiconthemes-qt5
 #kservice-qt5
@@ -89,58 +113,87 @@ declare -a pkgs=(
 #kbookmarks-qt5
 #kwidgetsaddons-qt5
 #kio-qt5
-kinit-qt5
-knewstuff-qt5
+#kinit-qt5
+#knewstuff-qt5
 #kdnssd-qt5
 #kdeclarative-qt5
 #kplotting-qt5
 #hicolor-icon-theme
-#kcwsh-qt5-git omit this....
-# kframeworkintegration-qt5
-# kidletime-qt5
-# kimageformats-qt5
-# kitemmodels-qt5
-# kparts-qt5
-#kdewebkit-qt5 #needs attention (Qt5Network version)
-# kunitconversion-qt5
-# kdesignerplugin-qt5
-# kdewin-git
-# kdelibs4support-qt5
-#libkcw-git-qt5
+##kcwsh-qt5-git #omit this....
+#kframeworkintegration-qt5
+#kidletime-qt5
+#kimageformats-qt5
+#kitemmodels-qt5
+#kparts-qt5
+##kdewebkit-qt5 #needs attention (Qt5Network version)
+#kunitconversion-qt5
+#kdesignerplugin-qt5
+#kdewin-qt5-git
+##kdelibs4support-qt5 #not working
+##libkcw-git-qt5 #backup version
 #libkcw-qt5
-# libkdegames-qt5
+##libogg #not required as exists in main repository mingw64/mingw-w64-x86_64-libogg
+#libsndfile
+#libkdegames-qt5
+#kdewin-qt5-git
+kdelibs4support-qt5
 )
-
+  mkdir   ${THISDIR}/../DB${_SFLAG}${_BFLAG}
 for pkg in "${pkgs[@]}"; do
-  pushd ${THISDIR}/../mingw-w64-${pkg}
-  export KF5_VARIANT=$_VARIANT
-  export KF5_STRIP=$_STRIP
-  export KF5_RELEASE=$_BUILDTYPE
+  pushd ${THISDIR}/../mingw-w64-${pkg} > /dev/null
+
+  export KF5_VARIANT=${_VARIANT}
+  export KF5_STRIP=${_STRIP}
+  export KF5_RELEASE=${_BUILDTYPE}
   rm -rf *pkg*xz src pkg 
   rm  -f *sig
-  makepkg -fsi --noconfirm || exit 1 #-siL  dependencies, install, log
+  echo  ${pkg} [STARTING]  |  mutt -s 'MinGW-KDE Compilation Starting '${pkg} ${_EMAIL} ; 
+  makepkg -fs${_INSTALL} --noconfirm ||  echo -e "\e[34m\e[1m==> FAILURE: \e[39m ${pkg}"; \
+  echo ${pkg} [FAILURE]  >> ../compile.log ; \
+  if [[ ${_OPTIONS} == *"email"* ]]; then \
+  echo  ${pkg} [FAILURE]  | mutt -s 'MinGW-KDE Compilation Failure '${pkg} ${_EMAIL};  \
+  fi    
+
+ if [[ ${_OPTIONS} == *"sign"* ]]; then
+   echo -e "\e[34m\e[1m==> [SIGNING]\e[39m with passphrase...";
+   echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 *-any.pkg.tar.xz
+ fi
+ if [[ ${_OPTIONS} == *"upload-version"* ]]; then
+ 	echo -e "\e[34m\e[1m==> [UPLOADING]\e[39m to \e[32m'${_VERSION}${_SFLAG}${_BFLAG}'"
+  for f in $PWD/mingw-w64* ; do 
+	echo -e "\e[34m\e[1m   ->\e[39m $(basename $f)...";
+	github-release.exe upload -R -u claydonkey -n $(basename $f) -r mingw-KDE-Frameworks -t ${_VERSION}${_SFLAG}${_BFLAG} -f $f ||  \
+if [[ ${_OPTIONS} == *"email"* ]]; then \
+   echo  ${pkg} [FAILURE]  | mutt -s 'MinGW-KDE Uploading Failure '${pkg} ${_EMAIL};  \
+   fi 
+  done
+ 
+  for f in $PWD/mingw-w64*.pkg.tar.xz ; do
+   pushd  ${THISDIR}/../DB${_SFLAG}${_BFLAG} > /dev/null
+   rm  -f *sig 
+   echo -e "\e[34m\e[1m==> [ADDING]\e[39m $(basename $f) to Database \e[32m'DB${_SFLAG}${_BFLAG}'\e[39m..."
+  repo-add  kde.db.tar.xz $f  ||  \
+  if [[ ${_OPTIONS} == *"email"* ]]; then \
+  echo  ${pkg} [FAILURE]  | mutt -s 'MinGW-KDE Repo Add Failure '${pkg} ${_EMAIL};  \
+  fi 
+  
    if [[ ${_OPTIONS} == *"sign"* ]]; then
- echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 *-any.pkg.tar.xz
-fi
-if [[ ${_OPTIONS} == *"upload"* ]]; then
-for f in $PWD/mingw-w64* 
-do 
-	echo -e "\e[34m\e[1m==> [Uploading]\e[39m $(basename $f)"
-	github-release.exe upload -R -u claydonkey -n $(basename $f) -r mingw-KDE-Frameworks -t v0.1 -f $f
-done
-for f in $PWD/mingw-w64*.pkg.tar.xz
-do
-pushd  $PWD/../DB
-rm  -f *sig
-echo  $PWD
-	echo -e "\e[34m\e[1m==> [Adding] \e[39m $(basename $f) to Database"
-	repo-add  kde.db.tar.xz $f  	
 	for dbfile in $PWD/*  ; do
+	echo -e "\e[34m\e[1m   -->\e[39m  $(basename $dbfile)"
 	echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 ${dbfile}
 	done
-popd	
+     popd	 > /dev/null
+fi
+   done
+ fi 
+ popd > /dev/null
 done
-   fi   
-   
-  popd
+
+  if [[ ${_OPTIONS} == *"upload-version"* ]]; then
+  echo -e "\e[34m\e[1m==> [UPLOADING]\e[39m to Database \e[32m'DB${_SFLAG}${_BFLAG}'"
+for f in ${THISDIR}/../DB${_SFLAG}${_BFLAG}/kde* 
+do 
+	echo -e "\e[34m\e[1m   ->\e[39m  $(basename $f)"
+	github-release.exe upload -R -u claydonkey -n $(basename $f) -r mingw-KDE-Frameworks -t ${_VERSION}${_SFLAG}${_BFLAG} -f $f
 done
+fi

@@ -1,23 +1,36 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
-# Contributor: Jan De Groot <jgc@archlinux.org>
 
-pkgname=hicolor-icon-theme
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+ _realname='hicolor-icon-theme'
+pkgbase=mingw-w64-${_realname}
+pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
 pkgver=0.15
 pkgrel=1
 pkgdesc="Freedesktop.org Hicolor icon theme"
 arch=('any')
 url="http://www.freedesktop.org/wiki/Software/icon-theme/"
 license=('GPL2')
-source=("http://icon-theme.freedesktop.org/releases/${pkgname}-${pkgver}.tar.xz")
+source=("http://icon-theme.freedesktop.org/releases/${_realname}-${pkgver}.tar.xz")
 sha1sums=('368ecc47521e1a2f72cef0171bee02aae876ff53')
+options=(${_stripped} ${_releasetype})
 
-build() {
-  cd $pkgname-$pkgver
-  ./configure --prefix=/mingw64
-  make
+prepare(){
+    mkdir -p build-${CARCH}${_variant}
+}
+
+build() { 
+    local -a extra_config 
+      cd  build-${CARCH}${_variant} 
+   ../${_realname}-${pkgver}/configure \
+     --prefix=${MINGW_PREFIX} \
+     --build=${MINGW_CHOST} \
+     --host=${MINGW_CHOST} 
+   make
 }
 
 package() {
-  cd $pkgname-$pkgver
-  make DESTDIR="${pkgdir}" install
+  cd build-${CARCH}${_variant}
+  make DESTDIR=${pkgdir} install
 }

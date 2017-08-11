@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+if  [ -z $2 ]; then
+echo "use - build-upload PASSPHRASE VERSION [EMAIL]"
+else
+./build-kf5  -release -shared -strip  -install -sign $1 -upload-version $2 -email $3
+fi

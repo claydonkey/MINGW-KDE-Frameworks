@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkcw"
-pkgver=5.26.0
+pkgver=.29.33327ab
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
@@ -20,10 +20,10 @@ sha256sums=('SKIP')
  options=(${_stripped} ${_releasetype})
 
 
-#pkgver() {
- # cd "${srcdir}/${_realname}"
- # printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-#}
+pkgver() {
+ 
+  printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
 
 build() {
   local -a extra_config

@@ -1,6 +1,9 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 sourcename=qt5-speech
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 pkgname=${MINGW_PACKAGE_PREFIX}-texttospeech-qt5
 _qtver=5.9.1
 pkgver=${_qtver/-/}
@@ -17,16 +20,10 @@ groups=('qt ''qt5')
 _pkgfqn="${sourcename/5-/}-opensource-src-${_qtver}"
 source=("http://download.qt.io/official_releases/qt/${pkgver%.*}/${_qtver}/submodules/${_pkgfqn}.tar.xz")
 sha256sums=('ac9cef10637b54fa8d0bfe83f5b98c1c295cb68e63cf0973b2c6f188dcecaa01')
-options=(${_stripped} ${_releasetype})
+options=(${_stripped} ${_releasetype} !makeflags)
 
 
-prepare() {
-    pushd "${srcdir}/${_pkgfqn}"
-popd
-	}
-
-build() {
-
+build() {  
   if [ "${_variant}" = "-static" ]; then
     makedepends+=('mingw-w64-qt5-base-static') \
   optdepends+=('mingw-w64-qt5-base-static: use of static libraries') \
@@ -34,12 +31,13 @@ build() {
   else
      _configurations+=('CONFIG+=shared')
   fi
-
-  local -a extra_config
+   
+     local -a extra_config
+#PREFIX="$(cygpath -w ${pkgdir})"
     for _config in "${_configurations[@]}"; do
       msg2 "Building ${_config##*=} version for ${CARCH} ${_variant} "
-      mkdir -p build-${CARCH}-${_config##*=} && pushd build-${CARCH}-${_config##*=}
-      qmake  -spec win32-g++ "${srcdir}/${_pkgfqn}"/${_qt_module}.pro ${_config}
+      mkdir -p build-${CARCH}-${_config##*=} && pushd build-${CARCH}-${_config##*=} 
+	  qmake  PREFIX=$(cygpath -w ${pkgdir})  -spec win32-g++ ${srcdir}/${_pkgfqn}/${_qt_module}.pro ${_config}
  if [ "${_variant}" = "-static" ]; then
     extra_config+=( -DBUILD_SHARED_LIBS=NO )
     QT5_PREFIX=${MINGW_PREFIX}/qt5-static
@@ -48,19 +46,37 @@ build() {
     QT5_PREFIX=${MINGW_PREFIX}
   fi
 
-      make qmake_all
-      find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
+ 
+  #    make PREFIX=/tempo  qmake_all
+      # find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
+	  #	    find . -type f -exec sed -i 's/.\:\/[^/]*\/mingw64/\/mingw64/gw /dev/stdout' {} \;
+	  #grep . --color -r  -He ".\:/[^/]*/mingw64/"
+	  #$(cygpath -u ${MINGW_PREFIX})
 	  #workaround - Remove windows drive letter from Makefile.Debug and Makefile.Release.
-      popd
+      popd 
     done
 }
 
 package() { 
-  cd "${srcdir}"
-   msg2 "Package to $(cygpath -m ${pkgdir} for ${pkgdir}${MINGW_PREFIX}  $(cygpath -u ${MINGW_PREFIX}))"
+    #find . -type f -exec sed -i 's/.\:\/[^/]*\/mingw64/\/mingw64/gw /dev/stdout' {} \;
+   #msg2 "Package to $(cygpath -m ${pkgdir}) for ${pkgdir}${MINGW_PREFIX}  $(cygpath -u ${MINGW_PREFIX})"
+         #find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
+	
     for _config in "${_configurations[@]}"; do
-      pushd build-${CARCH}-${_config##*=}
-	  make  INSTALL_ROOT=${pkgdir} install
+      pushd ${srcdir}/build-${CARCH}-${_config##*=} 
+	#  find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
+	#   make    DESTDIR=${pkgdir}   install
+#make  install
+	make INSTALL_ROOT=${pkgname} install
+ 
       popd
+	mv 'C:\'${pkgname}  $PWD/../pkg;
+	mv  $PWD/../pkg/${pkgname}/msys2/mingw64  $PWD/../pkg/${pkgname}/mingw64    ;
+	rm -r $PWD/../pkg/${pkgname}/mingw64/lib;
+ 	 rm -r $PWD/../pkg/${pkgname}/msys2;
+	for _config in "${_configurations[@]}"; do
+	 mv  ${srcdir}/build-${CARCH}-${_config##*=}/bin   $PWD/../pkg/${pkgname}/mingw64    ;
+	 mv  ${srcdir}/build-${CARCH}-${_config##*=}/lib   $PWD/../pkg/${pkgname}/mingw64    ;
+    done
   done
 }

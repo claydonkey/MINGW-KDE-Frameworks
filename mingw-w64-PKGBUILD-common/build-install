@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+if [ -z $2 ]; then
+./build-kf5  -release -shared -strip  -install -version $ 
+else
+./build-kf5  -release -shared -strip  -install -sign $2 -version $1 
+fi
+# 5.26.0-1v0.9
+
