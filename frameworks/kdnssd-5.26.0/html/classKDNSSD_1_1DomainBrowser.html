@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDNSSD - KDNSSD::DomainBrowser Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDNSSD</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDNSSD"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</option>
+        
+        <option value="classKDNSSD_1_1DomainModel.html">KDNSSD::DomainModel</option>
+        
+        <option value="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</option>
+        
+        <option value="classKDNSSD_1_1RemoteService.html">KDNSSD::RemoteService</option>
+        
+        <option value="classKDNSSD_1_1Responder.html">KDNSSD::Responder</option>
+        
+        <option value="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</option>
+        
+        <option value="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</option>
+        
+        <option value="classKDNSSD_1_1ServiceModel.html">KDNSSD::ServiceModel</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction to system DNSSD features</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5DNSSD)
+target_link_libraries(yourapp KF5::DNSSD)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDNSSD </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdnssd-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDNSSD on <a href="https://cgit.kde.org/kdnssd-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDNSSD </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=DomainBrowser">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KDNSSD</b></li><li class="navelem"><a class="el" href="classKDNSSD_1_1DomainBrowser.html">DomainBrowser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKDNSSD_1_1DomainBrowser-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDNSSD::DomainBrowser Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="domainbrowser_8h_source.html">KDNSSD/DomainBrowser</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af93e72d9dad62d4fa255bd0fa66fb477"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477">DomainType</a> { <a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477a6cfe2826b583285428ee3f5bcca1cc90">Browsing</a>,
+<a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477ab3930c8de92b640c057fd198a51c02f8">Publishing</a>
+ }</td></tr>
+<tr class="separator:af93e72d9dad62d4fa255bd0fa66fb477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a72d048bb239ae571548354788b43ba7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a72d048bb239ae571548354788b43ba7d">domainAdded</a> (const QString &amp;domain)</td></tr>
+<tr class="separator:a72d048bb239ae571548354788b43ba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2903f01a0aff12859276d0fbe0995e3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a2903f01a0aff12859276d0fbe0995e3d">domainRemoved</a> (const QString &amp;domain)</td></tr>
+<tr class="separator:a2903f01a0aff12859276d0fbe0995e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aca8815be064f7c8384f3516e2f16bb09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#aca8815be064f7c8384f3516e2f16bb09">DomainBrowser</a> (<a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477">DomainType</a> type, QObject *parent=0)</td></tr>
+<tr class="separator:aca8815be064f7c8384f3516e2f16bb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada36483d7edcbcdebac35f5316d5fb59"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#ada36483d7edcbcdebac35f5316d5fb59">domains</a> () const</td></tr>
+<tr class="separator:ada36483d7edcbcdebac35f5316d5fb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f481a702919b971aede5e7def0ce273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a6f481a702919b971aede5e7def0ce273">isRunning</a> () const</td></tr>
+<tr class="separator:a6f481a702919b971aede5e7def0ce273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cdde6aec323364e83e28be0f0e40ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a53cdde6aec323364e83e28be0f0e40ab">startBrowse</a> ()</td></tr>
+<tr class="separator:a53cdde6aec323364e83e28be0f0e40ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Browses recommended domains for browsing or publishing to. </p>
+<p>Usage of this class is very simple. If you are interested in browsing for services, simple do </p><div class="fragment"><div class="line"><a class="code" href="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</a> *browser =</div><div class="line">    <span class="keyword">new</span> <a class="code" href="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</a>(<a class="code" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477a6cfe2826b583285428ee3f5bcca1cc90">KDNSSD::DomainBrowser::Browsing</a>, <span class="keyword">this</span>);</div><div class="line">connect(browser, SIGNAL(<a class="code" href="classKDNSSD_1_1DomainBrowser.html#a72d048bb239ae571548354788b43ba7d">domainAdded</a>(QString)),</div><div class="line">        <span class="keyword">this</span>, SLOT(browsingDomainAdded(QString));</div><div class="line">connect(browser, SIGNAL(<a class="code" href="classKDNSSD_1_1DomainBrowser.html#a2903f01a0aff12859276d0fbe0995e3d">domainRemoved</a>(QString)),</div><div class="line">        <span class="keyword">this</span>, SLOT(browsingDomainRemove(QString));</div><div class="line">browser-&gt;<a class="code" href="classKDNSSD_1_1DomainBrowser.html#a53cdde6aec323364e83e28be0f0e40ab">startBrowse</a>();</div></div><!-- fragment --><p>If you are interested in domains where you can register services, usage is identical except that you should pass <code>KDNSSD::DomainBrowser::Registering</code> to the constructor.</p>
+<dl class="section author"><dt>Author</dt><dd>Jakub Stachowski </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="domainbrowser_8h_source.html#l00054">54</a> of file <a class="el" href="domainbrowser_8h_source.html">domainbrowser.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="af93e72d9dad62d4fa255bd0fa66fb477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93e72d9dad62d4fa255bd0fa66fb477">&#9670;&nbsp;</a></span>DomainType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477">KDNSSD::DomainBrowser::DomainType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A type of domain recommendation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af93e72d9dad62d4fa255bd0fa66fb477a6cfe2826b583285428ee3f5bcca1cc90"></a>Browsing&#160;</td><td class="fielddoc"><p>Domains recommended for browsing for services on (using <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a>) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af93e72d9dad62d4fa255bd0fa66fb477ab3930c8de92b640c057fd198a51c02f8"></a>Publishing&#160;</td><td class="fielddoc"><p>Domains recommended for publishing to (using <a class="el" href="classKDNSSD_1_1PublicService.html" title="Represents a service to be published. ">PublicService</a>) </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="domainbrowser_8h_source.html#l00061">61</a> of file <a class="el" href="domainbrowser_8h_source.html">domainbrowser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aca8815be064f7c8384f3516e2f16bb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8815be064f7c8384f3516e2f16bb09">&#9670;&nbsp;</a></span>DomainBrowser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDNSSD::DomainBrowser::DomainBrowser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKDNSSD_1_1DomainBrowser.html#af93e72d9dad62d4fa255bd0fa66fb477">DomainType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard constructor. </p>
+<p>The global DNS-SD configuration (for example, the global Avahi configuration for the Avahi backend) will be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the type of domain to search for </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object (see QObject documentation)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a53cdde6aec323364e83e28be0f0e40ab" title="Starts browsing. ">startBrowse()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ac0f402d7933c305570bb4dbc2f4ac961" title="Checks availability of DNS-SD services. ">ServiceBrowser::isAvailable()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-domainbrowser_8cpp_source.html#l00034">34</a> of file <a class="el" href="avahi-domainbrowser_8cpp_source.html">avahi-domainbrowser.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a72d048bb239ae571548354788b43ba7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d048bb239ae571548354788b43ba7d">&#9670;&nbsp;</a></span>domainAdded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::DomainBrowser::domainAdded </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A new domain has been discovered. </p>
+<p>If the requested DomainType is Browsing, this will also be emitted for the domains specified in the global configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the name of the domain</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a2903f01a0aff12859276d0fbe0995e3d" title="A domain has disappeared from the browsed list. ">domainRemoved()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2903f01a0aff12859276d0fbe0995e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2903f01a0aff12859276d0fbe0995e3d">&#9670;&nbsp;</a></span>domainRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::DomainBrowser::domainRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A domain has disappeared from the browsed list. </p>
+<p>Emitted when domain has been removed from browsing list or the publishing list (depending on which list was requested in the constructor).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the name of the domain</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a72d048bb239ae571548354788b43ba7d" title="A new domain has been discovered. ">domainAdded()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ada36483d7edcbcdebac35f5316d5fb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada36483d7edcbcdebac35f5316d5fb59">&#9670;&nbsp;</a></span>domains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KDNSSD::DomainBrowser::domains </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The current known list of domains of the requested DomainType. </p>
+<dl class="section return"><dt>Returns</dt><dd>a list of currently known domain names </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-domainbrowser_8cpp_source.html#l00100">100</a> of file <a class="el" href="avahi-domainbrowser_8cpp_source.html">avahi-domainbrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6f481a702919b971aede5e7def0ce273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f481a702919b971aede5e7def0ce273">&#9670;&nbsp;</a></span>isRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::DomainBrowser::isRunning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the browsing has been started. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="classKDNSSD_1_1DomainBrowser.html#a53cdde6aec323364e83e28be0f0e40ab" title="Starts browsing. ">startBrowse()</a> has been called, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-domainbrowser_8cpp_source.html#l00105">105</a> of file <a class="el" href="avahi-domainbrowser_8cpp_source.html">avahi-domainbrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53cdde6aec323364e83e28be0f0e40ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53cdde6aec323364e83e28be0f0e40ab">&#9670;&nbsp;</a></span>startBrowse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::DomainBrowser::startBrowse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts browsing. </p>
+<p>Only the first call to this function will have any effect.</p>
+<p>Browsing stops when the <a class="el" href="classKDNSSD_1_1DomainBrowser.html" title="Browses recommended domains for browsing or publishing to. ">DomainBrowser</a> object is destroyed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The <a class="el" href="classKDNSSD_1_1DomainBrowser.html#a72d048bb239ae571548354788b43ba7d" title="A new domain has been discovered. ">domainAdded()</a> signal may be emitted before this function returns.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1DomainBrowser.html#a72d048bb239ae571548354788b43ba7d" title="A new domain has been discovered. ">domainAdded()</a> and <a class="el" href="classKDNSSD_1_1DomainBrowser.html#a2903f01a0aff12859276d0fbe0995e3d" title="A domain has disappeared from the browsed list. ">domainRemoved()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-domainbrowser_8cpp_source.html#l00042">42</a> of file <a class="el" href="avahi-domainbrowser_8cpp_source.html">avahi-domainbrowser.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="domainbrowser_8h_source.html">domainbrowser.h</a></li>
+<li><a class="el" href="avahi-domainbrowser_8cpp_source.html">avahi-domainbrowser.cpp</a></li>
+<li><a class="el" href="dummy-domainbrowser_8cpp_source.html">dummy-domainbrowser.cpp</a></li>
+<li><a class="el" href="mdnsd-domainbrowser_8cpp_source.html">mdnsd-domainbrowser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

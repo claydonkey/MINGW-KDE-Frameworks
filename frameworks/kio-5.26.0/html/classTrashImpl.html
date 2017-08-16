@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - TrashImpl Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=TrashImpl">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classTrashImpl-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">TrashImpl Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="trashimpl_8h_source.html">trashimpl.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac220c13f33337967e19780e3a74b46dd"><td class="memItemLeft" align="right" valign="top"><a id="ac220c13f33337967e19780e3a74b46dd"></a>
+typedef QMap&lt; int, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TrashDirMap</b></td></tr>
+<tr class="separator:ac220c13f33337967e19780e3a74b46dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a048044c37fb683788650278396cd74"><td class="memItemLeft" align="right" valign="top">typedef QList&lt; TrashedFileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a7a048044c37fb683788650278396cd74">TrashedFileInfoList</a></td></tr>
+<tr class="separator:a7a048044c37fb683788650278396cd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a0d6dafb7b6aee360ad7d267314c577ac"><td class="memItemLeft" align="right" valign="top"><a id="a0d6dafb7b6aee360ad7d267314c577ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveModality</b> ()</td></tr>
+<tr class="separator:a0d6dafb7b6aee360ad7d267314c577ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac02ba6d60e5f031ac0ea84a2630c632a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#ac02ba6d60e5f031ac0ea84a2630c632a">copyFromTrash</a> (const QString &amp;origPath, int trashId, const QString &amp;fileId, const QString &amp;relativePath)</td></tr>
+<tr class="separator:ac02ba6d60e5f031ac0ea84a2630c632a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4268659c358419341f0ee6dfd2c94012"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a4268659c358419341f0ee6dfd2c94012">copyToTrash</a> (const QString &amp;origPath, int trashId, const QString &amp;fileId)</td></tr>
+<tr class="separator:a4268659c358419341f0ee6dfd2c94012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73af732dd3f541f545aafde2c81be9b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a73af732dd3f541f545aafde2c81be9b0">createInfo</a> (const QString &amp;origPath, int &amp;trashId, QString &amp;fileId)</td></tr>
+<tr class="separator:a73af732dd3f541f545aafde2c81be9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc82517e234758aad6d2dd585d3f3e87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#abc82517e234758aad6d2dd585d3f3e87">del</a> (int trashId, const QString &amp;fileId)</td></tr>
+<tr class="separator:abc82517e234758aad6d2dd585d3f3e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7950ac543f21c26eb2ce5c8a09c79c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#acc7950ac543f21c26eb2ce5c8a09c79c">deleteInfo</a> (int trashId, const QString &amp;fileId)</td></tr>
+<tr class="separator:acc7950ac543f21c26eb2ce5c8a09c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d535a7fa9a3c258f5517138aa6f019"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#aa8d535a7fa9a3c258f5517138aa6f019">emptyTrash</a> ()</td></tr>
+<tr class="separator:aa8d535a7fa9a3c258f5517138aa6f019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfde56fa851e3a371c9ee74a77c297c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a1cfde56fa851e3a371c9ee74a77c297c">infoForFile</a> (int trashId, const QString &amp;fileId, TrashedFileInfo &amp;info)</td></tr>
+<tr class="separator:a1cfde56fa851e3a371c9ee74a77c297c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af082fa92ac02bc422f01766d8de357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a7af082fa92ac02bc422f01766d8de357">init</a> ()</td></tr>
+<tr class="separator:a7af082fa92ac02bc422f01766d8de357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af01bf5ef8a67f405e6ab09d1c36118"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a6af01bf5ef8a67f405e6ab09d1c36118">isEmpty</a> () const</td></tr>
+<tr class="separator:a6af01bf5ef8a67f405e6ab09d1c36118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc1a924136a2504e5aa1c93caf44cfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a3dc1a924136a2504e5aa1c93caf44cfb">lastErrorCode</a> () const</td></tr>
+<tr class="separator:a3dc1a924136a2504e5aa1c93caf44cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc100c0d8b0f29ec737b2db5ef4cda2"><td class="memItemLeft" align="right" valign="top"><a id="a0cc100c0d8b0f29ec737b2db5ef4cda2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastErrorMessage</b> () const</td></tr>
+<tr class="separator:a0cc100c0d8b0f29ec737b2db5ef4cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababc449ceec6e1f8715e210af1e9da1b"><td class="memItemLeft" align="right" valign="top"><a id="ababc449ceec6e1f8715e210af1e9da1b"></a>
+<a class="el" href="classTrashImpl.html#a7a048044c37fb683788650278396cd74">TrashedFileInfoList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> ()</td></tr>
+<tr class="separator:ababc449ceec6e1f8715e210af1e9da1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b15277f9b5d43cbc7c775b24ccb2c91"><td class="memItemLeft" align="right" valign="top"><a id="a7b15277f9b5d43cbc7c775b24ccb2c91"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>listDir</b> (const QString &amp;<a class="el" href="classTrashImpl.html#ad3513ba44d20eb4509c670ee7a4ddfda">physicalPath</a>)</td></tr>
+<tr class="separator:a7b15277f9b5d43cbc7c775b24ccb2c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60ca96ab2628b7dc401f77394525711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#ad60ca96ab2628b7dc401f77394525711">migrateOldTrash</a> ()</td></tr>
+<tr class="separator:ad60ca96ab2628b7dc401f77394525711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d9afe674ec727e2adf5c3fa15de1a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a80d9afe674ec727e2adf5c3fa15de1a7">moveFromTrash</a> (const QString &amp;origPath, int trashId, const QString &amp;fileId, const QString &amp;relativePath)</td></tr>
+<tr class="separator:a80d9afe674ec727e2adf5c3fa15de1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6b33910638271ff55de1ace892177a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a9b6b33910638271ff55de1ace892177a">moveToTrash</a> (const QString &amp;origPath, int trashId, const QString &amp;fileId)</td></tr>
+<tr class="separator:a9b6b33910638271ff55de1ace892177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3513ba44d20eb4509c670ee7a4ddfda"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#ad3513ba44d20eb4509c670ee7a4ddfda">physicalPath</a> (int trashId, const QString &amp;fileId, const QString &amp;relativePath)</td></tr>
+<tr class="separator:ad3513ba44d20eb4509c670ee7a4ddfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7518dadc458aec4b80122fa055ff065"><td class="memItemLeft" align="right" valign="top">TrashDirMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#ac7518dadc458aec4b80122fa055ff065">topDirectories</a> () const</td></tr>
+<tr class="separator:ac7518dadc458aec4b80122fa055ff065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ed2ec896298c4950f402fa0b2b1f3e"><td class="memItemLeft" align="right" valign="top">TrashDirMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a40ed2ec896298c4950f402fa0b2b1f3e">trashDirectories</a> () const</td></tr>
+<tr class="separator:a40ed2ec896298c4950f402fa0b2b1f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919faa5263ba4e5eb234857f6138261e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrashImpl.html#a919faa5263ba4e5eb234857f6138261e">trashSpaceInfo</a> (const QString &amp;path, TrashSpaceInfo &amp;info)</td></tr>
+<tr class="separator:a919faa5263ba4e5eb234857f6138261e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a92c4649224f2c6f4b9a6575391c49d03"><td class="memItemLeft" align="right" valign="top"><a id="a92c4649224f2c6f4b9a6575391c49d03"></a>
+static QUrl&#160;</td><td class="memItemRight" valign="bottom"><b>makeURL</b> (int trashId, const QString &amp;fileId, const QString &amp;relativePath)</td></tr>
+<tr class="separator:a92c4649224f2c6f4b9a6575391c49d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ed484285926ac7030d85368649f5b7"><td class="memItemLeft" align="right" valign="top"><a id="ad7ed484285926ac7030d85368649f5b7"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseURL</b> (const QUrl &amp;url, int &amp;trashId, QString &amp;fileId, QString &amp;relativePath)</td></tr>
+<tr class="separator:ad7ed484285926ac7030d85368649f5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of all low-level operations done by kio_trash The structure of the trash directory follows the freedesktop.org standard &lt;TODO url&gt;=""&gt; </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8h_source.html#l00038">38</a> of file <a class="el" href="trashimpl_8h_source.html">trashimpl.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7a048044c37fb683788650278396cd74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a048044c37fb683788650278396cd74">&#9670;&nbsp;</a></span>TrashedFileInfoList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QList&lt;TrashedFileInfo&gt; <a class="el" href="classTrashImpl.html#a7a048044c37fb683788650278396cd74">TrashImpl::TrashedFileInfoList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List trashed files. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8h_source.html#l00089">89</a> of file <a class="el" href="trashimpl_8h_source.html">trashimpl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac02ba6d60e5f031ac0ea84a2630c632a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02ba6d60e5f031ac0ea84a2630c632a">&#9670;&nbsp;</a></span>copyFromTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::copyFromTrash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>origPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>relativePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copying a file or directory out of the trash. The ids come from createInfo. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00468">468</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4268659c358419341f0ee6dfd2c94012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4268659c358419341f0ee6dfd2c94012">&#9670;&nbsp;</a></span>copyToTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::copyToTrash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>origPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copying a file or directory into the trash. The ids come from createInfo. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00445">445</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73af732dd3f541f545aafde2c81be9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73af732dd3f541f545aafde2c81be9b0">&#9670;&nbsp;</a></span>createInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::createInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>origPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create info for a file to be trashed Returns trashId and fileId The caller is then responsible for actually trashing the file. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00211">211</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abc82517e234758aad6d2dd585d3f3e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc82517e234758aad6d2dd585d3f3e87">&#9670;&nbsp;</a></span>del()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::del </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a top-level trashed directory. </p>
+<p>Get rid of a trashed file </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00540">540</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc7950ac543f21c26eb2ce5c8a09c79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7950ac543f21c26eb2ce5c8a09c79c">&#9670;&nbsp;</a></span>deleteInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::deleteInfo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete info file for a file to be trashed Usually used for undoing what createInfo did if trashing failed. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00356">356</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8d535a7fa9a3c258f5517138aa6f019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d535a7fa9a3c258f5517138aa6f019">&#9670;&nbsp;</a></span>emptyTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::emptyTrash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Empty trash, i.e. delete all trashed files. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00602">602</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1cfde56fa851e3a371c9ee74a77c297c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfde56fa851e3a371c9ee74a77c297c">&#9670;&nbsp;</a></span>infoForFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::infoForFile </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TrashedFileInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the info for a given trashed file. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00713">713</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7af082fa92ac02bc422f01766d8de357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af082fa92ac02bc422f01766d8de357">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the "home" trash directory This MUST be called before doing anything else. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00129">129</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6af01bf5ef8a67f405e6ab09d1c36118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af01bf5ef8a67f405e6ab09d1c36118">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the trash is empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00797">797</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3dc1a924136a2504e5aa1c93caf44cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc1a924136a2504e5aa1c93caf44cfb">&#9670;&nbsp;</a></span>lastErrorCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrashImpl::lastErrorCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceKIO.html" title="A namespace for KIO globals. ">KIO</a> error code. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8h_source.html#l00111">111</a> of file <a class="el" href="trashimpl_8h_source.html">trashimpl.h</a>.</p>
+
+</div>
+</div>
+<a id="ad60ca96ab2628b7dc401f77394525711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60ca96ab2628b7dc401f77394525711">&#9670;&nbsp;</a></span>migrateOldTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrashImpl::migrateOldTrash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move data from the old trash system to the new one. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00168">168</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a80d9afe674ec727e2adf5c3fa15de1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d9afe674ec727e2adf5c3fa15de1a7">&#9670;&nbsp;</a></span>moveFromTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::moveFromTrash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>origPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>relativePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moving a file or directory out of the trash. The ids come from createInfo. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00395">395</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b6b33910638271ff55de1ace892177a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6b33910638271ff55de1ace892177a">&#9670;&nbsp;</a></span>moveToTrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::moveToTrash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>origPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moving a file or directory into the trash. The ids come from createInfo. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00365">365</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3513ba44d20eb4509c670ee7a4ddfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3513ba44d20eb4509c670ee7a4ddfda">&#9670;&nbsp;</a></span>physicalPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString TrashImpl::physicalPath </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trashId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>relativePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the physicalPath for a given trashed file - helper method which encapsulates the call to infoForFile. </p>
+<p>Don't use if you need more info from TrashedFileInfo. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00778">778</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac7518dadc458aec4b80122fa055ff065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7518dadc458aec4b80122fa055ff065">&#9670;&nbsp;</a></span>topDirectories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrashImpl::TrashDirMap TrashImpl::topDirectories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is for TestTrash only. No entry with id 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00999">999</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40ed2ec896298c4950f402fa0b2b1f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ed2ec896298c4950f402fa0b2b1f3e">&#9670;&nbsp;</a></span>trashDirectories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrashImpl::TrashDirMap TrashImpl::trashDirectories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is for TestTrash only. Home trash is included (id 0). </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00991">991</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a919faa5263ba4e5eb234857f6138261e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919faa5263ba4e5eb234857f6138261e">&#9670;&nbsp;</a></span>trashSpaceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrashImpl::trashSpaceInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TrashSpaceInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the space info for a given trash path Space information is only valid if trashSpaceInfo returns true. </p>
+
+<p class="definition">Definition at line <a class="el" href="trashimpl_8cpp_source.html#l00722">722</a> of file <a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="trashimpl_8h_source.html">trashimpl.h</a></li>
+<li><a class="el" href="trashimpl_8cpp_source.html">trashimpl.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:59 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

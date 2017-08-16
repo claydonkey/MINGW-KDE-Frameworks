@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KI18n - KLocalizedString Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KI18n</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KI18n"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKLocalizedContext.html">KLocalizedContext</option>
+        
+        <option value="classKLocalizedString.html">KLocalizedString</option>
+        
+        <option value="classKLocalizedTranslator.html">KLocalizedTranslator</option>
+        
+        <option value="classKuitSetup.html">KuitSetup</option>
+        
+        <option value="namespaceKuit.html">Kuit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced internationalization framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5I18n)
+target_link_libraries(yourapp KF5::I18n)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KI18n </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ki18n-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KI18n on <a href="https://cgit.kde.org/ki18n-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KI18n </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KLocalizedString">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classKLocalizedString-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KLocalizedString Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a11d6f2e2b731f48f878481bf912e5198"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a11d6f2e2b731f48f878481bf912e5198">KLocalizedString</a> ()</td></tr>
+<tr class="separator:a11d6f2e2b731f48f878481bf912e5198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38dc318ba1f49733cf78c8761b4dbf7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a38dc318ba1f49733cf78c8761b4dbf7d">KLocalizedString</a> (const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;rhs)</td></tr>
+<tr class="separator:a38dc318ba1f49733cf78c8761b4dbf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2890336f66a5edd1ad80a04bec855fbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a2890336f66a5edd1ad80a04bec855fbf">~KLocalizedString</a> ()</td></tr>
+<tr class="separator:a2890336f66a5edd1ad80a04bec855fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8018712932b62271e0bdd6b29632d311"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a8018712932b62271e0bdd6b29632d311">ignoreMarkup</a> () const</td></tr>
+<tr class="separator:a8018712932b62271e0bdd6b29632d311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151066e1e9ffe55bb3c58fcd4f970900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a151066e1e9ffe55bb3c58fcd4f970900">inContext</a> (const QString &amp;key, const QString &amp;value) const</td></tr>
+<tr class="separator:a151066e1e9ffe55bb3c58fcd4f970900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c4e3ab9e14c5cc28baf2214f0301ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ac6c4e3ab9e14c5cc28baf2214f0301ae">isEmpty</a> () const</td></tr>
+<tr class="separator:ac6c4e3ab9e14c5cc28baf2214f0301ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9471d953a9bab7074dc142bb1f33896b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a9471d953a9bab7074dc142bb1f33896b">operator=</a> (const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;rhs)</td></tr>
+<tr class="separator:a9471d953a9bab7074dc142bb1f33896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce490e267cbe76cdea52b8d1c4177cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#adce490e267cbe76cdea52b8d1c4177cf">relaxSubs</a> () const</td></tr>
+<tr class="separator:adce490e267cbe76cdea52b8d1c4177cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42dbcbdfedf9668a0029cd19c1889ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ad42dbcbdfedf9668a0029cd19c1889ca">subs</a> (int a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:ad42dbcbdfedf9668a0029cd19c1889ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1d5354646eaa8994be0187ed876ffb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a6c1d5354646eaa8994be0187ed876ffb">subs</a> (uint a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a6c1d5354646eaa8994be0187ed876ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8d42231ea2025290ef8c46cd59eda2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#aaf8d42231ea2025290ef8c46cd59eda2">subs</a> (long a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:aaf8d42231ea2025290ef8c46cd59eda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c74929fa6262faf3258ea7bb64b3d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a24c74929fa6262faf3258ea7bb64b3d2">subs</a> (ulong a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a24c74929fa6262faf3258ea7bb64b3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71c537ef9cc53ad55c7851c7746a564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#af71c537ef9cc53ad55c7851c7746a564">subs</a> (qlonglong a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:af71c537ef9cc53ad55c7851c7746a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ab991d9c503d71b939dce7ba35bdfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a66ab991d9c503d71b939dce7ba35bdfe">subs</a> (qulonglong a, int fieldWidth=0, int base=10, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a66ab991d9c503d71b939dce7ba35bdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0452dcf27f08d6baa4d60a1fedc025d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a0452dcf27f08d6baa4d60a1fedc025d4">subs</a> (double a, int fieldWidth=0, char format='g', int precision=-1, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a0452dcf27f08d6baa4d60a1fedc025d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755afe8c1981f6a7956ecd99ea325401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a755afe8c1981f6a7956ecd99ea325401">subs</a> (QChar a, int fieldWidth=0, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a755afe8c1981f6a7956ecd99ea325401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a57c0ec3bdf9ea1cdb46332f538323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a80a57c0ec3bdf9ea1cdb46332f538323">subs</a> (const QString &amp;a, int fieldWidth=0, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:a80a57c0ec3bdf9ea1cdb46332f538323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad781f2f9664e7f9fa7fa9663cff57417"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ad781f2f9664e7f9fa7fa9663cff57417">subs</a> (const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;a, int fieldWidth=0, QChar fillChar=QLatin1Char(' ')) const</td></tr>
+<tr class="separator:ad781f2f9664e7f9fa7fa9663cff57417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce655136d85997c70d734fb1587bd9b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a2ce655136d85997c70d734fb1587bd9b">toString</a> () const</td></tr>
+<tr class="separator:a2ce655136d85997c70d734fb1587bd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace71f7ae90b610302b5b9c0677c5abef"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ace71f7ae90b610302b5b9c0677c5abef">toString</a> (const QStringList &amp;<a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003">languages</a>) const</td></tr>
+<tr class="separator:ace71f7ae90b610302b5b9c0677c5abef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6e5af25354856eb1405e60614af085"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#aac6e5af25354856eb1405e60614af085">toString</a> (const char *domain) const</td></tr>
+<tr class="separator:aac6e5af25354856eb1405e60614af085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac014a5bc47507621d999af65dbe8f19c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ac014a5bc47507621d999af65dbe8f19c">toString</a> (<a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a> format) const</td></tr>
+<tr class="separator:ac014a5bc47507621d999af65dbe8f19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2127e035e25c337bfcfc46b1d3a297e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a2127e035e25c337bfcfc46b1d3a297e7">withDomain</a> (const char *domain) const</td></tr>
+<tr class="separator:a2127e035e25c337bfcfc46b1d3a297e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74849152f26c205f5f15101cad8e27ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a74849152f26c205f5f15101cad8e27ce">withFormat</a> (<a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a> format) const</td></tr>
+<tr class="separator:a74849152f26c205f5f15101cad8e27ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c45b45fe93896c662498146d79a424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a78c45b45fe93896c662498146d79a424">withLanguages</a> (const QStringList &amp;<a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003">languages</a>) const</td></tr>
+<tr class="separator:a78c45b45fe93896c662498146d79a424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a16b65aa9d637c5022a7553f0b4094f67"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a16b65aa9d637c5022a7553f0b4094f67">applicationDomain</a> ()</td></tr>
+<tr class="separator:a16b65aa9d637c5022a7553f0b4094f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d3bdf7a197c4e3d74e6dc22e766d80"><td class="memItemLeft" align="right" valign="top">static QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#aa2d3bdf7a197c4e3d74e6dc22e766d80">availableApplicationTranslations</a> ()</td></tr>
+<tr class="separator:aa2d3bdf7a197c4e3d74e6dc22e766d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8c286dff773929ac41e709c3ff5222"><td class="memItemLeft" align="right" valign="top">static QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a0f8c286dff773929ac41e709c3ff5222">availableDomainTranslations</a> (const QByteArray &amp;domain)</td></tr>
+<tr class="separator:a0f8c286dff773929ac41e709c3ff5222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae257d4e2cf003f1ff3ad9e4f35f3a716"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ae257d4e2cf003f1ff3ad9e4f35f3a716">clearLanguages</a> ()</td></tr>
+<tr class="separator:ae257d4e2cf003f1ff3ad9e4f35f3a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd7132aff69669f2b3ec2def6d0de86"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a9dd7132aff69669f2b3ec2def6d0de86">insertQtDomain</a> (const char *domain)</td></tr>
+<tr class="separator:a9dd7132aff69669f2b3ec2def6d0de86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cc6c52bbb5228bec07d6da8032b16d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#af0cc6c52bbb5228bec07d6da8032b16d">isApplicationTranslatedInto</a> (const QString &amp;language)</td></tr>
+<tr class="separator:af0cc6c52bbb5228bec07d6da8032b16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcf3b7bfa06a83b80dba21af305f003"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003">languages</a> ()</td></tr>
+<tr class="separator:a1fcf3b7bfa06a83b80dba21af305f003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3783117e93b53529a2d60690ef5f0e"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a3d3783117e93b53529a2d60690ef5f0e">localizedFilePath</a> (const QString &amp;filePath)</td></tr>
+<tr class="separator:a3d3783117e93b53529a2d60690ef5f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948c9c72b7e8fd01bc742ce76b8439e1"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a948c9c72b7e8fd01bc742ce76b8439e1">removeAcceleratorMarker</a> (const QString &amp;label)</td></tr>
+<tr class="separator:a948c9c72b7e8fd01bc742ce76b8439e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfe4ff7d94e96c8265127e247341195"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a2dfe4ff7d94e96c8265127e247341195">removeQtDomain</a> (const char *domain)</td></tr>
+<tr class="separator:a2dfe4ff7d94e96c8265127e247341195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad866b11bf396b9d93b7dc313a1930b7b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b">setApplicationDomain</a> (const char *domain)</td></tr>
+<tr class="separator:ad866b11bf396b9d93b7dc313a1930b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc41e7689dc48400e5c28192aaa40b5c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#adc41e7689dc48400e5c28192aaa40b5c">setLanguages</a> (const QStringList &amp;<a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003">languages</a>)</td></tr>
+<tr class="separator:adc41e7689dc48400e5c28192aaa40b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af48616df5bf46eb5e40c9136189e3c"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a7af48616df5bf46eb5e40c9136189e3c">translateQt</a> (const char *context, const char *text, const char *comment, int n)</td></tr>
+<tr class="separator:a7af48616df5bf46eb5e40c9136189e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2436c0aaeb52c95fdd3da220ccd39854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a2436c0aaeb52c95fdd3da220ccd39854">ki18n</a> (const char *text)</td></tr>
+<tr class="separator:a2436c0aaeb52c95fdd3da220ccd39854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bd4bdd21557ffb2df84df87f6e1986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ab1bd4bdd21557ffb2df84df87f6e1986">ki18nc</a> (const char *context, const char *text)</td></tr>
+<tr class="separator:ab1bd4bdd21557ffb2df84df87f6e1986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bc81062c8670e54a23d01b4a00f56e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a73bc81062c8670e54a23d01b4a00f56e">ki18ncp</a> (const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a73bc81062c8670e54a23d01b4a00f56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17edd286c0b63f5e36417eba4a8e7ce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a17edd286c0b63f5e36417eba4a8e7ce9">ki18nd</a> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a17edd286c0b63f5e36417eba4a8e7ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91635b1edb372370deb3703f4bb800d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a91635b1edb372370deb3703f4bb800d1">ki18ndc</a> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:a91635b1edb372370deb3703f4bb800d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ac261ca74304b6ef5e20d63aade685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a98ac261ca74304b6ef5e20d63aade685">ki18ndcp</a> (const char *domain, const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a98ac261ca74304b6ef5e20d63aade685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2ff7eb3c7499abc84854263825934a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#afb2ff7eb3c7499abc84854263825934a">ki18ndp</a> (const char *domain, const char *singular, const char *plural)</td></tr>
+<tr class="separator:afb2ff7eb3c7499abc84854263825934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081851d1d0bb4cb20393ae9bdb919df3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a081851d1d0bb4cb20393ae9bdb919df3">ki18np</a> (const char *singular, const char *plural)</td></tr>
+<tr class="separator:a081851d1d0bb4cb20393ae9bdb919df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0476bb74730bc6b6d085d22b96eca98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ab0476bb74730bc6b6d085d22b96eca98">kxi18n</a> (const char *text)</td></tr>
+<tr class="separator:ab0476bb74730bc6b6d085d22b96eca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33ce42696f558d20a27f19949acc1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#af33ce42696f558d20a27f19949acc1cf">kxi18nc</a> (const char *context, const char *text)</td></tr>
+<tr class="separator:af33ce42696f558d20a27f19949acc1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479fc87f3703d2e470543e7c73956623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a479fc87f3703d2e470543e7c73956623">kxi18ncp</a> (const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a479fc87f3703d2e470543e7c73956623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427f572ed2044dec2dce2498fa7fd0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a427f572ed2044dec2dce2498fa7fd0e0">kxi18nd</a> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a427f572ed2044dec2dce2498fa7fd0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3b09fb5651e7853650a9e888d2e15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#aca3b09fb5651e7853650a9e888d2e15c">kxi18ndc</a> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:aca3b09fb5651e7853650a9e888d2e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa40f5d1a3f7cb5ebf3ce445c78d079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a4aa40f5d1a3f7cb5ebf3ce445c78d079">kxi18ndcp</a> (const char *domain, const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a4aa40f5d1a3f7cb5ebf3ce445c78d079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03f80c103e996d89f3a1ac1bc363f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#ad03f80c103e996d89f3a1ac1bc363f86">kxi18ndp</a> (const char *domain, const char *singular, const char *plural)</td></tr>
+<tr class="separator:ad03f80c103e996d89f3a1ac1bc363f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15206c846fe091b9317be3f4df3c3ba8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html#a15206c846fe091b9317be3f4df3c3ba8">kxi18np</a> (const char *singular, const char *plural)</td></tr>
+<tr class="separator:a15206c846fe091b9317be3f4df3c3ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for producing and handling localized messages. </p>
+<p><code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> handles translation and argument substitution and formatting of user-visible text.</p>
+<p><code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> instances are usually not constructed directly, but through one of the wrapper <code>*i18n*</code> calls.</p>
+<p>For detailed information on how to use KI18n functions please refer to <a class="el" href="prg_guide.html">Programmer's Guide</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l00086">86</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a11d6f2e2b731f48f878481bf912e5198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d6f2e2b731f48f878481bf912e5198">&#9670;&nbsp;</a></span>KLocalizedString() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLocalizedString::KLocalizedString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct an empty message. </p>
+<p>Direct construction is used when another <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> instance, obtained by one of <code>ki18n*</code> calls, should later be assigned to directly constructed instance. Before the assignment happens, directly constructed instance is not valid for finalization by <code>toString</code> methods.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#ac6c4e3ab9e14c5cc28baf2214f0301ae" title="Check whether the message is empty. ">isEmpty</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00365">365</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38dc318ba1f49733cf78c8761b4dbf7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38dc318ba1f49733cf78c8761b4dbf7d">&#9670;&nbsp;</a></span>KLocalizedString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLocalizedString::KLocalizedString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00388">388</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2890336f66a5edd1ad80a04bec855fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2890336f66a5edd1ad80a04bec855fbf">&#9670;&nbsp;</a></span>~KLocalizedString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLocalizedString::~KLocalizedString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00401">401</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a16b65aa9d637c5022a7553f0b4094f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b65aa9d637c5022a7553f0b4094f67">&#9670;&nbsp;</a></span>applicationDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KLocalizedString::applicationDomain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the application's main translation domain. </p>
+<p>Returns the domain set by <code>setApplicationDomain</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01266">1266</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2d3bdf7a197c4e3d74e6dc22e766d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d3bdf7a197c4e3d74e6dc22e766d80">&#9670;&nbsp;</a></span>availableApplicationTranslations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSet&lt; QString &gt; KLocalizedString::availableApplicationTranslations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>5.0</dd></dl>
+<p>Get the languages for which there exists the translation catalog file for the set application translation domain.</p>
+<p>The application domain is set by <code>setApplicationDomain</code>. If the application domain was not set, empty set is returned. If the application domain was set, the language set will always contain at least the source code language (<code>en_US</code>).</p>
+<dl class="section return"><dt>Returns</dt><dd>set of language codes for existing translation catalogs </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">setApplicationDomain</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01306">1306</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0f8c286dff773929ac41e709c3ff5222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8c286dff773929ac41e709c3ff5222">&#9670;&nbsp;</a></span>availableDomainTranslations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSet&lt; QString &gt; KLocalizedString::availableDomainTranslations </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>5.0</dd></dl>
+<p>Get the languages for which a translation catalog file for the passed translation domain exists.</p>
+<p>If the translation domain was not specified in the domain parameter an empty set is returned.</p>
+<p>If the application domain was set, the language set will always contain at least the source code language (<code>en_US</code>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>query for translations of a specific domain, if an empty QByteArray is passed, an empty set will be returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>set of language codes for existing translation catalogs </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">setApplicationDomain</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#aa2d3bdf7a197c4e3d74e6dc22e766d80">availableApplicationTranslations</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01319">1319</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae257d4e2cf003f1ff3ad9e4f35f3a716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae257d4e2cf003f1ff3ad9e4f35f3a716">&#9670;&nbsp;</a></span>clearLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLocalizedString::clearLanguages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear override languages. </p>
+<p>This clears the override languages, going back to those provided by the locale.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#adc41e7689dc48400e5c28192aaa40b5c" title="Set the languages for which translations will be made. ">setLanguages</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003" title="Get the languages for which translations will be made. ">languages</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01289">1289</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8018712932b62271e0bdd6b29632d311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8018712932b62271e0bdd6b29632d311">&#9670;&nbsp;</a></span>ignoreMarkup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::ignoreMarkup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not resolve KUIT markup. </p>
+<p>If the message is markup-aware (constructed by one of <code>*xi18n*</code> calls), this function can be used to make it non-markup-aware. This may be useful for debugging markup.</p>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01250">1250</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a151066e1e9ffe55bb3c58fcd4f970900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151066e1e9ffe55bb3c58fcd4f970900">&#9670;&nbsp;</a></span>inContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::inContext </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add dynamic context to the message. </p>
+<p>See dyn_ctxt for use cases.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>context key </td></tr>
+    <tr><td class="paramname">value</td><td>context value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01235">1235</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9dd7132aff69669f2b3ec2def6d0de86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd7132aff69669f2b3ec2def6d0de86">&#9670;&nbsp;</a></span>insertQtDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLocalizedString::insertQtDomain </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add another domain to search for Qt translations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the translation domain to add</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#a7af48616df5bf46eb5e40c9136189e3c" title="Translate a message with Qt semantics. ">translateQt</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#a2dfe4ff7d94e96c8265127e247341195" title="Remove a domain from Qt translation lookup. ">removeQtDomain</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01527">1527</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af0cc6c52bbb5228bec07d6da8032b16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cc6c52bbb5228bec07d6da8032b16d">&#9670;&nbsp;</a></span>isApplicationTranslatedInto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KLocalizedString::isApplicationTranslatedInto </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>language</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether the translation catalog file in the given language for the set application translation domain exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>the language code to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the translation catalog for <code>language</code> exits, <code>false</code> otherwise </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">setApplicationDomain</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01298">1298</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6c4e3ab9e14c5cc28baf2214f0301ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c4e3ab9e14c5cc28baf2214f0301ae">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KLocalizedString::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the message is empty. </p>
+<p>The message is considered empty if the object was constructed via the default constructor.</p>
+<p>Empty messages are not valid for finalization. The behavior of calling <code>toString</code> on them is undefined. In debug mode, an error mark may appear in the returned string.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the message is empty, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00406">406</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fcf3b7bfa06a83b80dba21af305f003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcf3b7bfa06a83b80dba21af305f003">&#9670;&nbsp;</a></span>languages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KLocalizedString::languages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the languages for which translations will be made. </p>
+<p>Returned languages are ordered with decreasing priority.</p>
+<dl class="section return"><dt>Returns</dt><dd>languages ordered list of language codes </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#adc41e7689dc48400e5c28192aaa40b5c" title="Set the languages for which translations will be made. ">setLanguages</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#ae257d4e2cf003f1ff3ad9e4f35f3a716" title="Clear override languages. ">clearLanguages</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.20.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01273">1273</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d3783117e93b53529a2d60690ef5f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3783117e93b53529a2d60690ef5f0e">&#9670;&nbsp;</a></span>localizedFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::localizedFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a path to the localized file for the given original path. </p>
+<p>This is intended mainly for non-text resources (images, sounds, etc). Text resources should be handled in more specific ways.</p>
+<p>Possible localized paths are checked in turn by priority of set languages, in form of <code>&lt;dirname&gt;/l10n/&lt;lang&gt;/&lt;basename&gt;</code>, where <code>&lt;dirname&gt;</code> and <code>&lt;basename&gt;</code> are those of the original path, and <code>&lt;lang&gt;</code> is the language code.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>path to the original file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>path to the localized file if found, original path otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01421">1421</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9471d953a9bab7074dc142bb1f33896b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9471d953a9bab7074dc142bb1f33896b">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp; KLocalizedString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assignment operator. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00393">393</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adce490e267cbe76cdea52b8d1c4177cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce490e267cbe76cdea52b8d1c4177cf">&#9670;&nbsp;</a></span>relaxSubs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::relaxSubs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relax matching between placeholders and arguments. </p>
+<p>Normally the placeholders should start from %1 and have no gaps, and on finalization there must be exactly as many arguments supplied through <code>subs</code> methods as there are unique plaecholders. If this is not satisfied, in debug mode warnings are printed and the finalized string may contain error marks.</p>
+<p>This method relaxes the placeholder-argument matching, such that there must only be an argument available for every present unique placeholder (taking placeholder numbers to be 1-based indices into the argument list). This can come useful in some situations.</p>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01243">1243</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a948c9c72b7e8fd01bc742ce76b8439e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948c9c72b7e8fd01bc742ce76b8439e1">&#9670;&nbsp;</a></span>removeAcceleratorMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::removeAcceleratorMarker </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove accelerator marker from a UI text label. </p>
+<p>Accelerator marker is not always a plain ampersand (&amp;), so it is not enough to just remove it by <code>QString::remove</code>. The label may contain escaped markers ("&amp;&amp;") which must be resolved and skipped, as well as CJK-style markers ("Foo (&amp;F)") where the whole parenthesis construct should be removed. Therefore always use this function to remove accelerator marker from UI labels.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>UI label which may contain an accelerator marker </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>label without the accelerator marker </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01450">1450</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2dfe4ff7d94e96c8265127e247341195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfe4ff7d94e96c8265127e247341195">&#9670;&nbsp;</a></span>removeQtDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLocalizedString::removeQtDomain </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a domain from Qt translation lookup. </p>
+<p>To really remove the domain, this function must be invoked at least as many times as <code>insertQtDomain</code> was invoked to add this domain. This makes it safe to always use paired insertion/removal calls, without pulling out a domain underneath an unrelated piece of code that uses it as well.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the translation domain to remove</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKLocalizedString.html#a7af48616df5bf46eb5e40c9136189e3c" title="Translate a message with Qt semantics. ">translateQt</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#a9dd7132aff69669f2b3ec2def6d0de86" title="Add another domain to search for Qt translations. ">insertQtDomain</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01544">1544</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad866b11bf396b9d93b7dc313a1930b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad866b11bf396b9d93b7dc313a1930b7b">&#9670;&nbsp;</a></span>setApplicationDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLocalizedString::setApplicationDomain </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the given domain as application's main domain. </p>
+<p>This function must be called in applications, in order to have any translations at all. It should never be called in libraries. This allows to check whether the application is translated into a given language, so that if it is not, translations from underlying libraries will not appear even if they are translated. This prevents mixing of translated and untranslated text in the user interface.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the translation domain of the application </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01257">1257</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc41e7689dc48400e5c28192aaa40b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc41e7689dc48400e5c28192aaa40b5c">&#9670;&nbsp;</a></span>setLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLocalizedString::setLanguages </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>languages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the languages for which translations will be made. </p>
+<p>This overrides the languages provided by the locale. Languages should be ordered with decreasing priority.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languages</td><td>ordered list of language codes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>setLocale </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#ae257d4e2cf003f1ff3ad9e4f35f3a716" title="Clear override languages. ">clearLanguages</a> </dd>
+<dd>
+<a class="el" href="classKLocalizedString.html#a1fcf3b7bfa06a83b80dba21af305f003" title="Get the languages for which translations will be made. ">languages</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01280">1280</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad42dbcbdfedf9668a0029cd19c1889ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42dbcbdfedf9668a0029cd19c1889ca">&#9670;&nbsp;</a></span>subs() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute an int argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01127">1127</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c1d5354646eaa8994be0187ed876ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1d5354646eaa8994be0187ed876ffb">&#9670;&nbsp;</a></span>subs() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute an unsigned int argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01137">1137</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf8d42231ea2025290ef8c46cd59eda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8d42231ea2025290ef8c46cd59eda2">&#9670;&nbsp;</a></span>subs() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute a long argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01147">1147</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a24c74929fa6262faf3258ea7bb64b3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c74929fa6262faf3258ea7bb64b3d2">&#9670;&nbsp;</a></span>subs() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute an unsigned long argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01157">1157</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af71c537ef9cc53ad55c7851c7746a564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71c537ef9cc53ad55c7851c7746a564">&#9670;&nbsp;</a></span>subs() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">qlonglong&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute a long long argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01167">1167</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66ab991d9c503d71b939dce7ba35bdfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ab991d9c503d71b939dce7ba35bdfe">&#9670;&nbsp;</a></span>subs() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">qulonglong&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute an unsigned long long argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">base</td><td>the radix used to represent the number as a string. Valid values range from 2 to 36 </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01177">1177</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0452dcf27f08d6baa4d60a1fedc025d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0452dcf27f08d6baa4d60a1fedc025d4">&#9670;&nbsp;</a></span>subs() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>format</em> = <code>'g'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute a double argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">format</td><td>type of floating point formating, like in QString::arg </td></tr>
+    <tr><td class="paramname">precision</td><td>number of digits after the decimal separator </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01187">1187</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a755afe8c1981f6a7956ecd99ea325401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755afe8c1981f6a7956ecd99ea325401">&#9670;&nbsp;</a></span>subs() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute a <code>QChar</code> argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01197">1197</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a80a57c0ec3bdf9ea1cdb46332f538323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a57c0ec3bdf9ea1cdb46332f538323">&#9670;&nbsp;</a></span>subs() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute a <code>QString</code> argument into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01208">1208</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad781f2f9664e7f9fa7fa9663cff57417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad781f2f9664e7f9fa7fa9663cff57417">&#9670;&nbsp;</a></span>subs() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::subs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>fillChar</em> = <code>QLatin1Char('&#160;')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitute another <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> into the message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the argument </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>width of the formatted field, padded by spaces. Positive value aligns right, negative aligns left </td></tr>
+    <tr><td class="paramname">fillChar</td><td>the character used to fill up the empty places when field width is greater than argument width </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01219">1219</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ce655136d85997c70d734fb1587bd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce655136d85997c70d734fb1587bd9b">&#9670;&nbsp;</a></span>toString() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalize the translation. </p>
+<p>Creates translated <code>QString</code>, with placeholders substituted by arguments given by <code><a class="el" href="classKLocalizedString.html#ad42dbcbdfedf9668a0029cd19c1889ca" title="Substitute an int argument into the message. ">KLocalizedString::subs</a></code> methods. Translated text is searched for and arguments are formatted based on the global locale.</p>
+<p>If there was any mismatch between placeholders and arguments, in debug mode the returned string may contain error marks.</p>
+<dl class="section return"><dt>Returns</dt><dd>finalized translation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00478">478</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace71f7ae90b610302b5b9c0677c5abef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace71f7ae90b610302b5b9c0677c5abef">&#9670;&nbsp;</a></span>toString() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::toString </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>languages</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Like <code>toString</code>, but look for translation only in given languages. </p>
+<p>Given languages override languages defined by the global locale, and any languages set earlier using <code>withLanguages</code>. If <code>languages</code> is empty, original message is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languages</td><td>list of language codes (by decreasing priority) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>finalized translation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00488">488</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac6e5af25354856eb1405e60614af085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6e5af25354856eb1405e60614af085">&#9670;&nbsp;</a></span>toString() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::toString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Like <code>toString</code>, but look for translation in the given domain. </p>
+<p>Given domain overrides any set earlier using <code>withDomain</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the translation domain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>finalized translation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00483">483</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac014a5bc47507621d999af65dbe8f19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac014a5bc47507621d999af65dbe8f19c">&#9670;&nbsp;</a></span>toString() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Like <code>toString</code>, but resolve KUIT markup into given visual format. </p>
+<p>Given visual format overrides that implied by the context UI marker or set earlier using <code>withFormat</code>. If the message is not markup-aware, this is same as <code>toString</code> without arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>the target visual format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>finalized translation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l00493">493</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7af48616df5bf46eb5e40c9136189e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af48616df5bf46eb5e40c9136189e3c">&#9670;&nbsp;</a></span>translateQt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedString::translateQt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Translate a message with Qt semantics. </p>
+<p>This functions provides a capability to derive a Qt translator from <code>QTranslator</code> and draw translations from PO catalogs of given domain. All domains added with <code>insertQtDomain</code> are checked for translation, in undefined order. No Ki18n-specific processing is performed (formatting, scripting, etc).</p>
+<dl class="section see"><dt>See also</dt><dd>QTranslator</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use Qt's native i18n system, Qt Linguist, with roundtrip TS-&gt;PO-&gt;TS through Qt's <code>lupdate</code> and <code>lconvert</code> commands. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01455">1455</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2127e035e25c337bfcfc46b1d3a297e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2127e035e25c337bfcfc46b1d3a297e7">&#9670;&nbsp;</a></span>withDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::withDomain </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate to look for translation in the given domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the translation domain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01113">1113</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a74849152f26c205f5f15101cad8e27ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74849152f26c205f5f15101cad8e27ce">&#9670;&nbsp;</a></span>withFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::withFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate to resolve KUIT markup into given visual format. </p>
+<p>If the message is not markup-aware, this has no effect.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>the target visual format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01120">1120</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a78c45b45fe93896c662498146d79a424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c45b45fe93896c662498146d79a424">&#9670;&nbsp;</a></span>withLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KLocalizedString::withLanguages </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>languages</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate to look for translation only in given languages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languages</td><td>list of language codes (by decreasing priority) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>updated <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01106">1106</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a2436c0aaeb52c95fdd3da220ccd39854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2436c0aaeb52c95fdd3da220ccd39854">&#9670;&nbsp;</a></span>ki18n</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01557">1557</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1bd4bdd21557ffb2df84df87f6e1986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bd4bdd21557ffb2df84df87f6e1986">&#9670;&nbsp;</a></span>ki18nc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18nc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01562">1562</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73bc81062c8670e54a23d01b4a00f56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73bc81062c8670e54a23d01b4a00f56e">&#9670;&nbsp;</a></span>ki18ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ncp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01572">1572</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17edd286c0b63f5e36417eba4a8e7ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17edd286c0b63f5e36417eba4a8e7ce9">&#9670;&nbsp;</a></span>ki18nd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01578">1578</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91635b1edb372370deb3703f4bb800d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91635b1edb372370deb3703f4bb800d1">&#9670;&nbsp;</a></span>ki18ndc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01583">1583</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a98ac261ca74304b6ef5e20d63aade685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ac261ca74304b6ef5e20d63aade685">&#9670;&nbsp;</a></span>ki18ndcp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndcp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01595">1595</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb2ff7eb3c7499abc84854263825934a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2ff7eb3c7499abc84854263825934a">&#9670;&nbsp;</a></span>ki18ndp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01589">1589</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a081851d1d0bb4cb20393ae9bdb919df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081851d1d0bb4cb20393ae9bdb919df3">&#9670;&nbsp;</a></span>ki18np</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18np </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01567">1567</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab0476bb74730bc6b6d085d22b96eca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0476bb74730bc6b6d085d22b96eca98">&#9670;&nbsp;</a></span>kxi18n</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01601">1601</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af33ce42696f558d20a27f19949acc1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33ce42696f558d20a27f19949acc1cf">&#9670;&nbsp;</a></span>kxi18nc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18nc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01606">1606</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a479fc87f3703d2e470543e7c73956623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479fc87f3703d2e470543e7c73956623">&#9670;&nbsp;</a></span>kxi18ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ncp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string. </p>
+<p>with context and plural.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01616">1616</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a427f572ed2044dec2dce2498fa7fd0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427f572ed2044dec2dce2498fa7fd0e0">&#9670;&nbsp;</a></span>kxi18nd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01622">1622</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aca3b09fb5651e7853650a9e888d2e15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3b09fb5651e7853650a9e888d2e15c">&#9670;&nbsp;</a></span>kxi18ndc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01627">1627</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4aa40f5d1a3f7cb5ebf3ce445c78d079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa40f5d1a3f7cb5ebf3ce445c78d079">&#9670;&nbsp;</a></span>kxi18ndcp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndcp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01639">1639</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad03f80c103e996d89f3a1ac1bc363f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03f80c103e996d89f3a1ac1bc363f86">&#9670;&nbsp;</a></span>kxi18ndp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01633">1633</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15206c846fe091b9317be3f4df3c3ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15206c846fe091b9317be3f4df3c3ba8">&#9670;&nbsp;</a></span>kxi18np</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18np </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01611">1611</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a></li>
+<li><a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:07 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

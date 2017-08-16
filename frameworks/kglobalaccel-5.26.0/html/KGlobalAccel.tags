@@ -1,0 +1,794 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>KdeDGlobalAccel::Component</name>
+    <filename>classKdeDGlobalAccel_1_1Component.html</filename>
+    <member kind="signal">
+      <type>Q_SCRIPTABLE void</type>
+      <name>globalShortcutPressed</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a1f2a3bf0ed36fa2f5659e37ebdf3454c</anchor>
+      <arglist>(const QString &amp;componentUnique, const QString &amp;shortcutUnique, qlonglong timestamp)</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QList&lt; KGlobalShortcutInfo &gt;</type>
+      <name>allShortcutInfos</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>ad5f6f812edf1329695be9c438775da81</anchor>
+      <arglist>(const QString &amp;context=&quot;default&quot;) const</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual Q_SCRIPTABLE bool</type>
+      <name>cleanUp</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>ade8f54592f26212d364e1b824f1bebd6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QStringList</type>
+      <name>getShortcutContexts</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a8852d7f3d88ab97868795a9aa1f0d128</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE bool</type>
+      <name>isActive</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>af0670a457573784399f52a0a096fa816</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QStringList</type>
+      <name>shortcutNames</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>aebd746d303cee26f86edad8e2f1f8463</anchor>
+      <arglist>(const QString &amp;context=&quot;default&quot;) const</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Component</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a1120fe45611243afd73c1b78485efa51</anchor>
+      <arglist>(const QString &amp;uniqueName, const QString &amp;friendlyName, GlobalShortcutsRegistry *registry=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; GlobalShortcut * &gt;</type>
+      <name>allShortcuts</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>adc35cfac957429badddf6ab2c7ca49e5</anchor>
+      <arglist>(const QString &amp;context=QStringLiteral(&quot;default&quot;)) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>createGlobalShortcutContext</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a06fa6a55710fd19bb2e41b319f7b8e7b</anchor>
+      <arglist>(const QString &amp;context, const QString &amp;friendlyName=QString())</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcutContext *</type>
+      <name>currentContext</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a90c62481b963ff64886b02ccbd890a89</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>dbusPath</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a9dfac92c820ee38fb680befda0e47348</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>deactivateShortcuts</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>af413fa41fcec245dbb02ef4b5bcd47a6</anchor>
+      <arglist>(bool temporarily=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>friendlyName</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a172444c38c3024602b3b1ca26881b9c0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>getShortcutByKey</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>ae5e502e60b9197899201b7d47899c88d</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>getShortcutByName</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a948986a3bbcb7d9106adec6627dac5d7</anchor>
+      <arglist>(const QString &amp;uniqueName, const QString &amp;context=QStringLiteral(&quot;default&quot;)) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; GlobalShortcut * &gt;</type>
+      <name>getShortcutsByKey</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>aceaf65fbedddecf3625a1e265f1a7039</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isShortcutAvailable</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>af5ecdcf891ef87cc4a41a643598cb1b8</anchor>
+      <arglist>(int key, const QString &amp;component, const QString &amp;context) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>loadSettings</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a03bba67b94fd2bc9c69b1564930cb8b2</anchor>
+      <arglist>(KConfigGroup &amp;config)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setFriendlyName</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>aab03b2d02743704687f18770c4d67a09</anchor>
+      <arglist>(const QString &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcutContext *</type>
+      <name>shortcutContext</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a2ce078a1d1d9b3bed1415ecf154fa2a5</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>unregisterShortcut</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>a6343248280b652d8eddc85bf026e9e1e</anchor>
+      <arglist>(const QString &amp;uniqueName)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>GlobalShortcut *</type>
+      <name>registerShortcut</name>
+      <anchorfile>classKdeDGlobalAccel_1_1Component.html</anchorfile>
+      <anchor>afbb14346247767da50ee2839749894fa</anchor>
+      <arglist>(const QString &amp;uniqueName, const QString &amp;friendlyName, const QString &amp;shortcutString, const QString &amp;defaultShortcutString)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GlobalShortcut</name>
+    <filename>classGlobalShortcut.html</filename>
+    <member kind="function">
+      <type>GlobalShortcutContext *</type>
+      <name>context</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>aab5e92c37331c6250ce03023c6414223</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; int &gt;</type>
+      <name>defaultKeys</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a575a7428740c10e6dcf0ebf67ea88e1a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>friendlyName</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>aed3b33c7d319cf909ab6ead32b74fa3c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isActive</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a3cd28768334f8f6f3e34aac9b3a99c1c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFresh</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>ae0854876795af697116c3aaf00eeb57a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPresent</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>ab06db8d4df974e622c1cf66262f49a43</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSessionShortcut</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a59ac805237776d56b716c47a842e9227</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; int &gt;</type>
+      <name>keys</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a8f4439900081e51652dc59efec607ced</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setActive</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a317e609a017ed0a6f30a14021e8739e3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDefaultKeys</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a9ffec2f29440891e30deb153f89b5703</anchor>
+      <arglist>(const QList&lt; int &gt;)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setFriendlyName</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>ad281ae450157ec0613d02ee98bc1715b</anchor>
+      <arglist>(const QString &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setInactive</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>aa84936fb1cc542d6063455d07dbca625</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setKeys</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a18df0ca0ab1e1a5e884b409f0bc03042</anchor>
+      <arglist>(const QList&lt; int &gt;)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>uniqueName</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a2522c5ca120d06b1554ae3a01b1562df</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>unRegister</name>
+      <anchorfile>classGlobalShortcut.html</anchorfile>
+      <anchor>a333304f739d75b6445d4ada9cee4e7e7</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GlobalShortcutContext</name>
+    <filename>classGlobalShortcutContext.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>GlobalShortcutContext</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>a9863777273805c136f5966a56d1a43c3</anchor>
+      <arglist>(const QString &amp;uniqueName, const QString &amp;friendlyName, KdeDGlobalAccel::Component *component)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~GlobalShortcutContext</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>a19bda337629740fb6ae702246befd5dd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addShortcut</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>a496145f07e6ee1cd864ce9df82589a68</anchor>
+      <arglist>(GlobalShortcut *shortcut)</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; KGlobalShortcutInfo &gt;</type>
+      <name>allShortcutInfos</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>ae24997fa3eb56775bc33a1c21fef451a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>getShortcutByKey</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>aaa6606d813acb53f3117ed47be3cd2eb</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>takeShortcut</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>a9a46e8c0ce9187e086a02948f3bd07bf</anchor>
+      <arglist>(GlobalShortcut *shortcut)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>uniqueName</name>
+      <anchorfile>classGlobalShortcutContext.html</anchorfile>
+      <anchor>a77190febebc1aa92454d288f6eaac503</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GlobalShortcutsRegistry</name>
+    <filename>classGlobalShortcutsRegistry.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>GlobalShortcutsRegistry</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>ad9bebcec055c25b7d95444fc11a7a72a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>activateShortcuts</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a5a1b4d31cae1bba45c355ca48c3d6b10</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; KdeDGlobalAccel::Component * &gt;</type>
+      <name>allMainComponents</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a2b29def5ebff640a995ace576f8e375b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>dbusPath</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a20e465e48b64b5c41aafe5263b44c97c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>deactivateShortcuts</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a8031eed90a04c9cca0d3025e87dfe9ad</anchor>
+      <arglist>(bool temporarily=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>getActiveShortcutByKey</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a9764ed81a6664eaaf5f69a0683949019</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalShortcut *</type>
+      <name>getShortcutByKey</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>a192602c1397d486ac33e46a5040e693c</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; GlobalShortcut * &gt;</type>
+      <name>getShortcutsByKey</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>ab90608ae1785e40269da27c35aa4fb84</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isShortcutAvailable</name>
+      <anchorfile>classGlobalShortcutsRegistry.html</anchorfile>
+      <anchor>ab5815d5a09620f947597f948cf27bd9b</anchor>
+      <arglist>(int shortcut, const QString &amp;component, const QString &amp;context) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KGlobalAccel</name>
+    <filename>classKGlobalAccel.html</filename>
+    <member kind="enumvalue">
+      <name>ActionFriendly</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdcaf78f17ca68699e618ae84533d5d75284</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>actionIdFields</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ComponentUnique</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca180d69efacca84d19357c3c023f6b8cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ActionUnique</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca8d80cbdf3a22c99fdd8a4f174de3c924</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ComponentFriendly</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca7f96d8852d07ba74f09b94b48fbf945e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ActionFriendly</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdcaf78f17ca68699e618ae84533d5d75284</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ActionUnique</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca8d80cbdf3a22c99fdd8a4f174de3c924</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Autoloading</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a67a4d8c0ab532da40e291903ee32a7a6a897ed9205b38a4b7a9d7439538a6ff10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ComponentFriendly</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca7f96d8852d07ba74f09b94b48fbf945e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ComponentUnique</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aea201c6329da4c6ab71f913496249fdca180d69efacca84d19357c3c023f6b8cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>GlobalShortcutLoading</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a67a4d8c0ab532da40e291903ee32a7a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Autoloading</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a67a4d8c0ab532da40e291903ee32a7a6a897ed9205b38a4b7a9d7439538a6ff10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoAutoloading</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a67a4d8c0ab532da40e291903ee32a7a6ad5211b18f41410079c2bc7ce7d68cbe1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoAutoloading</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a67a4d8c0ab532da40e291903ee32a7a6ad5211b18f41410079c2bc7ce7d68cbe1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>globalShortcutChanged</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aa37ca5066a2b9a72deb3663ac258b5a3</anchor>
+      <arglist>(QAction *action, const QKeySequence &amp;seq)</arglist>
+    </member>
+    <member kind="function">
+      <type>KGLOBALACCEL_DEPRECATED QList&lt; QStringList &gt;</type>
+      <name>allActionsForComponent</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>aa0b209d397c68b6931e1c87e87a99f8c</anchor>
+      <arglist>(const QStringList &amp;actionId)</arglist>
+    </member>
+    <member kind="function">
+      <type>KGLOBALACCEL_DEPRECATED QList&lt; QStringList &gt;</type>
+      <name>allMainComponents</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a030a619db702386209fd513fee235c81</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; QKeySequence &gt;</type>
+      <name>defaultShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>af52711531da2e326fd03b971b56c0801</anchor>
+      <arglist>(const QAction *action) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>eventFilter</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a3ce803814478f100e2e365bcff222922</anchor>
+      <arglist>(QObject *watched, QEvent *event) override</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; QKeySequence &gt;</type>
+      <name>globalShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>ad78c5ad1e253586e24abc582c7790ee8</anchor>
+      <arglist>(const QString &amp;componentName, const QString &amp;actionId) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a0b8438f3f3a19857b48f88d4b2956249</anchor>
+      <arglist>(const QAction *action) const</arglist>
+    </member>
+    <member kind="function">
+      <type>KGLOBALACCEL_DEPRECATED bool</type>
+      <name>isEnabled</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a724d6be87638fedd67b37708a99e7bc7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeAllShortcuts</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a6de204b8e4505b4103b9c99ab7a59b01</anchor>
+      <arglist>(QAction *action)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setDefaultShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a7faddb17af8078cf0819ed6f72cee97d</anchor>
+      <arglist>(QAction *action, const QList&lt; QKeySequence &gt; &amp;shortcut, GlobalShortcutLoading loadFlag=Autoloading)</arglist>
+    </member>
+    <member kind="function">
+      <type>KGLOBALACCEL_DEPRECATED void</type>
+      <name>setEnabled</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a9d355508d6f6e6a9e66f7ba68d19f389</anchor>
+      <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a66ce504227e7e563f24de4c6b26b0395</anchor>
+      <arglist>(QAction *action, const QList&lt; QKeySequence &gt; &amp;shortcut, GlobalShortcutLoading loadFlag=Autoloading)</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; QKeySequence &gt;</type>
+      <name>shortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a97ebb09b1cb2e84b67e819c7ad987892</anchor>
+      <arglist>(const QAction *action) const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>activateGlobalShortcutContext</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a8bbd513d912daa185a9e0e1516bba8fb</anchor>
+      <arglist>(const QString &amp;contextUnique, const QString &amp;contextFriendly, const QString &amp;programName)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>cleanComponent</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a315334d044a07a4a9ab51ba0c57950d4</anchor>
+      <arglist>(const QString &amp;componentUnique)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static KGLOBALACCEL_DEPRECATED QStringList</type>
+      <name>findActionNameSystemwide</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a01bb827414d6f753f87b24803edce44d</anchor>
+      <arglist>(const QKeySequence &amp;seq)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QList&lt; KGlobalShortcutInfo &gt;</type>
+      <name>getGlobalShortcutsByKey</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a0c340c7748b8592aa42f2e73b3c45d53</anchor>
+      <arglist>(const QKeySequence &amp;seq)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isComponentActive</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a1ec94906a618ef0a6718b62bd5fe0e20</anchor>
+      <arglist>(const QString &amp;componentName)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isGlobalShortcutAvailable</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a812384034fec796391b713bed85f5d84</anchor>
+      <arglist>(const QKeySequence &amp;seq, const QString &amp;component=QString())</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>promptStealShortcutSystemwide</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a164e00bfb58e626304b456385a860b69</anchor>
+      <arglist>(QWidget *parent, const QList&lt; KGlobalShortcutInfo &gt; &amp;shortcuts, const QKeySequence &amp;seq)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static KGLOBALACCEL_DEPRECATED bool</type>
+      <name>promptStealShortcutSystemwide</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a86c258e7d87a9a719e128710812966e8</anchor>
+      <arglist>(QWidget *parent, const QStringList &amp;actionIdentifier, const QKeySequence &amp;seq)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static KGlobalAccel *</type>
+      <name>self</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a367f5f4fdff7fe177f1a177244946abe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>setGlobalShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a919c995d4c4f55a0acd301636afc68de</anchor>
+      <arglist>(QAction *action, const QList&lt; QKeySequence &gt; &amp;shortcut)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>setGlobalShortcut</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a9c365b883969032cf60611f306390bc9</anchor>
+      <arglist>(QAction *action, const QKeySequence &amp;shortcut)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>stealShortcutSystemwide</name>
+      <anchorfile>classKGlobalAccel.html</anchorfile>
+      <anchor>a1da506114586146f69494e1ccc5cfd07</anchor>
+      <arglist>(const QKeySequence &amp;seq)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KGlobalAccelD</name>
+    <filename>classKGlobalAccelD.html</filename>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QList&lt; QDBusObjectPath &gt;</type>
+      <name>allComponents</name>
+      <anchorfile>classKGlobalAccelD.html</anchorfile>
+      <anchor>aef8f917acc00a747e14ee794456fcc36</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QDBusObjectPath</type>
+      <name>getComponent</name>
+      <anchorfile>classKGlobalAccelD.html</anchorfile>
+      <anchor>af6d20f0e83ead7196a6533fb9052a9e9</anchor>
+      <arglist>(const QString &amp;componentUnique) const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QList&lt; KGlobalShortcutInfo &gt;</type>
+      <name>getGlobalShortcutsByKey</name>
+      <anchorfile>classKGlobalAccelD.html</anchorfile>
+      <anchor>a6a1361ef80f4d6aecdd49deab0cc679a</anchor>
+      <arglist>(int key) const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE bool</type>
+      <name>isGlobalShortcutAvailable</name>
+      <anchorfile>classKGlobalAccelD.html</anchorfile>
+      <anchor>aeda18930cbdaa3996a928df59d2a7f3e</anchor>
+      <arglist>(int key, const QString &amp;component) const</arglist>
+    </member>
+    <member kind="slot">
+      <type>Q_SCRIPTABLE QT_DEPRECATED void</type>
+      <name>unRegister</name>
+      <anchorfile>classKGlobalAccelD.html</anchorfile>
+      <anchor>a491a4c753b4a8e45e33aa33bf94e9382</anchor>
+      <arglist>(const QStringList &amp;actionId)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KGlobalAccelImpl</name>
+    <filename>classKGlobalAccelImpl.html</filename>
+    <base>KGlobalAccelInterface</base>
+    <member kind="function">
+      <type>bool</type>
+      <name>grabKey</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>afb7d1c476c0632d4b4a7684c4e5c0799</anchor>
+      <arglist>(int key, bool grab)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>grabKey</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>afb7d1c476c0632d4b4a7684c4e5c0799</anchor>
+      <arglist>(int key, bool grab)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>grabKey</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>a8735ab4ba94ca7aa6bd968d9163684cf</anchor>
+      <arglist>(int key, bool grab) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEnabled</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>aa219fb972b73951c31dfd065b4e14e8c</anchor>
+      <arglist>(bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEnabled</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>aa219fb972b73951c31dfd065b4e14e8c</anchor>
+      <arglist>(bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEnabled</name>
+      <anchorfile>classKGlobalAccelImpl.html</anchorfile>
+      <anchor>ad9f54eb650563eba0ee8cb96b68a4c7d</anchor>
+      <arglist>(bool) override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KGlobalAccelInterface</name>
+    <filename>classKGlobalAccelInterface.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>grabKey</name>
+      <anchorfile>classKGlobalAccelInterface.html</anchorfile>
+      <anchor>add273166c4132bd7f987fe0319554efc</anchor>
+      <arglist>(int key, bool grab)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>syncWindowingSystem</name>
+      <anchorfile>classKGlobalAccelInterface.html</anchorfile>
+      <anchor>a1f1a41f1ade9924e099472bba427ffd5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>keyPressed</name>
+      <anchorfile>classKGlobalAccelInterface.html</anchorfile>
+      <anchor>afe836c1a79d56146321d9fac7e741c9d</anchor>
+      <arglist>(int keyQt)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KGlobalShortcutInfo</name>
+    <filename>classKGlobalShortcutInfo.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>KdeDGlobalAccel::KServiceActionComponent</name>
+    <filename>classKdeDGlobalAccel_1_1KServiceActionComponent.html</filename>
+    <base>KdeDGlobalAccel::Component</base>
+    <member kind="function">
+      <type></type>
+      <name>KServiceActionComponent</name>
+      <anchorfile>classKdeDGlobalAccel_1_1KServiceActionComponent.html</anchorfile>
+      <anchor>ac1379afe5f05a99266e870cad5b5536d</anchor>
+      <arglist>(const QString &amp;serviceStorageId, const QString &amp;friendlyName, GlobalShortcutsRegistry *registry=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>cleanUp</name>
+      <anchorfile>classKdeDGlobalAccel_1_1KServiceActionComponent.html</anchorfile>
+      <anchor>a007a6ef6d4fe7ee73eaf38a2aab1efae</anchor>
+      <arglist>() override</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>KGlobalAccel</title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KFileWidget Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KFileWidget">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKFileWidget-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KFileWidget Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kfilewidget_8h_source.html">kfilewidget.h</a>&gt;</code></p>
+
+<p>Inherits QWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac1a25e1568748a0f194d5685e7d3a616"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">OperationMode</a> { <b>Other</b> = 0,
+<b>Opening</b>,
+<b>Saving</b>
+ }</td></tr>
+<tr class="separator:ac1a25e1568748a0f194d5685e7d3a616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a18e35255c974e7433d40b980427f8812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a18e35255c974e7433d40b980427f8812">accepted</a> ()</td></tr>
+<tr class="separator:a18e35255c974e7433d40b980427f8812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51624c67544bab29f1c3c0b8b9cdb75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a51624c67544bab29f1c3c0b8b9cdb75d">fileHighlighted</a> (const QUrl &amp;)</td></tr>
+<tr class="separator:a51624c67544bab29f1c3c0b8b9cdb75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332c385305ff1d5fcb1039ea694f1f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a332c385305ff1d5fcb1039ea694f1f71">fileSelected</a> (const QUrl &amp;)</td></tr>
+<tr class="separator:a332c385305ff1d5fcb1039ea694f1f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e38736a8f19dcb79bd3ee158bf1dfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ab8e38736a8f19dcb79bd3ee158bf1dfe">filterChanged</a> (const QString &amp;filter)</td></tr>
+<tr class="separator:ab8e38736a8f19dcb79bd3ee158bf1dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef6d5881e84a310921b53282bcded79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#aaef6d5881e84a310921b53282bcded79">selectionChanged</a> ()</td></tr>
+<tr class="separator:aaef6d5881e84a310921b53282bcded79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a2e8f298d201bdd9f5759b40465ea1337"><td class="memItemLeft" align="right" valign="top"><a id="a2e8f298d201bdd9f5759b40465ea1337"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> ()</td></tr>
+<tr class="separator:a2e8f298d201bdd9f5759b40465ea1337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700f10ebdf16cb31ceaef138c33f684d"><td class="memItemLeft" align="right" valign="top"><a id="a700f10ebdf16cb31ceaef138c33f684d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotCancel</b> ()</td></tr>
+<tr class="separator:a700f10ebdf16cb31ceaef138c33f684d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7336770a0b9c4b16d31a52125dd1777a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a7336770a0b9c4b16d31a52125dd1777a">slotOk</a> ()</td></tr>
+<tr class="separator:a7336770a0b9c4b16d31a52125dd1777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab4e9f87eaafcd74234515c2307d8b8c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ab4e9f87eaafcd74234515c2307d8b8c7">KFileWidget</a> (const QUrl &amp;startDir, QWidget *parent=0)</td></tr>
+<tr class="separator:ab4e9f87eaafcd74234515c2307d8b8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbc6cb93966651eb1291bfe1f473cd4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a6dbc6cb93966651eb1291bfe1f473cd4">~KFileWidget</a> ()</td></tr>
+<tr class="separator:a6dbc6cb93966651eb1291bfe1f473cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801b0d34c8310f4377daa4aec0e80d29"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKActionCollection.html">KActionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a801b0d34c8310f4377daa4aec0e80d29">actionCollection</a> () const</td></tr>
+<tr class="separator:a801b0d34c8310f4377daa4aec0e80d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38a1485961c3079ccf0e6f7e4ce289a"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ae38a1485961c3079ccf0e6f7e4ce289a">baseUrl</a> () const</td></tr>
+<tr class="separator:ae38a1485961c3079ccf0e6f7e4ce289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60f929db986255ce5bf1b12b249e5c6"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ac60f929db986255ce5bf1b12b249e5c6">cancelButton</a> () const</td></tr>
+<tr class="separator:ac60f929db986255ce5bf1b12b249e5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ac0817ee109f9a94ee841866a76de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ae7ac0817ee109f9a94ee841866a76de8">clearFilter</a> ()</td></tr>
+<tr class="separator:ae7ac0817ee109f9a94ee841866a76de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add540274b261dcd3f224e335ce8c159e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#add540274b261dcd3f224e335ce8c159e">currentFilter</a> () const</td></tr>
+<tr class="separator:add540274b261dcd3f224e335ce8c159e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa227ebd1f4a5e831d027c871c3c9bdc5"><td class="memItemLeft" align="right" valign="top">QMimeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#aa227ebd1f4a5e831d027c871c3c9bdc5">currentFilterMimeType</a> ()</td></tr>
+<tr class="separator:aa227ebd1f4a5e831d027c871c3c9bdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac531c8e61c44f13d8306800cc6dfdaaa"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ac531c8e61c44f13d8306800cc6dfdaaa">currentMimeFilter</a> () const</td></tr>
+<tr class="separator:ac531c8e61c44f13d8306800cc6dfdaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f1f6fb05a786d27336240be2b1504c"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a95f1f6fb05a786d27336240be2b1504c">dialogSizeHint</a> () const</td></tr>
+<tr class="separator:a95f1f6fb05a786d27336240be2b1504c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072c20289f1e5d4b6632b515d0dc634b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKDirOperator.html">KDirOperator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a072c20289f1e5d4b6632b515d0dc634b">dirOperator</a> ()</td></tr>
+<tr class="separator:a072c20289f1e5d4b6632b515d0dc634b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794d505a9d9e80c24c78ebc06dd04420"><td class="memItemLeft" align="right" valign="top">KFileFilterCombo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a794d505a9d9e80c24c78ebc06dd04420">filterWidget</a> () const</td></tr>
+<tr class="separator:a794d505a9d9e80c24c78ebc06dd04420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90757de6f89ff67cda42b507c98072d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a90757de6f89ff67cda42b507c98072d9">keepsLocation</a> () const</td></tr>
+<tr class="separator:a90757de6f89ff67cda42b507c98072d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441ed4c2b49a3ff3ff5726a16c7059f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKUrlComboBox.html">KUrlComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a441ed4c2b49a3ff3ff5726a16c7059f7">locationEdit</a> () const</td></tr>
+<tr class="separator:a441ed4c2b49a3ff3ff5726a16c7059f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706e51ff368d8b48ccd5ef0bef01b02b"><td class="memItemLeft" align="right" valign="top">KFile::Modes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a706e51ff368d8b48ccd5ef0bef01b02b">mode</a> () const</td></tr>
+<tr class="separator:a706e51ff368d8b48ccd5ef0bef01b02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b86ed03f892ca45e0bae95800fa6e1"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a32b86ed03f892ca45e0bae95800fa6e1">okButton</a> () const</td></tr>
+<tr class="separator:a32b86ed03f892ca45e0bae95800fa6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc59090c2ac00eb21d9b758fc4981b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">OperationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a3fc59090c2ac00eb21d9b758fc4981b9">operationMode</a> () const</td></tr>
+<tr class="separator:a3fc59090c2ac00eb21d9b758fc4981b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528e0b4c9e722a8652f3d4784e86ab86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a528e0b4c9e722a8652f3d4784e86ab86">readConfig</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;group)</td></tr>
+<tr class="separator:a528e0b4c9e722a8652f3d4784e86ab86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a850c49897ab08fcb45282bbbfd491f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a0a850c49897ab08fcb45282bbbfd491f">selectedFile</a> () const</td></tr>
+<tr class="separator:a0a850c49897ab08fcb45282bbbfd491f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f6a2ab2435b1fa00cc6bf9598bb2f9"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a87f6a2ab2435b1fa00cc6bf9598bb2f9">selectedFiles</a> () const</td></tr>
+<tr class="separator:a87f6a2ab2435b1fa00cc6bf9598bb2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4356a9c3614e69566635cef6beb2eb"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#aae4356a9c3614e69566635cef6beb2eb">selectedUrl</a> () const</td></tr>
+<tr class="separator:aae4356a9c3614e69566635cef6beb2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c74d2f07e0a822a3b4708746b13b484"><td class="memItemLeft" align="right" valign="top">QList&lt; QUrl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a4c74d2f07e0a822a3b4708746b13b484">selectedUrls</a> () const</td></tr>
+<tr class="separator:a4c74d2f07e0a822a3b4708746b13b484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78859dcafbb37361b90069122a4e2119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a78859dcafbb37361b90069122a4e2119">setConfirmOverwrite</a> (bool enable)</td></tr>
+<tr class="separator:a78859dcafbb37361b90069122a4e2119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace86a29da1c82ebdb54a8415d85cfbd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ace86a29da1c82ebdb54a8415d85cfbd7">setCustomWidget</a> (QWidget *widget)</td></tr>
+<tr class="separator:ace86a29da1c82ebdb54a8415d85cfbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947ef3cf9c172f67af859592a56e5e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a947ef3cf9c172f67af859592a56e5e8a">setCustomWidget</a> (const QString &amp;text, QWidget *widget)</td></tr>
+<tr class="separator:a947ef3cf9c172f67af859592a56e5e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a706998b3e0e28a259a0917bc5bf1ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee">setFilter</a> (const QString &amp;filter)</td></tr>
+<tr class="separator:a0a706998b3e0e28a259a0917bc5bf1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0020d0721445aaa4ffacfb3bb79e9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#aa0020d0721445aaa4ffacfb3bb79e9d3">setInlinePreviewShown</a> (bool show)</td></tr>
+<tr class="separator:aa0020d0721445aaa4ffacfb3bb79e9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec3babf0c0393228db9039214c80659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a7ec3babf0c0393228db9039214c80659">setKeepLocation</a> (bool <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcodecs-5.26.0/html/KCodecs.tags:../../../frameworks/kcodecs-5.26.0/html/" href="../../../frameworks/kcodecs-5.26.0/html/namespaceKCodecs.html#a82ff43b4562df293eda894a1d95b668a">keep</a>)</td></tr>
+<tr class="separator:a7ec3babf0c0393228db9039214c80659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de61f4fa5320a01cb5afbcd539cc27f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a6de61f4fa5320a01cb5afbcd539cc27f">setLocationLabel</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a6de61f4fa5320a01cb5afbcd539cc27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb884df2e08aa11c92adc1f96b6b2c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#acdb884df2e08aa11c92adc1f96b6b2c1">setMimeFilter</a> (const QStringList &amp;types, const QString &amp;defaultType=QString())</td></tr>
+<tr class="separator:acdb884df2e08aa11c92adc1f96b6b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a10f542ca49e5d409a199514bddf86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a0a10f542ca49e5d409a199514bddf86c">setMode</a> (KFile::Modes m)</td></tr>
+<tr class="separator:a0a10f542ca49e5d409a199514bddf86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b0095cd204adbf5d514a7136339e57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a91b0095cd204adbf5d514a7136339e57">setOperationMode</a> (<a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">OperationMode</a>)</td></tr>
+<tr class="separator:a91b0095cd204adbf5d514a7136339e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb47e9e47e0396690d3a04c183fcd49c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#adb47e9e47e0396690d3a04c183fcd49c">setPreviewWidget</a> (<a class="el" href="classKPreviewWidgetBase.html">KPreviewWidgetBase</a> *w)</td></tr>
+<tr class="separator:adb47e9e47e0396690d3a04c183fcd49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d98e32c3ec803c5a7607b71f486913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a00d98e32c3ec803c5a7607b71f486913">setSelection</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a00d98e32c3ec803c5a7607b71f486913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120d4a60e2a8cd3fb1bbe793d1f79469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a120d4a60e2a8cd3fb1bbe793d1f79469">setUrl</a> (const QUrl &amp;url, bool clearforward=true)</td></tr>
+<tr class="separator:a120d4a60e2a8cd3fb1bbe793d1f79469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad712525c268423b7be3a79ac9167fe43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#ad712525c268423b7be3a79ac9167fe43">setViewMode</a> (KFile::FileView <a class="el" href="classKFileWidget.html#a706e51ff368d8b48ccd5ef0bef01b02b">mode</a>)</td></tr>
+<tr class="separator:ad712525c268423b7be3a79ac9167fe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9231c31897cfbe9a829503e6c76b758b"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a9231c31897cfbe9a829503e6c76b758b">sizeHint</a> () const override</td></tr>
+<tr class="separator:a9231c31897cfbe9a829503e6c76b758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0b81ff6e5b5f1b9d745081485c830f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKToolBar.html">KToolBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a7b0b81ff6e5b5f1b9d745081485c830f">toolBar</a> () const</td></tr>
+<tr class="separator:a7b0b81ff6e5b5f1b9d745081485c830f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afc41310592abf0651278356b6e53dc30"><td class="memItemLeft" align="right" valign="top">static QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#afc41310592abf0651278356b6e53dc30">getStartUrl</a> (const QUrl &amp;startDir, QString &amp;recentDirClass)</td></tr>
+<tr class="separator:afc41310592abf0651278356b6e53dc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51db2aaa15f047dff75071c848730880"><td class="memItemLeft" align="right" valign="top">static QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#a51db2aaa15f047dff75071c848730880">getStartUrl</a> (const QUrl &amp;startDir, QString &amp;recentDirClass, QString &amp;fileName)</td></tr>
+<tr class="separator:a51db2aaa15f047dff75071c848730880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e09ca4a5146320b3d4fb37577197f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileWidget.html#af6e09ca4a5146320b3d4fb37577197f3">setStartDir</a> (const QUrl &amp;directory)</td></tr>
+<tr class="separator:af6e09ca4a5146320b3d4fb37577197f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9f1090cbfdff6ddce001da372e8ce73e"><td class="memItemLeft" align="right" valign="top"><a id="a9f1090cbfdff6ddce001da372e8ce73e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a9f1090cbfdff6ddce001da372e8ce73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f943c841d6a256487c8cd2dbf5d60d"><td class="memItemLeft" align="right" valign="top"><a id="a54f943c841d6a256487c8cd2dbf5d60d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:a54f943c841d6a256487c8cd2dbf5d60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef49d4e033fa89b422ab56a059a3085"><td class="memItemLeft" align="right" valign="top"><a id="a4ef49d4e033fa89b422ab56a059a3085"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *event) override</td></tr>
+<tr class="separator:a4ef49d4e033fa89b422ab56a059a3085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File selector widget. </p>
+<p>This is the contents of the KDE file dialog, without the actual QDialog around it. It can be embedded directly into applications. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8h_source.html#l00055">55</a> of file <a class="el" href="kfilewidget_8h_source.html">kfilewidget.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ac1a25e1568748a0f194d5685e7d3a616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a25e1568748a0f194d5685e7d3a616">&#9670;&nbsp;</a></span>OperationMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">KFileWidget::OperationMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines some default behavior of the filedialog. </p>
+<p>E.g. in mode <code>Opening</code> and <code>Saving</code>, the selected files/urls will be added to the "recent documents" list. The Saving mode also implies <a class="el" href="classKFileWidget.html#a7ec3babf0c0393228db9039214c80659" title="Sets whether the filename/url should be kept when changing directories. ">setKeepLocation()</a> being set.</p>
+<p><code>Other</code> means that no default actions are performed.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a91b0095cd204adbf5d514a7136339e57" title="Sets the operational mode of the filedialog to Saving, Opening or Other. ">setOperationMode</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#a3fc59090c2ac00eb21d9b758fc4981b9">operationMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8h_source.html#l00107">107</a> of file <a class="el" href="kfilewidget_8h_source.html">kfilewidget.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab4e9f87eaafcd74234515c2307d8b8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e9f87eaafcd74234515c2307d8b8c7">&#9670;&nbsp;</a></span>KFileWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileWidget::KFileWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>startDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a file selector widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startDir</td><td>This can either be: <ul>
+<li>An empty URL (QUrl()) to start in the current working directory, or the last directory where a file has been selected. </li>
+<li>The path or URL of a starting directory. </li>
+<li>An initial file name to select, with the starting directory being the current working directory or the last directory where a file has been selected. </li>
+<li>The path or URL of a file, specifying both the starting directory and an initially selected file name. </li>
+<li>A URL of the form <code>kfiledialog:///&lt;keyword&gt;</code> to start in the directory last used by a filedialog in the same application that specified the same keyword. </li>
+<li>A URL of the form <code>kfiledialog:///&lt;keyword&gt;/&lt;filename&gt;</code> to start in the directory last used by a filedialog in the same application that specified the same keyword, and to initially select the specified filename. </li>
+<li>A URL of the form <code>kfiledialog:///&lt;keyword&gt;</code>?global to start in the directory last used by a filedialog in any application that specified the same keyword. </li>
+<li>A URL of the form <code>kfiledialog:///&lt;keyword&gt;/&lt;filename&gt;</code>?global to start in the directory last used by a filedialog in any application that specified the same keyword, and to initially select the specified filename.</li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">parent</td><td>The parent widget of this widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00344">344</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6dbc6cb93966651eb1291bfe1f473cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbc6cb93966651eb1291bfe1f473cd4">&#9670;&nbsp;</a></span>~KFileWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileWidget::~KFileWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00677">677</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18e35255c974e7433d40b980427f8812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e35255c974e7433d40b980427f8812">&#9670;&nbsp;</a></span>accepted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::accepted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted by <a class="el" href="classKFileWidget.html#a7336770a0b9c4b16d31a52125dd1777a" title="Called when clicking ok (when this widget is used in KFileDialog) Might or might not call accept()...">slotOk()</a> (directly or asynchronously) once everything has been done. </p>
+<p>Should be used by the caller to call accept(). </p>
+
+</div>
+</div>
+<a id="a801b0d34c8310f4377daa4aec0e80d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801b0d34c8310f4377daa4aec0e80d29">&#9670;&nbsp;</a></span>actionCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKActionCollection.html">KActionCollection</a> * KFileWidget::actionCollection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the action collection, holding all the used KActions. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02527">2527</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae38a1485961c3079ccf0e6f7e4ce289a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae38a1485961c3079ccf0e6f7e4ce289a">&#9670;&nbsp;</a></span>baseUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KFileWidget::baseUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the currently shown directory. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01800">1800</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac60f929db986255ce5bf1b12b249e5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60f929db986255ce5bf1b12b249e5c6">&#9670;&nbsp;</a></span>cancelButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton * KFileWidget::cancelButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the Cancel-Button in the filedialog. Note that the button is hidden and unconnected when using <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a> alone; KFileDialog shows it and connects to it. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02005">2005</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae7ac0817ee109f9a94ee841866a76de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ac0817ee109f9a94ee841866a76de8">&#9670;&nbsp;</a></span>clearFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::clearFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears any mime- or namefilter. </p>
+<p>Does not reload the directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00742">742</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="add540274b261dcd3f224e335ce8c159e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add540274b261dcd3f224e335ce8c159e">&#9670;&nbsp;</a></span>currentFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KFileWidget::currentFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current filter as entered by the user or one of the predefined set via <a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee" title="Sets the filter to be used to filter. ">setFilter()</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee" title="Sets the filter to be used to filter. ">setFilter()</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#ab8e38736a8f19dcb79bd3ee158bf1dfe" title="Emitted when the filter changed, i.e. ">filterChanged()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00721">721</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa227ebd1f4a5e831d027c871c3c9bdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa227ebd1f4a5e831d027c871c3c9bdc5">&#9670;&nbsp;</a></span>currentFilterMimeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMimeType KFileWidget::currentFilterMimeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mimetype for the desired output format. </p>
+<p>This is only valid if setFilterMimeType() has been called previously.</p>
+<dl class="section see"><dt>See also</dt><dd>setFilterMimeType() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00762">762</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac531c8e61c44f13d8306800cc6dfdaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac531c8e61c44f13d8306800cc6dfdaaa">&#9670;&nbsp;</a></span>currentMimeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KFileWidget::currentMimeFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mimetype for the desired output format. </p>
+<p>This is only valid if <a class="el" href="classKFileWidget.html#acdb884df2e08aa11c92adc1f96b6b2c1" title="Sets the filter up to specify the output type. ">setMimeFilter()</a> has been called previously.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#acdb884df2e08aa11c92adc1f96b6b2c1" title="Sets the filter up to specify the output type. ">setMimeFilter()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00752">752</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95f1f6fb05a786d27336240be2b1504c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f1f6fb05a786d27336240be2b1504c">&#9670;&nbsp;</a></span>dialogSizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KFileWidget::dialogSizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides a size hint, useful for dialogs that embed the widget. </p>
+<dl class="section return"><dt>Returns</dt><dd>a QSize, calculated to be optimal for a dialog. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02821">2821</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a072c20289f1e5d4b6632b515d0dc634b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072c20289f1e5d4b6632b515d0dc634b">&#9670;&nbsp;</a></span>dirOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKDirOperator.html">KDirOperator</a> * KFileWidget::dirOperator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classKDirOperator.html" title="This widget works as a network transparent filebrowser. ">KDirOperator</a> used to navigate the filesystem </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02765">2765</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51624c67544bab29f1c3c0b8b9cdb75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51624c67544bab29f1c3c0b8b9cdb75d">&#9670;&nbsp;</a></span>fileHighlighted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::fileHighlighted </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the user highlights a file. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+</div>
+</div>
+<a id="a332c385305ff1d5fcb1039ea694f1f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332c385305ff1d5fcb1039ea694f1f71">&#9670;&nbsp;</a></span>fileSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::fileSelected </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the user selects a file. </p>
+<p>It is only emitted in single- selection mode. The best way to get notified about selected file(s) is to connect to the okClicked() signal inherited from KDialog and call <a class="el" href="classKFileWidget.html#a0a850c49897ab08fcb45282bbbfd491f" title="Returns the full path of the selected file in the local filesystem. ">selectedFile()</a>, <a class="el" href="classKFileWidget.html#a87f6a2ab2435b1fa00cc6bf9598bb2f9" title="Returns a list of all selected local files. ">selectedFiles()</a>, <a class="el" href="classKFileWidget.html#aae4356a9c3614e69566635cef6beb2eb">selectedUrl()</a> or <a class="el" href="classKFileWidget.html#a4c74d2f07e0a822a3b4708746b13b484">selectedUrls()</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+</div>
+</div>
+<a id="ab8e38736a8f19dcb79bd3ee158bf1dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e38736a8f19dcb79bd3ee158bf1dfe">&#9670;&nbsp;</a></span>filterChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::filterChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the filter changed, i.e. </p>
+<p>the user entered an own filter or chose one of the predefined set via <a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee" title="Sets the filter to be used to filter. ">setFilter()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>contains the new filter (only the extension part, not the explanation), i.e. "*.cpp" or "*.cpp *.cc".</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee" title="Sets the filter to be used to filter. ">setFilter()</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#add540274b261dcd3f224e335ce8c159e" title="Returns the current filter as entered by the user or one of the predefined set via setFilter()...">currentFilter()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a794d505a9d9e80c24c78ebc06dd04420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794d505a9d9e80c24c78ebc06dd04420">&#9670;&nbsp;</a></span>filterWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileFilterCombo * KFileWidget::filterWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the combobox that contains the filters </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02522">2522</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc41310592abf0651278356b6e53dc30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc41310592abf0651278356b6e53dc30">&#9670;&nbsp;</a></span>getStartUrl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KFileWidget::getStartUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>startDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>recentDirClass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method implements the logic to determine the user's default directory to be listed. </p>
+<p>E.g. the documents directory, home directory or a recently used directory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startDir</td><td>A URL specifying the initial directory, or using the <code>kfiledialog:///</code> syntax to specify a last used directory. If this URL specifies a file name, it is ignored. Refer to the <a class="el" href="classKFileWidget.html#ab4e9f87eaafcd74234515c2307d8b8c7" title="Constructs a file selector widget. ">KFileWidget::KFileWidget()</a> documentation for the <code>kfiledialog:///</code> URL syntax. </td></tr>
+    <tr><td class="paramname">recentDirClass</td><td>If the <code>kfiledialog:///</code> syntax is used, this will return the string to be passed to <a class="el" href="namespaceKRecentDirs.html#a1d58a14171d3269ed2c82288b4ca9661" title="Returns the most recently used directory accociated with this file-class. ">KRecentDirs::dir()</a> and <a class="el" href="namespaceKRecentDirs.html#a9c29070d100ba1617ddffb3b71fd815f" title="Associates directory with fileClass. ">KRecentDirs::add()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The URL that should be listed by default (e.g. by KFileDialog or KDirSelectDialog). </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#ab4e9f87eaafcd74234515c2307d8b8c7" title="Constructs a file selector widget. ">KFileWidget::KFileWidget()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02611">2611</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51db2aaa15f047dff75071c848730880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51db2aaa15f047dff75071c848730880">&#9670;&nbsp;</a></span>getStartUrl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KFileWidget::getStartUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>startDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>recentDirClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Similar to <a class="el" href="classKFileWidget.html#afc41310592abf0651278356b6e53dc30" title="This method implements the logic to determine the user&#39;s default directory to be listed. ">getStartUrl(const QUrl&amp; startDir,QString&amp; recentDirClass)</a>, but allows both the recent start directory keyword and a suggested file name to be returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startDir</td><td>A URL specifying the initial directory and/or filename, or using the <code>kfiledialog:///</code> syntax to specify a last used location. Refer to the <a class="el" href="classKFileWidget.html#ab4e9f87eaafcd74234515c2307d8b8c7" title="Constructs a file selector widget. ">KFileWidget::KFileWidget()</a> documentation for the <code>kfiledialog:///</code> URL syntax. </td></tr>
+    <tr><td class="paramname">recentDirClass</td><td>If the <code>kfiledialog:///</code> syntax is used, this will return the string to be passed to <a class="el" href="namespaceKRecentDirs.html#a1d58a14171d3269ed2c82288b4ca9661" title="Returns the most recently used directory accociated with this file-class. ">KRecentDirs::dir()</a> and <a class="el" href="namespaceKRecentDirs.html#a9c29070d100ba1617ddffb3b71fd815f" title="Associates directory with fileClass. ">KRecentDirs::add()</a>. </td></tr>
+    <tr><td class="paramname">fileName</td><td>The suggested file name, if specified as part of the <code>StartDir</code> URL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The URL that should be listed by default (e.g. by KFileDialog or KDirSelectDialog).</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#ab4e9f87eaafcd74234515c2307d8b8c7" title="Constructs a file selector widget. ">KFileWidget::KFileWidget()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02619">2619</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a90757de6f89ff67cda42b507c98072d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90757de6f89ff67cda42b507c98072d9">&#9670;&nbsp;</a></span>keepsLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileWidget::keepsLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>whether the contents of the location edit are kept when changing directories. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02025">2025</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a441ed4c2b49a3ff3ff5726a16c7059f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441ed4c2b49a3ff3ff5726a16c7059f7">&#9670;&nbsp;</a></span>locationEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKUrlComboBox.html">KUrlComboBox</a> * KFileWidget::locationEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the combobox used to type the filename or full location of the file. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02517">2517</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a706e51ff368d8b48ccd5ef0bef01b02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706e51ff368d8b48ccd5ef0bef01b02b">&#9670;&nbsp;</a></span>mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFile::Modes KFileWidget::mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mode of the filedialog. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a0a10f542ca49e5d409a199514bddf86c" title="Sets the mode of the dialog. ">setMode()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01878">1878</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a32b86ed03f892ca45e0bae95800fa6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b86ed03f892ca45e0bae95800fa6e1">&#9670;&nbsp;</a></span>okButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton * KFileWidget::okButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the OK-Button in the filedialog. Note that the button is hidden and unconnected when using <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a> alone; KFileDialog shows it and connects to it. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02000">2000</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fc59090c2ac00eb21d9b758fc4981b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc59090c2ac00eb21d9b758fc4981b9">&#9670;&nbsp;</a></span>operationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">KFileWidget::OperationMode</a> KFileWidget::operationMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the current operation mode, Opening, Saving or Other. Default is Other.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a3fc59090c2ac00eb21d9b758fc4981b9">operationMode</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616" title="Defines some default behavior of the filedialog. ">KFileWidget::OperationMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02057">2057</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a528e0b4c9e722a8652f3d4784e86ab86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528e0b4c9e722a8652f3d4784e86ab86">&#9670;&nbsp;</a></span>readConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::readConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reads the configuration for this widget from the given config group </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> to read from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02770">2770</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a850c49897ab08fcb45282bbbfd491f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a850c49897ab08fcb45282bbbfd491f">&#9670;&nbsp;</a></span>selectedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KFileWidget::selectedFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the full path of the selected file in the local filesystem. </p>
+<p>(Local files only) </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01754">1754</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a87f6a2ab2435b1fa00cc6bf9598bb2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f6a2ab2435b1fa00cc6bf9598bb2f9">&#9670;&nbsp;</a></span>selectedFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KFileWidget::selectedFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all selected local files. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01771">1771</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae4356a9c3614e69566635cef6beb2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4356a9c3614e69566635cef6beb2eb">&#9670;&nbsp;</a></span>selectedUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KFileWidget::selectedUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The selected fully qualified filename. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01630">1630</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4c74d2f07e0a822a3b4708746b13b484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c74d2f07e0a822a3b4708746b13b484">&#9670;&nbsp;</a></span>selectedUrls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QUrl &gt; KFileWidget::selectedUrls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The list of selected URLs. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01641">1641</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaef6d5881e84a310921b53282bcded79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef6d5881e84a310921b53282bcded79">&#9670;&nbsp;</a></span>selectionChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::selectionChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the user hilights one or more files in multiselection mode. </p>
+<p>Note: <a class="el" href="classKFileWidget.html#a51624c67544bab29f1c3c0b8b9cdb75d" title="Emitted when the user highlights a file. ">fileHighlighted()</a> or <a class="el" href="classKFileWidget.html#a332c385305ff1d5fcb1039ea694f1f71" title="Emitted when the user selects a file. ">fileSelected()</a> are <em>not</em> emitted in multiselection mode. You may use selectedItems() to ask for the current highlighted items. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a332c385305ff1d5fcb1039ea694f1f71" title="Emitted when the user selects a file. ">fileSelected</a> </dd></dl>
+
+</div>
+</div>
+<a id="a78859dcafbb37361b90069122a4e2119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78859dcafbb37361b90069122a4e2119">&#9670;&nbsp;</a></span>setConfirmOverwrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setConfirmOverwrite </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the user should be asked for confirmation when an overwrite might occurr. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>Set this to true to enable checking. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02811">2811</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace86a29da1c82ebdb54a8415d85cfbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace86a29da1c82ebdb54a8415d85cfbd7">&#9670;&nbsp;</a></span>setCustomWidget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setCustomWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a custom widget that should be added to the file dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>A widget, or a widget of widgets, for displaying custom data in the file widget. This can be used, for example, to display a check box with the caption "Open as read-only". When creating this widget, you don't need to specify a parent, since the widget's parent will be set automatically by <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02732">2732</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a947ef3cf9c172f67af859592a56e5e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947ef3cf9c172f67af859592a56e5e8a">&#9670;&nbsp;</a></span>setCustomWidget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setCustomWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a custom widget that should be added below the location and the filter editors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Label of the custom widget, which is displayed below the labels "Location:" and "Filter:". </td></tr>
+    <tr><td class="paramname">widget</td><td>Any kind of widget, but preferable a combo box or a line editor to be compliant with the location and filter layout. When creating this widget, you don't need to specify a parent, since the widget's parent will be set automatically by <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02754">2754</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a706998b3e0e28a259a0917bc5bf1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a706998b3e0e28a259a0917bc5bf1ee">&#9670;&nbsp;</a></span>setFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the filter to be used to <code>filter</code>. </p>
+<p>You can set more filters for the user to select separated by '<br />
+'. Every filter entry is defined through namefilter|text to display. If no | is found in the expression, just the namefilter is shown. Examples:</p>
+<div class="fragment"><div class="line">kfile-&gt;setFilter(<span class="stringliteral">&quot;*.cpp|C++ Source Files\n*.h|Header files&quot;</span>);</div><div class="line">kfile-&gt;setFilter(<span class="stringliteral">&quot;*.cpp&quot;</span>);</div><div class="line">kfile-&gt;setFilter(<span class="stringliteral">&quot;*.cpp|Sources (*.cpp)&quot;</span>);</div><div class="line">kfile-&gt;setFilter(<span class="stringliteral">&quot;*.cpp|&quot;</span> + i18n(<span class="stringliteral">&quot;Sources (*.cpp)&quot;</span>));</div><div class="line">kfile-&gt;setFilter(<span class="stringliteral">&quot;*.cpp *.cc *.C|C++ Source Files\n*.h *.H|Header files&quot;</span>);</div></div><!-- fragment --><p>Note: The text to display is not parsed in any way. So, if you want to show the suffix to select by a specific filter, you must repeat it.</p>
+<p>If the filter contains an unescaped '/', a mimetype-filter is assumed. If you would like a '/' visible in your filter it can be escaped with a '\'. You can specify multiple mimetypes like this (separated with space):</p>
+<div class="fragment"><div class="line">kfile-&gt;setFilter( <span class="stringliteral">&quot;image/png text/html text/plain&quot;</span> );</div><div class="line">kfile-&gt;setFilter( <span class="stringliteral">&quot;*.cue|CUE\\/BIN Files (*.cue)&quot;</span> );</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#ab8e38736a8f19dcb79bd3ee158bf1dfe" title="Emitted when the filter changed, i.e. ">filterChanged</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#acdb884df2e08aa11c92adc1f96b6b2c1" title="Sets the filter up to specify the output type. ">setMimeFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00690">690</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0020d0721445aaa4ffacfb3bb79e9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0020d0721445aaa4ffacfb3bb79e9d3">&#9670;&nbsp;</a></span>setInlinePreviewShown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setInlinePreviewShown </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forces the inline previews to be shown or hidden, depending on <code>show</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">show</td><td>Whether to show inline previews or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02816">2816</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7ec3babf0c0393228db9039214c80659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec3babf0c0393228db9039214c80659">&#9670;&nbsp;</a></span>setKeepLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setKeepLocation </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the filename/url should be kept when changing directories. </p>
+<p>This is for example useful when having a predefined filename where the full path for that file is searched.</p>
+<p>This is implicitly set when <a class="el" href="classKFileWidget.html#a3fc59090c2ac00eb21d9b758fc4981b9">operationMode()</a> is KFileWidget::Saving</p>
+<p>getSaveFileName() and getSaveUrl() set this to true by default, so that you can type in the filename and change the directory without having to type the name again. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02020">2020</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6de61f4fa5320a01cb5afbcd539cc27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de61f4fa5320a01cb5afbcd539cc27f">&#9670;&nbsp;</a></span>setLocationLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setLocationLabel </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the text to be displayed in front of the selection. </p>
+<p>The default is "Location". Most useful if you want to make clear what the location is used for. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00685">685</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acdb884df2e08aa11c92adc1f96b6b2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb884df2e08aa11c92adc1f96b6b2c1">&#9670;&nbsp;</a></span>setMimeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setMimeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>types</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>defaultType</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the filter up to specify the output type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">types</td><td>a list of mimetypes that can be used as output format </td></tr>
+    <tr><td class="paramname">defaultType</td><td>the default mimetype to use as output format, if any. If <code>defaultType</code> is set, it will be set as the current item. Otherwise, a first item showing all the mimetypes will be created. Typically, <code>defaultType</code> should be empty for loading and set for saving.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Do not use in conjunction with <a class="el" href="classKFileWidget.html#a0a706998b3e0e28a259a0917bc5bf1ee" title="Sets the filter to be used to filter. ">setFilter()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00726">726</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a10f542ca49e5d409a199514bddf86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a10f542ca49e5d409a199514bddf86c">&#9670;&nbsp;</a></span>setMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setMode </td>
+          <td>(</td>
+          <td class="paramtype">KFile::Modes&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the mode of the dialog. </p>
+<p>The mode is defined as (in <a class="el" href="kfile_8h_source.html">kfile.h</a>): </p><div class="fragment"><div class="line"><span class="keyword">enum</span> Mode {</div><div class="line">     File         = 1,</div><div class="line">     Directory    = 2,</div><div class="line">     Files        = 4,</div><div class="line">     ExistingOnly = 8,</div><div class="line">     LocalOnly    = 16</div><div class="line">};</div></div><!-- fragment --><p> You can OR the values, e.g. </p><div class="fragment"><div class="line">KFile::Modes <a class="code" href="classKFileWidget.html#a706e51ff368d8b48ccd5ef0bef01b02b">mode</a> = KFile::Files |</div><div class="line">                    KFile::ExistingOnly |</div><div class="line">                    KFile::LocalOnly );</div><div class="line"><a class="code" href="classKFileWidget.html#a0a10f542ca49e5d409a199514bddf86c">setMode</a>( mode );</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01864">1864</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91b0095cd204adbf5d514a7136339e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b0095cd204adbf5d514a7136339e57">&#9670;&nbsp;</a></span>setOperationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setOperationMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616">OperationMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the operational mode of the filedialog to <code>Saving</code>, <code>Opening</code> or <code>Other</code>. </p>
+<p>This will set some flags that are specific to loading or saving files. E.g. <a class="el" href="classKFileWidget.html#a7ec3babf0c0393228db9039214c80659" title="Sets whether the filename/url should be kept when changing directories. ">setKeepLocation()</a> makes mostly sense for a save-as dialog. So setOperationMode( KFileWidget::Saving ); sets setKeepLocation for example.</p>
+<p>The mode <code>Saving</code>, together with a default filter set via <a class="el" href="classKFileWidget.html#acdb884df2e08aa11c92adc1f96b6b2c1" title="Sets the filter up to specify the output type. ">setMimeFilter()</a> will make the filter combobox read-only.</p>
+<p>The default mode is <code>Opening</code>.</p>
+<p>Call this method right after instantiating <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileWidget.html#a3fc59090c2ac00eb21d9b758fc4981b9">operationMode</a> </dd>
+<dd>
+<a class="el" href="classKFileWidget.html#ac1a25e1568748a0f194d5685e7d3a616" title="Defines some default behavior of the filedialog. ">KFileWidget::OperationMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02030">2030</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb47e9e47e0396690d3a04c183fcd49c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb47e9e47e0396690d3a04c183fcd49c">&#9670;&nbsp;</a></span>setPreviewWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setPreviewWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKPreviewWidgetBase.html">KPreviewWidgetBase</a> *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a preview widget and enters the preview mode. </p>
+<p>In this mode the dialog is split and the right part contains your preview widget.</p>
+<p>Ownership is transferred to <a class="el" href="classKFileWidget.html" title="File selector widget. ">KFileWidget</a>. You need to create the preview-widget with "new", i.e. on the heap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>The widget to be used for the preview. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00768">768</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a00d98e32c3ec803c5a7607b71f486913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d98e32c3ec803c5a7607b71f486913">&#9670;&nbsp;</a></span>setSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setSelection </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the file name to preselect to <code>name</code>. </p>
+<p>This takes absolute URLs and relative file names. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01554">1554</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6e09ca4a5146320b3d4fb37577197f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e09ca4a5146320b3d4fb37577197f3">&#9670;&nbsp;</a></span>setStartDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setStartDir </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>directory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used by KDirSelectDialog to share the dialog's start directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02703">2703</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a120d4a60e2a8cd3fb1bbe793d1f79469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120d4a60e2a8cd3fb1bbe793d1f79469">&#9670;&nbsp;</a></span>setUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clearforward</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the directory to view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>URL to show. </td></tr>
+    <tr><td class="paramname">clearforward</td><td>Indicates whether the forward queue should be cleared. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l01460">1460</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad712525c268423b7be3a79ac9167fe43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad712525c268423b7be3a79ac9167fe43">&#9670;&nbsp;</a></span>setViewMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::setViewMode </td>
+          <td>(</td>
+          <td class="paramtype">KFile::FileView&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets how the view should be displayed. </p>
+<dl class="section see"><dt>See also</dt><dd>KFile::FileView </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02831">2831</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9231c31897cfbe9a829503e6c76b758b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9231c31897cfbe9a829503e6c76b758b">&#9670;&nbsp;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KFileWidget::sizeHint </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00802">802</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7336770a0b9c4b16d31a52125dd1777a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7336770a0b9c4b16d31a52125dd1777a">&#9670;&nbsp;</a></span>slotOk</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileWidget::slotOk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when clicking ok (when this widget is used in KFileDialog) Might or might not call accept(). </p>
+<p>Logic of the next part of code (ends at "end multi relative urls").</p>
+<p>We allow for instance to be at "/" and insert '"home/foo/bar.txt" "boot/grub/menu.lst"'. Why we need to support this ? Because we provide tree views, which aren't plain.</p>
+<p>Now, how does this logic work. It will get the first element on the list (with no filename), following the previous example say "/home/foo" and set it as the top most url.</p>
+<p>After this, it will iterate over the rest of items and check if this URL (topmost url) contains the url being iterated.</p>
+<p>As you might have guessed it will do "/home/foo" against "/boot/grub" (again stripping filename), and a false will be returned. Then we upUrl the top most url, resulting in "/home" against "/boot/grub", what will again return false, so we upUrl again. Now we have "/" against "/boot/grub", what returns true for us, so we can say that the closest common ancestor of both is "/".</p>
+<p>This example has been written for 2 urls, but this works for any number of urls.</p>
+<p>end multi relative urls</p>
+
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l00815">815</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b0b81ff6e5b5f1b9d745081485c830f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0b81ff6e5b5f1b9d745081485c830f">&#9670;&nbsp;</a></span>toolBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKToolBar.html">KToolBar</a> * KFileWidget::toolBar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the toolbar. </p>
+<p>You can use this to insert custom items into it, e.g.: </p><div class="fragment"><div class="line">yourAction = <span class="keyword">new</span> KAction( i18n(<span class="stringliteral">&quot;Your Action&quot;</span>), 0,</div><div class="line">                          <span class="keyword">this</span>, SLOT( yourSlot() ),</div><div class="line">                          <span class="keyword">this</span>, <span class="stringliteral">&quot;action name&quot;</span> );</div><div class="line">yourAction-&gt;plug( kfileDialog-&gt;toolBar() );</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="kfilewidget_8cpp_source.html#l02727">2727</a> of file <a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kfilewidget_8h_source.html">kfilewidget.h</a></li>
+<li><a class="el" href="kfilewidget_8cpp_source.html">kfilewidget.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:58 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

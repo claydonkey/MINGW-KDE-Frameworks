@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KItemViews - KWidgetItemDelegate Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KItemViews</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KItemViews"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCategorizedSortFilterProxyModel.html">KCategorizedSortFilterProxyModel</option>
+        
+        <option value="classKCategorizedView.html">KCategorizedView</option>
+        
+        <option value="classKCategoryDrawer.html">KCategoryDrawer</option>
+        
+        <option value="classKCategoryDrawerV3.html">KCategoryDrawerV3</option>
+        
+        <option value="classKFilterProxySearchLine.html">KFilterProxySearchLine</option>
+        
+        <option value="classKListWidgetSearchLine.html">KListWidgetSearchLine</option>
+        
+        <option value="classKTreeWidgetSearchLine.html">KTreeWidgetSearchLine</option>
+        
+        <option value="classKTreeWidgetSearchLineWidget.html">KTreeWidgetSearchLineWidget</option>
+        
+        <option value="classKWidgetItemDelegate.html">KWidgetItemDelegate</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widget addons for Qt Model/View</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:david@davidedmundson.co.uk">David Edmundson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ItemViews)
+target_link_libraries(yourapp KF5::ItemViews)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KItemViews </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kitemviews-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KItemViews on <a href="https://cgit.kde.org/kitemviews-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KItemViews </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KWidgetItemDelegate">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKWidgetItemDelegate-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KWidgetItemDelegate Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kwidgetitemdelegate_8h_source.html">kwidgetitemdelegate.h</a>&gt;</code></p>
+
+<p>Inherits QAbstractItemDelegate.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4adcebdc0c6e94d280565d10822f298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#ae4adcebdc0c6e94d280565d10822f298">KWidgetItemDelegate</a> (QAbstractItemView *<a class="el" href="classKWidgetItemDelegate.html#a06fdd585a6426a6e555f4f44dcc3eac5">itemView</a>, QObject *parent=0)</td></tr>
+<tr class="separator:ae4adcebdc0c6e94d280565d10822f298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646580c5e0ab91654e57a8fdd9069be1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a646580c5e0ab91654e57a8fdd9069be1">~KWidgetItemDelegate</a> ()</td></tr>
+<tr class="separator:a646580c5e0ab91654e57a8fdd9069be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53b908000f1638c3e2c939e84b9ea43"><td class="memItemLeft" align="right" valign="top">QPersistentModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#af53b908000f1638c3e2c939e84b9ea43">focusedIndex</a> () const</td></tr>
+<tr class="separator:af53b908000f1638c3e2c939e84b9ea43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fdd585a6426a6e555f4f44dcc3eac5"><td class="memItemLeft" align="right" valign="top">QAbstractItemView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a06fdd585a6426a6e555f4f44dcc3eac5">itemView</a> () const</td></tr>
+<tr class="separator:a06fdd585a6426a6e555f4f44dcc3eac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad37dc2bee990f9369710310f565bc204"><td class="memItemLeft" align="right" valign="top">QList&lt; QEvent::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#ad37dc2bee990f9369710310f565bc204">blockedEventTypes</a> (QWidget *widget) const</td></tr>
+<tr class="separator:ad37dc2bee990f9369710310f565bc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594841a86aa1bf3f0b88565091408a0f"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a594841a86aa1bf3f0b88565091408a0f">createItemWidgets</a> (const QModelIndex &amp;index) const =0</td></tr>
+<tr class="separator:a594841a86aa1bf3f0b88565091408a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19372ccd880079ac4ab8db20680fa685"><td class="memItemLeft" align="right" valign="top">KITEMVIEWS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a19372ccd880079ac4ab8db20680fa685">paintWidgets</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QPersistentModelIndex &amp;index) const</td></tr>
+<tr class="separator:a19372ccd880079ac4ab8db20680fa685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bac3acf04bd38bec1fe2f158b3a047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a15bac3acf04bd38bec1fe2f158b3a047">setBlockedEventTypes</a> (QWidget *widget, QList&lt; QEvent::Type &gt; types) const</td></tr>
+<tr class="separator:a15bac3acf04bd38bec1fe2f158b3a047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086525a068d7aa11fdeefa4b52b7c3ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWidgetItemDelegate.html#a086525a068d7aa11fdeefa4b52b7c3ab">updateItemWidgets</a> (const QList&lt; QWidget *&gt; widgets, const QStyleOptionViewItem &amp;option, const QPersistentModelIndex &amp;index) const =0</td></tr>
+<tr class="separator:a086525a068d7aa11fdeefa4b52b7c3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class allows to create item delegates embedding simple widgets to interact with items. </p>
+<p>For instance you can add push buttons, line edits, etc. to your delegate and use them to modify the state of your model.</p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8h_source.html#l00049">49</a> of file <a class="el" href="kwidgetitemdelegate_8h_source.html">kwidgetitemdelegate.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae4adcebdc0c6e94d280565d10822f298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4adcebdc0c6e94d280565d10822f298">&#9670;&nbsp;</a></span>KWidgetItemDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWidgetItemDelegate::KWidgetItemDelegate </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractItemView *&#160;</td>
+          <td class="paramname"><em>itemView</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new ItemDelegate to be used with a given itemview. </p>
+<p>KWidgetItemDelegatePrivate class that helps to provide binary compatibility between releases.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemView</td><td>the item view the new delegate will monitor </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent of this delegate</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00182">182</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a646580c5e0ab91654e57a8fdd9069be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646580c5e0ab91654e57a8fdd9069be1">&#9670;&nbsp;</a></span>~KWidgetItemDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWidgetItemDelegate::~KWidgetItemDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys an ItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00204">204</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad37dc2bee990f9369710310f565bc204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37dc2bee990f9369710310f565bc204">&#9670;&nbsp;</a></span>blockedEventTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QEvent::Type &gt; KWidgetItemDelegate::blockedEventTypes </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the list of blocked event types for the given widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>the specified widget.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the list of blocked event types, can be empty if no events are blocked. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00308">308</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a594841a86aa1bf3f0b88565091408a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594841a86aa1bf3f0b88565091408a0f">&#9670;&nbsp;</a></span>createItemWidgets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QList&lt;QWidget *&gt; KWidgetItemDelegate::createItemWidgets </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the list of widgets needed for an item. </p>
+<dl class="section note"><dt>Note</dt><dd>No initialization of the widgets is supposed to happen here. The widgets will be initialized based on needs for a given item.</dd>
+<dd>
+If you want to connect some widget signals to any slot, you should do it here.</dd></dl>
+<ul>
+<li>index the index to create widgets for.</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>the list of newly created widgets which will be used to interact with an item. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWidgetItemDelegate.html#a086525a068d7aa11fdeefa4b52b7c3ab" title="Updates a list of widgets for its use inside of the delegate (painting or event handling). ">updateItemWidgets()</a> </dd></dl>
+
+</div>
+</div>
+<a id="af53b908000f1638c3e2c939e84b9ea43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53b908000f1638c3e2c939e84b9ea43">&#9670;&nbsp;</a></span>focusedIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPersistentModelIndex KWidgetItemDelegate::focusedIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the currently focused index. </p>
+<p>An invalid index if none is focused.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current focused index, or QPersistentModelIndex() if none is focused. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00214">214</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a06fdd585a6426a6e555f4f44dcc3eac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fdd585a6426a6e555f4f44dcc3eac5">&#9670;&nbsp;</a></span>itemView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAbstractItemView * KWidgetItemDelegate::itemView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the item view this delegate is monitoring. </p>
+<dl class="section return"><dt>Returns</dt><dd>the item view this delegate is monitoring </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00209">209</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a19372ccd880079ac4ab8db20680fa685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19372ccd880079ac4ab8db20680fa685">&#9670;&nbsp;</a></span>paintWidgets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWidgetItemDelegate::paintWidgets </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPersistentModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Paint the widgets of the item. </p>
+<p>This method is meant to be used in the paint() method of your item delegate implementation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>the painter the widgets will be painted on. </td></tr>
+    <tr><td class="paramname">option</td><td>the current set of style options for the view. </td></tr>
+    <tr><td class="paramname">index</td><td>the model index of the item currently painted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>since 4.2 this method is not longer needed to be called. All widgets will kept updated without the need of calling <a class="el" href="classKWidgetItemDelegate.html#a19372ccd880079ac4ab8db20680fa685" title="Paint the widgets of the item. ">paintWidgets()</a> in your paint() event. For the widgets of a certain index to be updated your model has to emit dataChanged() on the indexes that want to be updated. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00226">226</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15bac3acf04bd38bec1fe2f158b3a047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15bac3acf04bd38bec1fe2f158b3a047">&#9670;&nbsp;</a></span>setBlockedEventTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWidgetItemDelegate::setBlockedEventTypes </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; QEvent::Type &gt;&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the list of event <code>types</code> that a <code>widget</code> will block. </p>
+<p>Blocked events are not passed to the view. This way you can prevent an item from being selected when a button is clicked for instance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>the widget which must block events </td></tr>
+    <tr><td class="paramname">types</td><td>the list of event types the widget must block </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwidgetitemdelegate_8cpp_source.html#l00303">303</a> of file <a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a086525a068d7aa11fdeefa4b52b7c3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086525a068d7aa11fdeefa4b52b7c3ab">&#9670;&nbsp;</a></span>updateItemWidgets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void KWidgetItemDelegate::updateItemWidgets </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; QWidget *&gt;&#160;</td>
+          <td class="paramname"><em>widgets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPersistentModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates a list of widgets for its use inside of the delegate (painting or event handling). </p>
+<dl class="section note"><dt>Note</dt><dd>All the positioning and sizing should be done in item coordinates.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Do not make widget connections in here, since this method will be called very regularly.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widgets</td><td>the widgets to update </td></tr>
+    <tr><td class="paramname">option</td><td>the current set of style options for the view. </td></tr>
+    <tr><td class="paramname">index</td><td>the model index of the item currently manipulated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kwidgetitemdelegate_8h_source.html">kwidgetitemdelegate.h</a></li>
+<li><a class="el" href="kwidgetitemdelegate_8cpp_source.html">kwidgetitemdelegate.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:21 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

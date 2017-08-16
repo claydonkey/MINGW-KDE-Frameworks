@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KI18n - KuitSetup Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KI18n</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KI18n"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKLocalizedContext.html">KLocalizedContext</option>
+        
+        <option value="classKLocalizedString.html">KLocalizedString</option>
+        
+        <option value="classKLocalizedTranslator.html">KLocalizedTranslator</option>
+        
+        <option value="classKuitSetup.html">KuitSetup</option>
+        
+        <option value="namespaceKuit.html">Kuit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced internationalization framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5I18n)
+target_link_libraries(yourapp KF5::I18n)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KI18n </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ki18n-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KI18n on <a href="https://cgit.kde.org/ki18n-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KI18n </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KuitSetup">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classKuitSetup-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KuitSetup Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kuitmarkup_8h_source.html">kuitmarkup.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a04d1961880394ac9bf2178cad4bb8ab3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKuitSetup.html#a04d1961880394ac9bf2178cad4bb8ab3">~KuitSetup</a> ()</td></tr>
+<tr class="separator:a04d1961880394ac9bf2178cad4bb8ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3568653e8e4cd63a18fd37e85d0135b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKuitSetup.html#a3568653e8e4cd63a18fd37e85d0135b2">setFormatForMarker</a> (const QString &amp;marker, <a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a> format)</td></tr>
+<tr class="separator:a3568653e8e4cd63a18fd37e85d0135b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcdcb05b65cc6e531572bd5ddf891a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKuitSetup.html#a3bcdcb05b65cc6e531572bd5ddf891a6">setTagClass</a> (const QString &amp;tagName, <a class="el" href="namespaceKuit.html#a603c809f04576437e5295ca72f378731">Kuit::TagClass</a> aClass)</td></tr>
+<tr class="separator:a3bcdcb05b65cc6e531572bd5ddf891a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b47834605e7442717394e1196b2884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKuitSetup.html#a35b47834605e7442717394e1196b2884">setTagPattern</a> (const QString &amp;tagName, const QStringList &amp;attribNames, <a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a> format, const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;pattern, <a class="el" href="namespaceKuit.html#ab8a85c35e268e3d9e7af18bbc604e846">Kuit::TagFormatter</a> formatter=NULL, int leadingNewlines=0)</td></tr>
+<tr class="separator:a35b47834605e7442717394e1196b2884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a197888df1a5fdb9cf190b97c33d81f84"><td class="memItemLeft" align="right" valign="top"><a id="a197888df1a5fdb9cf190b97c33d81f84"></a>
+<a class="el" href="classKuitSetup.html">KuitSetup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Kuit::setupForDomain</b> (const QByteArray &amp;domain)</td></tr>
+<tr class="separator:a197888df1a5fdb9cf190b97c33d81f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for modifying KUIT markup in a given domain. </p>
+<p>Not directly constructed, but obtained through <code><a class="el" href="namespaceKuit.html#a6e093c4b99e6d775bfdcedfe5bcbab37" title="Get hold of the KUIT setup object for a given domain. ">Kuit::setupForDomain</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kuitmarkup_8h_source.html#l00114">114</a> of file <a class="el" href="kuitmarkup_8h_source.html">kuitmarkup.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a04d1961880394ac9bf2178cad4bb8ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d1961880394ac9bf2178cad4bb8ab3">&#9670;&nbsp;</a></span>~KuitSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuitSetup::~KuitSetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kuitmarkup_8cpp_source.html#l01093">1093</a> of file <a class="el" href="kuitmarkup_8cpp_source.html">kuitmarkup.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3568653e8e4cd63a18fd37e85d0135b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3568653e8e4cd63a18fd37e85d0135b2">&#9670;&nbsp;</a></span>setFormatForMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuitSetup::setFormatForMarker </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>marker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the default visual format for a given UI marker. </p>
+<p>Giving <code>"@&lt;major&gt;"</code> for <code>marker</code> means to set the format only for standalone <code>@&lt;major&gt;</code> marker, while <code>"@&lt;major&gt;:"</code> (with trailing colon) means to set the same format for all <code>@&lt;major&gt;:&lt;minor&gt;</code> combinations.</p>
+<p>Defined UI marker major/minor combinations are listed in the section uimark_ctxt. If an UI marker combination outside of the defined is given as <code>marker</code>, it will be ignored.</p>
+<p>Setting <code><a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3ea7a707593a71ca028fe33e745b1f99e4d" title="Visual format not defined. ">Kuit::UndefinedFormat</a></code> as <code>format</code> means to fall back to default format for the given UI marker.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">marker</td><td>the UI marker </td></tr>
+    <tr><td class="paramname">format</td><td>the visual format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kuitmarkup_8cpp_source.html#l01114">1114</a> of file <a class="el" href="kuitmarkup_8cpp_source.html">kuitmarkup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3bcdcb05b65cc6e531572bd5ddf891a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcdcb05b65cc6e531572bd5ddf891a6">&#9670;&nbsp;</a></span>setTagClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuitSetup::setTagClass </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tagName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#a603c809f04576437e5295ca72f378731">Kuit::TagClass</a>&#160;</td>
+          <td class="paramname"><em>aClass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the KUIT class of the tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tagName</td><td>the name of the tag </td></tr>
+    <tr><td class="paramname">aClass</td><td>the KUIT tag class </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kuitmarkup_8cpp_source.html#l01109">1109</a> of file <a class="el" href="kuitmarkup_8cpp_source.html">kuitmarkup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a35b47834605e7442717394e1196b2884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b47834605e7442717394e1196b2884">&#9670;&nbsp;</a></span>setTagPattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuitSetup::setTagPattern </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tagName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>attribNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#adaceed98fa9a6d3b55f66dea1ec4ff3e">Kuit::VisualFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classKLocalizedString.html">KLocalizedString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKuit.html#ab8a85c35e268e3d9e7af18bbc604e846">Kuit::TagFormatter</a>&#160;</td>
+          <td class="paramname"><em>formatter</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leadingNewlines</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the formatting string for a tag with attributes combination. </p>
+<p>If a new tag name is given, this effectively defines a new tag. The same holds for attribute names.</p>
+<p>The pattern string <code>pattern</code> should contain placeholders for inserting the text and the attribute values. %1 will be replaced with the wrapped text, and %2 and upwards with attribute values in the order given by <code>attrNames</code>. Non markup-aware translation call with context (<code>ki18nc</code>) should be used to create the pattern string.</p>
+<p>In addition to the pattern, a formatting function of the type <code>TagFormatter</code> can be given. This function receives the full markup parsing context, so that it can do whatever is necessary with the wrapped text. The result of this function is then substituted into the pattern. You can also give an empty pattern (as <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString()</a></code>) together with the formatting function, in which case the function is assumed to do everything and no substitution is performed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tagName</td><td>the name of the tag </td></tr>
+    <tr><td class="paramname">attribNames</td><td>the names of the attributes (empty names are ignored) </td></tr>
+    <tr><td class="paramname">format</td><td>the target visual format </td></tr>
+    <tr><td class="paramname">pattern</td><td>the pattern string </td></tr>
+    <tr><td class="paramname">leadingNewlines</td><td>the number of new lines (\n) to be maintained between any preceding text and the text wrapped with this tag (for formats where it matters) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kuitmarkup_8cpp_source.html#l01098">1098</a> of file <a class="el" href="kuitmarkup_8cpp_source.html">kuitmarkup.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kuitmarkup_8h_source.html">kuitmarkup.h</a></li>
+<li><a class="el" href="kuitmarkup_8cpp_source.html">kuitmarkup.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:07 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

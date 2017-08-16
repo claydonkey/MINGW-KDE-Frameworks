@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KTextWidgets - Class Members - Functions</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KTextWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KTextWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKFind.html">KFind</option>
+        
+        <option value="classKFindDialog.html">KFindDialog</option>
+        
+        <option value="classKPluralHandlingSpinBox.html">KPluralHandlingSpinBox</option>
+        
+        <option value="classKRegExpEditorInterface.html">KRegExpEditorInterface</option>
+        
+        <option value="classKReplace.html">KReplace</option>
+        
+        <option value="classKReplaceDialog.html">KReplaceDialog</option>
+        
+        <option value="classKRichTextEdit.html">KRichTextEdit</option>
+        
+        <option value="classKRichTextWidget.html">KRichTextWidget</option>
+        
+        <option value="classKTextEdit.html">KTextEdit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced text editing widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:montel@kde.org">Laurent Montel</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5TextWidgets)
+target_link_libraries(yourapp KF5::TextWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KTextWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ktextwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KTextWidgets on <a href="https://cgit.kde.org/ktextwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KTextWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="contents">
+&#160;
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>aboutToShowContextMenu()
+: <a class="el" href="classKTextEdit.html#aee71a9b293e59cbd46ef7674a1233d28">KTextEdit</a>
+</li>
+<li>addTextDecorator()
+: <a class="el" href="classKTextEdit.html#a420370450d01255024bb23b67c45a96c">KTextEdit</a>
+</li>
+<li>alignCenter()
+: <a class="el" href="classKRichTextEdit.html#af5fb41ab83831a6a9eb8be18c13d9f13">KRichTextEdit</a>
+</li>
+<li>alignJustify()
+: <a class="el" href="classKRichTextEdit.html#a51b3029a7e39d5fbdfe1500e14b7e309">KRichTextEdit</a>
+</li>
+<li>alignLeft()
+: <a class="el" href="classKRichTextEdit.html#acddb53268c283692a231256c391a936e">KRichTextEdit</a>
+</li>
+<li>alignRight()
+: <a class="el" href="classKRichTextEdit.html#a1eb0df33c4c33815720d33f5a5145f5d">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>cancelClicked()
+: <a class="el" href="classKFindDialog.html#a9b65faefd3477dd0483e5c52cfa1b762">KFindDialog</a>
+</li>
+<li>canDedentList()
+: <a class="el" href="classKRichTextEdit.html#a41da36ab2415c3e9e3fd2101691765bf">KRichTextEdit</a>
+</li>
+<li>canIndentList()
+: <a class="el" href="classKRichTextEdit.html#af52a9d10d1514291824c54d9be07a3ee">KRichTextEdit</a>
+</li>
+<li>canRedo()
+: <a class="el" href="classKRegExpEditorInterface.html#a4dc4cce03ab2ff5d215b5c29e59357b3">KRegExpEditorInterface</a>
+</li>
+<li>canUndo()
+: <a class="el" href="classKRegExpEditorInterface.html#a8e747276e74cdddaa4f5bc5a58d37865">KRegExpEditorInterface</a>
+</li>
+<li>changes()
+: <a class="el" href="classKRegExpEditorInterface.html#a80fdd614d158abd51d207ed472a2ebe6">KRegExpEditorInterface</a>
+</li>
+<li>checkSpelling()
+: <a class="el" href="classKTextEdit.html#a3af42578ce13b5d65522856e29fc29fd">KTextEdit</a>
+</li>
+<li>checkSpellingChanged()
+: <a class="el" href="classKTextEdit.html#ae8a3c0cb9bffe178b5a41ca7a8c5add6">KTextEdit</a>
+</li>
+<li>checkSpellingEnabled()
+: <a class="el" href="classKTextEdit.html#a75d059a68f11d1fc28668a678ca498aa">KTextEdit</a>
+</li>
+<li>clearDecorator()
+: <a class="el" href="classKTextEdit.html#a1e2ac3f630efb0ad9e296282ad11a623">KTextEdit</a>
+</li>
+<li>clickMessage()
+: <a class="el" href="classKTextEdit.html#a2ac5019e14257725328877dabafdab61">KTextEdit</a>
+</li>
+<li>closeFindNextDialog()
+: <a class="el" href="classKFind.html#a7463d233cf533cab1517a04a2bee0d59">KFind</a>
+</li>
+<li>closeReplaceNextDialog()
+: <a class="el" href="classKReplace.html#ac7c64ccb2e4a416507774ed8d6781cfe">KReplace</a>
+</li>
+<li>contextMenuEvent()
+: <a class="el" href="classKTextEdit.html#aa1e492ad53dd926505f6defa43b53c09">KTextEdit</a>
+</li>
+<li>createActions()
+: <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c">KRichTextWidget</a>
+</li>
+<li>createHighlighter()
+: <a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2">KTextEdit</a>
+</li>
+<li>currentLinkText()
+: <a class="el" href="classKRichTextEdit.html#a4910b09abbd21cf1bc732e04f85b008c">KRichTextEdit</a>
+</li>
+<li>currentLinkUrl()
+: <a class="el" href="classKRichTextEdit.html#ac0929fb9f81cb0a2f53b5b4c4e58f847">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>deleteWordBack()
+: <a class="el" href="classKTextEdit.html#a7e6a534fd8b4f0bd5c8e7941ad0a83f8">KTextEdit</a>
+</li>
+<li>deleteWordForward()
+: <a class="el" href="classKTextEdit.html#afdf93b9c0e4df8ed9393f6c32a461039">KTextEdit</a>
+</li>
+<li>dialogClosed()
+: <a class="el" href="classKFind.html#a7b8095f6465290037a18fb10e55303bc">KFind</a>
+</li>
+<li>displayFinalDialog()
+: <a class="el" href="classKFind.html#aebec25989e1c555a85839493a0bfefe1">KFind</a>
+, <a class="el" href="classKReplace.html#af5c7a5755e94536c1ea3267fa4067185">KReplace</a>
+</li>
+<li>doSomething()
+: <a class="el" href="classKRegExpEditorInterface.html#a0fc984d4318f2d1f0b390aa236207f20">KRegExpEditorInterface</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>enableFindReplace()
+: <a class="el" href="classKTextEdit.html#a816b06b2108d51edbc812834d7df17fb">KTextEdit</a>
+</li>
+<li>enableRichTextMode()
+: <a class="el" href="classKRichTextEdit.html#a4057a3f31ee674c40cb63b74e104d961">KRichTextEdit</a>
+</li>
+<li>event()
+: <a class="el" href="classKTextEdit.html#a97b45d3362af81b4ab89ded93ca1a12c">KTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>find()
+: <a class="el" href="classKFind.html#aeca9357cf928ce7bf0e63e695e13572e">KFind</a>
+</li>
+<li>findExtension()
+: <a class="el" href="classKFindDialog.html#af75f9546f608e1829aae9208e510587f">KFindDialog</a>
+</li>
+<li>findHistory()
+: <a class="el" href="classKFindDialog.html#a93d293073696aabbb7f7e4b45c54f4f3">KFindDialog</a>
+</li>
+<li>findNextDialog()
+: <a class="el" href="classKFind.html#aff036a45e919fcf55666b2b4b92a95ae">KFind</a>
+</li>
+<li>focusInEvent()
+: <a class="el" href="classKTextEdit.html#ab6c425e86b93ee7f665f1093451cfc31">KTextEdit</a>
+</li>
+<li>forceSpellChecking()
+: <a class="el" href="classKTextEdit.html#a043003de86bee9ea95bbde4d132757ca">KTextEdit</a>
+</li>
+<li>KFind()
+: <a class="el" href="classKFind.html#abf8d9a3d3e1901468b73b4c9fc84c15b">KFind</a>
+</li>
+<li>KFindDialog()
+: <a class="el" href="classKFindDialog.html#a834b1c2620aa9047babce0d99e3e9ca5">KFindDialog</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>highlight()
+: <a class="el" href="classKFind.html#af66e494430aa005f66f08052ed82b0e9">KFind</a>
+</li>
+<li>highlighter()
+: <a class="el" href="classKTextEdit.html#af442d02443cb3feff56d6f15507d182a">KTextEdit</a>
+</li>
+<li>highlightWord()
+: <a class="el" href="classKTextEdit.html#a5eb69e1c3bbb99fd0bb2a6e9a975aba1">KTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>indentListLess()
+: <a class="el" href="classKRichTextEdit.html#a92ef064338afd79bb4444582a7719435">KRichTextEdit</a>
+</li>
+<li>indentListMore()
+: <a class="el" href="classKRichTextEdit.html#ac590e556e95c2c94ff159bbf6d3666a5">KRichTextEdit</a>
+</li>
+<li>index()
+: <a class="el" href="classKFind.html#a7ea6d205043d5d39f1fbddd7479da6fd">KFind</a>
+</li>
+<li>insertHorizontalRule()
+: <a class="el" href="classKRichTextEdit.html#a3b1dcaa12fd0b273c4657671376c91cb">KRichTextEdit</a>
+</li>
+<li>insertPlainTextImplementation()
+: <a class="el" href="classKRichTextEdit.html#a00dbca087af89b79eb03008fcce2238a">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_k"></a>- k -</h3><ul>
+<li>keyPressEvent()
+: <a class="el" href="classKRichTextEdit.html#aae77a763129143aa1702a8d0de35f52b">KRichTextEdit</a>
+, <a class="el" href="classKTextEdit.html#aa3b59b96ffadf5b56840a2908a69b5ef">KTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>languageChanged()
+: <a class="el" href="classKTextEdit.html#af667757143c77e7093ba72769afc40c1">KTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>makeLeftToRight()
+: <a class="el" href="classKRichTextEdit.html#a9333b02d4f853aebaa710f18d0548267">KRichTextEdit</a>
+</li>
+<li>makeRightToLeft()
+: <a class="el" href="classKRichTextEdit.html#ae7b709d7f1b8ec56764daa24a498ac0b">KRichTextEdit</a>
+</li>
+<li>mousePopupMenu()
+: <a class="el" href="classKTextEdit.html#ab0db6d91aa29400cb7862373ccf4eb77">KTextEdit</a>
+</li>
+<li>mouseReleaseEvent()
+: <a class="el" href="classKRichTextWidget.html#a9ee873a3aead8b2525334debf029e957">KRichTextWidget</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>needData()
+: <a class="el" href="classKFind.html#a693f6e7325debddba15b5df4f23a481d">KFind</a>
+</li>
+<li>numMatches()
+: <a class="el" href="classKFind.html#a49c21695573a64803eda023f18d272ff">KFind</a>
+</li>
+<li>numReplacements()
+: <a class="el" href="classKReplace.html#ac389412840c1bbf011e23ccf2a417be3">KReplace</a>
+</li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
+<li>okClicked()
+: <a class="el" href="classKFindDialog.html#aca632c2b382655b1b92017d248aa41fd">KFindDialog</a>
+</li>
+<li>options()
+: <a class="el" href="classKFind.html#af4ca7401e7e0226489eb84d7156389f2">KFind</a>
+, <a class="el" href="classKFindDialog.html#aa270bac3d56f0a84094c448a540362db">KFindDialog</a>
+, <a class="el" href="classKReplaceDialog.html#a54d92211d2ecde9d806ca24ad4d881e2">KReplaceDialog</a>
+</li>
+<li>optionsChanged()
+: <a class="el" href="classKFind.html#a8930ac96f7c34f1c2a923f423b78ae80">KFind</a>
+, <a class="el" href="classKFindDialog.html#a39986675daab81423b73ebb1bbb0fcb2">KFindDialog</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>KPluralHandlingSpinBox()
+: <a class="el" href="classKPluralHandlingSpinBox.html#a087523ec613022e4b53c02213fad127c">KPluralHandlingSpinBox</a>
+</li>
+<li>pattern()
+: <a class="el" href="classKFind.html#ab1523afcd74644500cf3dbc4264d6f7f">KFind</a>
+, <a class="el" href="classKFindDialog.html#a9a39d56d73807e64e55645a5900e8c70">KFindDialog</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>KReplace()
+: <a class="el" href="classKReplace.html#a21ecb263e51c6dd319aec0b059abc9a3">KReplace</a>
+</li>
+<li>KReplaceDialog()
+: <a class="el" href="classKReplaceDialog.html#ac7727c2bf5d46342209ed97a79135f43">KReplaceDialog</a>
+</li>
+<li>KRichTextEdit()
+: <a class="el" href="classKRichTextEdit.html#a45b3f569afc04ce4ce575e1da69e8e6d">KRichTextEdit</a>
+</li>
+<li>KRichTextWidget()
+: <a class="el" href="classKRichTextWidget.html#a0c1b4c4cd7f31e3c3453ebf5e43659cf">KRichTextWidget</a>
+</li>
+<li>regExp()
+: <a class="el" href="classKRegExpEditorInterface.html#a593bc983976bf59ccec2c557dd31f685">KRegExpEditorInterface</a>
+</li>
+<li>replace()
+: <a class="el" href="classKReplace.html#abcdf792c73f9971964db69a90a36c030">KReplace</a>
+, <a class="el" href="classKTextEdit.html#a76ff7021d9ec4c2d0956e6c01ddb0556">KTextEdit</a>
+</li>
+<li>replaceExtension()
+: <a class="el" href="classKReplaceDialog.html#a1da17a1c196d93e4e738f397d747e4d6">KReplaceDialog</a>
+</li>
+<li>replacement()
+: <a class="el" href="classKReplaceDialog.html#aa5f3ed29de6923cac23603fb5cd2c13f">KReplaceDialog</a>
+</li>
+<li>replacementHistory()
+: <a class="el" href="classKReplaceDialog.html#a47c8eccb5adf2078a81b6b47efe435f3">KReplaceDialog</a>
+</li>
+<li>replaceNextDialog()
+: <a class="el" href="classKReplace.html#a41f1171f10fffcf00dc3699f98ed5e38">KReplace</a>
+</li>
+<li>resetCounts()
+: <a class="el" href="classKFind.html#abf1c8f0561d5f6237050663678def011">KFind</a>
+, <a class="el" href="classKReplace.html#a1b1f68a83f66a1a73fe3f5e35e86c451">KReplace</a>
+</li>
+<li>richTextSupport()
+: <a class="el" href="classKRichTextWidget.html#aac6e03588b173eb5946f4deca67f4787">KRichTextWidget</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>selectionFinished()
+: <a class="el" href="classKRichTextEdit.html#a48fac4dc2376d478cd46b42f429e72f0">KRichTextEdit</a>
+</li>
+<li>selectLinkText()
+: <a class="el" href="classKRichTextEdit.html#a50d2838cd28eed1a46d3ff585eaebaea">KRichTextEdit</a>
+</li>
+<li>setActionsEnabled()
+: <a class="el" href="classKRichTextWidget.html#a0f4fb3c2285588160967932b6e3d9ab5">KRichTextWidget</a>
+</li>
+<li>setCheckSpellingEnabled()
+: <a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5">KTextEdit</a>
+</li>
+<li>setClickMessage()
+: <a class="el" href="classKTextEdit.html#a3fd4e252b064afb4534e93b4d17f5c34">KTextEdit</a>
+</li>
+<li>setData()
+: <a class="el" href="classKFind.html#a00e99cbb31eb7db6ea7f9742214140ff">KFind</a>
+</li>
+<li>setFindHistory()
+: <a class="el" href="classKFindDialog.html#a87936c24c1a879a9cfc58c260d0be0bc">KFindDialog</a>
+</li>
+<li>setFont()
+: <a class="el" href="classKRichTextEdit.html#a4e0dcd7d3a52a0d2b10e799c148535a8">KRichTextEdit</a>
+</li>
+<li>setFontFamily()
+: <a class="el" href="classKRichTextEdit.html#a932544c788cfb9ab0cc776d6198ad3ac">KRichTextEdit</a>
+</li>
+<li>setFontSize()
+: <a class="el" href="classKRichTextEdit.html#a91147d4f98d399bc207f2c5bfe57f8ab">KRichTextEdit</a>
+</li>
+<li>setHasCursor()
+: <a class="el" href="classKFindDialog.html#a6be903cddc210f1d687f47b345ba645a">KFindDialog</a>
+</li>
+<li>setHasSelection()
+: <a class="el" href="classKFindDialog.html#aa90691a0c749be71352ed4dd6a08ca63">KFindDialog</a>
+</li>
+<li>setHighlighter()
+: <a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3">KTextEdit</a>
+</li>
+<li>setListStyle()
+: <a class="el" href="classKRichTextEdit.html#ac3eb4db01548ad19da377e27066791f5">KRichTextEdit</a>
+</li>
+<li>setMatchText()
+: <a class="el" href="classKRegExpEditorInterface.html#a614f9f59bcdef7cd8c2977564eacc113">KRegExpEditorInterface</a>
+</li>
+<li>setOptions()
+: <a class="el" href="classKFind.html#ab81a0a207642b5040b7f70aa7554e2a6">KFind</a>
+, <a class="el" href="classKFindDialog.html#ae512813bd5ec4da5bbb495e81edec9fb">KFindDialog</a>
+, <a class="el" href="classKReplaceDialog.html#a700baff2041d9fc8db6b26310061ca94">KReplaceDialog</a>
+</li>
+<li>setPattern()
+: <a class="el" href="classKFind.html#a6def3ea12954905ddaef3ebf39ced2b5">KFind</a>
+, <a class="el" href="classKFindDialog.html#aecfe284726db6b7309281472ddaa01b9">KFindDialog</a>
+</li>
+<li>setReadOnly()
+: <a class="el" href="classKTextEdit.html#a60da005d60e92a8dde8f62ae4abcc967">KTextEdit</a>
+</li>
+<li>setRegExp()
+: <a class="el" href="classKRegExpEditorInterface.html#a497e32b2a6872790120c6b0f7a685b5c">KRegExpEditorInterface</a>
+</li>
+<li>setReplacementHistory()
+: <a class="el" href="classKReplaceDialog.html#a6e502247f5cc4b3e24c6afc488e9aadd">KReplaceDialog</a>
+</li>
+<li>setRichTextSupport()
+: <a class="el" href="classKRichTextWidget.html#aca3d938e9c676c4303285f91bb05ee3e">KRichTextWidget</a>
+</li>
+<li>setSpellCheckingLanguage()
+: <a class="el" href="classKTextEdit.html#a21942951eff625ca8cea09bef8fa7a9b">KTextEdit</a>
+</li>
+<li>setSuffix()
+: <a class="el" href="classKPluralHandlingSpinBox.html#a3465fc05032618de4aecab3eac675d93">KPluralHandlingSpinBox</a>
+</li>
+<li>setSupportsBackwardsFind()
+: <a class="el" href="classKFindDialog.html#a47b113ace4556b15871844103f9acc1a">KFindDialog</a>
+</li>
+<li>setSupportsCaseSensitiveFind()
+: <a class="el" href="classKFindDialog.html#a87539c237ffabe9ecd5874d2c3932c8c">KFindDialog</a>
+</li>
+<li>setSupportsRegularExpressionFind()
+: <a class="el" href="classKFindDialog.html#aa11afefb57b18afcd0d7d1a6a0369349">KFindDialog</a>
+</li>
+<li>setSupportsWholeWordsFind()
+: <a class="el" href="classKFindDialog.html#a789152a36772e4619785038adc456730">KFindDialog</a>
+</li>
+<li>setTextBackgroundColor()
+: <a class="el" href="classKRichTextEdit.html#a210e2a450aa29b44854ea2234d71bcaa">KRichTextEdit</a>
+</li>
+<li>setTextBold()
+: <a class="el" href="classKRichTextEdit.html#ae01a148c93d4f3c10bfd9f4747973f56">KRichTextEdit</a>
+</li>
+<li>setTextForegroundColor()
+: <a class="el" href="classKRichTextEdit.html#a1fa9df1cdb18b74228fd0f8cf6245b06">KRichTextEdit</a>
+</li>
+<li>setTextItalic()
+: <a class="el" href="classKRichTextEdit.html#ae610ab9813a95ca7189c19d6afd67aa0">KRichTextEdit</a>
+</li>
+<li>setTextOrHtml()
+: <a class="el" href="classKRichTextEdit.html#a6c27d637c8924530a07d6a50eda7a8ff">KRichTextEdit</a>
+</li>
+<li>setTextStrikeOut()
+: <a class="el" href="classKRichTextEdit.html#a0c2bc9c0afae2f18930319dda48ecc4a">KRichTextEdit</a>
+</li>
+<li>setTextSubScript()
+: <a class="el" href="classKRichTextEdit.html#a1ceeae3d0ef681571941ffad588019b4">KRichTextEdit</a>
+</li>
+<li>setTextSuperScript()
+: <a class="el" href="classKRichTextEdit.html#ad43bcbfef1a779c2b27da1544fe66e5c">KRichTextEdit</a>
+</li>
+<li>setTextUnderline()
+: <a class="el" href="classKRichTextEdit.html#a6f621412ba3417b81471f73d33b214d9">KRichTextEdit</a>
+</li>
+<li>shouldBlockBeSpellChecked()
+: <a class="el" href="classKTextEdit.html#a3349d8c8cec836c5045ff831ee481878">KTextEdit</a>
+</li>
+<li>shouldRestart()
+: <a class="el" href="classKFind.html#a8723f1ff5cad548ae5c45ecf06c8adaf">KFind</a>
+, <a class="el" href="classKReplace.html#ad997b881d21bae0af7d5e4f4a6c32c45">KReplace</a>
+</li>
+<li>showAutoCorrectButton()
+: <a class="el" href="classKTextEdit.html#a8636d0d13b9ec8adc250522e002437a2">KTextEdit</a>
+</li>
+<li>showSpellConfigDialog()
+: <a class="el" href="classKTextEdit.html#a5c3e1df8b5a50234e06b2eaff1e9dc97">KTextEdit</a>
+</li>
+<li>showTabAction()
+: <a class="el" href="classKTextEdit.html#ac6faa160d4faa48293248c11e896a7ee">KTextEdit</a>
+</li>
+<li>slotDoReplace()
+: <a class="el" href="classKTextEdit.html#a415eef09787f61b7c8fd0ee94f4b55cb">KTextEdit</a>
+</li>
+<li>slotFindPrevious()
+: <a class="el" href="classKTextEdit.html#ad986042b6ad46bdffc95a4131cf32a04">KTextEdit</a>
+</li>
+<li>slotSpeakText()
+: <a class="el" href="classKTextEdit.html#a3110dc6a4618a70664d6e8d9d542cae6">KTextEdit</a>
+</li>
+<li>spellCheckerAutoCorrect()
+: <a class="el" href="classKTextEdit.html#ad7846e018ac5edc893e2d39229a66c4d">KTextEdit</a>
+</li>
+<li>spellCheckingCanceled()
+: <a class="el" href="classKTextEdit.html#a55e4c2f26e155b0ea2213005e0045f52">KTextEdit</a>
+</li>
+<li>spellCheckingFinished()
+: <a class="el" href="classKTextEdit.html#aa46bf70e0900d81a58b85eea91c8944e">KTextEdit</a>
+</li>
+<li>spellCheckingLanguage()
+: <a class="el" href="classKTextEdit.html#acd309899600cb2987f7917c5b6f24d8b">KTextEdit</a>
+</li>
+<li>spellCheckStatus()
+: <a class="el" href="classKTextEdit.html#aeb28d4bcd6a8d70eb7b9e2f59be933f2">KTextEdit</a>
+</li>
+<li>switchToPlainText()
+: <a class="el" href="classKRichTextEdit.html#a6587bb2d4e9719b260f7eebc625c9e82">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>KTextEdit()
+: <a class="el" href="classKTextEdit.html#a4676a18e43556c3a5e9e7c17cfbe9cd1">KTextEdit</a>
+</li>
+<li>textMode()
+: <a class="el" href="classKRichTextEdit.html#ae90a6a596d48c5fc336d2c006d6c6e6a">KRichTextEdit</a>
+</li>
+<li>textModeChanged()
+: <a class="el" href="classKRichTextEdit.html#a7425216597b008464264567db9a26f72">KRichTextEdit</a>
+</li>
+<li>textOrHtml()
+: <a class="el" href="classKRichTextEdit.html#a88eed2647ac8c28af26a6ca56b49a3f5">KRichTextEdit</a>
+</li>
+<li>toCleanHtml()
+: <a class="el" href="classKRichTextEdit.html#a76cc4bb86e004828937ea4ba042f5adb">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>updateActionStates()
+: <a class="el" href="classKRichTextWidget.html#ac03e17b1318d034aeec87982ab77b7e0">KRichTextWidget</a>
+</li>
+<li>updateLink()
+: <a class="el" href="classKRichTextEdit.html#afcb058212ca63b0ac6d88c0bba39d017">KRichTextEdit</a>
+</li>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>validateMatch()
+: <a class="el" href="classKFind.html#acaa4afe18d07ce6bff57335a685bccab">KFind</a>
+</li>
+</ul>
+
+
+<h3><a id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~KFindDialog()
+: <a class="el" href="classKFindDialog.html#a430c00801898700de804e01a5bbf081d">KFindDialog</a>
+</li>
+<li>~KReplaceDialog()
+: <a class="el" href="classKReplaceDialog.html#a87f5246ff389c39d86417b6569ca1e16">KReplaceDialog</a>
+</li>
+<li>~KRichTextEdit()
+: <a class="el" href="classKRichTextEdit.html#a650a22df62cce09cddd574ee5248c4df">KRichTextEdit</a>
+</li>
+<li>~KRichTextWidget()
+: <a class="el" href="classKRichTextWidget.html#accc0b25b4e48ef9dff9db1b421f7e113">KRichTextWidget</a>
+</li>
+<li>~KTextEdit()
+: <a class="el" href="classKTextEdit.html#ab097857528abab4e15c9d595713cc3b0">KTextEdit</a>
+</li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:03 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

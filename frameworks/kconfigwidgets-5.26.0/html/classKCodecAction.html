@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KConfigWidgets - KCodecAction Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KConfigWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KConfigWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCModule.html">KCModule</option>
+        
+        <option value="classKCodecAction.html">KCodecAction</option>
+        
+        <option value="classKColorScheme.html">KColorScheme</option>
+        
+        <option value="classKColorSchemeManager.html">KColorSchemeManager</option>
+        
+        <option value="classKConfigDialog.html">KConfigDialog</option>
+        
+        <option value="classKConfigDialogManager.html">KConfigDialogManager</option>
+        
+        <option value="classKLanguageButton.html">KLanguageButton</option>
+        
+        <option value="classKPasteTextAction.html">KPasteTextAction</option>
+        
+        <option value="classKRecentFilesAction.html">KRecentFilesAction</option>
+        
+        <option value="classKStatefulBrush.html">KStatefulBrush</option>
+        
+        <option value="classKTipDatabase.html">KTipDatabase</option>
+        
+        <option value="classKTipDialog.html">KTipDialog</option>
+        
+        <option value="classKViewStateMaintainer.html">KViewStateMaintainer</option>
+        
+        <option value="namespaceKStandardAction.html">KStandardAction</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widgets for configuration dialogs</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ConfigWidgets)
+target_link_libraries(yourapp KF5::ConfigWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KConfigWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kconfigwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KConfigWidgets on <a href="https://cgit.kde.org/kconfigwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KConfigWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCodecAction">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="classKCodecAction-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCodecAction Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcodecaction_8h_source.html">kcodecaction.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KCodecAction:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKCodecAction__inherit__graph.png" border="0" usemap="#KCodecAction_inherit__map" alt="Inheritance graph"/></div>
+<map name="KCodecAction_inherit__map" id="KCodecAction_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ac3475258b8fb003e8d786e84b2c03b37"><td class="memItemLeft" align="right" valign="top"><a id="ac3475258b8fb003e8d786e84b2c03b37"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>codecMib</b></td></tr>
+<tr class="separator:ac3475258b8fb003e8d786e84b2c03b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e36e5e0c0c3ce8c888831da26926c60"><td class="memItemLeft" align="right" valign="top"><a id="a6e36e5e0c0c3ce8c888831da26926c60"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>codecName</b></td></tr>
+<tr class="separator:a6e36e5e0c0c3ce8c888831da26926c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a25898e55df0c335fe1b8198d0b5f314c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecAction.html#a25898e55df0c335fe1b8198d0b5f314c">defaultItemTriggered</a> ()</td></tr>
+<tr class="separator:a25898e55df0c335fe1b8198d0b5f314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfede80bf17b21fde741ba16a3ef6ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecAction.html#addfede80bf17b21fde741ba16a3ef6ed">triggered</a> (QTextCodec *codec)</td></tr>
+<tr class="separator:addfede80bf17b21fde741ba16a3ef6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55c4047481bd22464aec3964a792335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecAction.html#ac55c4047481bd22464aec3964a792335">triggered</a> (KEncodingProber::ProberType)</td></tr>
+<tr class="separator:ac55c4047481bd22464aec3964a792335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('signals_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:a5f9116d18856b89789f1d71b795a16f5 inherit signals_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a5f9116d18856b89789f1d71b795a16f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a5f9116d18856b89789f1d71b795a16f5">triggered</a> (QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:a5f9116d18856b89789f1d71b795a16f5 inherit signals_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75729c4340d5c7265f0e9675d336ac99 inherit signals_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a75729c4340d5c7265f0e9675d336ac99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a75729c4340d5c7265f0e9675d336ac99">triggered</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a75729c4340d5c7265f0e9675d336ac99 inherit signals_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d48802c2ef63e62dd4e4ee5ece6dc59 inherit signals_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a3d48802c2ef63e62dd4e4ee5ece6dc59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a3d48802c2ef63e62dd4e4ee5ece6dc59">triggered</a> (int index)</td></tr>
+<tr class="separator:a3d48802c2ef63e62dd4e4ee5ece6dc59 inherit signals_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa563ea2d5f53b1e47d54ed142f2a8f5e"><td class="memItemLeft" align="right" valign="top"><a id="aa563ea2d5f53b1e47d54ed142f2a8f5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KCodecAction</b> (QObject *parent, bool showAutoOptions=false)</td></tr>
+<tr class="separator:aa563ea2d5f53b1e47d54ed142f2a8f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5d3f9c2e14152ccc2e1391d2f3545c"><td class="memItemLeft" align="right" valign="top"><a id="a2d5d3f9c2e14152ccc2e1391d2f3545c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KCodecAction</b> (const QString &amp;text, QObject *parent, bool showAutoOptions=false)</td></tr>
+<tr class="separator:a2d5d3f9c2e14152ccc2e1391d2f3545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f04e73c2310fd0bc7eb88c812bb71d"><td class="memItemLeft" align="right" valign="top"><a id="a82f04e73c2310fd0bc7eb88c812bb71d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KCodecAction</b> (const QIcon &amp;icon, const QString &amp;text, QObject *parent, bool showAutoOptions=false)</td></tr>
+<tr class="separator:a82f04e73c2310fd0bc7eb88c812bb71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63c87fc07f48660961ea57adf41220a"><td class="memItemLeft" align="right" valign="top"><a id="af63c87fc07f48660961ea57adf41220a"></a>
+QTextCodec *&#160;</td><td class="memItemRight" valign="bottom"><b>codecForMib</b> (int mib) const</td></tr>
+<tr class="separator:af63c87fc07f48660961ea57adf41220a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4a60a9e3aaf29724f854eb247e7ac0"><td class="memItemLeft" align="right" valign="top"><a id="a6b4a60a9e3aaf29724f854eb247e7ac0"></a>
+QTextCodec *&#160;</td><td class="memItemRight" valign="bottom"><b>currentCodec</b> () const</td></tr>
+<tr class="separator:a6b4a60a9e3aaf29724f854eb247e7ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7415ed6eeba1af66920bf92892b181a9"><td class="memItemLeft" align="right" valign="top"><a id="a7415ed6eeba1af66920bf92892b181a9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentCodecMib</b> () const</td></tr>
+<tr class="separator:a7415ed6eeba1af66920bf92892b181a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89af6f8586cc2a7a2c9139963ab6116"><td class="memItemLeft" align="right" valign="top"><a id="ab89af6f8586cc2a7a2c9139963ab6116"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>currentCodecName</b> () const</td></tr>
+<tr class="separator:ab89af6f8586cc2a7a2c9139963ab6116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad218b50c956d64dc7334bbfbf3923e19"><td class="memItemLeft" align="right" valign="top">KEncodingProber::ProberType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecAction.html#ad218b50c956d64dc7334bbfbf3923e19">currentProberType</a> () const</td></tr>
+<tr class="separator:ad218b50c956d64dc7334bbfbf3923e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9baa8ee20fc2cc5f1ab9ec010db10193"><td class="memItemLeft" align="right" valign="top"><a id="a9baa8ee20fc2cc5f1ab9ec010db10193"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mibForName</b> (const QString &amp;codecName, bool *ok=0) const</td></tr>
+<tr class="separator:a9baa8ee20fc2cc5f1ab9ec010db10193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a140ddc3552c5a6f2c21c07b5fc0aca69"><td class="memItemLeft" align="right" valign="top"><a id="a140ddc3552c5a6f2c21c07b5fc0aca69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentCodec</b> (QTextCodec *codec)</td></tr>
+<tr class="separator:a140ddc3552c5a6f2c21c07b5fc0aca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c0604bcd45591f3e403c04b7975803"><td class="memItemLeft" align="right" valign="top"><a id="a81c0604bcd45591f3e403c04b7975803"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentCodec</b> (const QString &amp;codecName)</td></tr>
+<tr class="separator:a81c0604bcd45591f3e403c04b7975803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfde78f757f6410c54684d12984caa48"><td class="memItemLeft" align="right" valign="top"><a id="acfde78f757f6410c54684d12984caa48"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentCodec</b> (int mib)</td></tr>
+<tr class="separator:acfde78f757f6410c54684d12984caa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6895f3096ce722da6e2b5a260bfebd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecAction.html#a0e6895f3096ce722da6e2b5a260bfebd">setCurrentProberType</a> (KEncodingProber::ProberType)</td></tr>
+<tr class="separator:a0e6895f3096ce722da6e2b5a260bfebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:a217e387367602a6c44108943c744b653 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a217e387367602a6c44108943c744b653"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a217e387367602a6c44108943c744b653">KSelectAction</a> (QObject *parent)</td></tr>
+<tr class="separator:a217e387367602a6c44108943c744b653 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcba2c5cb1b4bda0ef7fc18261ee398b inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="abcba2c5cb1b4bda0ef7fc18261ee398b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#abcba2c5cb1b4bda0ef7fc18261ee398b">KSelectAction</a> (const QString &amp;text, QObject *parent)</td></tr>
+<tr class="separator:abcba2c5cb1b4bda0ef7fc18261ee398b inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3490dc7b09893611b9328aa72b68a34a inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a3490dc7b09893611b9328aa72b68a34a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a3490dc7b09893611b9328aa72b68a34a">KSelectAction</a> (const QIcon &amp;icon, const QString &amp;text, QObject *parent)</td></tr>
+<tr class="separator:a3490dc7b09893611b9328aa72b68a34a inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee429c7e754dfb561fd918839291ad1c inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aee429c7e754dfb561fd918839291ad1c"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a> (int index) const</td></tr>
+<tr class="separator:aee429c7e754dfb561fd918839291ad1c inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65d2b2a2838678ec6ce6de0e2534140 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="ad65d2b2a2838678ec6ce6de0e2534140"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#ad65d2b2a2838678ec6ce6de0e2534140">action</a> (const QString &amp;text, Qt::CaseSensitivity cs=Qt::CaseSensitive) const</td></tr>
+<tr class="separator:ad65d2b2a2838678ec6ce6de0e2534140 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33b208302f3132e59fd9e9a05297067 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aa33b208302f3132e59fd9e9a05297067"></a>
+QList&lt; QAction *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aa33b208302f3132e59fd9e9a05297067">actions</a> () const</td></tr>
+<tr class="separator:aa33b208302f3132e59fd9e9a05297067 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aca39ea53dfee69a209e0f360cd613d inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a1aca39ea53dfee69a209e0f360cd613d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a1aca39ea53dfee69a209e0f360cd613d">addAction</a> (QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:a1aca39ea53dfee69a209e0f360cd613d inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf4244c623e08f01b7e9bfb2a4258ec inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a7cf4244c623e08f01b7e9bfb2a4258ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a7cf4244c623e08f01b7e9bfb2a4258ec">changeItem</a> (int index, const QString &amp;text)</td></tr>
+<tr class="separator:a7cf4244c623e08f01b7e9bfb2a4258ec inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4ee8f941b927a8156aa250561963e0 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a8c4ee8f941b927a8156aa250561963e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a8c4ee8f941b927a8156aa250561963e0">clear</a> ()</td></tr>
+<tr class="separator:a8c4ee8f941b927a8156aa250561963e0 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9d6e5ea769afa71639488f5e113e5b inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a5d9d6e5ea769afa71639488f5e113e5b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a5d9d6e5ea769afa71639488f5e113e5b">comboWidth</a> () const</td></tr>
+<tr class="separator:a5d9d6e5ea769afa71639488f5e113e5b inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec67736385858d3b1b4e1209a23b992 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="acec67736385858d3b1b4e1209a23b992"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#acec67736385858d3b1b4e1209a23b992">currentAction</a> () const</td></tr>
+<tr class="separator:acec67736385858d3b1b4e1209a23b992 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1ab61501b8fe0e7fd16b9f8d54eb8f inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aca1ab61501b8fe0e7fd16b9f8d54eb8f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aca1ab61501b8fe0e7fd16b9f8d54eb8f">currentItem</a> () const</td></tr>
+<tr class="separator:aca1ab61501b8fe0e7fd16b9f8d54eb8f inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3492e522a555e5c86625ba2ca54c4aac inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a3492e522a555e5c86625ba2ca54c4aac"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a3492e522a555e5c86625ba2ca54c4aac">currentText</a> () const</td></tr>
+<tr class="separator:a3492e522a555e5c86625ba2ca54c4aac inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac388626a18caaf9a73c04c40e06de917 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="ac388626a18caaf9a73c04c40e06de917"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#ac388626a18caaf9a73c04c40e06de917">insertAction</a> (QAction *before, QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:ac388626a18caaf9a73c04c40e06de917 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ffc2912c8d1da4e62fd7e6974ff757 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a03ffc2912c8d1da4e62fd7e6974ff757"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a03ffc2912c8d1da4e62fd7e6974ff757">isEditable</a> () const</td></tr>
+<tr class="separator:a03ffc2912c8d1da4e62fd7e6974ff757 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5aaffae954627096f814de876f76717 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aa5aaffae954627096f814de876f76717"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aa5aaffae954627096f814de876f76717">items</a> () const</td></tr>
+<tr class="separator:aa5aaffae954627096f814de876f76717 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3ecb174ca078752622d9cb0919d0c inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a35b3ecb174ca078752622d9cb0919d0c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a35b3ecb174ca078752622d9cb0919d0c">menuAccelsEnabled</a> () const</td></tr>
+<tr class="separator:a35b3ecb174ca078752622d9cb0919d0c inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51395e8ec13163206d8b0f5685481dc6 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a51395e8ec13163206d8b0f5685481dc6"></a>
+virtual QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a51395e8ec13163206d8b0f5685481dc6">removeAction</a> (QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:a51395e8ec13163206d8b0f5685481dc6 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6607d956f211b95a871c6ed07bd1425 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="ae6607d956f211b95a871c6ed07bd1425"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#ae6607d956f211b95a871c6ed07bd1425">removeAllActions</a> ()</td></tr>
+<tr class="separator:ae6607d956f211b95a871c6ed07bd1425 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2b55f619cd71bc834508e04ea64ebf inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aad2b55f619cd71bc834508e04ea64ebf"></a>
+QActionGroup *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aad2b55f619cd71bc834508e04ea64ebf">selectableActionGroup</a> () const</td></tr>
+<tr class="separator:aad2b55f619cd71bc834508e04ea64ebf inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d207e58bf22248034b74614d0a8fe6 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a57d207e58bf22248034b74614d0a8fe6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a57d207e58bf22248034b74614d0a8fe6">setComboWidth</a> (int width)</td></tr>
+<tr class="separator:a57d207e58bf22248034b74614d0a8fe6 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e00f8bb79bc69c1e84f4df25572df25 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a4e00f8bb79bc69c1e84f4df25572df25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a4e00f8bb79bc69c1e84f4df25572df25">setCurrentAction</a> (QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:a4e00f8bb79bc69c1e84f4df25572df25 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af576290f41b9b406fb1c6664c32461a7 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="af576290f41b9b406fb1c6664c32461a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#af576290f41b9b406fb1c6664c32461a7">setEditable</a> (bool)</td></tr>
+<tr class="separator:af576290f41b9b406fb1c6664c32461a7 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238edd9a6a5be1be97cdfbe17c2e410c inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a238edd9a6a5be1be97cdfbe17c2e410c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a238edd9a6a5be1be97cdfbe17c2e410c">setItems</a> (const QStringList &amp;lst)</td></tr>
+<tr class="separator:a238edd9a6a5be1be97cdfbe17c2e410c inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2308a2c0c8d9c87ed00e6f893ae52f inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aba2308a2c0c8d9c87ed00e6f893ae52f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aba2308a2c0c8d9c87ed00e6f893ae52f">setMaxComboViewCount</a> (int n)</td></tr>
+<tr class="separator:aba2308a2c0c8d9c87ed00e6f893ae52f inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae256f831aa591791d4b1e6f2b03e6d87 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="ae256f831aa591791d4b1e6f2b03e6d87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#ae256f831aa591791d4b1e6f2b03e6d87">setMenuAccelsEnabled</a> (bool b)</td></tr>
+<tr class="separator:ae256f831aa591791d4b1e6f2b03e6d87 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97e92bb6c72508384379b7b68708293 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aa97e92bb6c72508384379b7b68708293"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aa97e92bb6c72508384379b7b68708293">setToolBarMode</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a9e26bc062b6750ab5482f0502afc62c6">ToolBarMode</a> mode)</td></tr>
+<tr class="separator:aa97e92bb6c72508384379b7b68708293 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9aef756c597c3c753fcfb8b6b3ef71 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a2b9aef756c597c3c753fcfb8b6b3ef71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a2b9aef756c597c3c753fcfb8b6b3ef71">setToolButtonPopupMode</a> (QToolButton::ToolButtonPopupMode mode)</td></tr>
+<tr class="separator:a2b9aef756c597c3c753fcfb8b6b3ef71 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa277cf1714bec0202b6254e0a2394e32 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aa277cf1714bec0202b6254e0a2394e32"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a9e26bc062b6750ab5482f0502afc62c6">ToolBarMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aa277cf1714bec0202b6254e0a2394e32">toolBarMode</a> () const</td></tr>
+<tr class="separator:aa277cf1714bec0202b6254e0a2394e32 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dab3855305a0823a279bbebf71a5827 inherit pub_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a3dab3855305a0823a279bbebf71a5827"></a>
+QToolButton::ToolButtonPopupMode&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a3dab3855305a0823a279bbebf71a5827">toolButtonPopupMode</a> () const</td></tr>
+<tr class="separator:a3dab3855305a0823a279bbebf71a5827 inherit pub_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:aef434983e47b7e7d27622aec7fc15ee9"><td class="memItemLeft" align="right" valign="top"><a id="aef434983e47b7e7d27622aec7fc15ee9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>actionTriggered</b> (QAction *) override</td></tr>
+<tr class="separator:aef434983e47b7e7d27622aec7fc15ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:ad8cdfc986adc892ee4ace2a2a5bcb349 inherit pro_slots_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="ad8cdfc986adc892ee4ace2a2a5bcb349"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#ad8cdfc986adc892ee4ace2a2a5bcb349">actionTriggered</a> (QAction *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aee429c7e754dfb561fd918839291ad1c">action</a>)</td></tr>
+<tr class="separator:ad8cdfc986adc892ee4ace2a2a5bcb349 inherit pro_slots_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b64e725866b6ab2783b74ee59ca0f3 inherit pro_slots_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a55b64e725866b6ab2783b74ee59ca0f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a55b64e725866b6ab2783b74ee59ca0f3">slotToggled</a> (bool)</td></tr>
+<tr class="separator:a55b64e725866b6ab2783b74ee59ca0f3 inherit pro_slots_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:a9e26bc062b6750ab5482f0502afc62c6 inherit pub_types_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a9e26bc062b6750ab5482f0502afc62c6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ToolBarMode</b> </td></tr>
+<tr class="separator:a9e26bc062b6750ab5482f0502afc62c6 inherit pub_types_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:a9e26bc062b6750ab5482f0502afc62c6aa95bdc618c9578d78d1d3c185d95e288 inherit pub_attribs_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a9e26bc062b6750ab5482f0502afc62c6aa95bdc618c9578d78d1d3c185d95e288"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a9e26bc062b6750ab5482f0502afc62c6aa95bdc618c9578d78d1d3c185d95e288">ComboBoxMode</a></td></tr>
+<tr class="separator:a9e26bc062b6750ab5482f0502afc62c6aa95bdc618c9578d78d1d3c185d95e288 inherit pub_attribs_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e26bc062b6750ab5482f0502afc62c6a6e1da84fbcbd7decbedeb0cdc6d1f666 inherit pub_attribs_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a9e26bc062b6750ab5482f0502afc62c6a6e1da84fbcbd7decbedeb0cdc6d1f666"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a9e26bc062b6750ab5482f0502afc62c6a6e1da84fbcbd7decbedeb0cdc6d1f666">MenuMode</a></td></tr>
+<tr class="separator:a9e26bc062b6750ab5482f0502afc62c6a6e1da84fbcbd7decbedeb0cdc6d1f666 inherit pub_attribs_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKSelectAction"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKSelectAction')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a></td></tr>
+<tr class="memitem:a5da2e1674e02868e5d3108b8a59cc34d inherit pro_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a5da2e1674e02868e5d3108b8a59cc34d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a5da2e1674e02868e5d3108b8a59cc34d">KSelectAction</a> (KSelectActionPrivate &amp;dd, QObject *parent)</td></tr>
+<tr class="separator:a5da2e1674e02868e5d3108b8a59cc34d inherit pro_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa10145971f66d44899f2ba0aecce92 inherit pro_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="aefa10145971f66d44899f2ba0aecce92"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#aefa10145971f66d44899f2ba0aecce92">createWidget</a> (QWidget *parent) override</td></tr>
+<tr class="separator:aefa10145971f66d44899f2ba0aecce92 inherit pro_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c84f5f49f1564992971044e97ee1ade inherit pro_methods_classKSelectAction"><td class="memItemLeft" align="right" valign="top"><a id="a2c84f5f49f1564992971044e97ee1ade"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a2c84f5f49f1564992971044e97ee1ade">deleteWidget</a> (QWidget *widget) override</td></tr>
+<tr class="separator:a2c84f5f49f1564992971044e97ee1ade inherit pro_methods_classKSelectAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Action for selecting one of several QTextCodec. </p>
+<p>This action shows up a submenu with a list of the available codecs on the system. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcodecaction_8h_source.html#l00039">39</a> of file <a class="el" href="kcodecaction_8h_source.html">kcodecaction.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad218b50c956d64dc7334bbfbf3923e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad218b50c956d64dc7334bbfbf3923e19">&#9670;&nbsp;</a></span>currentProberType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KEncodingProber::ProberType KCodecAction::currentProberType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applicable only if showAutoOptions in c'tor was true. </p>
+<dl class="section return"><dt>Returns</dt><dd>KEncodingProber::None if specific encoding is selected, not autodetection, otherwise... you know it! </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcodecaction_8cpp_source.html#l00238">238</a> of file <a class="el" href="kcodecaction_8cpp_source.html">kcodecaction.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25898e55df0c335fe1b8198d0b5f314c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25898e55df0c335fe1b8198d0b5f314c">&#9670;&nbsp;</a></span>defaultItemTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCodecAction::defaultItemTriggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If showAutoOptions==true, then better handle <a class="el" href="classKCodecAction.html#ac55c4047481bd22464aec3964a792335" title="Autodetection has been selected. ">triggered(KEncodingProber::ProberType)</a> signal. </p>
+
+</div>
+</div>
+<a id="a0e6895f3096ce722da6e2b5a260bfebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6895f3096ce722da6e2b5a260bfebd">&#9670;&nbsp;</a></span>setCurrentProberType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCodecAction::setCurrentProberType </td>
+          <td>(</td>
+          <td class="paramtype">KEncodingProber::ProberType&#160;</td>
+          <td class="paramname"><em>scri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applicable only if showAutoOptions in c'tor was true. </p>
+<p>KEncodingProber::Universal means 'Default' item </p>
+
+<p class="definition">Definition at line <a class="el" href="kcodecaction_8cpp_source.html#l00245">245</a> of file <a class="el" href="kcodecaction_8cpp_source.html">kcodecaction.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addfede80bf17b21fde741ba16a3ef6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfede80bf17b21fde741ba16a3ef6ed">&#9670;&nbsp;</a></span>triggered <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCodecAction::triggered </td>
+          <td>(</td>
+          <td class="paramtype">QTextCodec *&#160;</td>
+          <td class="paramname"><em>codec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specific (proper) codec was selected. </p>
+<p>Note that <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html#a75729c4340d5c7265f0e9675d336ac99">triggered(const QString&amp;)</a> is emitted too (as defined in <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a>) </p>
+
+</div>
+</div>
+<a id="ac55c4047481bd22464aec3964a792335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55c4047481bd22464aec3964a792335">&#9670;&nbsp;</a></span>triggered <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCodecAction::triggered </td>
+          <td>(</td>
+          <td class="paramtype">KEncodingProber::ProberType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Autodetection has been selected. </p>
+<p>emits KEncodingProber::Universal if Default was selected.</p>
+<p>Applicable only if showAutoOptions in c'tor was true </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcodecaction_8h_source.html">kcodecaction.h</a></li>
+<li><a class="el" href="kcodecaction_8cpp_source.html">kcodecaction.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:25 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

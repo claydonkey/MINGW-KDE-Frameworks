@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDeclarative - KWindowSystemProxy Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDeclarative</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDeclarative"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKQuickAddons_1_1ConfigModule.html">KQuickAddons::ConfigModule</option>
+        
+        <option value="classDeclarativeMimeData.html">DeclarativeMimeData</option>
+        
+        <option value="classImageTexturesCache.html">ImageTexturesCache</option>
+        
+        <option value="classKDeclarativeMouseEvent.html">KDeclarativeMouseEvent</option>
+        
+        <option value="classKUserProxy.html">KUserProxy</option>
+        
+        <option value="classKWindowSystemProxy.html">KWindowSystemProxy</option>
+        
+        <option value="classManagedTextureNode.html">ManagedTextureNode</option>
+        
+        <option value="classMimeDataWrapper.html">MimeDataWrapper</option>
+        
+        <option value="classPlotData.html">PlotData</option>
+        
+        <option value="classKDeclarative_1_1QmlObject.html">KDeclarative::QmlObject</option>
+        
+        <option value="classKDeclarative_1_1QmlObjectSharedEngine.html">KDeclarative::QmlObjectSharedEngine</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Provides integration of QML and KDE Frameworks</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Declarative)
+target_link_libraries(yourapp KF5::Declarative)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDeclarative </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdeclarative-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDeclarative on <a href="https://cgit.kde.org/kdeclarative-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDeclarative </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KWindowSystemProxy">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKWindowSystemProxy-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KWindowSystemProxy Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a85569af58980beee8eef4b8592d52d55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a85569af58980beee8eef4b8592d52d55">compositingActive</a></td></tr>
+<tr class="separator:a85569af58980beee8eef4b8592d52d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab03196d2c191dab25d6a88b2745e77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a4ab03196d2c191dab25d6a88b2745e77">currentDesktop</a></td></tr>
+<tr class="separator:a4ab03196d2c191dab25d6a88b2745e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f6ae219a79de83a3d59a4accbe5474"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#af9f6ae219a79de83a3d59a4accbe5474">currentDesktopName</a></td></tr>
+<tr class="separator:af9f6ae219a79de83a3d59a4accbe5474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985d730fb7d15855ef523d4bb19f2863"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a985d730fb7d15855ef523d4bb19f2863">numberOfDesktops</a></td></tr>
+<tr class="separator:a985d730fb7d15855ef523d4bb19f2863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c">showingDesktop</a></td></tr>
+<tr class="separator:a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a31fa4bdf1006224e09d363fd731130ab"><td class="memItemLeft" align="right" valign="top"><a id="a31fa4bdf1006224e09d363fd731130ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>compositingActiveChanged</b> (bool <a class="el" href="classKWindowSystemProxy.html#a85569af58980beee8eef4b8592d52d55">compositingActive</a>)</td></tr>
+<tr class="separator:a31fa4bdf1006224e09d363fd731130ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666515268fef85fb293dddcad5f09e8b"><td class="memItemLeft" align="right" valign="top"><a id="a666515268fef85fb293dddcad5f09e8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>currentDesktopChanged</b> (int desktop)</td></tr>
+<tr class="separator:a666515268fef85fb293dddcad5f09e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4bbe37e37edfc6f34f0e89c3444766"><td class="memItemLeft" align="right" valign="top"><a id="aac4bbe37e37edfc6f34f0e89c3444766"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>currentDesktopNameChanged</b> ()</td></tr>
+<tr class="separator:aac4bbe37e37edfc6f34f0e89c3444766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d9977940675b99a9dfaa6a1a1c7ade"><td class="memItemLeft" align="right" valign="top"><a id="ab3d9977940675b99a9dfaa6a1a1c7ade"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>desktopNamesChanged</b> ()</td></tr>
+<tr class="separator:ab3d9977940675b99a9dfaa6a1a1c7ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16284ca6f15d4c4506a02f61b0fc38ce"><td class="memItemLeft" align="right" valign="top"><a id="a16284ca6f15d4c4506a02f61b0fc38ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfDesktopsChanged</b> (int <a class="el" href="classKWindowSystemProxy.html#a985d730fb7d15855ef523d4bb19f2863">numberOfDesktops</a>)</td></tr>
+<tr class="separator:a16284ca6f15d4c4506a02f61b0fc38ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8a6cf0a019aadb85126bfe66ca5499"><td class="memItemLeft" align="right" valign="top"><a id="abf8a6cf0a019aadb85126bfe66ca5499"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showingDesktopChanged</b> (bool <a class="el" href="classKWindowSystemProxy.html#a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c">showingDesktop</a>)</td></tr>
+<tr class="separator:abf8a6cf0a019aadb85126bfe66ca5499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac53dd41b15bce8bb9fb0a22109889656"><td class="memItemLeft" align="right" valign="top"><a id="ac53dd41b15bce8bb9fb0a22109889656"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KWindowSystemProxy</b> (QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:ac53dd41b15bce8bb9fb0a22109889656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa206ecd345243c238bc61c8b06f555cb"><td class="memItemLeft" align="right" valign="top"><a id="aa206ecd345243c238bc61c8b06f555cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>compositingActive</b> () const</td></tr>
+<tr class="separator:aa206ecd345243c238bc61c8b06f555cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ae24e0f1719aeac91b0a3d6069ae05"><td class="memItemLeft" align="right" valign="top"><a id="a36ae24e0f1719aeac91b0a3d6069ae05"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentDesktop</b> () const</td></tr>
+<tr class="separator:a36ae24e0f1719aeac91b0a3d6069ae05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a45ddc992e6332ac42843e20b736faf"><td class="memItemLeft" align="right" valign="top"><a id="a6a45ddc992e6332ac42843e20b736faf"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>currentDesktopName</b> () const</td></tr>
+<tr class="separator:a6a45ddc992e6332ac42843e20b736faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905701b33a951679acafa200ff95cde0"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a905701b33a951679acafa200ff95cde0">desktopName</a> (int desktop) const</td></tr>
+<tr class="separator:a905701b33a951679acafa200ff95cde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8c1baede4fe242bbbcb7dd894c212f"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#acd8c1baede4fe242bbbcb7dd894c212f">forceActivateWindow</a> (QWindow *window, long time=0)</td></tr>
+<tr class="separator:acd8c1baede4fe242bbbcb7dd894c212f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b7d445f3745189b130081c6cb52e9e"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#aa3b7d445f3745189b130081c6cb52e9e">hasWindow</a> (QWindow *window) const</td></tr>
+<tr class="separator:aa3b7d445f3745189b130081c6cb52e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a8fd1c270d4e469d0da01337ef1438"><td class="memItemLeft" align="right" valign="top"><a id="ab5a8fd1c270d4e469d0da01337ef1438"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfDesktops</b> () const</td></tr>
+<tr class="separator:ab5a8fd1c270d4e469d0da01337ef1438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b59f7a3dc007a8bb1c541b5768aad8"><td class="memItemLeft" align="right" valign="top"><a id="a96b59f7a3dc007a8bb1c541b5768aad8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentDesktop</b> (int desktop)</td></tr>
+<tr class="separator:a96b59f7a3dc007a8bb1c541b5768aad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5438b8260f9735e9ac4a6bc32a6df03"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#aa5438b8260f9735e9ac4a6bc32a6df03">setDesktopName</a> (int desktop, const QString &amp;name)</td></tr>
+<tr class="separator:aa5438b8260f9735e9ac4a6bc32a6df03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b16377838c7c5484573682d08fbd72"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#a21b16377838c7c5484573682d08fbd72">setOnActivities</a> (QWindow *window, const QStringList &amp;activities)</td></tr>
+<tr class="separator:a21b16377838c7c5484573682d08fbd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad98cad46d83436096d84421216762e"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#abad98cad46d83436096d84421216762e">setOnAllDesktops</a> (QWindow *window, bool onAllDesktops)</td></tr>
+<tr class="separator:abad98cad46d83436096d84421216762e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85b5a30426a4dd5791dd10f01084f46"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWindowSystemProxy.html#aa85b5a30426a4dd5791dd10f01084f46">setOnDesktop</a> (QWindow *window, int desktop)</td></tr>
+<tr class="separator:aa85b5a30426a4dd5791dd10f01084f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966805fad2b8e3416dc8205706d2e7c2"><td class="memItemLeft" align="right" valign="top"><a id="a966805fad2b8e3416dc8205706d2e7c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShowingDesktop</b> (bool <a class="el" href="classKWindowSystemProxy.html#a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c">showingDesktop</a>)</td></tr>
+<tr class="separator:a966805fad2b8e3416dc8205706d2e7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc17a2ebd93ed2014be61bf6ba263712"><td class="memItemLeft" align="right" valign="top"><a id="abc17a2ebd93ed2014be61bf6ba263712"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>showingDesktop</b> () const</td></tr>
+<tr class="separator:abc17a2ebd93ed2014be61bf6ba263712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9b90761cca12bf037a95c53422d7eecb"><td class="memItemLeft" align="right" valign="top"><a id="a9b90761cca12bf037a95c53422d7eecb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connectNotify</b> (const QMetaMethod &amp;signal)</td></tr>
+<tr class="separator:a9b90761cca12bf037a95c53422d7eecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This item exposes various properties of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwindowsystem-5.26.0/html/KWindowSystem.tags:../../../frameworks/kwindowsystem-5.26.0/html/" href="../../../frameworks/kwindowsystem-5.26.0/html/classKWindowSystem.html">KWindowSystem</a> for use inside a QML environment. </p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">import</span> org.kde.kwindowsystem 1.0</div><div class="line"></div><div class="line">KWindowSystem {</div><div class="line">    id: kwindowsystem</div><div class="line">}</div><div class="line"></div><div class="line">Rectangle {</div><div class="line">    width: 50</div><div class="line">    height: 50</div><div class="line">    color: <span class="stringliteral">&quot;blue&quot;</span></div><div class="line">    opacity: kwindowsystem.compositingActive ? 0.5 : 1</div><div class="line">}</div><div class="line"></div><div class="line">Label {</div><div class="line">    text: i18n(<span class="stringliteral">&quot;You are currently on Desktop &#39;%1&#39;&quot;</span>, kwindowsystem.currentDesktopName)</div><div class="line">}</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The features provided by this item are specific to the windowing system and might not be supported on any platform other than X11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00054">54</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a id="a85569af58980beee8eef4b8592d52d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85569af58980beee8eef4b8592d52d55">&#9670;&nbsp;</a></span>compositingActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWindowSystemProxy::compositingActive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether desktop compositing is active. </p>
+<dl class="section note"><dt>Note</dt><dd>This property is updated delayed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00079">79</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+
+</div>
+</div>
+<a id="a4ab03196d2c191dab25d6a88b2745e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab03196d2c191dab25d6a88b2745e77">&#9670;&nbsp;</a></span>currentDesktop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KWindowSystemProxy::currentDesktop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of the current desktop. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00061">61</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+
+</div>
+</div>
+<a id="af9f6ae219a79de83a3d59a4accbe5474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f6ae219a79de83a3d59a4accbe5474">&#9670;&nbsp;</a></span>currentDesktopName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KWindowSystemProxy::currentDesktopName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the current desktop. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00065">65</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+
+</div>
+</div>
+<a id="a985d730fb7d15855ef523d4bb19f2863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985d730fb7d15855ef523d4bb19f2863">&#9670;&nbsp;</a></span>numberOfDesktops</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KWindowSystemProxy::numberOfDesktops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of desktops. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00069">69</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+
+</div>
+</div>
+<a id="a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ecfe2f2fbdcdd8b68f0d31f3aadbe3c">&#9670;&nbsp;</a></span>showingDesktop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWindowSystemProxy::showingDesktop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether "show desktop" is currently active. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8h_source.html#l00073">73</a> of file <a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a905701b33a951679acafa200ff95cde0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905701b33a951679acafa200ff95cde0">&#9670;&nbsp;</a></span>desktopName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KWindowSystemProxy::desktopName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the specified desktop. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWindowSystemProxy.html#af9f6ae219a79de83a3d59a4accbe5474" title="The name of the current desktop. ">currentDesktopName</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the desktop </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00143">143</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd8c1baede4fe242bbbcb7dd894c212f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8c1baede4fe242bbbcb7dd894c212f">&#9670;&nbsp;</a></span>forceActivateWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWindowSystemProxy::forceActivateWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>time</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets window <code>window</code> to be the active window. </p>
+<dl class="section note"><dt>Note</dt><dd>This should be called only in special cases, applications shouldn't force themselves or other windows to be the active window. Generally, this call should used only by pagers and similar tools.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window to make active </td></tr>
+    <tr><td class="paramname">time</td><td>X server timestamp of the user activity that caused this request </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00115">115</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa3b7d445f3745189b130081c6cb52e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b7d445f3745189b130081c6cb52e9e">&#9670;&nbsp;</a></span>hasWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWindowSystemProxy::hasWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test to see if <code>window</code> still managed at present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window to test </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00106">106</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5438b8260f9735e9ac4a6bc32a6df03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5438b8260f9735e9ac4a6bc32a6df03">&#9670;&nbsp;</a></span>setDesktopName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWindowSystemProxy::setDesktopName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the name of the specified desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop </td></tr>
+    <tr><td class="paramname">name</td><td>the new name for the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00148">148</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a21b16377838c7c5484573682d08fbd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b16377838c7c5484573682d08fbd72">&#9670;&nbsp;</a></span>setOnActivities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWindowSystemProxy::setOnActivities </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>activities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves window <code>window</code> to activities <code>activities</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window </td></tr>
+    <tr><td class="paramname">activities</td><td>the list of activity UUIDs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00136">136</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abad98cad46d83436096d84421216762e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad98cad46d83436096d84421216762e">&#9670;&nbsp;</a></span>setOnAllDesktops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWindowSystemProxy::setOnAllDesktops </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onAllDesktops</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets window <code>window</code> to be present on all virtual desktops if <code>onAllDesktops</code> true. </p>
+<p>Otherwise the window lives only on one single desktop.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window </td></tr>
+    <tr><td class="paramname">onAllDesktops</td><td>true to show the window on all desktops, false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00122">122</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa85b5a30426a4dd5791dd10f01084f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85b5a30426a4dd5791dd10f01084f46">&#9670;&nbsp;</a></span>setOnDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWindowSystemProxy::setOnDesktop </td>
+          <td>(</td>
+          <td class="paramtype">QWindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves window <code>window</code> to desktop <code>desktop</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window </td></tr>
+    <tr><td class="paramname">desktop</td><td>the number of the new desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindowsystemproxy_8cpp_source.html#l00129">129</a> of file <a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kwindowsystemproxy_8h_source.html">kwindowsystemproxy.h</a></li>
+<li><a class="el" href="kwindowsystemproxy_8cpp_source.html">kwindowsystemproxy.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:42 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KI18n - klocalizedstring.h File Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KI18n</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KI18n"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKLocalizedContext.html">KLocalizedContext</option>
+        
+        <option value="classKLocalizedString.html">KLocalizedString</option>
+        
+        <option value="classKLocalizedTranslator.html">KLocalizedTranslator</option>
+        
+        <option value="classKuitSetup.html">KuitSetup</option>
+        
+        <option value="namespaceKuit.html">Kuit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced internationalization framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5I18n)
+target_link_libraries(yourapp KF5::I18n)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KI18n </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ki18n-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KI18n on <a href="https://cgit.kde.org/ki18n-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KI18n </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3ad5ea300ef3b74cc28cac9355a3ada0.html">mingw-w64-ki18n-qt5</a></li><li class="navelem"><a class="el" href="dir_ef780ae870b3aefb1a7429487b368d85.html">src</a></li><li class="navelem"><a class="el" href="dir_9480e0c15f23ba520efb456db6db9039.html">ki18n-5.26.0</a></li><li class="navelem"><a class="el" href="dir_52ea6673070771f3c873224af783ba32.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">klocalizedstring.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;ki18n_export.h&gt;</code><br />
+<code>#include &lt;QtCore/QChar&gt;</code><br />
+<code>#include &lt;QtCore/QLatin1Char&gt;</code><br />
+<code>#include &lt;QtCore/QSet&gt;</code><br />
+<code>#include &lt;QtCore/QString&gt;</code><br />
+<code>#include &lt;QtCore/QStringList&gt;</code><br />
+<code>#include &lt;kuitmarkup.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for klocalizedstring.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="klocalizedstring_8h__incl.png" border="0" usemap="#klocalizedstring_8h" alt=""/></div>
+<map name="klocalizedstring_8h" id="klocalizedstring_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="klocalizedstring_8h__dep__incl.png" border="0" usemap="#klocalizedstring_8hdep" alt=""/></div>
+<map name="klocalizedstring_8hdep" id="klocalizedstring_8hdep">
+</map>
+</div>
+</div>
+<p><a href="klocalizedstring_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedString.html">KLocalizedString</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3821f0718ba7ff4966b4aa3c87f70468"><td class="memItemLeft" align="right" valign="top"><a id="a3821f0718ba7ff4966b4aa3c87f70468"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>I18N_ERR_MSG</b>&#160;&#160;&#160;String_literal_as_second_argument_to_i18n___Perhaps_you_need_i18nc_or_i18np</td></tr>
+<tr class="separator:a3821f0718ba7ff4966b4aa3c87f70468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabc3278acc31ffe74c0ddcd3e745543"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#acabc3278acc31ffe74c0ddcd3e745543">I18N_NOOP</a>(text)&#160;&#160;&#160;text</td></tr>
+<tr class="separator:acabc3278acc31ffe74c0ddcd3e745543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a09e9ba4019d3d651c95a0ecc8ff72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a06a09e9ba4019d3d651c95a0ecc8ff72">I18N_NOOP2</a>(context,  text)&#160;&#160;&#160;text</td></tr>
+<tr class="separator:a06a09e9ba4019d3d651c95a0ecc8ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f15ca66237dcd911ea53f86bebfbed7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a2f15ca66237dcd911ea53f86bebfbed7">I18N_NOOP2_NOSTRIP</a>(context,  text)&#160;&#160;&#160;context, text</td></tr>
+<tr class="separator:a2f15ca66237dcd911ea53f86bebfbed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae741656a7a57488c3b3d373422f0b2b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#ae741656a7a57488c3b3d373422f0b2b0">I18NC_NOOP</a>(context,  text)&#160;&#160;&#160;context, text</td></tr>
+<tr class="separator:ae741656a7a57488c3b3d373422f0b2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cfa2e8664e9749614432bf2c8d2965"><td class="memItemLeft" align="right" valign="top"><a id="a69cfa2e8664e9749614432bf2c8d2965"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STATIC_ASSERT_NOT_LITERAL_STRING</b>(T)&#160;&#160;&#160;I18nTypeCheck&lt;T, sizeof(T)&gt;::I18N_ERR_MSG();</td></tr>
+<tr class="separator:a69cfa2e8664e9749614432bf2c8d2965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0eca0239d7b23eb40006d82d6210aa69"><td class="memItemLeft" align="right" valign="top"><a id="a0eca0239d7b23eb40006d82d6210aa69"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18n</b> (const char *text)</td></tr>
+<tr class="separator:a0eca0239d7b23eb40006d82d6210aa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0baa8ad0fe0b9be8b3db184f327c8f1"><td class="memTemplParams" colspan="2"><a id="ae0baa8ad0fe0b9be8b3db184f327c8f1"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:ae0baa8ad0fe0b9be8b3db184f327c8f1"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:ae0baa8ad0fe0b9be8b3db184f327c8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc038e4029bbc4993b883887390cbe9"><td class="memTemplParams" colspan="2"><a id="a7bc038e4029bbc4993b883887390cbe9"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a7bc038e4029bbc4993b883887390cbe9"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a7bc038e4029bbc4993b883887390cbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af181671ae722c380f27a63d7758edfee"><td class="memTemplParams" colspan="2"><a id="af181671ae722c380f27a63d7758edfee"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:af181671ae722c380f27a63d7758edfee"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:af181671ae722c380f27a63d7758edfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985c7fe3f9df334fa7cb79b40c0a0395"><td class="memTemplParams" colspan="2"><a id="a985c7fe3f9df334fa7cb79b40c0a0395"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a985c7fe3f9df334fa7cb79b40c0a0395"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a985c7fe3f9df334fa7cb79b40c0a0395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b3740d587e4c1003b80a3393ea3885"><td class="memTemplParams" colspan="2"><a id="a04b3740d587e4c1003b80a3393ea3885"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a04b3740d587e4c1003b80a3393ea3885"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a04b3740d587e4c1003b80a3393ea3885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5689406aa36b4528ce9b6c4c1fc910b"><td class="memTemplParams" colspan="2"><a id="ad5689406aa36b4528ce9b6c4c1fc910b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:ad5689406aa36b4528ce9b6c4c1fc910b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:ad5689406aa36b4528ce9b6c4c1fc910b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c59341565f78112a7a24473b62518b"><td class="memTemplParams" colspan="2"><a id="a52c59341565f78112a7a24473b62518b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a52c59341565f78112a7a24473b62518b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a52c59341565f78112a7a24473b62518b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cff74c7e49769b88eb6fbc0ca93ee9f"><td class="memTemplParams" colspan="2"><a id="a4cff74c7e49769b88eb6fbc0ca93ee9f"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a4cff74c7e49769b88eb6fbc0ca93ee9f"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a4cff74c7e49769b88eb6fbc0ca93ee9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13d289fd806dc33be5baa16d5ba2759"><td class="memTemplParams" colspan="2"><a id="aa13d289fd806dc33be5baa16d5ba2759"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:aa13d289fd806dc33be5baa16d5ba2759"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:aa13d289fd806dc33be5baa16d5ba2759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac966f013cb5315776181e4c9d1d2b05"><td class="memItemLeft" align="right" valign="top"><a id="aac966f013cb5315776181e4c9d1d2b05"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text)</td></tr>
+<tr class="separator:aac966f013cb5315776181e4c9d1d2b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6f107d459e94f6d75683c8300786e8"><td class="memTemplParams" colspan="2"><a id="a4d6f107d459e94f6d75683c8300786e8"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a4d6f107d459e94f6d75683c8300786e8"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:a4d6f107d459e94f6d75683c8300786e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803a39d4a37a94e7613fb4dcfe88ecaa"><td class="memTemplParams" colspan="2"><a id="a803a39d4a37a94e7613fb4dcfe88ecaa"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a803a39d4a37a94e7613fb4dcfe88ecaa"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a803a39d4a37a94e7613fb4dcfe88ecaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61264b90984df97620107d69bb17a21d"><td class="memTemplParams" colspan="2"><a id="a61264b90984df97620107d69bb17a21d"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a61264b90984df97620107d69bb17a21d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a61264b90984df97620107d69bb17a21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fd2514c6b843fb1d472ae5f7a620aa"><td class="memTemplParams" colspan="2"><a id="ab5fd2514c6b843fb1d472ae5f7a620aa"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:ab5fd2514c6b843fb1d472ae5f7a620aa"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:ab5fd2514c6b843fb1d472ae5f7a620aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b47a622b478582ea14e4a24deee5a71"><td class="memTemplParams" colspan="2"><a id="a2b47a622b478582ea14e4a24deee5a71"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a2b47a622b478582ea14e4a24deee5a71"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a2b47a622b478582ea14e4a24deee5a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c03f07ea77fb2ffac39c44111401d5"><td class="memTemplParams" colspan="2"><a id="a43c03f07ea77fb2ffac39c44111401d5"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a43c03f07ea77fb2ffac39c44111401d5"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a43c03f07ea77fb2ffac39c44111401d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15738421ba5939228a795eaa9ff598f1"><td class="memTemplParams" colspan="2"><a id="a15738421ba5939228a795eaa9ff598f1"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a15738421ba5939228a795eaa9ff598f1"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a15738421ba5939228a795eaa9ff598f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8771d2e5d4f72263bc9214b0b028d9"><td class="memTemplParams" colspan="2"><a id="a2d8771d2e5d4f72263bc9214b0b028d9"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a2d8771d2e5d4f72263bc9214b0b028d9"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a2d8771d2e5d4f72263bc9214b0b028d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab655cd9ac50d9b6272296940c19f91d8"><td class="memTemplParams" colspan="2"><a id="ab655cd9ac50d9b6272296940c19f91d8"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:ab655cd9ac50d9b6272296940c19f91d8"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:ab655cd9ac50d9b6272296940c19f91d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26396d9bc26020e1e436a2e18dcb876"><td class="memTemplParams" colspan="2"><a id="ae26396d9bc26020e1e436a2e18dcb876"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:ae26396d9bc26020e1e436a2e18dcb876"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:ae26396d9bc26020e1e436a2e18dcb876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca049472c041f2691bb35e525d810a87"><td class="memTemplParams" colspan="2"><a id="aca049472c041f2691bb35e525d810a87"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:aca049472c041f2691bb35e525d810a87"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:aca049472c041f2691bb35e525d810a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76877bf2d9fdbc535a50cc4d6abd1e3a"><td class="memTemplParams" colspan="2"><a id="a76877bf2d9fdbc535a50cc4d6abd1e3a"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a76877bf2d9fdbc535a50cc4d6abd1e3a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a76877bf2d9fdbc535a50cc4d6abd1e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7b88dff6b36a6d80ad9756fd0c483b"><td class="memTemplParams" colspan="2"><a id="adf7b88dff6b36a6d80ad9756fd0c483b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:adf7b88dff6b36a6d80ad9756fd0c483b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:adf7b88dff6b36a6d80ad9756fd0c483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7f94505998980a8cee30f6fcb42e0a"><td class="memTemplParams" colspan="2"><a id="a8a7f94505998980a8cee30f6fcb42e0a"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a8a7f94505998980a8cee30f6fcb42e0a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a8a7f94505998980a8cee30f6fcb42e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eed46eaea7925fe40fb00f3132cf6b5"><td class="memTemplParams" colspan="2"><a id="a8eed46eaea7925fe40fb00f3132cf6b5"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a8eed46eaea7925fe40fb00f3132cf6b5"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a8eed46eaea7925fe40fb00f3132cf6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af111122dd443b8f7ef4fa9dffc5ea0da"><td class="memTemplParams" colspan="2"><a id="af111122dd443b8f7ef4fa9dffc5ea0da"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:af111122dd443b8f7ef4fa9dffc5ea0da"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:af111122dd443b8f7ef4fa9dffc5ea0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2b741c885e3fe5261018ecbb2e95be"><td class="memTemplParams" colspan="2"><a id="a8f2b741c885e3fe5261018ecbb2e95be"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a8f2b741c885e3fe5261018ecbb2e95be"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a8f2b741c885e3fe5261018ecbb2e95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc8ccc4e8bc6c5f58bb044bc8135f75"><td class="memTemplParams" colspan="2"><a id="abbc8ccc4e8bc6c5f58bb044bc8135f75"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:abbc8ccc4e8bc6c5f58bb044bc8135f75"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:abbc8ccc4e8bc6c5f58bb044bc8135f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c30b29c44d090d55367712a0c607fc"><td class="memItemLeft" align="right" valign="top"><a id="a86c30b29c44d090d55367712a0c607fc"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a86c30b29c44d090d55367712a0c607fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbaa6845c21f74443f10c8832d6c5e9"><td class="memTemplParams" colspan="2"><a id="addbaa6845c21f74443f10c8832d6c5e9"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:addbaa6845c21f74443f10c8832d6c5e9"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:addbaa6845c21f74443f10c8832d6c5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f56da42f0d2e55d83385e553b5bff2a"><td class="memTemplParams" colspan="2"><a id="a2f56da42f0d2e55d83385e553b5bff2a"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a2f56da42f0d2e55d83385e553b5bff2a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a2f56da42f0d2e55d83385e553b5bff2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd20691823c85e6ce0651fcebf298d7"><td class="memTemplParams" colspan="2"><a id="a5dd20691823c85e6ce0651fcebf298d7"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a5dd20691823c85e6ce0651fcebf298d7"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a5dd20691823c85e6ce0651fcebf298d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3373381b35b3610ae405926838c6e78"><td class="memTemplParams" colspan="2"><a id="ab3373381b35b3610ae405926838c6e78"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:ab3373381b35b3610ae405926838c6e78"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:ab3373381b35b3610ae405926838c6e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66431880162fe0aa70b36149c53f246"><td class="memTemplParams" colspan="2"><a id="ac66431880162fe0aa70b36149c53f246"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:ac66431880162fe0aa70b36149c53f246"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:ac66431880162fe0aa70b36149c53f246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b94c7c53e52771791452202b9041382"><td class="memTemplParams" colspan="2"><a id="a4b94c7c53e52771791452202b9041382"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a4b94c7c53e52771791452202b9041382"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a4b94c7c53e52771791452202b9041382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d21175dd1471ef5a82baf08abfe96e"><td class="memTemplParams" colspan="2"><a id="a98d21175dd1471ef5a82baf08abfe96e"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a98d21175dd1471ef5a82baf08abfe96e"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a98d21175dd1471ef5a82baf08abfe96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7b38351001e6018a6fc4e463b3862f"><td class="memTemplParams" colspan="2"><a id="aef7b38351001e6018a6fc4e463b3862f"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:aef7b38351001e6018a6fc4e463b3862f"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:aef7b38351001e6018a6fc4e463b3862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48eff97593f5ede260506df169f58fbb"><td class="memTemplParams" colspan="2"><a id="a48eff97593f5ede260506df169f58fbb"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a48eff97593f5ede260506df169f58fbb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a48eff97593f5ede260506df169f58fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09421836350bbf95c2e80fc4a5f488f7"><td class="memItemLeft" align="right" valign="top"><a id="a09421836350bbf95c2e80fc4a5f488f7"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:a09421836350bbf95c2e80fc4a5f488f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf71bcb46449710e27702c3e5ff5dbcb"><td class="memTemplParams" colspan="2"><a id="aaf71bcb46449710e27702c3e5ff5dbcb"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:aaf71bcb46449710e27702c3e5ff5dbcb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:aaf71bcb46449710e27702c3e5ff5dbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3773c8dba8b012545370477c4431d13e"><td class="memTemplParams" colspan="2"><a id="a3773c8dba8b012545370477c4431d13e"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a3773c8dba8b012545370477c4431d13e"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a3773c8dba8b012545370477c4431d13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742b31780d906f443a170ebb2f913b88"><td class="memTemplParams" colspan="2"><a id="a742b31780d906f443a170ebb2f913b88"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a742b31780d906f443a170ebb2f913b88"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a742b31780d906f443a170ebb2f913b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a849e2965ccfda7b2a7ef725b7d8d6"><td class="memTemplParams" colspan="2"><a id="ac5a849e2965ccfda7b2a7ef725b7d8d6"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:ac5a849e2965ccfda7b2a7ef725b7d8d6"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:ac5a849e2965ccfda7b2a7ef725b7d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79339f849031f4a8375ee773d0d5b40d"><td class="memTemplParams" colspan="2"><a id="a79339f849031f4a8375ee773d0d5b40d"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a79339f849031f4a8375ee773d0d5b40d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a79339f849031f4a8375ee773d0d5b40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d9801ed97fce73cd772e0476a088fb"><td class="memTemplParams" colspan="2"><a id="aa2d9801ed97fce73cd772e0476a088fb"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:aa2d9801ed97fce73cd772e0476a088fb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:aa2d9801ed97fce73cd772e0476a088fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa9a5756780112f23a82f28162ae993"><td class="memTemplParams" colspan="2"><a id="a8fa9a5756780112f23a82f28162ae993"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a8fa9a5756780112f23a82f28162ae993"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a8fa9a5756780112f23a82f28162ae993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc3fc00f183f458d4c6ddf54932a18b"><td class="memTemplParams" colspan="2"><a id="afbc3fc00f183f458d4c6ddf54932a18b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:afbc3fc00f183f458d4c6ddf54932a18b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:afbc3fc00f183f458d4c6ddf54932a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b3a309b0c7c333938ccf72d1f7b2d3"><td class="memTemplParams" colspan="2"><a id="a10b3a309b0c7c333938ccf72d1f7b2d3"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a10b3a309b0c7c333938ccf72d1f7b2d3"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a10b3a309b0c7c333938ccf72d1f7b2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889ac3f844ccff63e0b9fc4dc588718b"><td class="memTemplParams" colspan="2"><a id="a889ac3f844ccff63e0b9fc4dc588718b"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a889ac3f844ccff63e0b9fc4dc588718b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:a889ac3f844ccff63e0b9fc4dc588718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63104700619ae3da3cefde903f17b853"><td class="memTemplParams" colspan="2"><a id="a63104700619ae3da3cefde903f17b853"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a63104700619ae3da3cefde903f17b853"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a63104700619ae3da3cefde903f17b853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802d04981a8ab397a6ca39da679f2e93"><td class="memTemplParams" colspan="2"><a id="a802d04981a8ab397a6ca39da679f2e93"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a802d04981a8ab397a6ca39da679f2e93"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a802d04981a8ab397a6ca39da679f2e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096fdb4acd4dcde1d53f7087bae4e950"><td class="memTemplParams" colspan="2"><a id="a096fdb4acd4dcde1d53f7087bae4e950"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a096fdb4acd4dcde1d53f7087bae4e950"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a096fdb4acd4dcde1d53f7087bae4e950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bae8d520c78fa44bfcc7f70988183f"><td class="memTemplParams" colspan="2"><a id="a10bae8d520c78fa44bfcc7f70988183f"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a10bae8d520c78fa44bfcc7f70988183f"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a10bae8d520c78fa44bfcc7f70988183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1485fa48e108a6e05aa7fc0820ed1d14"><td class="memTemplParams" colspan="2"><a id="a1485fa48e108a6e05aa7fc0820ed1d14"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a1485fa48e108a6e05aa7fc0820ed1d14"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a1485fa48e108a6e05aa7fc0820ed1d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ee7cb556f9a033dff703d8f94d8632"><td class="memTemplParams" colspan="2"><a id="ab0ee7cb556f9a033dff703d8f94d8632"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:ab0ee7cb556f9a033dff703d8f94d8632"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:ab0ee7cb556f9a033dff703d8f94d8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27f61323a09158236784788da82be24"><td class="memTemplParams" colspan="2"><a id="ad27f61323a09158236784788da82be24"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:ad27f61323a09158236784788da82be24"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:ad27f61323a09158236784788da82be24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a6a81a5d30acdfcfbcc116a34fe094"><td class="memTemplParams" colspan="2"><a id="a98a6a81a5d30acdfcfbcc116a34fe094"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a98a6a81a5d30acdfcfbcc116a34fe094"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a98a6a81a5d30acdfcfbcc116a34fe094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ebc6f1d85657ff5813976721157b6d"><td class="memTemplParams" colspan="2"><a id="a14ebc6f1d85657ff5813976721157b6d"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a14ebc6f1d85657ff5813976721157b6d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:a14ebc6f1d85657ff5813976721157b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0db6cf455a8c92e45d381dfc9e40ccc"><td class="memTemplParams" colspan="2"><a id="af0db6cf455a8c92e45d381dfc9e40ccc"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:af0db6cf455a8c92e45d381dfc9e40ccc"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:af0db6cf455a8c92e45d381dfc9e40ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7d64719fb3eff8a914da41ca53b162"><td class="memTemplParams" colspan="2"><a id="a4e7d64719fb3eff8a914da41ca53b162"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a4e7d64719fb3eff8a914da41ca53b162"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a4e7d64719fb3eff8a914da41ca53b162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0db4b43b557ee12ba11e14b081f2a05"><td class="memTemplParams" colspan="2"><a id="af0db4b43b557ee12ba11e14b081f2a05"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:af0db4b43b557ee12ba11e14b081f2a05"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:af0db4b43b557ee12ba11e14b081f2a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51729d75745a8b41c30c304c1838739b"><td class="memTemplParams" colspan="2"><a id="a51729d75745a8b41c30c304c1838739b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a51729d75745a8b41c30c304c1838739b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a51729d75745a8b41c30c304c1838739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c8b5143515a659c3fa0e2f3dcca336"><td class="memTemplParams" colspan="2"><a id="ae7c8b5143515a659c3fa0e2f3dcca336"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:ae7c8b5143515a659c3fa0e2f3dcca336"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:ae7c8b5143515a659c3fa0e2f3dcca336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f48144dc1e3abe84dc2e70fa2405f79"><td class="memTemplParams" colspan="2"><a id="a8f48144dc1e3abe84dc2e70fa2405f79"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a8f48144dc1e3abe84dc2e70fa2405f79"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a8f48144dc1e3abe84dc2e70fa2405f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9f0088100acc53a4b128e4423d46fd"><td class="memTemplParams" colspan="2"><a id="a6e9f0088100acc53a4b128e4423d46fd"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a6e9f0088100acc53a4b128e4423d46fd"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a6e9f0088100acc53a4b128e4423d46fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46e14c50cb7681850389406641f8f67"><td class="memTemplParams" colspan="2"><a id="af46e14c50cb7681850389406641f8f67"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:af46e14c50cb7681850389406641f8f67"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:af46e14c50cb7681850389406641f8f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4150e379c1dde304dc3beadcbb5262"><td class="memTemplParams" colspan="2"><a id="a2f4150e379c1dde304dc3beadcbb5262"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a2f4150e379c1dde304dc3beadcbb5262"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:a2f4150e379c1dde304dc3beadcbb5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac728c7908196a69e69f6a09ca227b9f3"><td class="memTemplParams" colspan="2"><a id="ac728c7908196a69e69f6a09ca227b9f3"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:ac728c7908196a69e69f6a09ca227b9f3"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:ac728c7908196a69e69f6a09ca227b9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34975ab67a2ee07086640bd62734c90"><td class="memTemplParams" colspan="2"><a id="af34975ab67a2ee07086640bd62734c90"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:af34975ab67a2ee07086640bd62734c90"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:af34975ab67a2ee07086640bd62734c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b5d7937e6b84e6b521adff210e60e9"><td class="memTemplParams" colspan="2"><a id="a58b5d7937e6b84e6b521adff210e60e9"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a58b5d7937e6b84e6b521adff210e60e9"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a58b5d7937e6b84e6b521adff210e60e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ceef551badb7f98ff10830d6b7fce8"><td class="memTemplParams" colspan="2"><a id="a92ceef551badb7f98ff10830d6b7fce8"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a92ceef551badb7f98ff10830d6b7fce8"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a92ceef551badb7f98ff10830d6b7fce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970ef51897e619e946c7e088bcca2e8b"><td class="memTemplParams" colspan="2"><a id="a970ef51897e619e946c7e088bcca2e8b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a970ef51897e619e946c7e088bcca2e8b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a970ef51897e619e946c7e088bcca2e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b340ed9cac35b484faa7ffab4222e15"><td class="memTemplParams" colspan="2"><a id="a6b340ed9cac35b484faa7ffab4222e15"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a6b340ed9cac35b484faa7ffab4222e15"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a6b340ed9cac35b484faa7ffab4222e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeff59c01675f92c365b08e7c4fcdd60"><td class="memTemplParams" colspan="2"><a id="abeff59c01675f92c365b08e7c4fcdd60"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:abeff59c01675f92c365b08e7c4fcdd60"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:abeff59c01675f92c365b08e7c4fcdd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70cfc29bcba61b8e44dddcbf2d9ffe6b"><td class="memTemplParams" colspan="2"><a id="a70cfc29bcba61b8e44dddcbf2d9ffe6b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a70cfc29bcba61b8e44dddcbf2d9ffe6b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>i18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a70cfc29bcba61b8e44dddcbf2d9ffe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2436c0aaeb52c95fdd3da220ccd39854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a2436c0aaeb52c95fdd3da220ccd39854">ki18n</a> (const char *text)</td></tr>
+<tr class="separator:a2436c0aaeb52c95fdd3da220ccd39854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bd4bdd21557ffb2df84df87f6e1986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#ab1bd4bdd21557ffb2df84df87f6e1986">ki18nc</a> (const char *context, const char *text)</td></tr>
+<tr class="separator:ab1bd4bdd21557ffb2df84df87f6e1986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bc81062c8670e54a23d01b4a00f56e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a73bc81062c8670e54a23d01b4a00f56e">ki18ncp</a> (const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a73bc81062c8670e54a23d01b4a00f56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17edd286c0b63f5e36417eba4a8e7ce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a17edd286c0b63f5e36417eba4a8e7ce9">ki18nd</a> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a17edd286c0b63f5e36417eba4a8e7ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91635b1edb372370deb3703f4bb800d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a91635b1edb372370deb3703f4bb800d1">ki18ndc</a> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:a91635b1edb372370deb3703f4bb800d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ac261ca74304b6ef5e20d63aade685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a98ac261ca74304b6ef5e20d63aade685">ki18ndcp</a> (const char *domain, const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a98ac261ca74304b6ef5e20d63aade685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2ff7eb3c7499abc84854263825934a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#afb2ff7eb3c7499abc84854263825934a">ki18ndp</a> (const char *domain, const char *singular, const char *plural)</td></tr>
+<tr class="separator:afb2ff7eb3c7499abc84854263825934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081851d1d0bb4cb20393ae9bdb919df3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a081851d1d0bb4cb20393ae9bdb919df3">ki18np</a> (const char *singular, const char *plural)</td></tr>
+<tr class="separator:a081851d1d0bb4cb20393ae9bdb919df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0476bb74730bc6b6d085d22b96eca98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#ab0476bb74730bc6b6d085d22b96eca98">kxi18n</a> (const char *text)</td></tr>
+<tr class="separator:ab0476bb74730bc6b6d085d22b96eca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33ce42696f558d20a27f19949acc1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#af33ce42696f558d20a27f19949acc1cf">kxi18nc</a> (const char *context, const char *text)</td></tr>
+<tr class="separator:af33ce42696f558d20a27f19949acc1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479fc87f3703d2e470543e7c73956623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a479fc87f3703d2e470543e7c73956623">kxi18ncp</a> (const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a479fc87f3703d2e470543e7c73956623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427f572ed2044dec2dce2498fa7fd0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a427f572ed2044dec2dce2498fa7fd0e0">kxi18nd</a> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a427f572ed2044dec2dce2498fa7fd0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3b09fb5651e7853650a9e888d2e15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#aca3b09fb5651e7853650a9e888d2e15c">kxi18ndc</a> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:aca3b09fb5651e7853650a9e888d2e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa40f5d1a3f7cb5ebf3ce445c78d079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a4aa40f5d1a3f7cb5ebf3ce445c78d079">kxi18ndcp</a> (const char *domain, const char *context, const char *singular, const char *plural)</td></tr>
+<tr class="separator:a4aa40f5d1a3f7cb5ebf3ce445c78d079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03f80c103e996d89f3a1ac1bc363f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#ad03f80c103e996d89f3a1ac1bc363f86">kxi18ndp</a> (const char *domain, const char *singular, const char *plural)</td></tr>
+<tr class="separator:ad03f80c103e996d89f3a1ac1bc363f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15206c846fe091b9317be3f4df3c3ba8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a15206c846fe091b9317be3f4df3c3ba8">kxi18np</a> (const char *singular, const char *plural)</td></tr>
+<tr class="separator:a15206c846fe091b9317be3f4df3c3ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a5360e04610f4b553a3d19cf134187"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#af7a5360e04610f4b553a3d19cf134187">tr2i18n</a> (const char *text, const char *comment=0)</td></tr>
+<tr class="separator:af7a5360e04610f4b553a3d19cf134187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afcdf2c2abfba458e1771bc55f68f7f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a4afcdf2c2abfba458e1771bc55f68f7f">tr2i18nd</a> (const char *domain, const char *text, const char *comment=0)</td></tr>
+<tr class="separator:a4afcdf2c2abfba458e1771bc55f68f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7363c32642684509a57c05a1fcd780c4"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#a7363c32642684509a57c05a1fcd780c4">tr2xi18n</a> (const char *text, const char *comment=0)</td></tr>
+<tr class="separator:a7363c32642684509a57c05a1fcd780c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66617e1653b9033e727238a8672bb92"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klocalizedstring_8h.html#aa66617e1653b9033e727238a8672bb92">tr2xi18nd</a> (const char *domain, const char *text, const char *comment=0)</td></tr>
+<tr class="separator:aa66617e1653b9033e727238a8672bb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887752aefd8c4b26de2c0af1383e31b4"><td class="memItemLeft" align="right" valign="top"><a id="a887752aefd8c4b26de2c0af1383e31b4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18n</b> (const char *text)</td></tr>
+<tr class="separator:a887752aefd8c4b26de2c0af1383e31b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7435ae4434ffcff92ef7dbbb1ef149"><td class="memTemplParams" colspan="2"><a id="a9a7435ae4434ffcff92ef7dbbb1ef149"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a9a7435ae4434ffcff92ef7dbbb1ef149"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:a9a7435ae4434ffcff92ef7dbbb1ef149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c06f6e21dbaaa5c802b034c0054d7a"><td class="memTemplParams" colspan="2"><a id="ae9c06f6e21dbaaa5c802b034c0054d7a"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:ae9c06f6e21dbaaa5c802b034c0054d7a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:ae9c06f6e21dbaaa5c802b034c0054d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bcd9f2d16d9094fe14c4f91ab6df69"><td class="memTemplParams" colspan="2"><a id="a70bcd9f2d16d9094fe14c4f91ab6df69"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a70bcd9f2d16d9094fe14c4f91ab6df69"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a70bcd9f2d16d9094fe14c4f91ab6df69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1637e4fdeeeac6df610365362bbdceaa"><td class="memTemplParams" colspan="2"><a id="a1637e4fdeeeac6df610365362bbdceaa"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a1637e4fdeeeac6df610365362bbdceaa"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a1637e4fdeeeac6df610365362bbdceaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dd58108b4ef939717d3e84fdf3c403"><td class="memTemplParams" colspan="2"><a id="a89dd58108b4ef939717d3e84fdf3c403"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a89dd58108b4ef939717d3e84fdf3c403"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a89dd58108b4ef939717d3e84fdf3c403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b7ca46e609f9dd85081579d502a7ac"><td class="memTemplParams" colspan="2"><a id="aa7b7ca46e609f9dd85081579d502a7ac"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:aa7b7ca46e609f9dd85081579d502a7ac"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:aa7b7ca46e609f9dd85081579d502a7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62880976588c02398e7cdd944780f8b1"><td class="memTemplParams" colspan="2"><a id="a62880976588c02398e7cdd944780f8b1"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a62880976588c02398e7cdd944780f8b1"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a62880976588c02398e7cdd944780f8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ef7b60da0cdbc0f3c7f15ac4c5e290"><td class="memTemplParams" colspan="2"><a id="ae9ef7b60da0cdbc0f3c7f15ac4c5e290"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:ae9ef7b60da0cdbc0f3c7f15ac4c5e290"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:ae9ef7b60da0cdbc0f3c7f15ac4c5e290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c10b1ba632412a51eb7fb3f2c2e63f0"><td class="memTemplParams" colspan="2"><a id="a5c10b1ba632412a51eb7fb3f2c2e63f0"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a5c10b1ba632412a51eb7fb3f2c2e63f0"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18n</b> (const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a5c10b1ba632412a51eb7fb3f2c2e63f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae411f10aeaf65b3553a1cc3281f2aa0b"><td class="memItemLeft" align="right" valign="top"><a id="ae411f10aeaf65b3553a1cc3281f2aa0b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text)</td></tr>
+<tr class="separator:ae411f10aeaf65b3553a1cc3281f2aa0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8148b1b8bc214699e18e521c2e1bdb"><td class="memTemplParams" colspan="2"><a id="a8d8148b1b8bc214699e18e521c2e1bdb"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a8d8148b1b8bc214699e18e521c2e1bdb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:a8d8148b1b8bc214699e18e521c2e1bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f033ba20759351aea7f84eacb8d8f3"><td class="memTemplParams" colspan="2"><a id="a79f033ba20759351aea7f84eacb8d8f3"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a79f033ba20759351aea7f84eacb8d8f3"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a79f033ba20759351aea7f84eacb8d8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd8a2aa6c32ae0f5bbf48114f9bf966"><td class="memTemplParams" colspan="2"><a id="a3fd8a2aa6c32ae0f5bbf48114f9bf966"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a3fd8a2aa6c32ae0f5bbf48114f9bf966"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a3fd8a2aa6c32ae0f5bbf48114f9bf966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e30e4af6bc2d0c66c831e419cde04a"><td class="memTemplParams" colspan="2"><a id="ac7e30e4af6bc2d0c66c831e419cde04a"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:ac7e30e4af6bc2d0c66c831e419cde04a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:ac7e30e4af6bc2d0c66c831e419cde04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9836ec95dd6aace0df9d6d29a47e9021"><td class="memTemplParams" colspan="2"><a id="a9836ec95dd6aace0df9d6d29a47e9021"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a9836ec95dd6aace0df9d6d29a47e9021"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a9836ec95dd6aace0df9d6d29a47e9021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226447b512872d606239a2ecc617bbd5"><td class="memTemplParams" colspan="2"><a id="a226447b512872d606239a2ecc617bbd5"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a226447b512872d606239a2ecc617bbd5"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a226447b512872d606239a2ecc617bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee1c6dd4f5a05092f948f5fbeb42e0d"><td class="memTemplParams" colspan="2"><a id="a9ee1c6dd4f5a05092f948f5fbeb42e0d"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a9ee1c6dd4f5a05092f948f5fbeb42e0d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a9ee1c6dd4f5a05092f948f5fbeb42e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265710117d1c7a88f4d1f0808cb3e875"><td class="memTemplParams" colspan="2"><a id="a265710117d1c7a88f4d1f0808cb3e875"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a265710117d1c7a88f4d1f0808cb3e875"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a265710117d1c7a88f4d1f0808cb3e875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b96342a18c11f298b87fa96d0ce9399"><td class="memTemplParams" colspan="2"><a id="a0b96342a18c11f298b87fa96d0ce9399"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a0b96342a18c11f298b87fa96d0ce9399"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nc</b> (const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a0b96342a18c11f298b87fa96d0ce9399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b45c14105a18cb3fc55d48dcb94f7f"><td class="memTemplParams" colspan="2"><a id="ab3b45c14105a18cb3fc55d48dcb94f7f"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:ab3b45c14105a18cb3fc55d48dcb94f7f"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:ab3b45c14105a18cb3fc55d48dcb94f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1f5812c5985df5d55b08e5ee7a1554"><td class="memTemplParams" colspan="2"><a id="aeb1f5812c5985df5d55b08e5ee7a1554"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:aeb1f5812c5985df5d55b08e5ee7a1554"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:aeb1f5812c5985df5d55b08e5ee7a1554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee89465b3ee03df1b1582d68987325a"><td class="memTemplParams" colspan="2"><a id="adee89465b3ee03df1b1582d68987325a"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:adee89465b3ee03df1b1582d68987325a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:adee89465b3ee03df1b1582d68987325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cfac98faea423f4cb9d92de0922cdb"><td class="memTemplParams" colspan="2"><a id="a79cfac98faea423f4cb9d92de0922cdb"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a79cfac98faea423f4cb9d92de0922cdb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a79cfac98faea423f4cb9d92de0922cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac809a84693a8e014625af6519f147e4"><td class="memTemplParams" colspan="2"><a id="aac809a84693a8e014625af6519f147e4"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:aac809a84693a8e014625af6519f147e4"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:aac809a84693a8e014625af6519f147e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea247222b1cd5736e130fe8013b0ef6"><td class="memTemplParams" colspan="2"><a id="aeea247222b1cd5736e130fe8013b0ef6"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:aeea247222b1cd5736e130fe8013b0ef6"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:aeea247222b1cd5736e130fe8013b0ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8596d496155f4900e62c91ad3fc1b887"><td class="memTemplParams" colspan="2"><a id="a8596d496155f4900e62c91ad3fc1b887"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a8596d496155f4900e62c91ad3fc1b887"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a8596d496155f4900e62c91ad3fc1b887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fe385e6d694d2062dae97b4d86d200"><td class="memTemplParams" colspan="2"><a id="a54fe385e6d694d2062dae97b4d86d200"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a54fe385e6d694d2062dae97b4d86d200"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a54fe385e6d694d2062dae97b4d86d200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823d3e0c7e8efa2b14083aff28b1aaf1"><td class="memTemplParams" colspan="2"><a id="a823d3e0c7e8efa2b14083aff28b1aaf1"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a823d3e0c7e8efa2b14083aff28b1aaf1"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ncp</b> (const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a823d3e0c7e8efa2b14083aff28b1aaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843cb4d0e82db96201500a2e4d58c135"><td class="memItemLeft" align="right" valign="top"><a id="a843cb4d0e82db96201500a2e4d58c135"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text)</td></tr>
+<tr class="separator:a843cb4d0e82db96201500a2e4d58c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675be5200ad4a2f98b9c0156b083ea7d"><td class="memTemplParams" colspan="2"><a id="a675be5200ad4a2f98b9c0156b083ea7d"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a675be5200ad4a2f98b9c0156b083ea7d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:a675be5200ad4a2f98b9c0156b083ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27b43a119d15babddbb58beb25e64b8"><td class="memTemplParams" colspan="2"><a id="ab27b43a119d15babddbb58beb25e64b8"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:ab27b43a119d15babddbb58beb25e64b8"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:ab27b43a119d15babddbb58beb25e64b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b6204eb57870d30bdef6c5f3ee44cf"><td class="memTemplParams" colspan="2"><a id="a25b6204eb57870d30bdef6c5f3ee44cf"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a25b6204eb57870d30bdef6c5f3ee44cf"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a25b6204eb57870d30bdef6c5f3ee44cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbddf938fabbe3019dc36139a9a8140"><td class="memTemplParams" colspan="2"><a id="a8fbddf938fabbe3019dc36139a9a8140"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a8fbddf938fabbe3019dc36139a9a8140"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a8fbddf938fabbe3019dc36139a9a8140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424e52d4086ae6956670348ca3a23eb6"><td class="memTemplParams" colspan="2"><a id="a424e52d4086ae6956670348ca3a23eb6"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a424e52d4086ae6956670348ca3a23eb6"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a424e52d4086ae6956670348ca3a23eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8169fa7caa6e4b2af2bcaf91d7c87539"><td class="memTemplParams" colspan="2"><a id="a8169fa7caa6e4b2af2bcaf91d7c87539"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a8169fa7caa6e4b2af2bcaf91d7c87539"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a8169fa7caa6e4b2af2bcaf91d7c87539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3ef353e829a6ebc94cb6cc297f28b7"><td class="memTemplParams" colspan="2"><a id="a6e3ef353e829a6ebc94cb6cc297f28b7"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a6e3ef353e829a6ebc94cb6cc297f28b7"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a6e3ef353e829a6ebc94cb6cc297f28b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8fc5d5c938f1dc147dc35192ea3c25"><td class="memTemplParams" colspan="2"><a id="a9e8fc5d5c938f1dc147dc35192ea3c25"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a9e8fc5d5c938f1dc147dc35192ea3c25"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a9e8fc5d5c938f1dc147dc35192ea3c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7b787ae4738cbcc021354880464877"><td class="memTemplParams" colspan="2"><a id="a2e7b787ae4738cbcc021354880464877"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a2e7b787ae4738cbcc021354880464877"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18nd</b> (const char *domain, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a2e7b787ae4738cbcc021354880464877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7fe1ce34cdd6cc93831f2b10a1c93d"><td class="memItemLeft" align="right" valign="top"><a id="a0b7fe1ce34cdd6cc93831f2b10a1c93d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text)</td></tr>
+<tr class="separator:a0b7fe1ce34cdd6cc93831f2b10a1c93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838277d739b2da9e6602e06ec378c487"><td class="memTemplParams" colspan="2"><a id="a838277d739b2da9e6602e06ec378c487"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:a838277d739b2da9e6602e06ec378c487"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1)</td></tr>
+<tr class="separator:a838277d739b2da9e6602e06ec378c487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1542291e1c8e5443f21fda6014f56ec0"><td class="memTemplParams" colspan="2"><a id="a1542291e1c8e5443f21fda6014f56ec0"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a1542291e1c8e5443f21fda6014f56ec0"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a1542291e1c8e5443f21fda6014f56ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714da45c3fe9f955ba18d9624c4f2d3d"><td class="memTemplParams" colspan="2"><a id="a714da45c3fe9f955ba18d9624c4f2d3d"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a714da45c3fe9f955ba18d9624c4f2d3d"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a714da45c3fe9f955ba18d9624c4f2d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8e32349490a958ad2f19155620da3e"><td class="memTemplParams" colspan="2"><a id="a0a8e32349490a958ad2f19155620da3e"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a0a8e32349490a958ad2f19155620da3e"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a0a8e32349490a958ad2f19155620da3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366c57495919a85db2deda6f28d7a8a4"><td class="memTemplParams" colspan="2"><a id="a366c57495919a85db2deda6f28d7a8a4"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a366c57495919a85db2deda6f28d7a8a4"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a366c57495919a85db2deda6f28d7a8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa7a1a7a2b6a8d695b90337dde8ecab"><td class="memTemplParams" colspan="2"><a id="a9fa7a1a7a2b6a8d695b90337dde8ecab"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a9fa7a1a7a2b6a8d695b90337dde8ecab"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a9fa7a1a7a2b6a8d695b90337dde8ecab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314aaaa465cee37ddd5a6fbda34c489c"><td class="memTemplParams" colspan="2"><a id="a314aaaa465cee37ddd5a6fbda34c489c"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a314aaaa465cee37ddd5a6fbda34c489c"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a314aaaa465cee37ddd5a6fbda34c489c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c30efd18c4c7c6101e987b8b54375d9"><td class="memTemplParams" colspan="2"><a id="a7c30efd18c4c7c6101e987b8b54375d9"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a7c30efd18c4c7c6101e987b8b54375d9"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a7c30efd18c4c7c6101e987b8b54375d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dce6200631b73c1aae18ebe57491270"><td class="memTemplParams" colspan="2"><a id="a9dce6200631b73c1aae18ebe57491270"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a9dce6200631b73c1aae18ebe57491270"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndc</b> (const char *domain, const char *context, const char *text, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a9dce6200631b73c1aae18ebe57491270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52ad5d1f19ade7127181973a18dc5b3"><td class="memTemplParams" colspan="2"><a id="ac52ad5d1f19ade7127181973a18dc5b3"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:ac52ad5d1f19ade7127181973a18dc5b3"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:ac52ad5d1f19ade7127181973a18dc5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7d55144506bb79317d78e1ed807e01"><td class="memTemplParams" colspan="2"><a id="a0a7d55144506bb79317d78e1ed807e01"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a0a7d55144506bb79317d78e1ed807e01"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a0a7d55144506bb79317d78e1ed807e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60902ac1e124ad16d927f9d3d7ec44a"><td class="memTemplParams" colspan="2"><a id="ae60902ac1e124ad16d927f9d3d7ec44a"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:ae60902ac1e124ad16d927f9d3d7ec44a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:ae60902ac1e124ad16d927f9d3d7ec44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff229df09dcce8327a7578a8f65b33a5"><td class="memTemplParams" colspan="2"><a id="aff229df09dcce8327a7578a8f65b33a5"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:aff229df09dcce8327a7578a8f65b33a5"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:aff229df09dcce8327a7578a8f65b33a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9d5f1e57fee1b8467fc3e43ff4239a"><td class="memTemplParams" colspan="2"><a id="a6a9d5f1e57fee1b8467fc3e43ff4239a"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:a6a9d5f1e57fee1b8467fc3e43ff4239a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:a6a9d5f1e57fee1b8467fc3e43ff4239a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fce7a9e3247876ad8a159d8cb7d4750"><td class="memTemplParams" colspan="2"><a id="a2fce7a9e3247876ad8a159d8cb7d4750"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:a2fce7a9e3247876ad8a159d8cb7d4750"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:a2fce7a9e3247876ad8a159d8cb7d4750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e9957803bba8a5bbb4ca07ac315c68"><td class="memTemplParams" colspan="2"><a id="aa4e9957803bba8a5bbb4ca07ac315c68"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:aa4e9957803bba8a5bbb4ca07ac315c68"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:aa4e9957803bba8a5bbb4ca07ac315c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc47b43a318c61d18c93cfd6d206fcc"><td class="memTemplParams" colspan="2"><a id="afcc47b43a318c61d18c93cfd6d206fcc"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:afcc47b43a318c61d18c93cfd6d206fcc"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:afcc47b43a318c61d18c93cfd6d206fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee261c18cc4647995b125d6208b0820"><td class="memTemplParams" colspan="2"><a id="a0ee261c18cc4647995b125d6208b0820"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a0ee261c18cc4647995b125d6208b0820"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndcp</b> (const char *domain, const char *context, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a0ee261c18cc4647995b125d6208b0820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64bf0595d15a683fa1fcfe998fb1ac6"><td class="memTemplParams" colspan="2"><a id="aa64bf0595d15a683fa1fcfe998fb1ac6"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:aa64bf0595d15a683fa1fcfe998fb1ac6"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:aa64bf0595d15a683fa1fcfe998fb1ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0344ceaebd5e30cb4ae90a6d3b8392"><td class="memTemplParams" colspan="2"><a id="a5b0344ceaebd5e30cb4ae90a6d3b8392"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a5b0344ceaebd5e30cb4ae90a6d3b8392"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a5b0344ceaebd5e30cb4ae90a6d3b8392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5349d8cefb70c5c38cf0efe6f926b6e"><td class="memTemplParams" colspan="2"><a id="aa5349d8cefb70c5c38cf0efe6f926b6e"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:aa5349d8cefb70c5c38cf0efe6f926b6e"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:aa5349d8cefb70c5c38cf0efe6f926b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f997823be2bae47a116b7d419e0565"><td class="memTemplParams" colspan="2"><a id="a99f997823be2bae47a116b7d419e0565"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:a99f997823be2bae47a116b7d419e0565"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:a99f997823be2bae47a116b7d419e0565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb1c22cd512ee7efc6907eda28df8d8"><td class="memTemplParams" colspan="2"><a id="afdb1c22cd512ee7efc6907eda28df8d8"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:afdb1c22cd512ee7efc6907eda28df8d8"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:afdb1c22cd512ee7efc6907eda28df8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac266a930cb15010ad0101c3931670d89"><td class="memTemplParams" colspan="2"><a id="ac266a930cb15010ad0101c3931670d89"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:ac266a930cb15010ad0101c3931670d89"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:ac266a930cb15010ad0101c3931670d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9396508365a41c256652e03ca6e0300a"><td class="memTemplParams" colspan="2"><a id="a9396508365a41c256652e03ca6e0300a"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a9396508365a41c256652e03ca6e0300a"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a9396508365a41c256652e03ca6e0300a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a316ee9fe9fa4613f4a579ff8a4375b"><td class="memTemplParams" colspan="2"><a id="a0a316ee9fe9fa4613f4a579ff8a4375b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a0a316ee9fe9fa4613f4a579ff8a4375b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a0a316ee9fe9fa4613f4a579ff8a4375b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0345d3cdcab02169f023c1aa11f644a7"><td class="memTemplParams" colspan="2"><a id="a0345d3cdcab02169f023c1aa11f644a7"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a0345d3cdcab02169f023c1aa11f644a7"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18ndp</b> (const char *domain, const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a0345d3cdcab02169f023c1aa11f644a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa367bcda802d30261951544d45c7215b"><td class="memTemplParams" colspan="2"><a id="aa367bcda802d30261951544d45c7215b"></a>
+template&lt;typename A1 &gt; </td></tr>
+<tr class="memitem:aa367bcda802d30261951544d45c7215b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1)</td></tr>
+<tr class="separator:aa367bcda802d30261951544d45c7215b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da71b191f173d3bc4c08ac1979d7de5"><td class="memTemplParams" colspan="2"><a id="a7da71b191f173d3bc4c08ac1979d7de5"></a>
+template&lt;typename A1 , typename A2 &gt; </td></tr>
+<tr class="memitem:a7da71b191f173d3bc4c08ac1979d7de5"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2)</td></tr>
+<tr class="separator:a7da71b191f173d3bc4c08ac1979d7de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ae087c98e786494c92e1a492900976"><td class="memTemplParams" colspan="2"><a id="a48ae087c98e786494c92e1a492900976"></a>
+template&lt;typename A1 , typename A2 , typename A3 &gt; </td></tr>
+<tr class="memitem:a48ae087c98e786494c92e1a492900976"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3)</td></tr>
+<tr class="separator:a48ae087c98e786494c92e1a492900976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b3e9ef513537e115b4f83e9f25c537"><td class="memTemplParams" colspan="2"><a id="ac1b3e9ef513537e115b4f83e9f25c537"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 &gt; </td></tr>
+<tr class="memitem:ac1b3e9ef513537e115b4f83e9f25c537"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4)</td></tr>
+<tr class="separator:ac1b3e9ef513537e115b4f83e9f25c537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab953d5bc36754081d8fd11ae6b3b930b"><td class="memTemplParams" colspan="2"><a id="ab953d5bc36754081d8fd11ae6b3b930b"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 &gt; </td></tr>
+<tr class="memitem:ab953d5bc36754081d8fd11ae6b3b930b"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5)</td></tr>
+<tr class="separator:ab953d5bc36754081d8fd11ae6b3b930b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62920f81b98aaadb50c686c764bde2e"><td class="memTemplParams" colspan="2"><a id="af62920f81b98aaadb50c686c764bde2e"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 &gt; </td></tr>
+<tr class="memitem:af62920f81b98aaadb50c686c764bde2e"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6)</td></tr>
+<tr class="separator:af62920f81b98aaadb50c686c764bde2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a54c50c12b3192a1db6d2dffc2915f7"><td class="memTemplParams" colspan="2"><a id="a5a54c50c12b3192a1db6d2dffc2915f7"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 &gt; </td></tr>
+<tr class="memitem:a5a54c50c12b3192a1db6d2dffc2915f7"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7)</td></tr>
+<tr class="separator:a5a54c50c12b3192a1db6d2dffc2915f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ea31396d258e091c16d841c9abfe67"><td class="memTemplParams" colspan="2"><a id="a80ea31396d258e091c16d841c9abfe67"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 &gt; </td></tr>
+<tr class="memitem:a80ea31396d258e091c16d841c9abfe67"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8)</td></tr>
+<tr class="separator:a80ea31396d258e091c16d841c9abfe67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c66c92d3aabcfc4b83c10155f5da1bb"><td class="memTemplParams" colspan="2"><a id="a6c66c92d3aabcfc4b83c10155f5da1bb"></a>
+template&lt;typename A1 , typename A2 , typename A3 , typename A4 , typename A5 , typename A6 , typename A7 , typename A8 , typename A9 &gt; </td></tr>
+<tr class="memitem:a6c66c92d3aabcfc4b83c10155f5da1bb"><td class="memTemplItemLeft" align="right" valign="top">QString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xi18np</b> (const char *singular, const char *plural, const A1 &amp;a1, const A2 &amp;a2, const A3 &amp;a3, const A4 &amp;a4, const A5 &amp;a5, const A6 &amp;a6, const A7 &amp;a7, const A8 &amp;a8, const A9 &amp;a9)</td></tr>
+<tr class="separator:a6c66c92d3aabcfc4b83c10155f5da1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acabc3278acc31ffe74c0ddcd3e745543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabc3278acc31ffe74c0ddcd3e745543">&#9670;&nbsp;</a></span>I18N_NOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I18N_NOOP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">text</td><td>)</td>
+          <td>&#160;&#160;&#160;text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap string for extraction. </p>
+<p>See i18n_noop for use cases. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l00044">44</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="a06a09e9ba4019d3d651c95a0ecc8ff72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a09e9ba4019d3d651c95a0ecc8ff72">&#9670;&nbsp;</a></span>I18N_NOOP2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I18N_NOOP2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">context, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">text&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap string with context for extraction, discarding context. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <code>I18NC_NOOP</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l00062">62</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="a2f15ca66237dcd911ea53f86bebfbed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f15ca66237dcd911ea53f86bebfbed7">&#9670;&nbsp;</a></span>I18N_NOOP2_NOSTRIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I18N_NOOP2_NOSTRIP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">context, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">text&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;context, text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap string with context for extraction. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Old name for <code>I18NC_NOOP</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l00071">71</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="ae741656a7a57488c3b3d373422f0b2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae741656a7a57488c3b3d373422f0b2b0">&#9670;&nbsp;</a></span>I18NC_NOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I18NC_NOOP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">context, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">text&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;context, text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap string with context for extraction. </p>
+<p>See i18n_noop for use cases. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l00053">53</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2436c0aaeb52c95fdd3da220ccd39854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2436c0aaeb52c95fdd3da220ccd39854">&#9670;&nbsp;</a></span>ki18n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01557">1557</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1bd4bdd21557ffb2df84df87f6e1986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bd4bdd21557ffb2df84df87f6e1986">&#9670;&nbsp;</a></span>ki18nc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18nc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01562">1562</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73bc81062c8670e54a23d01b4a00f56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73bc81062c8670e54a23d01b4a00f56e">&#9670;&nbsp;</a></span>ki18ncp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ncp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01572">1572</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17edd286c0b63f5e36417eba4a8e7ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17edd286c0b63f5e36417eba4a8e7ce9">&#9670;&nbsp;</a></span>ki18nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01578">1578</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91635b1edb372370deb3703f4bb800d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91635b1edb372370deb3703f4bb800d1">&#9670;&nbsp;</a></span>ki18ndc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01583">1583</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a98ac261ca74304b6ef5e20d63aade685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ac261ca74304b6ef5e20d63aade685">&#9670;&nbsp;</a></span>ki18ndcp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndcp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01595">1595</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb2ff7eb3c7499abc84854263825934a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2ff7eb3c7499abc84854263825934a">&#9670;&nbsp;</a></span>ki18ndp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18ndp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string from domain with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01589">1589</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a081851d1d0bb4cb20393ae9bdb919df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081851d1d0bb4cb20393ae9bdb919df3">&#9670;&nbsp;</a></span>ki18np()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT ki18np </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized translated string with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01567">1567</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab0476bb74730bc6b6d085d22b96eca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0476bb74730bc6b6d085d22b96eca98">&#9670;&nbsp;</a></span>kxi18n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01601">1601</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af33ce42696f558d20a27f19949acc1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33ce42696f558d20a27f19949acc1cf">&#9670;&nbsp;</a></span>kxi18nc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18nc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01606">1606</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a479fc87f3703d2e470543e7c73956623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479fc87f3703d2e470543e7c73956623">&#9670;&nbsp;</a></span>kxi18ncp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ncp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string. </p>
+<p>with context and plural.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01616">1616</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a427f572ed2044dec2dce2498fa7fd0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427f572ed2044dec2dce2498fa7fd0e0">&#9670;&nbsp;</a></span>kxi18nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01622">1622</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aca3b09fb5651e7853650a9e888d2e15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3b09fb5651e7853650a9e888d2e15c">&#9670;&nbsp;</a></span>kxi18ndc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01627">1627</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4aa40f5d1a3f7cb5ebf3ce445c78d079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa40f5d1a3f7cb5ebf3ce445c78d079">&#9670;&nbsp;</a></span>kxi18ndcp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndcp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with context and plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">context</td><td>context of the string </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01639">1639</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad03f80c103e996d89f3a1ac1bc363f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03f80c103e996d89f3a1ac1bc363f86">&#9670;&nbsp;</a></span>kxi18ndp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18ndp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string from domain with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01633">1633</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15206c846fe091b9317be3f4df3c3ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15206c846fe091b9317be3f4df3c3ba8">&#9670;&nbsp;</a></span>kxi18np()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKLocalizedString.html">KLocalizedString</a> KI18N_EXPORT kxi18np </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>singular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plural</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create non-finalized markup-aware translated string with plural. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">singular</td><td>singular form of the string to translate </td></tr>
+    <tr><td class="paramname">plural</td><td>plural form of the string to translate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-finalized translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8cpp_source.html#l01611">1611</a> of file <a class="el" href="klocalizedstring_8cpp_source.html">klocalizedstring.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7a5360e04610f4b553a3d19cf134187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a5360e04610f4b553a3d19cf134187">&#9670;&nbsp;</a></span>tr2i18n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString tr2i18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redirect Qt's <code>uic</code>-generated translation calls to Ki18n. </p>
+<p>Use <code>-tr tr2i18n</code> option to <code>uic</code> to have it redirect calls.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+    <tr><td class="paramname">comment</td><td>Qt equivalent of disambiguation context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l01016">1016</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="a4afcdf2c2abfba458e1771bc55f68f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4afcdf2c2abfba458e1771bc55f68f7f">&#9670;&nbsp;</a></span>tr2i18nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString tr2i18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like <code>tr2i18n</code>, but look for translation in a specific domain. </p>
+<p>Use <code>-tr tr2i18nd</code> option to <code>uic</code> to have it redirect calls.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>string to translate </td></tr>
+    <tr><td class="paramname">comment</td><td>Qt equivalent of disambiguation context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l01037">1037</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="a7363c32642684509a57c05a1fcd780c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7363c32642684509a57c05a1fcd780c4">&#9670;&nbsp;</a></span>tr2xi18n()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString tr2xi18n </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like <code>tr2i18n</code>, but when UI strings are KUIT markup-aware. </p>
+<p>Use <code>-tr tr2xi18n</code> option to <code>uic</code> to have it redirect calls.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>markup-aware string to translate </td></tr>
+    <tr><td class="paramname">comment</td><td>Qt equivalent of disambiguation context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l01058">1058</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+<a id="aa66617e1653b9033e727238a8672bb92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66617e1653b9033e727238a8672bb92">&#9670;&nbsp;</a></span>tr2xi18nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString tr2xi18nd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>comment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like <code>tr2xi18n</code>, but look for translation in a specific domain. </p>
+<p>Use <code>-tr tr2xi18nd</code> option to <code>uic</code> to have it redirect calls.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>domain in which to look for translations </td></tr>
+    <tr><td class="paramname">text</td><td>markup-aware string to translate </td></tr>
+    <tr><td class="paramname">comment</td><td>Qt equivalent of disambiguation context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>translated string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedstring_8h_source.html#l01079">1079</a> of file <a class="el" href="klocalizedstring_8h_source.html">klocalizedstring.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:06 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

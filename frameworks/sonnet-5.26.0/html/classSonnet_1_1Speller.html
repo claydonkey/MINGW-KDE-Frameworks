@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sonnet - Sonnet::Speller Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">Sonnet</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "Sonnet"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classASpellDict.html">ASpellDict</option>
+        
+        <option value="classSonnet_1_1BackgroundChecker.html">Sonnet::BackgroundChecker</option>
+        
+        <option value="classSonnet_1_1ConfigDialog.html">Sonnet::ConfigDialog</option>
+        
+        <option value="classSonnet_1_1ConfigWidget.html">Sonnet::ConfigWidget</option>
+        
+        <option value="classSonnet_1_1Dialog.html">Sonnet::Dialog</option>
+        
+        <option value="classSonnet_1_1DictionaryComboBox.html">Sonnet::DictionaryComboBox</option>
+        
+        <option value="classSonnet_1_1GuessLanguage.html">Sonnet::GuessLanguage</option>
+        
+        <option value="classSonnet_1_1Highlighter.html">Sonnet::Highlighter</option>
+        
+        <option value="classHSpellDict.html">HSpellDict</option>
+        
+        <option value="classNSSpellCheckerDict.html">NSSpellCheckerDict</option>
+        
+        <option value="classSonnet_1_1SpellCheckDecorator.html">Sonnet::SpellCheckDecorator</option>
+        
+        <option value="classSonnet_1_1Speller.html">Sonnet::Speller</option>
+        
+        <option value="classVoikkoClient.html">VoikkoClient</option>
+        
+        <option value="namespaceSonnet.html">Sonnet</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Support for spellchecking</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:martin.sandsmark@kde.org">Martin Tobias Holmedahl Sandsmark</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Sonnet)
+target_link_libraries(yourapp KF5::SonnetCore KF5::SonnetUi)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += SonnetCore SonnetUi </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/sonnet-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>Sonnet on <a href="https://cgit.kde.org/sonnet-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> Sonnet </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=Speller">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSonnet.html">Sonnet</a></li><li class="navelem"><a class="el" href="classSonnet_1_1Speller.html">Speller</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classSonnet_1_1Speller-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Sonnet::Speller Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="speller_8h_source.html">speller.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1842229c5b6141b09a6c09eaef20f6a5"><td class="memItemLeft" align="right" valign="top"><a id="a1842229c5b6141b09a6c09eaef20f6a5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> { <b>CheckUppercase</b>,
+<b>SkipRunTogether</b>,
+<b>AutoDetectLanguage</b>
+ }</td></tr>
+<tr class="separator:a1842229c5b6141b09a6c09eaef20f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a14a5845017ff90545028ed547b05ff6d"><td class="memItemLeft" align="right" valign="top"><a id="a14a5845017ff90545028ed547b05ff6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Speller</b> (const QString &amp;lang=QString())</td></tr>
+<tr class="separator:a14a5845017ff90545028ed547b05ff6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad933a7aa4bfa90fda377f685e39c42d5"><td class="memItemLeft" align="right" valign="top"><a id="ad933a7aa4bfa90fda377f685e39c42d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Speller</b> (const <a class="el" href="classSonnet_1_1Speller.html">Speller</a> &amp;speller)</td></tr>
+<tr class="separator:ad933a7aa4bfa90fda377f685e39c42d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35f6ca8d33fe19019ad887218d769b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#aa35f6ca8d33fe19019ad887218d769b5">addToPersonal</a> (const QString &amp;word)</td></tr>
+<tr class="separator:aa35f6ca8d33fe19019ad887218d769b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6e1b121a5d853d48588f806907b3a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a1b6e1b121a5d853d48588f806907b3a0">addToSession</a> (const QString &amp;word)</td></tr>
+<tr class="separator:a1b6e1b121a5d853d48588f806907b3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24afea091a8da0ae8dd4e44235e584d3"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a24afea091a8da0ae8dd4e44235e584d3">availableBackends</a> () const</td></tr>
+<tr class="separator:a24afea091a8da0ae8dd4e44235e584d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb69ef58abcd83082cbd74e23b5d3e3"><td class="memItemLeft" align="right" valign="top">QMap&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a7eb69ef58abcd83082cbd74e23b5d3e3">availableDictionaries</a> () const</td></tr>
+<tr class="separator:a7eb69ef58abcd83082cbd74e23b5d3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a90f31cc8e7840e0dc9bdafc74454f"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a32a90f31cc8e7840e0dc9bdafc74454f">availableLanguageNames</a> () const</td></tr>
+<tr class="separator:a32a90f31cc8e7840e0dc9bdafc74454f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af694389fff26c2455ea9c74f1973516e"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#af694389fff26c2455ea9c74f1973516e">availableLanguages</a> () const</td></tr>
+<tr class="separator:af694389fff26c2455ea9c74f1973516e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b6733b1192d09a76a90b2dd9ed749c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a15b6733b1192d09a76a90b2dd9ed749c">checkAndSuggest</a> (const QString &amp;word, QStringList &amp;suggestions) const</td></tr>
+<tr class="separator:a15b6733b1192d09a76a90b2dd9ed749c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a15355e594aad49f69d78723a67e302"><td class="memItemLeft" align="right" valign="top"><a id="a8a15355e594aad49f69d78723a67e302"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>defaultClient</b> () const</td></tr>
+<tr class="separator:a8a15355e594aad49f69d78723a67e302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9753e334ec53c96bb161d9f0abb3a743"><td class="memItemLeft" align="right" valign="top"><a id="a9753e334ec53c96bb161d9f0abb3a743"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>defaultLanguage</b> () const</td></tr>
+<tr class="separator:a9753e334ec53c96bb161d9f0abb3a743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d9c6ae88282db5f08d8cd1196c846f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#ad0d9c6ae88282db5f08d8cd1196c846f">isCorrect</a> (const QString &amp;word) const</td></tr>
+<tr class="separator:ad0d9c6ae88282db5f08d8cd1196c846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415bd52c9ac7fa8d7a48205e0cb1b526"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a415bd52c9ac7fa8d7a48205e0cb1b526">isMisspelled</a> (const QString &amp;word) const</td></tr>
+<tr class="separator:a415bd52c9ac7fa8d7a48205e0cb1b526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada180ab8c0f2ce73fff91e7841c9fac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#ada180ab8c0f2ce73fff91e7841c9fac9">isValid</a> () const</td></tr>
+<tr class="separator:ada180ab8c0f2ce73fff91e7841c9fac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6fe880f1befd07007e0135b6358691"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a6d6fe880f1befd07007e0135b6358691">language</a> () const</td></tr>
+<tr class="separator:a6d6fe880f1befd07007e0135b6358691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47128c7abbfe942b87bb810617e9fee"><td class="memItemLeft" align="right" valign="top"><a id="af47128c7abbfe942b87bb810617e9fee"></a>
+<a class="el" href="classSonnet_1_1Speller.html">Speller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classSonnet_1_1Speller.html">Speller</a> &amp;speller)</td></tr>
+<tr class="separator:af47128c7abbfe942b87bb810617e9fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29177711615b83a854e42add09ce5cbc"><td class="memItemLeft" align="right" valign="top"><a id="a29177711615b83a854e42add09ce5cbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>restore</b> ()</td></tr>
+<tr class="separator:a29177711615b83a854e42add09ce5cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7a4bbf57d3639fe62684cacfeb8f1a"><td class="memItemLeft" align="right" valign="top"><a id="abb7a4bbf57d3639fe62684cacfeb8f1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
+<tr class="separator:abb7a4bbf57d3639fe62684cacfeb8f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0821ba644e39d8dc74333aa35245274"><td class="memItemLeft" align="right" valign="top"><a id="af0821ba644e39d8dc74333aa35245274"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAttribute</b> (Attribute attr, bool b=true)</td></tr>
+<tr class="separator:af0821ba644e39d8dc74333aa35245274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fedd2d17335fd04d6bbfd944f416a6"><td class="memItemLeft" align="right" valign="top"><a id="af6fedd2d17335fd04d6bbfd944f416a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultClient</b> (const QString &amp;client)</td></tr>
+<tr class="separator:af6fedd2d17335fd04d6bbfd944f416a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede747bf6b1506e6bdc2f302596d0903"><td class="memItemLeft" align="right" valign="top"><a id="aede747bf6b1506e6bdc2f302596d0903"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultLanguage</b> (const QString &amp;lang)</td></tr>
+<tr class="separator:aede747bf6b1506e6bdc2f302596d0903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4950c87790d78127c7f02c346473a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#ae4950c87790d78127c7f02c346473a6c">setLanguage</a> (const QString &amp;lang)</td></tr>
+<tr class="separator:ae4950c87790d78127c7f02c346473a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63967f0235407286ad850248468e5df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#ad63967f0235407286ad850248468e5df">storeReplacement</a> (const QString &amp;bad, const QString &amp;good)</td></tr>
+<tr class="separator:ad63967f0235407286ad850248468e5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f5bb2fdd1a8758519d4614bec1bee5"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonnet_1_1Speller.html#a63f5bb2fdd1a8758519d4614bec1bee5">suggest</a> (const QString &amp;word) const</td></tr>
+<tr class="separator:a63f5bb2fdd1a8758519d4614bec1bee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2999d1789a743d652cac57e1deebddcf"><td class="memItemLeft" align="right" valign="top"><a id="a2999d1789a743d652cac57e1deebddcf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>testAttribute</b> (Attribute attr) const</td></tr>
+<tr class="separator:a2999d1789a743d652cac57e1deebddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Spell checker object. </p>
+<p>class used for actuall spell checking </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8h_source.html#l00037">37</a> of file <a class="el" href="speller_8h_source.html">speller.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa35f6ca8d33fe19019ad887218d769b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35f6ca8d33fe19019ad887218d769b5">&#9670;&nbsp;</a></span>addToPersonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::addToPersonal </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds word to the list of of personal words. </p>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00147">147</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b6e1b121a5d853d48588f806907b3a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6e1b121a5d853d48588f806907b3a0">&#9670;&nbsp;</a></span>addToSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::addToSession </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds word to the words recognizable in the current session. </p>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00155">155</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a24afea091a8da0ae8dd4e44235e584d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24afea091a8da0ae8dd4e44235e584d3">&#9670;&nbsp;</a></span>availableBackends()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Sonnet::Speller::availableBackends </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns names of all supported backends (e.g. </p>
+<p>ISpell, ASpell) </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00186">186</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7eb69ef58abcd83082cbd74e23b5d3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb69ef58abcd83082cbd74e23b5d3e3">&#9670;&nbsp;</a></span>availableDictionaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt; QString, QString &gt; Sonnet::Speller::availableDictionaries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a map of all available language descriptions and their codes. </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00269">269</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a32a90f31cc8e7840e0dc9bdafc74454f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a90f31cc8e7840e0dc9bdafc74454f">&#9670;&nbsp;</a></span>availableLanguageNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Sonnet::Speller::availableLanguageNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a localized list of names of supported languages. </p>
+<p>Note: use availableDictionaries </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00198">198</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af694389fff26c2455ea9c74f1973516e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af694389fff26c2455ea9c74f1973516e">&#9670;&nbsp;</a></span>availableLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Sonnet::Speller::availableLanguages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of supported languages. </p>
+<p>Note: use availableDictionaries </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00192">192</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15b6733b1192d09a76a90b2dd9ed749c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b6733b1192d09a76a90b2dd9ed749c">&#9670;&nbsp;</a></span>checkAndSuggest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::checkAndSuggest </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStringList &amp;&#160;</td>
+          <td class="paramname"><em>suggestions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convience method calling <a class="el" href="classSonnet_1_1Speller.html#ad0d9c6ae88282db5f08d8cd1196c846f" title="Checks the given word. ">isCorrect()</a> and <a class="el" href="classSonnet_1_1Speller.html#a63f5bb2fdd1a8758519d4614bec1bee5" title="Fetches suggestions for the word. ">suggest()</a> if the word isn't correct. </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00129">129</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0d9c6ae88282db5f08d8cd1196c846f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d9c6ae88282db5f08d8cd1196c846f">&#9670;&nbsp;</a></span>isCorrect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::isCorrect </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks the given word. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if the word is misspelled. true otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00105">105</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a415bd52c9ac7fa8d7a48205e0cb1b526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415bd52c9ac7fa8d7a48205e0cb1b526">&#9670;&nbsp;</a></span>isMisspelled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::isMisspelled </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks the given word. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the word is misspelled. false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00113">113</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada180ab8c0f2ce73fff91e7841c9fac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada180ab8c0f2ce73fff91e7841c9fac9">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the speller supports currently selected language. </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00258">258</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d6fe880f1befd07007e0135b6358691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6fe880f1befd07007e0135b6358691">&#9670;&nbsp;</a></span>language()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Sonnet::Speller::language </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns language supported by this speller. </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00163">163</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4950c87790d78127c7f02c346473a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4950c87790d78127c7f02c346473a6c">&#9670;&nbsp;</a></span>setLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sonnet::Speller::setLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>lang</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the language supported by this speller. </p>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00263">263</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad63967f0235407286ad850248468e5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63967f0235407286ad850248468e5df">&#9670;&nbsp;</a></span>storeReplacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sonnet::Speller::storeReplacement </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>good</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores user defined good replacement for the bad word. </p>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00138">138</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a63f5bb2fdd1a8758519d4614bec1bee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f5bb2fdd1a8758519d4614bec1bee5">&#9670;&nbsp;</a></span>suggest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Sonnet::Speller::suggest </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetches suggestions for the word. </p>
+<dl class="section return"><dt>Returns</dt><dd>list of all suggestions for the word </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="speller_8cpp_source.html#l00121">121</a> of file <a class="el" href="speller_8cpp_source.html">speller.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="speller_8h_source.html">speller.h</a></li>
+<li><a class="el" href="speller_8cpp_source.html">speller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:27:18 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

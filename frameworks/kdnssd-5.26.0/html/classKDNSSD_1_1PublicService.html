@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDNSSD - KDNSSD::PublicService Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDNSSD</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDNSSD"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</option>
+        
+        <option value="classKDNSSD_1_1DomainModel.html">KDNSSD::DomainModel</option>
+        
+        <option value="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</option>
+        
+        <option value="classKDNSSD_1_1RemoteService.html">KDNSSD::RemoteService</option>
+        
+        <option value="classKDNSSD_1_1Responder.html">KDNSSD::Responder</option>
+        
+        <option value="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</option>
+        
+        <option value="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</option>
+        
+        <option value="classKDNSSD_1_1ServiceModel.html">KDNSSD::ServiceModel</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction to system DNSSD features</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5DNSSD)
+target_link_libraries(yourapp KF5::DNSSD)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDNSSD </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdnssd-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDNSSD on <a href="https://cgit.kde.org/kdnssd-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDNSSD </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=PublicService">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KDNSSD</b></li><li class="navelem"><a class="el" href="classKDNSSD_1_1PublicService.html">PublicService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKDNSSD_1_1PublicService-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDNSSD::PublicService Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="publicservice_8h_source.html">KDNSSD/PublicService</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KDNSSD::PublicService:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKDNSSD_1_1PublicService__inherit__graph.png" border="0" usemap="#KDNSSD_1_1PublicService_inherit__map" alt="Inheritance graph"/></div>
+<map name="KDNSSD_1_1PublicService_inherit__map" id="KDNSSD_1_1PublicService_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ad5cbe4c14df0cf6cbcef836c00dab0cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#ad5cbe4c14df0cf6cbcef836c00dab0cf">published</a> (bool successful)</td></tr>
+<tr class="separator:ad5cbe4c14df0cf6cbcef836c00dab0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa1d7e4f12e020cef47342295ee349048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#aa1d7e4f12e020cef47342295ee349048">PublicService</a> (const QString &amp;name=QString(), const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a>=QString(), unsigned int <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a>=0, const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a>=QString(), const QStringList &amp;<a class="el" href="classKDNSSD_1_1PublicService.html#afd9b8cf6e8c53ea730e9c1d2b4ec7bd6">subtypes</a>=QStringList())</td></tr>
+<tr class="separator:aa1d7e4f12e020cef47342295ee349048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc96d985c331329e91826daa64c05822"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#adc96d985c331329e91826daa64c05822">isPublished</a> () const</td></tr>
+<tr class="separator:adc96d985c331329e91826daa64c05822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f87507e3ae6722824299d5b143d1a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#a37f87507e3ae6722824299d5b143d1a1">publish</a> ()</td></tr>
+<tr class="separator:a37f87507e3ae6722824299d5b143d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af873564c0a3d29fcbf61b38b04a61ba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#af873564c0a3d29fcbf61b38b04a61ba7">publishAsync</a> ()</td></tr>
+<tr class="separator:af873564c0a3d29fcbf61b38b04a61ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c484289e86c33e0e27c404e29b7bf82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#a4c484289e86c33e0e27c404e29b7bf82">setDomain</a> (const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a>)</td></tr>
+<tr class="separator:a4c484289e86c33e0e27c404e29b7bf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bf78b810a5c6a6cc9edd3d5e910cb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#aa9bf78b810a5c6a6cc9edd3d5e910cb8">setPort</a> (unsigned short <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a>)</td></tr>
+<tr class="separator:aa9bf78b810a5c6a6cc9edd3d5e910cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9554d8360a13ff4101a55ec9cca28f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#a3a9554d8360a13ff4101a55ec9cca28f">setServiceName</a> (const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a8f6fe19b279b51d62ff1cecc7b432c50">serviceName</a>)</td></tr>
+<tr class="separator:a3a9554d8360a13ff4101a55ec9cca28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb55003c7f35a691833fc7d40a26cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#a4cb55003c7f35a691833fc7d40a26cf0">setSubTypes</a> (const QStringList &amp;<a class="el" href="classKDNSSD_1_1PublicService.html#afd9b8cf6e8c53ea730e9c1d2b4ec7bd6">subtypes</a>)</td></tr>
+<tr class="separator:a4cb55003c7f35a691833fc7d40a26cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90fb2cb6471ea8290a0aec1d2c1ca51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#ae90fb2cb6471ea8290a0aec1d2c1ca51">setTextData</a> (const QMap&lt; QString, QByteArray &gt; &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a96ae1592b4f6a94187aa643506a70852">textData</a>)</td></tr>
+<tr class="separator:ae90fb2cb6471ea8290a0aec1d2c1ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3e288e48b5c817f31eca1e960f13ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#abc3e288e48b5c817f31eca1e960f13ad">setType</a> (const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a>)</td></tr>
+<tr class="separator:abc3e288e48b5c817f31eca1e960f13ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae23fc66afc6384ec4ac09a48c5b845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#a2ae23fc66afc6384ec4ac09a48c5b845">stop</a> ()</td></tr>
+<tr class="separator:a2ae23fc66afc6384ec4ac09a48c5b845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9b8cf6e8c53ea730e9c1d2b4ec7bd6"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1PublicService.html#afd9b8cf6e8c53ea730e9c1d2b4ec7bd6">subtypes</a> () const</td></tr>
+<tr class="separator:afd9b8cf6e8c53ea730e9c1d2b4ec7bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a047fd77b4121314c481a8c8f0d325b88 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a047fd77b4121314c481a8c8f0d325b88">ServiceBase</a> (const QString &amp;name=QString(), const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a>=QString(), const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a>=QString(), const QString &amp;host=QString(), unsigned short <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a>=0)</td></tr>
+<tr class="separator:a047fd77b4121314c481a8c8f0d325b88 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e65320d438f5abc261f2b77b96ccaa8 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a> () const</td></tr>
+<tr class="separator:a9e65320d438f5abc261f2b77b96ccaa8 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97cdc587b1d12b2081e6e23035e2c51 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#ab97cdc587b1d12b2081e6e23035e2c51">hostName</a> () const</td></tr>
+<tr class="separator:ab97cdc587b1d12b2081e6e23035e2c51 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82318b112c1ba1ed77f07ab902b18883 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a82318b112c1ba1ed77f07ab902b18883">operator!=</a> (const <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &amp;o) const</td></tr>
+<tr class="separator:a82318b112c1ba1ed77f07ab902b18883 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369ff4a29370f64ba4adaf8a9f8e9ff5 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a369ff4a29370f64ba4adaf8a9f8e9ff5">operator==</a> (const <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &amp;o) const</td></tr>
+<tr class="separator:a369ff4a29370f64ba4adaf8a9f8e9ff5 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a718efe26f11a438a88bf156d80384 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a> () const</td></tr>
+<tr class="separator:a91a718efe26f11a438a88bf156d80384 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6fe19b279b51d62ff1cecc7b432c50 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a8f6fe19b279b51d62ff1cecc7b432c50">serviceName</a> () const</td></tr>
+<tr class="separator:a8f6fe19b279b51d62ff1cecc7b432c50 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ae1592b4f6a94187aa643506a70852 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QMap&lt; QString, QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a96ae1592b4f6a94187aa643506a70852">textData</a> () const</td></tr>
+<tr class="separator:a96ae1592b4f6a94187aa643506a70852 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeced7db9b94078a9b44fc3f1dffe879 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a> () const</td></tr>
+<tr class="separator:aeeced7db9b94078a9b44fc3f1dffe879 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa641c3b31045c8a496829798cd3561d4"><td class="memItemLeft" align="right" valign="top"><a id="aa641c3b31045c8a496829798cd3561d4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int, void *)</td></tr>
+<tr class="separator:aa641c3b31045c8a496829798cd3561d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a89ba842e674befa55284718d16dcbe1b inherit pro_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a89ba842e674befa55284718d16dcbe1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceBase</b> (ServiceBasePrivate *const d)</td></tr>
+<tr class="separator:a89ba842e674befa55284718d16dcbe1b inherit pro_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a9eb18a7d61af123459a6e347e99a0586 inherit pub_types_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9eb18a7d61af123459a6e347e99a0586"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:a9eb18a7d61af123459a6e347e99a0586 inherit pub_types_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a623c69f2cd9a7eb62c51ff62f57958b0 inherit pro_attribs_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a623c69f2cd9a7eb62c51ff62f57958b0"></a>
+ServiceBasePrivate *const&#160;</td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
+<tr class="separator:a623c69f2cd9a7eb62c51ff62f57958b0 inherit pro_attribs_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a service to be published. </p>
+<p>This class allows you to publish the existence of a network service provided by your application.</p>
+<p>If you are providing a web server and want to advertise it on the local network, you might do </p><div class="fragment"><div class="line"><a class="code" href="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</a> *service = <span class="keyword">new</span> <a class="code" href="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</a>(<span class="stringliteral">&quot;My files&quot;</span>, <span class="stringliteral">&quot;_http._tcp&quot;</span>, 80);</div><div class="line"><span class="keywordtype">bool</span> isOK = service-&gt;<a class="code" href="classKDNSSD_1_1PublicService.html#a37f87507e3ae6722824299d5b143d1a1">publish</a>();</div></div><!-- fragment --><p>In this example <a class="el" href="classKDNSSD_1_1PublicService.html#a37f87507e3ae6722824299d5b143d1a1" title="Publish the service synchronously. ">publish()</a> is synchronous: it will not return until publishing is complete. This is usually not too long but it can freeze an application's GUI for a moment. To publish asynchronously instead, do: </p><div class="fragment"><div class="line"><a class="code" href="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</a> *service = <span class="keyword">new</span> <a class="code" href="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</a>(<span class="stringliteral">&quot;My files&quot;</span>, <span class="stringliteral">&quot;_http._tcp&quot;</span>, 80);</div><div class="line">connect(service, SIGNAL(<a class="code" href="classKDNSSD_1_1PublicService.html#ad5cbe4c14df0cf6cbcef836c00dab0cf">published</a>(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(wasPublished(<span class="keywordtype">bool</span>)));</div><div class="line">service-&gt;<a class="code" href="classKDNSSD_1_1PublicService.html#af873564c0a3d29fcbf61b38b04a61ba7">publishAsync</a>();</div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Jakub Stachowski </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="publicservice_8h_source.html#l00059">59</a> of file <a class="el" href="publicservice_8h_source.html">publicservice.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa1d7e4f12e020cef47342295ee349048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d7e4f12e020cef47342295ee349048">&#9670;&nbsp;</a></span>PublicService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDNSSD::PublicService::PublicService </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>type</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>subtypes</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a service description that can be published. </p>
+<p>If no <code>name</code> is given, the computer name is used instead. If there is already a service with the same name, type and domain a number will be appended to the name to make it unique.</p>
+<p>If no <code>domain</code> is specified, the service is published on the link-local domain (.local).</p>
+<p>The subtypes can be used to specify server attributes, such as "_anon" for anonymous FTP servers, or can specify a specific protocol (such as a web service interface) on top of a generic protocol like SOAP.</p>
+<p>There is <a href="http://www.dns-sd.org/ServiceTypes.html">a comprehensive list of possible types</a> available, but you are largely on your own for subtypes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>a service name to use instead of the computer name </td></tr>
+    <tr><td class="paramname">type</td><td>service type, in the form _sometype._udp or _sometype._tcp </td></tr>
+    <tr><td class="paramname">port</td><td>port number, or 0 to "reserve" the service name </td></tr>
+    <tr><td class="paramname">domain</td><td>the domain to publish the service on (see <a class="el" href="classKDNSSD_1_1DomainBrowser.html" title="Browses recommended domains for browsing or publishing to. ">DomainBrowser</a>) </td></tr>
+    <tr><td class="paramname">subtypes</td><td>optional list of subtypes, each with a leading underscore</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ae2965fa63de2fb977e1bff806ab452f5" title="Create a ServiceBrowser for a particular service type. ">ServiceBrowser::ServiceBrowser()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00039">39</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adc96d985c331329e91826daa64c05822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc96d985c331329e91826daa64c05822">&#9670;&nbsp;</a></span>isPublished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::PublicService::isPublished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the service is currently published. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the service is being published to the domain, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00131">131</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a37f87507e3ae6722824299d5b143d1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f87507e3ae6722824299d5b143d1a1">&#9670;&nbsp;</a></span>publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::PublicService::publish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publish the service synchronously. </p>
+<p>The method will not return (and hence the application interface will freeze, since KDElibs code should be executed in the main thread) until either the service is published or publishing fails.</p>
+<p><a class="el" href="classKDNSSD_1_1PublicService.html#ad5cbe4c14df0cf6cbcef836c00dab0cf" title="Emitted when publishing is complete. ">published(bool)</a> is emitted before this method returns.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the service was successfully published, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00137">137</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af873564c0a3d29fcbf61b38b04a61ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af873564c0a3d29fcbf61b38b04a61ba7">&#9670;&nbsp;</a></span>publishAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::publishAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publish the service asynchronously. </p>
+<p>Returns immediately and emits <a class="el" href="classKDNSSD_1_1PublicService.html#ad5cbe4c14df0cf6cbcef836c00dab0cf" title="Emitted when publishing is complete. ">published(bool)</a> when completed. Note that <a class="el" href="classKDNSSD_1_1PublicService.html#ad5cbe4c14df0cf6cbcef836c00dab0cf" title="Emitted when publishing is complete. ">published(bool)</a> may be emitted before this method returns when an error is detected immediately. </p>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00236">236</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5cbe4c14df0cf6cbcef836c00dab0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cbe4c14df0cf6cbcef836c00dab0cf">&#9670;&nbsp;</a></span>published</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::published </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>successful</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when publishing is complete. </p>
+<p>It will also emitted when an already-published service is republished after a property of the service (such as the name or port) is changed. </p>
+
+</div>
+</div>
+<a id="a4c484289e86c33e0e27c404e29b7bf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c484289e86c33e0e27c404e29b7bf82">&#9670;&nbsp;</a></span>setDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setDomain </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the domain where the service is published. </p>
+<p>"local." means link-local, ie: the IP subnet on the LAN containing this computer.</p>
+<p>If service is already published, it will be removed from the current domain and published on <code>domain</code> instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>the new domain to publish the service on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00075">75</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9bf78b810a5c6a6cc9edd3d5e910cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bf78b810a5c6a6cc9edd3d5e910cb8">&#9670;&nbsp;</a></span>setPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setPort </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the port. </p>
+<p>If the service is already published, it will be re-announced with the new port.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>the port of the service, or 0 to simply "reserve" the name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00111">111</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3a9554d8360a13ff4101a55ec9cca28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9554d8360a13ff4101a55ec9cca28f">&#9670;&nbsp;</a></span>setServiceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setServiceName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>serviceName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the name of the service. </p>
+<p>If the service is already published, it will be re-announced with the new name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serviceName</td><td>the new name of the service </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00065">65</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4cb55003c7f35a691833fc7d40a26cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb55003c7f35a691833fc7d40a26cf0">&#9670;&nbsp;</a></span>setSubTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setSubTypes </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>subtypes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the subtypetypes of the service. </p>
+<p>If the service is already published, it will be re-announced with the new subtypes.</p>
+<p>The existing list of substypes is replaced, so an empty list will cause all existing subtypes to be removed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subtypes</td><td>the new list of subtypes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00095">95</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae90fb2cb6471ea8290a0aec1d2c1ca51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90fb2cb6471ea8290a0aec1d2c1ca51">&#9670;&nbsp;</a></span>setTextData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setTextData </td>
+          <td>(</td>
+          <td class="paramtype">const QMap&lt; QString, QByteArray &gt; &amp;&#160;</td>
+          <td class="paramname"><em>textData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets new text properties. </p>
+<p>If the service is already published, it will be re-announced with the new data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textData</td><td>the new text properties for the service</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBase.html#a96ae1592b4f6a94187aa643506a70852" title="Additional text data associated with the service. ">ServiceBase::textData()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00121">121</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abc3e288e48b5c817f31eca1e960f13ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3e288e48b5c817f31eca1e960f13ad">&#9670;&nbsp;</a></span>setType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::setType </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the service type. </p>
+<p>If the service is already published, it will be re-announced with the new type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the new type of the service</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="classKDNSSD_1_1PublicService.html#aa1d7e4f12e020cef47342295ee349048" title="Creates a service description that can be published. ">PublicService()</a> for details on the format of <code>type</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00085">85</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ae23fc66afc6384ec4ac09a48c5b845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae23fc66afc6384ec4ac09a48c5b845">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::PublicService::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops publishing or aborts an incomplete publish request. </p>
+<p>Useful when you want to disable the service for some time.</p>
+<p>Note that if you stop providing a service (without exiting the application), you should stop publishing it. </p>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00147">147</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd9b8cf6e8c53ea730e9c1d2b4ec7bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9b8cf6e8c53ea730e9c1d2b4ec7bd6">&#9670;&nbsp;</a></span>subtypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KDNSSD::PublicService::subtypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The subtypes of service. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1PublicService.html#a4cb55003c7f35a691833fc7d40a26cf0" title="Sets the subtypetypes of the service. ">setSubTypes()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-publicservice_8cpp_source.html#l00105">105</a> of file <a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="publicservice_8h_source.html">publicservice.h</a></li>
+<li><a class="el" href="avahi-publicservice_8cpp_source.html">avahi-publicservice.cpp</a></li>
+<li><a class="el" href="dummy-publicservice_8cpp_source.html">dummy-publicservice.cpp</a></li>
+<li><a class="el" href="mdnsd-publicservice_8cpp_source.html">mdnsd-publicservice.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

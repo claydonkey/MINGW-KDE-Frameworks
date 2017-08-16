@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KConfigWidgets - KTipDialog Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KConfigWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KConfigWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCModule.html">KCModule</option>
+        
+        <option value="classKCodecAction.html">KCodecAction</option>
+        
+        <option value="classKColorScheme.html">KColorScheme</option>
+        
+        <option value="classKColorSchemeManager.html">KColorSchemeManager</option>
+        
+        <option value="classKConfigDialog.html">KConfigDialog</option>
+        
+        <option value="classKConfigDialogManager.html">KConfigDialogManager</option>
+        
+        <option value="classKLanguageButton.html">KLanguageButton</option>
+        
+        <option value="classKPasteTextAction.html">KPasteTextAction</option>
+        
+        <option value="classKRecentFilesAction.html">KRecentFilesAction</option>
+        
+        <option value="classKStatefulBrush.html">KStatefulBrush</option>
+        
+        <option value="classKTipDatabase.html">KTipDatabase</option>
+        
+        <option value="classKTipDialog.html">KTipDialog</option>
+        
+        <option value="classKViewStateMaintainer.html">KViewStateMaintainer</option>
+        
+        <option value="namespaceKStandardAction.html">KStandardAction</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widgets for configuration dialogs</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ConfigWidgets)
+target_link_libraries(yourapp KF5::ConfigWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KConfigWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kconfigwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KConfigWidgets on <a href="https://cgit.kde.org/kconfigwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KConfigWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KTipDialog">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKTipDialog-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KTipDialog Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ktipdialog_8h_source.html">ktipdialog.h</a>&gt;</code></p>
+
+<p>Inherits QDialog.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a433cec15a3ba2b824d07cd895375758f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#a433cec15a3ba2b824d07cd895375758f">KTipDialog</a> (<a class="el" href="classKTipDatabase.html">KTipDatabase</a> *database, QWidget *parent=0)</td></tr>
+<tr class="separator:a433cec15a3ba2b824d07cd895375758f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885687bd716430ba788a27b9e8a4d42a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#a885687bd716430ba788a27b9e8a4d42a">~KTipDialog</a> ()</td></tr>
+<tr class="separator:a885687bd716430ba788a27b9e8a4d42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a49a0db27d3bd236b456651d4bd48e6c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#a49a0db27d3bd236b456651d4bd48e6c6">setShowOnStart</a> (bool show)</td></tr>
+<tr class="separator:a49a0db27d3bd236b456651d4bd48e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b38c38de0d01f5d207b6dcee95f751"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#a93b38c38de0d01f5d207b6dcee95f751">showMultiTip</a> (QWidget *parent, const QStringList &amp;tipFiles, bool force=false)</td></tr>
+<tr class="separator:a93b38c38de0d01f5d207b6dcee95f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa719d957661928e254fbcd50455cae6d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#aa719d957661928e254fbcd50455cae6d">showTip</a> (QWidget *parent, const QString &amp;tipFile=QString(), bool force=false)</td></tr>
+<tr class="separator:aa719d957661928e254fbcd50455cae6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c8aa161d6a47c45f40fa93a83adbd9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#a57c8aa161d6a47c45f40fa93a83adbd9">showTip</a> (const QString &amp;tipFile=QString(), bool force=false)</td></tr>
+<tr class="separator:a57c8aa161d6a47c45f40fa93a83adbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afe917b1f2b881b03e0f4e526847e7fb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTipDialog.html#afe917b1f2b881b03e0f4e526847e7fb4">eventFilter</a> (QObject *, QEvent *)</td></tr>
+<tr class="separator:afe917b1f2b881b03e0f4e526847e7fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Tip-of-the-Day dialog. </p>
+<p>This dialog class presents a tip-of-the-day.</p>
+<p>The tips will be looked up for translation using gettext with <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/ki18n-5.26.0/html/KI18n.tags:../../../frameworks/ki18n-5.26.0/html/" href="../../../frameworks/ki18n-5.26.0/html/classKLocalizedString.html#a16b65aa9d637c5022a7553f0b4094f67">KLocalizedString::applicationDomain()</a> as domain.</p>
+<dl class="section author"><dt>Author</dt><dd>Matthias Hoelzer-Kluepfel <a href="#" onclick="location.href='mai'+'lto:'+'mhk'+'@c'+'ald'+'er'+'a.d'+'e'; return false;">mhk@c<span style="display: none;">.nosp@m.</span>alde<span style="display: none;">.nosp@m.</span>ra.de</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8h_source.html#l00107">107</a> of file <a class="el" href="ktipdialog_8h_source.html">ktipdialog.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a433cec15a3ba2b824d07cd895375758f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433cec15a3ba2b824d07cd895375758f">&#9670;&nbsp;</a></span>KTipDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTipDialog::KTipDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKTipDatabase.html">KTipDatabase</a> *&#160;</td>
+          <td class="paramname"><em>database</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a tip dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">database</td><td>TipDatabase that should be used by the TipDialog. The <a class="el" href="classKTipDialog.html" title="A Tip-of-the-Day dialog. ">KTipDialog</a> will take ownership of the database, including deleting it. </td></tr>
+    <tr><td class="paramname">parent</td><td>Parent widget of TipDialog. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Parent is 0L when TipDialog is used as a mainWidget. This should be the case only in ktip, so let's use the ktip layout.</p>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00234">234</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a885687bd716430ba788a27b9e8a4d42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885687bd716430ba788a27b9e8a4d42a">&#9670;&nbsp;</a></span>~KTipDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTipDialog::~KTipDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the tip dialog. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00337">337</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afe917b1f2b881b03e0f4e526847e7fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe917b1f2b881b03e0f4e526847e7fb4">&#9670;&nbsp;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KTipDialog::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If the user presses Return or Space, we close the dialog as if the default button was pressed even if the QTextBrowser has the keyboard focus. This could have the bad side-effect that the user cannot use the keyboard to open urls in the QTextBrowser, so we just let it handle the key event <em>additionally</em>. (Antonio)</p>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00408">408</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a49a0db27d3bd236b456651d4bd48e6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a0db27d3bd236b456651d4bd48e6c6">&#9670;&nbsp;</a></span>setShowOnStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTipDialog::setShowOnStart </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Toggles the start behavior. </p>
+<p>Normally, the user can disable the display of the tip in the dialog. This is just a way to change this setting from outside. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00402">402</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a93b38c38de0d01f5d207b6dcee95f751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b38c38de0d01f5d207b6dcee95f751">&#9670;&nbsp;</a></span>showMultiTip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTipDialog::showMultiTip </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>tipFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows a tip. </p>
+<p>This method behaves essentially as the one above, but expects a list of tips</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget of TipDialog. </td></tr>
+    <tr><td class="paramname">tipFiles</td><td>A List of tip files. Each has be relative to the GenericDataLocation resource of QStandardPaths. </td></tr>
+    <tr><td class="paramname">force</td><td>If true, the dialog is show, even when the users disabled it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00359">359</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa719d957661928e254fbcd50455cae6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa719d957661928e254fbcd50455cae6d">&#9670;&nbsp;</a></span>showTip() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTipDialog::showTip </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tipFile</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows a tip. </p>
+<p>This static method is all that is needed to add a tip-of-the-day dialog to an application. It will pop up the dialog, unless the user has asked that the dialog does not pop up on startup.</p>
+<p>Note that you probably want an item in the help menu calling this method with force=true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget of TipDialog. </td></tr>
+    <tr><td class="paramname">tipFile</td><td>The name of the tip file. It has be relative to the GenericDataLocation resource of QStandardPaths. </td></tr>
+    <tr><td class="paramname">force</td><td>If true, the dialog is show, even when the users disabled it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00354">354</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a57c8aa161d6a47c45f40fa93a83adbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c8aa161d6a47c45f40fa93a83adbd9">&#9670;&nbsp;</a></span>showTip() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTipDialog::showTip </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>tipFile</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows a tip. </p>
+<p>use the one with a parent window as parameter instead of this one or you will get focus problems</p>
+<p>This methods calls <a class="el" href="classKTipDialog.html#aa719d957661928e254fbcd50455cae6d" title="Shows a tip. ">showTip()</a> with the applications main window as parent. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktipdialog_8cpp_source.html#l00349">349</a> of file <a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="ktipdialog_8h_source.html">ktipdialog.h</a></li>
+<li><a class="el" href="ktipdialog_8cpp_source.html">ktipdialog.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:26 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

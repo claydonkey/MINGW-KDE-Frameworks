@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCompletion - kcompletionbase.h Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCompletion</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCompletion"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKComboBox.html">KComboBox</option>
+        
+        <option value="classKCompletion.html">KCompletion</option>
+        
+        <option value="classKCompletionBase.html">KCompletionBase</option>
+        
+        <option value="classKCompletionBox.html">KCompletionBox</option>
+        
+        <option value="classKCompletionMatches.html">KCompletionMatches</option>
+        
+        <option value="classKHistoryComboBox.html">KHistoryComboBox</option>
+        
+        <option value="classKLineEdit.html">KLineEdit</option>
+        
+        <option value="classKPixmapProvider.html">KPixmapProvider</option>
+        
+        <option value="classKSortableItem.html">KSortableItem</option>
+        
+        <option value="classKSortableList.html">KSortableList</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Text completion helpers and widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:davidgiloliva@gmail.com">David Gil Oliva</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Completion)
+target_link_libraries(yourapp KF5::Completion)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCompletion </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcompletion-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCompletion on <a href="https://cgit.kde.org/kcompletion-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCompletion </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_884bfef64984dadb0b426e794db5a0fe.html">mingw-w64-kcompletion-qt5</a></li><li class="navelem"><a class="el" href="dir_bf59c19d32c1125d4862c721e2c0c688.html">src</a></li><li class="navelem"><a class="el" href="dir_67378d8405561bfe206cbfc68b214b25.html">kcompletion-5.26.0</a></li><li class="navelem"><a class="el" href="dir_ce7954c3a2a50ad506e17870420833c5.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">kcompletionbase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* This file is part of the KDE libraries</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 1999,2000 Carsten Pfeiffer &lt;pfeiffer@kde.org&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">   modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   License as published by the Free Software Foundation; either</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">   version 2 of the License, or (at your option) any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   Library General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   Boston, MA 02110-1301, USA.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef KCOMPLETIONBASE_H</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define KCOMPLETIONBASE_H</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;kcompletion.h&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;kcompletion_export.h&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>KCompletionBasePrivate;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classKCompletionBase.html">   45</a></span>&#160;<span class="keyword">class </span>KCOMPLETION_EXPORT <a class="code" href="classKCompletionBase.html">KCompletionBase</a></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_DECLARE_PRIVATE(<a class="code" href="classKCompletionBase.html">KCompletionBase</a>)</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">   54</a></span>&#160;    enum <a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">KeyBindingType</a> {</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4bab533a930960cd953ee3300a107966697">   58</a></span>&#160;        <a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4bab533a930960cd953ee3300a107966697">TextCompletion</a>,</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba40960fd71ae86bb95b8c4d892fc03953">   62</a></span>&#160;        <a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba40960fd71ae86bb95b8c4d892fc03953">PrevCompletionMatch</a>,</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba38a04db77ca51dca3c68e95d9566b6e9">   66</a></span>&#160;        <a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba38a04db77ca51dca3c68e95d9566b6e9">NextCompletionMatch</a>,</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba381b8a3ec8dc1bf135e671adf71de719">   70</a></span>&#160;        SubstringCompletion</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Map for the key binding types mentioned above.</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">typedef</span> QMap&lt;KeyBindingType, QList&lt;QKeySequence&gt; &gt; KeyBindingMap;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classKCompletionBase.html">KCompletionBase</a>();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classKCompletionBase.html">KCompletionBase</a>();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classKCompletion.html">KCompletion</a> *completionObject(<span class="keywordtype">bool</span> handleSignals = <span class="keyword">true</span>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCompletionObject(<a class="code" href="classKCompletion.html">KCompletion</a> *completionObject, <span class="keywordtype">bool</span> handleSignals = <span class="keyword">true</span>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setHandleSignals(<span class="keywordtype">bool</span> handle);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> isCompletionObjectAutoDeleted() <span class="keyword">const</span>;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> setAutoDeleteCompletionObject(<span class="keywordtype">bool</span> autoDelete);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> setEnableSignals(<span class="keywordtype">bool</span> enable);</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">bool</span> handleSignals() <span class="keyword">const</span>;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">bool</span> emitSignals() <span class="keyword">const</span>;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> setEmitSignals(<span class="keywordtype">bool</span> emitRotationSignals);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCompletionMode(<a class="code" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">KCompletion::CompletionMode</a> mode);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">KCompletion::CompletionMode</a> completionMode() <span class="keyword">const</span>;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">bool</span> setKeyBinding(<a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">KeyBindingType</a> item, <span class="keyword">const</span> QList&lt;QKeySequence&gt; &amp;key);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    QList&lt;QKeySequence&gt; keyBinding(<a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">KeyBindingType</a> item) <span class="keyword">const</span>;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#ifndef KCOMPLETION_NO_DEPRECATED</span></div><div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#a7196510e106b06597e5aaf4321005f55">  266</a></span>&#160;    KCOMPLETION_DEPRECATED QList&lt;QKeySequence&gt; <a class="code" href="classKCompletionBase.html#a7196510e106b06597e5aaf4321005f55">getKeyBinding</a>(<a class="code" href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">KeyBindingType</a> item)<span class="keyword"> const</span></div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> keyBinding(item);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span> useGlobalKeyBindings();</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCompletedText(<span class="keyword">const</span> QString &amp;text) = 0;</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCompletedItems(<span class="keyword">const</span> QStringList &amp;items, <span class="keywordtype">bool</span> autoSuggest = <span class="keyword">true</span>) = 0;</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <a class="code" href="classKCompletion.html">KCompletion</a> *compObj() <span class="keyword">const</span>;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    KeyBindingMap keyBindingMap() <span class="keyword">const</span>;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifndef KCOMPLETION_NO_DEPRECATED</span></div><div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="classKCompletionBase.html#af609c46716ccb4f134a7c3cc84b9fd20">  339</a></span>&#160;    KCOMPLETION_DEPRECATED KeyBindingMap <a class="code" href="classKCompletionBase.html#af609c46716ccb4f134a7c3cc84b9fd20">getKeyBindings</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">return</span> keyBindingMap();</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> setKeyBindingMap(KeyBindingMap keyBindingMap);</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">void</span> setDelegate(<a class="code" href="classKCompletionBase.html">KCompletionBase</a> *delegate);</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="code" href="classKCompletionBase.html">KCompletionBase</a> *delegate() <span class="keyword">const</span>;</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> virtual_hook(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">void</span> *data);</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classKCompletionBase.html">KCompletionBase</a>)</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">const</span> QScopedPointer&lt;KCompletionBasePrivate&gt; d_ptr;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;};</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#endif // KCOMPLETIONBASE_H</span></div><div class="ttc" id="classKCompletionBase_html_afcb3584e759d233cf9acabf6a5d4ab4ba38a04db77ca51dca3c68e95d9566b6e9"><div class="ttname"><a href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba38a04db77ca51dca3c68e95d9566b6e9">KCompletionBase::NextCompletionMatch</a></div><div class="ttdoc">Switch to next completion (by default Ctrl-Down). </div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00066">kcompletionbase.h:66</a></div></div>
+<div class="ttc" id="classKCompletionBase_html_afcb3584e759d233cf9acabf6a5d4ab4bab533a930960cd953ee3300a107966697"><div class="ttname"><a href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4bab533a930960cd953ee3300a107966697">KCompletionBase::TextCompletion</a></div><div class="ttdoc">Text completion (by default Ctrl-E). </div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00058">kcompletionbase.h:58</a></div></div>
+<div class="ttc" id="classKCompletionBase_html_afcb3584e759d233cf9acabf6a5d4ab4ba40960fd71ae86bb95b8c4d892fc03953"><div class="ttname"><a href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4ba40960fd71ae86bb95b8c4d892fc03953">KCompletionBase::PrevCompletionMatch</a></div><div class="ttdoc">Switch to previous completion (by default Ctrl-Up). </div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00062">kcompletionbase.h:62</a></div></div>
+<div class="ttc" id="classKCompletion_html_a927c284d89e41d976412201b68ca67e9"><div class="ttname"><a href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">KCompletion::CompletionMode</a></div><div class="ttdeci">CompletionMode</div><div class="ttdoc">This enum describes the completion mode used for by the KCompletion class. </div><div class="ttdef"><b>Definition:</b> <a href="kcompletion_8h_source.html#l00142">kcompletion.h:142</a></div></div>
+<div class="ttc" id="classKCompletion_html"><div class="ttname"><a href="classKCompletion.html">KCompletion</a></div><div class="ttdoc">A generic class for completing QStrings. </div><div class="ttdef"><b>Definition:</b> <a href="kcompletion_8h_source.html#l00125">kcompletion.h:125</a></div></div>
+<div class="ttc" id="classKCompletionBase_html_af609c46716ccb4f134a7c3cc84b9fd20"><div class="ttname"><a href="classKCompletionBase.html#af609c46716ccb4f134a7c3cc84b9fd20">KCompletionBase::getKeyBindings</a></div><div class="ttdeci">KCOMPLETION_DEPRECATED KeyBindingMap getKeyBindings() const</div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00339">kcompletionbase.h:339</a></div></div>
+<div class="ttc" id="classKCompletionBase_html"><div class="ttname"><a href="classKCompletionBase.html">KCompletionBase</a></div><div class="ttdoc">An abstract base class for adding a completion feature into widgets. </div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00045">kcompletionbase.h:45</a></div></div>
+<div class="ttc" id="classKCompletionBase_html_afcb3584e759d233cf9acabf6a5d4ab4b"><div class="ttname"><a href="classKCompletionBase.html#afcb3584e759d233cf9acabf6a5d4ab4b">KCompletionBase::KeyBindingType</a></div><div class="ttdeci">KeyBindingType</div><div class="ttdoc">Constants that represent the items whose shortcut key binding is programmable. </div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00054">kcompletionbase.h:54</a></div></div>
+<div class="ttc" id="classKCompletionBase_html_a7196510e106b06597e5aaf4321005f55"><div class="ttname"><a href="classKCompletionBase.html#a7196510e106b06597e5aaf4321005f55">KCompletionBase::getKeyBinding</a></div><div class="ttdeci">KCOMPLETION_DEPRECATED QList&lt; QKeySequence &gt; getKeyBinding(KeyBindingType item) const</div><div class="ttdef"><b>Definition:</b> <a href="kcompletionbase_8h_source.html#l00266">kcompletionbase.h:266</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:13 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

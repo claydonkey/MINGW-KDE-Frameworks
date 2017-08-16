@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KGlobalAccel - GlobalShortcutContext Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KGlobalAccel</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KGlobalAccel"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</option>
+        
+        <option value="classGlobalShortcut.html">GlobalShortcut</option>
+        
+        <option value="classGlobalShortcutContext.html">GlobalShortcutContext</option>
+        
+        <option value="classGlobalShortcutsRegistry.html">GlobalShortcutsRegistry</option>
+        
+        <option value="classKGlobalAccel.html">KGlobalAccel</option>
+        
+        <option value="classKGlobalAccelD.html">KGlobalAccelD</option>
+        
+        <option value="classKGlobalAccelImpl.html">KGlobalAccelImpl</option>
+        
+        <option value="classKGlobalAccelInterface.html">KGlobalAccelInterface</option>
+        
+        <option value="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</option>
+        
+        <option value="classKdeDGlobalAccel_1_1KServiceActionComponent.html">KdeDGlobalAccel::KServiceActionComponent</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Add support for global workspace shortcuts</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5GlobalAccel)
+target_link_libraries(yourapp KF5::GlobalAccel)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KGlobalAccel </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kglobalaccel-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KGlobalAccel on <a href="https://cgit.kde.org/kglobalaccel-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KGlobalAccel </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=GlobalShortcutContext">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classGlobalShortcutContext-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">GlobalShortcutContext Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="globalshortcutcontext_8h_source.html">globalshortcutcontext.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9863777273805c136f5966a56d1a43c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#a9863777273805c136f5966a56d1a43c3">GlobalShortcutContext</a> (const QString &amp;<a class="el" href="classGlobalShortcutContext.html#a77190febebc1aa92454d288f6eaac503">uniqueName</a>, const QString &amp;friendlyName, <a class="el" href="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</a> *component)</td></tr>
+<tr class="separator:a9863777273805c136f5966a56d1a43c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bda337629740fb6ae702246befd5dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#a19bda337629740fb6ae702246befd5dd">~GlobalShortcutContext</a> ()</td></tr>
+<tr class="separator:a19bda337629740fb6ae702246befd5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496145f07e6ee1cd864ce9df82589a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#a496145f07e6ee1cd864ce9df82589a68">addShortcut</a> (<a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *shortcut)</td></tr>
+<tr class="separator:a496145f07e6ee1cd864ce9df82589a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24997fa3eb56775bc33a1c21fef451a"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#ae24997fa3eb56775bc33a1c21fef451a">allShortcutInfos</a> () const</td></tr>
+<tr class="separator:ae24997fa3eb56775bc33a1c21fef451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b6d17b08413605618221f5c39b255a"><td class="memItemLeft" align="right" valign="top"><a id="a90b6d17b08413605618221f5c39b255a"></a>
+<a class="el" href="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> ()</td></tr>
+<tr class="separator:a90b6d17b08413605618221f5c39b255a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad474bd82285f6e8d66e9b528ba0a203d"><td class="memItemLeft" align="right" valign="top"><a id="ad474bd82285f6e8d66e9b528ba0a203d"></a>
+<a class="el" href="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> () const</td></tr>
+<tr class="separator:ad474bd82285f6e8d66e9b528ba0a203d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058c209fa518671d5d0fbb4ccf08b0a1"><td class="memItemLeft" align="right" valign="top"><a id="a058c209fa518671d5d0fbb4ccf08b0a1"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>friendlyName</b> () const</td></tr>
+<tr class="separator:a058c209fa518671d5d0fbb4ccf08b0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6606d813acb53f3117ed47be3cd2eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#aaa6606d813acb53f3117ed47be3cd2eb">getShortcutByKey</a> (int key) const</td></tr>
+<tr class="separator:aaa6606d813acb53f3117ed47be3cd2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a46e8c0ce9187e086a02948f3bd07bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#a9a46e8c0ce9187e086a02948f3bd07bf">takeShortcut</a> (<a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *shortcut)</td></tr>
+<tr class="separator:a9a46e8c0ce9187e086a02948f3bd07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77190febebc1aa92454d288f6eaac503"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalShortcutContext.html#a77190febebc1aa92454d288f6eaac503">uniqueName</a> () const</td></tr>
+<tr class="separator:a77190febebc1aa92454d288f6eaac503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Michael Jansen <a href="#" onclick="location.href='mai'+'lto:'+'kde'+'@m'+'ich'+'ae'+'l-j'+'an'+'sen'+'.b'+'iz'; return false;">kde@m<span style="display: none;">.nosp@m.</span>icha<span style="display: none;">.nosp@m.</span>el-ja<span style="display: none;">.nosp@m.</span>nsen<span style="display: none;">.nosp@m.</span>.biz</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8h_source.html#l00035">35</a> of file <a class="el" href="globalshortcutcontext_8h_source.html">globalshortcutcontext.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9863777273805c136f5966a56d1a43c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9863777273805c136f5966a56d1a43c3">&#9670;&nbsp;</a></span>GlobalShortcutContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GlobalShortcutContext::GlobalShortcutContext </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>uniqueName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>friendlyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</a> *&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00025">25</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a19bda337629740fb6ae702246befd5dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bda337629740fb6ae702246befd5dd">&#9670;&nbsp;</a></span>~GlobalShortcutContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GlobalShortcutContext::~GlobalShortcutContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00037">37</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a496145f07e6ee1cd864ce9df82589a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496145f07e6ee1cd864ce9df82589a68">&#9670;&nbsp;</a></span>addShortcut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GlobalShortcutContext::addShortcut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *&#160;</td>
+          <td class="paramname"><em>shortcut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds <code>shortcut</code> to the context. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00043">43</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae24997fa3eb56775bc33a1c21fef451a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24997fa3eb56775bc33a1c21fef451a">&#9670;&nbsp;</a></span>allShortcutInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</a> &gt; GlobalShortcutContext::allShortcutInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return KGlobalShortcutInfos for all shortcuts. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00049">49</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa6606d813acb53f3117ed47be3cd2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6606d813acb53f3117ed47be3cd2eb">&#9670;&nbsp;</a></span>getShortcutByKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> * GlobalShortcutContext::getShortcutByKey </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get shortcut for <code>key</code> or NULL. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00078">78</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9a46e8c0ce9187e086a02948f3bd07bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a46e8c0ce9187e086a02948f3bd07bf">&#9670;&nbsp;</a></span>takeShortcut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> * GlobalShortcutContext::takeShortcut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGlobalShortcut.html">GlobalShortcut</a> *&#160;</td>
+          <td class="paramname"><em>shortcut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove <code>shortcut</code> from the context. The shortcut is not deleted. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00105">105</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a77190febebc1aa92454d288f6eaac503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77190febebc1aa92454d288f6eaac503">&#9670;&nbsp;</a></span>uniqueName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString GlobalShortcutContext::uniqueName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name for the context. </p>
+
+<p class="definition">Definition at line <a class="el" href="globalshortcutcontext_8cpp_source.html#l00113">113</a> of file <a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="globalshortcutcontext_8h_source.html">globalshortcutcontext.h</a></li>
+<li><a class="el" href="globalshortcutcontext_8cpp_source.html">globalshortcutcontext.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:00 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

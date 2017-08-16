@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCMUtils - KSettings::PluginPage Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCMUtils</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCMUtils"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSettings_1_1Dialog.html">KSettings::Dialog</option>
+        
+        <option value="classKCModuleContainer.html">KCModuleContainer</option>
+        
+        <option value="classKCModuleInfo.html">KCModuleInfo</option>
+        
+        <option value="classKCModuleProxy.html">KCModuleProxy</option>
+        
+        <option value="classKCMultiDialog.html">KCMultiDialog</option>
+        
+        <option value="classKPluginSelector.html">KPluginSelector</option>
+        
+        <option value="classKSettings_1_1PluginPage.html">KSettings::PluginPage</option>
+        
+        <option value="namespaceKCModuleLoader.html">KCModuleLoader</option>
+        
+        <option value="namespaceKSettings.html">KSettings</option>
+        
+        <option value="namespaceKSettings_1_1Dispatcher.html">KSettings::Dispatcher</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Utilities for working with KCModules</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KCMUtils)
+target_link_libraries(yourapp KF5::KCMUtils)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCMUtils </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcmutils-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCMUtils on <a href="https://cgit.kde.org/kcmutils-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCMUtils </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=PluginPage">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKSettings.html">KSettings</a></li><li class="navelem"><a class="el" href="classKSettings_1_1PluginPage.html">PluginPage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classKSettings_1_1PluginPage-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KSettings::PluginPage Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="pluginpage_8h_source.html">pluginpage.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KSettings::PluginPage:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKSettings_1_1PluginPage__inherit__graph.png" border="0" usemap="#KSettings_1_1PluginPage_inherit__map" alt="Inheritance graph"/></div>
+<map name="KSettings_1_1PluginPage_inherit__map" id="KSettings_1_1PluginPage_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa2fdb18bfd3c4ff8955f5e4736de75f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSettings_1_1PluginPage.html#aa2fdb18bfd3c4ff8955f5e4736de75f9">PluginPage</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ad79a50c8a781c3a3c3b7acf2835eb34c">aboutData</a>, QWidget *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:aa2fdb18bfd3c4ff8955f5e4736de75f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0cdd1c3d8adef1270b9deed6f4d2649"><td class="memItemLeft" align="right" valign="top"><a id="ad0cdd1c3d8adef1270b9deed6f4d2649"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>defaults</b> ()</td></tr>
+<tr class="separator:ad0cdd1c3d8adef1270b9deed6f4d2649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9147583571e4311fcda38dbd79f834"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSettings_1_1PluginPage.html#afd9147583571e4311fcda38dbd79f834">load</a> ()</td></tr>
+<tr class="separator:afd9147583571e4311fcda38dbd79f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3cdac8e08ed50517a29e69fd9a3e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKPluginSelector.html">KPluginSelector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSettings_1_1PluginPage.html#a2c3cdac8e08ed50517a29e69fd9a3e93">pluginSelector</a> ()</td></tr>
+<tr class="separator:a2c3cdac8e08ed50517a29e69fd9a3e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37cc2f685db2c49c0b30c5754f89d66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSettings_1_1PluginPage.html#aa37cc2f685db2c49c0b30c5754f89d66">save</a> ()</td></tr>
+<tr class="separator:aa37cc2f685db2c49c0b30c5754f89d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKCModule')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="memitem:a817a045344912e69f78a225373b5cd20 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a817a045344912e69f78a225373b5cd20"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a817a045344912e69f78a225373b5cd20">KCModule</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ad79a50c8a781c3a3c3b7acf2835eb34c">aboutData</a>, QWidget *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:a817a045344912e69f78a225373b5cd20 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb01a5b21673ddc65d8871e3f571004e inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="acb01a5b21673ddc65d8871e3f571004e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#acb01a5b21673ddc65d8871e3f571004e">KCModule</a> (QWidget *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:acb01a5b21673ddc65d8871e3f571004e inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79a50c8a781c3a3c3b7acf2835eb34c inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ad79a50c8a781c3a3c3b7acf2835eb34c"></a>
+virtual const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ad79a50c8a781c3a3c3b7acf2835eb34c">aboutData</a> () const</td></tr>
+<tr class="separator:ad79a50c8a781c3a3c3b7acf2835eb34c inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01549862f949b0970b81f468a36aaf5 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ab01549862f949b0970b81f468a36aaf5"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kauth-5.26.0/html/KAuth.tags:../../../frameworks/kauth-5.26.0/html/" href="../../../frameworks/kauth-5.26.0/html/classKAuth_1_1Action.html">KAuth::Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ab01549862f949b0970b81f468a36aaf5">authAction</a> () const</td></tr>
+<tr class="separator:ab01549862f949b0970b81f468a36aaf5 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4a00c8bcdb2bb30d136256cc57858b inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="afa4a00c8bcdb2bb30d136256cc57858b"></a>
+Buttons&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#afa4a00c8bcdb2bb30d136256cc57858b">buttons</a> () const</td></tr>
+<tr class="separator:afa4a00c8bcdb2bb30d136256cc57858b inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e0544e3ac42a2898f71461abd7a65a inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a50e0544e3ac42a2898f71461abd7a65a"></a>
+QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKConfigDialogManager.html">KConfigDialogManager</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a50e0544e3ac42a2898f71461abd7a65a">configs</a> () const</td></tr>
+<tr class="separator:a50e0544e3ac42a2898f71461abd7a65a inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdb41276254c409fc78f0f22b9b9d40 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="aacdb41276254c409fc78f0f22b9b9d40"></a>
+KCONFIGWIDGETS_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#aacdb41276254c409fc78f0f22b9b9d40">exportText</a> () const</td></tr>
+<tr class="separator:aacdb41276254c409fc78f0f22b9b9d40 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5febf8ad8f1bf1b112b93f06492b9406 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a5febf8ad8f1bf1b112b93f06492b9406"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a5febf8ad8f1bf1b112b93f06492b9406">needsAuthorization</a> () const</td></tr>
+<tr class="separator:a5febf8ad8f1bf1b112b93f06492b9406 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855fc447c8592cc6a8f85cdd82553daa inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a855fc447c8592cc6a8f85cdd82553daa"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a855fc447c8592cc6a8f85cdd82553daa">quickHelp</a> () const</td></tr>
+<tr class="separator:a855fc447c8592cc6a8f85cdd82553daa inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43516bc0420bd4a87f8c7a6a2f99c6f4 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a43516bc0420bd4a87f8c7a6a2f99c6f4"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a43516bc0420bd4a87f8c7a6a2f99c6f4">rootOnlyMessage</a> () const</td></tr>
+<tr class="separator:a43516bc0420bd4a87f8c7a6a2f99c6f4 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aafe73e0932fdfc5320bdef7ad0ec2a inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a4aafe73e0932fdfc5320bdef7ad0ec2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a4aafe73e0932fdfc5320bdef7ad0ec2a">setAboutData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *about)</td></tr>
+<tr class="separator:a4aafe73e0932fdfc5320bdef7ad0ec2a inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c2cbdced88569806cad1b344a62827 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a03c2cbdced88569806cad1b344a62827"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a03c2cbdced88569806cad1b344a62827">setAuthAction</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kauth-5.26.0/html/KAuth.tags:../../../frameworks/kauth-5.26.0/html/" href="../../../frameworks/kauth-5.26.0/html/classKAuth_1_1Action.html">KAuth::Action</a> &amp;action)</td></tr>
+<tr class="separator:a03c2cbdced88569806cad1b344a62827 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41fff4d193e39bd708c9979a00d2819 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ab41fff4d193e39bd708c9979a00d2819"></a>
+KCONFIGWIDGETS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ab41fff4d193e39bd708c9979a00d2819">setExportText</a> (const QString &amp;)</td></tr>
+<tr class="separator:ab41fff4d193e39bd708c9979a00d2819 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e059aa8e61f91b76343ec139080d722 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a1e059aa8e61f91b76343ec139080d722"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a1e059aa8e61f91b76343ec139080d722">setNeedsAuthorization</a> (bool needsAuth)</td></tr>
+<tr class="separator:a1e059aa8e61f91b76343ec139080d722 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fce4fec29667db53fdbb681fdbb86b7 inherit pub_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a1fce4fec29667db53fdbb681fdbb86b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a1fce4fec29667db53fdbb681fdbb86b7">useRootOnlyMessage</a> () const</td></tr>
+<tr class="separator:a1fce4fec29667db53fdbb681fdbb86b7 inherit pub_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa20290b012e9ed23350b6c4a0c79b68f"><td class="memItemLeft" align="right" valign="top"><a id="aa20290b012e9ed23350b6c4a0c79b68f"></a>
+PluginPagePrivate *const&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:aa20290b012e9ed23350b6c4a0c79b68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKCModule')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="memitem:a8f624c500685b280823994ad0f917646 inherit pub_types_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a8f624c500685b280823994ad0f917646"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Button</b> </td></tr>
+<tr class="separator:a8f624c500685b280823994ad0f917646 inherit pub_types_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('signals_classKCModule')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="memitem:a9f00be09e1fda6d46806646de0ad964f inherit signals_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a9f00be09e1fda6d46806646de0ad964f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a9f00be09e1fda6d46806646de0ad964f">changed</a> (bool state)</td></tr>
+<tr class="separator:a9f00be09e1fda6d46806646de0ad964f inherit signals_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92255dadb87c38dd48b63132d2cb444 inherit signals_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ae92255dadb87c38dd48b63132d2cb444"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ae92255dadb87c38dd48b63132d2cb444">quickHelpChanged</a> ()</td></tr>
+<tr class="separator:ae92255dadb87c38dd48b63132d2cb444 inherit signals_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a254f5c8a57ca7986fcbe03a261dd3 inherit signals_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a98a254f5c8a57ca7986fcbe03a261dd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a98a254f5c8a57ca7986fcbe03a261dd3">rootOnlyMessageChanged</a> (bool use, QString message)</td></tr>
+<tr class="separator:a98a254f5c8a57ca7986fcbe03a261dd3 inherit signals_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKCModule')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="inherit_header pro_slots_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKCModule')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="memitem:acda4e69cdca2856438f08e0c71fc3c54 inherit pro_slots_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="acda4e69cdca2856438f08e0c71fc3c54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#acda4e69cdca2856438f08e0c71fc3c54">authStatusChanged</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kauth-5.26.0/html/KAuth.tags:../../../frameworks/kauth-5.26.0/html/" href="../../../frameworks/kauth-5.26.0/html/classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2">KAuth::Action::AuthStatus</a> status)</td></tr>
+<tr class="separator:acda4e69cdca2856438f08e0c71fc3c54 inherit pro_slots_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc93371d5a38d8f27e25845ecb87f13e inherit pro_slots_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="acc93371d5a38d8f27e25845ecb87f13e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#acc93371d5a38d8f27e25845ecb87f13e">changed</a> ()</td></tr>
+<tr class="separator:acc93371d5a38d8f27e25845ecb87f13e inherit pro_slots_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61103a49ada49dd125d91def6702db5 inherit pro_slots_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ac61103a49ada49dd125d91def6702db5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ac61103a49ada49dd125d91def6702db5">widgetChanged</a> ()</td></tr>
+<tr class="separator:ac61103a49ada49dd125d91def6702db5 inherit pro_slots_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKCModule"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKCModule')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a></td></tr>
+<tr class="memitem:a25fdfc2a5bc8e96bf3fef149888307ea inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a25fdfc2a5bc8e96bf3fef149888307ea"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKConfigDialogManager.html">KConfigDialogManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a25fdfc2a5bc8e96bf3fef149888307ea">addConfig</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKCoreConfigSkeleton.html">KCoreConfigSkeleton</a> *config, QWidget *widget)</td></tr>
+<tr class="separator:a25fdfc2a5bc8e96bf3fef149888307ea inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3b168c9abd0e3168aa138aadacb35e inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="aff3b168c9abd0e3168aa138aadacb35e"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKConfigDialogManager.html">KConfigDialogManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#aff3b168c9abd0e3168aa138aadacb35e">addConfig</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigSkeleton.html">KConfigSkeleton</a> *config, QWidget *widget)</td></tr>
+<tr class="separator:aff3b168c9abd0e3168aa138aadacb35e inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c364e7b1f74b0db648760864ef29390 inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a1c364e7b1f74b0db648760864ef29390"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a1c364e7b1f74b0db648760864ef29390">managedWidgetChangeState</a> () const</td></tr>
+<tr class="separator:a1c364e7b1f74b0db648760864ef29390 inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368a8596c8c7225977e73a0f5c36c047 inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a368a8596c8c7225977e73a0f5c36c047"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a368a8596c8c7225977e73a0f5c36c047">setButtons</a> (Buttons btn)</td></tr>
+<tr class="separator:a368a8596c8c7225977e73a0f5c36c047 inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c744f7c6426c6ce91e04238126a957c inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a9c744f7c6426c6ce91e04238126a957c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a9c744f7c6426c6ce91e04238126a957c">setQuickHelp</a> (const QString &amp;help)</td></tr>
+<tr class="separator:a9c744f7c6426c6ce91e04238126a957c inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527a0804a3714d1fbc8b8da4a3a79601 inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a527a0804a3714d1fbc8b8da4a3a79601"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a527a0804a3714d1fbc8b8da4a3a79601">setRootOnlyMessage</a> (const QString &amp;message)</td></tr>
+<tr class="separator:a527a0804a3714d1fbc8b8da4a3a79601 inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e55a9b05cdbc4d3a7939d71fcb174f inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="a58e55a9b05cdbc4d3a7939d71fcb174f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a58e55a9b05cdbc4d3a7939d71fcb174f">setUseRootOnlyMessage</a> (bool on)</td></tr>
+<tr class="separator:a58e55a9b05cdbc4d3a7939d71fcb174f inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79d6c2c8b7a449ef6b4a3338870f96b inherit pro_methods_classKCModule"><td class="memItemLeft" align="right" valign="top"><a id="ab79d6c2c8b7a449ef6b4a3338870f96b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#ab79d6c2c8b7a449ef6b4a3338870f96b">unmanagedWidgetChangeState</a> (bool)</td></tr>
+<tr class="separator:ab79d6c2c8b7a449ef6b4a3338870f96b inherit pro_methods_classKCModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Convenience <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> for creating a plugins config page. </p>
+<p>This class makes it very easy to create a plugins configuration page to your program. All you need to do is create a class that is derived from <a class="el" href="classKSettings_1_1PluginPage.html" title="Convenience KCModule for creating a plugins config page. ">PluginPage</a> and add the appropriate plugin information to the <a class="el" href="classKPluginSelector.html" title="A widget to select what plugins to load and configure the plugins. ">KPluginSelector</a>. This is done using the <a class="el" href="classKSettings_1_1PluginPage.html#a2c3cdac8e08ed50517a29e69fd9a3e93">pluginSelector()</a> method: </p><div class="fragment"><div class="line"><a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#a8acc809ba542c82fa8f1941cce24170c">K_PLUGIN_FACTORY</a>(MyAppPluginConfigFactory,</div><div class="line">                 registerPlugin&lt;MyAppPluginConfig&gt;();</div><div class="line">                 )</div><div class="line"></div><div class="line">MyAppPluginConfig(QWidget * parent, <span class="keyword">const</span> QVariantList &amp; args)</div><div class="line">    : <a class="code" href="classKSettings_1_1PluginPage.html#aa2fdb18bfd3c4ff8955f5e4736de75f9">PluginPage</a>(MyAppPluginConfigFactory::componentData(), parent, args)</div><div class="line">{</div><div class="line">    <a class="code" href="classKSettings_1_1PluginPage.html#a2c3cdac8e08ed50517a29e69fd9a3e93">pluginSelector</a>()-&gt;<a class="code" href="classKPluginSelector.html#a0083776940c6bb68b47f6b737bd5d44b">addPlugins</a>( QCoreApplication::instance()-&gt;applicationName(), i18n( <span class="stringliteral">&quot;General Plugins&quot;</span> ), <span class="stringliteral">&quot;General&quot;</span> );</div><div class="line">    <a class="code" href="classKSettings_1_1PluginPage.html#a2c3cdac8e08ed50517a29e69fd9a3e93">pluginSelector</a>()-&gt;<a class="code" href="classKPluginSelector.html#a0083776940c6bb68b47f6b737bd5d44b">addPlugins</a>( QCoreApplication::instance()-&gt;applicationName(), i18n( <span class="stringliteral">&quot;Effects&quot;</span> ), <span class="stringliteral">&quot;Effects&quot;</span> );</div><div class="line">}</div></div><!-- fragment --><p>All that remains to be done is to create the appropriate .desktop file </p><pre class="fragment">[Desktop Entry]
+Encoding=UTF-8
+Icon=plugin
+Type=Service
+ServiceTypes=KCModule
+
+X-KDE-Library=myapppluginconfig
+X-KDE-FactoryName=MyAppPluginConfigFactory
+X-KDE-ParentApp=myapp
+X-KDE-ParentComponents=myapp
+
+Name=Plugins
+Comment=Select and configure your plugins:
+</pre><dl class="section author"><dt>Author</dt><dd>Matthias Kretz <a href="#" onclick="location.href='mai'+'lto:'+'kre'+'tz'+'@kd'+'e.'+'org'; return false;">kretz<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="pluginpage_8h_source.html#l00071">71</a> of file <a class="el" href="pluginpage_8h_source.html">pluginpage.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa2fdb18bfd3c4ff8955f5e4736de75f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2fdb18bfd3c4ff8955f5e4736de75f9">&#9670;&nbsp;</a></span>PluginPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSettings::PluginPage::PluginPage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td>
+          <td class="paramname"><em>aboutData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> constructor. </p>
+<p>Automatically creates the <a class="el" href="classKPluginSelector.html" title="A widget to select what plugins to load and configure the plugins. ">KPluginSelector</a> widget. </p>
+
+<p class="definition">Definition at line <a class="el" href="pluginpage_8cpp_source.html#l00041">41</a> of file <a class="el" href="pluginpage_8cpp_source.html">pluginpage.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afd9147583571e4311fcda38dbd79f834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9147583571e4311fcda38dbd79f834">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSettings::PluginPage::load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the state of the plugins (selected or not) from the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kservice-5.26.0/html/KService.tags:../../../frameworks/kservice-5.26.0/html/" href="../../../frameworks/kservice-5.26.0/html/classKPluginInfo.html">KPluginInfo</a> objects. </p>
+<p>For <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kparts-5.26.0/html/KParts.tags:../../../frameworks/kparts-5.26.0/html/" href="../../../frameworks/kparts-5.26.0/html/structKParts_1_1BrowserArguments.html">KParts</a> plugins everything should work automatically. For your own type of plugins you might need to reimplement the KPluginInfo::pluginLoaded() method. If that doesn't fit your needs you can also reimplement this method. </p>
+
+<p>Reimplemented from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a7d1f2821bd6b79bf5c2cc2ec26c45bd0">KCModule</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="pluginpage_8cpp_source.html#l00067">67</a> of file <a class="el" href="pluginpage_8cpp_source.html">pluginpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c3cdac8e08ed50517a29e69fd9a3e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3cdac8e08ed50517a29e69fd9a3e93">&#9670;&nbsp;</a></span>pluginSelector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPluginSelector.html">KPluginSelector</a> * KSettings::PluginPage::pluginSelector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <a class="el" href="classKPluginSelector.html" title="A widget to select what plugins to load and configure the plugins. ">KPluginSelector</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="pluginpage_8cpp_source.html#l00062">62</a> of file <a class="el" href="pluginpage_8cpp_source.html">pluginpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa37cc2f685db2c49c0b30c5754f89d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37cc2f685db2c49c0b30c5754f89d66">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSettings::PluginPage::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the state of the plugins to <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfig.html">KConfig</a> objects. </p>
+
+<p>Reimplemented from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html#a598ddbf6c1b1fe169ccd7b3392a13eaa">KCModule</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="pluginpage_8cpp_source.html#l00072">72</a> of file <a class="el" href="pluginpage_8cpp_source.html">pluginpage.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="pluginpage_8h_source.html">pluginpage.h</a></li>
+<li><a class="el" href="pluginpage_8cpp_source.html">pluginpage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:05 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

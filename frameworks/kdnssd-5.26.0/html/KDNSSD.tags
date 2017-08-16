@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>KDNSSD::DomainBrowser</name>
+    <filename>classKDNSSD_1_1DomainBrowser.html</filename>
+    <member kind="enumvalue">
+      <name>Browsing</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>af93e72d9dad62d4fa255bd0fa66fb477a6cfe2826b583285428ee3f5bcca1cc90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>DomainType</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>af93e72d9dad62d4fa255bd0fa66fb477</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Browsing</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>af93e72d9dad62d4fa255bd0fa66fb477a6cfe2826b583285428ee3f5bcca1cc90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Publishing</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>af93e72d9dad62d4fa255bd0fa66fb477ab3930c8de92b640c057fd198a51c02f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Publishing</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>af93e72d9dad62d4fa255bd0fa66fb477ab3930c8de92b640c057fd198a51c02f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>domainAdded</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>a72d048bb239ae571548354788b43ba7d</anchor>
+      <arglist>(const QString &amp;domain)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>domainRemoved</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>a2903f01a0aff12859276d0fbe0995e3d</anchor>
+      <arglist>(const QString &amp;domain)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DomainBrowser</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>aca8815be064f7c8384f3516e2f16bb09</anchor>
+      <arglist>(DomainType type, QObject *parent=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>QStringList</type>
+      <name>domains</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>ada36483d7edcbcdebac35f5316d5fb59</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isRunning</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>a6f481a702919b971aede5e7def0ce273</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>startBrowse</name>
+      <anchorfile>classKDNSSD_1_1DomainBrowser.html</anchorfile>
+      <anchor>a53cdde6aec323364e83e28be0f0e40ab</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::DomainModel</name>
+    <filename>classKDNSSD_1_1DomainModel.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DomainModel</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>ab2b7926cfd6cf20aca6cdb3eaf1686af</anchor>
+      <arglist>(DomainBrowser *browser, QObject *parent=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>columnCount</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a579251de4192c786990dec9bfc407cee</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a6113f8a780027340689e21a88f609e4a</anchor>
+      <arglist>(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>hasIndex</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a632c361d6514a985cf3002355972cc9e</anchor>
+      <arglist>(int row, int column, const QModelIndex &amp;parent) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QModelIndex</type>
+      <name>index</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a99805f122770aac363254d97c073767a</anchor>
+      <arglist>(int row, int column, const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QModelIndex</type>
+      <name>parent</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a68dfcbb1e3ddb7a7375e8f763a83984b</anchor>
+      <arglist>(const QModelIndex &amp;index) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>classKDNSSD_1_1DomainModel.html</anchorfile>
+      <anchor>a38d46ac94ea7b58bab97aeddfd7dcd01</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::PublicService</name>
+    <filename>classKDNSSD_1_1PublicService.html</filename>
+    <base>KDNSSD::ServiceBase</base>
+    <member kind="signal">
+      <type>void</type>
+      <name>published</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>ad5cbe4c14df0cf6cbcef836c00dab0cf</anchor>
+      <arglist>(bool successful)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PublicService</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>aa1d7e4f12e020cef47342295ee349048</anchor>
+      <arglist>(const QString &amp;name=QString(), const QString &amp;type=QString(), unsigned int port=0, const QString &amp;domain=QString(), const QStringList &amp;subtypes=QStringList())</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPublished</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>adc96d985c331329e91826daa64c05822</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>publish</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>a37f87507e3ae6722824299d5b143d1a1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>publishAsync</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>af873564c0a3d29fcbf61b38b04a61ba7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDomain</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>a4c484289e86c33e0e27c404e29b7bf82</anchor>
+      <arglist>(const QString &amp;domain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPort</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>aa9bf78b810a5c6a6cc9edd3d5e910cb8</anchor>
+      <arglist>(unsigned short port)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setServiceName</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>a3a9554d8360a13ff4101a55ec9cca28f</anchor>
+      <arglist>(const QString &amp;serviceName)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSubTypes</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>a4cb55003c7f35a691833fc7d40a26cf0</anchor>
+      <arglist>(const QStringList &amp;subtypes)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTextData</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>ae90fb2cb6471ea8290a0aec1d2c1ca51</anchor>
+      <arglist>(const QMap&lt; QString, QByteArray &gt; &amp;textData)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setType</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>abc3e288e48b5c817f31eca1e960f13ad</anchor>
+      <arglist>(const QString &amp;type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>a2ae23fc66afc6384ec4ac09a48c5b845</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QStringList</type>
+      <name>subtypes</name>
+      <anchorfile>classKDNSSD_1_1PublicService.html</anchorfile>
+      <anchor>afd9b8cf6e8c53ea730e9c1d2b4ec7bd6</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::RemoteService</name>
+    <filename>classKDNSSD_1_1RemoteService.html</filename>
+    <base>KDNSSD::ServiceBase</base>
+    <member kind="signal">
+      <type>void</type>
+      <name>resolved</name>
+      <anchorfile>classKDNSSD_1_1RemoteService.html</anchorfile>
+      <anchor>ac9147f01be1f9c9c319419a51d120e99</anchor>
+      <arglist>(bool successful)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RemoteService</name>
+      <anchorfile>classKDNSSD_1_1RemoteService.html</anchorfile>
+      <anchor>a6ae39c3823a94623be14f8379bb42649</anchor>
+      <arglist>(const QString &amp;name, const QString &amp;type, const QString &amp;domain)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isResolved</name>
+      <anchorfile>classKDNSSD_1_1RemoteService.html</anchorfile>
+      <anchor>a812db85170fd32c0755c7bff9148aec5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>resolve</name>
+      <anchorfile>classKDNSSD_1_1RemoteService.html</anchorfile>
+      <anchor>ad402252765bcb063942db007501587d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resolveAsync</name>
+      <anchorfile>classKDNSSD_1_1RemoteService.html</anchorfile>
+      <anchor>a71b5db6504bbb771a4bfe16273dcb0f3</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::Responder</name>
+    <filename>classKDNSSD_1_1Responder.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>isRunning</name>
+      <anchorfile>classKDNSSD_1_1Responder.html</anchorfile>
+      <anchor>a174d4d92feb6ce5aead841fa5dce8770</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::ServiceBase</name>
+    <filename>classKDNSSD_1_1ServiceBase.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ServiceBase</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a047fd77b4121314c481a8c8f0d325b88</anchor>
+      <arglist>(const QString &amp;name=QString(), const QString &amp;type=QString(), const QString &amp;domain=QString(), const QString &amp;host=QString(), unsigned short port=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>domain</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a9e65320d438f5abc261f2b77b96ccaa8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>hostName</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>ab97cdc587b1d12b2081e6e23035e2c51</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a82318b112c1ba1ed77f07ab902b18883</anchor>
+      <arglist>(const ServiceBase &amp;o) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a369ff4a29370f64ba4adaf8a9f8e9ff5</anchor>
+      <arglist>(const ServiceBase &amp;o) const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned short</type>
+      <name>port</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a91a718efe26f11a438a88bf156d80384</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>serviceName</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a8f6fe19b279b51d62ff1cecc7b432c50</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QMap&lt; QString, QByteArray &gt;</type>
+      <name>textData</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>a96ae1592b4f6a94187aa643506a70852</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>type</name>
+      <anchorfile>classKDNSSD_1_1ServiceBase.html</anchorfile>
+      <anchor>aeeced7db9b94078a9b44fc3f1dffe879</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::ServiceBrowser</name>
+    <filename>classKDNSSD_1_1ServiceBrowser.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>State</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Working</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa4700e42111e22353d0558464f3d12def</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Stopped</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa9e02f602f7e710559e19a02d55c90dc1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Unsupported</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa8032d57900b39474984c7e2f310d3f59</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Stopped</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa9e02f602f7e710559e19a02d55c90dc1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Unsupported</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa8032d57900b39474984c7e2f310d3f59</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Working</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a84c7e602c7fdd47e16e58676a177f61fa4700e42111e22353d0558464f3d12def</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>finished</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a8ce315840489147267890408d101dd4a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>serviceAdded</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a37ab8bdba6cca8b61fb24818db1722f8</anchor>
+      <arglist>(KDNSSD::RemoteService::Ptr service)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>serviceRemoved</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a12c62e4b97fb94b2a7d94f189e552f74</anchor>
+      <arglist>(KDNSSD::RemoteService::Ptr service)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ServiceBrowser</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>ae2965fa63de2fb977e1bff806ab452f5</anchor>
+      <arglist>(const QString &amp;type, bool autoResolve=false, const QString &amp;domain=QString(), const QString &amp;subtype=QString())</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isAutoResolving</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a258438d1f7a58b772c53f5ca907babbc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; RemoteService::Ptr &gt;</type>
+      <name>services</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a729f46a775f71440e163908310729436</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>startBrowse</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a50aecd61b661f0c0925c65aa931e09fa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QString</type>
+      <name>getLocalHostName</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>aeb8c2abd42e8fe65f354ee24cb8c2d52</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static State</type>
+      <name>isAvailable</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>ac0f402d7933c305570bb4dbc2f4ac961</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QHostAddress</type>
+      <name>resolveHostName</name>
+      <anchorfile>classKDNSSD_1_1ServiceBrowser.html</anchorfile>
+      <anchor>a2537d3d0b70defc47309fd8d57de3bf2</anchor>
+      <arglist>(const QString &amp;hostname)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>KDNSSD::ServiceModel</name>
+    <filename>classKDNSSD_1_1ServiceModel.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>AdditionalRoles</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a4d43cc493c1e92f9db8f735a139c7537</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ServicePtrRole</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a4d43cc493c1e92f9db8f735a139c7537a9a8934200347ab7927661464b12ece70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ModelColumns</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a999fd41a6039d0f6bf26338593d92114</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ServicePtrRole</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a4d43cc493c1e92f9db8f735a139c7537a9a8934200347ab7927661464b12ece70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ServiceModel</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a79a9833e870a2acdbb743631bc3ebed8</anchor>
+      <arglist>(ServiceBrowser *browser, QObject *parent=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>columnCount</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a96e27d62fc3e50239ccbaa4ebe598101</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a79e82d6c0dfc0f4ef6f3926cd4997fc8</anchor>
+      <arglist>(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>hasIndex</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a9683fe29a469691fafef4a70ecc8a1c3</anchor>
+      <arglist>(int row, int column, const QModelIndex &amp;parent) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>headerData</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a013073f45e5702b3013ae425a834343b</anchor>
+      <arglist>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QModelIndex</type>
+      <name>index</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>acfe93e29929b97c005aa79d16152276a</anchor>
+      <arglist>(int row, int column, const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QModelIndex</type>
+      <name>parent</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>afb6621769d618d8245ec9a155b2735e3</anchor>
+      <arglist>(const QModelIndex &amp;index) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>classKDNSSD_1_1ServiceModel.html</anchorfile>
+      <anchor>a0fff2e46b237f4f06f91915ed0949e36</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>KDE DNS-SD</title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

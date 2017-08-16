@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KNTLM Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KNTLM">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classKNTLM-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KNTLM Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kntlm_8h_source.html">kntlm.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKNTLM_1_1Auth.html">Auth</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKNTLM_1_1Challenge.html">Challenge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKNTLM_1_1Negotiate.html">Negotiate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7020a0121c674127010edd09256dd9ca"><td class="memItemLeft" align="right" valign="top"><a id="a7020a0121c674127010edd09256dd9ca"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AuthFlag</b> { <b>Force_V1</b> = 0x1,
+<b>Force_V2</b> = 0x2,
+<b>Add_LM</b> = 0x4
+ }</td></tr>
+<tr class="separator:a7020a0121c674127010edd09256dd9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94da7c86acd7412d16f72f6beed8650b"><td class="memItemLeft" align="right" valign="top"><a id="a94da7c86acd7412d16f72f6beed8650b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> { <br />
+&#160;&#160;<b>Negotiate_Unicode</b> = 0x00000001,
+<b>Negotiate_OEM</b> = 0x00000002,
+<b>Request_Target</b> = 0x00000004,
+<b>Negotiate_Sign</b> = 0x00000010,
+<br />
+&#160;&#160;<b>Negotiate_Seal</b> = 0x00000020,
+<b>Negotiate_Datagram_Style</b> = 0x00000040,
+<b>Negotiate_LM_Key</b> = 0x00000080,
+<b>Negotiate_Netware</b> = 0x00000100,
+<br />
+&#160;&#160;<b>Negotiate_NTLM</b> = 0x00000200,
+<b>Negotiate_Domain_Supplied</b> = 0x00001000,
+<b>Negotiate_WS_Supplied</b> = 0x00002000,
+<b>Negotiate_Local_Call</b> = 0x00004000,
+<br />
+&#160;&#160;<b>Negotiate_Always_Sign</b> = 0x00008000,
+<b>Target_Type_Domain</b> = 0x00010000,
+<b>Target_Type_Server</b> = 0x00020000,
+<b>Target_Type_Share</b> = 0x00040000,
+<br />
+&#160;&#160;<b>Negotiate_NTLM2_Key</b> = 0x00080000,
+<b>Request_Init_Response</b> = 0x00100000,
+<b>Request_Accept_Response</b> = 0x00200000,
+<b>Request_NonNT_Key</b> = 0x00400000,
+<br />
+&#160;&#160;<b>Negotiate_Target_Info</b> = 0x00800000,
+<b>Negotiate_128</b> = 0x20000000,
+<b>Negotiate_Key_Exchange</b> = 0x40000000,
+<b>Negotiate_56</b> = 0x80000000
+<br />
+ }</td></tr>
+<tr class="separator:a94da7c86acd7412d16f72f6beed8650b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aafe607176baf690dd4b35005b01a985f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#aafe607176baf690dd4b35005b01a985f">getAuth</a> (QByteArray &amp;auth, const QByteArray &amp;challenge, const QString &amp;user, const QString &amp;password, const QString &amp;domain=QString(), const QString &amp;workstation=QString(), AuthFlags authflags=Add_LM)</td></tr>
+<tr class="separator:aafe607176baf690dd4b35005b01a985f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6885a4e93ea3cd2d727ccd22f2230748"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a6885a4e93ea3cd2d727ccd22f2230748">getLMResponse</a> (const QString &amp;password, const unsigned char *challenge)</td></tr>
+<tr class="separator:a6885a4e93ea3cd2d727ccd22f2230748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a9d8dfe34e186263e970f1a1b01371"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a61a9d8dfe34e186263e970f1a1b01371">getLMv2Response</a> (const QString &amp;target, const QString &amp;user, const QString &amp;password, const unsigned char *challenge)</td></tr>
+<tr class="separator:a61a9d8dfe34e186263e970f1a1b01371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59cf8bcffe28b1f0b70c2f43491c5d3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#af59cf8bcffe28b1f0b70c2f43491c5d3">getNegotiate</a> (QByteArray &amp;negotiate, const QString &amp;domain=QString(), const QString &amp;workstation=QString(), quint32 flags=Negotiate_Unicode|Request_Target|Negotiate_NTLM)</td></tr>
+<tr class="separator:af59cf8bcffe28b1f0b70c2f43491c5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda9f11b66cb341d36bbfe62081476d2"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#afda9f11b66cb341d36bbfe62081476d2">getNTLMResponse</a> (const QString &amp;password, const unsigned char *challenge)</td></tr>
+<tr class="separator:afda9f11b66cb341d36bbfe62081476d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30a905ded3b9e39d638918b2871d5b8"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#ac30a905ded3b9e39d638918b2871d5b8">getNTLMv2Response</a> (const QString &amp;target, const QString &amp;user, const QString &amp;password, const QByteArray &amp;targetInformation, const unsigned char *challenge)</td></tr>
+<tr class="separator:ac30a905ded3b9e39d638918b2871d5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d7955af250819cab8c3bc031ba888b"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a84d7955af250819cab8c3bc031ba888b">lmHash</a> (const QString &amp;password)</td></tr>
+<tr class="separator:a84d7955af250819cab8c3bc031ba888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4691dbd4d0d2f6976156543c12b88f"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a0c4691dbd4d0d2f6976156543c12b88f">lmResponse</a> (const QByteArray &amp;hash, const unsigned char *challenge)</td></tr>
+<tr class="separator:a0c4691dbd4d0d2f6976156543c12b88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ebc4d9632a9076115e93b6c51893af"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a18ebc4d9632a9076115e93b6c51893af">lmv2Response</a> (const QByteArray &amp;hash, const QByteArray &amp;clientData, const unsigned char *challenge)</td></tr>
+<tr class="separator:a18ebc4d9632a9076115e93b6c51893af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515fa34766b6122318d899762a19b8f0"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a515fa34766b6122318d899762a19b8f0">ntlmHash</a> (const QString &amp;password)</td></tr>
+<tr class="separator:a515fa34766b6122318d899762a19b8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836ea98181f3fedec9a5ea2b8daf0e0c"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNTLM.html#a836ea98181f3fedec9a5ea2b8daf0e0c">ntlmv2Hash</a> (const QString &amp;target, const QString &amp;user, const QString &amp;password)</td></tr>
+<tr class="separator:a836ea98181f3fedec9a5ea2b8daf0e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKNTLM.html" title="KNTLM class implements the NTLM authentication protocol. ">KNTLM</a> class implements the NTLM authentication protocol. </p>
+<p>The <a class="el" href="classKNTLM.html" title="KNTLM class implements the NTLM authentication protocol. ">KNTLM</a> class is useful for creating the authentication structures which can be used for various servers which implements NTLM type authentication. A comprehensive description of the NTLM authentication protocol can be found at <a href="http://davenport.sourceforge.net/ntlm.html">http://davenport.sourceforge.net/ntlm.html</a> The class also contains methods to create the LanManager and NT (MD4) hashes of a password. This class doesn't maintain any state information, so all methods are static. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8h_source.html#l00040">40</a> of file <a class="el" href="kntlm_8h_source.html">kntlm.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aafe607176baf690dd4b35005b01a985f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe607176baf690dd4b35005b01a985f">&#9670;&nbsp;</a></span>getAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KNTLM::getAuth </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>challenge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>workstation</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AuthFlags&#160;</td>
+          <td class="paramname"><em>authflags</em> = <code>Add_LM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the type 3 message which should be sent to the server after the challenge (type 2) received. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth</td><td>- a buffer where the Type 3 message will returned. </td></tr>
+    <tr><td class="paramname">challenge</td><td>- the Type 2 message returned by the server. </td></tr>
+    <tr><td class="paramname">user</td><td>- user's name. </td></tr>
+    <tr><td class="paramname">password</td><td>- user's password. </td></tr>
+    <tr><td class="paramname">domain</td><td>- the target domain. If left empty, it will be extracted from the challenge. </td></tr>
+    <tr><td class="paramname">workstation</td><td>- the user's workstation. </td></tr>
+    <tr><td class="paramname">authflags</td><td>- AuthFlags flags that changes the response generation behavior. Force_V1 or Force_V2 forces (NT)LMv1 or (NT)LMv2 responses generation, otherwise it's autodetected from the challenge. Add_LM adds LMv1 or LMv2 responses additional to the NTLM response.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if auth filled with the Type 3 message, false if an error occurred (challenge data invalid, NTLMv2 authentication forced, but the challenge data says no NTLMv2 supported, or no NTLM supported at all, and Add_LM not specified). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00216">216</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6885a4e93ea3cd2d727ccd22f2230748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6885a4e93ea3cd2d727ccd22f2230748">&#9670;&nbsp;</a></span>getLMResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::getLMResponse </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the LanManager response from the password and the server challenge. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00306">306</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61a9d8dfe34e186263e970f1a1b01371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a9d8dfe34e186263e970f1a1b01371">&#9670;&nbsp;</a></span>getLMv2Response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::getLMv2Response </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the LMv2 response. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00384">384</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af59cf8bcffe28b1f0b70c2f43491c5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59cf8bcffe28b1f0b70c2f43491c5d3">&#9670;&nbsp;</a></span>getNegotiate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KNTLM::getNegotiate </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>negotiate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>workstation</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>Negotiate_Unicode&#160;|&#160;Request_Target&#160;|&#160;Negotiate_NTLM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the initial message (type 1) which should be sent to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">negotiate</td><td>- a buffer where the Type 1 message will returned. </td></tr>
+    <tr><td class="paramname">domain</td><td>- the domain name which should be send with the message. </td></tr>
+    <tr><td class="paramname">workstation</td><td>- the workstation name which should be send with the message. </td></tr>
+    <tr><td class="paramname">flags</td><td>- various flags, in most cases the defaults will good.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if creating the structure succeeds, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00194">194</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afda9f11b66cb341d36bbfe62081476d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda9f11b66cb341d36bbfe62081476d2">&#9670;&nbsp;</a></span>getNTLMResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::getNTLMResponse </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the NTLM response from the password and the server challenge. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00357">357</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac30a905ded3b9e39d638918b2871d5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30a905ded3b9e39d638918b2871d5b8">&#9670;&nbsp;</a></span>getNTLMv2Response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::getNTLMv2Response </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>targetInformation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the NTLMv2 response. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00375">375</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a84d7955af250819cab8c3bc031ba888b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d7955af250819cab8c3bc031ba888b">&#9670;&nbsp;</a></span>lmHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::lmHash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the LanManager hash of the specified password. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00318">318</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0c4691dbd4d0d2f6976156543c12b88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4691dbd4d0d2f6976156543c12b88f">&#9670;&nbsp;</a></span>lmResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::lmResponse </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the LanManager response from the LanManager hash and the server challenge. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00339">339</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18ebc4d9632a9076115e93b6c51893af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ebc4d9632a9076115e93b6c51893af">&#9670;&nbsp;</a></span>lmv2Response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::lmv2Response </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>clientData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>challenge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the LMv2 response. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00404">404</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a515fa34766b6122318d899762a19b8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a515fa34766b6122318d899762a19b8f0">&#9670;&nbsp;</a></span>ntlmHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::ntlmHash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the NTLM hash (MD4) from the password. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00367">367</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a836ea98181f3fedec9a5ea2b8daf0e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836ea98181f3fedec9a5ea2b8daf0e0c">&#9670;&nbsp;</a></span>ntlmv2Hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KNTLM::ntlmv2Hash </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the NTLMv2 hash. </p>
+
+<p class="definition">Definition at line <a class="el" href="kntlm_8cpp_source.html#l00397">397</a> of file <a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kntlm_8h_source.html">kntlm.h</a></li>
+<li><a class="el" href="kntlm_8cpp_source.html">kntlm.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:58 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

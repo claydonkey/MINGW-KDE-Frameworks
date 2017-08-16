@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">AuthBackend.cpp</field>
+    <field name="url">AuthBackend_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">AuthBackend.cpp</field>
+    <field name="url">AuthBackend_8cpp_source.html#l00023</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth AuthBackend::Private Private Private Capabilities capabilities AuthBackend::AuthBackend QObject d Private AuthBackend::~AuthBackend d AuthBackend::Capabilities AuthBackend::capabilities d capabilities AuthBackend::setCapabilities AuthBackend::Capabilities capabilities d capabilities capabilities AuthBackend::actionExists QString action Q_UNUSED action AuthBackend::preAuthAction QString action QWidget parent Q_UNUSED action Q_UNUSED parent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">AuthBackend.h</field>
+    <field name="url">AuthBackend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth AuthBackend QObject Q_OBJECT Q_DISABLE_COPY AuthBackend Capability NoCapability AuthorizeFromClientCapability AuthorizeFromHelperCapability CheckActionExistenceCapability PreAuthActionCapability Q_DECLARE_FLAGS Capabilities Capability AuthBackend AuthBackend setupAction QString action preAuthAction QString action QWidget parent Action::AuthStatus authorizeAction QString action Action::AuthStatus actionStatus QString action QByteArray callerID isCallerAuthorized QString action QByteArray callerID actionExists QString action Capabilities capabilities setCapabilities Capabilities capabilities Q_SIGNALS actionStatusChanged QString action KAuth::Action::AuthStatus status Private Private d Q_DECLARE_INTERFACE KAuth::AuthBackend Q_DECLARE_OPERATORS_FOR_FLAGS KAuth AuthBackend Capabilities</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">AuthServicesBackend.cpp</field>
+    <field name="url">AuthServicesBackend_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth AuthorizationRef s_authRef NULL AuthorizationRef authRef AuthorizationRef authRef s_authRef AuthorizationCreate NULL kAuthorizationEmptyEnvironment kAuthorizationFlagDefaults s_authRef s_authRef AuthServicesBackend::AuthServicesBackend AuthBackend setCapabilities AuthorizeFromHelperCapability CheckActionExistenceCapability AuthServicesBackend::setupAction QString Action::AuthStatus AuthServicesBackend::authorizeAction QString action actionStatus action Action::AuthStatus AuthServicesBackend::actionStatus QString action QByteArray actionName action toUtf8 AuthorizationItem item item name actionName constData item valueLength item value NULL item flags AuthorizationRights rights rights count rights items item OSStatus result AuthorizationCopyRights authRef rights kAuthorizationEmptyEnvironment kAuthorizationFlagExtendRights kAuthorizationFlagPreAuthorize NULL result errAuthorizationSuccess Action::AuthorizedStatus errAuthorizationInteractionNotAllowed Action::AuthRequiredStatus Action::DeniedStatus QByteArray AuthServicesBackend::callerID AuthorizationExternalForm ext AuthorizationMakeExternalForm authRef ext QByteArray id ext ext id AuthServicesBackend::isCallerAuthorized QString action QByteArray callerID AuthorizationExternalForm ext memcpy ext callerID data ext AuthorizationRef auth AuthorizationCreateFromExternalForm ext auth noErr QByteArray actionName action toUtf8 AuthorizationItem item item name actionName constData item valueLength item value NULL item flags AuthorizationRights rights rights count rights items item OSStatus result AuthorizationCopyRights auth rights kAuthorizationEmptyEnvironment kAuthorizationFlagExtendRights kAuthorizationFlagInteractionAllowed NULL AuthorizationFree auth kAuthorizationFlagDefaults result errAuthorizationSuccess AuthServicesBackend::actionExists QString action OSStatus exists AuthorizationRightGet action toUtf8 constData NULL exists errAuthorizationSuccess</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">AuthServicesBackend.h</field>
+    <field name="url">AuthServicesBackend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth AuthServicesBackend AuthBackend Q_OBJECT Q_PLUGIN_METADATA IID Q_INTERFACES KAuth::AuthBackend AuthServicesBackend setupAction QString Action::AuthStatus authorizeAction QString Action::AuthStatus actionStatus QString QByteArray callerID isCallerAuthorized QString action QByteArray callerID actionExists QString action</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">BackendsManager.cpp</field>
+    <field name="url">BackendsManager_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth AuthBackend BackendsManager::auth HelperProxy BackendsManager::helper BackendsManager::BackendsManager QList&lt; QObject * &gt; BackendsManager::retrieveInstancesIn QString path QList&lt;QObject *&gt; retlist QDir pluginPath path pluginPath exists path isEmpty retlist QFileInfoList entryList pluginPath entryInfoList QDir::NoDotAndDotDot QDir::Files Q_FOREACH QFileInfo fi entryList QString filePath fi filePath QString fileName fi fileName QLibrary::isLibrary filePath QPluginLoader loader filePath QObject instance loader instance instance retlist append instance qCWarning KAUTH filePath loader errorString retlist BackendsManager::init QList&lt; QObject * &gt; backends retrieveInstancesIn QFile::decodeName KAUTH_BACKEND_PLUGIN_DIR Q_FOREACH QObject instance backends auth qobject_cast KAuth::AuthBackend instance auth QList&lt; QObject * &gt; helpers retrieveInstancesIn QFile::decodeName KAUTH_HELPER_PLUGIN_DIR Q_FOREACH QObject instance helpers helper qobject_cast KAuth::HelperProxy instance helper auth auth FakeBackend qCWarning KAUTH helper helper FakeHelperProxy qCWarning KAUTH AuthBackend BackendsManager::authBackend auth init auth HelperProxy BackendsManager::helperProxy helper init helper</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">BackendsManager.h</field>
+    <field name="url">BackendsManager_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth KAUTH_EXPORT BackendsManager AuthBackend auth HelperProxy helper BackendsManager AuthBackend authBackend HelperProxy helperProxy init QList&lt;QObject *&gt; retrieveInstancesIn QString path</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">DBusHelperProxy.cpp</field>
+    <field name="url">DBusHelperProxy_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth debugMessageReceived t QString message DBusHelperProxy::DBusHelperProxy responder m_stopRequest false m_busConnection QDBusConnection systemBus DBusHelperProxy::DBusHelperProxy QDBusConnection busConnection responder m_stopRequest false m_busConnection busConnection DBusHelperProxy::~DBusHelperProxy disconnect DBusHelperProxy::stopAction QString action QString helperID QDBusMessage message message QDBusMessage::createMethodCall helperID QLatin1String QLatin1String QLatin1String QList&lt;QVariant&gt; args args action message setArguments args m_busConnection asyncCall message DBusHelperProxy::executeAction QString action QString helperID QVariantMap arguments QByteArray blob QDataStream stream blob QIODevice::WriteOnly stream arguments m_busConnection interface startService helperID m_busConnection connect helperID QLatin1String QLatin1String QLatin1String SLOT remoteSignalReceived QString QByteArray ActionReply errorReply ActionReply::DBusErrorReply errorReply setErrorDescription tr m_busConnection lastError message emit actionPerformed action errorReply QDBusMessage message message QDBusMessage::createMethodCall helperID QLatin1String QLatin1String QLatin1String QList&lt;QVariant&gt; args args action BackendsManager::authBackend callerID blob message setArguments args m_actionsInProgress push_back action QDBusPendingCall pendingCall m_busConnection asyncCall message watcher QDBusPendingCallWatcher pendingCall connect watcher QDBusPendingCallWatcher::finished action watcher watcher deleteLater QDBusMessage reply watcher reply reply type QDBusMessage::ErrorMessage ActionReply r ActionReply::DBusErrorReply r setErrorDescription tr m_busConnection lastError message tr reply errorMessage qCDebug KAUTH reply errorMessage emit actionPerformed action r Action::AuthStatus DBusHelperProxy::authorizeAction QString action QString helperID m_actionsInProgress isEmpty Action::ErrorStatus m_busConnection interface startService helperID QDBusMessage message message QDBusMessage::createMethodCall helperID QLatin1String QLatin1String QLatin1String QList&lt;QVariant&gt; args args action BackendsManager::authBackend callerID message setArguments args m_actionsInProgress push_back action QEventLoop e QDBusPendingCall pendingCall m_busConnection asyncCall message QDBusPendingCallWatcher watcher pendingCall connect watcher SIGNAL finished QDBusPendingCallWatcher e SLOT quit e exec m_actionsInProgress removeOne action QDBusMessage reply pendingCall reply reply type QDBusMessage::ErrorMessage reply arguments size Action::ErrorStatus Action::AuthStatus reply arguments first toUInt DBusHelperProxy::initHelper QString name Kf5authAdaptor m_busConnection registerService name m_busConnection registerObject QLatin1String m_name name DBusHelperProxy::setHelperResponder QObject o responder o DBusHelperProxy::remoteSignalReceived t QString action QByteArray blob SignalType type SignalType t QDataStream stream blob QIODevice::ReadOnly type ActionStarted emit actionStarted action type ActionPerformed ActionReply reply ActionReply::deserialize blob m_actionsInProgress removeOne action emit actionPerformed action reply type DebugMessage level QString message stream level message debugMessageReceived level message type ProgressStepIndicator step stream step emit progressStep action step type ProgressStepData QVariantMap data stream data emit progressStep action data DBusHelperProxy::stopAction QString action Q_UNUSED action m_stopRequest DBusHelperProxy::hasToStopAction QEventLoop loop loop processEvents QEventLoop::AllEvents m_stopRequest QByteArray DBusHelperProxy::performAction QString action QByteArray callerID QByteArray arguments responder ActionReply::NoResponderReply serialized m_currentAction isEmpty ActionReply::HelperBusyReply serialized QVariantMap args QDataStream s arguments QIODevice::ReadOnly s args m_currentAction action emit remoteSignal ActionStarted action QByteArray QEventLoop e e processEvents QEventLoop::AllEvents ActionReply retVal QTimer timer responder property value QTimer timer stop BackendsManager::authBackend isCallerAuthorized action callerID QString slotname action slotname startsWith m_name QLatin1Char slotname slotname right slotname length m_name length slotname replace QLatin1Char QLatin1Char success QMetaObject::invokeMethod responder slotname toLatin1 data Qt::DirectConnection Q_RETURN_ARG ActionReply retVal Q_ARG QVariantMap args success retVal ActionReply::NoSuchActionReply retVal ActionReply::AuthorizationDeniedReply timer start emit remoteSignal ActionPerformed action retVal serialized e processEvents QEventLoop::AllEvents m_currentAction clear m_stopRequest retVal serialized uint DBusHelperProxy::authorizeAction QString action QByteArray callerID m_currentAction isEmpty uint Action::ErrorStatus m_currentAction action uint retVal QTimer timer responder property value QTimer timer stop BackendsManager::authBackend isCallerAuthorized action callerID retVal uint Action::AuthorizedStatus retVal uint Action::DeniedStatus timer start m_currentAction clear retVal DBusHelperProxy::sendDebugMessage level msg QByteArray blob QDataStream stream blob QIODevice::WriteOnly stream level QString::fromLocal8Bit msg emit remoteSignal DebugMessage m_currentAction blob DBusHelperProxy::sendProgressStep step QByteArray blob QDataStream stream blob QIODevice::WriteOnly stream step emit remoteSignal ProgressStepIndicator m_currentAction blob DBusHelperProxy::sendProgressStep QVariantMap data QByteArray blob QDataStream stream blob QIODevice::WriteOnly stream data emit remoteSignal ProgressStepData m_currentAction blob debugMessageReceived t QString message QtMsgType type QtMsgType t type QtDebugMsg qDebug message toLatin1 data QtInfoMsg qInfo message toLatin1 data QtWarningMsg qWarning message toLatin1 data QtCriticalMsg qCritical message toLatin1 data QtFatalMsg qFatal message toLatin1 data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">DBusHelperProxy.h</field>
+    <field name="url">DBusHelperProxy_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth DBusHelperProxy HelperProxy Q_OBJECT Q_PLUGIN_METADATA IID Q_INTERFACES KAuth::HelperProxy QObject responder QString m_name QString m_currentAction m_stopRequest QList&lt;QString&gt; m_actionsInProgress QDBusConnection m_busConnection SignalType ActionStarted ActionPerformed DebugMessage ProgressStepIndicator ProgressStepData DBusHelperProxy DBusHelperProxy QDBusConnection busConnection DBusHelperProxy executeAction QString action QString helperID QVariantMap arguments Q_DECL_OVERRIDE Action::AuthStatus authorizeAction QString action QString helperID Q_DECL_OVERRIDE stopAction QString action QString helperID Q_DECL_OVERRIDE initHelper QString name Q_DECL_OVERRIDE setHelperResponder QObject o Q_DECL_OVERRIDE hasToStopAction Q_DECL_OVERRIDE sendDebugMessage level const msg Q_DECL_OVERRIDE sendProgressStep step Q_DECL_OVERRIDE sendProgressStep const QVariantMap data Q_DECL_OVERRIDE public Q_SLOTS stopAction const QString action QByteArray performAction const QString action const QByteArray callerID QByteArray arguments uint authorizeAction const QString action const QByteArray callerID Q_SIGNALS remoteSignal type const QString action const QByteArray blob private Q_SLOTS remoteSignalReceived type const QString action QByteArray blob</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">FakeBackend.cpp</field>
+    <field name="url">FakeBackend_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth FakeBackend::FakeBackend AuthBackend setCapabilities NoCapability Action::AuthStatus FakeBackend::authorizeAction QString action Q_UNUSED action Action::DeniedStatus FakeBackend::setupAction QString action Q_UNUSED action Action::AuthStatus FakeBackend::actionStatus QString action Q_UNUSED action Action::DeniedStatus QByteArray FakeBackend::callerID QByteArray FakeBackend::isCallerAuthorized QString action QByteArray callerID Q_UNUSED action Q_UNUSED callerID</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">FakeBackend.h</field>
+    <field name="url">FakeBackend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QByteArray KAuth FakeBackend AuthBackend Q_OBJECT Q_INTERFACES KAuth::AuthBackend FakeBackend setupAction QString Q_DECL_OVERRIDE Action::AuthStatus authorizeAction QString Q_DECL_OVERRIDE Action::AuthStatus actionStatus QString Q_DECL_OVERRIDE QByteArray callerID const Q_DECL_OVERRIDE isCallerAuthorized const QString action QByteArray callerID Q_DECL_OVERRIDE</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">FakeHelperProxy.cpp</field>
+    <field name="url">FakeHelperProxy_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth FakeHelperProxy::FakeHelperProxy HelperProxy FakeHelperProxy::~FakeHelperProxy FakeHelperProxy::sendProgressStep QVariantMap step Q_UNUSED step FakeHelperProxy::sendProgressStep step Q_UNUSED step FakeHelperProxy::sendDebugMessage level msg Q_UNUSED level Q_UNUSED msg FakeHelperProxy::hasToStopAction FakeHelperProxy::setHelperResponder QObject o Q_UNUSED o FakeHelperProxy::initHelper QString name Q_UNUSED name FakeHelperProxy::stopAction QString action QString helperID Q_UNUSED action Q_UNUSED helperID FakeHelperProxy::executeAction QString action QString helperID QVariantMap arguments Q_UNUSED helperID Q_UNUSED arguments emit actionPerformed action KAuth::ActionReply::NoSuchActionReply Action::AuthStatus FakeHelperProxy::authorizeAction QString action QString helperID Q_UNUSED action Q_UNUSED helperID Action::DeniedStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">FakeHelperProxy.h</field>
+    <field name="url">FakeHelperProxy_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth FakeHelperProxy HelperProxy Q_OBJECT Q_INTERFACES KAuth::HelperProxy FakeHelperProxy FakeHelperProxy sendProgressStep QVariantMap step Q_DECL_OVERRIDE sendProgressStep step Q_DECL_OVERRIDE sendDebugMessage level msg Q_DECL_OVERRIDE hasToStopAction Q_DECL_OVERRIDE setHelperResponder QObject o Q_DECL_OVERRIDE initHelper const QString name Q_DECL_OVERRIDE stopAction const QString action const QString helperID Q_DECL_OVERRIDE executeAction const QString action const QString helperID const QVariantMap arguments Q_DECL_OVERRIDE Action AuthStatus authorizeAction const QString action const QString helperID Q_DECL_OVERRIDE</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">HelperProxy.cpp</field>
+    <field name="url">HelperProxy_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth HelperProxy::~HelperProxy</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">HelperProxy.h</field>
+    <field name="url">HelperProxy_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth HelperProxy QObject Q_OBJECT HelperProxy executeAction QString action QString helperID QVariantMap arguments Action::AuthStatus authorizeAction QString action QString helperID stopAction QString action QString helperID initHelper QString name setHelperResponder QObject o hasToStopAction sendDebugMessage level msg sendProgressStep step sendProgressStep QVariantMap step Q_SIGNALS actionStarted QString action actionPerformed QString action KAuth::ActionReply reply progressStep QString action progress progressStep QString action QVariantMap data Q_DECLARE_INTERFACE KAuth::HelperProxy</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauth-policy-gen-mac.cpp</field>
+    <field name="url">kauth-policy-gen-mac_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">std output QList&lt;Action&gt; actions QMap&lt;QString, QString&gt; domain AuthorizationRef auth AuthorizationCreate NULL NULL kAuthorizationFlagDefaults auth OSStatus err Action action actions err AuthorizationRightGet action name toLatin1 constData NULL err errAuthorizationDenied QString rule action policy QLatin1String rule QString::fromLatin1 kAuthorizationRuleClassAllow action policy QLatin1String rule QString::fromLatin1 kAuthorizationRuleClassDeny action policy QLatin1String rule QString::fromLatin1 kAuthorizationRuleAuthenticateAsSessionUser action policy QLatin1String rule QString::fromLatin1 kAuthorizationRuleAuthenticateAsAdmin CFStringRef cfRule CFStringCreateWithCString NULL rule toLatin1 constData kCFStringEncodingASCII CFStringRef cfPrompt CFStringCreateWithCString NULL action descriptions value QLatin1String toLatin1 constData kCFStringEncodingASCII err AuthorizationRightSet auth action name toLatin1 constData cfRule cfPrompt NULL NULL err noErr cerr err endl exit</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauth-policy-gen-polkit.cpp</field>
+    <field name="url">fake_2kauth-policy-gen-polkit_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">header policy_tag dent output QList&lt;Action&gt; actions QMap&lt;QString, QString&gt; domain Q_UNUSED domain QTextStream out stdout out setCodec out header Action action actions out dent action name QString lang action descriptions keys out dent dent lang out lang out &lt;&lt; &apos;&gt; message _keep_ action policyconfig</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauth-policy-gen-polkit.cpp</field>
+    <field name="url">policykit_2kauth-policy-gen-polkit_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">header policy_tag dent output QList&lt;Action&gt; actions QHash&lt;QString, QString&gt; domain QTextStream out stdout out setCodec out header QHash&lt; QChar, QString &gt; blacklist blacklist insert QChar::fromLatin1 QString::fromLatin1 domain contains QLatin1String QHash&lt; QChar, QString &gt;::const_iterator blI QString vendor domain QLatin1String blI blacklist constBegin blI blacklist constEnd blI vendor replace blI key blI value out vendor domain contains QLatin1String out domain QLatin1String domain contains QLatin1String out domain QLatin1String Action action actions out dent action name QHash&lt; QString, QString &gt;::const_iterator i action messages constBegin i action messages constEnd i out dent dent i key QLatin1String out i key QHash&lt; QChar, QString &gt;::const_iterator blI QString description i value blI blacklist constBegin blI blacklist constEnd blI description replace blI key blI value out &lt;&lt; &apos;&gt; message no yes no _keep_ yes no _keep_ action policyconfig</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauth-policy-gen-polkit1.cpp</field>
+    <field name="url">kauth-policy-gen-polkit1_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">header policy_tag dent output QList&lt;Action&gt; actions QMap&lt;QString, QString&gt; domain QTextStream out stdout out setCodec out header QMap&lt; QChar, QString &gt; blacklist blacklist insert QLatin1Char QLatin1String domain contains QLatin1String QMap&lt; QChar, QString &gt;::const_iterator blI QString vendor domain QLatin1String blI blacklist constBegin blI blacklist constEnd blI vendor replace blI key blI value out vendor domain contains QLatin1String out domain QLatin1String domain contains QLatin1String out domain QLatin1String Q_FOREACH Action action actions out dent action name QMap&lt; QString, QString &gt;::const_iterator i action messages constBegin i action messages constEnd i out dent dent i key QLatin1String out i key QMap&lt; QChar, QString &gt;::const_iterator blI QString description i value blI blacklist constBegin blI blacklist constEnd blI description replace blI key blI value out &lt;&lt; &apos;&gt; message no yes no _keep yes no _keep action policyconfig</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauth.h</field>
+    <field name="url">kauth_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QWidget KAuth ActionData QSharedData ActionData valid false parent ActionData ActionData other QSharedData other name other name details other details helperId other helperId args other args valid other valid parent other parent ActionData QString name QString details QString helperId QVariantMap args valid QWidget parent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00057</field>
+    <field name="keywords"></field>
+    <field name="text">Action::Action d new ActionData</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00062</field>
+    <field name="keywords"></field>
+    <field name="text">Action::Action Action action d action d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00067</field>
+    <field name="keywords"></field>
+    <field name="text">Action::Action QString name d new ActionData setName name BackendsManager::authBackend setupAction d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00074</field>
+    <field name="keywords"></field>
+    <field name="text">Action::Action QString name QString details d new ActionData setName name setDetails details BackendsManager::authBackend setupAction d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00082</field>
+    <field name="keywords"></field>
+    <field name="text">Action::~Action</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00087</field>
+    <field name="keywords"></field>
+    <field name="text">Action Action::operator= Action action action d action d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00098</field>
+    <field name="keywords"></field>
+    <field name="text">Action::operator== Action action d name action d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00103</field>
+    <field name="keywords"></field>
+    <field name="text">Action::operator!= Action action d name action d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00109</field>
+    <field name="keywords"></field>
+    <field name="text">QString Action::name d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00114</field>
+    <field name="keywords"></field>
+    <field name="text">Action::setName QString name d name name BackendsManager::authBackend capabilities KAuth::AuthBackend::CheckActionExistenceCapability d valid BackendsManager::authBackend actionExists name QRegExp exp QLatin1String d valid exp exactMatch name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00129</field>
+    <field name="keywords"></field>
+    <field name="text">QString Action::details d details</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00134</field>
+    <field name="keywords"></field>
+    <field name="text">Action::setDetails QString details d details details</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00139</field>
+    <field name="keywords"></field>
+    <field name="text">Action::isValid d valid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00144</field>
+    <field name="keywords"></field>
+    <field name="text">Action::setArguments QVariantMap arguments d args arguments</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00149</field>
+    <field name="keywords"></field>
+    <field name="text">Action::addArgument QString key QVariant value d args insert key value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00154</field>
+    <field name="keywords"></field>
+    <field name="text">QVariantMap Action::arguments d args</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00159</field>
+    <field name="keywords"></field>
+    <field name="text">QString Action::helperId d helperId</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00165</field>
+    <field name="keywords"></field>
+    <field name="text">Action::setHelperId QString d helperId id</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00170</field>
+    <field name="keywords"></field>
+    <field name="text">Action::setParentWidget QWidget parent d parent parent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00175</field>
+    <field name="keywords"></field>
+    <field name="text">QWidget Action::parentWidget d parent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00180</field>
+    <field name="keywords"></field>
+    <field name="text">Action::AuthStatus Action::status isValid Action::InvalidStatus BackendsManager::authBackend actionStatus d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00189</field>
+    <field name="keywords"></field>
+    <field name="text">ExecuteJob Action::execute ExecutionMode mode ExecuteJob mode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.cpp</field>
+    <field name="url">kauthaction_8cpp_source.html#l00194</field>
+    <field name="keywords"></field>
+    <field name="text">Action::hasHelper d helperId isEmpty</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth ExecuteJob ActionData</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00082</field>
+    <field name="keywords"></field>
+    <field name="text">KAUTH_EXPORT Action</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00088</field>
+    <field name="keywords"></field>
+    <field name="text">AuthStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00089</field>
+    <field name="keywords"></field>
+    <field name="text">DeniedStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00090</field>
+    <field name="keywords"></field>
+    <field name="text">ErrorStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00091</field>
+    <field name="keywords"></field>
+    <field name="text">InvalidStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00092</field>
+    <field name="keywords"></field>
+    <field name="text">AuthorizedStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00093</field>
+    <field name="keywords"></field>
+    <field name="text">AuthRequiredStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthaction.h</field>
+    <field name="url">kauthaction_8h_source.html#l00094</field>
+    <field name="keywords"></field>
+    <field name="text">UserCancelledStatus ExecutionMode ExecuteMode AuthorizeOnlyMode Action Action Action action Action QString name Action QString name QString details Action Action operator= Action action operator== Action action operator!= Action action QString name setName QString name setDetails QString details QString details isValid QString helperId setHelperId QString hasHelper setArguments QVariantMap arguments QVariantMap arguments addArgument QString key QVariant value AuthStatus status ExecuteJob execute ExecutionMode mode ExecuteMode setParentWidget QWidget parent QWidget parentWidget QSharedDataPointer&lt;ActionData&gt; d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth ActionReplyData QSharedData ActionReplyData ActionReplyData ActionReplyData other QSharedData other data other data errorCode other errorCode errorDescription other errorDescription type other type ActionReplyData QVariantMap data uint errorCode QString errorDescription ActionReply::Type type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00047</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::SuccessReply ActionReply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00051</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::HelperErrorReply ActionReply ActionReply::HelperErrorType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00055</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::NoResponderReply ActionReply ActionReply::NoResponderError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00059</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::NoSuchActionReply ActionReply ActionReply::NoSuchActionError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00063</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::InvalidActionReply ActionReply ActionReply::InvalidActionError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00067</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::AuthorizationDeniedReply ActionReply ActionReply::AuthorizationDeniedError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00071</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::UserCancelledReply ActionReply ActionReply::UserCancelledError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00075</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::HelperBusyReply ActionReply ActionReply::HelperBusyError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00079</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::AlreadyStartedReply ActionReply ActionReply::AlreadyStartedError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00083</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::DBusErrorReply ActionReply ActionReply::DBusError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00089</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::ActionReply ActionReply reply d reply d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00094</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::ActionReply d new ActionReplyData d errorCode d type SuccessType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00101</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::ActionReply ActionReply::Type type d new ActionReplyData d errorCode d type type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00108</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::ActionReply error d new ActionReplyData d errorCode error d type KAuthErrorType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00115</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::~ActionReply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00119</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::setData QVariantMap data d data data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00124</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::addData QString key QVariant value d data insert key value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00129</field>
+    <field name="keywords"></field>
+    <field name="text">QVariantMap ActionReply::data d data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00134</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::Type ActionReply::type d type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00139</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::setType ActionReply::Type type d type type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00144</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::succeeded d type SuccessType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00149</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::failed succeeded</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00154</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::Error ActionReply::errorCode ActionReply::Error d errorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00159</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::setErrorCode Error errorCode d errorCode errorCode d type HelperErrorType d type KAuthErrorType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00167</field>
+    <field name="keywords"></field>
+    <field name="text">QString ActionReply::errorDescription d errorDescription</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00172</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::setErrorDescription QString error d errorDescription error</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00177</field>
+    <field name="keywords"></field>
+    <field name="text">QByteArray ActionReply::serialized QByteArray data QDataStream s data QIODevice::WriteOnly s data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00187</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::deserialize QByteArray data ActionReply reply QByteArray a data QDataStream s a QIODevice::ReadOnly s reply reply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00199</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply ActionReply::operator= ActionReply reply reply d reply d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00210</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::operator== ActionReply reply d type reply d type d errorCode reply d errorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00215</field>
+    <field name="keywords"></field>
+    <field name="text">ActionReply::operator!= ActionReply reply d type reply d type d errorCode reply d errorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00220</field>
+    <field name="keywords"></field>
+    <field name="text">QDataStream operator&lt;&lt; QDataStream d ActionReply reply d reply d data reply d errorCode quint32 reply d type reply d errorDescription</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.cpp</field>
+    <field name="url">kauthactionreply_8cpp_source.html#l00225</field>
+    <field name="keywords"></field>
+    <field name="text">QDataStream operator&gt;&gt; QDataStream stream ActionReply reply quint32 i stream reply d data reply d errorCode i reply d errorDescription reply d type ActionReply::Type i stream</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth ActionReplyData</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00507</field>
+    <field name="keywords"></field>
+    <field name="text">KAUTH_EXPORT ActionReply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00513</field>
+    <field name="keywords"></field>
+    <field name="text">Type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00514</field>
+    <field name="keywords"></field>
+    <field name="text">KAuthErrorType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00515</field>
+    <field name="keywords"></field>
+    <field name="text">HelperErrorType</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00516</field>
+    <field name="keywords"></field>
+    <field name="text">SuccessType ActionReply SuccessReply ActionReply HelperErrorReply ActionReply NoResponderReply ActionReply NoSuchActionReply ActionReply InvalidActionReply ActionReply AuthorizationDeniedReply ActionReply UserCancelledReply ActionReply HelperBusyReply ActionReply AlreadyStartedReply ActionReply DBusErrorReply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00534</field>
+    <field name="keywords"></field>
+    <field name="text">Error</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00535</field>
+    <field name="keywords"></field>
+    <field name="text">NoError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00536</field>
+    <field name="keywords"></field>
+    <field name="text">NoResponderError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00537</field>
+    <field name="keywords"></field>
+    <field name="text">NoSuchActionError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00538</field>
+    <field name="keywords"></field>
+    <field name="text">InvalidActionError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00539</field>
+    <field name="keywords"></field>
+    <field name="text">AuthorizationDeniedError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00540</field>
+    <field name="keywords"></field>
+    <field name="text">UserCancelledError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00541</field>
+    <field name="keywords"></field>
+    <field name="text">HelperBusyError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00542</field>
+    <field name="keywords"></field>
+    <field name="text">AlreadyStartedError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00543</field>
+    <field name="keywords"></field>
+    <field name="text">DBusError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthactionreply.h</field>
+    <field name="url">kauthactionreply_8h_source.html#l00544</field>
+    <field name="keywords"></field>
+    <field name="text">BackendError ActionReply ActionReply Type type ActionReply errorCode ActionReply ActionReply reply ActionReply setData QVariantMap data QVariantMap data addData QString key QVariant value Type type setType Type type succeeded failed Error errorCode setErrorCode Error errorCode QString errorDescription setErrorDescription QString error QByteArray serialized ActionReply deserialize QByteArray data ActionReply operator= ActionReply reply operator== ActionReply reply operator!= ActionReply reply QDataStream operator&lt;&lt; QDataStream ActionReply QDataStream operator&gt;&gt; QDataStream ActionReply QSharedDataPointer&lt;ActionReplyData&gt; d Q_DECLARE_METATYPE KAuth::ActionReply</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthdebug.cpp</field>
+    <field name="url">kauthdebug_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">Q_LOGGING_CATEGORY KAUTH QtWarningMsg Q_LOGGING_CATEGORY KAUTH</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthdebug.h</field>
+    <field name="url">kauthdebug_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">Q_DECLARE_LOGGING_CATEGORY KAUTH</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.cpp</field>
+    <field name="url">kauthexecutejob_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth Q_DECL_HIDDEN ExecuteJob Private Private ExecuteJob parent q parent ExecuteJob q Action action Action::ExecutionMode mode QVariantMap data doExecuteAction doAuthorizeAction actionPerformedSlot QString action ActionReply reply progressStepSlot QString action i progressStepSlot QString action QVariantMap data statusChangedSlot QString action KAuth::Action::AuthStatus status QHash&lt;QString, ExecuteJob *&gt; s_watchers ExecuteJob::ExecuteJob Action action Action::ExecutionMode mode QObject parent KJob parent d new Private this d action action d mode mode HelperProxy helper BackendsManager::helperProxy connect helper SIGNAL actionPerformed QString KAuth::ActionReply SLOT actionPerformedSlot QString KAuth::ActionReply connect helper SIGNAL progressStep QString SLOT progressStepSlot QString connect helper SIGNAL progressStep QString QVariantMap SLOT progressStepSlot QString QVariantMap connect BackendsManager::authBackend SIGNAL actionStatusChanged QString KAuth::Action::AuthStatus SLOT statusChangedSlot QString KAuth::Action::AuthStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.cpp</field>
+    <field name="url">kauthexecutejob_8cpp_source.html#l00068</field>
+    <field name="keywords"></field>
+    <field name="text">ExecuteJob::~ExecuteJob d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.cpp</field>
+    <field name="url">kauthexecutejob_8cpp_source.html#l00073</field>
+    <field name="keywords"></field>
+    <field name="text">Action ExecuteJob::action d action</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.cpp</field>
+    <field name="url">kauthexecutejob_8cpp_source.html#l00078</field>
+    <field name="keywords"></field>
+    <field name="text">QVariantMap ExecuteJob::data d data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.cpp</field>
+    <field name="url">kauthexecutejob_8cpp_source.html#l00083</field>
+    <field name="keywords"></field>
+    <field name="text">ExecuteJob::start d action isValid qCDebug KAUTH ActionReply reply ActionReply::InvalidActionError reply setErrorDescription tr d actionPerformedSlot d action name reply d mode Action::ExecuteMode QTimer::singleShot SLOT doExecuteAction Action::AuthorizeOnlyMode QTimer::singleShot SLOT doAuthorizeAction ActionReply reply ActionReply::InvalidActionError reply setErrorDescription tr d actionPerformedSlot d action name reply ExecuteJob::Private::doExecuteAction BackendsManager::authBackend capabilities KAuth::AuthBackend::AuthorizeFromClientCapability BackendsManager::authBackend capabilities KAuth::AuthBackend::PreAuthActionCapability BackendsManager::authBackend preAuthAction action name action parentWidget Action::AuthStatus s BackendsManager::authBackend authorizeAction action name s Action::AuthorizedStatus action hasHelper BackendsManager::helperProxy executeAction action name action helperId action arguments actionPerformedSlot action name ActionReply::SuccessReply s Action::DeniedStatus actionPerformedSlot action name ActionReply::AuthorizationDeniedReply Action::InvalidStatus actionPerformedSlot action name ActionReply::InvalidActionReply Action::UserCancelledStatus actionPerformedSlot action name ActionReply::UserCancelledReply ActionReply r ActionReply::BackendError r setErrorDescription tr actionPerformedSlot action name r BackendsManager::authBackend capabilities KAuth::AuthBackend::AuthorizeFromHelperCapability BackendsManager::authBackend capabilities KAuth::AuthBackend::PreAuthActionCapability BackendsManager::authBackend preAuthAction action name action parentWidget action hasHelper ActionReply r ActionReply::InvalidActionReply r setErrorDescription tr actionPerformedSlot action name r BackendsManager::helperProxy executeAction action name action helperId action arguments ActionReply r ActionReply::BackendError r setErrorDescription tr actionPerformedSlot action name r ExecuteJob::Private::doAuthorizeAction Action::AuthStatus s action status s Action::AuthRequiredStatus BackendsManager::authBackend capabilities KAuth::AuthBackend::AuthorizeFromClientCapability BackendsManager::authBackend capabilities KAuth::AuthBackend::PreAuthActionCapability BackendsManager::authBackend preAuthAction action name action parentWidget s BackendsManager::authBackend authorizeAction action name BackendsManager::authBackend capabilities KAuth::AuthBackend::AuthorizeFromHelperCapability s Action::AuthorizedStatus ActionReply r ActionReply::BackendError r setErrorDescription tr actionPerformedSlot action name r s Action::AuthorizedStatus actionPerformedSlot action name ActionReply::SuccessReply actionPerformedSlot action name ActionReply::AuthorizationDeniedReply ExecuteJob::Private::actionPerformedSlot QString taction ActionReply reply taction action name reply failed q setError reply errorCode q setErrorText reply errorDescription data reply data q emitResult ExecuteJob::Private::progressStepSlot QString taction i taction action name q setPercent i ExecuteJob::Private::progressStepSlot QString taction QVariantMap data taction action name emit q newData data ExecuteJob::Private::statusChangedSlot QString taction Action::AuthStatus status taction action name emit q statusChanged status</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.h</field>
+    <field name="url">kauthexecutejob_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthexecutejob.h</field>
+    <field name="url">kauthexecutejob_8h_source.html#l00037</field>
+    <field name="keywords"></field>
+    <field name="text">KAUTH_EXPORT ExecuteJob KJob Q_OBJECT ExecuteJob KAuth::Action action KAuth::Action::ExecutionMode mode QObject parent Action Private Private d Q_PRIVATE_SLOT d doExecuteAction Q_PRIVATE_SLOT d doAuthorizeAction Q_PRIVATE_SLOT d actionPerformedSlot QString action KAuth::ActionReply reply Q_PRIVATE_SLOT d progressStepSlot QString action i Q_PRIVATE_SLOT d progressStepSlot QString action QVariantMap data Q_PRIVATE_SLOT d statusChangedSlot QString action KAuth::Action::AuthStatus status ExecuteJob start Q_DECL_OVERRIDE Action action QVariantMap data Q_SIGNALS newData QVariantMap data statusChanged KAuth::Action::AuthStatus status Q_DISABLE_COPY ExecuteJob</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">openlog closelog KAuth</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00052</field>
+    <field name="keywords"></field>
+    <field name="text">HelperSupport helperDebugHandler QtMsgType type QMessageLogContext context QString msgStr remote_dbg fixEnvironment home getenv home NULL passwd pw getpwuid getuid overwrite pw NULL setenv home pw pw_dir overwrite</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00075</field>
+    <field name="keywords"></field>
+    <field name="text">HelperSupport::helperMain argc argv QObject responder fixEnvironment openlog LOG_USER qInstallMessageHandler HelperSupport::helperDebugHandler QCoreApplication app argc argv BackendsManager::helperProxy initHelper QString::fromLatin1 syslog LOG_DEBUG remote_dbg BackendsManager::helperProxy setHelperResponder responder QTimer timer QTimer responder setProperty QVariant::fromValue timer timer setInterval timer start QObject::connect timer SIGNAL timeout app SLOT quit app exec HelperSupport::helperDebugHandler QtMsgType type QMessageLogContext context QString msgStr Q_UNUSED context QByteArray msg msgStr toLocal8Bit remote_dbg level LOG_DEBUG type QtDebugMsg level LOG_DEBUG QtWarningMsg level LOG_WARNING QtCriticalMsg QtFatalMsg level LOG_ERR QtInfoMsg level LOG_INFO syslog level msg constData BackendsManager::helperProxy sendDebugMessage type msg constData type QtFatalMsg exit</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00143</field>
+    <field name="keywords"></field>
+    <field name="text">HelperSupport::progressStep step BackendsManager::helperProxy sendProgressStep step</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00148</field>
+    <field name="keywords"></field>
+    <field name="text">HelperSupport::progressStep QVariantMap data BackendsManager::helperProxy sendProgressStep data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.cpp</field>
+    <field name="url">kauthhelpersupport_8cpp_source.html#l00153</field>
+    <field name="keywords"></field>
+    <field name="text">HelperSupport::isStopped BackendsManager::helperProxy hasToStopAction</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthhelpersupport.h</field>
+    <field name="url">kauthhelpersupport_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth HelperSupport KAUTH_EXPORT progressStep step KAUTH_EXPORT progressStep QVariantMap data KAUTH_EXPORT isStopped KAUTH_EXPORT helperMain argc argv QObject responder</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth ObjectDecoratorPrivate ObjectDecoratorPrivate ObjectDecorator parent q parent decoratedObject parent parent ObjectDecorator q QObject decoratedObject KAuth::Action authAction QIcon oldIcon connectDecorated linkActionToWidget slotActivated authStatusChanged KAuth::Action::AuthStatus status ObjectDecoratorPrivate::connectDecorated qobject_cast&lt;QAbstractButton *&gt; decoratedObject q connect decoratedObject SIGNAL clicked q SLOT slotActivated qobject_cast&lt;QAction *&gt; decoratedObject q connect decoratedObject SIGNAL triggered q SLOT slotActivated qCWarning KAUTH Q_FUNC_INFO ObjectDecoratorPrivate::linkActionToWidget QWidget widget qobject_cast QWidget decoratedObject widget authAction setParentWidget widget QAction action qobject_cast QAction decoratedObject action authAction setParentWidget action parentWidget qCWarning KAUTH Q_FUNC_INFO ObjectDecoratorPrivate::slotActivated authAction isValid KAuth::ExecuteJob job authAction execute KAuth::Action::AuthorizeOnlyMode q connect job SIGNAL statusChanged KAuth::Action::AuthStatus q SLOT authStatusChanged KAuth::Action::AuthStatus job exec emit q authorized authAction decoratedObject setProperty ObjectDecoratorPrivate::authStatusChanged KAuth::Action::AuthStatus status status KAuth::Action::AuthorizedStatus decoratedObject setProperty oldIcon isNull decoratedObject setProperty QVariant::fromValue oldIcon oldIcon QIcon KAuth::Action::AuthRequiredStatus decoratedObject setProperty oldIcon decoratedObject property value QIcon decoratedObject setProperty QIcon::fromTheme QLatin1String decoratedObject setProperty oldIcon isNull decoratedObject setProperty QVariant::fromValue oldIcon oldIcon QIcon</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00127</field>
+    <field name="keywords"></field>
+    <field name="text">ObjectDecorator::ObjectDecorator QObject parent QObject parent d new ObjectDecoratorPrivate this d connectDecorated</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00133</field>
+    <field name="keywords"></field>
+    <field name="text">ObjectDecorator::~ObjectDecorator d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00138</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth::Action ObjectDecorator::authAction d authAction</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00143</field>
+    <field name="keywords"></field>
+    <field name="text">ObjectDecorator::setAuthAction QString actionName actionName isEmpty setAuthAction KAuth::Action setAuthAction KAuth::Action actionName</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.cpp</field>
+    <field name="url">kauthobjectdecorator_8cpp_source.html#l00152</field>
+    <field name="keywords"></field>
+    <field name="text">ObjectDecorator::setAuthAction KAuth::Action action d authAction action d authAction isValid d oldIcon isNull d decoratedObject setProperty QVariant::fromValue d oldIcon d oldIcon QIcon action isValid d authAction action d linkActionToWidget d authStatusChanged d authAction status</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.h</field>
+    <field name="url">kauthobjectdecorator_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth ObjectDecoratorPrivate</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kauthobjectdecorator.h</field>
+    <field name="url">kauthobjectdecorator_8h_source.html#l00038</field>
+    <field name="keywords"></field>
+    <field name="text">KAUTH_EXPORT ObjectDecorator QObject Q_OBJECT ObjectDecorator QObject parent ObjectDecorator KAuth::Action authAction setAuthAction KAuth::Action action setAuthAction QString actionName Q_SIGNALS authorized KAuth::Action action ObjectDecoratorPrivate ObjectDecoratorPrivate d Q_PRIVATE_SLOT d slotActivated Q_PRIVATE_SLOT d authStatusChanged KAuth::Action::AuthStatus</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">policy-gen.cpp</field>
+    <field name="url">policy-gen_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">std QList&lt;Action&gt; parse QSettings ini QMap&lt;QString, QString&gt; parseDomain QSettings ini main argc argv QCoreApplication app argc argv argc qCritical QSettings ini QFile::decodeName argv QSettings::IniFormat ini setIniCodec ini status qCritical argv argc freopen argv stdout qCritical argv strerror errno output parse ini parseDomain ini QList&lt;Action&gt; parse QSettings ini QList&lt;Action&gt; actions QRegExp actionExp QLatin1String QRegExp descriptionExp QLatin1String QRegExp nameExp QLatin1String QRegExp policyExp QLatin1String descriptionExp setCaseSensitivity Qt::CaseInsensitive nameExp setCaseSensitivity Qt::CaseInsensitive Q_FOREACH QString name ini childGroups Action action name QLatin1String actionExp exactMatch name qCritical name toLatin1 data exit action name name ini beginGroup name Q_FOREACH QString key ini childKeys descriptionExp exactMatch key QString lang descriptionExp capturedTexts at lang isEmpty lang QString::fromLatin1 action descriptions insert lang ini value key toString nameExp exactMatch key QString lang nameExp capturedTexts at lang isEmpty lang QString::fromLatin1 action messages insert lang ini value key toString key toLower QLatin1String QString policy ini value key toString policyExp exactMatch policy qCritical policy toLatin1 data exit action policy policy key toLower QLatin1String QString policyInactive ini value key toString policyExp exactMatch policyInactive qCritical policyInactive toLatin1 data exit action policyInactive policyInactive key toLower QLatin1String QString persistence ini value key toString persistence QLatin1String persistence QLatin1String qCritical persistence toLatin1 data exit action persistence persistence action policy isEmpty action messages isEmpty action descriptions isEmpty qCritical name toLatin1 data exit ini endGroup actions append action actions QMap&lt;QString, QString&gt; parseDomain QSettings ini QMap&lt;QString, QString&gt; rethash ini childGroups contains QString::fromLatin1 ini contains QString::fromLatin1 rethash QString::fromLatin1 ini value QString::fromLatin1 toString ini contains QString::fromLatin1 rethash QString::fromLatin1 ini value QString::fromLatin1 toString ini contains QString::fromLatin1 rethash QString::fromLatin1 ini value QString::fromLatin1 toString rethash</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">policy-gen.h</field>
+    <field name="url">policy-gen_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">Action QString name QMap&lt;QString, QString&gt; descriptions QMap&lt;QString, QString&gt; messages QString policy QString policyInactive QString persistence output QList&lt;Action&gt; actions QMap&lt;QString, QString&gt; domain</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">PolicyKitBackend.cpp</field>
+    <field name="url">PolicyKitBackend_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth PolicyKitBackend::PolicyKitBackend AuthBackend setCapabilities AuthorizeFromClientCapability Action::AuthStatus PolicyKitBackend::authorizeAction QString action PolkitQt::Auth::computeAndObtainAuth action PolkitQt::Auth::Yes Action::StatusAuthorized Action::StatusDenied PolicyKitBackend::setupAction QString action connect PolkitQt::Context::instance SIGNAL configChanged SLOT checkForResultChanged connect PolkitQt::Context::instance SIGNAL consoleKitDBChanged SLOT checkForResultChanged m_cachedResults action actionStatus action Action::AuthStatus PolicyKitBackend::actionStatus QString action PolkitQt::Auth::Result r PolkitQt::Auth::isCallerAuthorized action QCoreApplication::applicationPid r PolkitQt::Auth::Yes Action::StatusAuthorized PolkitQt::Auth::No PolkitQt::Auth::Unknown Action::StatusDenied Action::StatusAuthRequired QByteArray PolicyKitBackend::callerID QByteArray a QDataStream s a QIODevice::WriteOnly s QCoreApplication::applicationPid a PolicyKitBackend::isCallerAuthorized QString action QByteArray callerID QDataStream s callerID QIODevice::ReadOnly qint64 pid s pid PolkitQt::Auth::isCallerAuthorized action pid PolkitQt::Auth::Yes PolicyKitBackend::checkForResultChanged QHash&lt;QString, Action::AuthStatus&gt;::iterator i i m_cachedResults begin i m_cachedResults end i i value actionStatus i key i value actionStatus i key emit actionStatusChanged i key i value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">PolicyKitBackend.h</field>
+    <field name="url">PolicyKitBackend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QByteArray KAuth PolicyKitBackend AuthBackend Q_OBJECT Q_PLUGIN_METADATA IID Q_INTERFACES KAuth::AuthBackend PolicyKitBackend setupAction QString Action::AuthStatus authorizeAction QString Action::AuthStatus actionStatus QString QByteArray callerID isCallerAuthorized QString action QByteArray callerID Q_SLOTS checkForResultChanged QHash&lt;QString, Action::AuthStatus&gt; m_cachedResults</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">Polkit1Backend.cpp</field>
+    <field name="url">Polkit1Backend_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth PolkitResultEventLoop::PolkitResultEventLoop QObject parent QEventLoop parent PolkitResultEventLoop::~PolkitResultEventLoop PolkitResultEventLoop::requestQuit PolkitQt1::Authority::Result result m_result result quit PolkitQt1::Authority::Result PolkitResultEventLoop::result m_result Polkit1Backend::Polkit1Backend AuthBackend m_flyingActions false setCapabilities AuthorizeFromHelperCapability CheckActionExistenceCapability PreAuthActionCapability connect PolkitQt1::Authority::instance SIGNAL configChanged SLOT checkForResultChanged connect PolkitQt1::Authority::instance SIGNAL consoleKitDBChanged SLOT checkForResultChanged connect PolkitQt1::Authority::instance SIGNAL enumerateActionsFinished PolkitQt1::ActionDescription::List SLOT updateCachedActions PolkitQt1::ActionDescription::List m_flyingActions PolkitQt1::Authority::instance enumerateActions Polkit1Backend::~Polkit1Backend Polkit1Backend::preAuthAction QString action QWidget parent parent qCDebug KAUTH QDBusConnection::sessionBus interface isServiceRegistered QLatin1String qApp qobject_cast&lt;QApplication *&gt; qApp qCDebug KAUTH qulonglong wId parent effectiveWinId QDBusMessage methodCall QDBusMessage::createMethodCall QLatin1String QLatin1String QLatin1String QLatin1String methodCall action methodCall wId QDBusPendingCall call QDBusConnection::sessionBus asyncCall methodCall call waitForFinished call isError qCWarning KAUTH call error qCDebug KAUTH Polkit1Backend::updateCachedActions PolkitQt1::ActionDescription::List actions m_knownActions clear Q_FOREACH PolkitQt1::ActionDescription action actions m_knownActions action actionId m_flyingActions Action::AuthStatus Polkit1Backend::authorizeAction QString action Q_UNUSED action Action::AuthorizedStatus Polkit1Backend::setupAction QString action m_cachedResults action actionStatus action Action::AuthStatus Polkit1Backend::actionStatus QString action PolkitQt1::SystemBusNameSubject subject QString::fromUtf8 callerID PolkitQt1::Authority::Result r PolkitQt1::Authority::instance checkAuthorizationSync action subject PolkitQt1::Authority::None r PolkitQt1::Authority::Yes Action::AuthorizedStatus PolkitQt1::Authority::No PolkitQt1::Authority::Unknown Action::DeniedStatus Action::AuthRequiredStatus QByteArray Polkit1Backend::callerID QDBusConnection::systemBus baseService toUtf8 Polkit1Backend::isCallerAuthorized QString action QByteArray callerID PolkitQt1::SystemBusNameSubject subject QString::fromUtf8 callerID PolkitQt1::Authority authority PolkitQt1::Authority::instance PolkitResultEventLoop e connect authority SIGNAL checkAuthorizationFinished PolkitQt1::Authority::Result e SLOT requestQuit PolkitQt1::Authority::Result authority checkAuthorization action subject PolkitQt1::Authority::AllowUserInteraction e exec e result PolkitQt1::Authority::Yes Polkit1Backend::checkForResultChanged Q_FOREACH QString action m_cachedResults keys m_cachedResults action actionStatus action m_cachedResults action actionStatus action emit actionStatusChanged action m_cachedResults action PolkitQt1::Authority::instance enumerateActions m_flyingActions Polkit1Backend::actionExists QString action m_flyingActions tries m_flyingActions tries QEventLoop e QTimer::singleShot e SLOT quit e exec tries m_knownActions contains action</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">Polkit1Backend.h</field>
+    <field name="url">Polkit1Backend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QByteArray KAuth Polkit1Backend AuthBackend Q_OBJECT Q_PLUGIN_METADATA IID Q_INTERFACES KAuth::AuthBackend Polkit1Backend Polkit1Backend setupAction QString preAuthAction QString action QWidget parent Action::AuthStatus authorizeAction QString Action::AuthStatus actionStatus QString QByteArray callerID isCallerAuthorized QString action QByteArray callerID actionExists QString action Q_SLOTS checkForResultChanged updateCachedActions PolkitQt1::ActionDescription::List actions QHash&lt;QString, Action::AuthStatus&gt; m_cachedResults QStringList m_knownActions m_flyingActions PolkitResultEventLoop QEventLoop Q_OBJECT PolkitResultEventLoop QObject parent PolkitResultEventLoop PolkitQt1::Authority::Result result Q_SLOTS requestQuit PolkitQt1::Authority::Result result PolkitQt1::Authority::Result m_result</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">KAuth</field>
+    <field name="url">namespaceKAuth.html</field>
+    <field name="keywords">KAuth</field>
+    <field name="text">The KDE Authorization API allows developers to write desktop applications that run high-privileged tasks in an easy secure and cross-platform way Previously if an application had to do administrative tasks it had to be run as root using mechanisms such as sudo or graphical equivalents or by setting the executable s setuid bit This approach has some drawbacks For example the whole application code including GUI handling and network communication had to be done as root More code that runs as root means more possible security holes The solution is the caller/helper pattern With this pattern the privileged code is isolated in a small helper tool that runs as root This tool includes only the few lines of code that actually need to be run with privileges not the whole application logic All the other parts of the application are run as a normal user and the helper tool is called when needed using a secure mechanism that ensures that the user is authorized to do so This pattern is not very easy to implement because the developer has to deal with a lot of details about how to authorize the user how to call the helper with the right privileges how to exchange data with the helper etc This is where the new KDE Authorization API becomes useful Thanks to this new library every developer can implement the caller/helper pattern to write application that require high privileges with a few lines of code in an easy secure and cross-platform way Not only the library can also be used to lock down some actions in your application without using a helper but just checking for authorization and verifying if the user is allowed to perform it The KDE Authorization library uses different backends depending on the system where it s built As far as the user authorization is concerned it currently uses PolicyKit on linux and Authorization Services on Mac OSX and a Windows backend will eventually be written too At the communication layer the library uses D-Bus on every supported platform There are a few concepts to understand when using the library Much of those are carried from underlying APIs such as PolicyKit so if you know something about them there shouldn t be problems An action is a single task that needs to be done by the application You refer to an action using an action identifier which is a string in reverse domain name syntax to avoid duplicates For example if the date/time control center module needs to change the date it would need an action like If your application has to perform more than one privileged task you should configure more than one action This allows system administrators to fine tune the policies that allow users to perform your actions The authorization is the process that is executed to decide if a user can perform an action or not In order to execute the helper as root the user has to be authorized For example on linux che policykit backend will look at the policykit policy database to see what requirements the user has to meet in order to execute the action you requested The policy set for that action could allow or deny that user or could say the user has to authenticate in order to gain the authorization The authentication is the process that allows the system to know that the person is in front of the console is who he says to be If an action can be allowed or not depending on the user s identity it has to be proved by entering a password or any other identification data the system requires A typical session with the authorization API is like this The user want to perform some privileged task The application asks the system if the user is authorized The system asks the user to authenticate if needed and reply the application The application uses some system-provided mechanism to execute the helper s code as the root user Previously you had to set the setuid bit to do this but we have something cool called that doesn t require the setuid bit and is much more flexible The helper code immediately after starting checks if the caller is authorized to do what it asks If not the helper immediately exits! If the caller is authorized the helper executes the task and exits The application receives data back from the helper All these steps are managed by the library Following sections will focus on how to write the helper to implement your actions and how to call the helper from the application The first thing you need to do before writing anything is to decide what actions you need to implement Every action needs to be identified by a string in the reverse domain name syntax This helps to avoid duplicates An example of action id is or Action names can only contain lowercase letters and dots not as the first or last char You also need an identifier for your helper An application using the KDE auth api can implement and use more than one helper implementing different actions An helper is uniquely identified in the system context with a string It again is in reverse domain name syntax to avoid duplicates A common approach is to call the helper like the common prefix of your action names For example the Date/Time kcm module could use a helper called to perform actions like and This naming convention simplifies the implementation of the helper From the code point of view the helper is implemented as a QObject subclass Every action is implemented by a public slot In the example/ directory in the source code tree you find a complete example Let s look at that The helper.h file declares the class that implements the helper It looks like The slot names are the last part of the action name without the helper s ID if it s a prefix with all the dots replaced by underscores In this case the helper ID is so those three slots implement the actions and The helper ID doesn t have to appear at the beginning of the action name but it s good practice If you want to extend MyHelper to implement also a different action like since the helper ID doesn t match you ll have to implement a slot called org_kde_datetime_changetime() The slot s signature is fixed the return type is ActionReply a class that allows you to return results error codes and custom data to the application when your action has finished to run Please note that due to QMetaObject being picky about namespaces you NEED to declare the return type as ActionReply and not KAuth::ActionReply So the using declaration is compulsory The QVariantMap object that comes as argument contains custom data coming from the application Let s look at the read action implementation Its purpose is to read files First the code creates a default reply object The default constructor creates a reply that reports success Then it gets the filename parameter from the argument QVariantMap that has previously been set by the application before calling the helper If it fails to open the file it creates an ActionReply object that notifies that some error has happened in the helper then set the error code to that returned by QFile and returns If there is no error it reads the file The contents are put into the reply.data() object which is another QVariantMap It will be sent back to the application with the reply Because this class will be compiled into a standalone executable we need a main() function and some code to initialize everything you don t have to write it Instead you use the KAUTH_HELPER_MAIN() macro that will take care of everything It s used like this The first parameter is the string containing the helper identifier Please note that you need to use this same string in the application s code to tell the library which helper to call so please stay away from typos because we don t have any way to detect them The second parameter is the name of the helper s class Your helper if complex can be composed of a lot of source files but the important thing is to include this macro in one at least one of them To build the helper KDE macros provide a function named kauth_install_helper_files() Use it in your cmake file like this The first argument is the cmake target name for the helper executable which you have to build and install separately Make sure to INSTALL THE HELPER IN KAUTH_HELPER_INSTALL_DIR otherwise kauth_install_helper_files will not work The second argument is the helper id Please be sure to don t misspell it and to not quote it The user parameter is the user that the helper has to be run as It usually is root but some actions could require less strict permissions so you should use the right user where possible for example the user apache if you have to mess with apache settings Note that the target created by this macro already links to libkauth and QtCore To be able to authorize the actions they have to be added to the policy database To do this in a cross-platform way we provide a cmake macro It looks like The action definition file describes which actions are implemented by your code and which default security options they should have It is a common text file in ini format with one section for each action and some parameters The definition for the read action is The name parameter is a text describing the action for who reads the file The description parameter is the message shown to the user in the authentication dialog It should be a finite phrase The policy attribute specify the default rule that the user must satisfy to be authorized Possible values are yes the action should be always allowed no the action should be always denied auth_self the user should authenticate as itself auth_admin the user should authenticate as an administrator user The persistence attribute is optional It says how long an authorization should be retained for that action The values could be session the authorization persists until the user logs-out always the authorization will persist indefinitely Once the helper is ready we need to call it from the main application In the example s mainwindow.cpp you can see how this is done To create a reference to an action an object of type Action has to be created Every Action object refers to an action by its action id Two objects with the same action id will act on the same action With an Action object you can authorize and execute the action To execute an action you have a couple of choices A synchronous call using the Action::execute() method will start the helper execute the action and return the reply An asynchronous call by setting Action::setExecutesAsync(true) and calling Action::execute() will start the helper and return immediately The asynchronous call is the most flexible alternative but you need a way to obtain the reply This is done by connecting to a signal but the Action class is not a QObject subclass Instead you connect to signals exposed by the ActionWatcher class For every action id you use there is one ActionWatcher object You can retrieve it using the Action::watcher() method If you execute an action using Action::executeAsync() you can connect to the actionPerformed(ActionReply) signal to be notified when the action has been completed or failed As a parameter you ll get a reply object containing all the data you need As a convenience you can also pass an object and a slot to the executeAsync() method to directly connect them to the signal if you don t want to mess with watchers The piece of code that calls the action of the previous example is located in example/mainwindow.cpp in the on_readAction_triggered() slot It looks like this First of all it creates the action object specifying the action id Then it loads the filename we want to read a forbidden file into the arguments() QVariantMap which will be directly passed to the helper in the read() slot s parameter This example code uses a synchronous call to execute the action and retrieve the reply If the reply succeeded the reply data is retrieved from the returned QVariantMap object Please note that although the execute() method will return only when the action is completed the GUI will remain responsive because an internal event loop is entered This means you should be prepared to receive other events in the meanwhile Also notice that you have to explicitly set the helper ID to the action this is done for added safety to prevent the caller from accidentally invoking a helper and also because KAuth actions may be used without a helper attached the default In this case action.execute() will return ActionSuccess if the authentication went well This is quite useful if you want your user to authenticate before doing something which however needs no privileged permissions implementation-wise For a more advanced example we look at the action in the example helper This is an action that takes a long time to execute so we need some features The helper needs to regularly send data to the application to inform about the execution status The application needs to be able to stop the action execution if the user stops it or close the application The example code follows In this example the action is only waiting a time using a loop but we can see some interesting line The progress status is sent to the application using the HelperSupport::progressStep() method When this method is called the ActionWatcher associated with this action will emit the progressStep() signal reporting back the data to the application There are two overloads of these methods and corresponding signals The one used here takes an integer Its meaning is application dependent so you can use it as a sort of percentage The other overload takes a QVariantMap object that is directly passed to the app In this way you can report to the application all the custom data you want In this example code the loop exits when the HelperSupport::isStopped() returns true This happens when the application calls the stop() method on the correponding action object The stop() method this way asks the helper to stop the action execution It s up to the helper to obbey to this request and if it does so it should return from the slot not exit The code that calls the action in the application connects a slot to the actionPerformed() signal and then call executeAsync() The progressStep() signal is directly connected to a QProgressBar and the Stop button in the UI is connected to a slot that calls the Action::stop() method Please pay attention that when you call an action the helper will be busy executing that action Therefore you can t call two execute() methods in sequence like that If you do you ll get a HelperBusy reply from the second action A solution would be to launch the second action from the slot connected to the first s actionPerformed signal but this would be very ugly Read further to know how to solve this problem To allow to easily execute several actions in sequence you can execute them in a group This means using the Action::executeActions() static method which takes a list of actions and asks the helper to execute them with a single request The helper will execute the actions in the specified order All the signals will be emitted from the watchers associated with each action Sometimes the application needs to know when a particular action has started to execute For this purpose you can connect to the actionStarted() signal It is emitted immediately before the helper s slot is called This isn t very useful if you call execute() but if you use executeActions() it lets you know when individual actions in the group are started It doesn t happen very frequently that you code something that doesn t require some debugging and you ll need some tool even a basic one to debug your helper code as well For this reason the KDE Authorization library provides a message handler for the Qt debugging system This means that every call to qDebug() co will be reported to the application and printed using the same qt debugging system with the same debug level If in the helper code you write something like You ll see something like this in the application s output Remember that the debug level is preserved so if you use qFatal() you won t only abort the helper which isn t suggested anyway but also the application</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KAuth::Action</field>
+    <field name="url">classKAuth_1_1Action.html</field>
+    <field name="keywords">Action</field>
+    <field name="text">This is the main class of the kauth API It provides the interface to manipulate actions Every action is identified by its name Every instance of the Action class with the same name refers to the same action Once you have an action object you can tell the helper to execute it asking the user to authenticate if needed with the execute() method The simplest thing to do is to execute a single action synchronously blocking for the reply by callin exec() on the job object returned by execute() For asynchronous calls use KAuth::ExecuteJob::start() instead It sends the request to the helper and returns immediately Before doing so you should however connect to at least the KJob::result(KJob *) signal to receive a slot call once the action is done executing To use the execute() method you have to set the default helper s ID using the setHelperID() static method Alternatively you can specify the helperID using the overloaded version of the methods that takes it as a parameter Each action object contains a QVariantMap object that is passed directly to the helper when the action is executed You can access this map using the arguments() method You can insert into it any kind of custom data you need to pass to the helper 4.4</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KAuth::Action::AuthStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2</field>
+    <field name="keywords">AuthStatus KAuth::Action::AuthStatus KAuth::Action</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::DeniedStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2a41be030981b0874a847e0aeeb660f1d2</field>
+    <field name="keywords">DeniedStatus KAuth::Action::DeniedStatus KAuth::Action</field>
+    <field name="text">The authorization has been denied by the authorization backend</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::ErrorStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2ac581c16559bc3ac2833bb24c509f9b47</field>
+    <field name="keywords">ErrorStatus KAuth::Action::ErrorStatus KAuth::Action</field>
+    <field name="text">An error occurred</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::InvalidStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2a779a61e322d6ca2fa7b782f777897e48</field>
+    <field name="keywords">InvalidStatus KAuth::Action::InvalidStatus KAuth::Action</field>
+    <field name="text">An invalid action cannot be authorized</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::AuthorizedStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2adb4f14e995c81bf14d431de6aae04352</field>
+    <field name="keywords">AuthorizedStatus KAuth::Action::AuthorizedStatus KAuth::Action</field>
+    <field name="text">The authorization has been granted by the authorization backend</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::AuthRequiredStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2a50b8805a706fb68edb17aeaa7e0a8450</field>
+    <field name="keywords">AuthRequiredStatus KAuth::Action::AuthRequiredStatus KAuth::Action</field>
+    <field name="text">The user could obtain the authorization after authentication</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::Action::UserCancelledStatus</field>
+    <field name="url">classKAuth_1_1Action.html#ae270c3cbaed8810c54f59d6e41122cb2aa9df2582077e20f7b2ee41a820ecfd78</field>
+    <field name="keywords">UserCancelledStatus KAuth::Action::UserCancelledStatus KAuth::Action</field>
+    <field name="text">The user pressed Cancel the authentication dialog Currently used only on the mac</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::Action</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1Action.html#a4f457ccfc8336b565cadca56b36e0271</field>
+    <field name="keywords">Action KAuth::Action::Action KAuth::Action</field>
+    <field name="text">This constructor sets the name to the empty string Such an action is invalid and cannot be authorized nor executed so you need to call setName() before you can use the object</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::Action</field>
+    <field name="args">(const Action &amp;action)</field>
+    <field name="url">classKAuth_1_1Action.html#aa2be15f82f10a4ff2332e9309a4905cd</field>
+    <field name="keywords">Action KAuth::Action::Action KAuth::Action</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::Action</field>
+    <field name="args">(const QString &amp;name)</field>
+    <field name="url">classKAuth_1_1Action.html#a12094557a0e47d623168ea339a2fd523</field>
+    <field name="keywords">Action KAuth::Action::Action KAuth::Action</field>
+    <field name="text">name The name of the new action</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::Action</field>
+    <field name="args">(const QString &amp;name, const QString &amp;details)</field>
+    <field name="url">classKAuth_1_1Action.html#ae12a2703813f965a220b1b5de3371f3c</field>
+    <field name="keywords">Action KAuth::Action::Action KAuth::Action</field>
+    <field name="text">name The name of the new action details The details of the action setDetails</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::~Action</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1Action.html#acdb06775d157339256a8ecd55749226c</field>
+    <field name="keywords">KAuth::Action::~Action KAuth::Action</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::addArgument</field>
+    <field name="args">(const QString &amp;key, const QVariant &amp;value)</field>
+    <field name="url">classKAuth_1_1Action.html#a049e3540f1c70af3ce7e9f2b2d200733</field>
+    <field name="keywords">addArgument KAuth::Action::addArgument KAuth::Action</field>
+    <field name="text">This method adds the pair key/value to the QVariantMap used to send custom data to the helper Use this method if you don t want to create a new QVariantMap only to add a new entry key The new entry s key value The value of the new entry</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::arguments</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#a479eaf239c9d7b35637a751565a60d46</field>
+    <field name="keywords">arguments KAuth::Action::arguments KAuth::Action</field>
+    <field name="text">This method returns the variant map that the application can use to pass arbitrary data to the helper when executing the action The arguments map that will be passed to the helper</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::details</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#acc90e05e2eaa727c414fa6b537be15d8</field>
+    <field name="keywords">details KAuth::Action::details KAuth::Action</field>
+    <field name="text">The details that will be shown in the authorization dialog if the backend supports it The action s details</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::execute</field>
+    <field name="args">(ExecutionMode mode=ExecuteMode)</field>
+    <field name="url">classKAuth_1_1Action.html#ac2afcc97d09158b94fa550cb67485520</field>
+    <field name="keywords">execute KAuth::Action::execute KAuth::Action</field>
+    <field name="text">This is the simpler of all the action execution methods It sends an execution request to the caller and returns the reply directly to the caller The ActionReply object will contain the custom data coming from the helper The method blocks the execution and will return only when the action has been completed or failed Take note however that with the D-Bus helper proxy currently the only one implemented on all the supported platforms the request is sent using the QDBus::BlockWithGui flag This means the method will enter a local eventloop to wait for the reply This allows the application GUI to stay responsive but you have to be prepared to receive other events in the meantime All the signals from the ActionWatcher class are emitted also with this method although they re more useful with the asynchronous calls The method checks for authorization before to execute the action If the user is not authorized the return value will be ActionReply::AuthorizationDeniedReply If the user cancels the authentication the return value should be ActionReply::UserCancelledReply Due to policykit limitations this currently only with the Mac OS X backend If the helper is busy executing another action or action group the reply will be ActionReply::HelperBusyReply If the request cannot be sent for bus errors the method returns ActionReply::DBusErrorReply The reply from the helper or an error reply if something s wrong</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::hasHelper</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#af1c0d5b49f04e341a4327f80e3c35f3e</field>
+    <field name="keywords">hasHelper KAuth::Action::hasHelper KAuth::Action</field>
+    <field name="text">This function can be used to check if an helper will be called upon the execution of an action Such an helper can be set through setHelperID If this function returns false upon execution the action will be just authorized 4.5 Whether the action has an helper or not setHelperID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::helperId</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#adc194c6a10f616a72a0c6bfc323ce00f</field>
+    <field name="keywords">helperId KAuth::Action::helperId KAuth::Action</field>
+    <field name="text">The helper ID is the string that uniquely identifies the helper in the system It is the string passed to the KAUTH_HELPER() macro in the helper source Because one could have different helpers you need to specify an helper ID for each execution or set a default ID by calling setHelperID() This method returns the current default value The default helper ID</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::isValid</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#a276a7771c92666b7a27994a836f48458</field>
+    <field name="keywords">isValid KAuth::Action::isValid KAuth::Action</field>
+    <field name="text">Action names have to respect a simple syntax They have to be all in lowercase characters separated by dots Dots can t appear at the beginning and at the end of the name In other words the action name has to match this perl-like regular expression This method returns false if the action name doesn t match the valid syntax If the backend supports it this method also checks if the action is valid and recognized by the backend itself Invalid actions cannot be authorized nor executed The empty string is not a valid action name so the default constructor returns an invalid action</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::name</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#a94b805528b6d86e82c18108ab50d7208</field>
+    <field name="keywords">name KAuth::Action::name KAuth::Action</field>
+    <field name="text">This is the unique attribute that identifies an action object Two action objects with the same name always refer to the same action The action name</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::operator!=</field>
+    <field name="args">(const Action &amp;action) const</field>
+    <field name="url">classKAuth_1_1Action.html#ab7b4b50ff2ed16e89821085a409e3e58</field>
+    <field name="keywords">operator!= KAuth::Action::operator!= KAuth::Action</field>
+    <field name="text">Returns the negation of operator true if the two actions are different and not both invalid</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::operator=</field>
+    <field name="args">(const Action &amp;action)</field>
+    <field name="url">classKAuth_1_1Action.html#a8d70bf97089cfcc640997f3211a31804</field>
+    <field name="keywords">operator= KAuth::Action::operator= KAuth::Action</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::operator==</field>
+    <field name="args">(const Action &amp;action) const</field>
+    <field name="url">classKAuth_1_1Action.html#a6be8a1e34d6c757b716730cbcb2dc1eb</field>
+    <field name="keywords">operator== KAuth::Action::operator== KAuth::Action</field>
+    <field name="text">This comparison operator compares the names of two actions and returns whether they are the same It does not care about the arguments stored in the actions However if two actions are invalid they ll match as equal even if the invalid names are different true if the two actions are the same or both invalid</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::parentWidget</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#a4be7e6aed4bc98a1eaf934b72ddb0bf9</field>
+    <field name="keywords">parentWidget KAuth::Action::parentWidget KAuth::Action</field>
+    <field name="text">4.6 A QWidget which will is being used as the dialog s parent</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::setArguments</field>
+    <field name="args">(const QVariantMap &amp;arguments)</field>
+    <field name="url">classKAuth_1_1Action.html#aa85bd1589eca50adae8828ae73e4b5ef</field>
+    <field name="keywords">setArguments KAuth::Action::setArguments KAuth::Action</field>
+    <field name="text">This method sets the variant map that the application can use to pass arbitrary data to the helper when executing the action arguments The new arguments map</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::setDetails</field>
+    <field name="args">(const QString &amp;details)</field>
+    <field name="url">classKAuth_1_1Action.html#a252c08c284dcbb0d7d6ebc450627ecde</field>
+    <field name="keywords">setDetails KAuth::Action::setDetails KAuth::Action</field>
+    <field name="text">You can use this function to provide the user more details if the backend supports it on the action being authorized in the authorization dialog</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::setHelperId</field>
+    <field name="args">(const QString &amp;id)</field>
+    <field name="url">classKAuth_1_1Action.html#a73c7538e20472397f1226193ae6fa462</field>
+    <field name="keywords">setHelperId KAuth::Action::setHelperId KAuth::Action</field>
+    <field name="text">This method sets the helper ID which contains the body of this action If the string is non-empty the corresponding helper will be fired and the action executed inside the helper Otherwise the action will be just authorized To unset a previously set helper just pass an empty string id The default helper ID hasHelper helperId</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::setName</field>
+    <field name="args">(const QString &amp;name)</field>
+    <field name="url">classKAuth_1_1Action.html#a6a7f88959cac2e933eeb4543e8ed6fdd</field>
+    <field name="keywords">setName KAuth::Action::setName KAuth::Action</field>
+    <field name="text">It s not common to change the action name after its creation Usually you set the name with the constructor and you have to because there s no default constructor</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::setParentWidget</field>
+    <field name="args">(QWidget *parent)</field>
+    <field name="url">classKAuth_1_1Action.html#af91c15e1de114497e20e5c391f2afc3e</field>
+    <field name="keywords">setParentWidget KAuth::Action::setParentWidget KAuth::Action</field>
+    <field name="text">This function is used for explicitly setting a parent window for an eventual authentication dialog required when authorization is triggered Some backends in fact like polkit-1 need to have a parent explicitly set for displaying the dialog correctly If you are using KAuth through one of KDE s GUI components KPushButton KCModule you do not need and should not call this function as it is already done by the component itself 4.6 parent A QWidget which will be used as the dialog s parent</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::Action::status</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1Action.html#a0fe4c1bb7d5800af23bfba574314aba7</field>
+    <field name="keywords">status KAuth::Action::status KAuth::Action</field>
+    <field name="text">This methods query the authorization backend to know if the user can try to acquire the authorization for this action If the result is Action::AuthRequired the user can try to acquire the authorization by authenticating It should not be needed to call this method directly because the execution methods already take care of all the authorization stuff Action::Denied if the user doesn t have the authorization to execute the action Action::Authorized if the action can be executed Action::AuthRequired if the user could acquire the authorization after authentication Action::UserCancelled if the user cancels the authentication dialog Not currently supported by the Polkit backend</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KAuth::ActionReply</field>
+    <field name="url">classKAuth_1_1ActionReply.html</field>
+    <field name="keywords">ActionReply</field>
+    <field name="text">An instance of ActionReply is returned every time you execute an action with the Action class You get the reply directly from the Action::execute() method or indirectly as a parameter of the ActionWatcher::actionPerformed() signal ActionReply objects can contain both data from a successful action or an error indicator In case of success the errorCode() is ActionReply::NoError zero and the type() is ActionReply::Success The data() method returns a QVariantMap object that may contain custom data sent back by the helper In case of errors coming from the library the type() is ActionReply::KAuthError In this case errorCode() will always be one of the predefined errors from the ActionReply::Error enum An error reply of KAuthError type always contains an empty data() object For some kind of errors you could get a human-readable description with errorDescription() If instead the helper itself has to report some errors occurred during the action execution the type() will be and has to be ActionReply::HelperError In this case the data() object can contain custom data from the helper and the errorCode() and errorDescription() values are application-dependent In the helper to create an action reply object you have two choices using the constructor or the predefined replies For example to create a successful reply you can use the default constructor but to create a helper error reply instead of writing ActionReply(ActionReply::HelperError) you could use the more convenient ActionReply::HelperErrorReply constant You should not use the predefined error replies to create and return new errors Replies with the KAuthError type are intended to be returned by the library only However you can use them for comparisons To quickly check for success or failure of an action you can use succeeded() or failed() 4.4</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KAuth::ActionReply::Error</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619</field>
+    <field name="keywords">Error KAuth::ActionReply::Error KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::NoError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7e3401e3c1494b6a81dae185ce0f26c0</field>
+    <field name="keywords">NoError KAuth::ActionReply::NoError KAuth::ActionReply</field>
+    <field name="text">No error</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::NoResponderError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7811678991b25ae9d6c90467d480ace2</field>
+    <field name="keywords">NoResponderError KAuth::ActionReply::NoResponderError KAuth::ActionReply</field>
+    <field name="text">The helper responder object hasn t been set This shouldn t happen if you use the KAUTH_HELPER macro in the helper source</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::NoSuchActionError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619ae55e60ddd7a74ba59eaa6bd1ac8c2557</field>
+    <field name="keywords">NoSuchActionError KAuth::ActionReply::NoSuchActionError KAuth::ActionReply</field>
+    <field name="text">The action you tried to execute doesn t exist</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::InvalidActionError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7752b96fe189ca70f436bb900c2ef0bf</field>
+    <field name="keywords">InvalidActionError KAuth::ActionReply::InvalidActionError KAuth::ActionReply</field>
+    <field name="text">You tried to execute an invalid action object</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::AuthorizationDeniedError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a652eca3258c4f2c32eb24e4bb0562103</field>
+    <field name="keywords">AuthorizationDeniedError KAuth::ActionReply::AuthorizationDeniedError KAuth::ActionReply</field>
+    <field name="text">You don t have the authorization to execute the action</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::UserCancelledError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619aec2a77cf2836479bc01bc207814eaf41</field>
+    <field name="keywords">UserCancelledError KAuth::ActionReply::UserCancelledError KAuth::ActionReply</field>
+    <field name="text">Action execution has been cancelled by the user</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::HelperBusyError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619ae03e2be0694d735440cf434d8d2129eb</field>
+    <field name="keywords">HelperBusyError KAuth::ActionReply::HelperBusyError KAuth::ActionReply</field>
+    <field name="text">The helper is busy executing another action or group of actions Try later</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::AlreadyStartedError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619afafb9d0d4311e8a8312ca06e3ec131f6</field>
+    <field name="keywords">AlreadyStartedError KAuth::ActionReply::AlreadyStartedError KAuth::ActionReply</field>
+    <field name="text">The action was already started and is currently running</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::DBusError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a1180872d9c4956b0596435e6095e7edd</field>
+    <field name="keywords">DBusError KAuth::ActionReply::DBusError KAuth::ActionReply</field>
+    <field name="text">An error from D-Bus occurred</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::BackendError</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619aa4b7095583c7c78c64fd134987aa765b</field>
+    <field name="keywords">BackendError KAuth::ActionReply::BackendError KAuth::ActionReply</field>
+    <field name="text">The underlying backend reported an error</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KAuth::ActionReply::Type</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6</field>
+    <field name="keywords">Type KAuth::ActionReply::Type KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::KAuthErrorType</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6a1243d1178c7d227b478aa7cce10a0308</field>
+    <field name="keywords">KAuthErrorType KAuth::ActionReply::KAuthErrorType KAuth::ActionReply</field>
+    <field name="text">An error reply generated by the library itself</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::HelperErrorType</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6ae7dbb87b29cff766c83dce23fbe21924</field>
+    <field name="keywords">HelperErrorType KAuth::ActionReply::HelperErrorType KAuth::ActionReply</field>
+    <field name="text">An error reply generated by the helper</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KAuth::ActionReply::SuccessType</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6aee9697ab8a2037cd6d5ee2260650b2ba</field>
+    <field name="keywords">SuccessType KAuth::ActionReply::SuccessType KAuth::ActionReply</field>
+    <field name="text">The action has been completed successfully</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::ActionReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a802f0c35863997ac02a1b7a2209a9a6b</field>
+    <field name="keywords">ActionReply KAuth::ActionReply::ActionReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::ActionReply</field>
+    <field name="args">(Type type)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a6917d9e45e367e22fe5ff7d942dcad6f</field>
+    <field name="keywords">ActionReply KAuth::ActionReply::ActionReply KAuth::ActionReply</field>
+    <field name="text">This constructor directly sets the reply type You shouldn t need to directly call this constructor because you can use the more convenient predefined replies constants You also shouldn t create a reply with the KAuthError type because it s reserved for errors coming from the library type The type of the new reply</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::ActionReply</field>
+    <field name="args">(int errorCode)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a22148e48f6cda0193529ce744f697057</field>
+    <field name="keywords">ActionReply KAuth::ActionReply::ActionReply KAuth::ActionReply</field>
+    <field name="text">Do not use outside the library This constructor is for internal use only since it creates a reply with KAuthError type which is reserved for errors coming from the library errorCode The error code of the new reply</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::ActionReply</field>
+    <field name="args">(const ActionReply &amp;reply)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ad459585af21a87b144c753e328719787</field>
+    <field name="keywords">ActionReply KAuth::ActionReply::ActionReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::~ActionReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a2589a886eaa36db85d228f9bd715b901</field>
+    <field name="keywords">KAuth::ActionReply::~ActionReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::addData</field>
+    <field name="args">(const QString &amp;key, const QVariant &amp;value)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a2a7f188241bde0d90af9a43fa4844b51</field>
+    <field name="keywords">addData KAuth::ActionReply::addData KAuth::ActionReply</field>
+    <field name="text">This method adds the pair key/value to the QVariantMap used to report back custom data to the application Use this method if you don t want to create a new QVariantMap only to add a new entry key The new entry s key value The value of the new entry</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::data</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07</field>
+    <field name="keywords">data KAuth::ActionReply::data KAuth::ActionReply</field>
+    <field name="text">This method is used to get the object that contains the custom data coming from the helper In the helper s code you can set it using setData() or the convenience method addData() The data coming from or that will be sent by the helper</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::errorCode</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327</field>
+    <field name="keywords">errorCode KAuth::ActionReply::errorCode KAuth::ActionReply</field>
+    <field name="text">The error code returned is one of the values in the ActionReply::Error enumeration if type() KAuthError or is totally application-dependent if type() HelperError It also should be zero for successful replies The reply error code</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::errorDescription</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a5c7d8c9c5ef3a797d11cafc2594f5f19</field>
+    <field name="keywords">errorDescription KAuth::ActionReply::errorDescription KAuth::ActionReply</field>
+    <field name="text">Currently replies of type KAuthError rarely report an error description This situation could change in the future By now you can use this method for custom errors of type HelperError The error human-readable description</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::failed</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#af0beb913953d6f5411dd1347e4b5f93b</field>
+    <field name="keywords">failed KAuth::ActionReply::failed KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::operator!=</field>
+    <field name="args">(const ActionReply &amp;reply) const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a23c16bfe0b2fb3c40dadc3d3bf1fb31a</field>
+    <field name="keywords">operator!= KAuth::ActionReply::operator!= KAuth::ActionReply</field>
+    <field name="text">See the operator==() for an important notice</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::operator=</field>
+    <field name="args">(const ActionReply &amp;reply)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a294dce9c0a6ac8391436a25f3b9837f0</field>
+    <field name="keywords">operator= KAuth::ActionReply::operator= KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::operator==</field>
+    <field name="args">(const ActionReply &amp;reply) const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a371adc5f7040e8a90a026ea67ae3f5cc</field>
+    <field name="keywords">operator== KAuth::ActionReply::operator== KAuth::ActionReply</field>
+    <field name="text">This operator checks if the type and the error code of two replies are the same It doesn t compare the data or the error descriptions so be careful The suggested use it to compare a reply agains one of the predefined error replies Note that you can do it also by compare errorCode() with the relative enumeration value</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::serialized</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#aca2f15ccc0808ebbb03339f735e0bf9e</field>
+    <field name="keywords">serialized KAuth::ActionReply::serialized KAuth::ActionReply</field>
+    <field name="text">This is a convenience method used internally to sent the reply to a remote peer To recreate the reply use deserialize() A QByteArray representation of this reply</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::setData</field>
+    <field name="args">(const QVariantMap &amp;data)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ac1ca4b8d1f95c7af136b939d5b83cc79</field>
+    <field name="keywords">setData KAuth::ActionReply::setData KAuth::ActionReply</field>
+    <field name="text">In the helper s code you can use this function to set an QVariantMap with custom data that will be sent back to the application data The new QVariantMap object</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::setErrorCode</field>
+    <field name="args">(Error errorCode)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a74e7456f138e08c61468569e3bdb0085</field>
+    <field name="keywords">setErrorCode KAuth::ActionReply::setErrorCode KAuth::ActionReply</field>
+    <field name="text">If you re setting the error code in the helper because you need to return an error to the application please make sure you already have set the type to HelperError either by calling setType() or by creating the reply in the right way If the type is Success when you call this method it will become KAuthError errorCode The new reply error code</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::setErrorDescription</field>
+    <field name="args">(const QString &amp;error)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a44992c12cdf172fd1d00467805da2085</field>
+    <field name="keywords">setErrorDescription KAuth::ActionReply::setErrorDescription KAuth::ActionReply</field>
+    <field name="text">Call this method from the helper if you want to send back a description for a custom error Note that this method doesn t affect the errorCode in any way error The new error description</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::setType</field>
+    <field name="args">(Type type)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a3861ac8b616d7c16b6e3f68e27d1016f</field>
+    <field name="keywords">setType KAuth::ActionReply::setType KAuth::ActionReply</field>
+    <field name="text">Every time you create an action reply you implicitly set a type Default constructed replies or ActionReply::SuccessReply have type() Success ActionReply::HelperErrorReply has type() HelperError Predefined error replies have type() KAuthError This means you rarely need to change the type after the creation but if you need to don t set it to KAuthError because it s reserved for errors coming from the library type The new reply type</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::succeeded</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a90081f0965f973c263d19e5ecad6aaaa</field>
+    <field name="keywords">succeeded KAuth::ActionReply::succeeded KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::type</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18</field>
+    <field name="keywords">type KAuth::ActionReply::type KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::AlreadyStartedReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#abdd0aae711be85150492cc7228af8213</field>
+    <field name="keywords">AlreadyStartedReply KAuth::ActionReply::AlreadyStartedReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::AuthorizationDeniedReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ab3afbb8ad997e3a868536a9538f2711a</field>
+    <field name="keywords">AuthorizationDeniedReply KAuth::ActionReply::AuthorizationDeniedReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::DBusErrorReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a6a079e43a997b5b63ae4080f680fd696</field>
+    <field name="keywords">DBusErrorReply KAuth::ActionReply::DBusErrorReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::deserialize</field>
+    <field name="args">(const QByteArray &amp;data)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a980d590a5dc126e2e7d542a7abd8d283</field>
+    <field name="keywords">deserialize KAuth::ActionReply::deserialize KAuth::ActionReply</field>
+    <field name="text">This method returns a reply from a QByteArray obtained from the serialized() method data A QByteArray obtained with serialized()</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::HelperBusyReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a93c02ef4a88d4cafc963e9dcdc891bdf</field>
+    <field name="keywords">HelperBusyReply KAuth::ActionReply::HelperBusyReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::HelperErrorReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a4d6577154e215e68fe4889484465bda2</field>
+    <field name="keywords">HelperErrorReply KAuth::ActionReply::HelperErrorReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::InvalidActionReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a227a3224f0a9b0671639ef414baa1042</field>
+    <field name="keywords">InvalidActionReply KAuth::ActionReply::InvalidActionReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::NoResponderReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a8c8111a31393927973343c195eb9bcce</field>
+    <field name="keywords">NoResponderReply KAuth::ActionReply::NoResponderReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::NoSuchActionReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a359e820a545560aa10f1f4d42a86b532</field>
+    <field name="keywords">NoSuchActionReply KAuth::ActionReply::NoSuchActionReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::SuccessReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a211040c1fd29b3575b1921c4da647225</field>
+    <field name="keywords">SuccessReply KAuth::ActionReply::SuccessReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ActionReply::UserCancelledReply</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ActionReply.html#aa22425100fef7028be8018cb8ca3e309</field>
+    <field name="keywords">UserCancelledReply KAuth::ActionReply::UserCancelledReply KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">friend</field>
+    <field name="name">KAuth::ActionReply::operator&lt;&lt;</field>
+    <field name="args">(QDataStream &amp;, const ActionReply &amp;)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#a3c8b9312dd8665c0cdd72dece65a3f61</field>
+    <field name="keywords">operator&lt;&lt; KAuth::ActionReply::operator&lt;&lt; KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">friend</field>
+    <field name="name">KAuth::ActionReply::operator&gt;&gt;</field>
+    <field name="args">(QDataStream &amp;, ActionReply &amp;)</field>
+    <field name="url">classKAuth_1_1ActionReply.html#ad767536584f1e4264686eeb131ae5ab7</field>
+    <field name="keywords">operator&gt;&gt; KAuth::ActionReply::operator&gt;&gt; KAuth::ActionReply</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KAuth::ExecuteJob</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html</field>
+    <field name="keywords">ExecuteJob</field>
+    <field name="text">5.0</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KAuth::ExecuteJob::newData</field>
+    <field name="args">(const QVariantMap &amp;data)</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#a4188a035ebdef1c5a2acc66c527fb366</field>
+    <field name="keywords">newData KAuth::ExecuteJob::newData KAuth::ExecuteJob</field>
+    <field name="text">This signal is emitted every time the helper s code calls the HelperSupport::progressStep(QVariantMap) method This is useful to let the helper notify the execution status of a long action also providing some data for example if you want to achieve some sort of progressive loading The meaning of the data passed here is totally application-dependent If you only need to pass some percentage you can use the other signal that pass an int data The progress data from the helper</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KAuth::ExecuteJob::statusChanged</field>
+    <field name="args">(KAuth::Action::AuthStatus status)</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#a809eb8a780cee53b77a80d6c8e4afa8b</field>
+    <field name="keywords">statusChanged KAuth::ExecuteJob::statusChanged KAuth::ExecuteJob</field>
+    <field name="text">status the the new authentication status</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ExecuteJob::~ExecuteJob</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#af7830bdc23dfde4b4db57676f37cc7cf</field>
+    <field name="keywords">KAuth::ExecuteJob::~ExecuteJob KAuth::ExecuteJob</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ExecuteJob::action</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#a950618e392393f81d5e967530f5c7c3c</field>
+    <field name="keywords">action KAuth::ExecuteJob::action KAuth::ExecuteJob</field>
+    <field name="text">the action associated with this job</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ExecuteJob::data</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#a75f9d0183aac364296ef33ba4c8decc0</field>
+    <field name="keywords">data KAuth::ExecuteJob::data KAuth::ExecuteJob</field>
+    <field name="text">the data sent by the helper</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ExecuteJob::start</field>
+    <field name="args">() override</field>
+    <field name="url">classKAuth_1_1ExecuteJob.html#a96281b477299829549889db8ba93e006</field>
+    <field name="keywords">start KAuth::ExecuteJob::start KAuth::ExecuteJob</field>
+    <field name="text">KJob::result newData statusChanged</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KAuth::ObjectDecorator</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html</field>
+    <field name="keywords">ObjectDecorator</field>
+    <field name="text">Dario Freddi</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KAuth::ObjectDecorator::authorized</field>
+    <field name="args">(const KAuth::Action &amp;action)</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#a166eed0389361667fd36c3b5d46250af</field>
+    <field name="keywords">authorized KAuth::ObjectDecorator::authorized KAuth::ObjectDecorator</field>
+    <field name="text">If the decorator needs authorization whenever the user triggers it the authorization process automatically begins If it succeeds this signal is emitted The KAuth::Action object is provided for convenience if you have multiple Action objects but of course it s always the same set with setAuthAction() WARNING If your button or action needs authorization you should connect eventual slots processing stuff to this signal and NOT clicked/triggered Clicked/triggered will be emitted even if the user has not been authorized action The object set with setAuthAction()</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ObjectDecorator::ObjectDecorator</field>
+    <field name="args">(QObject *parent)</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#aad0e3a31c81230772cea31108de167de</field>
+    <field name="keywords">ObjectDecorator KAuth::ObjectDecorator::ObjectDecorator KAuth::ObjectDecorator</field>
+    <field name="text">parent The parent object this decorator will be attached to</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ObjectDecorator::~ObjectDecorator</field>
+    <field name="args">()</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#a5afc0c049a83d59c5c279a5f704ce19d</field>
+    <field name="keywords">KAuth::ObjectDecorator::~ObjectDecorator KAuth::ObjectDecorator</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ObjectDecorator::authAction</field>
+    <field name="args">() const</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#a8e5396a99659a3e379153d37f150008b</field>
+    <field name="keywords">authAction KAuth::ObjectDecorator::authAction KAuth::ObjectDecorator</field>
+    <field name="text">the KAuth::Action associated with this decorator</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ObjectDecorator::setAuthAction</field>
+    <field name="args">(const KAuth::Action &amp;action)</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#a7fec9d36b4aa4624c47566dadf0199e4</field>
+    <field name="keywords">setAuthAction KAuth::ObjectDecorator::setAuthAction KAuth::ObjectDecorator</field>
+    <field name="text">By setting a KAuth::Action this decorator will become associated with it and whenever the action or button it is attached to gets clicked it will trigger the authorization and execution process for the action Pass 0 to this function to disassociate the decorator action the KAuth::Action to associate with this decorator</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::ObjectDecorator::setAuthAction</field>
+    <field name="args">(const QString &amp;actionName)</field>
+    <field name="url">classKAuth_1_1ObjectDecorator.html#a48b561b16e75028d2a1637f6d8e4e166</field>
+    <field name="keywords">setAuthAction KAuth::ObjectDecorator::setAuthAction KAuth::ObjectDecorator</field>
+    <field name="text">Overloaded member to allow creating the action by name actionName the name of the action to associate</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">KAuth::HelperSupport</field>
+    <field name="url">namespaceKAuth_1_1HelperSupport.html</field>
+    <field name="keywords">HelperSupport</field>
+    <field name="text">This class provides the API to write the helper tool that executes your actions You don t create instances of HelperSupport Instead you use its KAUTH_EXPORT methods This them you can notify the application of progress in your action s execution and you can check if the application asked you to terminate it 4.4</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::HelperSupport::helperMain</field>
+    <field name="args">(int argc, char **argv, const char *id, QObject *responder)</field>
+    <field name="url">namespaceKAuth_1_1HelperSupport.html#af2665da1a7765c8fd6d3755a35acf311</field>
+    <field name="keywords">helperMain KAuth::HelperSupport::helperMain KAuth::HelperSupport</field>
+    <field name="text">Do not call directly This method is called in the proper way by the code generated by the KAUTH_HELPER_MAIN() which creates a main() function for the helper tool macro You shouldn t call this method directly argc The argc parameter from the main() function argv The argv parameter from the main() function id The helper ID as passed to the macro responder The responder object for the helper The macro passes a default-constructed heap-allocated object of the class specified as the last macro parameter</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::HelperSupport::isStopped</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKAuth_1_1HelperSupport.html#a92d5d14499774c17e5ed1bd38ab26804</field>
+    <field name="keywords">isStopped KAuth::HelperSupport::isStopped KAuth::HelperSupport</field>
+    <field name="text">This method will return true if the helper has been asked to stop the execution of the current action If this happens your helper should return NOT exit The meaning of the data you return in this case is application-dependent It s good practice to check it regularly if you have a long-running action true if the helper has been asked to stop false otherwise</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::HelperSupport::progressStep</field>
+    <field name="args">(int step)</field>
+    <field name="url">namespaceKAuth_1_1HelperSupport.html#a3fe5f7ed6e46213d7ffc39c4eec67f77</field>
+    <field name="keywords">progressStep KAuth::HelperSupport::progressStep KAuth::HelperSupport</field>
+    <field name="text">You can use this method to notify progress information about the action execution When you call this method the ActionWatcher object associated with the current action will emit the progressStep(int) signal The meaning of the integer passed here is totally application dependent but you ll want to use it as a sort of percentage If you need to be more expressive use the other overload which takes a QVariantMap step The progress indicator</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KAuth::HelperSupport::progressStep</field>
+    <field name="args">(const QVariantMap &amp;data)</field>
+    <field name="url">namespaceKAuth_1_1HelperSupport.html#abc0f9026e751c74accd3ff3140cde5a9</field>
+    <field name="keywords">progressStep KAuth::HelperSupport::progressStep KAuth::HelperSupport</field>
+    <field name="text">You can use this method to notify progress information about the action execution When you call this method the ActionWatcher object associated with the current action will emit the progressStep(QVariantMap) signal The meaning of the data passed here is totally application dependent If you only need a simple percentage value use the other overload which takes an int data The progress data</field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">index</field>
+    <field name="url">index.html</field>
+    <field name="keywords"></field>
+    <field name="text">KAuth Execute actions as privileged user Introduction KAuth provides a convenient system-integrated way to offload actions that need to be performed as a privileged user root for example to small hopefully secure helper utilities Usage If you are using CMake you need to have or find KF5 with the Auth component in your CMakeLists.txt file and you need to link to KF5::Auth Executing privileged actions typically involves having a minimal helper utility that does the actual work and calling that utility with escalated privileges if the user has permission to do so often requiring the user to enter appropriate credentials like entering a password Therefore use of the KAuth library is in two parts In the main part of your code you use KAuth::Action and specifically KAuth::Action::execute() when you need to do something privileged like write to a file normally only writable by root The code that actually performs that action such as writing to a file needs to be placed in the slot of a helper QObject class which should use the methods of KAuth::HelperSupport and be compiled into an executable You will also want to use the kauth_install_helper_files and kauth_install_actions macros in your CMakeLists.txt See for a detailed tutorial on how to use KAuth</field>
+  </doc>
+</add>

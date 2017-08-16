@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - NET Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=NET">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classNET-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">NET Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NET:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNET__inherit__graph.png" border="0" usemap="#NET_inherit__map" alt="Inheritance graph"/></div>
+<map name="NET_inherit__map" id="NET_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a850e0ea12561c7467861957c873be34f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>OnAllDesktops</b> = -1
+ }</td></tr>
+<tr class="separator:a850e0ea12561c7467861957c873be34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9281c19ea7e280327b01b2c6236928"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">Action</a> { <br />
+&#160;&#160;<b>ActionMove</b> = 1u &lt;&lt; 0,
+<b>ActionResize</b> = 1u &lt;&lt; 1,
+<b>ActionMinimize</b> = 1u &lt;&lt; 2,
+<b>ActionShade</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>ActionStick</b> = 1u &lt;&lt; 4,
+<b>ActionMaxVert</b> = 1u &lt;&lt; 5,
+<b>ActionMaxHoriz</b> = 1u &lt;&lt; 6,
+<b>ActionMax</b> = ActionMaxVert | ActionMaxHoriz,
+<br />
+&#160;&#160;<b>ActionFullScreen</b> = 1u &lt;&lt; 7,
+<b>ActionChangeDesktop</b> = 1u &lt;&lt; 8,
+<b>ActionClose</b> = 1u &lt;&lt; 9
+<br />
+ }</td></tr>
+<tr class="separator:afa9281c19ea7e280327b01b2c6236928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3359c32a21f438e0e6564f26179e458f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">DesktopLayoutCorner</a> { <b>DesktopLayoutCornerTopLeft</b> = 0,
+<b>DesktopLayoutCornerTopRight</b> = 1,
+<b>DesktopLayoutCornerBottomLeft</b> = 2,
+<b>DesktopLayoutCornerBottomRight</b> = 3
+ }</td></tr>
+<tr class="separator:a3359c32a21f438e0e6564f26179e458f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29e22ac36b48d9cbcb28727db5258ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea">Direction</a> { <br />
+&#160;&#160;<b>TopLeft</b> = 0,
+<b>Top</b> = 1,
+<b>TopRight</b> = 2,
+<b>Right</b> = 3,
+<br />
+&#160;&#160;<b>BottomRight</b> = 4,
+<b>Bottom</b> = 5,
+<b>BottomLeft</b> = 6,
+<b>Left</b> = 7,
+<br />
+&#160;&#160;<b>Move</b> = 8,
+<b>KeyboardSize</b> = 9,
+<b>KeyboardMove</b> = 10,
+<b>MoveResizeCancel</b> = 11
+<br />
+ }</td></tr>
+<tr class="separator:ae29e22ac36b48d9cbcb28727db5258ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6eef2d78c27ea693652a30d2a07c05"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05">MappingState</a> { <a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05ac19143b5e0209f618a5518c11ac38689">Visible</a> = 1,
+<a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05a7648a58c155ce6b36e05031c7ab0a4f6">Withdrawn</a> = 0,
+<a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05a2d6d6784820519475f0177ea2cf3e04d">Iconic</a> = 3
+ }</td></tr>
+<tr class="separator:afb6eef2d78c27ea693652a30d2a07c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac5b26cfb4e28ec2f18cd5cc9e1989a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">Orientation</a> { <b>OrientationHorizontal</b> = 0,
+<b>OrientationVertical</b> = 1
+ }</td></tr>
+<tr class="separator:afac5b26cfb4e28ec2f18cd5cc9e1989a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea92340c4b9901e05aa7748587dcde5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">Property</a> { <br />
+&#160;&#160;<b>Supported</b> = 1u &lt;&lt; 0,
+<b>ClientList</b> = 1u &lt;&lt; 1,
+<b>ClientListStacking</b> = 1u &lt;&lt; 2,
+<b>NumberOfDesktops</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>DesktopGeometry</b> = 1u &lt;&lt; 4,
+<b>DesktopViewport</b> = 1u &lt;&lt; 5,
+<b>CurrentDesktop</b> = 1u &lt;&lt; 6,
+<b>DesktopNames</b> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<b>ActiveWindow</b> = 1u &lt;&lt; 8,
+<b>WorkArea</b> = 1u &lt;&lt; 9,
+<b>SupportingWMCheck</b> = 1u &lt;&lt; 10,
+<b>VirtualRoots</b> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<b>CloseWindow</b> = 1u &lt;&lt; 13,
+<b>WMMoveResize</b> = 1u &lt;&lt; 14,
+<b>WMName</b> = 1u &lt;&lt; 15,
+<b>WMVisibleName</b> = 1u &lt;&lt; 16,
+<br />
+&#160;&#160;<b>WMDesktop</b> = 1u &lt;&lt; 17,
+<b>WMWindowType</b> = 1u &lt;&lt; 18,
+<b>WMState</b> = 1u &lt;&lt; 19,
+<b>WMStrut</b> = 1u &lt;&lt; 20,
+<br />
+&#160;&#160;<b>WMIconGeometry</b> = 1u &lt;&lt; 21,
+<b>WMIcon</b> = 1u &lt;&lt; 22,
+<b>WMPid</b> = 1u &lt;&lt; 23,
+<b>WMHandledIcons</b> = 1u &lt;&lt; 24,
+<br />
+&#160;&#160;<b>WMPing</b> = 1u &lt;&lt; 25,
+<b>XAWMState</b> = 1u &lt;&lt; 27,
+<b>WMFrameExtents</b> = 1u &lt;&lt; 28,
+<b>WMIconName</b> = 1u &lt;&lt; 29,
+<br />
+&#160;&#160;<b>WMVisibleIconName</b> = 1u &lt;&lt; 30,
+<b>WMGeometry</b> = 1u &lt;&lt; 31,
+<b>WMAllProperties</b> = ~0u
+<br />
+ }</td></tr>
+<tr class="separator:aaea92340c4b9901e05aa7748587dcde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851d15d9aa748b5f76e44b1e2d7c79b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">Property2</a> { <br />
+&#160;&#160;<b>WM2UserTime</b> = 1u &lt;&lt; 0,
+<b>WM2StartupId</b> = 1u &lt;&lt; 1,
+<b>WM2TransientFor</b> = 1u &lt;&lt; 2,
+<b>WM2GroupLeader</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>WM2AllowedActions</b> = 1u &lt;&lt; 4,
+<b>WM2RestackWindow</b> = 1u &lt;&lt; 5,
+<b>WM2MoveResizeWindow</b> = 1u &lt;&lt; 6,
+<b>WM2ExtendedStrut</b> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<b>WM2KDETemporaryRules</b> = 1u &lt;&lt; 8,
+<b>WM2WindowClass</b> = 1u &lt;&lt; 9,
+<b>WM2WindowRole</b> = 1u &lt;&lt; 10,
+<b>WM2ClientMachine</b> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<b>WM2ShowingDesktop</b> = 1u &lt;&lt; 12,
+<b>WM2Opacity</b> = 1u &lt;&lt; 13,
+<b>WM2DesktopLayout</b> = 1u &lt;&lt; 14,
+<b>WM2FullPlacement</b> = 1u &lt;&lt; 15,
+<br />
+&#160;&#160;<b>WM2FullscreenMonitors</b> = 1u &lt;&lt; 16,
+<b>WM2FrameOverlap</b> = 1u &lt;&lt; 17,
+<b>WM2Activities</b> = 1u &lt;&lt; 18,
+<b>WM2BlockCompositing</b> = 1u &lt;&lt; 19,
+<br />
+&#160;&#160;<b>WM2KDEShadow</b> = 1u &lt;&lt; 20,
+<b>WM2Urgency</b> = 1u &lt;&lt; 21,
+<b>WM2Input</b> = 1u &lt;&lt; 22,
+<b>WM2Protocols</b> = 1u &lt;&lt; 23,
+<br />
+&#160;&#160;<b>WM2InitialMappingState</b> = 1u &lt;&lt; 24,
+<b>WM2IconPixmap</b> = 1u &lt;&lt; 25,
+<b>WM2OpaqueRegion</b> = 1u &lt;&lt; 25,
+<b>WM2AllProperties</b> = ~0u
+<br />
+ }</td></tr>
+<tr class="separator:a851d15d9aa748b5f76e44b1e2d7c79b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02aad36d7abf162c186cdb2b0e6e961b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961b">Protocol</a> { <br />
+&#160;&#160;<b>NoProtocol</b> = 0,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba88aab7af44c314e40504d05bea9790d4">TakeFocusProtocol</a> = 1 &lt;&lt; 0,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba55ebbf6a31791adca72f460b7e13eb39">DeleteWindowProtocol</a> = 1 &lt;&lt; 1,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961bac01fb7a0b7834f7e2385755472ca95cd">PingProtocol</a> = 1 &lt;&lt; 2,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961baed283a207c3f69d29bf9898e5e09968e">SyncRequestProtocol</a> = 1 &lt;&lt; 3,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba818d0a3ae2e6f85ecdd47c7f60ca60b7">ContextHelpProtocol</a> = 1 &lt;&lt; 4
+<br />
+ }</td></tr>
+<tr class="separator:a02aad36d7abf162c186cdb2b0e6e961b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8310daed1ca6a628b77ad4f92eeae74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a> { <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74afa9b1fe54160f94efbbd36abf3817f6d">FromUnknown</a> = 0,
+<a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74a7a242a3888a59f336a2c9091f046c204">FromApplication</a> = 1,
+<a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74ae9b1014f038b95b825ed3a5a9adaf2d0">FromTool</a> = 2
+ }</td></tr>
+<tr class="separator:ab8310daed1ca6a628b77ad4f92eeae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6f825794e1d7e005d56cac269e7aa0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0">Role</a> { <a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0a4fdc6016b721032a2bd8c5f9890f5f6d">Client</a>,
+<a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0a949cb303dc6e1c81c0f6c7b2c66055c8">WindowManager</a>
+ }</td></tr>
+<tr class="separator:a5d6f825794e1d7e005d56cac269e7aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dce7f5ea8a2a6d1d38aea3498f00ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">State</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea59b7f512e7c7ff71430ad7349a32d91d">Modal</a> = 1u &lt;&lt; 0,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea091104e8b00c4b1a0cfb81ae186f3637">Sticky</a> = 1u &lt;&lt; 1,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea2b5dbc22e9e5f3a7a238fc0d9775b7bd">MaxVert</a> = 1u &lt;&lt; 2,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea05e760aabf98bbf0887e2f5adf4af5eb">MaxHoriz</a> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea11465696144d095ebe6d51085f7f47e6">Max</a> = MaxVert | MaxHoriz,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea2a7c8fed35a833f0b664fc577cb85015">Shaded</a> = 1u &lt;&lt; 4,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea4143fd2f9ab51548070993729951a5b4">SkipTaskbar</a> = 1u &lt;&lt; 5,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea7b5e0fc7795fc0a66930fb0937035817">KeepAbove</a> = 1u &lt;&lt; 6,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeae5698354cff53f6e3aebdad9da826dd7">StaysOnTop</a> = KeepAbove,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeaacf3a06dfb0c28d5ade1fb8f11ca06bc">SkipPager</a> = 1u &lt;&lt; 7,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea9da0cfee6ad77ce1cb2d266543244eb6">Hidden</a> = 1u &lt;&lt; 8,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea52c9fb05445b3724c1f3e02838d89e32">FullScreen</a> = 1u &lt;&lt; 9,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeabb33d1a7ef6aeee3bd0e73cba9d8565d">KeepBelow</a> = 1u &lt;&lt; 10,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea3bb48830079a11c504153794ebbd4213">DemandsAttention</a> = 1u &lt;&lt; 11
+<br />
+ }</td></tr>
+<tr class="separator:a08dce7f5ea8a2a6d1d38aea3498f00ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3115c0f40e7bc8e38119cc44dd60e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">WindowType</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a53e8de9bd4352248edad9137546aa4fe">Unknown</a> = -1,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a47e478847ad30f9f71dcc5091cc0cead">Normal</a> = 0,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a379d353173caf50b0e3992e770ded7f6">Desktop</a> = 1,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aebde24b0e6a51a008f120edd01d84be1">Dock</a> = 2,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aa34709d530baff911c780166f1a5ccfd">Toolbar</a> = 3,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0ab3858ccebaa5f5dc9fe176e1308de089">Menu</a> = 4,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a9ada102bbd3caf4377ecf8fa93fc7f1d">Dialog</a> = 5,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a169c19bad87c970ee27283f2b3378b7e">Override</a> = 6,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a87b7bcd5109a36c8ffcf4705eb8865c6">TopMenu</a> = 7,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aed5a5fbe48af6bcd46122f9bda58f0c8">Utility</a> = 8,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a07c62266f94f41d18b1f522c8f917333">Splash</a> = 9,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abbd1eb83dab2ebd2b1e1909f9bf03809">DropdownMenu</a> = 10,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abf2250001e5fc6e63a42f8cc86fc8725">PopupMenu</a> = 11,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a8e9c1aa0e9c868b99aa8b5c2008cc45c">Tooltip</a> = 12,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a0f3f4349eae1a7aca0e44da1f7f26984">Notification</a> = 13,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0adf15e4b5b7558558fd4adb72866d5972">ComboBox</a> = 14,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a3f2e95b29fea412b74e23deb530bb7fc">DNDIcon</a> = 15,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a7b858c5d7e10f407e7c6c2d91a57184f">OnScreenDisplay</a> = 16
+<br />
+ }</td></tr>
+<tr class="separator:a4b3115c0f40e7bc8e38119cc44dd60e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157924046678eec09044df42968b785a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a157924046678eec09044df42968b785a">WindowTypeMask</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa769ee5513fae44cbc23ea06d80203525">NormalMask</a> = 1u &lt;&lt; 0,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa78b084561fcb174877983d4941ba9747">DesktopMask</a> = 1u &lt;&lt; 1,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5c1f0a7d7a70102c047db14a9de18dbc">DockMask</a> = 1u &lt;&lt; 2,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5816df72b6aedb600f0977bbbb00d32c">ToolbarMask</a> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa302e156b07c1f151bcc6378cbf67c6dc">MenuMask</a> = 1u &lt;&lt; 4,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa18e3bbea0b794f61a96af05ff590ae74">DialogMask</a> = 1u &lt;&lt; 5,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa4246ace0fadfb0cc91dab281a6a5a93b">OverrideMask</a> = 1u &lt;&lt; 6,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa9c7b7555c2856befb21489b361571a78">TopMenuMask</a> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa3d1837de4f3b33786169b6d1734f62d9">UtilityMask</a> = 1u &lt;&lt; 8,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa3830935ae4e085f953886aa018f2fff6">SplashMask</a> = 1u &lt;&lt; 9,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aad53a4ceb2c6250fe15685753265b4b61">DropdownMenuMask</a> = 1u &lt;&lt; 10,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5d2dbb4e6213a85653c2784f1c110a35">PopupMenuMask</a> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa1db84820110a58c01ebdb9681460a782">TooltipMask</a> = 1u &lt;&lt; 12,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa9e4aa0d1f656f17c73263424dd9d347c">NotificationMask</a> = 1u &lt;&lt; 13,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aaf58c7d2c12f39f237b2cabfa270e8ab5">ComboBoxMask</a> = 1u &lt;&lt; 14,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa4303bedea838238b651e755a56097d17">DNDIconMask</a> = 1u &lt;&lt; 15,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa31cb24e878e096c5dc302ae6d8285836">OnScreenDisplayMask</a> = 1u &lt;&lt; 16,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa8f1418a2a15499cc1ff2380b2d2ec34a">AllTypesMask</a> = 0U - 1
+<br />
+ }</td></tr>
+<tr class="separator:a157924046678eec09044df42968b785a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9257abc93441d96f380d690f2aeea058"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a9257abc93441d96f380d690f2aeea058">timestampCompare</a> (unsigned long time1, unsigned long time2)</td></tr>
+<tr class="separator:a9257abc93441d96f380d690f2aeea058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5353d1ebb9514a696158f46b54157f4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ae5353d1ebb9514a696158f46b54157f4">timestampDiff</a> (unsigned long time1, unsigned long time2)</td></tr>
+<tr class="separator:ae5353d1ebb9514a696158f46b54157f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27fbb80ed615b8a177aa38f2f65ef40f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a27fbb80ed615b8a177aa38f2f65ef40f">typeMatchesMask</a> (<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">WindowType</a> type, WindowTypes mask)</td></tr>
+<tr class="separator:a27fbb80ed615b8a177aa38f2f65ef40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base namespace class. </p>
+<p>The <a class="el" href="classNET.html" title="Base namespace class. ">NET</a> API is an implementation of the <a class="el" href="classNET.html" title="Base namespace class. ">NET</a> Window Manager Specification.</p>
+<p>This class is the base class for the <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and <a class="el" href="classNETWinInfo.html" title="Common API for application window properties/protocols. ">NETWinInfo</a> classes, which are used to retrieve and modify the properties of windows. To keep the namespace relatively clean, all enums are defined here.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="http://www.freedesktop.org/standards/wm-spec/">http://www.freedesktop.org/standards/wm-spec/</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00281">281</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a850e0ea12561c7467861957c873be34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850e0ea12561c7467861957c873be34f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sentinel value to indicate that the client wishes to be visible on all desktops. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00727">727</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="afa9281c19ea7e280327b01b2c6236928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9281c19ea7e280327b01b2c6236928">&#9670;&nbsp;</a></span>Action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">NET::Action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actions that can be done with a window (_NET_WM_ALLOWED_ACTIONS). </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00560">560</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a3359c32a21f438e0e6564f26179e458f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3359c32a21f438e0e6564f26179e458f">&#9670;&nbsp;</a></span>DesktopLayoutCorner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">NET::DesktopLayoutCorner</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starting corner for desktop layout. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00759">759</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="ae29e22ac36b48d9cbcb28727db5258ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29e22ac36b48d9cbcb28727db5258ea">&#9670;&nbsp;</a></span>Direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea">NET::Direction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direction for WMMoveResize. </p>
+<p>When a client wants the Window Manager to start a WMMoveResize, it should specify one of:</p>
+<ul>
+<li>TopLeft </li>
+<li>Top </li>
+<li>TopRight </li>
+<li>Right </li>
+<li>BottomRight </li>
+<li>Bottom </li>
+<li>BottomLeft </li>
+<li>Left </li>
+<li>Move (for movement only) </li>
+<li>KeyboardSize (resizing via keyboard) </li>
+<li>KeyboardMove (movement via keyboard) </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00519">519</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="afb6eef2d78c27ea693652a30d2a07c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6eef2d78c27ea693652a30d2a07c05">&#9670;&nbsp;</a></span>MappingState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05">NET::MappingState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Client window mapping state. </p>
+<p>The class automatically watches the mapping state of the client windows, and uses the mapping state to determine how to set/change different properties. Note that this is very lowlevel and you most probably don't want to use this state. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afb6eef2d78c27ea693652a30d2a07c05ac19143b5e0209f618a5518c11ac38689"></a>Visible&#160;</td><td class="fielddoc"><p>indicates the client window is visible to the user. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afb6eef2d78c27ea693652a30d2a07c05a7648a58c155ce6b36e05031c7ab0a4f6"></a>Withdrawn&#160;</td><td class="fielddoc"><p>indicates that neither the client window nor its icon is visible. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afb6eef2d78c27ea693652a30d2a07c05a2d6d6784820519475f0177ea2cf3e04d"></a>Iconic&#160;</td><td class="fielddoc"><p>indicates that the client window is not visible, but its icon is. </p>
+<p>This can be when the window is minimized or when it's on a different virtual desktop. See also <a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea9da0cfee6ad77ce1cb2d266543244eb6" title="indicates that a window should not be visible on the screen (e.g. ">NET::Hidden</a>. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00540">540</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="afac5b26cfb4e28ec2f18cd5cc9e1989a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac5b26cfb4e28ec2f18cd5cc9e1989a">&#9670;&nbsp;</a></span>Orientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">NET::Orientation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Orientation. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00751">751</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="aaea92340c4b9901e05aa7748587dcde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea92340c4b9901e05aa7748587dcde5">&#9670;&nbsp;</a></span>Property</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">NET::Property</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supported properties. </p>
+<p>Clients and Window Managers must define which properties/protocols it wants to support.</p>
+<p>Root/Desktop window properties and protocols:</p>
+<ul>
+<li>Supported </li>
+<li>ClientList </li>
+<li>ClientListStacking </li>
+<li>NumberOfDesktops </li>
+<li>DesktopGeometry </li>
+<li>DesktopViewport </li>
+<li>CurrentDesktop </li>
+<li>DesktopNames </li>
+<li>ActiveWindow </li>
+<li>WorkArea </li>
+<li>SupportingWMCheck </li>
+<li>VirtualRoots </li>
+<li>CloseWindow </li>
+<li>WMMoveResize</li>
+</ul>
+<p>Client window properties and protocols:</p>
+<ul>
+<li>WMName </li>
+<li>WMVisibleName </li>
+<li>WMDesktop </li>
+<li>WMWindowType </li>
+<li>WMState </li>
+<li>WMStrut (obsoleted by WM2ExtendedStrut) </li>
+<li>WMGeometry </li>
+<li>WMFrameExtents </li>
+<li>WMIconGeometry </li>
+<li>WMIcon </li>
+<li>WMIconName </li>
+<li>WMVisibleIconName </li>
+<li>WMHandledIcons </li>
+<li>WMPid </li>
+<li>WMPing</li>
+</ul>
+<p>ICCCM properties (provided for convenience):</p>
+<ul>
+<li>XAWMState </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00620">620</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a851d15d9aa748b5f76e44b1e2d7c79b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851d15d9aa748b5f76e44b1e2d7c79b0">&#9670;&nbsp;</a></span>Property2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">NET::Property2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supported properties. </p>
+<p>This enum is an extension to <a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5" title="Supported properties. ">NET::Property</a>, because them enum is limited only to 32 bits.</p>
+<p>Client window properties and protocols:</p>
+<ul>
+<li>WM2UserTime </li>
+<li>WM2StartupId </li>
+<li>WM2TransientFor mainwindow for the window (WM_TRANSIENT_FOR) </li>
+<li>WM2GroupLeader group leader (window_group in WM_HINTS) </li>
+<li>WM2AllowedActions </li>
+<li>WM2RestackWindow </li>
+<li>WM2MoveResizeWindow </li>
+<li>WM2ExtendedStrut </li>
+<li>WM2TemporaryRules internal, for kstart </li>
+<li>WM2WindowClass WM_CLASS </li>
+<li>WM2WindowRole WM_WINDOW_ROLE </li>
+<li>WM2ClientMachine WM_CLIENT_MACHINE </li>
+<li>WM2ShowingDesktop </li>
+<li>WM2Opacity _NET_WM_WINDOW_OPACITY </li>
+<li>WM2DesktopLayout _NET_DESKTOP_LAYOUT </li>
+<li>WM2FullPlacement _NET_WM_FULL_PLACEMENT </li>
+<li>WM2FullscreenMonitors _NET_WM_FULLSCREEN_MONITORS </li>
+<li>WM2Urgency urgency hint in WM_HINTS (see ICCCM 4.1.2.4) </li>
+<li>WM2Input input hint (input in WM_HINTS, see ICCCM 4.1.2.4) </li>
+<li>WM2Protocols see <a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961b" title="Protocols supported by the client. ">NET::Protocol</a> </li>
+<li>WM2InitialMappingState initial state hint of WM_HINTS (see ICCCM 4.1.2.4) </li>
+<li>WM2IconPixmap icon pixmap and mask in WM_HINTS (see ICCCM 4.1.2.4) </li>
+<li>WM2OpaqueRegion </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00691">691</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a02aad36d7abf162c186cdb2b0e6e961b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02aad36d7abf162c186cdb2b0e6e961b">&#9670;&nbsp;</a></span>Protocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961b">NET::Protocol</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Protocols supported by the client. </p>
+<p>See ICCCM 4.1.2.7.</p>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a02aad36d7abf162c186cdb2b0e6e961ba88aab7af44c314e40504d05bea9790d4"></a>TakeFocusProtocol&#160;</td><td class="fielddoc"><p>WM_TAKE_FOCUS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a02aad36d7abf162c186cdb2b0e6e961ba55ebbf6a31791adca72f460b7e13eb39"></a>DeleteWindowProtocol&#160;</td><td class="fielddoc"><p>WM_DELETE_WINDOW. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a02aad36d7abf162c186cdb2b0e6e961bac01fb7a0b7834f7e2385755472ca95cd"></a>PingProtocol&#160;</td><td class="fielddoc"><p>_NET_WM_PING from EWMH </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a02aad36d7abf162c186cdb2b0e6e961baed283a207c3f69d29bf9898e5e09968e"></a>SyncRequestProtocol&#160;</td><td class="fielddoc"><p>_NET_WM_SYNC_REQUEST from EWMH </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a02aad36d7abf162c186cdb2b0e6e961ba818d0a3ae2e6f85ecdd47c7f60ca60b7"></a>ContextHelpProtocol&#160;</td><td class="fielddoc"><p>_NET_WM_CONTEXT_HELP, NON STANDARD! </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00772">772</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8310daed1ca6a628b77ad4f92eeae74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8310daed1ca6a628b77ad4f92eeae74">&#9670;&nbsp;</a></span>RequestSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">NET::RequestSource</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source of the request. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8310daed1ca6a628b77ad4f92eeae74afa9b1fe54160f94efbbd36abf3817f6d"></a>FromUnknown&#160;</td><td class="fielddoc"><p>indicates that the source of the request is unknown </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8310daed1ca6a628b77ad4f92eeae74a7a242a3888a59f336a2c9091f046c204"></a>FromApplication&#160;</td><td class="fielddoc"><p>indicates that the request comes from a normal application </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8310daed1ca6a628b77ad4f92eeae74ae9b1014f038b95b825ed3a5a9adaf2d0"></a>FromTool&#160;</td><td class="fielddoc"><p>indicated that the request comes from pager or similar tool </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00733">733</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a5d6f825794e1d7e005d56cac269e7aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6f825794e1d7e005d56cac269e7aa0">&#9670;&nbsp;</a></span>Role</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0">NET::Role</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Application role. </p>
+<p>This is used internally to determine how several action should be performed (if at all). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d6f825794e1d7e005d56cac269e7aa0a4fdc6016b721032a2bd8c5f9890f5f6d"></a>Client&#160;</td><td class="fielddoc"><p>indicates that the application is a client application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5d6f825794e1d7e005d56cac269e7aa0a949cb303dc6e1c81c0f6c7b2c66055c8"></a>WindowManager&#160;</td><td class="fielddoc"><p>indicates that the application is a window manager application. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00289">289</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a08dce7f5ea8a2a6d1d38aea3498f00ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08dce7f5ea8a2a6d1d38aea3498f00ee">&#9670;&nbsp;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">NET::State</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window state. </p>
+<p>To set the state of a window, you'll typically do something like: </p><div class="fragment"><div class="line"><a class="code" href="classKWindowSystem.html#a2fcec2ab4297afe9edae7971b1a4cd86">KWindowSystem::setState</a>( winId(), <a class="code" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea4143fd2f9ab51548070993729951a5b4">NET::SkipTaskbar</a> | <a class="code" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeaacf3a06dfb0c28d5ade1fb8f11ca06bc">NET::SkipPager</a> );</div></div><!-- fragment --><p>for example to not show the window on the taskbar and desktop pager. winId() is a function of QWidget()</p>
+<p>Note that KeepAbove (StaysOnTop) and KeepBelow are meant as user preference and applications should avoid setting these states themselves. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea59b7f512e7c7ff71430ad7349a32d91d"></a>Modal&#160;</td><td class="fielddoc"><p>indicates that this is a modal dialog box. </p>
+<p>The WM_TRANSIENT_FOR hint MUST be set to indicate which window the dialog is a modal for, or set to the root window if the dialog is a modal for its window group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea091104e8b00c4b1a0cfb81ae186f3637"></a>Sticky&#160;</td><td class="fielddoc"><p>indicates that the Window Manager SHOULD keep the window's position fixed on the screen, even when the virtual desktop scrolls. </p>
+<p>Note that this is different from being kept on all desktops. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea2b5dbc22e9e5f3a7a238fc0d9775b7bd"></a>MaxVert&#160;</td><td class="fielddoc"><p>indicates that the window is vertically maximized. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea05e760aabf98bbf0887e2f5adf4af5eb"></a>MaxHoriz&#160;</td><td class="fielddoc"><p>indicates that the window is horizontally maximized. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea11465696144d095ebe6d51085f7f47e6"></a>Max&#160;</td><td class="fielddoc"><p>convenience value. </p>
+<p>Equal to MaxVert | MaxHoriz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea2a7c8fed35a833f0b664fc577cb85015"></a>Shaded&#160;</td><td class="fielddoc"><p>indicates that the window is shaded (rolled-up). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea4143fd2f9ab51548070993729951a5b4"></a>SkipTaskbar&#160;</td><td class="fielddoc"><p>indicates that a window should not be included on a taskbar. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea7b5e0fc7795fc0a66930fb0937035817"></a>KeepAbove&#160;</td><td class="fielddoc"><p>indicates that a window should on top of most windows (but below fullscreen windows). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eeae5698354cff53f6e3aebdad9da826dd7"></a>StaysOnTop&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This is an obsolete name for KeepAbove.</dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eeaacf3a06dfb0c28d5ade1fb8f11ca06bc"></a>SkipPager&#160;</td><td class="fielddoc"><p>indicates that a window should not be included on a pager. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea9da0cfee6ad77ce1cb2d266543244eb6"></a>Hidden&#160;</td><td class="fielddoc"><p>indicates that a window should not be visible on the screen (e.g. </p>
+<p>when minimised). Only the window manager is allowed to change it. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea52c9fb05445b3724c1f3e02838d89e32"></a>FullScreen&#160;</td><td class="fielddoc"><p>indicates that a window should fill the entire screen and have no window decorations. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eeabb33d1a7ef6aeee3bd0e73cba9d8565d"></a>KeepBelow&#160;</td><td class="fielddoc"><p>indicates that a window should be below most windows (but above any desktop windows). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08dce7f5ea8a2a6d1d38aea3498f00eea3bb48830079a11c504153794ebbd4213"></a>DemandsAttention&#160;</td><td class="fielddoc"><p>there was an attempt to activate this window, but the window manager prevented this. </p>
+<p>E.g. taskbar should mark such window specially to bring user's attention to this window. Only the window manager is allowed to change it. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00431">431</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b3115c0f40e7bc8e38119cc44dd60e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3115c0f40e7bc8e38119cc44dd60e0">&#9670;&nbsp;</a></span>WindowType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">NET::WindowType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a53e8de9bd4352248edad9137546aa4fe"></a>Unknown&#160;</td><td class="fielddoc"><p>indicates that the window did not define a window type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a47e478847ad30f9f71dcc5091cc0cead"></a>Normal&#160;</td><td class="fielddoc"><p>indicates that this is a normal, top-level window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a379d353173caf50b0e3992e770ded7f6"></a>Desktop&#160;</td><td class="fielddoc"><p>indicates a desktop feature. </p>
+<p>This can include a single window containing desktop icons with the same dimensions as the screen, allowing the desktop environment to have full control of the desktop, without the need for proxying root window clicks. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0aebde24b0e6a51a008f120edd01d84be1"></a>Dock&#160;</td><td class="fielddoc"><p>indicates a dock or panel feature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0aa34709d530baff911c780166f1a5ccfd"></a>Toolbar&#160;</td><td class="fielddoc"><p>indicates a toolbar window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0ab3858ccebaa5f5dc9fe176e1308de089"></a>Menu&#160;</td><td class="fielddoc"><p>indicates a pinnable (torn-off) menu window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a9ada102bbd3caf4377ecf8fa93fc7f1d"></a>Dialog&#160;</td><td class="fielddoc"><p>indicates that this is a dialog window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a169c19bad87c970ee27283f2b3378b7e"></a>Override&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>has unclear meaning and is KDE-only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a87b7bcd5109a36c8ffcf4705eb8865c6"></a>TopMenu&#160;</td><td class="fielddoc"><p>indicates a toplevel menu (AKA macmenu). </p>
+<p>This is a KDE extension to the _NET_WM_WINDOW_TYPE mechanism. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0aed5a5fbe48af6bcd46122f9bda58f0c8"></a>Utility&#160;</td><td class="fielddoc"><p>indicates a utility window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a07c62266f94f41d18b1f522c8f917333"></a>Splash&#160;</td><td class="fielddoc"><p>indicates that this window is a splash screen window. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0abbd1eb83dab2ebd2b1e1909f9bf03809"></a>DropdownMenu&#160;</td><td class="fielddoc"><p>indicates a dropdown menu (from a menubar typically) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0abf2250001e5fc6e63a42f8cc86fc8725"></a>PopupMenu&#160;</td><td class="fielddoc"><p>indicates a popup menu (a context menu typically) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a8e9c1aa0e9c868b99aa8b5c2008cc45c"></a>Tooltip&#160;</td><td class="fielddoc"><p>indicates a tooltip window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a0f3f4349eae1a7aca0e44da1f7f26984"></a>Notification&#160;</td><td class="fielddoc"><p>indicates a notification window </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0adf15e4b5b7558558fd4adb72866d5972"></a>ComboBox&#160;</td><td class="fielddoc"><p>indicates that the window is a list for a combobox </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a3f2e95b29fea412b74e23deb530bb7fc"></a>DNDIcon&#160;</td><td class="fielddoc"><p>indicates a window that represents the dragged object during DND operation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b3115c0f40e7bc8e38119cc44dd60e0a7b858c5d7e10f407e7c6c2d91a57184f"></a>OnScreenDisplay&#160;</td><td class="fielddoc"><p>indicates an On Screen Display window (such as volume feedback) </p>
+<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00304">304</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<a id="a157924046678eec09044df42968b785a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157924046678eec09044df42968b785a">&#9670;&nbsp;</a></span>WindowTypeMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNET.html#a157924046678eec09044df42968b785a">NET::WindowTypeMask</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Values for WindowType when they should be OR'ed together, e.g. </p>
+<p>for the properties argument of the <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> constructor. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa769ee5513fae44cbc23ea06d80203525"></a>NormalMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a47e478847ad30f9f71dcc5091cc0cead" title="indicates that this is a normal, top-level window ">Normal</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa78b084561fcb174877983d4941ba9747"></a>DesktopMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a379d353173caf50b0e3992e770ded7f6" title="indicates a desktop feature. ">Desktop</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa5c1f0a7d7a70102c047db14a9de18dbc"></a>DockMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aebde24b0e6a51a008f120edd01d84be1" title="indicates a dock or panel feature ">Dock</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa5816df72b6aedb600f0977bbbb00d32c"></a>ToolbarMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aa34709d530baff911c780166f1a5ccfd" title="indicates a toolbar window ">Toolbar</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa302e156b07c1f151bcc6378cbf67c6dc"></a>MenuMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0ab3858ccebaa5f5dc9fe176e1308de089" title="indicates a pinnable (torn-off) menu window ">Menu</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa18e3bbea0b794f61a96af05ff590ae74"></a>DialogMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a9ada102bbd3caf4377ecf8fa93fc7f1d" title="indicates that this is a dialog window ">Dialog</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa4246ace0fadfb0cc91dab281a6a5a93b"></a>OverrideMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a169c19bad87c970ee27283f2b3378b7e">Override</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa9c7b7555c2856befb21489b361571a78"></a>TopMenuMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a87b7bcd5109a36c8ffcf4705eb8865c6" title="indicates a toplevel menu (AKA macmenu). ">TopMenu</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa3d1837de4f3b33786169b6d1734f62d9"></a>UtilityMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aed5a5fbe48af6bcd46122f9bda58f0c8" title="indicates a utility window ">Utility</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa3830935ae4e085f953886aa018f2fff6"></a>SplashMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a07c62266f94f41d18b1f522c8f917333" title="indicates that this window is a splash screen window. ">Splash</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aad53a4ceb2c6250fe15685753265b4b61"></a>DropdownMenuMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abbd1eb83dab2ebd2b1e1909f9bf03809" title="indicates a dropdown menu (from a menubar typically) ">DropdownMenu</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa5d2dbb4e6213a85653c2784f1c110a35"></a>PopupMenuMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abf2250001e5fc6e63a42f8cc86fc8725" title="indicates a popup menu (a context menu typically) ">PopupMenu</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa1db84820110a58c01ebdb9681460a782"></a>TooltipMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a8e9c1aa0e9c868b99aa8b5c2008cc45c" title="indicates a tooltip window ">Tooltip</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa9e4aa0d1f656f17c73263424dd9d347c"></a>NotificationMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a0f3f4349eae1a7aca0e44da1f7f26984" title="indicates a notification window ">Notification</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aaf58c7d2c12f39f237b2cabfa270e8ab5"></a>ComboBoxMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0adf15e4b5b7558558fd4adb72866d5972" title="indicates that the window is a list for a combobox ">ComboBox</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa4303bedea838238b651e755a56097d17"></a>DNDIconMask&#160;</td><td class="fielddoc"><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a3f2e95b29fea412b74e23deb530bb7fc" title="indicates a window that represents the dragged object during DND operation ">DNDIcon</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa31cb24e878e096c5dc302ae6d8285836"></a>OnScreenDisplayMask&#160;</td><td class="fielddoc"><p>NON STANDARD. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a7b858c5d7e10f407e7c6c2d91a57184f" title="indicates an On Screen Display window (such as volume feedback) ">OnScreenDisplay</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a157924046678eec09044df42968b785aa8f1418a2a15499cc1ff2380b2d2ec34a"></a>AllTypesMask&#160;</td><td class="fielddoc"><p>All window types. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="netwm__def_8h_source.html#l00388">388</a> of file <a class="el" href="netwm__def_8h_source.html">netwm_def.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9257abc93441d96f380d690f2aeea058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9257abc93441d96f380d690f2aeea058">&#9670;&nbsp;</a></span>timestampCompare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NET::timestampCompare </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>time1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>time2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares two X timestamps, taking into account wrapping and 64bit architectures. </p>
+<p>Return value is like with strcmp(), 0 for equal, -1 for time1 &lt; time2, 1 for time1 &gt; time2. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l04816">4816</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5353d1ebb9514a696158f46b54157f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5353d1ebb9514a696158f46b54157f4">&#9670;&nbsp;</a></span>timestampDiff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NET::timestampDiff </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>time1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>time2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a difference of two X timestamps, time2 - time1, where time2 must be later than time1, as returned by <a class="el" href="classNET.html#a9257abc93441d96f380d690f2aeea058" title="Compares two X timestamps, taking into account wrapping and 64bit architectures. ">timestampCompare()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l04821">4821</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a27fbb80ed615b8a177aa38f2f65ef40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27fbb80ed615b8a177aa38f2f65ef40f">&#9670;&nbsp;</a></span>typeMatchesMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NET::typeMatchesMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">WindowType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WindowTypes&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the given window type matches the mask given using WindowTypeMask flags. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l04554">4554</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="netwm__def_8h_source.html">netwm_def.h</a></li>
+<li><a class="el" href="netwm_8cpp_source.html">netwm.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

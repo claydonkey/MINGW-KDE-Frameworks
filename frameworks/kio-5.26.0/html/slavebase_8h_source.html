@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - slavebase.h Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_413e470d760bf901f5641c9eb8d400f1.html">mingw-w64-kio-qt5 - Copy</a></li><li class="navelem"><a class="el" href="dir_6206d1bc68dd9b07f7e6027ae432b791.html">src</a></li><li class="navelem"><a class="el" href="dir_cd1fc410479695bfec72c4647d245a83.html">kio-5.26.0</a></li><li class="navelem"><a class="el" href="dir_904192df72df8135d067fa8e2c3ed040.html">src</a></li><li class="navelem"><a class="el" href="dir_b22416aeefdc4f42ca9fe0e32183ab0f.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">slavebase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 2000 David Faure &lt;faure@kde.org&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">   modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   License as published by the Free Software Foundation; either</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">   version 2 of the License, or (at your option) any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   Library General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   Boston, MA 02110-1301, USA.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef SLAVEBASE_H</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define SLAVEBASE_H</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;kio/global.h&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;kio/udsentry.h&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;kio/authinfo.h&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;job_base.h&quot;</span> <span class="comment">// for KIO::JobFlags</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;QtCore/QByteArray&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;QtNetwork/QHostInfo&gt;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="classKRemoteEncoding.html">KRemoteEncoding</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>QUrl;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceKIO.html">KIO</a></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Connection;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>SlaveBasePrivate;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classKIO_1_1SlaveBase.html">   50</a></span>&#160;<span class="keyword">class </span>KIOCORE_EXPORT <a class="code" href="classKIO_1_1SlaveBase.html">SlaveBase</a></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classKIO_1_1SlaveBase.html">SlaveBase</a>(<span class="keyword">const</span> QByteArray &amp;protocol, <span class="keyword">const</span> QByteArray &amp;pool_socket, <span class="keyword">const</span> QByteArray &amp;app_socket);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classKIO_1_1SlaveBase.html">SlaveBase</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_NORETURN <span class="keywordtype">void</span> exit();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> dispatchLoop();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Message Signals to send to the job</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> data(<span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> dataReq();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> opened();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> error(<span class="keywordtype">int</span> _errid, <span class="keyword">const</span> QString &amp;_text);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> connected();</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> finished();</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> needSubUrlData();</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> slaveStatus(<span class="keyword">const</span> QString &amp;host, <span class="keywordtype">bool</span> connected);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> statEntry(<span class="keyword">const</span> <a class="code" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;_entry);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> listEntries(<span class="keyword">const</span> <a class="code" href="namespaceKIO.html#abb17978b4ca2ffacf7a1147576f255a5">UDSEntryList</a> &amp;_entry);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> canResume(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> offset);</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> canResume();</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Info Signals to send to the job</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> totalSize(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">void</span> processedSize(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes);</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">void</span> position(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _pos);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> written(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> processedPercent(<span class="keywordtype">float</span> percent);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">void</span> speed(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _bytes_per_second);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> redirection(<span class="keyword">const</span> QUrl &amp;_url);</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">void</span> errorPage();</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">void</span> mimeType(<span class="keyword">const</span> QString &amp;_type);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span> warning(<span class="keyword">const</span> QString &amp;msg);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">void</span> infoMessage(<span class="keyword">const</span> QString &amp;msg);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div><div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">  251</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> { QuestionYesNo = 1, WarningYesNo = 2, WarningContinueCancel = 3, WarningYesNoCancel = 4, Information = 5, SSLMessageBox = 6 };</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div><div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classKIO_1_1SlaveBase.html#a3f8ad655257948150ce78e225a0510bd">  256</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classKIO_1_1SlaveBase.html#a3f8ad655257948150ce78e225a0510bd">ButtonCode</a> {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        Ok = 1,</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        Cancel = 2,</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        Yes = 3,</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        No = 4,</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        Continue = 5</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    };</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">int</span> messageBox(<a class="code" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> type, <span class="keyword">const</span> QString &amp;text,</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                   <span class="keyword">const</span> QString &amp;caption = QString(),</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                   <span class="keyword">const</span> QString &amp;buttonYes = QString(),</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                   <span class="keyword">const</span> QString &amp;buttonNo = QString());</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> messageBox(<span class="keyword">const</span> QString &amp;text, <a class="code" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> type,</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                   <span class="keyword">const</span> QString &amp;caption = QString(),</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                   <span class="keyword">const</span> QString &amp;buttonYes = QString(),</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                   <span class="keyword">const</span> QString &amp;buttonNo = QString(),</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                   <span class="keyword">const</span> QString &amp;dontAskAgainName = QString());</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> setMetaData(<span class="keyword">const</span> QString &amp;key, <span class="keyword">const</span> QString &amp;value);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">bool</span> hasMetaData(<span class="keyword">const</span> QString &amp;key) <span class="keyword">const</span>;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    QString metaData(<span class="keyword">const</span> QString &amp;key) <span class="keyword">const</span>;</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="classKIO_1_1MetaData.html">MetaData</a> allMetaData() <span class="keyword">const</span>;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> *config();</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="classKRemoteEncoding.html">KRemoteEncoding</a> *remoteEncoding();</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// Commands sent by the job, the slave has to</span></div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">// override what it wants to implement</span></div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setHost(<span class="keyword">const</span> QString &amp;host, quint16 port, <span class="keyword">const</span> QString &amp;user, <span class="keyword">const</span> QString &amp;pass);</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setSubUrl(<span class="keyword">const</span> QUrl &amp;url);</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> openConnection();</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeConnection();</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <span class="keyword">get</span>(<span class="keyword">const</span> QUrl &amp;url);</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a81a9e3a7d3a3f9f67426e7e386882312">open</a>(<span class="keyword">const</span> QUrl &amp;url, QIODevice::OpenMode mode);</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> read(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size);</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> write(<span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> seek(<a class="code" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> offset);</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> close();</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#ae11751796f5d790d50b994e9574ca87f">put</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keywordtype">int</span> permissions, JobFlags flags);</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a539a9986a33af9a038cec7d57fadcda0">stat</a>(<span class="keyword">const</span> QUrl &amp;url);</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#abdf502fa5febb734ccd584d8c3e4a325">mimetype</a>(<span class="keyword">const</span> QUrl &amp;url);</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a3c97af8f53a171a05780daa8e0af6f8f">listDir</a>(<span class="keyword">const</span> QUrl &amp;url);</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a32a6b3708a9cbdbb0fbc490b289fa9fc">mkdir</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keywordtype">int</span> permissions);</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a399cbd217c9a897db18ea247fb289c84">rename</a>(<span class="keyword">const</span> QUrl &amp;src, <span class="keyword">const</span> QUrl &amp;dest, JobFlags flags);</div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#ab737c25e0eaf4cc4b4afd5534bb3be68">symlink</a>(<span class="keyword">const</span> QString &amp;target, <span class="keyword">const</span> QUrl &amp;dest, JobFlags flags);</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div><div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a09f67ce3514cc15ed2adcf91704fa55e">chmod</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keywordtype">int</span> permissions);</div><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#adbaad16ba04eb57e2c028cf3f6d371a5">chown</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keyword">const</span> QString &amp;owner, <span class="keyword">const</span> QString &amp;group);</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#aca18cff68126de4f95b59320840577a6">setModificationTime</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keyword">const</span> QDateTime &amp;mtime);</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a8e3118adc0bb43d03ad15d67bc3d335c">copy</a>(<span class="keyword">const</span> QUrl &amp;src, <span class="keyword">const</span> QUrl &amp;dest, <span class="keywordtype">int</span> permissions, JobFlags flags);</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a10b98a2e1302f6f6ef46383802d8962a">del</a>(<span class="keyword">const</span> QUrl &amp;url, <span class="keywordtype">bool</span> isfile);</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setLinkDest(<span class="keyword">const</span> QUrl &amp;url, <span class="keyword">const</span> QString &amp;target);</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a516075f266ca73567a1512ab212b29d4">special</a>(<span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> multiGet(<span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> slave_status();</div><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> reparseConfiguration();</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div><div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordtype">int</span> connectTimeout();</div><div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordtype">int</span> proxyConnectTimeout();</div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">int</span> responseTimeout();</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordtype">int</span> readTimeout();</div><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div><div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="keywordtype">void</span> setTimeoutSpecialCommand(<span class="keywordtype">int</span> timeout, <span class="keyword">const</span> QByteArray &amp;data = QByteArray());</div><div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div><div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="comment">// Dispatching (internal)</span></div><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> dispatch(<span class="keywordtype">int</span> command, <span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div><div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> dispatchOpenCommand(<span class="keywordtype">int</span> command, <span class="keyword">const</span> QByteArray &amp;data);</div><div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;</div><div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="keywordtype">int</span> readData(QByteArray &amp;buffer);</div><div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div><div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="preprocessor">#ifndef KIOCORE_NO_DEPRECATED</span></div><div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    KIOCORE_DEPRECATED <span class="keywordtype">void</span> listEntry(<span class="keyword">const</span> <a class="code" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;_entry, <span class="keywordtype">bool</span> ready);</div><div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div><div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keywordtype">void</span> listEntry(<span class="keyword">const</span> <a class="code" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;entry);</div><div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div><div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordtype">void</span> connectSlave(<span class="keyword">const</span> QString &amp;path);</div><div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keywordtype">void</span> disconnectSlave();</div><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordtype">int</span> openPasswordDialogV2(<a class="code" href="classKIO_1_1AuthInfo.html">KIO::AuthInfo</a> &amp;info, <span class="keyword">const</span> QString &amp;errorMsg = QString());</div><div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    KIOCORE_DEPRECATED <span class="keywordtype">bool</span> openPasswordDialog(<a class="code" href="classKIO_1_1AuthInfo.html">KIO::AuthInfo</a> &amp;info, <span class="keyword">const</span> QString &amp;errorMsg = QString());</div><div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keywordtype">bool</span> checkCachedAuthentication(<a class="code" href="classKIO_1_1AuthInfo.html">AuthInfo</a> &amp;info);</div><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div><div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <span class="keywordtype">bool</span> cacheAuthentication(<span class="keyword">const</span> <a class="code" href="classKIO_1_1AuthInfo.html">AuthInfo</a> &amp;info);</div><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div><div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor">#ifndef KIOCORE_NO_DEPRECATED</span></div><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keywordtype">bool</span> requestNetwork(<span class="keyword">const</span> QString &amp;host = QString());</div><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;<span class="preprocessor">#ifndef KIOCORE_NO_DEPRECATED</span></div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keywordtype">void</span> dropNetwork(<span class="keyword">const</span> QString &amp;host = QString());</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;</div><div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordtype">int</span> waitForAnswer(<span class="keywordtype">int</span> expected1, <span class="keywordtype">int</span> expected2, QByteArray &amp;data, <span class="keywordtype">int</span> *pCmd = 0);</div><div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div><div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="keywordtype">void</span> sendMetaData();</div><div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div><div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    <span class="keywordtype">void</span> sendAndKeepMetaData();</div><div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div><div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    <span class="keywordtype">bool</span> wasKilled() <span class="keyword">const</span>;</div><div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;</div><div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordtype">void</span> setKillFlag();</div><div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div><div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    <span class="keywordtype">void</span> lookupHost(<span class="keyword">const</span> QString &amp;host);</div><div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div><div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    <span class="keywordtype">int</span> waitForHostInfo(QHostInfo &amp;info);</div><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div><div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00935"></a><span class="lineno"><a class="line" href="classKIO_1_1SlaveBase.html#a69c608c0690a6527e5a3736081171181">  935</a></span>&#160;    QByteArray <a class="code" href="classKIO_1_1SlaveBase.html#a69c608c0690a6527e5a3736081171181">mProtocol</a>;</div><div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <span class="comment">//Often used by TcpSlaveBase and unlikely to change</span></div><div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <a class="code" href="classKIO_1_1MetaData.html">MetaData</a> mOutgoingMetaData;</div><div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <a class="code" href="classKIO_1_1MetaData.html">MetaData</a> mIncomingMetaData;</div><div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div><div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="keyword">enum</span> VirtualFunctionId {</div><div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        AppConnectionMade = 0,</div><div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        GetFileSystemFreeSpace = 1   <span class="comment">// KF6 TODO: Turn into a virtual method</span></div><div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    };</div><div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> virtual_hook(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">void</span> *data);</div><div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div><div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="comment">// This helps catching missing tr()/i18n() calls in error().</span></div><div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    <span class="keywordtype">void</span> error(<span class="keywordtype">int</span> _errid, <span class="keyword">const</span> QByteArray &amp;_text);</div><div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    <span class="keywordtype">void</span> send(<span class="keywordtype">int</span> cmd, <span class="keyword">const</span> QByteArray &amp;arr = QByteArray());</div><div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    SlaveBasePrivate *<span class="keyword">const</span> d;</div><div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>SlaveBasePrivate;</div><div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;};</div><div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div><div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;KIOCORE_EXPORT QString <a class="code" href="namespaceKIO.html#a0cbb068f0f2725e6ea2d628b3c0e8dda">unsupportedActionErrorString</a>(<span class="keyword">const</span> QString &amp;protocol, <span class="keywordtype">int</span> cmd);</div><div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;}</div><div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div><div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespaceKIO_html_ae23f31bba47142a720d099c89399a25e"><div class="ttname"><a href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a></div><div class="ttdeci">qulonglong filesize_t</div><div class="ttdoc">64-bit file size </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00051">global.h:51</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a3c97af8f53a171a05780daa8e0af6f8f"><div class="ttname"><a href="namespaceKIO.html#a3c97af8f53a171a05780daa8e0af6f8f">KIO::listDir</a></div><div class="ttdeci">KIOCORE_EXPORT ListJob * listDir(const QUrl &amp;url, JobFlags flags=DefaultFlags, bool includeHidden=true)</div><div class="ttdoc">List the contents of url, which is assumed to be a directory. </div><div class="ttdef"><b>Definition:</b> <a href="listjob_8cpp_source.html#l00254">listjob.cpp:254</a></div></div>
+<div class="ttc" id="namespaceKIO_html_abb17978b4ca2ffacf7a1147576f255a5"><div class="ttname"><a href="namespaceKIO.html#abb17978b4ca2ffacf7a1147576f255a5">KIO::UDSEntryList</a></div><div class="ttdeci">QList&lt; UDSEntry &gt; UDSEntryList</div><div class="ttdoc">A directory listing is a list of UDSEntry instances. </div><div class="ttdef"><b>Definition:</b> <a href="udsentry_8h_source.html#l00313">udsentry.h:313</a></div></div>
+<div class="ttc" id="classKIO_1_1UDSEntry_html"><div class="ttname"><a href="classKIO_1_1UDSEntry.html">KIO::UDSEntry</a></div><div class="ttdoc">Universal Directory Service. </div><div class="ttdef"><b>Definition:</b> <a href="udsentry_8h_source.html#l00067">udsentry.h:67</a></div></div>
+<div class="ttc" id="namespaceKIO_html"><div class="ttname"><a href="namespaceKIO.html">KIO</a></div><div class="ttdoc">A namespace for KIO globals. </div><div class="ttdef"><b>Definition:</b> <a href="authinfo_8h_source.html#l00034">authinfo.h:34</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a0cbb068f0f2725e6ea2d628b3c0e8dda"><div class="ttname"><a href="namespaceKIO.html#a0cbb068f0f2725e6ea2d628b3c0e8dda">KIO::unsupportedActionErrorString</a></div><div class="ttdeci">KIOCORE_EXPORT QString unsupportedActionErrorString(const QString &amp;protocol, int cmd)</div><div class="ttdoc">Returns an appropriate error message if the given command cmd is an unsupported action (ERR_UNSUPPORT...</div><div class="ttdef"><b>Definition:</b> <a href="slavebase_8cpp_source.html#l00784">slavebase.cpp:784</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a516075f266ca73567a1512ab212b29d4"><div class="ttname"><a href="namespaceKIO.html#a516075f266ca73567a1512ab212b29d4">KIO::special</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * special(const QUrl &amp;url, const QByteArray &amp;data, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Execute any command that is specific to one slave (protocol). </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00379">simplejob.cpp:379</a></div></div>
+<div class="ttc" id="classKRemoteEncoding_html"><div class="ttname"><a href="classKRemoteEncoding.html">KRemoteEncoding</a></div><div class="ttdoc">Allows encoding and decoding properly remote filenames into Unicode. </div><div class="ttdef"><b>Definition:</b> <a href="kremoteencoding_8h_source.html#l00043">kremoteencoding.h:43</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a32a6b3708a9cbdbb0fbc490b289fa9fc"><div class="ttname"><a href="namespaceKIO.html#a32a6b3708a9cbdbb0fbc490b289fa9fc">KIO::mkdir</a></div><div class="ttdeci">KIOCORE_EXPORT MkdirJob * mkdir(const QUrl &amp;url, int permissions=-1)</div><div class="ttdoc">Creates a single directory. </div><div class="ttdef"><b>Definition:</b> <a href="mkdirjob_8cpp_source.html#l00119">mkdirjob.cpp:119</a></div></div>
+<div class="ttc" id="classKIO_1_1AuthInfo_html"><div class="ttname"><a href="classKIO_1_1AuthInfo.html">KIO::AuthInfo</a></div><div class="ttdoc">This class is intended to make it easier to prompt for, cache and retrieve authorization information...</div><div class="ttdef"><b>Definition:</b> <a href="authinfo_8h_source.html#l00059">authinfo.h:59</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a10b98a2e1302f6f6ef46383802d8962a"><div class="ttname"><a href="namespaceKIO.html#a10b98a2e1302f6f6ef46383802d8962a">KIO::del</a></div><div class="ttdeci">KIOCORE_EXPORT DeleteJob * del(const QUrl &amp;src, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Delete a file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="deletejob_8cpp_source.html#l00487">deletejob.cpp:487</a></div></div>
+<div class="ttc" id="classKIO_1_1MetaData_html"><div class="ttname"><a href="classKIO_1_1MetaData.html">KIO::MetaData</a></div><div class="ttdoc">MetaData is a simple map of key/value strings. </div><div class="ttdef"><b>Definition:</b> <a href="metadata_8h_source.html#l00032">metadata.h:32</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a8e3118adc0bb43d03ad15d67bc3d335c"><div class="ttname"><a href="namespaceKIO.html#a8e3118adc0bb43d03ad15d67bc3d335c">KIO::copy</a></div><div class="ttdeci">KIOCORE_EXPORT CopyJob * copy(const QUrl &amp;src, const QUrl &amp;dest, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Copy a file or directory src into the destination dest, which can be a file (including the final file...</div><div class="ttdef"><b>Definition:</b> <a href="copyjob_8cpp_source.html#l02136">copyjob.cpp:2136</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a399cbd217c9a897db18ea247fb289c84"><div class="ttname"><a href="namespaceKIO.html#a399cbd217c9a897db18ea247fb289c84">KIO::rename</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * rename(const QUrl &amp;src, const QUrl &amp;dest, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Rename a file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00365">simplejob.cpp:365</a></div></div>
+<div class="ttc" id="classKIO_1_1SlaveBase_html"><div class="ttname"><a href="classKIO_1_1SlaveBase.html">KIO::SlaveBase</a></div><div class="ttdoc">There are two classes that specifies the protocol between application (job) and kioslave. </div><div class="ttdef"><b>Definition:</b> <a href="slavebase_8h_source.html#l00050">slavebase.h:50</a></div></div>
+<div class="ttc" id="namespaceKIO_html_abdf502fa5febb734ccd584d8c3e4a325"><div class="ttname"><a href="namespaceKIO.html#abdf502fa5febb734ccd584d8c3e4a325">KIO::mimetype</a></div><div class="ttdeci">KIOCORE_EXPORT MimetypeJob * mimetype(const QUrl &amp;url, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Find mimetype for one file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="mimetypejob_8cpp_source.html#l00093">mimetypejob.cpp:93</a></div></div>
+<div class="ttc" id="namespaceKIO_html_aca18cff68126de4f95b59320840577a6"><div class="ttname"><a href="namespaceKIO.html#aca18cff68126de4f95b59320840577a6">KIO::setModificationTime</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * setModificationTime(const QUrl &amp;url, const QDateTime &amp;mtime)</div><div class="ttdoc">Changes the modification time on a file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00358">simplejob.cpp:358</a></div></div>
+<div class="ttc" id="namespaceKIO_html_ab737c25e0eaf4cc4b4afd5534bb3be68"><div class="ttname"><a href="namespaceKIO.html#ab737c25e0eaf4cc4b4afd5534bb3be68">KIO::symlink</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * symlink(const QString &amp;target, const QUrl &amp;dest, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Create or move a symlink. </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00372">simplejob.cpp:372</a></div></div>
+<div class="ttc" id="classKIO_1_1SlaveBase_html_a3f8ad655257948150ce78e225a0510bd"><div class="ttname"><a href="classKIO_1_1SlaveBase.html#a3f8ad655257948150ce78e225a0510bd">KIO::SlaveBase::ButtonCode</a></div><div class="ttdeci">ButtonCode</div><div class="ttdoc">Button codes. </div><div class="ttdef"><b>Definition:</b> <a href="slavebase_8h_source.html#l00256">slavebase.h:256</a></div></div>
+<div class="ttc" id="namespaceKIO_html_ae11751796f5d790d50b994e9574ca87f"><div class="ttname"><a href="namespaceKIO.html#ae11751796f5d790d50b994e9574ca87f">KIO::put</a></div><div class="ttdeci">KIOCORE_EXPORT TransferJob * put(const QUrl &amp;url, int permissions, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Put (means: write) </div><div class="ttdef"><b>Definition:</b> <a href="storedtransferjob_8cpp_source.html#l00460">storedtransferjob.cpp:460</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a09f67ce3514cc15ed2adcf91704fa55e"><div class="ttname"><a href="namespaceKIO.html#a09f67ce3514cc15ed2adcf91704fa55e">KIO::chmod</a></div><div class="ttdeci">KIOCORE_EXPORT ChmodJob * chmod(const KFileItemList &amp;lstItems, int permissions, int mask, const QString &amp;newOwner, const QString &amp;newGroup, bool recursive, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Creates a job that changes permissions/ownership on several files or directories, optionally recursiv...</div><div class="ttdef"><b>Definition:</b> <a href="chmodjob_8cpp_source.html#l00278">chmodjob.cpp:278</a></div></div>
+<div class="ttc" id="classKIO_1_1SlaveBase_html_a982d3a4e2dee02ce2d6e46d268dc9823"><div class="ttname"><a href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">KIO::SlaveBase::MessageBoxType</a></div><div class="ttdeci">MessageBoxType</div><div class="ttdoc">Type of message box. </div><div class="ttdef"><b>Definition:</b> <a href="slavebase_8h_source.html#l00251">slavebase.h:251</a></div></div>
+<div class="ttc" id="classKConfigGroup_html"><div class="ttname"><a href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a></div></div>
+<div class="ttc" id="namespaceKIO_html_adbaad16ba04eb57e2c028cf3f6d371a5"><div class="ttname"><a href="namespaceKIO.html#adbaad16ba04eb57e2c028cf3f6d371a5">KIO::chown</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * chown(const QUrl &amp;url, const QString &amp;owner, const QString &amp;group)</div><div class="ttdoc">Changes ownership and group of a file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00352">simplejob.cpp:352</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a539a9986a33af9a038cec7d57fadcda0"><div class="ttname"><a href="namespaceKIO.html#a539a9986a33af9a038cec7d57fadcda0">KIO::stat</a></div><div class="ttdeci">KIOCORE_EXPORT StatJob * stat(const QUrl &amp;url, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Find all details for one file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="statjob_8cpp_source.html#l00177">statjob.cpp:177</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a81a9e3a7d3a3f9f67426e7e386882312"><div class="ttname"><a href="namespaceKIO.html#a81a9e3a7d3a3f9f67426e7e386882312">KIO::open</a></div><div class="ttdeci">KIOCORE_EXPORT FileJob * open(const QUrl &amp;url, QIODevice::OpenMode mode)</div><div class="ttdoc">Open ( random access I/O ) </div><div class="ttdef"><b>Definition:</b> <a href="filejob_8cpp_source.html#l00218">filejob.cpp:218</a></div></div>
+<div class="ttc" id="classKIO_1_1SlaveBase_html_a69c608c0690a6527e5a3736081171181"><div class="ttname"><a href="classKIO_1_1SlaveBase.html#a69c608c0690a6527e5a3736081171181">KIO::SlaveBase::mProtocol</a></div><div class="ttdeci">QByteArray mProtocol</div><div class="ttdoc">Name of the protocol supported by this slave. </div><div class="ttdef"><b>Definition:</b> <a href="slavebase_8h_source.html#l00935">slavebase.h:935</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:57 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KTextWidgets - KReplaceDialog Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KTextWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KTextWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKFind.html">KFind</option>
+        
+        <option value="classKFindDialog.html">KFindDialog</option>
+        
+        <option value="classKPluralHandlingSpinBox.html">KPluralHandlingSpinBox</option>
+        
+        <option value="classKRegExpEditorInterface.html">KRegExpEditorInterface</option>
+        
+        <option value="classKReplace.html">KReplace</option>
+        
+        <option value="classKReplaceDialog.html">KReplaceDialog</option>
+        
+        <option value="classKRichTextEdit.html">KRichTextEdit</option>
+        
+        <option value="classKRichTextWidget.html">KRichTextWidget</option>
+        
+        <option value="classKTextEdit.html">KTextEdit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced text editing widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:montel@kde.org">Laurent Montel</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5TextWidgets)
+target_link_libraries(yourapp KF5::TextWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KTextWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ktextwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KTextWidgets on <a href="https://cgit.kde.org/ktextwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KTextWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KReplaceDialog">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKReplaceDialog-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KReplaceDialog Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kreplacedialog_8h_source.html">kreplacedialog.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KReplaceDialog:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKReplaceDialog__inherit__graph.png" border="0" usemap="#KReplaceDialog_inherit__map" alt="Inheritance graph"/></div>
+<map name="KReplaceDialog_inherit__map" id="KReplaceDialog_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac1bbf85bce9e1fc016fc9146e2de413d"><td class="memItemLeft" align="right" valign="top"><a id="ac1bbf85bce9e1fc016fc9146e2de413d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Options</b> { <b>PromptOnReplace</b> = 256,
+<b>BackReference</b> = 512
+ }</td></tr>
+<tr class="separator:ac1bbf85bce9e1fc016fc9146e2de413d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac7727c2bf5d46342209ed97a79135f43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#ac7727c2bf5d46342209ed97a79135f43">KReplaceDialog</a> (QWidget *parent=0, long <a class="el" href="classKReplaceDialog.html#a54d92211d2ecde9d806ca24ad4d881e2">options</a>=0, const QStringList &amp;findStrings=QStringList(), const QStringList &amp;replaceStrings=QStringList(), bool hasSelection=true)</td></tr>
+<tr class="separator:ac7727c2bf5d46342209ed97a79135f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f5246ff389c39d86417b6569ca1e16"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a87f5246ff389c39d86417b6569ca1e16">~KReplaceDialog</a> ()</td></tr>
+<tr class="separator:a87f5246ff389c39d86417b6569ca1e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d92211d2ecde9d806ca24ad4d881e2"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a54d92211d2ecde9d806ca24ad4d881e2">options</a> () const</td></tr>
+<tr class="separator:a54d92211d2ecde9d806ca24ad4d881e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da17a1c196d93e4e738f397d747e4d6"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a1da17a1c196d93e4e738f397d747e4d6">replaceExtension</a> () const</td></tr>
+<tr class="separator:a1da17a1c196d93e4e738f397d747e4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f3ed29de6923cac23603fb5cd2c13f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#aa5f3ed29de6923cac23603fb5cd2c13f">replacement</a> () const</td></tr>
+<tr class="separator:aa5f3ed29de6923cac23603fb5cd2c13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c8eccb5adf2078a81b6b47efe435f3"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a47c8eccb5adf2078a81b6b47efe435f3">replacementHistory</a> () const</td></tr>
+<tr class="separator:a47c8eccb5adf2078a81b6b47efe435f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700baff2041d9fc8db6b26310061ca94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a700baff2041d9fc8db6b26310061ca94">setOptions</a> (long <a class="el" href="classKReplaceDialog.html#a54d92211d2ecde9d806ca24ad4d881e2">options</a>)</td></tr>
+<tr class="separator:a700baff2041d9fc8db6b26310061ca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e502247f5cc4b3e24c6afc488e9aadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKReplaceDialog.html#a6e502247f5cc4b3e24c6afc488e9aadd">setReplacementHistory</a> (const QStringList &amp;history)</td></tr>
+<tr class="separator:a6e502247f5cc4b3e24c6afc488e9aadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKFindDialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKFindDialog')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKFindDialog.html">KFindDialog</a></td></tr>
+<tr class="memitem:a834b1c2620aa9047babce0d99e3e9ca5 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a834b1c2620aa9047babce0d99e3e9ca5">KFindDialog</a> (QWidget *parent=0, long <a class="el" href="classKFindDialog.html#aa270bac3d56f0a84094c448a540362db">options</a>=0, const QStringList &amp;findStrings=QStringList(), bool hasSelection=false, bool replaceDialog=false)</td></tr>
+<tr class="separator:a834b1c2620aa9047babce0d99e3e9ca5 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430c00801898700de804e01a5bbf081d inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a430c00801898700de804e01a5bbf081d">~KFindDialog</a> ()</td></tr>
+<tr class="separator:a430c00801898700de804e01a5bbf081d inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75f9546f608e1829aae9208e510587f inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#af75f9546f608e1829aae9208e510587f">findExtension</a> () const</td></tr>
+<tr class="separator:af75f9546f608e1829aae9208e510587f inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d293073696aabbb7f7e4b45c54f4f3 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a93d293073696aabbb7f7e4b45c54f4f3">findHistory</a> () const</td></tr>
+<tr class="separator:a93d293073696aabbb7f7e4b45c54f4f3 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa270bac3d56f0a84094c448a540362db inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#aa270bac3d56f0a84094c448a540362db">options</a> () const</td></tr>
+<tr class="separator:aa270bac3d56f0a84094c448a540362db inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a39d56d73807e64e55645a5900e8c70 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a9a39d56d73807e64e55645a5900e8c70">pattern</a> () const</td></tr>
+<tr class="separator:a9a39d56d73807e64e55645a5900e8c70 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87936c24c1a879a9cfc58c260d0be0bc inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a87936c24c1a879a9cfc58c260d0be0bc">setFindHistory</a> (const QStringList &amp;history)</td></tr>
+<tr class="separator:a87936c24c1a879a9cfc58c260d0be0bc inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be903cddc210f1d687f47b345ba645a inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a6be903cddc210f1d687f47b345ba645a">setHasCursor</a> (bool hasCursor)</td></tr>
+<tr class="separator:a6be903cddc210f1d687f47b345ba645a inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90691a0c749be71352ed4dd6a08ca63 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#aa90691a0c749be71352ed4dd6a08ca63">setHasSelection</a> (bool hasSelection)</td></tr>
+<tr class="separator:aa90691a0c749be71352ed4dd6a08ca63 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae512813bd5ec4da5bbb495e81edec9fb inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#ae512813bd5ec4da5bbb495e81edec9fb">setOptions</a> (long <a class="el" href="classKFindDialog.html#aa270bac3d56f0a84094c448a540362db">options</a>)</td></tr>
+<tr class="separator:ae512813bd5ec4da5bbb495e81edec9fb inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfe284726db6b7309281472ddaa01b9 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#aecfe284726db6b7309281472ddaa01b9">setPattern</a> (const QString &amp;<a class="el" href="classKFindDialog.html#a9a39d56d73807e64e55645a5900e8c70">pattern</a>)</td></tr>
+<tr class="separator:aecfe284726db6b7309281472ddaa01b9 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b113ace4556b15871844103f9acc1a inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a47b113ace4556b15871844103f9acc1a">setSupportsBackwardsFind</a> (bool supports)</td></tr>
+<tr class="separator:a47b113ace4556b15871844103f9acc1a inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87539c237ffabe9ecd5874d2c3932c8c inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a87539c237ffabe9ecd5874d2c3932c8c">setSupportsCaseSensitiveFind</a> (bool supports)</td></tr>
+<tr class="separator:a87539c237ffabe9ecd5874d2c3932c8c inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11afefb57b18afcd0d7d1a6a0369349 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#aa11afefb57b18afcd0d7d1a6a0369349">setSupportsRegularExpressionFind</a> (bool supports)</td></tr>
+<tr class="separator:aa11afefb57b18afcd0d7d1a6a0369349 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789152a36772e4619785038adc456730 inherit pub_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a789152a36772e4619785038adc456730">setSupportsWholeWordsFind</a> (bool supports)</td></tr>
+<tr class="separator:a789152a36772e4619785038adc456730 inherit pub_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adebb8daf494055045750f9ad943f4404"><td class="memItemLeft" align="right" valign="top"><a id="adebb8daf494055045750f9ad943f4404"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *) override</td></tr>
+<tr class="separator:adebb8daf494055045750f9ad943f4404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKFindDialog"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKFindDialog')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKFindDialog.html">KFindDialog</a></td></tr>
+<tr class="memitem:af3a3b059b65626bb98532ea0aaa2ad84 inherit pro_methods_classKFindDialog"><td class="memItemLeft" align="right" valign="top"><a id="af3a3b059b65626bb98532ea0aaa2ad84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *) override</td></tr>
+<tr class="separator:af3a3b059b65626bb98532ea0aaa2ad84 inherit pro_methods_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header signals_classKFindDialog"><td colspan="2" onclick="javascript:toggleInherit('signals_classKFindDialog')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKFindDialog.html">KFindDialog</a></td></tr>
+<tr class="memitem:a9b65faefd3477dd0483e5c52cfa1b762 inherit signals_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a9b65faefd3477dd0483e5c52cfa1b762">cancelClicked</a> ()</td></tr>
+<tr class="separator:a9b65faefd3477dd0483e5c52cfa1b762 inherit signals_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca632c2b382655b1b92017d248aa41fd inherit signals_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#aca632c2b382655b1b92017d248aa41fd">okClicked</a> ()</td></tr>
+<tr class="separator:aca632c2b382655b1b92017d248aa41fd inherit signals_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39986675daab81423b73ebb1bbb0fcb2 inherit signals_classKFindDialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFindDialog.html#a39986675daab81423b73ebb1bbb0fcb2">optionsChanged</a> ()</td></tr>
+<tr class="separator:a39986675daab81423b73ebb1bbb0fcb2 inherit signals_classKFindDialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A generic "replace" dialog. </p>
+<dl class="section author"><dt>Author</dt><dd>S.R.Haque <a href="#" onclick="location.href='mai'+'lto:'+'srh'+'aq'+'ue@'+'ie'+'e.o'+'rg'; return false;">srhaq<span style="display: none;">.nosp@m.</span>ue@i<span style="display: none;">.nosp@m.</span>ee.or<span style="display: none;">.nosp@m.</span>g</a></dd></dl>
+<p><b>Detail:</b> </p>
+<p>This widget inherits from <a class="el" href="classKFindDialog.html" title="A generic &quot;find&quot; dialog. ">KFindDialog</a> and implements the following additional functionalities: a replacement string object and an area for a user-defined widget to extend the dialog.</p>
+<p><b>Example:</b> </p>
+<p>To use the basic replace dialog:</p>
+<div class="fragment"></div><!-- fragment --><p>To use your own extensions:</p>
+<div class="fragment"></div><!-- fragment --><div class="image">
+<img src="kreplacedialog.png" alt="kreplacedialog.png"/>
+<div class="caption">
+KDE Replace Dialog</div></div>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8h_source.html#l00055">55</a> of file <a class="el" href="kreplacedialog_8h_source.html">kreplacedialog.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac7727c2bf5d46342209ed97a79135f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7727c2bf5d46342209ed97a79135f43">&#9670;&nbsp;</a></span>KReplaceDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KReplaceDialog::KReplaceDialog </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>options</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>findStrings</em> = <code>QStringList()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>replaceStrings</em> = <code>QStringList()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasSelection</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a replace dialog.read-only or rather select-only combo box with a parent object and a name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent object of this widget </td></tr>
+    <tr><td class="paramname">options</td><td>A bitfield of the Options to be enabled. </td></tr>
+    <tr><td class="paramname">findStrings</td><td>A QStringList to insert in the combo box of text to find </td></tr>
+    <tr><td class="paramname">replaceStrings</td><td>A QStringList to insert in the combo box of text to replace with </td></tr>
+    <tr><td class="paramname">hasSelection</td><td>Whether a selection exists </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00057">57</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a87f5246ff389c39d86417b6569ca1e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f5246ff389c39d86417b6569ca1e16">&#9670;&nbsp;</a></span>~KReplaceDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KReplaceDialog::~KReplaceDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00065">65</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a54d92211d2ecde9d806ca24ad4d881e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d92211d2ecde9d806ca24ad4d881e2">&#9670;&nbsp;</a></span>options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long KReplaceDialog::options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the state of the options. </p>
+<p>Disabled options may be returned in an indeterminate state.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKReplaceDialog.html#a700baff2041d9fc8db6b26310061ca94" title="Set the options which are enabled. ">setOptions</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00084">84</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1da17a1c196d93e4e738f397d747e4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da17a1c196d93e4e738f397d747e4d6">&#9670;&nbsp;</a></span>replaceExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * KReplaceDialog::replaceExtension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an empty widget which the user may fill with additional UI elements as required. </p>
+<p>The widget occupies the width of the dialog, and is positioned immediately the regular expression support widgets for the replacement string. </p>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00098">98</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5f3ed29de6923cac23603fb5cd2c13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f3ed29de6923cac23603fb5cd2c13f">&#9670;&nbsp;</a></span>replacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KReplaceDialog::replacement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the replacement string. </p>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00108">108</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47c8eccb5adf2078a81b6b47efe435f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c8eccb5adf2078a81b6b47efe435f3">&#9670;&nbsp;</a></span>replacementHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KReplaceDialog::replacementHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the list of history items. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKReplaceDialog.html#a6e502247f5cc4b3e24c6afc488e9aadd" title="Provide the list of strings to be displayed as the history of replacement strings. ">setReplacementHistory</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00113">113</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a700baff2041d9fc8db6b26310061ca94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700baff2041d9fc8db6b26310061ca94">&#9670;&nbsp;</a></span>setOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KReplaceDialog::setOptions </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the options which are enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The setting of the Options. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00123">123</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e502247f5cc4b3e24c6afc488e9aadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e502247f5cc4b3e24c6afc488e9aadd">&#9670;&nbsp;</a></span>setReplacementHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KReplaceDialog::setReplacementHistory </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>history</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provide the list of <code>strings</code> to be displayed as the history of replacement strings. </p>
+<p><code>strings</code> might get truncated if it is too long.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">history</td><td>The replacement history. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKReplaceDialog.html#a47c8eccb5adf2078a81b6b47efe435f3" title="Returns the list of history items. ">replacementHistory</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kreplacedialog_8cpp_source.html#l00130">130</a> of file <a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kreplacedialog_8h_source.html">kreplacedialog.h</a></li>
+<li><a class="el" href="kreplacedialog_8cpp_source.html">kreplacedialog.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:01 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

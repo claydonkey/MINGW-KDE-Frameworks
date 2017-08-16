@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCoreAddons - KSharedDataCache Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCoreAddons</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCoreAddons"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAboutData.html">KAboutData</option>
+        
+        <option value="classKAboutLicense.html">KAboutLicense</option>
+        
+        <option value="classKAboutPerson.html">KAboutPerson</option>
+        
+        <option value="classKAutoSaveFile.html">KAutoSaveFile</option>
+        
+        <option value="classKCharMacroExpander.html">KCharMacroExpander</option>
+        
+        <option value="classKCompositeJob.html">KCompositeJob</option>
+        
+        <option value="classKdelibs4ConfigMigrator.html">Kdelibs4ConfigMigrator</option>
+        
+        <option value="classKdelibs4Migration.html">Kdelibs4Migration</option>
+        
+        <option value="classKDirWatch.html">KDirWatch</option>
+        
+        <option value="classKFormat.html">KFormat</option>
+        
+        <option value="classKJob.html">KJob</option>
+        
+        <option value="classKJobTrackerInterface.html">KJobTrackerInterface</option>
+        
+        <option value="classKJobUiDelegate.html">KJobUiDelegate</option>
+        
+        <option value="classKMacroExpanderBase.html">KMacroExpanderBase</option>
+        
+        <option value="classKMessageHandler.html">KMessageHandler</option>
+        
+        <option value="classKPluginFactory.html">KPluginFactory</option>
+        
+        <option value="classKPluginLoader.html">KPluginLoader</option>
+        
+        <option value="classKPluginMetaData.html">KPluginMetaData</option>
+        
+        <option value="classKPluginName.html">KPluginName</option>
+        
+        <option value="classKProcess.html">KProcess</option>
+        
+        <option value="classKRandomSequence.html">KRandomSequence</option>
+        
+        <option value="classKSharedDataCache.html">KSharedDataCache</option>
+        
+        <option value="classKTextToHTMLEmoticonsInterface.html">KTextToHTMLEmoticonsInterface</option>
+        
+        <option value="classKUser.html">KUser</option>
+        
+        <option value="classKUserGroup.html">KUserGroup</option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_GID ></option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_UID ></option>
+        
+        <option value="classKWordMacroExpander.html">KWordMacroExpander</option>
+        
+        <option value="namespaceKMacroExpander.html">KMacroExpander</option>
+        
+        <option value="namespaceKMessage.html">KMessage</option>
+        
+        <option value="namespaceKRandom.html">KRandom</option>
+        
+        <option value="namespaceKShell.html">KShell</option>
+        
+        <option value="namespaceKStringHandler.html">KStringHandler</option>
+        
+        <option value="namespaceKTextToHTML.html">KTextToHTML</option>
+        
+        <option value="namespaceKUrlMimeData.html">KUrlMimeData</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Addons to QtCore</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mpyne@kde.org">Michael Pyne</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5CoreAddons)
+target_link_libraries(yourapp KF5::CoreAddons)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCoreAddons </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcoreaddons-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCoreAddons on <a href="https://cgit.kde.org/kcoreaddons-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCoreAddons </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KSharedDataCache">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classKSharedDataCache-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KSharedDataCache Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kshareddatacache_8h_source.html">kshareddatacache.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4519a2fa9a2ad73b5a105ae5a95fc11f"><td class="memItemLeft" align="right" valign="top"><a id="a4519a2fa9a2ad73b5a105ae5a95fc11f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EvictionPolicy</b> { <b>NoEvictionPreference</b> = 0,
+<b>EvictLeastRecentlyUsed</b>,
+<b>EvictLeastOftenUsed</b>,
+<b>EvictOldest</b>
+ }</td></tr>
+<tr class="separator:a4519a2fa9a2ad73b5a105ae5a95fc11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9bf6b590d48889bb2dd3116cce0be3a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a9bf6b590d48889bb2dd3116cce0be3a9">KSharedDataCache</a> (const QString &amp;cacheName, unsigned defaultCacheSize, unsigned expectedItemSize=0)</td></tr>
+<tr class="separator:a9bf6b590d48889bb2dd3116cce0be3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57466d4deb2939f69da2dccdd4a6267e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a57466d4deb2939f69da2dccdd4a6267e">clear</a> ()</td></tr>
+<tr class="separator:a57466d4deb2939f69da2dccdd4a6267e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6666c9437ef076af6345d54faa3d13a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#ae6666c9437ef076af6345d54faa3d13a">contains</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:ae6666c9437ef076af6345d54faa3d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea19f382f0c3fcb465140ac102871040"><td class="memItemLeft" align="right" valign="top">EvictionPolicy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#aea19f382f0c3fcb465140ac102871040">evictionPolicy</a> () const</td></tr>
+<tr class="separator:aea19f382f0c3fcb465140ac102871040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed74e53a0eccdd1fd111d70e4e98ac91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#aed74e53a0eccdd1fd111d70e4e98ac91">find</a> (const QString &amp;key, QByteArray *destination) const</td></tr>
+<tr class="separator:aed74e53a0eccdd1fd111d70e4e98ac91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53fb99cc1ac1d9221a2e2498a44cb622"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a53fb99cc1ac1d9221a2e2498a44cb622">freeSize</a> () const</td></tr>
+<tr class="separator:a53fb99cc1ac1d9221a2e2498a44cb622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac655ec627e842f24ce6148e12c57c477"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#ac655ec627e842f24ce6148e12c57c477">insert</a> (const QString &amp;key, const QByteArray &amp;data)</td></tr>
+<tr class="separator:ac655ec627e842f24ce6148e12c57c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917ba952af794cb09d08a86e87083e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a917ba952af794cb09d08a86e87083e2d">setEvictionPolicy</a> (EvictionPolicy newPolicy)</td></tr>
+<tr class="separator:a917ba952af794cb09d08a86e87083e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa4c736c28affcd97dc7a8bdc2193be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#aeaa4c736c28affcd97dc7a8bdc2193be">setTimestamp</a> (unsigned newTimestamp)</td></tr>
+<tr class="separator:aeaa4c736c28affcd97dc7a8bdc2193be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1435451970770347c5e5845b283579a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#ad1435451970770347c5e5845b283579a">timestamp</a> () const</td></tr>
+<tr class="separator:ad1435451970770347c5e5845b283579a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e74368247c1b0cbad14119db423231"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a65e74368247c1b0cbad14119db423231">totalSize</a> () const</td></tr>
+<tr class="separator:a65e74368247c1b0cbad14119db423231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a55d4d21f16e1cee23b93fb1278b66ee4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedDataCache.html#a55d4d21f16e1cee23b93fb1278b66ee4">deleteCache</a> (const QString &amp;cacheName)</td></tr>
+<tr class="separator:a55d4d21f16e1cee23b93fb1278b66ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple data cache which uses shared memory to quickly access data stored on disk. </p>
+<p>This class is meant to be used with KImageCache and similar classes but can be used directly if used with care.</p>
+<p>Example usage:</p>
+<div class="fragment"><div class="line">QString loadTranslatedDocument(<a class="code" href="classKSharedDataCache.html">KSharedDataCache</a> *cache) {</div><div class="line"></div><div class="line">  <span class="comment">// Find the data</span></div><div class="line">  QByteArray document;</div><div class="line"></div><div class="line">  <span class="keywordflow">if</span> (!cache-&gt;<a class="code" href="classKSharedDataCache.html#aed74e53a0eccdd1fd111d70e4e98ac91">find</a>(<span class="stringliteral">&quot;translated-doc-template&quot;</span>, &amp;document)) {</div><div class="line">    <span class="comment">// Entry is not cached, manually generate and then add to cache.</span></div><div class="line">    document = translateDocument(globalTemplate());</div><div class="line">    cache-&gt;<a class="code" href="classKSharedDataCache.html#ac655ec627e842f24ce6148e12c57c477">insert</a>(document);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Don&#39;t forget to encode/decode properly</span></div><div class="line">  <span class="keywordflow">return</span> QString::fromUtf8(document);</div><div class="line">}</div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Michael Pyne <a href="#" onclick="location.href='mai'+'lto:'+'mpy'+'ne'+'@kd'+'e.'+'org'; return false;">mpyne<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>KImageCache </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8h_source.html#l00058">58</a> of file <a class="el" href="kshareddatacache_8h_source.html">kshareddatacache.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9bf6b590d48889bb2dd3116cce0be3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf6b590d48889bb2dd3116cce0be3a9">&#9670;&nbsp;</a></span>KSharedDataCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSharedDataCache::KSharedDataCache </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>cacheName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>defaultCacheSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>expectedItemSize</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attaches to a shared cache, creating it if necessary. </p>
+<p>If supported, this data cache will be shared across all processes using this cache (with subsequent memory savings). If shared memory is unsupported or a failure occurs, caching will still be supported, but only in the same process, and only using the same <a class="el" href="classKSharedDataCache.html" title="A simple data cache which uses shared memory to quickly access data stored on disk. ">KSharedDataCache</a> object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cacheName</td><td>Name of the cache to use/share. </td></tr>
+    <tr><td class="paramname">defaultCacheSize</td><td>Amount of data to be able to store, in bytes. The actual size will be slightly larger on disk due to accounting overhead. If the cache already existed then it <em>will not</em> be resized. For this reason you should specify some reasonable size. </td></tr>
+    <tr><td class="paramname">expectedItemSize</td><td>The average size of an item that would be stored in the cache, in bytes. Choosing an average size of zero bytes causes <a class="el" href="classKSharedDataCache.html" title="A simple data cache which uses shared memory to quickly access data stored on disk. ">KSharedDataCache</a> to use whatever it feels is the best default for the system. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01378">1378</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57466d4deb2939f69da2dccdd4a6267e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57466d4deb2939f69da2dccdd4a6267e">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSharedDataCache::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all entries from the cache. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01618">1618</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6666c9437ef076af6345d54faa3d13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6666c9437ef076af6345d54faa3d13a">&#9670;&nbsp;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSharedDataCache::contains </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the cache currently contains the image for the given filename. </p>
+<p>NOTE: Calling this function is threadsafe, but it is in general not possible to guarantee the image stays cached immediately afterwards, so if you need the result use <a class="el" href="classKSharedDataCache.html#aed74e53a0eccdd1fd111d70e4e98ac91" title="Returns the data in the cache named by key (even if it&#39;s some other process&#39;s data named with the sam...">find()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01631">1631</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a55d4d21f16e1cee23b93fb1278b66ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d4d21f16e1cee23b93fb1278b66ee4">&#9670;&nbsp;</a></span>deleteCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSharedDataCache::deleteCache </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>cacheName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the underlying file from the cache. </p>
+<p>Note that this is <em>all</em> that this function does. The shared memory segment is still attached and will still contain all the data until all processes currently attached remove the mapping.</p>
+<p>In order to remove the data see <a class="el" href="classKSharedDataCache.html#a57466d4deb2939f69da2dccdd4a6267e" title="Removes all entries from the cache. ">clear()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01646">1646</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea19f382f0c3fcb465140ac102871040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea19f382f0c3fcb465140ac102871040">&#9670;&nbsp;</a></span>evictionPolicy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSharedDataCache::EvictionPolicy KSharedDataCache::evictionPolicy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The removal policy in use by the shared cache. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>EvictionPolicy </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01687">1687</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed74e53a0eccdd1fd111d70e4e98ac91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed74e53a0eccdd1fd111d70e4e98ac91">&#9670;&nbsp;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSharedDataCache::find </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the data in the cache named by <code>key</code> (even if it's some other process's data named with the same key!), stored in <code>destination</code>. </p>
+<p>If there is no entry named by <code>key</code> then <code>destination</code> is left unchanged. The return value is used to tell what happened.</p>
+<p>If you simply want to verify whether an entry is present in the cache then see <a class="el" href="classKSharedDataCache.html#ae6666c9437ef076af6345d54faa3d13a" title="Returns true if the cache currently contains the image for the given filename. ">contains()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to find in the cache. </td></tr>
+    <tr><td class="paramname">destination</td><td>Is set to the value of <code>key</code> in the cache if <code>key</code> is present, left unchanged otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>key</code> was present in the cache (<code>destination</code> will also be updated), false if <code>key</code> was not present (<code>destination</code> will be unchanged). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01575">1575</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53fb99cc1ac1d9221a2e2498a44cb622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fb99cc1ac1d9221a2e2498a44cb622">&#9670;&nbsp;</a></span>freeSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned KSharedDataCache::freeSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the amount of free space in the cache, in bytes. </p>
+<p>Due to implementation details it is possible to still not be able to fit an entry in the cache at any given time even if it is smaller than the amount of space remaining. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01672">1672</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac655ec627e842f24ce6148e12c57c477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac655ec627e842f24ce6148e12c57c477">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSharedDataCache::insert </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to insert the entry <code>data</code> into the shared cache, named by <code>key</code>, and returns true only if successful. </p>
+<p>Note that even if the insert was successful, that the newly added entry may be evicted by other processes contending for the cache. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01422">1422</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a917ba952af794cb09d08a86e87083e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917ba952af794cb09d08a86e87083e2d">&#9670;&nbsp;</a></span>setEvictionPolicy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSharedDataCache::setEvictionPolicy </td>
+          <td>(</td>
+          <td class="paramtype">KSharedDataCache::EvictionPolicy&#160;</td>
+          <td class="paramname"><em>newPolicy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the entry removal policy for the shared cache to <code>newPolicy</code>. </p>
+<p>The default is EvictionPolicy::NoEvictionPreference.</p>
+<dl class="section see"><dt>See also</dt><dd>EvictionPolicy </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01696">1696</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeaa4c736c28affcd97dc7a8bdc2193be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa4c736c28affcd97dc7a8bdc2193be">&#9670;&nbsp;</a></span>setTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSharedDataCache::setTimestamp </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>newTimestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the shared timestamp of the cache. </p>
+<p>Timestamping is supported to allow applications to more effectively "version" the data stored in the cache. However, the timestamp is shared with <em>all</em> applications using the cache so you should always be prepared for invalid timestamps.</p>
+<p>When the cache is first created (note that this is different from attaching to an existing shared cache on disk), the cache timestamp is initialized to the time returned by <code>time(2)</code>. <a class="el" href="classKSharedDataCache.html" title="A simple data cache which uses shared memory to quickly access data stored on disk. ">KSharedDataCache</a> will not update the timestamp again, it is only updated through this method.</p>
+<p>Example: </p><div class="fragment"><div class="line">QImage loadCachedImage(<span class="keyword">const</span> QString &amp;key)</div><div class="line">{</div><div class="line">    <span class="comment">// Check timestamp</span></div><div class="line">    <span class="keywordflow">if</span> (m_sharedCache-&gt;timestamp() &lt; m_currentThemeTimestamp) {</div><div class="line">        <span class="comment">// Cache is stale, clean it out.</span></div><div class="line">        m_sharedCache-&gt;clear();</div><div class="line">        m_sharedCache-&gt;setTimestamp(m_currentThemeTimestamp);</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Check cache and load image as usual...</span></div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newTimestamp</td><td>The new timestamp to mark the shared cache with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKSharedDataCache.html#ad1435451970770347c5e5845b283579a">timestamp()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.6 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01712">1712</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad1435451970770347c5e5845b283579a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1435451970770347c5e5845b283579a">&#9670;&nbsp;</a></span>timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned KSharedDataCache::timestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The shared timestamp of the cache. The interpretation of the timestamp returned is up to the application. <a class="el" href="classKSharedDataCache.html" title="A simple data cache which uses shared memory to quickly access data stored on disk. ">KSharedDataCache</a> will initialize the timestamp to the time returned by <code>time(2)</code> on cache creation, but <a class="el" href="classKSharedDataCache.html" title="A simple data cache which uses shared memory to quickly access data stored on disk. ">KSharedDataCache</a> will not touch the timestamp again. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKSharedDataCache.html#aeaa4c736c28affcd97dc7a8bdc2193be" title="Sets the shared timestamp of the cache. ">setTimestamp()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.6 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01703">1703</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a65e74368247c1b0cbad14119db423231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e74368247c1b0cbad14119db423231">&#9670;&nbsp;</a></span>totalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned KSharedDataCache::totalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the usable cache size in bytes. </p>
+<p>The actual amount of memory used will be slightly larger than this to account for required accounting overhead. </p>
+
+<p class="definition">Definition at line <a class="el" href="kshareddatacache_8cpp_source.html#l01657">1657</a> of file <a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kshareddatacache_8h_source.html">kshareddatacache.h</a></li>
+<li><a class="el" href="kshareddatacache_8cpp_source.html">kshareddatacache.cpp</a></li>
+<li><a class="el" href="kshareddatacache__win_8cpp_source.html">kshareddatacache_win.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:31 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

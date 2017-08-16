@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KConfig - KConfigBase Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KConfig</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KConfig"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemBool.html">KCoreConfigSkeleton::ItemBool</option>
+        
+        <option value="classKConfigSkeleton_1_1ItemColor.html">KConfigSkeleton::ItemColor</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemDateTime.html">KCoreConfigSkeleton::ItemDateTime</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemDouble.html">KCoreConfigSkeleton::ItemDouble</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemEnum.html">KCoreConfigSkeleton::ItemEnum</option>
+        
+        <option value="classKConfigSkeleton_1_1ItemFont.html">KConfigSkeleton::ItemFont</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemInt.html">KCoreConfigSkeleton::ItemInt</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemIntList.html">KCoreConfigSkeleton::ItemIntList</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemLongLong.html">KCoreConfigSkeleton::ItemLongLong</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemPassword.html">KCoreConfigSkeleton::ItemPassword</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemPath.html">KCoreConfigSkeleton::ItemPath</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemPathList.html">KCoreConfigSkeleton::ItemPathList</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemPoint.html">KCoreConfigSkeleton::ItemPoint</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemProperty.html">KCoreConfigSkeleton::ItemProperty</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemRect.html">KCoreConfigSkeleton::ItemRect</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemSize.html">KCoreConfigSkeleton::ItemSize</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemString.html">KCoreConfigSkeleton::ItemString</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemStringList.html">KCoreConfigSkeleton::ItemStringList</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemUInt.html">KCoreConfigSkeleton::ItemUInt</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemULongLong.html">KCoreConfigSkeleton::ItemULongLong</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemUrl.html">KCoreConfigSkeleton::ItemUrl</option>
+        
+        <option value="classKCoreConfigSkeleton_1_1ItemUrlList.html">KCoreConfigSkeleton::ItemUrlList</option>
+        
+        <option value="classKConfig.html">KConfig</option>
+        
+        <option value="classKConfigBackend.html">KConfigBackend</option>
+        
+        <option value="classKConfigBase.html">KConfigBase</option>
+        
+        <option value="classKConfigGroup.html">KConfigGroup</option>
+        
+        <option value="classKConfigLoader.html">KConfigLoader</option>
+        
+        <option value="classKConfigSkeleton.html">KConfigSkeleton</option>
+        
+        <option value="classKConfigSkeletonChangeNotifyingItem.html">KConfigSkeletonChangeNotifyingItem</option>
+        
+        <option value="classKConfigSkeletonItem.html">KConfigSkeletonItem</option>
+        
+        <option value="classKCoreConfigSkeleton.html">KCoreConfigSkeleton</option>
+        
+        <option value="classKDesktopFile.html">KDesktopFile</option>
+        
+        <option value="classKEMailSettings.html">KEMailSettings</option>
+        
+        <option value="classKEntryMap.html">KEntryMap</option>
+        
+        <option value="classKSharedConfig.html">KSharedConfig</option>
+        
+        <option value="namespaceKAuthorized.html">KAuthorized</option>
+        
+        <option value="namespaceKConfigGui.html">KConfigGui</option>
+        
+        <option value="namespaceKStandardShortcut.html">KStandardShortcut</option>
+        
+        <option value="namespaceKWindowConfig.html">KWindowConfig</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Configuration system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Config)
+target_link_libraries(yourapp KF5::ConfigCore KF5::ConfigGui)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KConfigCore KConfigGui </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kconfig-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KConfig on <a href="https://cgit.kde.org/kconfig-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KConfig </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KConfigBase">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKConfigBase-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KConfigBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kconfigbase_8h_source.html">KConfigBase</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KConfigBase:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKConfigBase__inherit__graph.png" border="0" usemap="#KConfigBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="KConfigBase_inherit__map" id="KConfigBase_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a86802f1591f5e30e012f99abb56c7edd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a86802f1591f5e30e012f99abb56c7edd">AccessMode</a> { <b>NoAccess</b>,
+<b>ReadOnly</b>,
+<b>ReadWrite</b>
+ }</td></tr>
+<tr class="separator:a86802f1591f5e30e012f99abb56c7edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748289f31b54c48d2ef03d66546718aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aa">WriteConfigFlag</a> { <a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaa3e28cc02cc1ac896cd9b12f4797adef9">Persistent</a> = 0x01,
+<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaa5fc9519c18ccdbfcd106d32fd461365d">Global</a> = 0x02,
+<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaaa118a385b8191369484b54047d0a8d98">Localized</a> = 0x04,
+<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a> = Persistent
+ }</td></tr>
+<tr class="separator:a748289f31b54c48d2ef03d66546718aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9d5f14f757f09817f3aa1abcd3b5400d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a9d5f14f757f09817f3aa1abcd3b5400d">~KConfigBase</a> ()</td></tr>
+<tr class="separator:a9d5f14f757f09817f3aa1abcd3b5400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabeafa7717ddf6044b10ce77f0e6eecd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKConfigBase.html#a86802f1591f5e30e012f99abb56c7edd">AccessMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#aabeafa7717ddf6044b10ce77f0e6eecd">accessMode</a> () const =0</td></tr>
+<tr class="separator:aabeafa7717ddf6044b10ce77f0e6eecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6251665543e7b49c9592aafb59c920f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a6251665543e7b49c9592aafb59c920f5">deleteGroup</a> (const QByteArray &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>, WriteConfigFlags flags=<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a>)</td></tr>
+<tr class="separator:a6251665543e7b49c9592aafb59c920f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e086625970ef75e9675ac4a59d6f78"><td class="memItemLeft" align="right" valign="top"><a id="a47e086625970ef75e9675ac4a59d6f78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGroup</b> (const QString &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>, WriteConfigFlags flags=<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a>)</td></tr>
+<tr class="separator:a47e086625970ef75e9675ac4a59d6f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08ca98b4f415282138a5d3fa20541ba"><td class="memItemLeft" align="right" valign="top"><a id="ab08ca98b4f415282138a5d3fa20541ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGroup</b> (const char *<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>, WriteConfigFlags flags=<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a>)</td></tr>
+<tr class="separator:ab08ca98b4f415282138a5d3fa20541ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb86fb82d1aba5b76e3b2fe76dbfb02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a> (const QByteArray &amp;group)</td></tr>
+<tr class="separator:afbb86fb82d1aba5b76e3b2fe76dbfb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07737ba76898263ef55da16d0a5a310"><td class="memItemLeft" align="right" valign="top"><a id="ad07737ba76898263ef55da16d0a5a310"></a>
+<a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (const QString &amp;group)</td></tr>
+<tr class="separator:ad07737ba76898263ef55da16d0a5a310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5365e265bf51159e42feaf9a38b825e2"><td class="memItemLeft" align="right" valign="top"><a id="a5365e265bf51159e42feaf9a38b825e2"></a>
+<a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (const char *group)</td></tr>
+<tr class="separator:a5365e265bf51159e42feaf9a38b825e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf64282fc205398c3c8e6c9705938c7a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#acf64282fc205398c3c8e6c9705938c7a">group</a> (const QByteArray &amp;group) const</td></tr>
+<tr class="separator:acf64282fc205398c3c8e6c9705938c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fdf506b70b8ec1ab392d47adc66615"><td class="memItemLeft" align="right" valign="top"><a id="ab3fdf506b70b8ec1ab392d47adc66615"></a>
+const <a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (const QString &amp;group) const</td></tr>
+<tr class="separator:ab3fdf506b70b8ec1ab392d47adc66615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1950a109d7708248fe6174ec9759976"><td class="memItemLeft" align="right" valign="top"><a id="af1950a109d7708248fe6174ec9759976"></a>
+const <a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (const char *group) const</td></tr>
+<tr class="separator:af1950a109d7708248fe6174ec9759976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c2e6795c7bee2843c6e1c130da6496"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a20c2e6795c7bee2843c6e1c130da6496">groupList</a> () const =0</td></tr>
+<tr class="separator:a20c2e6795c7bee2843c6e1c130da6496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8581bb5f5d885235eb27261c7be70f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#ac8581bb5f5d885235eb27261c7be70f4">hasGroup</a> (const QString &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>) const</td></tr>
+<tr class="separator:ac8581bb5f5d885235eb27261c7be70f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa5f85fd266292afe51fab21d3669f5"><td class="memItemLeft" align="right" valign="top"><a id="a5fa5f85fd266292afe51fab21d3669f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGroup</b> (const char *<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>) const</td></tr>
+<tr class="separator:a5fa5f85fd266292afe51fab21d3669f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab970603c8787751f33053ca8947ac8"><td class="memItemLeft" align="right" valign="top"><a id="a8ab970603c8787751f33053ca8947ac8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGroup</b> (const QByteArray &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>) const</td></tr>
+<tr class="separator:a8ab970603c8787751f33053ca8947ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0361106060ef97c8b592cf5a72b8670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#ae0361106060ef97c8b592cf5a72b8670">isGroupImmutable</a> (const QByteArray &amp;aGroup) const</td></tr>
+<tr class="separator:ae0361106060ef97c8b592cf5a72b8670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309f6f8e15d5cde2977e843a06ce8f25"><td class="memItemLeft" align="right" valign="top"><a id="a309f6f8e15d5cde2977e843a06ce8f25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGroupImmutable</b> (const QString &amp;aGroup) const</td></tr>
+<tr class="separator:a309f6f8e15d5cde2977e843a06ce8f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e59a4e0e9bc19c0f5ddde9e799ea21"><td class="memItemLeft" align="right" valign="top"><a id="ac6e59a4e0e9bc19c0f5ddde9e799ea21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGroupImmutable</b> (const char *aGroup) const</td></tr>
+<tr class="separator:ac6e59a4e0e9bc19c0f5ddde9e799ea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fc1c0ff46d7ab9cdcc0e4ed9e8a9ab"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a72fc1c0ff46d7ab9cdcc0e4ed9e8a9ab">isImmutable</a> () const =0</td></tr>
+<tr class="separator:a72fc1c0ff46d7ab9cdcc0e4ed9e8a9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c37b44524887c5941a4f5489372147"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a69c37b44524887c5941a4f5489372147">markAsClean</a> ()=0</td></tr>
+<tr class="separator:a69c37b44524887c5941a4f5489372147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93541d8fab97ac1371daf64c83d8847"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#af93541d8fab97ac1371daf64c83d8847">sync</a> ()=0</td></tr>
+<tr class="separator:af93541d8fab97ac1371daf64c83d8847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a63c6d63d8596a173529aed88e280c5d4"><td class="memItemLeft" align="right" valign="top"><a id="a63c6d63d8596a173529aed88e280c5d4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGroupImpl</b> (const QByteArray &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>, WriteConfigFlags flags=<a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a>)=0</td></tr>
+<tr class="separator:a63c6d63d8596a173529aed88e280c5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de884a99a3b265df2530d50cafd66b6"><td class="memItemLeft" align="right" valign="top"><a id="a9de884a99a3b265df2530d50cafd66b6"></a>
+virtual <a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>groupImpl</b> (const QByteArray &amp;b)=0</td></tr>
+<tr class="separator:a9de884a99a3b265df2530d50cafd66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac050134e5cd23ac9a48ab19ee753e017"><td class="memItemLeft" align="right" valign="top"><a id="ac050134e5cd23ac9a48ab19ee753e017"></a>
+virtual const <a class="el" href="classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>groupImpl</b> (const QByteArray &amp;b) const =0</td></tr>
+<tr class="separator:ac050134e5cd23ac9a48ab19ee753e017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823a813a01faa7d027756934ec2a2eb1"><td class="memItemLeft" align="right" valign="top"><a id="a823a813a01faa7d027756934ec2a2eb1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGroupImpl</b> (const QByteArray &amp;<a class="el" href="classKConfigBase.html#afbb86fb82d1aba5b76e3b2fe76dbfb02">group</a>) const =0</td></tr>
+<tr class="separator:a823a813a01faa7d027756934ec2a2eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aebe7549be1466fd8d2daaf580e7674"><td class="memItemLeft" align="right" valign="top"><a id="a0aebe7549be1466fd8d2daaf580e7674"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGroupImmutableImpl</b> (const QByteArray &amp;aGroup) const =0</td></tr>
+<tr class="separator:a0aebe7549be1466fd8d2daaf580e7674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7069e1638523be70f8435dd0a5e7dd28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKConfigBase.html#a7069e1638523be70f8435dd0a5e7dd28">virtual_hook</a> (int id, void *data)</td></tr>
+<tr class="separator:a7069e1638523be70f8435dd0a5e7dd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface to interact with configuration. </p>
+<p><a class="el" href="classKConfigBase.html" title="Interface to interact with configuration. ">KConfigBase</a> allows a component of an application to persists its configuration without the component knowing if it is storing the configuration into a top level <a class="el" href="classKConfig.html" title="The central class of the KDE configuration data system. ">KConfig</a> or a <a class="el" href="classKConfigGroup.html" title="A class for one specific group in a KConfig object. ">KConfigGroup</a> inside a <a class="el" href="classKConfig.html" title="The central class of the KDE configuration data system. ">KConfig</a> instance. </p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8h_source.html#l00043">43</a> of file <a class="el" href="kconfigbase_8h_source.html">kconfigbase.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a86802f1591f5e30e012f99abb56c7edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86802f1591f5e30e012f99abb56c7edd">&#9670;&nbsp;</a></span>AccessMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKConfigBase.html#a86802f1591f5e30e012f99abb56c7edd">KConfigBase::AccessMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible return values for <a class="el" href="classKConfigBase.html#aabeafa7717ddf6044b10ce77f0e6eecd" title="Returns the access mode of the app-config object. ">accessMode()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8h_source.html#l00137">137</a> of file <a class="el" href="kconfigbase_8h_source.html">kconfigbase.h</a>.</p>
+
+</div>
+</div>
+<a id="a748289f31b54c48d2ef03d66546718aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748289f31b54c48d2ef03d66546718aa">&#9670;&nbsp;</a></span>WriteConfigFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aa">KConfigBase::WriteConfigFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flags to control write entry. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a748289f31b54c48d2ef03d66546718aaa3e28cc02cc1ac896cd9b12f4797adef9"></a>Persistent&#160;</td><td class="fielddoc"><p>Save this entry when saving the config object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a748289f31b54c48d2ef03d66546718aaa5fc9519c18ccdbfcd106d32fd461365d"></a>Global&#160;</td><td class="fielddoc"><p>Save the entry to the global KDE config file instead of the application specific config file. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a748289f31b54c48d2ef03d66546718aaaa118a385b8191369484b54047d0a8d98"></a>Localized&#160;</td><td class="fielddoc"><p>Add the locale tag to the key when writing it. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd"></a>Normal&#160;</td><td class="fielddoc"><p>Save the entry to the application specific config file without a locale tag. </p>
+<p>This is the default. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8h_source.html#l00049">49</a> of file <a class="el" href="kconfigbase_8h_source.html">kconfigbase.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9d5f14f757f09817f3aa1abcd3b5400d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5f14f757f09817f3aa1abcd3b5400d">&#9670;&nbsp;</a></span>~KConfigBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KConfigBase::~KConfigBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructs the <a class="el" href="classKConfigBase.html" title="Interface to interact with configuration. ">KConfigBase</a> object. </p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00104">104</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aabeafa7717ddf6044b10ce77f0e6eecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabeafa7717ddf6044b10ce77f0e6eecd">&#9670;&nbsp;</a></span>accessMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classKConfigBase.html#a86802f1591f5e30e012f99abb56c7edd">AccessMode</a> KConfigBase::accessMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the access mode of the app-config object. </p>
+<p>Possible return values are NoAccess (the application-specific config file could not be opened neither read-write nor read-only), ReadOnly (the application-specific config file is opened read-only, but not read-write) and ReadWrite (the application-specific config file is opened read-write).</p>
+<dl class="section return"><dt>Returns</dt><dd>the access mode of the app-config object </dd></dl>
+
+<p>Implemented in <a class="el" href="classKConfig.html#a1a2c529979c9f7700e1d194c77cd183e">KConfig</a>, and <a class="el" href="classKConfigGroup.html#a6867f0b748c55b7cf66049a1edb8792c">KConfigGroup</a>.</p>
+
+</div>
+</div>
+<a id="a6251665543e7b49c9592aafb59c920f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6251665543e7b49c9592aafb59c920f5">&#9670;&nbsp;</a></span>deleteGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KConfigBase::deleteGroup </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WriteConfigFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKConfigBase.html#a748289f31b54c48d2ef03d66546718aaab94aac9e996e8ddf7c42c74e323632fd">Normal</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete <code>aGroup</code>. </p>
+<p>This marks <code>aGroup</code> as <em>deleted</em> in the config object. This effectively removes any cascaded values from config files earlier in the stack. </p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00074">74</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afbb86fb82d1aba5b76e3b2fe76dbfb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb86fb82d1aba5b76e3b2fe76dbfb02">&#9670;&nbsp;</a></span>group() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKConfigGroup.html">KConfigGroup</a> KConfigBase::group </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an object for the named subgroup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>the group to open. Pass a null string on to the <a class="el" href="classKConfig.html" title="The central class of the KDE configuration data system. ">KConfig</a> object to obtain a handle on the root group. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list of groups. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00044">44</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf64282fc205398c3c8e6c9705938c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf64282fc205398c3c8e6c9705938c7a">&#9670;&nbsp;</a></span>group() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKConfigGroup.html">KConfigGroup</a> KConfigBase::group </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00059">59</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20c2e6795c7bee2843c6e1c130da6496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c2e6795c7bee2843c6e1c130da6496">&#9670;&nbsp;</a></span>groupList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QStringList KConfigBase::groupList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a list of groups that are known about. </p>
+<dl class="section return"><dt>Returns</dt><dd>The list of groups. </dd></dl>
+
+<p>Implemented in <a class="el" href="classKConfig.html#a819f390d0f4db6835801239b23a43775">KConfig</a>, and <a class="el" href="classKConfigGroup.html#ae4b78d590caa1d9847dad9e295b68ea9">KConfigGroup</a>.</p>
+
+</div>
+</div>
+<a id="ac8581bb5f5d885235eb27261c7be70f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8581bb5f5d885235eb27261c7be70f4">&#9670;&nbsp;</a></span>hasGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KConfigBase::hasGroup </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the specified group is known about. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>The group to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the group exists. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00029">29</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae0361106060ef97c8b592cf5a72b8670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0361106060ef97c8b592cf5a72b8670">&#9670;&nbsp;</a></span>isGroupImmutable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KConfigBase::isGroupImmutable </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>aGroup</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Can changes be made to the entries in <code>aGroup</code>? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aGroup</td><td>The group to check for immutability. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>false</code> if the entries in <code>aGroup</code> can be modified. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00089">89</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72fc1c0ff46d7ab9cdcc0e4ed9e8a9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fc1c0ff46d7ab9cdcc0e4ed9e8a9ab">&#9670;&nbsp;</a></span>isImmutable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KConfigBase::isImmutable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether this configuration object can be modified. </p>
+<dl class="section return"><dt>Returns</dt><dd>whether changes may be made to this configuration object. </dd></dl>
+
+<p>Implemented in <a class="el" href="classKConfigGroup.html#aad08829154220cd99a333f241c648542">KConfigGroup</a>, and <a class="el" href="classKConfig.html#a6d3489338799a217a36a84981c86dfc7">KConfig</a>.</p>
+
+</div>
+</div>
+<a id="a69c37b44524887c5941a4f5489372147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c37b44524887c5941a4f5489372147">&#9670;&nbsp;</a></span>markAsClean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void KConfigBase::markAsClean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset the dirty flags of all entries in the entry map, so the values will not be written to disk on a later call to <a class="el" href="classKConfigBase.html#af93541d8fab97ac1371daf64c83d8847" title="Syncs the configuration object that this group belongs to. ">sync()</a>. </p>
+
+<p>Implemented in <a class="el" href="classKConfig.html#a2ad8cc41e9d976124d1a9e8a16b6990d">KConfig</a>, and <a class="el" href="classKConfigGroup.html#aa3b0aea7907b3ab8b13588003073a75e">KConfigGroup</a>.</p>
+
+</div>
+</div>
+<a id="af93541d8fab97ac1371daf64c83d8847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93541d8fab97ac1371daf64c83d8847">&#9670;&nbsp;</a></span>sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KConfigBase::sync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Syncs the configuration object that this group belongs to. </p>
+<p>Unrelated concurrent changes to the same file are merged and thus not overwritten. Note however, that this object is <em>not</em> automatically updated with those changes. </p>
+
+<p>Implemented in <a class="el" href="classKConfig.html#a4cd4e642d6d2120d0a3db05aa87d1c97">KConfig</a>, and <a class="el" href="classKConfigGroup.html#ad2383ff8d0bc35fd486103f09a4559aa">KConfigGroup</a>.</p>
+
+</div>
+</div>
+<a id="a7069e1638523be70f8435dd0a5e7dd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7069e1638523be70f8435dd0a5e7dd28">&#9670;&nbsp;</a></span>virtual_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KConfigBase::virtual_hook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual hook, used to add new "virtual" functions while maintaining binary compatibility. </p>
+<p>Unused in this class. </p>
+
+<p>Reimplemented in <a class="el" href="classKConfig.html#a64f3a7098b95aff1b0a864ed031b051a">KConfig</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kconfigbase_8cpp_source.html#l00110">110</a> of file <a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kconfigbase_8h_source.html">kconfigbase.h</a></li>
+<li><a class="el" href="kconfigbase_8cpp_source.html">kconfigbase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:18 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCodecs - KCodecs::Decoder Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCodecs</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCodecs"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="modules.html">Modules</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCodecs_1_1Base64Codec.html">KCodecs::Base64Codec</option>
+        
+        <option value="classKCodecs_1_1BinaryCodec.html">KCodecs::BinaryCodec</option>
+        
+        <option value="classKCodecs_1_1Codec.html">KCodecs::Codec</option>
+        
+        <option value="classKCodecs_1_1Decoder.html">KCodecs::Decoder</option>
+        
+        <option value="classKCodecs_1_1EightBitCodec.html">KCodecs::EightBitCodec</option>
+        
+        <option value="classKCodecs_1_1Encoder.html">KCodecs::Encoder</option>
+        
+        <option value="classKCodecs_1_1IdentityCodec.html">KCodecs::IdentityCodec</option>
+        
+        <option value="classKCharsets.html">KCharsets</option>
+        
+        <option value="classKEncodingProber.html">KEncodingProber</option>
+        
+        <option value="classKCodecs_1_1QuotedPrintableCodec.html">KCodecs::QuotedPrintableCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2047BEncodingCodec.html">KCodecs::Rfc2047BEncodingCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2047QEncodingCodec.html">KCodecs::Rfc2047QEncodingCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2231EncodingCodec.html">KCodecs::Rfc2231EncodingCodec</option>
+        
+        <option value="classKCodecs_1_1SevenBitCodec.html">KCodecs::SevenBitCodec</option>
+        
+        <option value="classKCodecs_1_1UUCodec.html">KCodecs::UUCodec</option>
+        
+        <option value="namespaceKCodecs.html">KCodecs</option>
+        
+        <option value="namespaceKEmailAddress.html">KEmailAddress</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Text encoding</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Codecs)
+target_link_libraries(yourapp KF5::Codecs)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCodecs </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcodecs-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCodecs on <a href="https://cgit.kde.org/kcodecs-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCodecs </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=Decoder">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKCodecs.html">KCodecs</a></li><li class="navelem"><a class="el" href="classKCodecs_1_1Decoder.html">Decoder</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKCodecs_1_1Decoder-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCodecs::Decoder Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcodecs_8h_source.html">kcodecs.h</a>&gt;</code></p>
+
+<p>Inherited by IdentityEnDecoder, KCodecs::Base64Decoder, KCodecs::QuotedPrintableDecoder, and KCodecs::UUDecoder.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3f145181a5c6157bd0f2aec9e90fb42c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecs_1_1Decoder.html#a3f145181a5c6157bd0f2aec9e90fb42c">~Decoder</a> ()</td></tr>
+<tr class="separator:a3f145181a5c6157bd0f2aec9e90fb42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd751ebf6571a91e21b1790f703bea76"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecs_1_1Decoder.html#afd751ebf6571a91e21b1790f703bea76">decode</a> (const char *&amp;scursor, const char *const send, char *&amp;dcursor, const char *const dend)=0</td></tr>
+<tr class="separator:afd751ebf6571a91e21b1790f703bea76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea94ec514d5726c9baed50022f445ab7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecs_1_1Decoder.html#aea94ec514d5726c9baed50022f445ab7">finish</a> (char *&amp;dcursor, const char *const dend)=0</td></tr>
+<tr class="separator:aea94ec514d5726c9baed50022f445ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6115edd39ad52ab89721d45c4aa20159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCodecs_1_1Decoder.html#a6115edd39ad52ab89721d45c4aa20159">Decoder</a> (Codec::NewlineType newline=Codec::NewlineLF)</td></tr>
+<tr class="separator:a6115edd39ad52ab89721d45c4aa20159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stateful CTE decoder class. </p>
+<p>Stateful decoder class, modelled after QTextDecoder.</p>
+<h1><a class="anchor" id="Overview"></a>
+Overview</h1>
+<p><a class="el" href="namespaceKCodecs.html" title="A wrapper class for the most commonly used encoding and decoding algorithms. ">KCodecs</a> decoders are designed to be able to process encoded data in chunks of arbitrary size and to work with output buffers of also arbitrary size. They maintain any state necessary to go on where the previous call left off.</p>
+<p>The class consists of only two methods of interest: see decode, which decodes an input block and finalize, which flushes any remaining data to the output stream.</p>
+<p>Typically, you will create a decoder instance, call decode as often as necessary, then call finalize (most often a single call suffices, but it might be that during that call the output buffer is filled, so you should be prepared to call finalize as often as necessary, ie. until it returns <code>true</code>).</p>
+<h1><a class="anchor" id="Return"></a>
+Values</h1>
+<p>Both methods return <code>true</code> to indicate that they've finished their job. For decode, a return value of <code>true</code> means that the current input block has been finished (<code>false</code> most often means that the output buffer is full, but that isn't required behavior. The decode call is free to return at arbitrary times during processing).</p>
+<p>For finalize, a return value of <code>true</code> means that all data implicitly or explicitly stored in the decoder instance has been flushed to the output buffer. A <code>false</code> return value should be interpreted as "check if the output buffer is full and call me
+again", just as with decode.</p>
+<h1><a class="anchor" id="Usage"></a>
+Pattern</h1>
+<p>Since the decoder maintains state, you can only use it once. After a sequence of input blocks has been processed, you finalize the output and then delete the decoder instance. If you want to process another input block sequence, you create a new instance.</p>
+<p>Typical usage (<code>in</code> contains the (base64-encoded) input data), taking into account all the conventions detailed above:</p>
+<pre>
+<a class="el" href="classKCodecs_1_1Codec.html" title="An abstract base class of codecs for common mail transfer encodings. ">KCodecs::Codec</a> *codec = <a class="el" href="classKCodecs_1_1Codec.html#a1488e646b7638e62d4790168270bb9ab" title="Returns a codec associated with the specified name. ">KCodecs::Codec::codecForName</a>("base64");
+if (!codec) {
+    qFatal() &lt;&lt; "No codec found for base64!";
+}
+<a class="el" href="classKCodecs_1_1Decoder.html" title="Stateful CTE decoder class. ">KCodecs::Decoder</a> *dec = codec-&gt;makeDecoder();
+Q_ASSERT(dec); // should not happen
+QByteArray out(256); // small buffer is enough ;-)
+QByteArray::Iterator iit = in.begin();
+QByteArray::Iterator oit = out.begin();
+// decode the chunk
+while (!dec-&gt;decode(iit, in.end(), oit, out.end()))
+  if (oit == out.end()) { // output buffer full, process contents
+    do_something_with(out);
+    oit = out.begin();
+  }
+// repeat while loop for each input block
+// ...
+// finish (flush remaining data from decoder):
+while (!dec-&gt;finish(oit, out.end()))
+  if (oit == out.end()) { // output buffer full, process contents
+    do_something_with(out);
+    oit = out.begin();
+  }
+// now process last chunk:
+out.resize(oit - out.begin());
+do_something_with(out);
+// _delete_ the decoder, but not the codec:
+delete dec;
+</pre><dl class="section since"><dt>Since</dt><dd>5.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcodecs_8h_source.html#l00628">628</a> of file <a class="el" href="kcodecs_8h_source.html">kcodecs.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6115edd39ad52ab89721d45c4aa20159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6115edd39ad52ab89721d45c4aa20159">&#9670;&nbsp;</a></span>Decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCodecs::Decoder::Decoder </td>
+          <td>(</td>
+          <td class="paramtype">Codec::NewlineType&#160;</td>
+          <td class="paramname"><em>newline</em> = <code>Codec::NewlineLF</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Protected constructor. </p>
+<p>Use <a class="el" href="classKCodecs_1_1Codec.html#a0bad125ce87f7297fc092f4bf3ffa518" title="Creates the decoder for the codec. ">KCodecs::Codec::makeDecoder</a> to create an instance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newline</td><td>whether make new lines using <a class="el" href="classKCodecs_1_1Codec.html#CRLF">CRLF</a>, or <a class="el" href="classKCodecs_1_1Codec.html#LF">LF</a> (default is <a class="el" href="classKCodecs_1_1Codec.html#LF">LF</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcodecs_8cpp_source.html#l00768">768</a> of file <a class="el" href="kcodecs_8cpp_source.html">kcodecs.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f145181a5c6157bd0f2aec9e90fb42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f145181a5c6157bd0f2aec9e90fb42c">&#9670;&nbsp;</a></span>~Decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCodecs::Decoder::~Decoder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys the decoder. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcodecs_8cpp_source.html#l00773">773</a> of file <a class="el" href="kcodecs_8cpp_source.html">kcodecs.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afd751ebf6571a91e21b1790f703bea76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd751ebf6571a91e21b1790f703bea76">&#9670;&nbsp;</a></span>decode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KCodecs::Decoder::decode </td>
+          <td>(</td>
+          <td class="paramtype">const char *&amp;&#160;</td>
+          <td class="paramname"><em>scursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>send</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>dcursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>dend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decodes a chunk of data, maintaining state information between calls. </p>
+<p>See class decumentation for calling conventions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scursor</td><td>is a pointer to the start of the input buffer. </td></tr>
+    <tr><td class="paramname">send</td><td>is a pointer to the end of the input buffer. </td></tr>
+    <tr><td class="paramname">dcursor</td><td>is a pointer to the start of the output buffer. </td></tr>
+    <tr><td class="paramname">dend</td><td>is a pointer to the end of the output buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea94ec514d5726c9baed50022f445ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea94ec514d5726c9baed50022f445ab7">&#9670;&nbsp;</a></span>finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KCodecs::Decoder::finish </td>
+          <td>(</td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>dcursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>dend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call this method to finalize the output stream. </p>
+<p>Writes all remaining data and resets the decoder. See <a class="el" href="classKCodecs_1_1Codec.html" title="An abstract base class of codecs for common mail transfer encodings. ">KCodecs::Codec</a> for calling conventions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dcursor</td><td>is a pointer to the start of the output buffer. </td></tr>
+    <tr><td class="paramname">dend</td><td>is a pointer to the end of the output buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcodecs_8h_source.html">kcodecs.h</a></li>
+<li><a class="el" href="kcodecs_8cpp_source.html">kcodecs.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:09 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

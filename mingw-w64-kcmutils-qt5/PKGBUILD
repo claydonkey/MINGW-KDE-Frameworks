@@ -1,0 +1,58 @@
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
+# Contributor (MSYS1): Ray Donnelly <mingw.android@gmail.com>
+
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_kde_f5_init_package "${_variant}" "kcmutils"
+pkgver=5.26.0
+pkgrel=1
+arch=('any')
+pkgdesc="Utilities for KDE System Settings modules (mingw-w64-qt5${_namesuff})"
+license=('LGPL')
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  )
+depends=("${MINGW_PACKAGE_PREFIX}-bzip2" )
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"   
+groups=('kf5')
+source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" )
+sha256sums=('2dbfa24da7a7b3d8d06b0e9c3b9ad6471b5846499526ef37fad9b6088a5bd5df'
+         )
+options=(${_stripped} ${_releasetype})
+
+prepare() {
+	mkdir -p build-${CARCH}${_variant}
+}
+
+build() {
+  local -a extra_config
+  cd build-${CARCH}${_variant}
+  if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi
+
+  MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
+    cmake ../${_basename}-${pkgver} \
+      -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
+      -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+      -DKDE_INSTALL_LIBDIR=lib \
+      -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
+      -DBUILD_TESTING=OFF \
+      -DCMAKE_DISABLE_FIND_PACKAGE_GSSAPI=TRUE \
+      -DECM_DIR=${MINGW_PREFIX}/share/ECM \
+      "${extra_config[@]}" \
+      -G'MSYS Makefiles'
+make
+}
+
+package() {
+  cd build-${CARCH}${_variant}
+  make DESTDIR="${pkgdir}" install
+}
+

@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KTextWidgets - KTextEdit Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KTextWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KTextWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKFind.html">KFind</option>
+        
+        <option value="classKFindDialog.html">KFindDialog</option>
+        
+        <option value="classKPluralHandlingSpinBox.html">KPluralHandlingSpinBox</option>
+        
+        <option value="classKRegExpEditorInterface.html">KRegExpEditorInterface</option>
+        
+        <option value="classKReplace.html">KReplace</option>
+        
+        <option value="classKReplaceDialog.html">KReplaceDialog</option>
+        
+        <option value="classKRichTextEdit.html">KRichTextEdit</option>
+        
+        <option value="classKRichTextWidget.html">KRichTextWidget</option>
+        
+        <option value="classKTextEdit.html">KTextEdit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced text editing widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:montel@kde.org">Laurent Montel</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5TextWidgets)
+target_link_libraries(yourapp KF5::TextWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KTextWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ktextwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KTextWidgets on <a href="https://cgit.kde.org/ktextwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KTextWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KTextEdit">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKTextEdit-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KTextEdit Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ktextedit_8h_source.html">ktextedit.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KTextEdit:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKTextEdit__inherit__graph.png" border="0" usemap="#KTextEdit_inherit__map" alt="Inheritance graph"/></div>
+<map name="KTextEdit_inherit__map" id="KTextEdit_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a1cd63771f6577225be11ba443c24e785"><td class="memItemLeft" align="right" valign="top"><a id="a1cd63771f6577225be11ba443c24e785"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkSpellingEnabled</b></td></tr>
+<tr class="separator:a1cd63771f6577225be11ba443c24e785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706e3451d36391e921c2845863400213"><td class="memItemLeft" align="right" valign="top"><a id="a706e3451d36391e921c2845863400213"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>clickMessage</b></td></tr>
+<tr class="separator:a706e3451d36391e921c2845863400213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f3eed9154868d9b0a02b750b9370c1"><td class="memItemLeft" align="right" valign="top"><a id="a55f3eed9154868d9b0a02b750b9370c1"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>spellCheckingLanguage</b></td></tr>
+<tr class="separator:a55f3eed9154868d9b0a02b750b9370c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:aee71a9b293e59cbd46ef7674a1233d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aee71a9b293e59cbd46ef7674a1233d28">aboutToShowContextMenu</a> (QMenu *menu)</td></tr>
+<tr class="separator:aee71a9b293e59cbd46ef7674a1233d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a3c0cb9bffe178b5a41ca7a8c5add6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ae8a3c0cb9bffe178b5a41ca7a8c5add6">checkSpellingChanged</a> (bool)</td></tr>
+<tr class="separator:ae8a3c0cb9bffe178b5a41ca7a8c5add6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af667757143c77e7093ba72769afc40c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#af667757143c77e7093ba72769afc40c1">languageChanged</a> (const QString &amp;language)</td></tr>
+<tr class="separator:af667757143c77e7093ba72769afc40c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7846e018ac5edc893e2d39229a66c4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ad7846e018ac5edc893e2d39229a66c4d">spellCheckerAutoCorrect</a> (const QString &amp;currentWord, const QString &amp;autoCorrectWord)</td></tr>
+<tr class="separator:ad7846e018ac5edc893e2d39229a66c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e4c2f26e155b0ea2213005e0045f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a55e4c2f26e155b0ea2213005e0045f52">spellCheckingCanceled</a> ()</td></tr>
+<tr class="separator:a55e4c2f26e155b0ea2213005e0045f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46bf70e0900d81a58b85eea91c8944e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa46bf70e0900d81a58b85eea91c8944e">spellCheckingFinished</a> ()</td></tr>
+<tr class="separator:aa46bf70e0900d81a58b85eea91c8944e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb28d4bcd6a8d70eb7b9e2f59be933f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aeb28d4bcd6a8d70eb7b9e2f59be933f2">spellCheckStatus</a> (const QString &amp;)</td></tr>
+<tr class="separator:aeb28d4bcd6a8d70eb7b9e2f59be933f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a420370450d01255024bb23b67c45a96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a420370450d01255024bb23b67c45a96c">addTextDecorator</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1SpellCheckDecorator.html">Sonnet::SpellCheckDecorator</a> *decorator)</td></tr>
+<tr class="separator:a420370450d01255024bb23b67c45a96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af42578ce13b5d65522856e29fc29fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3af42578ce13b5d65522856e29fc29fd">checkSpelling</a> ()</td></tr>
+<tr class="separator:a3af42578ce13b5d65522856e29fc29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2ac3f630efb0ad9e296282ad11a623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a1e2ac3f630efb0ad9e296282ad11a623">clearDecorator</a> ()</td></tr>
+<tr class="separator:a1e2ac3f630efb0ad9e296282ad11a623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ff7021d9ec4c2d0956e6c01ddb0556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a76ff7021d9ec4c2d0956e6c01ddb0556">replace</a> ()</td></tr>
+<tr class="separator:a76ff7021d9ec4c2d0956e6c01ddb0556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21942951eff625ca8cea09bef8fa7a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a21942951eff625ca8cea09bef8fa7a9b">setSpellCheckingLanguage</a> (const QString &amp;language)</td></tr>
+<tr class="separator:a21942951eff625ca8cea09bef8fa7a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3e1df8b5a50234e06b2eaff1e9dc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a5c3e1df8b5a50234e06b2eaff1e9dc97">showSpellConfigDialog</a> (const QString &amp;windowIcon=QString())</td></tr>
+<tr class="separator:a5c3e1df8b5a50234e06b2eaff1e9dc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4676a18e43556c3a5e9e7c17cfbe9cd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a4676a18e43556c3a5e9e7c17cfbe9cd1">KTextEdit</a> (const QString &amp;text, QWidget *parent=0)</td></tr>
+<tr class="separator:a4676a18e43556c3a5e9e7c17cfbe9cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2713bb88f7088289b5f9911e1769c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a7b2713bb88f7088289b5f9911e1769c6">KTextEdit</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a7b2713bb88f7088289b5f9911e1769c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab097857528abab4e15c9d595713cc3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab097857528abab4e15c9d595713cc3b0">~KTextEdit</a> ()</td></tr>
+<tr class="separator:ab097857528abab4e15c9d595713cc3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d059a68f11d1fc28668a678ca498aa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a75d059a68f11d1fc28668a678ca498aa">checkSpellingEnabled</a> () const</td></tr>
+<tr class="separator:a75d059a68f11d1fc28668a678ca498aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac5019e14257725328877dabafdab61"><td class="memItemLeft" align="right" valign="top">KTEXTWIDGETS_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a2ac5019e14257725328877dabafdab61">clickMessage</a> () const</td></tr>
+<tr class="separator:a2ac5019e14257725328877dabafdab61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4054115f62746e5ba4e9f63349c0aba2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2">createHighlighter</a> ()</td></tr>
+<tr class="separator:a4054115f62746e5ba4e9f63349c0aba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816b06b2108d51edbc812834d7df17fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a816b06b2108d51edbc812834d7df17fb">enableFindReplace</a> (bool enabled)</td></tr>
+<tr class="separator:a816b06b2108d51edbc812834d7df17fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043003de86bee9ea95bbde4d132757ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a043003de86bee9ea95bbde4d132757ca">forceSpellChecking</a> ()</td></tr>
+<tr class="separator:a043003de86bee9ea95bbde4d132757ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af442d02443cb3feff56d6f15507d182a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#af442d02443cb3feff56d6f15507d182a">highlighter</a> () const</td></tr>
+<tr class="separator:af442d02443cb3feff56d6f15507d182a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb69e1c3bbb99fd0bb2a6e9a975aba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a5eb69e1c3bbb99fd0bb2a6e9a975aba1">highlightWord</a> (int length, int pos)</td></tr>
+<tr class="separator:a5eb69e1c3bbb99fd0bb2a6e9a975aba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0db6d91aa29400cb7862373ccf4eb77"><td class="memItemLeft" align="right" valign="top">virtual QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab0db6d91aa29400cb7862373ccf4eb77">mousePopupMenu</a> ()</td></tr>
+<tr class="separator:ab0db6d91aa29400cb7862373ccf4eb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50cc10f409454cd09ae198e77568b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5">setCheckSpellingEnabled</a> (bool check)</td></tr>
+<tr class="separator:a3b50cc10f409454cd09ae198e77568b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd4e252b064afb4534e93b4d17f5c34"><td class="memItemLeft" align="right" valign="top">KTEXTWIDGETS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3fd4e252b064afb4534e93b4d17f5c34">setClickMessage</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:a3fd4e252b064afb4534e93b4d17f5c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2efad20a5bf8f02f2e0e02e2b6f6c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3">setHighlighter</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> *_highLighter)</td></tr>
+<tr class="separator:adc2efad20a5bf8f02f2e0e02e2b6f6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60da005d60e92a8dde8f62ae4abcc967"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a60da005d60e92a8dde8f62ae4abcc967">setReadOnly</a> (bool readOnly)</td></tr>
+<tr class="separator:a60da005d60e92a8dde8f62ae4abcc967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3349d8c8cec836c5045ff831ee481878"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3349d8c8cec836c5045ff831ee481878">shouldBlockBeSpellChecked</a> (const QString &amp;block) const</td></tr>
+<tr class="separator:a3349d8c8cec836c5045ff831ee481878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8636d0d13b9ec8adc250522e002437a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a8636d0d13b9ec8adc250522e002437a2">showAutoCorrectButton</a> (bool show)</td></tr>
+<tr class="separator:a8636d0d13b9ec8adc250522e002437a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6faa160d4faa48293248c11e896a7ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ac6faa160d4faa48293248c11e896a7ee">showTabAction</a> (bool show)</td></tr>
+<tr class="separator:ac6faa160d4faa48293248c11e896a7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd309899600cb2987f7917c5b6f24d8b"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#acd309899600cb2987f7917c5b6f24d8b">spellCheckingLanguage</a> () const</td></tr>
+<tr class="separator:acd309899600cb2987f7917c5b6f24d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a7475a0fdb2a3acf407261601a8943b68"><td class="memItemLeft" align="right" valign="top"><a id="a7475a0fdb2a3acf407261601a8943b68"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotDoFind</b> ()</td></tr>
+<tr class="separator:a7475a0fdb2a3acf407261601a8943b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415eef09787f61b7c8fd0ee94f4b55cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a415eef09787f61b7c8fd0ee94f4b55cb">slotDoReplace</a> ()</td></tr>
+<tr class="separator:a415eef09787f61b7c8fd0ee94f4b55cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf84d2e96ecdb46e5850e9b74cd9810"><td class="memItemLeft" align="right" valign="top"><a id="aaaf84d2e96ecdb46e5850e9b74cd9810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotFind</b> ()</td></tr>
+<tr class="separator:aaaf84d2e96ecdb46e5850e9b74cd9810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c9c53ff0a7c0a0ccd5d551a9b01d06"><td class="memItemLeft" align="right" valign="top"><a id="a24c9c53ff0a7c0a0ccd5d551a9b01d06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotFindNext</b> ()</td></tr>
+<tr class="separator:a24c9c53ff0a7c0a0ccd5d551a9b01d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad986042b6ad46bdffc95a4131cf32a04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ad986042b6ad46bdffc95a4131cf32a04">slotFindPrevious</a> ()</td></tr>
+<tr class="separator:ad986042b6ad46bdffc95a4131cf32a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1979c72feb0b43b3cb26a6e6f97b7eee"><td class="memItemLeft" align="right" valign="top"><a id="a1979c72feb0b43b3cb26a6e6f97b7eee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotReplace</b> ()</td></tr>
+<tr class="separator:a1979c72feb0b43b3cb26a6e6f97b7eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34fa3513fe1846dd603803541aeeb44"><td class="memItemLeft" align="right" valign="top"><a id="ab34fa3513fe1846dd603803541aeeb44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotReplaceNext</b> ()</td></tr>
+<tr class="separator:ab34fa3513fe1846dd603803541aeeb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3110dc6a4618a70664d6e8d9d542cae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3110dc6a4618a70664d6e8d9d542cae6">slotSpeakText</a> ()</td></tr>
+<tr class="separator:a3110dc6a4618a70664d6e8d9d542cae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa1e492ad53dd926505f6defa43b53c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa1e492ad53dd926505f6defa43b53c09">contextMenuEvent</a> (QContextMenuEvent *) override</td></tr>
+<tr class="separator:aa1e492ad53dd926505f6defa43b53c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6a534fd8b4f0bd5c8e7941ad0a83f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a7e6a534fd8b4f0bd5c8e7941ad0a83f8">deleteWordBack</a> ()</td></tr>
+<tr class="separator:a7e6a534fd8b4f0bd5c8e7941ad0a83f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf93b9c0e4df8ed9393f6c32a461039"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#afdf93b9c0e4df8ed9393f6c32a461039">deleteWordForward</a> ()</td></tr>
+<tr class="separator:afdf93b9c0e4df8ed9393f6c32a461039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b45d3362af81b4ab89ded93ca1a12c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a97b45d3362af81b4ab89ded93ca1a12c">event</a> (QEvent *) override</td></tr>
+<tr class="separator:a97b45d3362af81b4ab89ded93ca1a12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c425e86b93ee7f665f1093451cfc31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab6c425e86b93ee7f665f1093451cfc31">focusInEvent</a> (QFocusEvent *) override</td></tr>
+<tr class="separator:ab6c425e86b93ee7f665f1093451cfc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b59b96ffadf5b56840a2908a69b5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa3b59b96ffadf5b56840a2908a69b5ef">keyPressEvent</a> (QKeyEvent *) override</td></tr>
+<tr class="separator:aa3b59b96ffadf5b56840a2908a69b5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A KDE'ified QTextEdit. </p>
+<p>This is just a little subclass of QTextEdit, implementing some standard KDE features, like cursor auto-hiding, configurable wheelscrolling (fast-scroll or zoom), spell checking and deleting of entire words with Ctrl-Backspace or Ctrl-Delete.</p>
+<p>This text edit provides two ways of spell checking: background checking, which will mark incorrectly spelled words red, and a spell check dialog, which lets the user check and correct all incorrectly spelled words.</p>
+<p>Basic rule: whenever you want to use QTextEdit, use KTextEdit!</p>
+<div class="image">
+<img src="ktextedit.png" alt="ktextedit.png"/>
+<div class="caption">
+KDE Text Edit Widget</div></div>
+ <dl class="section see"><dt>See also</dt><dd>QTextEdit </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Carsten Pfeiffer <a href="#" onclick="location.href='mai'+'lto:'+'pfe'+'if'+'fer'+'@k'+'de.'+'or'+'g'; return false;">pfeif<span style="display: none;">.nosp@m.</span>fer@<span style="display: none;">.nosp@m.</span>kde.o<span style="display: none;">.nosp@m.</span>rg</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8h_source.html#l00049">49</a> of file <a class="el" href="ktextedit_8h_source.html">ktextedit.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4676a18e43556c3a5e9e7c17cfbe9cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4676a18e43556c3a5e9e7c17cfbe9cd1">&#9670;&nbsp;</a></span>KTextEdit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTextEdit::KTextEdit </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a> object. </p>
+<p>See QTextEdit::QTextEdit for details. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00327">327</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b2713bb88f7088289b5f9911e1769c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2713bb88f7088289b5f9911e1769c6">&#9670;&nbsp;</a></span>KTextEdit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTextEdit::KTextEdit </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a> object. </p>
+<p>See QTextEdit::QTextEdit for details. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00333">333</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab097857528abab4e15c9d595713cc3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab097857528abab4e15c9d595713cc3b0">&#9670;&nbsp;</a></span>~KTextEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTextEdit::~KTextEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a> object. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00339">339</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aee71a9b293e59cbd46ef7674a1233d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee71a9b293e59cbd46ef7674a1233d28">&#9670;&nbsp;</a></span>aboutToShowContextMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::aboutToShowContextMenu </td>
+          <td>(</td>
+          <td class="paramtype">QMenu *&#160;</td>
+          <td class="paramname"><em>menu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted before the context menu is displayed. </p>
+<p>The signal allows you to add your own entries into the the context menu that is created on demand.</p>
+<p>NOTE: Do not store the pointer to the QMenu provided through since it is created and deleted on demand.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the context menu about to be displayed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+</div>
+</div>
+<a id="a420370450d01255024bb23b67c45a96c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420370450d01255024bb23b67c45a96c">&#9670;&nbsp;</a></span>addTextDecorator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::addTextDecorator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1SpellCheckDecorator.html">Sonnet::SpellCheckDecorator</a> *&#160;</td>
+          <td class="paramname"><em>decorator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add custom spell checker decorator. </p>
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00684">684</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3af42578ce13b5d65522856e29fc29fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af42578ce13b5d65522856e29fc29fd">&#9670;&nbsp;</a></span>checkSpelling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::checkSpelling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Show a dialog to check the spelling. </p>
+<p>The <a class="el" href="classKTextEdit.html#aeb28d4bcd6a8d70eb7b9e2f59be933f2" title="Signal sends when spell checking is finished/stopped/completed. ">spellCheckStatus()</a> signal will be emitted when the spell checking dialog is closed. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00780">780</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae8a3c0cb9bffe178b5a41ca7a8c5add6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a3c0cb9bffe178b5a41ca7a8c5add6">&#9670;&nbsp;</a></span>checkSpellingChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::checkSpellingChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit signal when we activate or not autospellchecking </p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+</div>
+</div>
+<a id="a75d059a68f11d1fc28668a678ca498aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d059a68f11d1fc28668a678ca498aa">&#9670;&nbsp;</a></span>checkSpellingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KTextEdit::checkSpellingEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if background spell checking is enabled for this text edit. </p>
+<p>Note that it even returns true if this is a read-only <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a>, where spell checking is actually disabled. By default spell checking is disabled.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5" title="Turns background spell checking for this text edit on or off. ">setCheckSpellingEnabled()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1e2ac3f630efb0ad9e296282ad11a623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2ac3f630efb0ad9e296282ad11a623">&#9670;&nbsp;</a></span>clearDecorator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::clearDecorator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clearDecorator clear the spellcheckerdecorator </p>
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00678">678</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ac5019e14257725328877dabafdab61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac5019e14257725328877dabafdab61">&#9670;&nbsp;</a></span>clickMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTEXTWIDGETS_DEPRECATED QString KTextEdit::clickMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the message set with setClickMessage </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>since 5.0, use QTextEdit::placeholderText instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8h_source.html#l00203">203</a> of file <a class="el" href="ktextedit_8h_source.html">ktextedit.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1e492ad53dd926505f6defa43b53c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e492ad53dd926505f6defa43b53c09">&#9670;&nbsp;</a></span>contextMenuEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::contextMenuEvent </td>
+          <td>(</td>
+          <td class="paramtype">QContextMenuEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QTextEdit to add spelling related items when appropriate. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00654">654</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4054115f62746e5ba4e9f63349c0aba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4054115f62746e5ba4e9f63349c0aba2">&#9670;&nbsp;</a></span>createHighlighter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::createHighlighter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows to create a specific highlighter if reimplemented. </p>
+<p>By default, it creates a normal highlighter, based on the config file given to setSpellCheckingConfigFileName().</p>
+<p>This highlighter is set each time spell checking is toggled on by calling <a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5" title="Turns background spell checking for this text edit on or off. ">setCheckSpellingEnabled()</a>, but can later be overridden by calling <a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3" title="Sets a custom backgound spell highlighter for this text edit. ">setHighlighter()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3" title="Sets a custom backgound spell highlighter for this text edit. ">setHighlighter()</a> </dd>
+<dd>
+<a class="el" href="classKTextEdit.html#af442d02443cb3feff56d6f15507d182a" title="Returns the current highlighter, which is 0 if spell checking is disabled. ">highlighter()</a> </dd>
+<dd>
+setSpellCheckingConfigFileName() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00664">664</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7e6a534fd8b4f0bd5c8e7941ad0a83f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6a534fd8b4f0bd5c8e7941ad0a83f8">&#9670;&nbsp;</a></span>deleteWordBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::deleteWordBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes a word backwards from the current cursor position, if available. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00518">518</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afdf93b9c0e4df8ed9393f6c32a461039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf93b9c0e4df8ed9393f6c32a461039">&#9670;&nbsp;</a></span>deleteWordForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::deleteWordForward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes a word forwards from the current cursor position, if available. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00523">523</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a816b06b2108d51edbc812834d7df17fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816b06b2108d51edbc812834d7df17fb">&#9670;&nbsp;</a></span>enableFindReplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::enableFindReplace </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable find replace action. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00993">993</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a97b45d3362af81b4ab89ded93ca1a12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b45d3362af81b4ab89ded93ca1a12c">&#9670;&nbsp;</a></span>event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KTextEdit::event </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>ev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to catch "delete word" shortcut events. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00376">376</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab6c425e86b93ee7f665f1093451cfc31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c425e86b93ee7f665f1093451cfc31">&#9670;&nbsp;</a></span>focusInEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::focusInEvent </td>
+          <td>(</td>
+          <td class="paramtype">QFocusEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to instantiate a KDictSpellingHighlighter, if spellchecking is enabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00726">726</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a043003de86bee9ea95bbde4d132757ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043003de86bee9ea95bbde4d132757ca">&#9670;&nbsp;</a></span>forceSpellChecking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::forceSpellChecking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.10 create a modal spellcheck dialogbox and spellCheckingFinished signal we sent when we finish spell checking or spellCheckingCanceled signal when we cancel spell checking </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00785">785</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af442d02443cb3feff56d6f15507d182a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af442d02443cb3feff56d6f15507d182a">&#9670;&nbsp;</a></span>highlighter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> * KTextEdit::highlighter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current highlighter, which is 0 if spell checking is disabled. </p>
+<p>The default highlighter is the one created by <a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2" title="Allows to create a specific highlighter if reimplemented. ">createHighlighter()</a>, but might be overridden by <a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3" title="Sets a custom backgound spell highlighter for this text edit. ">setHighlighter()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3" title="Sets a custom backgound spell highlighter for this text edit. ">setHighlighter()</a> </dd>
+<dd>
+<a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2" title="Allows to create a specific highlighter if reimplemented. ">createHighlighter()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00669">669</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5eb69e1c3bbb99fd0bb2a6e9a975aba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb69e1c3bbb99fd0bb2a6e9a975aba1">&#9670;&nbsp;</a></span>highlightWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::highlightWord </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects the characters at the specified position. </p>
+<p>Any previous selection will be lost. The cursor is moved to the first character of the new selection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>The length of the selection, in number of characters </td></tr>
+    <tr><td class="paramname">pos</td><td>The position of the first character of the selection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00790">790</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa3b59b96ffadf5b56840a2908a69b5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b59b96ffadf5b56840a2908a69b5ef">&#9670;&nbsp;</a></span>keyPressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::keyPressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented for internal reasons. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l01053">1053</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af667757143c77e7093ba72769afc40c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af667757143c77e7093ba72769afc40c1">&#9670;&nbsp;</a></span>languageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::languageChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>language</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the user changes the language in the spellcheck dialog shown by <a class="el" href="classKTextEdit.html#a3af42578ce13b5d65522856e29fc29fd" title="Show a dialog to check the spelling. ">checkSpelling()</a> or when calling <a class="el" href="classKTextEdit.html#a21942951eff625ca8cea09bef8fa7a9b" title="Set the spell check language which will be used for highlighting spelling mistakes and for the spellc...">setSpellCheckingLanguage()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>the new language the user selected </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+</div>
+</div>
+<a id="ab0db6d91aa29400cb7862373ccf4eb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0db6d91aa29400cb7862373ccf4eb77">&#9670;&nbsp;</a></span>mousePopupMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMenu * KTextEdit::mousePopupMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return standard <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a> popupMenu. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00528">528</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a76ff7021d9ec4c2d0956e6c01ddb0556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ff7021d9ec4c2d0956e6c01ddb0556">&#9670;&nbsp;</a></span>replace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::replace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create replace dialogbox. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00799">799</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3b50cc10f409454cd09ae198e77568b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b50cc10f409454cd09ae198e77568b5">&#9670;&nbsp;</a></span>setCheckSpellingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::setCheckSpellingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turns background spell checking for this text edit on or off. </p>
+<p>Note that spell checking is only available in read-writable KTextEdits.</p>
+<p>Enabling spell checking will set back the current highlighter to the one returned by <a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2" title="Allows to create a specific highlighter if reimplemented. ">createHighlighter()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd>checkSpellingEnabled() </dd>
+<dd>
+isReadOnly() </dd>
+<dd>
+<a class="el" href="classKTextEdit.html#a60da005d60e92a8dde8f62ae4abcc967" title="Reimplemented to set a proper &quot;deactivated&quot; background color. ">setReadOnly()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00702">702</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fd4e252b064afb4534e93b4d17f5c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd4e252b064afb4534e93b4d17f5c34">&#9670;&nbsp;</a></span>setClickMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KTEXTWIDGETS_DEPRECATED void KTextEdit::setClickMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This makes the text edit display a grayed-out hinting text as long as the user didn't enter any text. </p>
+<p>It is often used as indication about the purpose of the text edit. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>since 5.0, use QTextEdit::setPlaceholderText instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8h_source.html#l00195">195</a> of file <a class="el" href="ktextedit_8h_source.html">ktextedit.h</a>.</p>
+
+</div>
+</div>
+<a id="adc2efad20a5bf8f02f2e0e02e2b6f6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2efad20a5bf8f02f2e0e02e2b6f6c3">&#9670;&nbsp;</a></span>setHighlighter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::setHighlighter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> *&#160;</td>
+          <td class="paramname"><em>_highLighter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a custom backgound spell highlighter for this text edit. </p>
+<p>Normally, the highlighter returned by <a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2" title="Allows to create a specific highlighter if reimplemented. ">createHighlighter()</a> will be used to detect and highlight incorrectly spelled words, but this function allows to set a custom highlighter.</p>
+<p>This has to be called after enabling spell checking with <a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5" title="Turns background spell checking for this text edit on or off. ">setCheckSpellingEnabled()</a>, otherwise it has no effect.</p>
+<p>Ownership is transferred to the <a class="el" href="classKTextEdit.html" title="A KDE&#39;ified QTextEdit. ">KTextEdit</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKTextEdit.html#af442d02443cb3feff56d6f15507d182a" title="Returns the current highlighter, which is 0 if spell checking is disabled. ">highlighter()</a> </dd>
+<dd>
+<a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2" title="Allows to create a specific highlighter if reimplemented. ">createHighlighter()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">highLighter</td><td>the new highlighter which will be used now </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00689">689</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60da005d60e92a8dde8f62ae4abcc967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60da005d60e92a8dde8f62ae4abcc967">&#9670;&nbsp;</a></span>setReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::setReadOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to set a proper "deactivated" background color. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00745">745</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a21942951eff625ca8cea09bef8fa7a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21942951eff625ca8cea09bef8fa7a9b">&#9670;&nbsp;</a></span>setSpellCheckingLanguage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::setSpellCheckingLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>language</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the spell check language which will be used for highlighting spelling mistakes and for the spellcheck dialog. </p>
+<p>The <a class="el" href="classKTextEdit.html#af667757143c77e7093ba72769afc40c1" title="Emitted when the user changes the language in the spellcheck dialog shown by checkSpelling() or when ...">languageChanged()</a> signal will be emitted when the new language is different from the old one.</p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00349">349</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3349d8c8cec836c5045ff831ee481878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3349d8c8cec836c5045ff831ee481878">&#9670;&nbsp;</a></span>shouldBlockBeSpellChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KTextEdit::shouldBlockBeSpellChecked </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the given paragraph or block should be spellcheck. </p>
+<p>For example, a mail client does not want to check quoted text, and would return false here (by checking whether the block starts with a quote sign).</p>
+<p>Always returns true by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00740">740</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8636d0d13b9ec8adc250522e002437a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8636d0d13b9ec8adc250522e002437a2">&#9670;&nbsp;</a></span>showAutoCorrectButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::showAutoCorrectButton </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.10 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l01062">1062</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c3e1df8b5a50234e06b2eaff1e9dc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3e1df8b5a50234e06b2eaff1e9dc97">&#9670;&nbsp;</a></span>showSpellConfigDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::showSpellConfigDialog </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>windowIcon</em> = <code>QString()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1ConfigDialog.html">Sonnet::ConfigDialog</a> for this text edit. </p>
+<p>The spellcheck language of the config dialog is set to the current spellcheck language of the textedit. If the user changes the language in that dialog, the <a class="el" href="classKTextEdit.html#af667757143c77e7093ba72769afc40c1" title="Emitted when the user changes the language in the spellcheck dialog shown by checkSpelling() or when ...">languageChanged()</a> signal is emitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configFileName</td><td>The file which is used to store and load the config settings </td></tr>
+    <tr><td class="paramname">windowIcon</td><td>the icon which is used for the titlebar of the spell dialog window. Can be empty, then no icon is set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00362">362</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6faa160d4faa48293248c11e896a7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6faa160d4faa48293248c11e896a7ee">&#9670;&nbsp;</a></span>showTabAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::showTabAction </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.10 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00998">998</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a415eef09787f61b7c8fd0ee94f4b55cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415eef09787f61b7c8fd0ee94f4b55cb">&#9670;&nbsp;</a></span>slotDoReplace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::slotDoReplace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00815">815</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad986042b6ad46bdffc95a4131cf32a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad986042b6ad46bdffc95a4131cf32a04">&#9670;&nbsp;</a></span>slotFindPrevious</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::slotFindPrevious </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00949">949</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3110dc6a4618a70664d6e8d9d542cae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3110dc6a4618a70664d6e8d9d542cae6">&#9670;&nbsp;</a></span>slotSpeakText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::slotSpeakText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ktextedit_8cpp_source.html#l00641">641</a> of file <a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad7846e018ac5edc893e2d39229a66c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7846e018ac5edc893e2d39229a66c4d">&#9670;&nbsp;</a></span>spellCheckerAutoCorrect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::spellCheckerAutoCorrect </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>currentWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>autoCorrectWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.10 </dd></dl>
+
+</div>
+</div>
+<a id="a55e4c2f26e155b0ea2213005e0045f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e4c2f26e155b0ea2213005e0045f52">&#9670;&nbsp;</a></span>spellCheckingCanceled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::spellCheckingCanceled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signal spellCheckingCanceled is sent when we cancel spell checking. </p>
+<dl class="section since"><dt>Since</dt><dd>4.10 </dd></dl>
+
+</div>
+</div>
+<a id="aa46bf70e0900d81a58b85eea91c8944e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46bf70e0900d81a58b85eea91c8944e">&#9670;&nbsp;</a></span>spellCheckingFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::spellCheckingFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signal spellCheckingFinished is sent when we finish spell check or we click on "Terminate" button in sonnet dialogbox </p>
+<dl class="section since"><dt>Since</dt><dd>4.10 </dd></dl>
+
+</div>
+</div>
+<a id="acd309899600cb2987f7917c5b6f24d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd309899600cb2987f7917c5b6f24d8b">&#9670;&nbsp;</a></span>spellCheckingLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString&amp; KTextEdit::spellCheckingLanguage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the spell checking language which was set by <a class="el" href="classKTextEdit.html#a21942951eff625ca8cea09bef8fa7a9b" title="Set the spell check language which will be used for highlighting spelling mistakes and for the spellc...">setSpellCheckingLanguage()</a>, the spellcheck dialog or the spellcheck config dialog, or an empty string if that has never been called. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+</div>
+</div>
+<a id="aeb28d4bcd6a8d70eb7b9e2f59be933f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb28d4bcd6a8d70eb7b9e2f59be933f2">&#9670;&nbsp;</a></span>spellCheckStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KTextEdit::spellCheckStatus </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal sends when spell checking is finished/stopped/completed. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="ktextedit_8h_source.html">ktextedit.h</a></li>
+<li><a class="el" href="ktextedit_8cpp_source.html">ktextedit.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:01 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

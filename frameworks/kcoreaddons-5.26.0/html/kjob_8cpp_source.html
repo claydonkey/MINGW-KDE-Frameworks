@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCoreAddons - kjob.cpp Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCoreAddons</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCoreAddons"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAboutData.html">KAboutData</option>
+        
+        <option value="classKAboutLicense.html">KAboutLicense</option>
+        
+        <option value="classKAboutPerson.html">KAboutPerson</option>
+        
+        <option value="classKAutoSaveFile.html">KAutoSaveFile</option>
+        
+        <option value="classKCharMacroExpander.html">KCharMacroExpander</option>
+        
+        <option value="classKCompositeJob.html">KCompositeJob</option>
+        
+        <option value="classKdelibs4ConfigMigrator.html">Kdelibs4ConfigMigrator</option>
+        
+        <option value="classKdelibs4Migration.html">Kdelibs4Migration</option>
+        
+        <option value="classKDirWatch.html">KDirWatch</option>
+        
+        <option value="classKFormat.html">KFormat</option>
+        
+        <option value="classKJob.html">KJob</option>
+        
+        <option value="classKJobTrackerInterface.html">KJobTrackerInterface</option>
+        
+        <option value="classKJobUiDelegate.html">KJobUiDelegate</option>
+        
+        <option value="classKMacroExpanderBase.html">KMacroExpanderBase</option>
+        
+        <option value="classKMessageHandler.html">KMessageHandler</option>
+        
+        <option value="classKPluginFactory.html">KPluginFactory</option>
+        
+        <option value="classKPluginLoader.html">KPluginLoader</option>
+        
+        <option value="classKPluginMetaData.html">KPluginMetaData</option>
+        
+        <option value="classKPluginName.html">KPluginName</option>
+        
+        <option value="classKProcess.html">KProcess</option>
+        
+        <option value="classKRandomSequence.html">KRandomSequence</option>
+        
+        <option value="classKSharedDataCache.html">KSharedDataCache</option>
+        
+        <option value="classKTextToHTMLEmoticonsInterface.html">KTextToHTMLEmoticonsInterface</option>
+        
+        <option value="classKUser.html">KUser</option>
+        
+        <option value="classKUserGroup.html">KUserGroup</option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_GID ></option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_UID ></option>
+        
+        <option value="classKWordMacroExpander.html">KWordMacroExpander</option>
+        
+        <option value="namespaceKMacroExpander.html">KMacroExpander</option>
+        
+        <option value="namespaceKMessage.html">KMessage</option>
+        
+        <option value="namespaceKRandom.html">KRandom</option>
+        
+        <option value="namespaceKShell.html">KShell</option>
+        
+        <option value="namespaceKStringHandler.html">KStringHandler</option>
+        
+        <option value="namespaceKTextToHTML.html">KTextToHTML</option>
+        
+        <option value="namespaceKUrlMimeData.html">KUrlMimeData</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Addons to QtCore</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mpyne@kde.org">Michael Pyne</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5CoreAddons)
+target_link_libraries(yourapp KF5::CoreAddons)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCoreAddons </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcoreaddons-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCoreAddons on <a href="https://cgit.kde.org/kcoreaddons-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCoreAddons </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9612c7b4b798595eaf4bc4f88e06fc8e.html">mingw-w64-kcoreaddons-qt5</a></li><li class="navelem"><a class="el" href="dir_5e962c04109438d8e33dd57e83a310d2.html">src</a></li><li class="navelem"><a class="el" href="dir_c3410e6636577ddfbff85b0ff79867ed.html">kcoreaddons-5.26.0</a></li><li class="navelem"><a class="el" href="dir_78334550ba39cfe933339721ea566fce.html">src</a></li><li class="navelem"><a class="el" href="dir_359138033c4363b5c39acd95dedacb4b.html">lib</a></li><li class="navelem"><a class="el" href="dir_4fec6f97dd893d34cc3c945582cb16f0.html">jobs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">kjob.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  This file is part of the KDE project</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    Copyright (C) 2000 Stephan Kulow &lt;coolo@kde.org&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">                       David Faure &lt;faure@kde.org&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Copyright (C) 2006 Kevin Ottens &lt;ervin@kde.org&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    License version 2 as published by the Free Software Foundation.</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    Library General Public License for more details.</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    Boston, MA 02110-1301, USA.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;kjob.h&quot;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;kjob_p.h&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;kjobuidelegate.h&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;QEventLoop&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;QMetaType&gt;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;KJobPrivate::KJobPrivate()</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : q_ptr(0), uiDelegate(0), <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKMessageBox.html#ac799ff6b0a491b1356981777c99c7551">error</a>(<a class="code" href="classKJob.html">KJob</a>::<a class="code" href="namespaceKShell.html#af6f8d4a40db8066bea4a36beb1c75c83abe054a8b4ea3d14a7c95dc5e374bdf7f">NoError</a>),</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      progressUnit(<a class="code" href="classKJob.html">KJob</a>::Bytes), percentage(0),</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      speedTimer(0), eventLoop(0),</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      capabilities(<a class="code" href="classKJob.html">KJob</a>::NoCapabilities),</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      suspended(false), isAutoDelete(true), isFinished(false)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;KJobPrivate::~KJobPrivate()</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classKJob.html#abb012b5f948bb7eb479849544dd8054f">   45</a></span>&#160;<a class="code" href="classKJob.html#abb012b5f948bb7eb479849544dd8054f">KJob::KJob</a>(QObject *parent)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : QObject(parent), d_ptr(new KJobPrivate)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    d_ptr-&gt;q_ptr = <span class="keyword">this</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="classKJob.html#abb012b5f948bb7eb479849544dd8054f">KJob::KJob</a>(KJobPrivate &amp;dd, QObject *parent)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    : QObject(parent), d_ptr(&amp;dd)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    d_ptr-&gt;q_ptr = <span class="keyword">this</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classKJob.html#ae471774ad3fb512f5b52d7555fdd1a0d">   57</a></span>&#160;<a class="code" href="classKJob.html#ae471774ad3fb512f5b52d7555fdd1a0d">KJob::~KJob</a>()</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (!d_ptr-&gt;isFinished) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        emit <a class="code" href="classKJob.html#a67b6c63fc5eb7bd31234960e7a5487d9">finished</a>(<span class="keyword">this</span>, QPrivateSignal());</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">delete</span> d_ptr-&gt;speedTimer;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">delete</span> d_ptr-&gt;uiDelegate;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">delete</span> d_ptr;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classKJob.html#aeb16f4e8fc75ae98f3b4c54663b5f2fb">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#aeb16f4e8fc75ae98f3b4c54663b5f2fb">KJob::setUiDelegate</a>(<a class="code" href="classKJobUiDelegate.html">KJobUiDelegate</a> *delegate)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (delegate == 0 || delegate-&gt;<a class="code" href="classKJobUiDelegate.html#acfd5c786241eb31ad1562f920c21d8d9">setJob</a>(<span class="keyword">this</span>)) {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">delete</span> d-&gt;uiDelegate;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        d-&gt;uiDelegate = delegate;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (d-&gt;uiDelegate) {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            d-&gt;uiDelegate-&gt;connectJob(<span class="keyword">this</span>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classKJob.html#a8b4d4f432bb9df55edc62e24be5c1609">   81</a></span>&#160;<a class="code" href="classKJobUiDelegate.html">KJobUiDelegate</a> *<a class="code" href="classKJob.html#a8b4d4f432bb9df55edc62e24be5c1609">KJob::uiDelegate</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;uiDelegate;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;KJob::Capabilities <a class="code" href="classKJob.html#a791e6ced466eed1292235bdd21dfff8b">KJob::capabilities</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;capabilities;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classKJob.html#a536d69fefb405fc3c7a2481c1b3ddb10">   91</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a536d69fefb405fc3c7a2481c1b3ddb10">KJob::isSuspended</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;suspended;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> KJob::finishJob(<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a2cbae3c87fa7dddd25e3ab528e94ceee">emitResult</a>)</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    d-&gt;isFinished = <span class="keyword">true</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (d-&gt;eventLoop) {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        d-&gt;eventLoop-&gt;quit();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// If we are displaying a progress dialog, remove it first.</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    emit <a class="code" href="classKJob.html#a67b6c63fc5eb7bd31234960e7a5487d9">finished</a>(<span class="keyword">this</span>, QPrivateSignal());</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (emitResult) {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        emit <a class="code" href="classKJob.html#a4df53d071366b7c2702551a415ed5bd7">result</a>(<span class="keyword">this</span>, QPrivateSignal());</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classKJob.html#a90ac84e8528fc8e42dfbb0c0e9765ef6">isAutoDelete</a>()) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        deleteLater();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classKJob.html#a4cf31ed005f4abf01c478fd26fba03ee">  117</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a4cf31ed005f4abf01c478fd26fba03ee">KJob::kill</a>(KillVerbosity verbosity)</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classKJob.html#a530a7e84c5a68a9b418247df54a94789">doKill</a>()) {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="classKJob.html#a859926d61ecfde11a13410abab4790a8">setError</a>(KilledJobError);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        finishJob(verbosity != Quietly);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classKJob.html#a1aa81820372970fad514d596a5f59472">  129</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a1aa81820372970fad514d596a5f59472">KJob::suspend</a>()</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;suspended) {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classKJob.html#a579209138987392ce0ec736c339bacbb">doSuspend</a>()) {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            d-&gt;suspended = <span class="keyword">true</span>;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            emit <a class="code" href="classKJob.html#aafbecd4ee151a9a7b51b0420c75934c0">suspended</a>(<span class="keyword">this</span>, QPrivateSignal());</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classKJob.html#a0ab533129a803a7f565a6a0ab9ccc7fc">  144</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a0ab533129a803a7f565a6a0ab9ccc7fc">KJob::resume</a>()</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">if</span> (d-&gt;suspended) {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classKJob.html#ac31545b7f0b1ddca8f8c06e25c7ebce3">doResume</a>()) {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            d-&gt;suspended = <span class="keyword">false</span>;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            emit <a class="code" href="classKJob.html#a00c91c85bcf63d93b5a1ae6721f4d468">resumed</a>(<span class="keyword">this</span>, QPrivateSignal());</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classKJob.html#a530a7e84c5a68a9b418247df54a94789">  159</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a530a7e84c5a68a9b418247df54a94789">KJob::doKill</a>()</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div><div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classKJob.html#a579209138987392ce0ec736c339bacbb">  164</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a579209138987392ce0ec736c339bacbb">KJob::doSuspend</a>()</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div><div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classKJob.html#ac31545b7f0b1ddca8f8c06e25c7ebce3">  169</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#ac31545b7f0b1ddca8f8c06e25c7ebce3">KJob::doResume</a>()</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classKJob.html#a9eb35f34df97da45874a8e30b38edcf4">  174</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a9eb35f34df97da45874a8e30b38edcf4">KJob::setCapabilities</a>(KJob::Capabilities <a class="code" href="classKJob.html#a791e6ced466eed1292235bdd21dfff8b">capabilities</a>)</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    d-&gt;capabilities = <a class="code" href="classKJob.html#a791e6ced466eed1292235bdd21dfff8b">capabilities</a>;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classKJob.html#a03c768fad2f9eef7b72b068b389c42ee">  180</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a03c768fad2f9eef7b72b068b389c42ee">KJob::exec</a>()</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Usually this job would delete itself, via deleteLater() just after</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// emitting result() (unless configured otherwise). Since we use an event</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// loop below, that event loop will process the deletion event and we&#39;ll</span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// have been deleted when exec() returns. This crashes, so temporarily</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// suspend autodeletion and manually do it afterwards.</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> wasAutoDelete = <a class="code" href="classKJob.html#a90ac84e8528fc8e42dfbb0c0e9765ef6">isAutoDelete</a>();</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classKJob.html#ac3e70fb23e01094732d91a82ef642fcb">setAutoDelete</a>(<span class="keyword">false</span>);</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    Q_ASSERT(! d-&gt;eventLoop);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    QEventLoop loop(<span class="keyword">this</span>);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    d-&gt;eventLoop = &amp;loop;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="classKJob.html#ac10f2cb1cda6d32a08ad4a11e7b6bd8d">start</a>();</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;isFinished) {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        d-&gt;eventLoop-&gt;exec(QEventLoop::ExcludeUserInputEvents);</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    d-&gt;eventLoop = 0;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (wasAutoDelete) {</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        deleteLater();</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> (d-&gt;error == NoError);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">int</span> <a class="code" href="classKJob.html#a3ce3cc54ff80484e57dbb58b40cf1d60">KJob::error</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;error;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;QString <a class="code" href="classKJob.html#adf02ea23c2bc6267a6eff6941831461f">KJob::errorText</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;errorText;</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;QString <a class="code" href="classKJob.html#a8b08f9cbe5883b44355ea07618682ee8">KJob::errorString</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;errorText;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classKJob.html#a6d266550121501d9b6d24d76935ee3da">  223</a></span>&#160;qulonglong <a class="code" href="classKJob.html#a6d266550121501d9b6d24d76935ee3da">KJob::processedAmount</a>(Unit unit)<span class="keyword"> const</span></div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;processedAmount[unit];</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div><div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">  228</a></span>&#160;qulonglong <a class="code" href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">KJob::totalAmount</a>(Unit unit)<span class="keyword"> const</span></div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;totalAmount[unit];</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div><div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classKJob.html#a72ec308bdf788dd3a648eac5d960f7ee">  233</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classKJob.html#a72ec308bdf788dd3a648eac5d960f7ee">KJob::percent</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">return</span> d_func()-&gt;percentage;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div><div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classKJob.html#a859926d61ecfde11a13410abab4790a8">  238</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a859926d61ecfde11a13410abab4790a8">KJob::setError</a>(<span class="keywordtype">int</span> errorCode)</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;{</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    d-&gt;error = errorCode;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div><div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classKJob.html#a08849b10c05076e867ced5727ed35930">  244</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a08849b10c05076e867ced5727ed35930">KJob::setErrorText</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classKJob.html#adf02ea23c2bc6267a6eff6941831461f">errorText</a>)</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    d-&gt;errorText = <a class="code" href="classKJob.html#adf02ea23c2bc6267a6eff6941831461f">errorText</a>;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div><div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classKJob.html#adf19c8899d3217bae6d05ad8e493e8ca">  250</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#adf19c8899d3217bae6d05ad8e493e8ca">KJob::setProcessedAmount</a>(Unit unit, qulonglong amount)</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">bool</span> should_emit = (d-&gt;processedAmount[unit] != amount);</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    d-&gt;processedAmount[unit] = amount;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span> (should_emit) {</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        emit <a class="code" href="classKJob.html#a6d266550121501d9b6d24d76935ee3da">processedAmount</a>(<span class="keyword">this</span>, unit, amount);</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (unit == d-&gt;progressUnit) {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            emit <a class="code" href="classKJob.html#a457d296aab2ef3db2ee9e1ac5d0a5edb">processedSize</a>(<span class="keyword">this</span>, amount);</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <a class="code" href="classKJob.html#abc2e9a1b27f3d07e717faf34565fed21">emitPercent</a>(d-&gt;processedAmount[unit], d-&gt;totalAmount[unit]);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div><div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classKJob.html#a261739ac0eafa4a7e80098fd0c6e9e61">  266</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a261739ac0eafa4a7e80098fd0c6e9e61">KJob::setTotalAmount</a>(Unit unit, qulonglong amount)</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">bool</span> should_emit = (d-&gt;totalAmount[unit] != amount);</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    d-&gt;totalAmount[unit] = amount;</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">if</span> (should_emit) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        emit <a class="code" href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">totalAmount</a>(<span class="keyword">this</span>, unit, amount);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">if</span> (unit == d-&gt;progressUnit) {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            emit <a class="code" href="classKJob.html#a9ddfc488b9930e6b8758d681335ff31f">totalSize</a>(<span class="keyword">this</span>, amount);</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <a class="code" href="classKJob.html#abc2e9a1b27f3d07e717faf34565fed21">emitPercent</a>(d-&gt;processedAmount[unit], d-&gt;totalAmount[unit]);</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div><div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classKJob.html#a7177fa35785b66e749f444148016afa5">  282</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a7177fa35785b66e749f444148016afa5">KJob::setPercent</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> percentage)</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">if</span> (d-&gt;percentage != percentage) {</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        d-&gt;percentage = percentage;</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        emit <a class="code" href="classKJob.html#a72ec308bdf788dd3a648eac5d960f7ee">percent</a>(<span class="keyword">this</span>, percentage);</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div><div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classKJob.html#a2cbae3c87fa7dddd25e3ab528e94ceee">  291</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#a2cbae3c87fa7dddd25e3ab528e94ceee">KJob::emitResult</a>()</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    finishJob(<span class="keyword">true</span>);</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div><div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classKJob.html#abc2e9a1b27f3d07e717faf34565fed21">  296</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#abc2e9a1b27f3d07e717faf34565fed21">KJob::emitPercent</a>(qulonglong <a class="code" href="classKJob.html#a6d266550121501d9b6d24d76935ee3da">processedAmount</a>, qulonglong <a class="code" href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">totalAmount</a>)</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// calculate percents</span></div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">if</span> (totalAmount) {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> oldPercentage = d-&gt;percentage;</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        d-&gt;percentage = 100.0 * processedAmount / <a class="code" href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">totalAmount</a>;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">if</span> (d-&gt;percentage != oldPercentage) {</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            emit <a class="code" href="classKJob.html#a72ec308bdf788dd3a648eac5d960f7ee">percent</a>(<span class="keyword">this</span>, d-&gt;percentage);</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div><div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classKJob.html#aeebe1bfd536b766fb92a7d23e5d343a6">  309</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#aeebe1bfd536b766fb92a7d23e5d343a6">KJob::emitSpeed</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> value)</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;speedTimer) {</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        d-&gt;speedTimer = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        connect(d-&gt;speedTimer, SIGNAL(timeout()), SLOT(_k_speedTimeout()));</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    emit <a class="code" href="classKJob.html#af2f7afa9087dee468bd61f5f76c705ad">speed</a>(<span class="keyword">this</span>, value);</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    d-&gt;speedTimer-&gt;start(5000);   <span class="comment">// 5 seconds interval should be enough</span></div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keywordtype">void</span> KJobPrivate::_k_speedTimeout()</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    Q_Q(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// send 0 and stop the timer</span></div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">// timer will be restarted only when we receive another speed event</span></div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    emit q-&gt;speed(q, 0);</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    speedTimer-&gt;stop();</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div><div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classKJob.html#a90ac84e8528fc8e42dfbb0c0e9765ef6">  330</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKJob.html#a90ac84e8528fc8e42dfbb0c0e9765ef6">KJob::isAutoDelete</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">return</span> d-&gt;isAutoDelete;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div><div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="classKJob.html#ac3e70fb23e01094732d91a82ef642fcb">  336</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKJob.html#ac3e70fb23e01094732d91a82ef642fcb">KJob::setAutoDelete</a>(<span class="keywordtype">bool</span> autodelete)</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    Q_D(<a class="code" href="classKJob.html">KJob</a>);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    d-&gt;isAutoDelete = autodelete;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#include &quot;moc_kjob.cpp&quot;</span></div><div class="ttc" id="classKJob_html_a536d69fefb405fc3c7a2481c1b3ddb10"><div class="ttname"><a href="classKJob.html#a536d69fefb405fc3c7a2481c1b3ddb10">KJob::isSuspended</a></div><div class="ttdeci">bool isSuspended() const</div><div class="ttdoc">Returns if the job was suspended with the suspend() call. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00091">kjob.cpp:91</a></div></div>
+<div class="ttc" id="classKJob_html_a4cf31ed005f4abf01c478fd26fba03ee"><div class="ttname"><a href="classKJob.html#a4cf31ed005f4abf01c478fd26fba03ee">KJob::kill</a></div><div class="ttdeci">bool kill(KillVerbosity verbosity=Quietly)</div><div class="ttdoc">Aborts this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00117">kjob.cpp:117</a></div></div>
+<div class="ttc" id="classKJob_html_a9eb35f34df97da45874a8e30b38edcf4"><div class="ttname"><a href="classKJob.html#a9eb35f34df97da45874a8e30b38edcf4">KJob::setCapabilities</a></div><div class="ttdeci">void setCapabilities(Capabilities capabilities)</div><div class="ttdoc">Sets the capabilities for this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00174">kjob.cpp:174</a></div></div>
+<div class="ttc" id="classKJob_html_a2cbae3c87fa7dddd25e3ab528e94ceee"><div class="ttname"><a href="classKJob.html#a2cbae3c87fa7dddd25e3ab528e94ceee">KJob::emitResult</a></div><div class="ttdeci">void emitResult()</div><div class="ttdoc">Utility function to emit the result signal, and suicide this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00291">kjob.cpp:291</a></div></div>
+<div class="ttc" id="classKJob_html_aeb16f4e8fc75ae98f3b4c54663b5f2fb"><div class="ttname"><a href="classKJob.html#aeb16f4e8fc75ae98f3b4c54663b5f2fb">KJob::setUiDelegate</a></div><div class="ttdeci">void setUiDelegate(KJobUiDelegate *delegate)</div><div class="ttdoc">Attach a UI delegate to this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00068">kjob.cpp:68</a></div></div>
+<div class="ttc" id="classKJob_html_a859926d61ecfde11a13410abab4790a8"><div class="ttname"><a href="classKJob.html#a859926d61ecfde11a13410abab4790a8">KJob::setError</a></div><div class="ttdeci">void setError(int errorCode)</div><div class="ttdoc">Sets the error code. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00238">kjob.cpp:238</a></div></div>
+<div class="ttc" id="classKJob_html_a03c768fad2f9eef7b72b068b389c42ee"><div class="ttname"><a href="classKJob.html#a03c768fad2f9eef7b72b068b389c42ee">KJob::exec</a></div><div class="ttdeci">bool exec()</div><div class="ttdoc">Executes the job synchronously. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00180">kjob.cpp:180</a></div></div>
+<div class="ttc" id="classKJob_html_a00c91c85bcf63d93b5a1ae6721f4d468"><div class="ttname"><a href="classKJob.html#a00c91c85bcf63d93b5a1ae6721f4d468">KJob::resumed</a></div><div class="ttdeci">void resumed(KJob *job)</div><div class="ttdoc">Emitted when the job is resumed. </div></div>
+<div class="ttc" id="classKJob_html_a8b08f9cbe5883b44355ea07618682ee8"><div class="ttname"><a href="classKJob.html#a8b08f9cbe5883b44355ea07618682ee8">KJob::errorString</a></div><div class="ttdeci">virtual QString errorString() const</div><div class="ttdoc">A human-readable error message. </div></div>
+<div class="ttc" id="classKJob_html_ae471774ad3fb512f5b52d7555fdd1a0d"><div class="ttname"><a href="classKJob.html#ae471774ad3fb512f5b52d7555fdd1a0d">KJob::~KJob</a></div><div class="ttdeci">virtual ~KJob()</div><div class="ttdoc">Destroys a KJob object. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00057">kjob.cpp:57</a></div></div>
+<div class="ttc" id="classKJob_html_a7177fa35785b66e749f444148016afa5"><div class="ttname"><a href="classKJob.html#a7177fa35785b66e749f444148016afa5">KJob::setPercent</a></div><div class="ttdeci">void setPercent(unsigned long percentage)</div><div class="ttdoc">Sets the overall progress of the job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00282">kjob.cpp:282</a></div></div>
+<div class="ttc" id="classKJob_html_a1aa81820372970fad514d596a5f59472"><div class="ttname"><a href="classKJob.html#a1aa81820372970fad514d596a5f59472">KJob::suspend</a></div><div class="ttdeci">bool suspend()</div><div class="ttdoc">Suspends this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00129">kjob.cpp:129</a></div></div>
+<div class="ttc" id="classKJob_html_a08849b10c05076e867ced5727ed35930"><div class="ttname"><a href="classKJob.html#a08849b10c05076e867ced5727ed35930">KJob::setErrorText</a></div><div class="ttdeci">void setErrorText(const QString &amp;errorText)</div><div class="ttdoc">Sets the error text. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00244">kjob.cpp:244</a></div></div>
+<div class="ttc" id="classKJob_html_af2f7afa9087dee468bd61f5f76c705ad"><div class="ttname"><a href="classKJob.html#af2f7afa9087dee468bd61f5f76c705ad">KJob::speed</a></div><div class="ttdeci">void speed(KJob *job, unsigned long speed)</div><div class="ttdoc">Emitted to display information about the speed of this job. </div></div>
+<div class="ttc" id="classKJob_html_a72ec308bdf788dd3a648eac5d960f7ee"><div class="ttname"><a href="classKJob.html#a72ec308bdf788dd3a648eac5d960f7ee">KJob::percent</a></div><div class="ttdeci">unsigned long percent() const</div><div class="ttdoc">Returns the overall progress of this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00233">kjob.cpp:233</a></div></div>
+<div class="ttc" id="classKJob_html_a67b6c63fc5eb7bd31234960e7a5487d9"><div class="ttname"><a href="classKJob.html#a67b6c63fc5eb7bd31234960e7a5487d9">KJob::finished</a></div><div class="ttdeci">void finished(KJob *job)</div><div class="ttdoc">Emitted when the job is finished, in any case. </div></div>
+<div class="ttc" id="classKJob_html_a9ddfc488b9930e6b8758d681335ff31f"><div class="ttname"><a href="classKJob.html#a9ddfc488b9930e6b8758d681335ff31f">KJob::totalSize</a></div><div class="ttdeci">void totalSize(KJob *job, qulonglong size)</div><div class="ttdoc">Emitted when we know the size of this job (data size in bytes for transfers, number of entries for li...</div></div>
+<div class="ttc" id="classKJob_html_adf19c8899d3217bae6d05ad8e493e8ca"><div class="ttname"><a href="classKJob.html#adf19c8899d3217bae6d05ad8e493e8ca">KJob::setProcessedAmount</a></div><div class="ttdeci">void setProcessedAmount(Unit unit, qulonglong amount)</div><div class="ttdoc">Sets the processed size. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00250">kjob.cpp:250</a></div></div>
+<div class="ttc" id="namespaceKMessageBox_html_ac799ff6b0a491b1356981777c99c7551"><div class="ttname"><a href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKMessageBox.html#ac799ff6b0a491b1356981777c99c7551">KMessageBox::error</a></div><div class="ttdeci">void error(QWidget *parent, const QString &amp;text, const QString &amp;caption=QString(), Options options=Notify)</div></div>
+<div class="ttc" id="classKJob_html_a530a7e84c5a68a9b418247df54a94789"><div class="ttname"><a href="classKJob.html#a530a7e84c5a68a9b418247df54a94789">KJob::doKill</a></div><div class="ttdeci">virtual bool doKill()</div><div class="ttdoc">Aborts this job quietly. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00159">kjob.cpp:159</a></div></div>
+<div class="ttc" id="classKJob_html_a457d296aab2ef3db2ee9e1ac5d0a5edb"><div class="ttname"><a href="classKJob.html#a457d296aab2ef3db2ee9e1ac5d0a5edb">KJob::processedSize</a></div><div class="ttdeci">void processedSize(KJob *job, qulonglong size)</div><div class="ttdoc">Regularly emitted to show the progress of this job (current data size in bytes for transfers...</div></div>
+<div class="ttc" id="classKJobUiDelegate_html"><div class="ttname"><a href="classKJobUiDelegate.html">KJobUiDelegate</a></div><div class="ttdoc">The base class for all KJob UI delegate. </div><div class="ttdef"><b>Definition:</b> <a href="kjobuidelegate_8h_source.html#l00039">kjobuidelegate.h:39</a></div></div>
+<div class="ttc" id="classKJob_html_a8b4d4f432bb9df55edc62e24be5c1609"><div class="ttname"><a href="classKJob.html#a8b4d4f432bb9df55edc62e24be5c1609">KJob::uiDelegate</a></div><div class="ttdeci">KJobUiDelegate * uiDelegate() const</div><div class="ttdoc">Retrieves the delegate attached to this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00081">kjob.cpp:81</a></div></div>
+<div class="ttc" id="classKJob_html_a3ce3cc54ff80484e57dbb58b40cf1d60"><div class="ttname"><a href="classKJob.html#a3ce3cc54ff80484e57dbb58b40cf1d60">KJob::error</a></div><div class="ttdeci">int error() const</div><div class="ttdoc">Returns the error code, if there has been an error. </div></div>
+<div class="ttc" id="classKJob_html_a6d266550121501d9b6d24d76935ee3da"><div class="ttname"><a href="classKJob.html#a6d266550121501d9b6d24d76935ee3da">KJob::processedAmount</a></div><div class="ttdeci">Q_SCRIPTABLE qulonglong processedAmount(Unit unit) const</div><div class="ttdoc">Returns the processed amount of a given unit for this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00223">kjob.cpp:223</a></div></div>
+<div class="ttc" id="classKJob_html_a0ab533129a803a7f565a6a0ab9ccc7fc"><div class="ttname"><a href="classKJob.html#a0ab533129a803a7f565a6a0ab9ccc7fc">KJob::resume</a></div><div class="ttdeci">bool resume()</div><div class="ttdoc">Resumes this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00144">kjob.cpp:144</a></div></div>
+<div class="ttc" id="classKJob_html_aeebe1bfd536b766fb92a7d23e5d343a6"><div class="ttname"><a href="classKJob.html#aeebe1bfd536b766fb92a7d23e5d343a6">KJob::emitSpeed</a></div><div class="ttdeci">void emitSpeed(unsigned long speed)</div><div class="ttdoc">Utility function for inherited jobs. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00309">kjob.cpp:309</a></div></div>
+<div class="ttc" id="classKJob_html_a791e6ced466eed1292235bdd21dfff8b"><div class="ttname"><a href="classKJob.html#a791e6ced466eed1292235bdd21dfff8b">KJob::capabilities</a></div><div class="ttdeci">Capabilities capabilities() const</div><div class="ttdoc">Returns the capabilities of this job. </div></div>
+<div class="ttc" id="classKJobUiDelegate_html_acfd5c786241eb31ad1562f920c21d8d9"><div class="ttname"><a href="classKJobUiDelegate.html#acfd5c786241eb31ad1562f920c21d8d9">KJobUiDelegate::setJob</a></div><div class="ttdeci">virtual bool setJob(KJob *job)</div><div class="ttdoc">Attach this UI delegate to a job. </div><div class="ttdef"><b>Definition:</b> <a href="kjobuidelegate_8cpp_source.html#l00054">kjobuidelegate.cpp:54</a></div></div>
+<div class="ttc" id="classKJob_html_a32d37b873aae950ed12fc99b569d8c73"><div class="ttname"><a href="classKJob.html#a32d37b873aae950ed12fc99b569d8c73">KJob::totalAmount</a></div><div class="ttdeci">Q_SCRIPTABLE qulonglong totalAmount(Unit unit) const</div><div class="ttdoc">Returns the total amount of a given unit for this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00228">kjob.cpp:228</a></div></div>
+<div class="ttc" id="classKJob_html_ac10f2cb1cda6d32a08ad4a11e7b6bd8d"><div class="ttname"><a href="classKJob.html#ac10f2cb1cda6d32a08ad4a11e7b6bd8d">KJob::start</a></div><div class="ttdeci">virtual Q_SCRIPTABLE void start()=0</div><div class="ttdoc">Starts the job asynchronously. </div></div>
+<div class="ttc" id="classKJob_html_a261739ac0eafa4a7e80098fd0c6e9e61"><div class="ttname"><a href="classKJob.html#a261739ac0eafa4a7e80098fd0c6e9e61">KJob::setTotalAmount</a></div><div class="ttdeci">void setTotalAmount(Unit unit, qulonglong amount)</div><div class="ttdoc">Sets the total size. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00266">kjob.cpp:266</a></div></div>
+<div class="ttc" id="classKJob_html_aafbecd4ee151a9a7b51b0420c75934c0"><div class="ttname"><a href="classKJob.html#aafbecd4ee151a9a7b51b0420c75934c0">KJob::suspended</a></div><div class="ttdeci">void suspended(KJob *job)</div><div class="ttdoc">Emitted when the job is suspended. </div></div>
+<div class="ttc" id="namespaceKShell_html_af6f8d4a40db8066bea4a36beb1c75c83abe054a8b4ea3d14a7c95dc5e374bdf7f"><div class="ttname"><a href="namespaceKShell.html#af6f8d4a40db8066bea4a36beb1c75c83abe054a8b4ea3d14a7c95dc5e374bdf7f">KShell::NoError</a></div><div class="ttdoc">Success. </div><div class="ttdef"><b>Definition:</b> <a href="kshell_8h_source.html#l00091">kshell.h:91</a></div></div>
+<div class="ttc" id="classKJob_html_a4df53d071366b7c2702551a415ed5bd7"><div class="ttname"><a href="classKJob.html#a4df53d071366b7c2702551a415ed5bd7">KJob::result</a></div><div class="ttdeci">void result(KJob *job)</div><div class="ttdoc">Emitted when the job is finished (except when killed with KJob::Quietly). </div></div>
+<div class="ttc" id="classKJob_html_abc2e9a1b27f3d07e717faf34565fed21"><div class="ttname"><a href="classKJob.html#abc2e9a1b27f3d07e717faf34565fed21">KJob::emitPercent</a></div><div class="ttdeci">void emitPercent(qulonglong processedAmount, qulonglong totalAmount)</div><div class="ttdoc">Utility function for inherited jobs. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00296">kjob.cpp:296</a></div></div>
+<div class="ttc" id="classKJob_html_adf02ea23c2bc6267a6eff6941831461f"><div class="ttname"><a href="classKJob.html#adf02ea23c2bc6267a6eff6941831461f">KJob::errorText</a></div><div class="ttdeci">QString errorText() const</div><div class="ttdoc">Returns the error text if there has been an error. </div></div>
+<div class="ttc" id="classKJob_html_ac3e70fb23e01094732d91a82ef642fcb"><div class="ttname"><a href="classKJob.html#ac3e70fb23e01094732d91a82ef642fcb">KJob::setAutoDelete</a></div><div class="ttdeci">void setAutoDelete(bool autodelete)</div><div class="ttdoc">set the auto-delete property of the job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00336">kjob.cpp:336</a></div></div>
+<div class="ttc" id="classKJob_html_ac31545b7f0b1ddca8f8c06e25c7ebce3"><div class="ttname"><a href="classKJob.html#ac31545b7f0b1ddca8f8c06e25c7ebce3">KJob::doResume</a></div><div class="ttdeci">virtual bool doResume()</div><div class="ttdoc">Resumes this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00169">kjob.cpp:169</a></div></div>
+<div class="ttc" id="classKJob_html_abb012b5f948bb7eb479849544dd8054f"><div class="ttname"><a href="classKJob.html#abb012b5f948bb7eb479849544dd8054f">KJob::KJob</a></div><div class="ttdeci">KJob(QObject *parent=0)</div><div class="ttdoc">Creates a new KJob object. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00045">kjob.cpp:45</a></div></div>
+<div class="ttc" id="classKJob_html"><div class="ttname"><a href="classKJob.html">KJob</a></div><div class="ttdoc">The base class for all jobs. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8h_source.html#l00084">kjob.h:84</a></div></div>
+<div class="ttc" id="classKJob_html_a90ac84e8528fc8e42dfbb0c0e9765ef6"><div class="ttname"><a href="classKJob.html#a90ac84e8528fc8e42dfbb0c0e9765ef6">KJob::isAutoDelete</a></div><div class="ttdeci">bool isAutoDelete() const</div><div class="ttdoc">Returns whether this job automatically deletes itself once the job is finished. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00330">kjob.cpp:330</a></div></div>
+<div class="ttc" id="classKJob_html_a579209138987392ce0ec736c339bacbb"><div class="ttname"><a href="classKJob.html#a579209138987392ce0ec736c339bacbb">KJob::doSuspend</a></div><div class="ttdeci">virtual bool doSuspend()</div><div class="ttdoc">Suspends this job. </div><div class="ttdef"><b>Definition:</b> <a href="kjob_8cpp_source.html#l00164">kjob.cpp:164</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:30 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

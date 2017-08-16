@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kpackagetool.cpp</field>
+    <field name="url">kpackagetool_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">Q_GLOBAL_STATIC_WITH_ARGS QTextStream cout stdout Q_GLOBAL_STATIC_WITH_ARGS QTextStream cerr stderr QVector&lt;KPluginMetaData&gt; listPackageTypes QStringList libraryPaths QString subDirectory QStringLiteral Q_FOREACH QString dir QCoreApplication::libraryPaths QString d dir QDir::separator subDirectory d endsWith QDir::separator d QDir::separator libraryPaths d QVector&lt;KPluginMetaData&gt; offers Q_FOREACH QString plugindir libraryPaths QString _ixfile plugindir QStringLiteral QFile indexFile _ixfile indexFile exists indexFile open QIODevice::ReadOnly QJsonDocument jdoc QJsonDocument::fromBinaryData indexFile readAll indexFile close QJsonArray plugins jdoc array QJsonArray::const_iterator iter plugins constBegin iter plugins constEnd iter QJsonObject obj iter toObject QString candidate obj value QStringLiteral toString offers KPluginMetaData obj candidate QVector&lt;KPluginMetaData&gt; plugins KPluginLoader::findPlugins plugindir QVectorIterator&lt;KPluginMetaData&gt; iter plugins iter hasNext md iter next offers md offers KPackage PackageToolPrivate QString packageRoot QString packageFile QString package QStringList pluginTypes KPackage::Package installer KPluginMetaData metadata QString installPath output QString msg QStringList packages QStringList types QString path QString renderTypeTable QMap&lt;QString, QStringList&gt; plugins listTypes coutput QString msg QCommandLineParser parser PackageTool::PackageTool argc argv QCommandLineParser parser QCoreApplication argc argv d PackageToolPrivate d parser parser QTimer::singleShot SLOT runMain PackageTool::~PackageTool d PackageTool::runMain KPackage::PackageStructure structure KPackage::PackageStructure d parser isSet QStringLiteral QString path d parser value QStringLiteral KPackage::Package package structure package setPath path QString hash QString::fromLocal8Bit package cryptographicHash QCryptographicHash::Sha1 hash isEmpty d coutput i18n path exit d coutput i18n package path hash exit d parser isSet QStringLiteral d listTypes exit QString type d parser value QStringLiteral d pluginTypes clear d installer Package d parser isSet QStringLiteral d package d parser value QStringLiteral d parser isSet QStringLiteral d package d parser value QStringLiteral d parser isSet QStringLiteral d package d parser value QStringLiteral d parser isSet QStringLiteral d package d parser value QStringLiteral d parser isSet QStringLiteral d package d parser value QStringLiteral QDir::isAbsolutePath d package d packageFile QDir QDir::currentPath d package absolutePath d packageFile QFileInfo d packageFile canonicalFilePath d parser isSet QStringLiteral d package d packageFile d packageFile d package d packageFile isEmpty d parser isSet QStringLiteral type compare i18nc Qt::CaseInsensitive type compare QLatin1String Qt::CaseInsensitive KPackage::Package package structure QString serviceType package setPath d packageFile package isValid package metadata isValid serviceType package metadata value QStringLiteral serviceType isEmpty serviceType package metadata serviceTypes first serviceType isEmpty serviceType QLatin1String type QStringLiteral type serviceType PackageStructure structure PackageLoader::self loadPackageStructure type structure d installer Package structure d installer hasValidStructure qWarning type d packageRoot d installer defaultPackageRoot d pluginTypes type d parser isSet QStringLiteral QString pluginName d package showPackageInfo pluginName d parser isSet QStringLiteral QString pluginName d package showAppstreamInfo pluginName d parser isSet QStringLiteral d packageRoot findPackageRoot d package d packageRoot d coutput i18n d pluginTypes join QByteArray d packageRoot listPackages d pluginTypes d packageRoot exit d parser isSet QStringLiteral recreateIndex exit d installer isValid d installer KPackage::Package KPackage::PackageStructure d packageRoot findPackageRoot d package d packageRoot d parser isSet QStringLiteral d parser isSet QStringLiteral QString pkgPath QString t d pluginTypes KPackage::Package pkg KPackage::PackageLoader::self loadPackage t pkg setPath d package pkg isValid pkgPath pkg path pkgPath isEmpty d packageFile isEmpty pkgPath d packageFile pkgPath isEmpty pkgPath d package d parser isSet QStringLiteral d installer setPath d package QString _p d packageRoot _p endsWith _p append _p append d package d installer setDefaultPackageRoot d packageRoot d installer setPath pkgPath d parser isSet QStringLiteral QString st d installer metadata serviceTypes d pluginTypes contains st d pluginTypes st QString pluginName d installer isValid d metadata d installer metadata d metadata isValid pluginName d package d metadata isValid d metadata pluginId isEmpty pluginName d package pluginName d metadata pluginId QStringList installed d packages d pluginTypes QFile::exists d packageFile d installer setPath d packageFile d installer isValid d installer metadata isValid pluginName d installer metadata pluginId installed contains pluginName d installer setPath pluginName KJob uninstallJob d installer uninstall pluginName d packageRoot connect uninstallJob SIGNAL result KJob SLOT packageUninstalled KJob d coutput i18n pluginName exit d parser isSet QStringLiteral KJob installJob d installer install d packageFile d packageRoot connect installJob SIGNAL result KJob SLOT packageInstalled KJob d package isEmpty qWarning i18nc exit PackageToolPrivate::coutput QString msg cout msg endl QStringList PackageToolPrivate::packages QStringList types QString path QStringList result QString type types QList&lt;KPluginMetaData&gt; services KPackage::PackageLoader::self listPackages type path KPluginMetaData service services QString _plugin service pluginId result contains _plugin result _plugin result PackageTool::showPackageInfo QString pluginName QString type QStringLiteral d pluginTypes contains type d pluginTypes count type d pluginTypes at KPackage::Package pkg KPackage::PackageLoader::self loadPackage type pkg setDefaultPackageRoot d packageRoot QFile::exists d packageFile pkg setPath d packageFile pkg setPath pluginName KPluginMetaData i pkg metadata i isValid cerr i18n pluginName exit d coutput i18n pluginName d coutput i18n i name d coutput i18n i value QStringLiteral d coutput i18n i pluginId authors i authors d coutput i18n authors first name d coutput i18n pkg path exit translateKPluginToAppstream QString tagName QString configField QJsonObject configObject QXmlStreamWriter writer QRegularExpression rx QStringLiteral arg configField QJsonValue native configObject value configField native isUndefined writer writeTextElement tagName native toString it configObject begin itEnd configObject end it itEnd it match rx match it key match hasMatch writer writeStartElement tagName writer writeAttribute match captured writer writeCharacters it toString writer writeEndElement PackageTool::showAppstreamInfo QString pluginName QString type QStringLiteral d pluginTypes contains type d pluginTypes count type d pluginTypes at KPackage::Package pkg KPackage::PackageLoader::self loadPackage type pkg setDefaultPackageRoot d packageRoot QFile::exists d packageFile pkg setPath d packageFile pkg setPath pluginName KPluginMetaData packageStructureMetaData KPluginMetaData md listPackageTypes md pluginId type packageStructureMetaData md KPluginMetaData i pkg metadata i isValid cerr i18n pluginName std::exit QString parentApp i rawData value toString parentApp isEmpty parentApp packageStructureMetaData rawData value toString QJsonObject rootObject i rawData QStringLiteral toObject QXmlStreamAttributes componentAttributes parentApp isEmpty componentAttributes QXmlStreamAttribute QXmlStreamWriter writer cout device writer setAutoFormatting writer writeStartDocument writer writeStartElement writer writeAttributes componentAttributes writer writeTextElement i pluginId parentApp isEmpty writer writeTextElement parentApp translateKPluginToAppstream rootObject writer translateKPluginToAppstream rootObject writer i website isEmpty writer writeStartElement writer writeAttribute writer writeCharacters i website writer writeEndElement authors i authors authors isEmpty QStringList authorsText author authors authorsText QStringLiteral arg author name author emailAddress writer writeTextElement authorsText join writer writeTextElement i license writer writeTextElement writer writeEndElement writer writeEndDocument exit QString PackageTool::findPackageRoot QString pluginName QString prefix Q_UNUSED pluginName Q_UNUSED prefix QString packageRoot d parser isSet QStringLiteral d parser isSet QStringLiteral d parser isSet QStringLiteral qWarning i18nc d parser isSet QStringLiteral packageRoot d parser value QStringLiteral d parser isSet QStringLiteral paths QStandardPaths::locateAll QStandardPaths::GenericDataLocation d packageRoot QStandardPaths::LocateDirectory packageRoot paths last packageRoot QStandardPaths::writableLocation QStandardPaths::GenericDataLocation QLatin1Char d packageRoot packageRoot PackageTool::listPackages QStringList types QString path QStringList list d packages types path list sort QString package list d coutput package exit PackageToolPrivate::renderTypeTable QMap&lt;QString, QStringList&gt; plugins QString nameHeader i18n QString pluginHeader i18n QString pathHeader i18n nameWidth nameHeader length pluginWidth pluginHeader length pathWidth pathHeader length QMapIterator&lt;QString, QStringList&gt; pluginIt plugins pluginIt hasNext pluginIt next pluginIt key length nameWidth nameWidth pluginIt key length pluginIt value length pluginWidth pluginWidth pluginIt value length pluginIt value length pathWidth pathWidth pluginIt value length std::cout nameHeader toLocal8Bit constData std::setw nameWidth nameHeader length pluginHeader toLocal8Bit constData std::setw pluginWidth pluginHeader length pathHeader toLocal8Bit constData std::setw pathWidth pathHeader length std::endl std::cout std::setfill std::setw nameWidth std::setw pluginWidth std::setw pathWidth std::endl std::cout std::setfill pluginIt toFront pluginIt hasNext pluginIt next std::cout pluginIt key toLocal8Bit constData std::setw nameWidth pluginIt key length pluginIt value toLocal8Bit constData std::setw pluginWidth pluginIt value length pluginIt value toLocal8Bit constData std::setw pathWidth pluginIt value length std::endl PackageToolPrivate::listTypes coutput i18n coutput i18n QMap&lt;QString, QStringList&gt; builtIns builtIns insert i18n QStringList QStringLiteral KPACKAGE_RELATIVE_DATA_INSTALL_DIR builtIns insert i18n QStringList QStringLiteral KPACKAGE_RELATIVE_DATA_INSTALL_DIR renderTypeTable builtIns QVector&lt;KPluginMetaData&gt; offers listPackageTypes offers isEmpty std::cout std::endl coutput i18n QMap&lt;QString, QStringList&gt; plugins KPluginMetaData info offers KPackage::Package pkg KPackage::PackageLoader::self loadPackage info pluginId QString name info name QString plugin info pluginId QString path pkg defaultPackageRoot plugins insert name QStringList plugin path renderTypeTable plugins QStringList desktopFiles QStandardPaths::locateAll QStandardPaths::DataLocation KPACKAGE_RELATIVE_DATA_INSTALL_DIR QStringLiteral QStandardPaths::LocateFile desktopFiles isEmpty coutput i18n KPackage::PackageStructure structure QMap&lt;QString, QStringList&gt; plugins QString file desktopFiles KConfig config file KConfig::SimpleConfig PackageTool::recreateIndex d packageRoot findPackageRoot d package d packageRoot QDir::isAbsolutePath d packageRoot d parser isSet QStringLiteral Q_FOREACH p QStandardPaths::locateAll QStandardPaths::GenericDataLocation d packageRoot QStandardPaths::LocateDirectory d coutput i18n p KPackage::indexDirectory p QStringLiteral d packageRoot QStandardPaths::writableLocation QStandardPaths::GenericDataLocation QLatin1Char d packageRoot d coutput i18n d packageRoot KPackage::indexDirectory d packageRoot QStringLiteral PackageTool::packageInstalled KJob job success job error KJob::NoError exitcode success d parser isSet QStringLiteral d coutput i18n d packageFile d coutput i18n d packageFile d coutput i18n d packageFile job errorText exitcode exit exitcode PackageTool::packageUninstalled KJob job success job error KJob::NoError exitcode success d parser isSet QStringLiteral d coutput i18n d packageFile KJob installJob d installer install d packageFile d packageRoot connect installJob SIGNAL result KJob SLOT packageInstalled KJob d coutput i18n d packageFile d coutput i18n d packageFile job errorText exitcode exit exitcode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kpackagetool.h</field>
+    <field name="url">kpackagetool_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QCommandLineParser KJob KPackage PackageToolPrivate PackageTool QCoreApplication Q_OBJECT PackageTool argc argv QCommandLineParser parser PackageTool listPackages QStringList types QString path QString showPackageInfo QString pluginName showAppstreamInfo QString pluginName QString findPackageRoot QString pluginName QString prefix recreateIndex Q_SLOTS runMain packageInstalled KJob job packageUninstalled KJob job PackageToolPrivate d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">main.cpp</field>
+    <field name="url">main_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">main argc argv QCommandLineParser parser KPackage::PackageTool app argc argv parser QString description i18n version app setApplicationVersion version parser addVersionOption parser addHelpOption parser setApplicationDescription description parser addOption QCommandLineOption QStringList QStringLiteral i18nc QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18n parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18nc QStringLiteral QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18nc QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18nc QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18nc QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18n parser addOption QCommandLineOption QStringList QStringLiteral i18n parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18nc QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral QStringLiteral i18n QStringLiteral parser addOption QCommandLineOption QStringList QStringLiteral i18n parser addOption QCommandLineOption QStringList QStringLiteral i18nc QStringLiteral parser process app parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser isSet QStringLiteral parser showHelp app exec</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00045</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00048</field>
+    <field name="keywords"></field>
+    <field name="text">Package::Package PackageStructure structure d new PackagePrivate d structure structure d structure d structure data initPackage addFileDefinition QStringLiteral i18n</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00059</field>
+    <field name="keywords"></field>
+    <field name="text">Package::Package Package other d other d Package::~Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00068</field>
+    <field name="keywords"></field>
+    <field name="text">Package Package::operator= Package rhs rhs d rhs d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00077</field>
+    <field name="keywords"></field>
+    <field name="text">Package::hasValidStructure d structure</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00082</field>
+    <field name="keywords"></field>
+    <field name="text">Package::isValid d structure metadata isValid metadata value QStringLiteral QStringLiteral QLatin1String d checkedValid d valid d valid QHashIterator&lt;QByteArray, ContentStructure&gt; it d contents QString rootPath d tempRoot isEmpty d path d tempRoot it hasNext it next it value required failed QString path it value paths QString prefix d contentsPrefixPaths QFile::exists rootPath prefix path failed failed failed d valid d valid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00136</field>
+    <field name="keywords"></field>
+    <field name="text">QString Package::name QByteArray key QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constFind key it d contents constEnd QString it value name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00146</field>
+    <field name="keywords"></field>
+    <field name="text">Package::isRequired QByteArray key QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constFind key it d contents constEnd it value required</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00156</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Package::mimeTypes QByteArray key QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constFind key it d contents constEnd QStringList it value mimeTypes isEmpty d mimeTypes it value mimeTypes</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00170</field>
+    <field name="keywords"></field>
+    <field name="text">QString Package::defaultPackageRoot d defaultPackageRoot</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00175</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setDefaultPackageRoot QString packageRoot d detach d defaultPackageRoot packageRoot d defaultPackageRoot isEmpty d defaultPackageRoot endsWith d defaultPackageRoot append</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00184</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setFallbackPackage KPackage::Package package d fallbackPackage d fallbackPackage path package path d fallbackPackage metadata package metadata package path path package metadata metadata d hasCycle package d fallbackPackage Package package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00196</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage::Package Package::fallbackPackage d fallbackPackage d fallbackPackage Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00205</field>
+    <field name="keywords"></field>
+    <field name="text">Package::allowExternalPaths d externalPaths</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00210</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setAllowExternalPaths allow d detach d externalPaths allow</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00216</field>
+    <field name="keywords"></field>
+    <field name="text">KPluginMetaData Package::metadata d metadata d path isEmpty QString metadataPath filePath metadataPath isEmpty d createPackageMetadata metadataPath QString p d path p endsWith QLatin1Char p chop QFileInfo fileInfo p fileInfo isDir d createPackageMetadata d path fileInfo exists d path fileInfo canonicalFilePath d tempRoot d unpack p d metadata d metadata KPluginMetaData d metadata QString PackagePrivate::unpack QString filePath KArchive archive QMimeDatabase db QMimeType mimeType db mimeTypeForFile filePath mimeType inherits QStringLiteral archive KZip filePath mimeType inherits QStringLiteral mimeType inherits QStringLiteral mimeType inherits QStringLiteral mimeType inherits QStringLiteral mimeType inherits QStringLiteral mimeType inherits QStringLiteral archive KTar filePath QString tempRoot archive archive open QIODevice::ReadOnly KArchiveDirectory source archive directory QTemporaryDir tempdir tempdir setAutoRemove tempRoot tempdir path source copyTo tempRoot QFile::exists tempdir path QDir unpackedPath tempdir path QStringList entries unpackedPath entryList QDir::Dirs QString pack entries pack QLatin1String pack QLatin1String QFile::exists unpackedPath absolutePath pack tempRoot unpackedPath absolutePath pack createPackageMetadata tempRoot archive tempRoot PackagePrivate::isInsidePackageDir QString canonicalPath Q_ASSERT QFileInfo canonicalPath exists Q_ASSERT QFileInfo canonicalPath canonicalFilePath canonicalPath Q_ASSERT QDir path exists Q_ASSERT path QStringLiteral QDir path canonicalPath path canonicalPath startsWith path qWarning canonicalPath path</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00316</field>
+    <field name="keywords"></field>
+    <field name="text">QString Package::filePath QByteArray fileType QString filename d valid QString result d fallbackFilePath fileType filename result isEmpty result QString discoveryKey fileType filename d discoveries contains discoveryKey d discoveries discoveryKey QStringList paths qstrlen fileType d contents contains fileType d fallbackFilePath fileType filename paths d contents fileType paths paths isEmpty d discoveries insert discoveryKey QString d fallbackFilePath fileType filename paths QString QString contentsPrefix d contentsPrefixPaths QString prefix fileType d path d path contentsPrefix QString path paths QString file prefix path filename isEmpty file append append filename QFileInfo fi file fi exists d externalPaths d discoveries insert discoveryKey file file d isInsidePackageDir fi canonicalFilePath d discoveries insert discoveryKey file file d fallbackFilePath fileType filename</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00389</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Package::entryList QByteArray key d valid QStringList QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constFind key it d contents constEnd QStringList QStringList list QString prefix d contentsPrefixPaths QString path it value paths it value directory QDir dir d path prefix path d externalPaths list dir entryList QDir::Files QDir::Readable QString canonicalized dir canonicalPath canonicalized startsWith d path list dir entryList QDir::Files QDir::Readable QString fullPath d path prefix path QFile::exists fullPath d externalPaths list fullPath QDir dir fullPath QString canonicalized dir canonicalPath QDir::separator canonicalized startsWith d path list fullPath list</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00446</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setPath QString path path d path QExplicitlySharedDataPointer&lt;PackagePrivate&gt; oldD d d detach d structure d path clear d discoveries clear d valid d checkedValid path isEmpty d path clear d discoveries clear d valid d structure data pathChanged QStringList paths QDir::isRelativePath path QString p d defaultPackageRoot isEmpty p path p d defaultPackageRoot path QDir::isRelativePath p paths QStandardPaths::locateAll QStandardPaths::GenericDataLocation p QStandardPaths::LocateDirectory QDir dir p QFile::exists dir canonicalPath paths p QDir dir path QFile::exists dir canonicalPath paths path QFileInfo fileInfo path fileInfo isFile d tempRoot isEmpty d path fileInfo canonicalFilePath d tempRoot d unpack path QString previousPath d path QString p paths d checkedValid QDir dir p Q_ASSERT QFile::exists dir canonicalPath d path dir canonicalPath d path endsWith QLatin1Char d path append d structure data pathChanged isValid d path previousPath d oldD d discoveries clear d metadata d metadata d valid d path clear d structure data pathChanged</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00552</field>
+    <field name="keywords"></field>
+    <field name="text">QString Package::path d path</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00557</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Package::contentsPrefixPaths d contentsPrefixPaths</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00562</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setContentsPrefixPaths QStringList prefixPaths d detach d contentsPrefixPaths prefixPaths d contentsPrefixPaths isEmpty d contentsPrefixPaths QString QMutableStringListIterator it d contentsPrefixPaths it hasNext it next it value endsWith it setValue it value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00583</field>
+    <field name="keywords"></field>
+    <field name="text">QString Package::contentsHash QString::fromLocal8Bit cryptographicHash QCryptographicHash::Sha1</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00589</field>
+    <field name="keywords"></field>
+    <field name="text">QByteArray Package::cryptographicHash QCryptographicHash::Algorithm algorithm d valid qWarning QByteArray QCryptographicHash hash algorithm QString metadataPath d path QFile::exists metadataPath QFile f metadataPath f open QIODevice::ReadOnly f atEnd hash addData f read qWarning f fileName qWarning metadataPath QString prefix d contentsPrefixPaths QString basePath d path prefix QDir dir basePath dir exists QByteArray d updateHash basePath QString dir hash hash result toHex</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00625</field>
+    <field name="keywords"></field>
+    <field name="text">Package::addDirectoryDefinition QByteArray key QString path QString name ContentStructure s d contents contains key s d contents key s paths contains path s directory s name name d detach name isEmpty s name name s paths append path s directory d contents key s</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00650</field>
+    <field name="keywords"></field>
+    <field name="text">Package::addFileDefinition QByteArray key QString path QString name ContentStructure s d contents contains key s d contents key s paths contains path s directory s name name d detach name isEmpty s name name s paths append path s directory d contents key s</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00674</field>
+    <field name="keywords"></field>
+    <field name="text">Package::removeDefinition QByteArray key d contents contains key d detach d contents remove key</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00682</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setRequired QByteArray key required QHash&lt;QByteArray, ContentStructure&gt;::iterator it d contents find key it d contents end d detach it d contents find key it value required required</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00695</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setDefaultMimeTypes QStringList mimeTypes d detach d mimeTypes mimeTypes</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00701</field>
+    <field name="keywords"></field>
+    <field name="text">Package::setMimeTypes QByteArray key QStringList mimeTypes QHash&lt;QByteArray, ContentStructure&gt;::iterator it d contents find key it d contents end d detach it d contents find key it value mimeTypes mimeTypes</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00714</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;QByteArray&gt; Package::directories QList&lt;QByteArray&gt; dirs QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constBegin it d contents constEnd it value directory dirs it key it dirs</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00727</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;QByteArray&gt; Package::requiredDirectories QList&lt;QByteArray&gt; dirs QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constBegin it d contents constEnd it value directory it value required dirs it key it dirs</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00741</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;QByteArray&gt; Package::files QList&lt;QByteArray&gt; files QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constBegin it d contents constEnd it value directory files it key it files</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00754</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;QByteArray&gt; Package::requiredFiles QList&lt;QByteArray&gt; files QHash&lt;QByteArray, ContentStructure&gt;::const_iterator it d contents constBegin it d contents constEnd it value directory it value required files it key it files</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00768</field>
+    <field name="keywords"></field>
+    <field name="text">KJob Package::install QString sourcePackage QString packageRoot QString src sourcePackage QString dest packageRoot isEmpty defaultPackageRoot packageRoot QDir::isAbsolutePath dest dest QStandardPaths::writableLocation QStandardPaths::GenericDataLocation dest d structure KJob j d structure data install src dest j</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00787</field>
+    <field name="keywords"></field>
+    <field name="text">KJob Package::update QString sourcePackage QString packageRoot QString src sourcePackage QString dest packageRoot isEmpty defaultPackageRoot packageRoot QDir::isAbsolutePath dest dest QStandardPaths::writableLocation QStandardPaths::GenericDataLocation QLatin1Char dest d structure KJob j d structure data update src dest j</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.cpp</field>
+    <field name="url">package_8cpp_source.html#l00806</field>
+    <field name="keywords"></field>
+    <field name="text">KJob Package::uninstall QString packageName QString packageRoot d createPackageMetadata packageRoot packageName d structure d structure data uninstall packageRoot PackagePrivate::PackagePrivate QSharedData fallbackPackage metadata externalPaths valid checkedValid contentsPrefixPaths QStringLiteral PackagePrivate::PackagePrivate PackagePrivate other QSharedData other metadata PackagePrivate::~PackagePrivate tempRoot isEmpty QDir dir tempRoot dir removeRecursively metadata fallbackPackage PackagePrivate PackagePrivate::operator= PackagePrivate rhs rhs structure rhs structure rhs fallbackPackage fallbackPackage Package rhs fallbackPackage fallbackPackage path rhs path contentsPrefixPaths rhs contentsPrefixPaths contents rhs contents mimeTypes rhs mimeTypes defaultPackageRoot rhs defaultPackageRoot metadata externalPaths rhs externalPaths valid rhs valid PackagePrivate::updateHash QString basePath QString subPath QDir dir QCryptographicHash hash QDir::SortFlags sorting QDir::Name QDir::IgnoreCase QDir::Filters filters QDir::Hidden QDir::System QDir::NoDotAndDotDot QString file dir entryList QDir::Files filters sorting subPath isEmpty hash addData subPath toUtf8 hash addData file toUtf8 QFileInfo info dir path file info isSymLink hash addData info symLinkTarget toUtf8 QFile f info filePath f open QIODevice::ReadOnly f atEnd hash addData f read qWarning f fileName info permissions info isFile QString subDirPath dir entryList QDir::Dirs filters sorting QString relativePath subPath subDirPath hash addData relativePath toUtf8 QDir subDir dir path subDir cd subDirPath subDir path subDir canonicalPath hash addData subDir canonicalPath toUtf8 updateHash basePath relativePath subDir hash PackagePrivate::createPackageMetadata QString path metadata isDir QFileInfo path isDir isDir QFile::exists path metadata KPluginMetaData path isDir QFile::exists path metadata KPluginMetaData path isDir qWarning path metadata KPluginMetaData path QString PackagePrivate::fallbackFilePath QByteArray key QString filename qstrcmp key fallbackPackage fallbackPackage isValid fallbackPackage filePath key filename QString PackagePrivate::hasCycle KPackage::Package package package d fallbackPackage KPackage::Package slowPackage KPackage::Package package KPackage::Package fastPackage KPackage::Package package fastPackage fastPackage d fallbackPackage fastPackage d fallbackPackage metadata isValid fastPackage d fallbackPackage metadata slowPackage metadata fastPackage d fallbackPackage d fallbackPackage fastPackage d fallbackPackage d fallbackPackage metadata isValid fastPackage d fallbackPackage d fallbackPackage metadata slowPackage metadata qWarning package metadata pluginId fastPackage fastPackage d fallbackPackage d fallbackPackage slowPackage slowPackage d fallbackPackage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackagePrivate PackageStructure</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00079</field>
+    <field name="keywords"></field>
+    <field name="text">PACKAGE_EXPORT Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00086</field>
+    <field name="keywords"></field>
+    <field name="text">JobError RootCreationError KJob::UserDefinedError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00088</field>
+    <field name="keywords"></field>
+    <field name="text">PackageFileNotFoundError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00089</field>
+    <field name="keywords"></field>
+    <field name="text">UnsupportedArchiveFormatError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00090</field>
+    <field name="keywords"></field>
+    <field name="text">PackageOpenError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00091</field>
+    <field name="keywords"></field>
+    <field name="text">MetadataFileMissingError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00092</field>
+    <field name="keywords"></field>
+    <field name="text">PluginNameMissingError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00093</field>
+    <field name="keywords"></field>
+    <field name="text">PluginNameInvalidError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00094</field>
+    <field name="keywords"></field>
+    <field name="text">UpdatePackageTypeMismatchError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00095</field>
+    <field name="keywords"></field>
+    <field name="text">OldVersionRemovalError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00096</field>
+    <field name="keywords"></field>
+    <field name="text">NewerVersionAlreadyInstalledError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00097</field>
+    <field name="keywords"></field>
+    <field name="text">PackageAlreadyInstalledError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00098</field>
+    <field name="keywords"></field>
+    <field name="text">PackageMoveError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00099</field>
+    <field name="keywords"></field>
+    <field name="text">PackageCopyError</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">package.h</field>
+    <field name="url">package_8h_source.html#l00100</field>
+    <field name="keywords"></field>
+    <field name="text">PackageUninstallError Package PackageStructure structure Package Package other Package Package operator= Package rhs hasValidStructure isValid setPath QString path QString path QString filePath QByteArray key QString filename QString QStringList entryList QByteArray key QString name QByteArray key isRequired QByteArray key QStringList mimeTypes QByteArray key QStringList contentsPrefixPaths QString defaultPackageRoot allowExternalPaths KPluginMetaData metadata PACKAGE_DEPRECATED QString contentsHash QByteArray cryptographicHash QCryptographicHash::Algorithm algorithm addDirectoryDefinition QByteArray key QString path QString name addFileDefinition QByteArray key QString path QString name removeDefinition QByteArray key setRequired QByteArray key required setDefaultMimeTypes QStringList mimeTypes setMimeTypes QByteArray key QStringList mimeTypes setContentsPrefixPaths QStringList prefixPaths setAllowExternalPaths allow setDefaultPackageRoot QString packageRoot setFallbackPackage KPackage::Package package KPackage::Package fallbackPackage QList&lt;QByteArray&gt; directories QList&lt;QByteArray&gt; requiredDirectories QList&lt;QByteArray&gt; files QList&lt;QByteArray&gt; requiredFiles KJob install QString sourcePackage QString packageRoot QString KJob update QString sourcePackage QString packageRoot QString KJob uninstall QString packageName QString packageRoot QExplicitlySharedDataPointer&lt;PackagePrivate&gt; d PackagePrivate Q_DECLARE_METATYPE KPackage::Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packagejob.cpp</field>
+    <field name="url">packagejob_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackageJobPrivate PackageJobThread thread Package package QString installPath PackageJob::PackageJob Package package QObject parent KJob parent d PackageJobPrivate d thread PackageJobThread d package package connect d thread SIGNAL finished QString SLOT slotFinished QString Qt::QueuedConnection connect d thread PackageJobThread::installPathChanged QString installPath Qt::QueuedConnection PackageJob::~PackageJob d PackageJob::slotFinished ok QString err ok setError NoError setError d thread errorCode setErrorText err d thread exit emitResult PackageJob::start d thread start PackageJob::install QString src QString dest d thread install src dest PackageJob::update QString src QString dest d thread update src dest PackageJob::uninstall QString installationPath d thread uninstall installationPath</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packagejobthread.cpp</field>
+    <field name="url">packagejobthread_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage copyFolder QString sourcePath QString targetPath QDir source sourcePath source exists QDir target targetPath target exists QString targetName target dirName target cdUp target mkdir targetName target QDir targetPath QString fileName source entryList QDir::Files QString sourceFilePath sourcePath QDir::separator fileName QString targetFilePath targetPath QDir::separator fileName QFile::copy sourceFilePath targetFilePath QString subFolderName source entryList QDir::AllDirs QDir::NoDotAndDotDot QString sourceSubFolderPath sourcePath QDir::separator subFolderName QString targetSubFolderPath targetPath QDir::separator subFolderName copyFolder sourceSubFolderPath targetSubFolderPath removeFolder QString folderPath QDir folder folderPath folder removeRecursively QVariantMap convert QString src KDesktopFile df src KConfigGroup c df desktopGroup QSet&lt;QString&gt; boolkeys QSet&lt;QString&gt; QStringLiteral QStringLiteral QSet&lt;QString&gt; stringlistkeys QSet&lt;QString&gt; QStringLiteral QStringLiteral QStringLiteral QVariantMap vm QString k c keyList boolkeys contains k vm k c readEntry k stringlistkeys contains k vm k c readEntry k QStringList vm k c readEntry k QString vm removeIndex QString dir ok QFileInfo fileInfo dir QStringLiteral fileInfo exists fileInfo isWritable QFile f fileInfo absoluteFilePath f remove ok qWarning fileInfo absoluteFilePath qDebug fileInfo absoluteFilePath qWarning fileInfo absoluteFilePath ok ok Q_GLOBAL_STATIC_WITH_ARGS QStringList metaDataFiles QStringList QLatin1String QLatin1String bool indexDirectory const QString dir const QString dest QVariantMap vm QVariantMap pluginsVm vm QStringLiteral QStringLiteral vm QStringLiteral QDateTime::currentMSecsSinceEpoch QJsonArray plugins QDirIterator it dir metaDataFiles QDir::Files QDirIterator::Subdirectories it hasNext it next QString path it fileInfo absoluteFilePath QJsonObject obj KPluginMetaData path rawData obj insert QStringLiteral path plugins append obj plugins count removeIndex dir QString destfile dest QDir::isAbsolutePath dest destfile dir dest QDir mkpath QFileInfo destfile dir absolutePath QFile file destfile file open QIODevice::WriteOnly qWarning destfile QJsonDocument jdoc jdoc setArray plugins file write jdoc toBinaryData qWarning destfile plugins count PackageJobThreadPrivate QString installPath QString errorMessage errorCode PackageJobThread::PackageJobThread QObject parent QThread parent d PackageJobThreadPrivate d errorCode KJob::NoError PackageJobThread::~PackageJobThread d PackageJobThread::install QString src QString dest ok installPackage src dest Install emit installPathChanged d installPath emit finished ok d errorMessage ok PackageJobThread::installPackage QString src QString dest OperationType operation QDir root dest root exists QDir mkpath dest root exists d errorMessage i18n dest d errorCode Package::JobError::RootCreationError QFileInfo fileInfo src fileInfo exists d errorMessage i18n src d errorCode Package::JobError::PackageFileNotFoundError QString path QTemporaryDir tempdir archivedPackage fileInfo isDir path src path path size path append KArchive archive QMimeDatabase db QMimeType mimetype db mimeTypeForFile src mimetype inherits QStringLiteral archive KZip src mimetype inherits QStringLiteral mimetype inherits QStringLiteral mimetype inherits QStringLiteral mimetype inherits QStringLiteral mimetype inherits QStringLiteral archive KTar src d errorMessage i18n src mimetype name d errorCode Package::JobError::UnsupportedArchiveFormatError archive open QIODevice::ReadOnly archive d errorMessage i18n src d errorCode Package::JobError::PackageOpenError archivedPackage path tempdir path d installPath path KArchiveDirectory source archive directory source copyTo path QStringList entries source entries entries count KArchiveEntry entry source entry entries entry isDirectory path append entry name append archive QDir packageDir path QFileInfoList entries packageDir entryInfoList metaDataFiles KPluginMetaData meta entries isEmpty QString metadataFilePath entries first filePath metadataFilePath endsWith QLatin1String meta KPluginMetaData metadataFilePath QFile f metadataFilePath f open QIODevice::ReadOnly qWarning src path d errorMessage i18n src d errorCode Package::JobError::MetadataFileMissingError QJsonObject metadataObject QJsonDocument::fromJson f readAll meta KPluginMetaData metadataObject QString metadataFilePath meta isValid qDebug src path d errorMessage i18n src d errorCode Package::JobError::MetadataFileMissingError QString pluginName meta pluginId qDebug meta pluginId pluginName isEmpty d errorMessage i18n src d errorCode Package::JobError::PluginNameMissingError QRegExp validatePluginName validatePluginName exactMatch pluginName d errorMessage i18n pluginName d errorCode Package::JobError::PluginNameInvalidError QString targetName dest targetName targetName size targetName append targetName append pluginName QFile::exists targetName operation Update KPluginMetaData oldMeta targetName QLatin1String oldMeta serviceTypes meta serviceTypes d errorMessage i18n meta version meta pluginId oldMeta version d errorCode Package::JobError::UpdatePackageTypeMismatchError isVersionNewer oldMeta version meta version ok uninstallPackage targetName ok d errorMessage i18n pluginName targetName d errorCode Package::JobError::OldVersionRemovalError d errorMessage i18n meta version meta pluginId oldMeta version d errorCode Package::JobError::NewerVersionAlreadyInstalledError d errorMessage i18n targetName d errorCode Package::JobError::PackageAlreadyInstalledError d errorCode KJob::NoError d installPath targetName archivedPackage ok copyFolder path targetName removeFolder path ok d errorMessage i18n targetName d errorCode Package::JobError::PackageMoveError ok copyFolder path targetName ok d errorMessage i18n targetName d errorCode Package::JobError::PackageCopyError archivedPackage tempdir setAutoRemove indexDirectory dest QStringLiteral d installPath targetName PackageJobThread::update QString src QString dest ok installPackage src dest Update emit installPathChanged d installPath emit finished ok d errorMessage ok PackageJobThread::uninstall QString packagePath ok uninstallPackage packagePath emit installPathChanged QString emit finished ok d errorMessage ok PackageJobThread::uninstallPackage QString packagePath QFile::exists packagePath d errorMessage i18n packagePath d errorCode Package::JobError::PackageFileNotFoundError QString pkg QString root QStringList ps packagePath split ix ps count packagePath endsWith ix ps count pkg ps ix ps pop_back root ps join ok removeFolder packagePath ok d errorMessage i18n packagePath d errorCode Package::JobError::PackageUninstallError indexDirectory root QStringLiteral Package::JobError PackageJobThread::errorCode Package::JobError d errorCode</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackageLoader s_packageTrader PackageLoaderPrivate PackageLoaderPrivate isDefaultLoader false packageStructurePluginDir QStringLiteral packageRE QSet&lt;QString&gt; knownCategories QString parentAppConstraint QString parentApp QString QSet&lt;QString&gt; s_customCategories QHash&lt;QString, QPointer&lt;PackageStructure&gt; structures isDefaultLoader QString packageStructurePluginDir QRegExp packageRE QSet&lt;QString&gt; PackageLoaderPrivate::s_customCategories QSet&lt;QString&gt; PackageLoaderPrivate::knownCategories QSet&lt;QString&gt; categories s_customCategories categories QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower QStringLiteral I18N_NOOP toLower categories QString PackageLoaderPrivate::parentAppConstraint QString parentApp parentApp isEmpty QCoreApplication app QCoreApplication::instance app QString QStringLiteral arg app applicationName QStringLiteral arg parentApp PackageLoader::PackageLoader d new PackageLoaderPrivate PackageLoader::~PackageLoader wp d structures wp data d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00127</field>
+    <field name="keywords"></field>
+    <field name="text">PackageLoader::setPackageLoader PackageLoader loader s_packageTrader s_packageTrader loader</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00138</field>
+    <field name="keywords"></field>
+    <field name="text">PackageLoader PackageLoader::self s_packageTrader s_packageTrader PackageLoader s_packageTrader d isDefaultLoader s_packageTrader</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00151</field>
+    <field name="keywords"></field>
+    <field name="text">Package PackageLoader::loadPackage QString packageFormat QString packagePath d isDefaultLoader Package p internalLoadPackage packageFormat p hasValidStructure packagePath isEmpty p setPath packagePath p packageFormat isEmpty Package PackageStructure structure loadPackageStructure packageFormat structure Package p structure packagePath isEmpty p setPath packagePath p Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00184</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;KPluginMetaData&gt; PackageLoader::listPackages QString packageFormat QString packageRoot QList&lt;KPluginMetaData&gt; lst QString actualRoot packageRoot actualRoot isEmpty PackageStructure structure d structures value packageFormat data structure packageFormat QStringLiteral structure GenericPackage packageFormat QStringLiteral structure GenericQMLPackage structure structure loadPackageStructure packageFormat structure d structures insert packageFormat structure Package p structure actualRoot p defaultPackageRoot actualRoot isEmpty actualRoot packageFormat QSet&lt;QString&gt; uniqueIds Q_FOREACH datadir QStandardPaths::standardLocations QStandardPaths::GenericDataLocation QString plugindir datadir actualRoot QString _ixfile plugindir QStringLiteral QFile indexFile _ixfile indexFile exists indexFile open QIODevice::ReadOnly QJsonDocument jdoc QJsonDocument::fromBinaryData indexFile readAll indexFile close QJsonArray plugins jdoc array QJsonArray::const_iterator iter plugins constBegin iter plugins constEnd iter QJsonObject obj QJsonValue toObject QString pluginFileName obj value QStringLiteral toString KPluginMetaData m obj QString pluginFileName m isValid uniqueIds contains m pluginId uniqueIds m pluginId lst m QDirIterator::IteratorFlags flags QDirIterator::Subdirectories QStringList nameFilters QStringList QStringLiteral QStringLiteral QDirIterator it plugindir nameFilters QDir::Files flags it hasNext it next QString metadataPath it fileInfo absoluteFilePath KPluginMetaData info metadataPath info isValid uniqueIds contains info pluginId packageFormat isEmpty info serviceTypes contains packageFormat uniqueIds info pluginId lst info lst</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00272</field>
+    <field name="keywords"></field>
+    <field name="text">QList&lt;KPluginMetaData&gt; PackageLoader::findPackages QString packageFormat QString packageRoot std::function KPluginMetaData filter QList&lt;KPluginMetaData&gt; lst Q_FOREACH plugin listPackages packageFormat packageRoot filter filter plugin lst plugin lst</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00285</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage::PackageStructure PackageLoader::loadPackageStructure QString packageFormat PackageStructure structure d structures value packageFormat data structure packageFormat QStringLiteral structure GenericPackage d structures insert packageFormat structure packageFormat QStringLiteral structure GenericQMLPackage d structures insert packageFormat structure structure structure QStringList libraryPaths QString subDirectory QStringLiteral Q_FOREACH QString dir QCoreApplication::libraryPaths QString d dir QDir::separator subDirectory d endsWith QDir::separator d QDir::separator libraryPaths d QString pluginFileName Q_FOREACH QString plugindir libraryPaths QString _ixfile plugindir QStringLiteral QFile indexFile _ixfile indexFile exists indexFile open QIODevice::ReadOnly QJsonDocument jdoc QJsonDocument::fromBinaryData indexFile readAll indexFile close QJsonArray plugins jdoc array QJsonArray::const_iterator iter plugins constBegin iter plugins constEnd iter QJsonObject obj QJsonValue toObject QString candidate obj value QStringLiteral toString KPluginMetaData m obj candidate m pluginId packageFormat pluginFileName candidate QVector&lt;KPluginMetaData&gt; plugins KPluginLoader::findPlugins plugindir QVectorIterator&lt;KPluginMetaData&gt; iter plugins iter hasNext md iter next md pluginId packageFormat pluginFileName md fileName QString error pluginFileName isEmpty KPluginLoader loader pluginFileName QVariantList argsWithMetaData QVariantList loader metaData toVariantMap KPluginFactory factory loader factory factory structure factory create PackageStructure argsWithMetaData structure error QCoreApplication::translate structure error isEmpty qWarning i18n packageFormat error structure d structures insert packageFormat structure structure</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00374</field>
+    <field name="keywords"></field>
+    <field name="text">PackageLoader::addKnownPackageStructure QString packageFormat KPackage::PackageStructure structure d structures insert packageFormat structure</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.cpp</field>
+    <field name="url">packageloader_8cpp_source.html#l00379</field>
+    <field name="keywords"></field>
+    <field name="text">Package PackageLoader::internalLoadPackage QString name Q_UNUSED name Package</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.h</field>
+    <field name="url">packageloader_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackageLoaderPrivate</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packageloader.h</field>
+    <field name="url">packageloader_8h_source.html#l00042</field>
+    <field name="keywords"></field>
+    <field name="text">PACKAGE_EXPORT PackageLoader Package loadPackage QString packageFormat QString packagePath QString QList&lt;KPluginMetaData&gt; listPackages QString packageFormat QString packageRoot QString QList&lt;KPluginMetaData&gt; findPackages QString packageFormat QString packageRoot QString std::function KPluginMetaData filter std::function KPluginMetaData KPackage::PackageStructure loadPackageStructure QString packageFormat addKnownPackageStructure QString packageFormat KPackage::PackageStructure structure setPackageLoader PackageLoader loader PackageLoader Package internalLoadPackage QString packageFormat PackageLoader PackageLoader PackageLoaderPrivate d Q_DISABLE_COPY PackageLoader Q_DECLARE_METATYPE KPackage::PackageLoader</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packages.cpp</field>
+    <field name="url">packages_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">ChangeableMainScriptPackage::initPackage KPackage::Package package package addFileDefinition QStringLiteral i18n package setRequired QString ChangeableMainScriptPackage::mainScriptConfigKey QStringLiteral ChangeableMainScriptPackage::pathChanged KPackage::Package package package path isEmpty QString mainScript package metadata value mainScriptConfigKey mainScript isEmpty mainScript package metadata value QStringLiteral mainScript isEmpty package addFileDefinition mainScript i18n GenericPackage::initPackage KPackage::Package package ChangeableMainScriptPackage::initPackage package package setDefaultPackageRoot QStringLiteral package addDirectoryDefinition QStringLiteral i18n package addDirectoryDefinition QStringLiteral i18n QStringList mimetypes mimetypes QStringLiteral QStringLiteral QStringLiteral package setMimeTypes mimetypes package setMimeTypes mimetypes package addDirectoryDefinition QStringLiteral i18n mimetypes clear mimetypes QStringLiteral package setMimeTypes mimetypes package addDirectoryDefinition QStringLiteral i18n package addDirectoryDefinition QStringLiteral i18n package addDirectoryDefinition QStringLiteral i18n mimetypes clear mimetypes QStringLiteral package setMimeTypes mimetypes package addDirectoryDefinition QStringLiteral i18n GenericQMLPackage::initPackage KPackage::Package package GenericPackage::initPackage package package addFileDefinition QStringLiteral i18n package setRequired package setDefaultPackageRoot QStringLiteral</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packagestructure.cpp</field>
+    <field name="url">packagestructure_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackageStructure::PackageStructure QObject parent QVariantList args QObject parent d Q_UNUSED args PackageStructure::~PackageStructure PackageStructure::initPackage Package package Q_UNUSED package PackageStructure::pathChanged Package package Q_UNUSED package KJob PackageStructure::install Package package QString archivePath QString packageRoot PackageJob j PackageJob package j install archivePath packageRoot j KJob PackageStructure::update Package package QString archivePath QString packageRoot PackageJob j PackageJob package j update archivePath packageRoot j KJob PackageStructure::uninstall Package package QString packageRoot PackageJob j PackageJob package j uninstall packageRoot package metadata pluginId j</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">packagestructure.h</field>
+    <field name="url">packagestructure_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PackageStructurePrivate PACKAGE_EXPORT PackageStructure QObject Q_OBJECT PackageStructure QObject parent QVariantList args QVariantList PackageStructure initPackage Package package pathChanged Package package KJob install Package package QString archivePath QString packageRoot KJob update Package package QString archivePath QString packageRoot KJob uninstall Package package QString packageRoot PackageStructurePrivate d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00027</field>
+    <field name="keywords"></field>
+    <field name="text">version PACKAGE_VERSION</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00032</field>
+    <field name="keywords"></field>
+    <field name="text">versionMajor PACKAGE_VERSION_MAJOR</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00037</field>
+    <field name="keywords"></field>
+    <field name="text">versionMinor PACKAGE_VERSION_MINOR</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00042</field>
+    <field name="keywords"></field>
+    <field name="text">versionRelease PACKAGE_VERSION_PATCH</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00047</field>
+    <field name="keywords"></field>
+    <field name="text">versionString PACKAGE_VERSION_STRING</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.cpp</field>
+    <field name="url">version_8cpp_source.html#l00052</field>
+    <field name="keywords"></field>
+    <field name="text">isPluginVersionCompatible version version quint32 qWarning quint32 minVersion PACKAGE_MAKE_VERSION PACKAGE_VERSION_MAJOR quint32 maxVersion PACKAGE_MAKE_VERSION PACKAGE_VERSION_MAJOR PACKAGE_VERSION_MINOR version &lt; minVersion || version &gt; maxVersion</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.h</field>
+    <field name="url">version_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">version.h</field>
+    <field name="url">version_8h_source.html#l00034</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage PACKAGE_EXPORT version PACKAGE_EXPORT versionMajor PACKAGE_EXPORT versionMinor PACKAGE_EXPORT versionRelease PACKAGE_EXPORT versionString PACKAGE_EXPORT isPluginVersionCompatible version</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">versionparser.cpp</field>
+    <field name="url">versionparser_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KPackage isVersionNewer QString version1 QString version2 version1 version2 QVector&lt;QString&gt; versionChunks QVector&lt;QString&gt;::fromList version2 split QVector&lt;QString&gt; oldVersionChunks QVector&lt;QString&gt;::fromList version1 split length qMin versionChunks size oldVersionChunks size i i length i versionChunks i oldVersionChunks i versionChunks i oldVersionChunks i versionChunks size oldVersionChunks size</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">version.h</field>
+    <field name="url">version_8h.html</field>
+    <field name="keywords">version.h</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">PACKAGE_IS_VERSION</field>
+    <field name="args">(a, b, c)</field>
+    <field name="url">version_8h.html#a5ae369ade4348c24e80b79f89979459e</field>
+    <field name="keywords">PACKAGE_IS_VERSION</field>
+    <field name="text">Not useful for detecting the version of kpackage at runtime</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::isPluginVersionCompatible</field>
+    <field name="args">(unsigned int version)</field>
+    <field name="url">namespaceKPackage.html#a297c944b0c50a9d1b086156d0d5108ac</field>
+    <field name="keywords">isPluginVersionCompatible KPackage::isPluginVersionCompatible KPackage isPluginVersionCompatible KPackage::isPluginVersionCompatible KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::version</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKPackage.html#a54e3f7be495f220dd0071ca568f6cdfd</field>
+    <field name="keywords">version KPackage::version KPackage version KPackage::version KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::versionMajor</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKPackage.html#ac2e38e5a02c8f576343ff9dd3188d8ac</field>
+    <field name="keywords">versionMajor KPackage::versionMajor KPackage versionMajor KPackage::versionMajor KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::versionMinor</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKPackage.html#a190e36b67ff216c265e3fa3d728592b1</field>
+    <field name="keywords">versionMinor KPackage::versionMinor KPackage versionMinor KPackage::versionMinor KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::versionRelease</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKPackage.html#a0e1aac3b5d8c62f4cc208a4f91f8f9af</field>
+    <field name="keywords">versionRelease KPackage::versionRelease KPackage versionRelease KPackage::versionRelease KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::versionString</field>
+    <field name="args">()</field>
+    <field name="url">namespaceKPackage.html#acf9952909ac0814eb835fb36af937f39</field>
+    <field name="keywords">versionString KPackage::versionString KPackage versionString KPackage::versionString KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">deprecated</field>
+    <field name="url">deprecated.html</field>
+    <field name="keywords"></field>
+    <field name="text">Deprecated List Member KPackage Package contentsHash const Since 5.21 use cryptographicHash</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">KPackage</field>
+    <field name="url">namespaceKPackage.html</field>
+    <field name="keywords">KPackage</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">KPackage::dest</field>
+    <field name="url">namespaceKPackage.html#a13a3b5f9332520c3ff3d1b2436cc6957</field>
+    <field name="keywords"></field>
+    <field name="text">QVariantMap vm</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KPackage::Package</field>
+    <field name="url">classKPackage_1_1Package.html</field>
+    <field name="keywords">Package</field>
+    <field name="text">Package defines what is in a package and provides easy access to the contents To define a package one might write the following code One may also choose to create a subclass of PackageStructure and include the setup in the constructor Either way Package creates a self-documenting contract between the packager and the application without exposing package internals such as actual on-disk structure of the package or requiring that all contents be explicitly known ahead of time Subclassing PackageStructure does have provide a number of potential const benefits the package can be notified of path changes via the virtual pathChanged() method the subclass may implement mechanisms to install and remove packages using the virtual install and uninstall methods subclasses can be compiled as plugins for easy re-use</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KPackage::Package::JobError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55b</field>
+    <field name="keywords">JobError KPackage::Package::JobError KPackage::Package</field>
+    <field name="text">5.17</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageFileNotFoundError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba817c7fdd3bf9d5609b5a03a2706c2654</field>
+    <field name="keywords">PackageFileNotFoundError KPackage::Package::PackageFileNotFoundError KPackage::Package</field>
+    <field name="text">Cannot create package root directory</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::UnsupportedArchiveFormatError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba0d1efcfd7d61d43431332a1d50b10a04</field>
+    <field name="keywords">UnsupportedArchiveFormatError KPackage::Package::UnsupportedArchiveFormatError KPackage::Package</field>
+    <field name="text">The package file does not exist</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageOpenError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55baf9bd56e4081091d83c71b2530a78f0a7</field>
+    <field name="keywords">PackageOpenError KPackage::Package::PackageOpenError KPackage::Package</field>
+    <field name="text">The archive format of the package is not supported</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::MetadataFileMissingError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba5ddd14bf4805accaaf176d635519f3f8</field>
+    <field name="keywords">MetadataFileMissingError KPackage::Package::MetadataFileMissingError KPackage::Package</field>
+    <field name="text">Can t open the package file for reading</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PluginNameMissingError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55bafee26e3755ffd31be58957a170cd88a9</field>
+    <field name="keywords">PluginNameMissingError KPackage::Package::PluginNameMissingError KPackage::Package</field>
+    <field name="text">The package doesn t have a metadata.desktop file</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PluginNameInvalidError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba290cad912f4265afac2b8fda7b86950e</field>
+    <field name="keywords">PluginNameInvalidError KPackage::Package::PluginNameInvalidError KPackage::Package</field>
+    <field name="text">The metadata.desktop file doesn t specify a plugin name</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::UpdatePackageTypeMismatchError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba55e85085ca8799f5c7c654d6c43db2c9</field>
+    <field name="keywords">UpdatePackageTypeMismatchError KPackage::Package::UpdatePackageTypeMismatchError KPackage::Package</field>
+    <field name="text">The plugin name contains charaters different from letters digits dots and underscores</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::OldVersionRemovalError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba2ef2f559cf41ae6190c1bac0e2f9dbf1</field>
+    <field name="keywords">OldVersionRemovalError KPackage::Package::OldVersionRemovalError KPackage::Package</field>
+    <field name="text">A package with this plugin name was already installed but has a different type in the metadata.desktop file</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::NewerVersionAlreadyInstalledError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba57f118b19d906807b6db09ccfbaecca9</field>
+    <field name="keywords">NewerVersionAlreadyInstalledError KPackage::Package::NewerVersionAlreadyInstalledError KPackage::Package</field>
+    <field name="text">Failed to remove the old version of the package during an upgrade</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageAlreadyInstalledError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba1c6ea2f1398abdd197d60a26e3bdae75</field>
+    <field name="keywords">PackageAlreadyInstalledError KPackage::Package::PackageAlreadyInstalledError KPackage::Package</field>
+    <field name="text">We tried to update but the same version or a newer one is already installed</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageMoveError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55ba0490d7178b226c1e72699858f3a715cb</field>
+    <field name="keywords">PackageMoveError KPackage::Package::PackageMoveError KPackage::Package</field>
+    <field name="text">The package is already installed and a normal install not update was performed</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageCopyError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55baee2ff4ad94bd0a9d9e479f273425f0e2</field>
+    <field name="keywords">PackageCopyError KPackage::Package::PackageCopyError KPackage::Package</field>
+    <field name="text">Failure to move a package from the system temporary folder to its final destination</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KPackage::Package::PackageUninstallError</field>
+    <field name="url">classKPackage_1_1Package.html#a526ba12835121705f80664f304cff55bafa5f150856e4e36b338e3fcb2a3b0ff0</field>
+    <field name="keywords">PackageUninstallError KPackage::Package::PackageUninstallError KPackage::Package</field>
+    <field name="text">Failure to copy a package folder from somewhere in the filesystem to its final destination Failure to uninstall a package</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::Package</field>
+    <field name="args">(PackageStructure *structure=0)</field>
+    <field name="url">classKPackage_1_1Package.html#a92bb0aacac7ebce910ece58852eef618</field>
+    <field name="keywords">Package KPackage::Package::Package KPackage::Package</field>
+    <field name="text">structure if a NULL pointer is passed in this will creates an empty invalid Package otherwise the structure is allowed to set up the Package s initial layout 4.6</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::Package</field>
+    <field name="args">(const Package &amp;other)</field>
+    <field name="url">classKPackage_1_1Package.html#aec74842590de8145dad8c5a815d5ddee</field>
+    <field name="keywords">Package KPackage::Package::Package KPackage::Package</field>
+    <field name="text">4.6</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::addDirectoryDefinition</field>
+    <field name="args">(const QByteArray &amp;key, const QString &amp;path, const QString &amp;name)</field>
+    <field name="url">classKPackage_1_1Package.html#af6b028f7ba2b8f3eed6c3d953dc02cd4</field>
+    <field name="keywords">addDirectoryDefinition KPackage::Package::addDirectoryDefinition KPackage::Package</field>
+    <field name="text">It is added as a not-required element with no associated mimeTypes Starting in 4.6 if an entry with the given key already exists the path is added to it as a search alternative key used as an internal label for this directory path the path within the package for this directory name the user visible translated name for the directory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::addFileDefinition</field>
+    <field name="args">(const QByteArray &amp;key, const QString &amp;path, const QString &amp;name)</field>
+    <field name="url">classKPackage_1_1Package.html#a9457b9721e713a026a78dca479945cfc</field>
+    <field name="keywords">addFileDefinition KPackage::Package::addFileDefinition KPackage::Package</field>
+    <field name="text">It is added as a not-required element with no associated mimeTypes Starting in 4.6 if an entry with the given key already exists the path is added to it as a search alternative key used as an internal label for this file path the path within the package for this file name the user visible translated name for the file</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::allowExternalPaths</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#ac7c546a8f691b12b75ab3ffca4510c5a</field>
+    <field name="keywords">allowExternalPaths KPackage::Package::allowExternalPaths KPackage::Package</field>
+    <field name="text">true if paths/symlinks outside the package itself should be followed By default this is set to false for security reasons</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::contentsHash</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a89876aba87fea055b412b02b8cfa809a</field>
+    <field name="keywords">contentsHash KPackage::Package::contentsHash KPackage::Package</field>
+    <field name="text">a SHA1 hash digest of the contents of the package in hexadecimal form 4.4 Since 5.21 use cryptographicHash</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::contentsPrefixPaths</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#ac28b694bd82296872bf3d955fc461dc8</field>
+    <field name="keywords">contentsPrefixPaths KPackage::Package::contentsPrefixPaths KPackage::Package</field>
+    <field name="text">the prefix paths inserted between the base path and content entries in order of priority When searching for a file all paths will be tried in order 4.6</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::cryptographicHash</field>
+    <field name="args">(QCryptographicHash::Algorithm algorithm) const</field>
+    <field name="url">classKPackage_1_1Package.html#a0b8d44882dad95be3af9f6855fa68771</field>
+    <field name="keywords">cryptographicHash KPackage::Package::cryptographicHash KPackage::Package</field>
+    <field name="text">a hash digest of the contents of the package in hexadecimal form 5.21</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::defaultPackageRoot</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a42956f741658479b1043b4b6ec7d57a5</field>
+    <field name="keywords">defaultPackageRoot KPackage::Package::defaultPackageRoot KPackage::Package</field>
+    <field name="text">preferred package root This defaults to kpackage/generic/</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::directories</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#af2436381b0268a17172d9272cf1347d8</field>
+    <field name="keywords">directories KPackage::Package::directories KPackage::Package</field>
+    <field name="text">all directories registered as part of this Package s structure</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::entryList</field>
+    <field name="args">(const QByteArray &amp;key) const</field>
+    <field name="url">classKPackage_1_1Package.html#a671fb4ea1e063a22e418912cbf48287f</field>
+    <field name="keywords">entryList KPackage::Package::entryList KPackage::Package</field>
+    <field name="text">fileType the type of file to look for as defined in the package structure list of files by name suitable for passing to filePath</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::fallbackPackage</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#ab1c25e4943b6d73422235f90c416e528</field>
+    <field name="keywords">fallbackPackage KPackage::Package::fallbackPackage KPackage::Package</field>
+    <field name="text">The fallback package root path</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::filePath</field>
+    <field name="args">(const QByteArray &amp;key, const QString &amp;filename=QString()) const</field>
+    <field name="url">classKPackage_1_1Package.html#a935b5f3f1302c06dcf0fb348cea42c00</field>
+    <field name="keywords">filePath KPackage::Package::filePath KPackage::Package</field>
+    <field name="text">Example finding the main script in a scripting package filePath Example finding a specific image in the images directory filePath key the key of the file type to look for filename optional name of the file to locate within the package path to the file on disk QString() if not found</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::files</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#ad02987e0916b09862e9689b1b6242853</field>
+    <field name="keywords">files KPackage::Package::files KPackage::Package</field>
+    <field name="text">all files registered as part of this Package s structure</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::hasValidStructure</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a27242b0250fb09264da2c9594b1d95b4</field>
+    <field name="keywords">hasValidStructure KPackage::Package::hasValidStructure KPackage::Package</field>
+    <field name="text">true if this package has a valid PackageStructure associatedw it with it A package may not be valid but have a valid structure Useful when dealing with Package objects in a semi-initialized state e.g before calling setPath() 5.1</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::install</field>
+    <field name="args">(const QString &amp;sourcePackage, const QString &amp;packageRoot=QString())</field>
+    <field name="url">classKPackage_1_1Package.html#a5e2ba569f2655e92f6fd767c87d55338</field>
+    <field name="keywords">install KPackage::Package::install KPackage::Package</field>
+    <field name="text">By default installs a native KPackage::Package After the KJob will emitted finished() if the install went well the Package instance will be guaranteed to have loaded the package just installed and be valid and usable KJob to track installation progress and result</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::isRequired</field>
+    <field name="args">(const QByteArray &amp;key) const</field>
+    <field name="url">classKPackage_1_1Package.html#a7ca5269711e6df819855c2309e219d8d</field>
+    <field name="keywords">isRequired KPackage::Package::isRequired KPackage::Package</field>
+    <field name="text">true if the item at path exists and is required</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::isValid</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a42c002590166a55c26e332f065c8efd6</field>
+    <field name="keywords">isValid KPackage::Package::isValid KPackage::Package</field>
+    <field name="text">true if all the required components exist</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::metadata</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#aa73d0c22a411bc6442a981b71f99b197</field>
+    <field name="keywords">metadata KPackage::Package::metadata KPackage::Package</field>
+    <field name="text">the package metadata object</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::mimeTypes</field>
+    <field name="args">(const QByteArray &amp;key) const</field>
+    <field name="url">classKPackage_1_1Package.html#afb541ef59717089754772f98b3a586f9</field>
+    <field name="keywords">mimeTypes KPackage::Package::mimeTypes KPackage::Package</field>
+    <field name="text">the mimeTypes associated with the path if any</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::name</field>
+    <field name="args">(const QByteArray &amp;key) const</field>
+    <field name="url">classKPackage_1_1Package.html#a2bdeae6203245afc5137ef67d10ff416</field>
+    <field name="keywords">name KPackage::Package::name KPackage::Package</field>
+    <field name="text">user visible name for the given entry</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::operator=</field>
+    <field name="args">(const Package &amp;rhs)</field>
+    <field name="url">classKPackage_1_1Package.html#a13621692e42b91a259c268ebd38a8967</field>
+    <field name="keywords">operator= KPackage::Package::operator= KPackage::Package</field>
+    <field name="text">4.6</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::path</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a817b5ee4ecbf8d3c6b28b79fb6690e6d</field>
+    <field name="keywords">path KPackage::Package::path KPackage::Package</field>
+    <field name="text">the path to the root of this particular package</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::removeDefinition</field>
+    <field name="args">(const QByteArray &amp;key)</field>
+    <field name="url">classKPackage_1_1Package.html#abf44e0421dbaee3b23acbe2298250291</field>
+    <field name="keywords">removeDefinition KPackage::Package::removeDefinition KPackage::Package</field>
+    <field name="text">4.6 key the internal label of the file or directory to remove</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::requiredDirectories</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#a7168fa0de8dfc4ee6dfca94b192e9a13</field>
+    <field name="keywords">requiredDirectories KPackage::Package::requiredDirectories KPackage::Package</field>
+    <field name="text">all directories registered as part of this Package s required structure</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::requiredFiles</field>
+    <field name="args">() const</field>
+    <field name="url">classKPackage_1_1Package.html#af2d0c3bae78f97744aa4dd2faad2206f</field>
+    <field name="keywords">requiredFiles KPackage::Package::requiredFiles KPackage::Package</field>
+    <field name="text">all files registered as part of this Package s required structure</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setAllowExternalPaths</field>
+    <field name="args">(bool allow)</field>
+    <field name="url">classKPackage_1_1Package.html#a9e904f2155c95a824f26a155c317130e</field>
+    <field name="keywords">setAllowExternalPaths KPackage::Package::setAllowExternalPaths KPackage::Package</field>
+    <field name="text">allow true if paths/symlinks outside of the package should be followed false if they should be rejected</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setContentsPrefixPaths</field>
+    <field name="args">(const QStringList &amp;prefixPaths)</field>
+    <field name="url">classKPackage_1_1Package.html#a03abf46f30a34d0187ec0aed71455b62</field>
+    <field name="keywords">setContentsPrefixPaths KPackage::Package::setContentsPrefixPaths KPackage::Package</field>
+    <field name="text">This defaults to and is added automatically between the base path and the entries as defined by the package structure Multiple entries can be added In this case each file request will be searched in all prefixes in order and the first found will be returned prefix paths the directory prefix to use 4.6</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setDefaultMimeTypes</field>
+    <field name="args">(const QStringList &amp;mimeTypes)</field>
+    <field name="url">classKPackage_1_1Package.html#afe7db278e405471f4274b9d5abd82f41</field>
+    <field name="keywords">setDefaultMimeTypes KPackage::Package::setDefaultMimeTypes KPackage::Package</field>
+    <field name="text">Handy for packages with only one or predominantly one file type mimeTypes a list of mimeTypes</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setDefaultPackageRoot</field>
+    <field name="args">(const QString &amp;packageRoot)</field>
+    <field name="url">classKPackage_1_1Package.html#a8e1fea647f3d2d7ecf9582c12bfdd72b</field>
+    <field name="keywords">setDefaultPackageRoot KPackage::Package::setDefaultPackageRoot KPackage::Package</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setFallbackPackage</field>
+    <field name="args">(const KPackage::Package &amp;package)</field>
+    <field name="url">classKPackage_1_1Package.html#af1f796d20e7316a349c5638dfb6d49d0</field>
+    <field name="keywords">setFallbackPackage KPackage::Package::setFallbackPackage KPackage::Package</field>
+    <field name="text">path package root path setPath</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setMimeTypes</field>
+    <field name="args">(const QByteArray &amp;key, const QStringList &amp;mimeTypes)</field>
+    <field name="url">classKPackage_1_1Package.html#a283b27d6f0f9a8eac768d22598849347</field>
+    <field name="keywords">setMimeTypes KPackage::Package::setMimeTypes KPackage::Package</field>
+    <field name="text">key the entry within the package mimeTypes a list of mimeTypes</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setPath</field>
+    <field name="args">(const QString &amp;path)</field>
+    <field name="url">classKPackage_1_1Package.html#a33ecf5e38f16b34cf703247ac8fdf540</field>
+    <field name="keywords">setPath KPackage::Package::setPath KPackage::Package</field>
+    <field name="text">path an absolute path or a relative path to the default package root 4.3</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::setRequired</field>
+    <field name="args">(const QByteArray &amp;key, bool required)</field>
+    <field name="url">classKPackage_1_1Package.html#a1e24e397f3d2baa0fb8de30ca47fb230</field>
+    <field name="keywords">setRequired KPackage::Package::setRequired KPackage::Package</field>
+    <field name="text">The path must already have been added using addDirectoryDefinition or addFileDefinition key the entry within the package required true if this entry is required false if not</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::uninstall</field>
+    <field name="args">(const QString &amp;packageName, const QString &amp;packageRoot)</field>
+    <field name="url">classKPackage_1_1Package.html#ac14a4ce753193cca8de1ea0e073e0342</field>
+    <field name="keywords">uninstall KPackage::Package::uninstall KPackage::Package</field>
+    <field name="text">KJob to track removal progress and result</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::Package::update</field>
+    <field name="args">(const QString &amp;sourcePackage, const QString &amp;packageRoot=QString())</field>
+    <field name="url">classKPackage_1_1Package.html#a6862c15d981d22d34e5d88744bf88434</field>
+    <field name="keywords">update KPackage::Package::update KPackage::Package</field>
+    <field name="text">By default installs a native KPackage::Package If an older version is already installed it removes the old one If the installed one is newer an error will occur After the KJob will emitted finished() if the install went well the Package instance will be guaranteed to have loaded the package just updated and be valid and usable KJob to track installation progress and result 5.17</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KPackage::PackageLoader</field>
+    <field name="url">classKPackage_1_1PackageLoader.html</field>
+    <field name="keywords">PackageLoader</field>
+    <field name="text">The plugin loader must be set before any plugins are loaded otherwise for safety reasons the default PackageLoader implementation will be used The reimplemented version should not do more than simply returning a loaded plugin It should not init() it and it should not hang on to it Ryan Rix</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::addKnownPackageStructure</field>
+    <field name="args">(const QString &amp;packageFormat, KPackage::PackageStructure *structure)</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a737e46fd9ea0a9f9f77d64c301190032</field>
+    <field name="keywords">addKnownPackageStructure KPackage::PackageLoader::addKnownPackageStructure KPackage::PackageLoader</field>
+    <field name="text">packageFormat the package format such as structure the package structure we want to be able to load packages from 5.10</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::findPackages</field>
+    <field name="args">(const QString &amp;packageFormat, const QString &amp;packageRoot=QString(), std::function&lt; bool(const KPluginMetaData &amp;)&gt; filter=std::function&lt; bool(const KPluginMetaData &amp;)&gt;())</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a08944f550228611fa0d5bb65020ee186</field>
+    <field name="keywords">findPackages KPackage::PackageLoader::findPackages KPackage::PackageLoader</field>
+    <field name="text">packageFormat the format of the packages to list packageRoot the root folder where the packages are installed If not specified the default from the packageformat will be taken filter a filter function that will be called on each package will return true for the matching ones metadata for all the matching packages 5.10</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::listPackages</field>
+    <field name="args">(const QString &amp;packageFormat, const QString &amp;packageRoot=QString())</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#ad2480cf85aad0055e064487a10c3cb53</field>
+    <field name="keywords">listPackages KPackage::PackageLoader::listPackages KPackage::PackageLoader</field>
+    <field name="text">packageFormat the format of the packages to list packageRoot the root folder where the packages are installed If not specified the default from the packageformat will be taken metadata for all the matching packages</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::loadPackage</field>
+    <field name="args">(const QString &amp;packageFormat, const QString &amp;packagePath=QString())</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a1d08c2f819966419fd2b362b87ad4ea1</field>
+    <field name="keywords">loadPackage KPackage::PackageLoader::loadPackage KPackage::PackageLoader</field>
+    <field name="text">packageFormat the format of the package to load packagePath the package name the path of the package relative to the packageFormat root path If not specified it will have to be set manually with Package::setPath() by the caller a Package object matching name or an invalid package on failure</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::loadPackageStructure</field>
+    <field name="args">(const QString &amp;packageFormat)</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a8e1b49ff73ccf6cf7a8c5afc61fa42e2</field>
+    <field name="keywords">loadPackageStructure KPackage::PackageLoader::loadPackageStructure KPackage::PackageLoader</field>
+    <field name="text">The structure can then be used as paramenter for a Package instance constructor packageFormat the package format such as the structure instance</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::self</field>
+    <field name="args">()</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a4f90700cbe677d3e6d4c40cefe618fce</field>
+    <field name="keywords">self KPackage::PackageLoader::self KPackage::PackageLoader</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::setPackageLoader</field>
+    <field name="args">(PackageLoader *loader)</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#a2c36fba4b6299ee5ac085f87eda04832</field>
+    <field name="keywords">setPackageLoader KPackage::PackageLoader::setPackageLoader KPackage::PackageLoader</field>
+    <field name="text">loader A subclass of PackageLoader which will be supplied by the application</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KPackage::PackageLoader::internalLoadPackage</field>
+    <field name="args">(const QString &amp;packageFormat)</field>
+    <field name="url">classKPackage_1_1PackageLoader.html#ad55d500c4f2d58c3f4f634422f6e4143</field>
+    <field name="keywords">internalLoadPackage KPackage::PackageLoader::internalLoadPackage KPackage::PackageLoader</field>
+    <field name="text">If the service requested is not recognized then the implementation should return an empty and invalid Package() This method is called by loadPackage prior to attempting to load a Package using the standard plugin mechanisms packageFormat the format of the package to load a Package instance with the proper PackageStructure</field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">index</field>
+    <field name="url">index.html</field>
+    <field name="keywords"></field>
+    <field name="text">Package Framework Installation and loading of additional content ex scripts images as packages Introduction The Package framework lets the user install and load packages of non binary content such as scripted extensions or graphic assets as if they were traditional plugins Note for packagers After a package gets installed its index should be regenerated Index files CANNOT be shipped directly in packages However they should be regenerated as post install script for the package itself In the cmake build directory of applications with packages there will be the file regenerateindex.sh that will contain all the commands that have to be executed in post install scripts to regenerate the indexes</field>
+  </doc>
+</add>

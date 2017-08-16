@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - kpropertiesdialog.h Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_413e470d760bf901f5641c9eb8d400f1.html">mingw-w64-kio-qt5 - Copy</a></li><li class="navelem"><a class="el" href="dir_6206d1bc68dd9b07f7e6027ae432b791.html">src</a></li><li class="navelem"><a class="el" href="dir_cd1fc410479695bfec72c4647d245a83.html">kio-5.26.0</a></li><li class="navelem"><a class="el" href="dir_904192df72df8135d067fa8e2c3ed040.html">src</a></li><li class="navelem"><a class="el" href="dir_f4ebb42257ef8bc7b0cef7b0d81b7545.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">kpropertiesdialog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* This file is part of the KDE project</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 1998, 1999 Torben Weis &lt;weis@kde.org&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">   Copyright (c) 1999, 2000 Preston Brown &lt;pbrown@kde.org&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   Copyright (c) 2000 Simon Hausmann &lt;hausmann@kde.org&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">   Copyright (c) 2000 David Faure &lt;faure@kde.org&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">   This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">   modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   License as published by the Free Software Foundation; either</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   version 2 of the License, or (at your option) any later version.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   Library General Public License for more details.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   Boston, MA 02110-1301, USA.</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef KPROPERTIESDIALOG_H</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define KPROPERTIESDIALOG_H</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QtCore/QString&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;QUrl&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;kiowidgets_export.h&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;kfileitem.h&gt;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;kpagedialog.h&gt;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceKIO.html">KIO</a></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Job;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classKPropertiesDialog.html">   62</a></span>&#160;<span class="keyword">class </span>KIOWIDGETS_EXPORT <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a> : <span class="keyword">public</span> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKPageDialog.html">KPageDialog</a></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> canDisplay(<span class="keyword">const</span> <a class="code" href="classKFileItemList.html">KFileItemList</a> &amp;_items);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> <a class="code" href="classKFileItem.html">KFileItem</a> &amp;item,</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                               QWidget *parent = 0);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> <a class="code" href="classKFileItemList.html">KFileItemList</a> &amp;_items,</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                               QWidget *parent = 0);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> QUrl &amp;url,</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                               QWidget *parent = 0);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> QList&lt;QUrl&gt; &amp;urls,</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                               QWidget *parent = Q_NULLPTR);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> QUrl &amp;_tempUrl, <span class="keyword">const</span> QUrl &amp;_currentDir,</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                      <span class="keyword">const</span> QString &amp;_defaultName,</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                      QWidget *parent = 0);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>(<span class="keyword">const</span> QString &amp;title,</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                               QWidget *parent = 0);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>();</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> showDialog(<span class="keyword">const</span> <a class="code" href="classKFileItem.html">KFileItem</a> &amp;item, QWidget *parent = 0,</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                           <span class="keywordtype">bool</span> modal = <span class="keyword">true</span>);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> showDialog(<span class="keyword">const</span> QUrl &amp;_url, QWidget *parent = 0,</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                           <span class="keywordtype">bool</span> modal = <span class="keyword">true</span>);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> showDialog(<span class="keyword">const</span> <a class="code" href="classKFileItemList.html">KFileItemList</a> &amp;_items, QWidget *parent = 0,</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                           <span class="keywordtype">bool</span> modal = <span class="keyword">true</span>);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> showDialog(<span class="keyword">const</span> QList&lt;QUrl&gt; &amp;urls, QWidget *parent = Q_NULLPTR,</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                           <span class="keywordtype">bool</span> modal = <span class="keyword">true</span>);</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span> insertPlugin(<a class="code" href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a> *plugin);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#ifndef KIOWIDGETS_NO_DEPRECATED</span></div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div><div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classKPropertiesDialog.html#a064e5ade3464580f77dcd65625f15f14">  246</a></span>&#160;    KIOWIDGETS_DEPRECATED QUrl <a class="code" href="classKPropertiesDialog.html#a064e5ade3464580f77dcd65625f15f14">kurl</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> url();</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    QUrl url() <span class="keyword">const</span>;</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="classKFileItem.html">KFileItem</a> &amp;item();</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="classKFileItemList.html">KFileItemList</a> items() <span class="keyword">const</span>;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    QUrl currentDir() <span class="keyword">const</span>;</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    QString defaultName() <span class="keyword">const</span>;</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> updateUrl(<span class="keyword">const</span> QUrl &amp;newUrl);</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceKIO.html#a399cbd217c9a897db18ea247fb289c84">rename</a>(<span class="keyword">const</span> QString &amp;_name);</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">void</span> abortApplying();</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> showFileSharingPage();</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">void</span> setFileSharingPage(QWidget *page);</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordtype">void</span> setFileNameReadOnly(<span class="keywordtype">bool</span> ro);</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">using</span> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKPageDialog.html#a03b08f7541eea927a4bf9bbf209857b6">KPageDialog::buttonBox</a>;</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div><div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="classKPropertiesDialog.html#ac19f78473e7f5de2cb6d959e0d3612bd">  344</a></span>&#160;    KIOWIDGETS_DEPRECATED <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classKPropertiesDialog.html#ac19f78473e7f5de2cb6d959e0d3612bd">slotOk</a>() { accept(); }</div><div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classKPropertiesDialog.html#aa985c9014464edb9ae9732ab2e0e6ab3">  349</a></span>&#160;    KIOWIDGETS_DEPRECATED <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classKPropertiesDialog.html#aa985c9014464edb9ae9732ab2e0e6ab3">slotCancel</a>() { reject(); }</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">void</span> accept() Q_DECL_OVERRIDE;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">void</span> reject() Q_DECL_OVERRIDE;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;Q_SIGNALS:</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">void</span> propertiesClosed();</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordtype">void</span> applied();</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordtype">void</span> canceled();</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">void</span> saveAs(<span class="keyword">const</span> QUrl &amp;oldUrl, QUrl &amp;newUrl);</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;Q_SIGNALS:</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">void</span> leaveModality();</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">class </span>KPropertiesDialogPrivate;</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    KPropertiesDialogPrivate *<span class="keyword">const</span> d;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    Q_DISABLE_COPY(<a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a>)</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;};</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div><div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="classKPropertiesDialogPlugin.html">  411</a></span>&#160;<span class="keyword">class </span>KIOWIDGETS_EXPORT <a class="code" href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <a class="code" href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a>(<a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a> *_props);</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a>();</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> applyChanges();</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#ifndef KIOWIDGETS_NO_DEPRECATED</span></div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">static</span> KIOWIDGETS_DEPRECATED <span class="keywordtype">bool</span> isDesktopFile(<span class="keyword">const</span> <a class="code" href="classKFileItem.html">KFileItem</a> &amp;_item);</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">void</span> setDirty(<span class="keywordtype">bool</span> b);</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordtype">bool</span> isDirty() <span class="keyword">const</span>;</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">void</span> setDirty(); <span class="comment">// same as setDirty( true ). TODO KDE5: void setDirty(bool dirty=true);</span></div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;Q_SIGNALS:</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordtype">void</span> changed();</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="classKPropertiesDialogPlugin.html#a4f9029462619d4722c7d607cc09d4435">  457</a></span>&#160;    <a class="code" href="classKPropertiesDialog.html">KPropertiesDialog</a> *<a class="code" href="classKPropertiesDialogPlugin.html#a4f9029462619d4722c7d607cc09d4435">properties</a>;</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordtype">int</span> fontHeight() <span class="keyword">const</span>;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keyword">class </span>KPropertiesDialogPluginPrivate;</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    KPropertiesDialogPluginPrivate *<span class="keyword">const</span> d;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;};</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div><div class="ttc" id="classKPageDialog_html"><div class="ttname"><a href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKPageDialog.html">KPageDialog</a></div></div>
+<div class="ttc" id="classKPropertiesDialog_html_a064e5ade3464580f77dcd65625f15f14"><div class="ttname"><a href="classKPropertiesDialog.html#a064e5ade3464580f77dcd65625f15f14">KPropertiesDialog::kurl</a></div><div class="ttdeci">KIOWIDGETS_DEPRECATED QUrl kurl() const</div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00246">kpropertiesdialog.h:246</a></div></div>
+<div class="ttc" id="namespaceKIO_html"><div class="ttname"><a href="namespaceKIO.html">KIO</a></div><div class="ttdoc">A namespace for KIO globals. </div><div class="ttdef"><b>Definition:</b> <a href="authinfo_8h_source.html#l00034">authinfo.h:34</a></div></div>
+<div class="ttc" id="classKPropertiesDialogPlugin_html_a4f9029462619d4722c7d607cc09d4435"><div class="ttname"><a href="classKPropertiesDialogPlugin.html#a4f9029462619d4722c7d607cc09d4435">KPropertiesDialogPlugin::properties</a></div><div class="ttdeci">KPropertiesDialog * properties</div><div class="ttdoc">Pointer to the dialog. </div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00457">kpropertiesdialog.h:457</a></div></div>
+<div class="ttc" id="classKPageDialog_html_a03b08f7541eea927a4bf9bbf209857b6"><div class="ttname"><a href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKPageDialog.html#a03b08f7541eea927a4bf9bbf209857b6">KPageDialog::buttonBox</a></div><div class="ttdeci">QDialogButtonBox * buttonBox()</div></div>
+<div class="ttc" id="classKPropertiesDialogPlugin_html"><div class="ttname"><a href="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</a></div><div class="ttdoc">A Plugin in the Properties dialog This is an abstract class. </div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00411">kpropertiesdialog.h:411</a></div></div>
+<div class="ttc" id="namespaceKIO_html_a399cbd217c9a897db18ea247fb289c84"><div class="ttname"><a href="namespaceKIO.html#a399cbd217c9a897db18ea247fb289c84">KIO::rename</a></div><div class="ttdeci">KIOCORE_EXPORT SimpleJob * rename(const QUrl &amp;src, const QUrl &amp;dest, JobFlags flags=DefaultFlags)</div><div class="ttdoc">Rename a file or directory. </div><div class="ttdef"><b>Definition:</b> <a href="simplejob_8cpp_source.html#l00365">simplejob.cpp:365</a></div></div>
+<div class="ttc" id="classKFileItemList_html"><div class="ttname"><a href="classKFileItemList.html">KFileItemList</a></div><div class="ttdoc">List of KFileItems, which adds a few helper methods to QList&lt;KFileItem&gt;. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8h_source.html#l00534">kfileitem.h:534</a></div></div>
+<div class="ttc" id="classKPropertiesDialog_html"><div class="ttname"><a href="classKPropertiesDialog.html">KPropertiesDialog</a></div><div class="ttdoc">The main properties dialog class. </div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00062">kpropertiesdialog.h:62</a></div></div>
+<div class="ttc" id="classKPropertiesDialog_html_aa985c9014464edb9ae9732ab2e0e6ab3"><div class="ttname"><a href="classKPropertiesDialog.html#aa985c9014464edb9ae9732ab2e0e6ab3">KPropertiesDialog::slotCancel</a></div><div class="ttdeci">virtual KIOWIDGETS_DEPRECATED void slotCancel()</div><div class="ttdoc">Called when the user presses &amp;#39;Cancel&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00349">kpropertiesdialog.h:349</a></div></div>
+<div class="ttc" id="classKJob_html"><div class="ttname"><a href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a></div></div>
+<div class="ttc" id="classKFileItem_html"><div class="ttname"><a href="classKFileItem.html">KFileItem</a></div><div class="ttdoc">A KFileItem is a generic class to handle a file, local or remote. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8h_source.html#l00045">kfileitem.h:45</a></div></div>
+<div class="ttc" id="classKPropertiesDialog_html_ac19f78473e7f5de2cb6d959e0d3612bd"><div class="ttname"><a href="classKPropertiesDialog.html#ac19f78473e7f5de2cb6d959e0d3612bd">KPropertiesDialog::slotOk</a></div><div class="ttdeci">virtual KIOWIDGETS_DEPRECATED void slotOk()</div><div class="ttdoc">Called when the user presses &amp;#39;Ok&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="kpropertiesdialog_8h_source.html#l00344">kpropertiesdialog.h:344</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:55 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

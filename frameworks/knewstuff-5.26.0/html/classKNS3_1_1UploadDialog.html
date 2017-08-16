@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KNewStuff - KNS3::UploadDialog Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KNewStuff</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KNewStuff"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKNS3_1_1Button.html">KNS3::Button</option>
+        
+        <option value="classKNS3_1_1DownloadDialog.html">KNS3::DownloadDialog</option>
+        
+        <option value="classKNS3_1_1DownloadManager.html">KNS3::DownloadManager</option>
+        
+        <option value="classKNS3_1_1DownloadWidget.html">KNS3::DownloadWidget</option>
+        
+        <option value="classKNS3_1_1Entry.html">KNS3::Entry</option>
+        
+        <option value="classKMoreTools.html">KMoreTools</option>
+        
+        <option value="classKMoreToolsMenuBuilder.html">KMoreToolsMenuBuilder</option>
+        
+        <option value="classKMoreToolsMenuFactory.html">KMoreToolsMenuFactory</option>
+        
+        <option value="classKMoreToolsMenuItem.html">KMoreToolsMenuItem</option>
+        
+        <option value="classKMoreToolsPresets.html">KMoreToolsPresets</option>
+        
+        <option value="classKMoreToolsService.html">KMoreToolsService</option>
+        
+        <option value="classKNS3_1_1UploadDialog.html">KNS3::UploadDialog</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Support for downloading application assets from the network</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:jpwhiting@kde.org">Jeremy Whiting</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5NewStuff)
+target_link_libraries(yourapp KF5::NewStuff)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KNewStuff </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/knewstuff-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KNewStuff on <a href="https://cgit.kde.org/knewstuff-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KNewStuff </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=UploadDialog">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KNS3</b></li><li class="navelem"><a class="el" href="classKNS3_1_1UploadDialog.html">UploadDialog</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKNS3_1_1UploadDialog-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KNS3::UploadDialog Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="uploaddialog_8h_source.html">uploaddialog.h</a>&gt;</code></p>
+
+<p>Inherits QDialog.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ad9e5861315945a1013f9e23d0f9a3bf9"><td class="memItemLeft" align="right" valign="top"><a id="ad9e5861315945a1013f9e23d0f9a3bf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> () override</td></tr>
+<tr class="separator:ad9e5861315945a1013f9e23d0f9a3bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4deac012d49b673fd348138fd566c1f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a4deac012d49b673fd348138fd566c1f6">UploadDialog</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a4deac012d49b673fd348138fd566c1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bad15034720c90c622202b3ff27cc38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a0bad15034720c90c622202b3ff27cc38">UploadDialog</a> (const QString &amp;configFile, QWidget *parent=0)</td></tr>
+<tr class="separator:a0bad15034720c90c622202b3ff27cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e591afbc281abe129f649ba94fe4cb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a0e591afbc281abe129f649ba94fe4cb6">~UploadDialog</a> ()</td></tr>
+<tr class="separator:a0e591afbc281abe129f649ba94fe4cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd030a26e7d53a50b166d8df060d797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a4dd030a26e7d53a50b166d8df060d797">selectCategory</a> (const QString &amp;category)</td></tr>
+<tr class="separator:a4dd030a26e7d53a50b166d8df060d797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1ab411404e640700bb043f0a3d2190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a7b1ab411404e640700bb043f0a3d2190">setChangelog</a> (const QString &amp;changelog)</td></tr>
+<tr class="separator:a7b1ab411404e640700bb043f0a3d2190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee42c7aa191fe0baa20873eb1782840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#aeee42c7aa191fe0baa20873eb1782840">setDescription</a> (const QString &amp;description)</td></tr>
+<tr class="separator:aeee42c7aa191fe0baa20873eb1782840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18922295e0c9f3e26bb9d4f26cfff55e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a18922295e0c9f3e26bb9d4f26cfff55e">setPreviewImageFile</a> (uint number, const QUrl &amp;file)</td></tr>
+<tr class="separator:a18922295e0c9f3e26bb9d4f26cfff55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab707dbd0a377b6c2357e1e586c772997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#ab707dbd0a377b6c2357e1e586c772997">setPrice</a> (double price)</td></tr>
+<tr class="separator:ab707dbd0a377b6c2357e1e586c772997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870b478b05835ae297d7f0c3b4750294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a870b478b05835ae297d7f0c3b4750294">setPriceEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:a870b478b05835ae297d7f0c3b4750294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af970eb865fb90cef2ae113ba919d373f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#af970eb865fb90cef2ae113ba919d373f">setPriceReason</a> (const QString &amp;reason)</td></tr>
+<tr class="separator:af970eb865fb90cef2ae113ba919d373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584005c21b1e4b1b330489c66d9a2781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a584005c21b1e4b1b330489c66d9a2781">setUploadFile</a> (const QUrl &amp;payloadFile)</td></tr>
+<tr class="separator:a584005c21b1e4b1b330489c66d9a2781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d97a608462bc2d9b4c63880dc21b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a37d97a608462bc2d9b4c63880dc21b92">setUploadName</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a37d97a608462bc2d9b4c63880dc21b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913096f22b85fdf741224d655b5d6be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNS3_1_1UploadDialog.html#a913096f22b85fdf741224d655b5d6be6">setVersion</a> (const QString &amp;<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/namespaceKPackage.html#a54e3f7be495f220dd0071ca568f6cdfd">version</a>)</td></tr>
+<tr class="separator:a913096f22b85fdf741224d655b5d6be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>KNewStuff file upload dialog. </p>
+<p>Using this dialog, data can easily be uploaded to the Hotstuff servers.</p>
+<dl class="section user"><dt>Maintainer:</dt><dd>Jeremy Whiting (<a href="#" onclick="location.href='mai'+'lto:'+'jpw'+'hi'+'tin'+'g@'+'kde'+'.o'+'rg'; return false;">jpwhi<span style="display: none;">.nosp@m.</span>ting<span style="display: none;">.nosp@m.</span>@kde.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8h_source.html#l00050">50</a> of file <a class="el" href="uploaddialog_8h_source.html">uploaddialog.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4deac012d49b673fd348138fd566c1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4deac012d49b673fd348138fd566c1f6">&#9670;&nbsp;</a></span>UploadDialog() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UploadDialog::UploadDialog </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new upload dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00421">421</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bad15034720c90c622202b3ff27cc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bad15034720c90c622202b3ff27cc38">&#9670;&nbsp;</a></span>UploadDialog() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UploadDialog::UploadDialog </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>configFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new upload dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00428">428</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e591afbc281abe129f649ba94fe4cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e591afbc281abe129f649ba94fe4cb6">&#9670;&nbsp;</a></span>~UploadDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UploadDialog::~UploadDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00434">434</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dd030a26e7d53a50b166d8df060d797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd030a26e7d53a50b166d8df060d797">&#9670;&nbsp;</a></span>selectCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::selectCategory </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested category for the upload. </p>
+<p>The .knsrc file may contain multiple upload categories, this sets which one is pre-selected. It does not add any new category to the list of available categories.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>the suggested category for the upload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00495">495</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b1ab411404e640700bb043f0a3d2190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1ab411404e640700bb043f0a3d2190">&#9670;&nbsp;</a></span>setChangelog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setChangelog </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>changelog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested changelog displayed in the upload dialog. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td>version </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00500">500</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeee42c7aa191fe0baa20873eb1782840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee42c7aa191fe0baa20873eb1782840">&#9670;&nbsp;</a></span>setDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setDescription </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>description</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested description displayed in the upload dialog. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">description</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00505">505</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18922295e0c9f3e26bb9d4f26cfff55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18922295e0c9f3e26bb9d4f26cfff55e">&#9670;&nbsp;</a></span>setPreviewImageFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setPreviewImageFile </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set one of the threee preview images displayed in the upload dialog. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>The number of the preview image to set, either 1, 2, or 3. </td></tr>
+    <tr><td class="paramname">file</td><td>A URL to the file to be used as preview image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.6 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00532">532</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab707dbd0a377b6c2357e1e586c772997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab707dbd0a377b6c2357e1e586c772997">&#9670;&nbsp;</a></span>setPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setPrice </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>price</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested price displayed in the upload dialog. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td>version </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00516">516</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a870b478b05835ae297d7f0c3b4750294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870b478b05835ae297d7f0c3b4750294">&#9670;&nbsp;</a></span>setPriceEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setPriceEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the UI to let the user to set a price for the uploaded item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>enable the price option - it is enabled by default </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00510">510</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af970eb865fb90cef2ae113ba919d373f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af970eb865fb90cef2ae113ba919d373f">&#9670;&nbsp;</a></span>setPriceReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setPriceReason </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>reason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested rationale why this item costs something to download. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td>version </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00522">522</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a584005c21b1e4b1b330489c66d9a2781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584005c21b1e4b1b330489c66d9a2781">&#9670;&nbsp;</a></span>setUploadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setUploadFile </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>payloadFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the file to be uploaded. </p>
+<p>This has to be set for the dialog to work, before displaying the dialog.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payloadFile</td><td>the payload data file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00477">477</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a37d97a608462bc2d9b4c63880dc21b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d97a608462bc2d9b4c63880dc21b92">&#9670;&nbsp;</a></span>setUploadName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setUploadName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested title for the upload. </p>
+<p>The application can suggest a title which can then be edited by the user before uploading. The name field will be left empty if no title was set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the suggested name for the upload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00490">490</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a913096f22b85fdf741224d655b5d6be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a913096f22b85fdf741224d655b5d6be6">&#9670;&nbsp;</a></span>setVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadDialog::setVersion </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suggested version displayed in the upload dialog. </p>
+<p>The user can still change this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="uploaddialog_8cpp_source.html#l00527">527</a> of file <a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="uploaddialog_8h_source.html">uploaddialog.h</a></li>
+<li><a class="el" href="uploaddialog_8cpp_source.html">uploaddialog.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:27 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

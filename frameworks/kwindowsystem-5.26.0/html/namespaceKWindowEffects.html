@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - KWindowEffects Namespace Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">KWindowEffects Namespace Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abce0164ae0b9fa90aa026100a6a76c93"><td class="memItemLeft" align="right" valign="top"><a id="abce0164ae0b9fa90aa026100a6a76c93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Effect</b> { <br />
+&#160;&#160;<b>Slide</b> = 1,
+<b>PresentWindows</b> = 3,
+<b>PresentWindowsGroup</b> = 4,
+<b>HighlightWindows</b> = 5,
+<br />
+&#160;&#160;<b>BlurBehind</b> = 7,
+<b>Dashboard</b> = 8,
+<b>BackgroundContrast</b> = 9
+<br />
+ }</td></tr>
+<tr class="separator:abce0164ae0b9fa90aa026100a6a76c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ee812fcf64f5d5f36c21ee7cfe437d"><td class="memItemLeft" align="right" valign="top"><a id="a00ee812fcf64f5d5f36c21ee7cfe437d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SlideFromLocation</b> { <br />
+&#160;&#160;<b>NoEdge</b> = 0,
+<b>TopEdge</b>,
+<b>RightEdge</b>,
+<b>BottomEdge</b>,
+<br />
+&#160;&#160;<b>LeftEdge</b>
+<br />
+ }</td></tr>
+<tr class="separator:a00ee812fcf64f5d5f36c21ee7cfe437d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a166a5fc7121ecf57a69fd19545c6f724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#a166a5fc7121ecf57a69fd19545c6f724">enableBackgroundContrast</a> (WId window, bool enable=true, qreal contrast=1, qreal intensity=1, qreal saturation=1, const QRegion &amp;region=QRegion())</td></tr>
+<tr class="separator:a166a5fc7121ecf57a69fd19545c6f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5fc0dee7b2464c99328d5e2f601269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#adc5fc0dee7b2464c99328d5e2f601269">enableBlurBehind</a> (WId window, bool enable=true, const QRegion &amp;region=QRegion())</td></tr>
+<tr class="separator:adc5fc0dee7b2464c99328d5e2f601269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb9d94f52b3859067e8f7af36679ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#aafb9d94f52b3859067e8f7af36679ecb">highlightWindows</a> (WId controller, const QList&lt; WId &gt; &amp;ids)</td></tr>
+<tr class="separator:aafb9d94f52b3859067e8f7af36679ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24dc2523465c246ed82a1ef9a7256fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#ae24dc2523465c246ed82a1ef9a7256fd">isEffectAvailable</a> (Effect effect)</td></tr>
+<tr class="separator:ae24dc2523465c246ed82a1ef9a7256fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd4b6656ee8da93ef97d1ebf147d965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#a5bd4b6656ee8da93ef97d1ebf147d965">markAsDashboard</a> (WId window)</td></tr>
+<tr class="separator:a5bd4b6656ee8da93ef97d1ebf147d965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1e02fbaa04a4388ab306c402ff4199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#a9d1e02fbaa04a4388ab306c402ff4199">presentWindows</a> (WId controller, const QList&lt; WId &gt; &amp;ids)</td></tr>
+<tr class="separator:a9d1e02fbaa04a4388ab306c402ff4199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0298563600fbf6e4b090d9e8347756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#a2d0298563600fbf6e4b090d9e8347756">presentWindows</a> (WId controller, int desktop=NET::OnAllDesktops)</td></tr>
+<tr class="separator:a2d0298563600fbf6e4b090d9e8347756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a2f7c15b4e3f5eb7d2825668e28be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#ab6a2f7c15b4e3f5eb7d2825668e28be5">slideWindow</a> (WId id, SlideFromLocation location, int offset)</td></tr>
+<tr class="separator:ab6a2f7c15b4e3f5eb7d2825668e28be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84c5ab9961a1df0e1d875fa0ca21ce2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#aa84c5ab9961a1df0e1d875fa0ca21ce2">slideWindow</a> (QWidget *widget, SlideFromLocation location)</td></tr>
+<tr class="separator:aa84c5ab9961a1df0e1d875fa0ca21ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b95fe909e1d6121a458229e4fd9091"><td class="memItemLeft" align="right" valign="top">QList&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKWindowEffects.html#a79b95fe909e1d6121a458229e4fd9091">windowSizes</a> (const QList&lt; WId &gt; &amp;ids)</td></tr>
+<tr class="separator:a79b95fe909e1d6121a458229e4fd9091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Namespace for common standardized window effects. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a166a5fc7121ecf57a69fd19545c6f724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166a5fc7121ecf57a69fd19545c6f724">&#9670;&nbsp;</a></span>enableBackgroundContrast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::enableBackgroundContrast </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>contrast</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>intensity</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>saturation</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QRegion &amp;&#160;</td>
+          <td class="paramname"><em>region</em> = <code>QRegion()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instructs the window manager to modify the color of the background in the specified region behind the given window, in order to improve the contrast and readability of any text in the translucent window. </p>
+<p>The given region will overwrite any previous backgroundcontrast region. Passing a null region will enable the blur effect for the whole window. The region is relative to the top-left corner of the client area.</p>
+<p>If <em>enable</em> is <code>false</code>, blur will be disabled for the whole window (<em>region</em> is ignored).</p>
+<p>Note that you will usually want to set the region to the shape of the window, excluding any shadow or halo.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window for which to enable the background contrast effect </td></tr>
+    <tr><td class="paramname">enable</td><td>Enable the effect if <code>true</code>, disable it if <code>false</code> </td></tr>
+    <tr><td class="paramname">brightness</td><td>How to modify the area brightness: from 0 (make it black) to 2 (make it white), 1 leaves it unchanged </td></tr>
+    <tr><td class="paramname">region</td><td>The region within the window where the background will be modified </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00045">45</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc5fc0dee7b2464c99328d5e2f601269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5fc0dee7b2464c99328d5e2f601269">&#9670;&nbsp;</a></span>enableBlurBehind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::enableBlurBehind </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QRegion &amp;&#160;</td>
+          <td class="paramname"><em>region</em> = <code>QRegion()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instructs the window manager to blur the background in the specified region behind the given window. </p>
+<p>The given region will overwrite any previous blur-behind region. Passing a null region will enable the blur effect for the whole window. The region is relative to the top-left corner of the client area.</p>
+<p>If <em>enable</em> is <code>false</code>, blur will be disabled for the whole window (<em>region</em> is ignored).</p>
+<p>Note that you will usually want to set the region to the shape of the window, excluding any shadow or halo.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window for which to enable the blur effect </td></tr>
+    <tr><td class="paramname">enable</td><td>Enable the effect if <code>true</code>, disable it if <code>false</code> </td></tr>
+    <tr><td class="paramname">region</td><td>The region within the window where the background will be blurred </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00040">40</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aafb9d94f52b3859067e8f7af36679ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb9d94f52b3859067e8f7af36679ecb">&#9670;&nbsp;</a></span>highlightWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::highlightWindows </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; WId &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Highlight the selected windows, making all the others translucent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>The window which is the controller of this effect. The property will be set on this window. It will be removed by the effect </td></tr>
+    <tr><td class="paramname">ids</td><td>all the windows which should be highlighted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00050">50</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae24dc2523465c246ed82a1ef9a7256fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24dc2523465c246ed82a1ef9a7256fd">&#9670;&nbsp;</a></span>isEffectAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KWindowEffects::isEffectAvailable </td>
+          <td>(</td>
+          <td class="paramtype">Effect&#160;</td>
+          <td class="paramname"><em>effect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>if an atom property is available</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect</td><td>the effect we want to check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00035">35</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5bd4b6656ee8da93ef97d1ebf147d965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd4b6656ee8da93ef97d1ebf147d965">&#9670;&nbsp;</a></span>markAsDashboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::markAsDashboard </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instructs the window manager to handle the given window as dashboard window as Dashboard windows should be handled diffrently and may have special effects applied to them. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window for which to enable the blur effect </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00055">55</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d1e02fbaa04a4388ab306c402ff4199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1e02fbaa04a4388ab306c402ff4199">&#9670;&nbsp;</a></span>presentWindows() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::presentWindows </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; WId &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate the Present Windows effect for the given groups of windows. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>The window which is the controller of this effect. The property will be set on this window. It will be removed by the effect </td></tr>
+    <tr><td class="paramname">ids</td><td>all the windows which should be presented. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00060">60</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d0298563600fbf6e4b090d9e8347756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0298563600fbf6e4b090d9e8347756">&#9670;&nbsp;</a></span>presentWindows() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::presentWindows </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em> = <code>NET::OnAllDesktops</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate the Present Windows effect for the windows of the given desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>The window which is the controller of this effect. The property will be set on this window. It will be removed by the effect </td></tr>
+    <tr><td class="paramname">desktop</td><td>The desktop whose windows should be presented. -1 for all desktops </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00065">65</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab6a2f7c15b4e3f5eb7d2825668e28be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a2f7c15b4e3f5eb7d2825668e28be5">&#9670;&nbsp;</a></span>slideWindow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::slideWindow </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SlideFromLocation&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark a window as sliding from screen edge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>of the window on which we want to apply the effect </td></tr>
+    <tr><td class="paramname">location</td><td>edge of the screen from which we want the sliding effect. Desktop and Floating won't have effect. </td></tr>
+    <tr><td class="paramname">offset</td><td>distance in pixels from the screen edge defined by location </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00070">70</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa84c5ab9961a1df0e1d875fa0ca21ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84c5ab9961a1df0e1d875fa0ca21ce2">&#9670;&nbsp;</a></span>slideWindow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT void KWindowEffects::slideWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SlideFromLocation&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark a window as sliding from screen edge This is an overloaded member function provided for convenience. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>QWidget corresponding to the top level window we want to animate </td></tr>
+    <tr><td class="paramname">location</td><td>edge of the screen from which we want the sliding effect. Desktop and Floating won't have effect. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00075">75</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a79b95fe909e1d6121a458229e4fd9091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b95fe909e1d6121a458229e4fd9091">&#9670;&nbsp;</a></span>windowSizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT QList&lt; QSize &gt; KWindowEffects::windowSizes </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; WId &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>dimension of all the windows passed as parameter</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ids</td><td>all the windows we want the size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwindoweffects_8cpp_source.html#l00080">80</a> of file <a class="el" href="kwindoweffects_8cpp_source.html">kwindoweffects.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

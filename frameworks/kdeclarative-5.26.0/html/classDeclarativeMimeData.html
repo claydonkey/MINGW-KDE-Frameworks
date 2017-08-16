@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDeclarative - DeclarativeMimeData Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDeclarative</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDeclarative"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKQuickAddons_1_1ConfigModule.html">KQuickAddons::ConfigModule</option>
+        
+        <option value="classDeclarativeMimeData.html">DeclarativeMimeData</option>
+        
+        <option value="classImageTexturesCache.html">ImageTexturesCache</option>
+        
+        <option value="classKDeclarativeMouseEvent.html">KDeclarativeMouseEvent</option>
+        
+        <option value="classKUserProxy.html">KUserProxy</option>
+        
+        <option value="classKWindowSystemProxy.html">KWindowSystemProxy</option>
+        
+        <option value="classManagedTextureNode.html">ManagedTextureNode</option>
+        
+        <option value="classMimeDataWrapper.html">MimeDataWrapper</option>
+        
+        <option value="classPlotData.html">PlotData</option>
+        
+        <option value="classKDeclarative_1_1QmlObject.html">KDeclarative::QmlObject</option>
+        
+        <option value="classKDeclarative_1_1QmlObjectSharedEngine.html">KDeclarative::QmlObjectSharedEngine</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Provides integration of QML and KDE Frameworks</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Declarative)
+target_link_libraries(yourapp KF5::Declarative)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDeclarative </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdeclarative-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDeclarative on <a href="https://cgit.kde.org/kdeclarative-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDeclarative </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=DeclarativeMimeData">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classDeclarativeMimeData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DeclarativeMimeData Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Inherits QMimeData.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a6832aee52f18de3dadcfbafc0d755f64"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a6832aee52f18de3dadcfbafc0d755f64">color</a></td></tr>
+<tr class="separator:a6832aee52f18de3dadcfbafc0d755f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b9b3a290d693131da0264bde23c499"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a90b9b3a290d693131da0264bde23c499">formats</a></td></tr>
+<tr class="separator:a90b9b3a290d693131da0264bde23c499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0776d0dcc66314f30f2e34dc3b5cd7d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a0776d0dcc66314f30f2e34dc3b5cd7d6">hasUrls</a></td></tr>
+<tr class="separator:a0776d0dcc66314f30f2e34dc3b5cd7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e3c25df301eb09bac6c86ab3692f61"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a18e3c25df301eb09bac6c86ab3692f61">html</a></td></tr>
+<tr class="separator:a18e3c25df301eb09bac6c86ab3692f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb750a17d90b323a1dfa81f139317425"><td class="memItemLeft" align="right" valign="top">QQuickItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#acb750a17d90b323a1dfa81f139317425">source</a></td></tr>
+<tr class="separator:acb750a17d90b323a1dfa81f139317425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4239f7399a5b7f272e4609dfaed01499"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a4239f7399a5b7f272e4609dfaed01499">text</a></td></tr>
+<tr class="separator:a4239f7399a5b7f272e4609dfaed01499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b84899200933b6b293db57960943309"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a5b84899200933b6b293db57960943309">url</a></td></tr>
+<tr class="separator:a5b84899200933b6b293db57960943309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3127ec94a03dcb687cae1999332d8500"><td class="memItemLeft" align="right" valign="top">QJsonArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a3127ec94a03dcb687cae1999332d8500">urls</a></td></tr>
+<tr class="separator:a3127ec94a03dcb687cae1999332d8500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a9a432d4efe4dd3f3d13d80400250a36a"><td class="memItemLeft" align="right" valign="top"><a id="a9a432d4efe4dd3f3d13d80400250a36a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>colorChanged</b> ()</td></tr>
+<tr class="separator:a9a432d4efe4dd3f3d13d80400250a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ec5de6af025269f0c92891f2cefab2"><td class="memItemLeft" align="right" valign="top"><a id="a33ec5de6af025269f0c92891f2cefab2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>htmlChanged</b> ()</td></tr>
+<tr class="separator:a33ec5de6af025269f0c92891f2cefab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac089c82b502a472065e42a01ac1a9d7b"><td class="memItemLeft" align="right" valign="top"><a id="ac089c82b502a472065e42a01ac1a9d7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sourceChanged</b> ()</td></tr>
+<tr class="separator:ac089c82b502a472065e42a01ac1a9d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368670dc1d5b35155c6c62c206661ae9"><td class="memItemLeft" align="right" valign="top"><a id="a368670dc1d5b35155c6c62c206661ae9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>textChanged</b> ()</td></tr>
+<tr class="separator:a368670dc1d5b35155c6c62c206661ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88e797b6d3c34910f07ba0d41d0b055"><td class="memItemLeft" align="right" valign="top"><a id="ab88e797b6d3c34910f07ba0d41d0b055"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>urlChanged</b> ()</td></tr>
+<tr class="separator:ab88e797b6d3c34910f07ba0d41d0b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5138b8377f6fdcd755bb8c3256b2171"><td class="memItemLeft" align="right" valign="top"><a id="ae5138b8377f6fdcd755bb8c3256b2171"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>urlsChanged</b> ()</td></tr>
+<tr class="separator:ae5138b8377f6fdcd755bb8c3256b2171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a61cfcdf632d04b902be3313b9f1f3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeclarativeMimeData.html#a0a61cfcdf632d04b902be3313b9f1f3d">DeclarativeMimeData</a> ()</td></tr>
+<tr class="separator:a0a61cfcdf632d04b902be3313b9f1f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da88842ab43cdd6dbd7a4833bac90fb"><td class="memItemLeft" align="right" valign="top"><a id="a7da88842ab43cdd6dbd7a4833bac90fb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DeclarativeMimeData</b> (const QMimeData *copy)</td></tr>
+<tr class="separator:a7da88842ab43cdd6dbd7a4833bac90fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91003be003cbf947e0e6cc5e4010dc67"><td class="memItemLeft" align="right" valign="top"><a id="a91003be003cbf947e0e6cc5e4010dc67"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> () const</td></tr>
+<tr class="separator:a91003be003cbf947e0e6cc5e4010dc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a71d5e65114d00029bb5632a889302a"><td class="memItemLeft" align="right" valign="top"><a id="a0a71d5e65114d00029bb5632a889302a"></a>
+Q_INVOKABLE QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>getDataAsByteArray</b> (const QString &amp;format)</td></tr>
+<tr class="separator:a0a71d5e65114d00029bb5632a889302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0cb3e19b7fe809b3037f0a4f171950"><td class="memItemLeft" align="right" valign="top"><a id="aeb0cb3e19b7fe809b3037f0a4f171950"></a>
+Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasColor</b> () const</td></tr>
+<tr class="separator:aeb0cb3e19b7fe809b3037f0a4f171950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb7610df435dcedd518269c6f1695b0"><td class="memItemLeft" align="right" valign="top"><a id="abeb7610df435dcedd518269c6f1695b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const QColor &amp;<a class="el" href="classDeclarativeMimeData.html#a6832aee52f18de3dadcfbafc0d755f64">color</a>)</td></tr>
+<tr class="separator:abeb7610df435dcedd518269c6f1695b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaaa1a25d67a84e53579d8e04180c893"><td class="memItemLeft" align="right" valign="top"><a id="aeaaa1a25d67a84e53579d8e04180c893"></a>
+Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QString &amp;mimeType, const QVariant &amp;data)</td></tr>
+<tr class="separator:aeaaa1a25d67a84e53579d8e04180c893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfc5684a111703fbc42727772bfa805"><td class="memItemLeft" align="right" valign="top"><a id="a2dfc5684a111703fbc42727772bfa805"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSource</b> (QQuickItem *<a class="el" href="classDeclarativeMimeData.html#acb750a17d90b323a1dfa81f139317425">source</a>)</td></tr>
+<tr class="separator:a2dfc5684a111703fbc42727772bfa805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ab49ce75cd187fbeb53c50bdd33520"><td class="memItemLeft" align="right" valign="top"><a id="a28ab49ce75cd187fbeb53c50bdd33520"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUrl</b> (const QUrl &amp;<a class="el" href="classDeclarativeMimeData.html#a5b84899200933b6b293db57960943309">url</a>)</td></tr>
+<tr class="separator:a28ab49ce75cd187fbeb53c50bdd33520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4342d9fbe2be3a0176241a72b69e726"><td class="memItemLeft" align="right" valign="top"><a id="ac4342d9fbe2be3a0176241a72b69e726"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUrls</b> (const QJsonArray &amp;<a class="el" href="classDeclarativeMimeData.html#a3127ec94a03dcb687cae1999332d8500">urls</a>)</td></tr>
+<tr class="separator:ac4342d9fbe2be3a0176241a72b69e726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c5a039d80ab572be37ad6a6a1adda8"><td class="memItemLeft" align="right" valign="top"><a id="ae2c5a039d80ab572be37ad6a6a1adda8"></a>
+QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> () const</td></tr>
+<tr class="separator:ae2c5a039d80ab572be37ad6a6a1adda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c74b386eec58ef6be689db8853a027"><td class="memItemLeft" align="right" valign="top"><a id="aa7c74b386eec58ef6be689db8853a027"></a>
+QUrl&#160;</td><td class="memItemRight" valign="bottom"><b>url</b> () const</td></tr>
+<tr class="separator:aa7c74b386eec58ef6be689db8853a027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9103ae571d350fb3959ee7e90de5516"><td class="memItemLeft" align="right" valign="top"><a id="ad9103ae571d350fb3959ee7e90de5516"></a>
+QJsonArray&#160;</td><td class="memItemRight" valign="bottom"><b>urls</b> () const</td></tr>
+<tr class="separator:ad9103ae571d350fb3959ee7e90de5516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Creates a new <a class="el" href="classDeclarativeMimeData.html">DeclarativeMimeData</a> by cloning the QMimeData passed as parameter. This is useful for two reasons :</p><ul>
+<li>In DragArea, we want to clone our "working copy" of the <a class="el" href="classDeclarativeMimeData.html">DeclarativeMimeData</a> instance, as Qt will automatically delete it after the drag and drop operation.</li>
+<li>In the drop events, the QMimeData is const, and we have troubles passing const to QML. So we clone it to remove the "constness"</li>
+</ul>
+<p>This method will try to cast the QMimeData to <a class="el" href="classDeclarativeMimeData.html">DeclarativeMimeData</a>, and will clone our extensions to QMimeData as well </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00033">33</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a id="a6832aee52f18de3dadcfbafc0d755f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6832aee52f18de3dadcfbafc0d755f64">&#9670;&nbsp;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor DeclarativeMimeData::color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A color if the data stored in the object represents a color (MIME type application/x-color); otherwise QColor(). </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00061">61</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a90b9b3a290d693131da0264bde23c499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b9b3a290d693131da0264bde23c499">&#9670;&nbsp;</a></span>formats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList DeclarativeMimeData::formats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>QMimeData::formats </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00075">75</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a0776d0dcc66314f30f2e34dc3b5cd7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0776d0dcc66314f30f2e34dc3b5cd7d6">&#9670;&nbsp;</a></span>hasUrls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeclarativeMimeData::hasUrls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>QMimeData::hasUrls </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00069">69</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a18e3c25df301eb09bac6c86ab3692f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e3c25df301eb09bac6c86ab3692f61">&#9670;&nbsp;</a></span>html</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DeclarativeMimeData::html</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A string if the data stored in the object is HTML (MIME type text/html); otherwise returns an empty string. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00045">45</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="acb750a17d90b323a1dfa81f139317425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb750a17d90b323a1dfa81f139317425">&#9670;&nbsp;</a></span>source</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuickItem * DeclarativeMimeData::source</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The graphical item on the scene that started the drag event. </p>
+<p>It may be null.</p>
+<p>item MimeData::source</p>
+<p>Setting source to any existing qml item will enable the receiver of the drag and drop operation to know in which item the operation originated.</p>
+<p>In the case of inter-application drag and drop operations, the source will not be available, and will be 0. Be sure to test it in your QML code, before using it, or it will generate errors in the console. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00066">66</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a4239f7399a5b7f272e4609dfaed01499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4239f7399a5b7f272e4609dfaed01499">&#9670;&nbsp;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DeclarativeMimeData::text</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A plain text (MIME type text/plain) representation of the data. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00040">40</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b84899200933b6b293db57960943309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b84899200933b6b293db57960943309">&#9670;&nbsp;</a></span>url</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl DeclarativeMimeData::url</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Url contained in the mimedata. </p>
+<p>url MimeData::url</p>
+<p>Returns the first URL from the urls property of QMimeData TODO: We should use QDeclarativeListProperty&lt;QUrls&gt; to return the whole list instead of only the first element. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00050">50</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<a id="a3127ec94a03dcb687cae1999332d8500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3127ec94a03dcb687cae1999332d8500">&#9670;&nbsp;</a></span>urls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonArray DeclarativeMimeData::urls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A list of URLs contained within the MIME data object. </p>
+<p>URLs correspond to the MIME type text/uri-list. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8h_source.html#l00056">56</a> of file <a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0a61cfcdf632d04b902be3313b9f1f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a61cfcdf632d04b902be3313b9f1f3d">&#9670;&nbsp;</a></span>DeclarativeMimeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DeclarativeMimeData::DeclarativeMimeData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MimeData <a class="el" href="classDeclarativeMimeData.html">DeclarativeMimeData</a></p>
+<p>This is a wrapper class around QMimeData, with a few extensions to provide better support for in-qml drag &amp; drops. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeclarativeMimeData_8cpp_source.html#l00032">32</a> of file <a class="el" href="DeclarativeMimeData_8cpp_source.html">DeclarativeMimeData.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="DeclarativeMimeData_8h_source.html">DeclarativeMimeData.h</a></li>
+<li><a class="el" href="DeclarativeMimeData_8cpp_source.html">DeclarativeMimeData.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:42 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KUrlNavigator Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KUrlNavigator">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKUrlNavigator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KUrlNavigator Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kurlnavigator_8h_source.html">kurlnavigator.h</a>&gt;</code></p>
+
+<p>Inherits QWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ae9caccd23861c1a444c27177c607dd50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ae9caccd23861c1a444c27177c607dd50">activated</a> ()</td></tr>
+<tr class="separator:ae9caccd23861c1a444c27177c607dd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd77c8a3934e2885ea94e19d47f686e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a4cd77c8a3934e2885ea94e19d47f686e">editableStateChanged</a> (bool editable)</td></tr>
+<tr class="separator:a4cd77c8a3934e2885ea94e19d47f686e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51c1ef6ba1b62e0b0a65df38934bc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33">historyChanged</a> ()</td></tr>
+<tr class="separator:ae51c1ef6ba1b62e0b0a65df38934bc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefd61bf4cf3dd07592d22682f963958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#aeefd61bf4cf3dd07592d22682f963958">returnPressed</a> ()</td></tr>
+<tr class="separator:aeefd61bf4cf3dd07592d22682f963958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9b1644d1bb4738ea857f5ce8cd8f67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a7d9b1644d1bb4738ea857f5ce8cd8f67">tabRequested</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a7d9b1644d1bb4738ea857f5ce8cd8f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448c54d2e3d77fb0fe7e9f0073c36daa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa">urlAboutToBeChanged</a> (const QUrl &amp;newUrl)</td></tr>
+<tr class="separator:a448c54d2e3d77fb0fe7e9f0073c36daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9130c588c25067fc3fe7620389d694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694">urlChanged</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:aff9130c588c25067fc3fe7620389d694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada357ecc3b93a54d64069e1c89459694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ada357ecc3b93a54d64069e1c89459694">urlsDropped</a> (const QUrl &amp;destination, QDropEvent *event)</td></tr>
+<tr class="separator:ada357ecc3b93a54d64069e1c89459694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a9dd1bcc6c52d44e36484b5370fac76a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a9dd1bcc6c52d44e36484b5370fac76a6">requestActivation</a> ()</td></tr>
+<tr class="separator:a9dd1bcc6c52d44e36484b5370fac76a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b40e139f979cc22bb61f6678dac94d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a3b40e139f979cc22bb61f6678dac94d5">setLocationUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a3b40e139f979cc22bb61f6678dac94d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9819a6e84416e973a71a5e192275fe6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a9819a6e84416e973a71a5e192275fe6e">KUrlNavigator</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a9819a6e84416e973a71a5e192275fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51976f34e5c795988fc71eeb0bfc763a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a51976f34e5c795988fc71eeb0bfc763a">KUrlNavigator</a> (<a class="el" href="classKFilePlacesModel.html">KFilePlacesModel</a> *placesModel, const QUrl &amp;url, QWidget *parent)</td></tr>
+<tr class="separator:a51976f34e5c795988fc71eeb0bfc763a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815e17bd2a9fa2012afc989194cf9426"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a815e17bd2a9fa2012afc989194cf9426">customProtocols</a> () const</td></tr>
+<tr class="separator:a815e17bd2a9fa2012afc989194cf9426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d22e740dbd720972dd4396e90051ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKUrlComboBox.html">KUrlComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a58d22e740dbd720972dd4396e90051ba">editor</a> () const</td></tr>
+<tr class="separator:a58d22e740dbd720972dd4396e90051ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e870569d5ed883d806e991d68878b93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a8e870569d5ed883d806e991d68878b93">goBack</a> ()</td></tr>
+<tr class="separator:a8e870569d5ed883d806e991d68878b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4547e70fa634b1ebff9b2d5ef2c4a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#acd4547e70fa634b1ebff9b2d5ef2c4a8">goForward</a> ()</td></tr>
+<tr class="separator:acd4547e70fa634b1ebff9b2d5ef2c4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815d484e810c98a23e1a0de1c2e8dbbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a815d484e810c98a23e1a0de1c2e8dbbe">goHome</a> ()</td></tr>
+<tr class="separator:a815d484e810c98a23e1a0de1c2e8dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410f6775142626bc03a90dac168a2285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a410f6775142626bc03a90dac168a2285">goUp</a> ()</td></tr>
+<tr class="separator:a410f6775142626bc03a90dac168a2285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d37075cfc6d6ec20991078093ec107b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a5d37075cfc6d6ec20991078093ec107b">historyIndex</a> () const</td></tr>
+<tr class="separator:a5d37075cfc6d6ec20991078093ec107b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bf5f0f71d6650e52d9226ba5f5490a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ac6bf5f0f71d6650e52d9226ba5f5490a">historySize</a> () const</td></tr>
+<tr class="separator:ac6bf5f0f71d6650e52d9226ba5f5490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0064baea7f00658d407e58741c2798f4"><td class="memItemLeft" align="right" valign="top"><a id="a0064baea7f00658d407e58741c2798f4"></a>
+QUrl&#160;</td><td class="memItemRight" valign="bottom"><b>homeUrl</b> () const</td></tr>
+<tr class="separator:a0064baea7f00658d407e58741c2798f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac031f8937d685739d9f9e15ef80e60e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ac031f8937d685739d9f9e15ef80e60e1">isActive</a> () const</td></tr>
+<tr class="separator:ac031f8937d685739d9f9e15ef80e60e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ba3331d904ca613c78124c57bef474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ab9ba3331d904ca613c78124c57bef474">isPlacesSelectorVisible</a> () const</td></tr>
+<tr class="separator:ab9ba3331d904ca613c78124c57bef474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeed574f9d47abafd5b9816f3ab5b289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#aeeed574f9d47abafd5b9816f3ab5b289">isUrlEditable</a> () const</td></tr>
+<tr class="separator:aeeed574f9d47abafd5b9816f3ab5b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea123483efd867ffedd6d12b2a01150c"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#aea123483efd867ffedd6d12b2a01150c">locationState</a> (int <a class="el" href="classKUrlNavigator.html#a5d37075cfc6d6ec20991078093ec107b">historyIndex</a>=-1) const</td></tr>
+<tr class="separator:aea123483efd867ffedd6d12b2a01150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978249ffb37d03f6be49d2cda2888ca5"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a978249ffb37d03f6be49d2cda2888ca5">locationUrl</a> (int <a class="el" href="classKUrlNavigator.html#a5d37075cfc6d6ec20991078093ec107b">historyIndex</a>=-1) const</td></tr>
+<tr class="separator:a978249ffb37d03f6be49d2cda2888ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801765de960de8261977c76fc19bde48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a801765de960de8261977c76fc19bde48">saveLocationState</a> (const QByteArray &amp;state)</td></tr>
+<tr class="separator:a801765de960de8261977c76fc19bde48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5dafb6b01d070a073ef7d9f52a2a3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#adb5dafb6b01d070a073ef7d9f52a2a3a">setActive</a> (bool active)</td></tr>
+<tr class="separator:adb5dafb6b01d070a073ef7d9f52a2a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201989bbf1f382886eee1140edb78772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a201989bbf1f382886eee1140edb78772">setCustomProtocols</a> (const QStringList &amp;protocols)</td></tr>
+<tr class="separator:a201989bbf1f382886eee1140edb78772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c303a085724bdce12412c442306d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a86c303a085724bdce12412c442306d6f">setHomeUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a86c303a085724bdce12412c442306d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a2faf15920a1757c4f8b449a20252b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a27a2faf15920a1757c4f8b449a20252b">setPlacesSelectorVisible</a> (bool visible)</td></tr>
+<tr class="separator:a27a2faf15920a1757c4f8b449a20252b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d08540b75d0cb68dc2f7c867acacdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a09d08540b75d0cb68dc2f7c867acacdc">setShowFullPath</a> (bool show)</td></tr>
+<tr class="separator:a09d08540b75d0cb68dc2f7c867acacdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b511f1b89d440a8a7944ed08f00c23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#ab4b511f1b89d440a8a7944ed08f00c23">setUrlEditable</a> (bool editable)</td></tr>
+<tr class="separator:ab4b511f1b89d440a8a7944ed08f00c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd61fcac4dce4afcef731d1eec32e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#acbd61fcac4dce4afcef731d1eec32e08">showFullPath</a> () const</td></tr>
+<tr class="separator:acbd61fcac4dce4afcef731d1eec32e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5a6bc648e3f25bd0dc904f32d0ed9c"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUrlNavigator.html#a4d5a6bc648e3f25bd0dc904f32d0ed9c">uncommittedUrl</a> () const</td></tr>
+<tr class="separator:a4d5a6bc648e3f25bd0dc904f32d0ed9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Widget that allows to navigate through the paths of an URL. </p>
+<p>The URL navigator offers two modes:</p><ul>
+<li>Editable: The URL of the location is editable inside an editor. By pressing RETURN the URL will get activated.</li>
+<li>Non editable ("breadcrumb view"): The URL of the location is represented by a number of buttons, where each button represents a path of the URL. By clicking on a button the path will get activated. This mode also supports drag and drop of items.</li>
+</ul>
+<p>The mode can be changed by clicking on the empty area of the URL navigator. It is recommended that the application remembers the setting or allows to configure the default mode (see <a class="el" href="classKUrlNavigator.html#ab4b511f1b89d440a8a7944ed08f00c23" title="Allows to edit the URL of the navigation bar if editable is true, and sets the focus accordingly...">KUrlNavigator::setUrlEditable()</a>).</p>
+<p>The URL navigator remembers the URL history during navigation and allows to go back and forward within this history.</p>
+<p>In the non editable mode ("breadcrumb view") it can be configured whether the full path should be shown. It is recommended that the application remembers the setting or allows to configure the default mode (see <a class="el" href="classKUrlNavigator.html#a09d08540b75d0cb68dc2f7c867acacdc" title="Shows the full path of the URL even if a place represents a part of the URL. ">KUrlNavigator::setShowFullPath()</a>).</p>
+<p>The typical usage of the <a class="el" href="classKUrlNavigator.html" title="Widget that allows to navigate through the paths of an URL. ">KUrlNavigator</a> is:</p><ul>
+<li>Create an instance providing a places model and an URL.</li>
+<li>Create an instance of QAbstractItemView which shows the content of the URL given by the URL navigator.</li>
+<li>Connect to the signal <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and synchronize the content of QAbstractItemView with the URL given by the URL navigator.</li>
+</ul>
+<p>It is recommended, that the application remembers the state of the QAbstractItemView when the URL has been changed. This allows to restore the view state when going back in history. <a class="el" href="classKUrlNavigator.html" title="Widget that allows to navigate through the paths of an URL. ">KUrlNavigator</a> offers support for remembering the view state:</p><ul>
+<li>The signal <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">urlAboutToBeChanged()</a> will be emitted before the URL change takes places. This allows the application to store the view state by <a class="el" href="classKUrlNavigator.html#a801765de960de8261977c76fc19bde48" title="Saves the location state described by state for the current location. ">KUrlNavigator::saveLocationState()</a>.</li>
+<li>The signal <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">urlChanged()</a> will be emitted after the URL change took place. This allows the application to restore the view state by getting the values from <a class="el" href="classKUrlNavigator.html#aea123483efd867ffedd6d12b2a01150c">KUrlNavigator::locationState()</a>. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8h_source.html#l00075">75</a> of file <a class="el" href="kurlnavigator_8h_source.html">kurlnavigator.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9819a6e84416e973a71a5e192275fe6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9819a6e84416e973a71a5e192275fe6e">&#9670;&nbsp;</a></span>KUrlNavigator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KUrlNavigator::KUrlNavigator </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00825">825</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51976f34e5c795988fc71eeb0bfc763a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51976f34e5c795988fc71eeb0bfc763a">&#9670;&nbsp;</a></span>KUrlNavigator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KUrlNavigator::KUrlNavigator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKFilePlacesModel.html">KFilePlacesModel</a> *&#160;</td>
+          <td class="paramname"><em>placesModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placesModel</td><td>Model for the places which are selectable inside a menu. A place can be a bookmark or a device. If it is 0, no places selector is displayed. </td></tr>
+    <tr><td class="paramname">url</td><td>URL which is used for the navigation or editing. </td></tr>
+    <tr><td class="paramname">parent</td><td>Parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00832">832</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae9caccd23861c1a444c27177c607dd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9caccd23861c1a444c27177c607dd50">&#9670;&nbsp;</a></span>activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::activated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted, if the URL navigator has been activated by an user interaction. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#adb5dafb6b01d070a073ef7d9f52a2a3a" title="Set the URL navigator to the active mode, if active is true. ">KUrlNavigator::setActive()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a815e17bd2a9fa2012afc989194cf9426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815e17bd2a9fa2012afc989194cf9426">&#9670;&nbsp;</a></span>customProtocols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KUrlNavigator::customProtocols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The custom protocols if they are set, QStringList() otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01213">1213</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4cd77c8a3934e2885ea94e19d47f686e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd77c8a3934e2885ea94e19d47f686e">&#9670;&nbsp;</a></span>editableStateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::editableStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>editable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted, if the editable state for the URL has been changed (see <a class="el" href="classKUrlNavigator.html#ab4b511f1b89d440a8a7944ed08f00c23" title="Allows to edit the URL of the navigation bar if editable is true, and sets the focus accordingly...">KUrlNavigator::setUrlEditable()</a>). </p>
+
+</div>
+</div>
+<a id="a58d22e740dbd720972dd4396e90051ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d22e740dbd720972dd4396e90051ba">&#9670;&nbsp;</a></span>editor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKUrlComboBox.html">KUrlComboBox</a> * KUrlNavigator::editor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The used editor when the navigator is in the edit mode </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#ab4b511f1b89d440a8a7944ed08f00c23" title="Allows to edit the URL of the navigation bar if editable is true, and sets the focus accordingly...">KUrlNavigator::setUrlEditable()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01202">1202</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e870569d5ed883d806e991d68878b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e870569d5ed883d806e991d68878b93">&#9670;&nbsp;</a></span>goBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::goBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Goes back one step in the URL history. </p>
+<p>The signals <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a>, <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and <a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33" title="Is emitted, if the history has been changed. ">KUrlNavigator::historyChanged()</a> are emitted if true is returned. False is returned if the beginning of the history has already been reached and hence going back was not possible. The history index (see <a class="el" href="classKUrlNavigator.html#a5d37075cfc6d6ec20991078093ec107b">KUrlNavigator::historyIndex()</a>) is increased by one if the operation was successful. </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00863">863</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd4547e70fa634b1ebff9b2d5ef2c4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4547e70fa634b1ebff9b2d5ef2c4a8">&#9670;&nbsp;</a></span>goForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::goForward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Goes forward one step in the URL history. </p>
+<p>The signals <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a>, <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and <a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33" title="Is emitted, if the history has been changed. ">KUrlNavigator::historyChanged()</a> are emitted if true is returned. False is returned if the end of the history has already been reached and hence going forward was not possible. The history index (see <a class="el" href="classKUrlNavigator.html#a5d37075cfc6d6ec20991078093ec107b">KUrlNavigator::historyIndex()</a>) is decreased by one if the operation was successful. </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00881">881</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a815d484e810c98a23e1a0de1c2e8dbbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815d484e810c98a23e1a0de1c2e8dbbe">&#9670;&nbsp;</a></span>goHome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::goHome </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Goes to the home URL and remembers the old URL in the history. </p>
+<p>The signals <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a>, <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and <a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33" title="Is emitted, if the history has been changed. ">KUrlNavigator::historyChanged()</a> are emitted.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#a86c303a085724bdce12412c442306d6f" title="Sets the home URL used by KUrlNavigator::goHome(). ">KUrlNavigator::setHomeUrl()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00910">910</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a410f6775142626bc03a90dac168a2285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410f6775142626bc03a90dac168a2285">&#9670;&nbsp;</a></span>goUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::goUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Goes up one step of the URL path and remembers the old path in the history. </p>
+<p>The signals <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a>, <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and <a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33" title="Is emitted, if the history has been changed. ">KUrlNavigator::historyChanged()</a> are emitted if true is returned. False is returned if going up was not possible as the root has been reached. </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00898">898</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae51c1ef6ba1b62e0b0a65df38934bc33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51c1ef6ba1b62e0b0a65df38934bc33">&#9670;&nbsp;</a></span>historyChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::historyChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted, if the history has been changed. </p>
+<p>Usually the history is changed if a new URL has been selected. </p>
+
+</div>
+</div>
+<a id="a5d37075cfc6d6ec20991078093ec107b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d37075cfc6d6ec20991078093ec107b">&#9670;&nbsp;</a></span>historyIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KUrlNavigator::historyIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The history index of the current location, where 0 &lt;= history index &lt; <a class="el" href="classKUrlNavigator.html#ac6bf5f0f71d6650e52d9226ba5f5490a">KUrlNavigator::historySize()</a>. 0 is the most recent history entry. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01197">1197</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6bf5f0f71d6650e52d9226ba5f5490a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bf5f0f71d6650e52d9226ba5f5490a">&#9670;&nbsp;</a></span>historySize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KUrlNavigator::historySize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The amount of locations in the history. The data for each location can be retrieved by <a class="el" href="classKUrlNavigator.html#a978249ffb37d03f6be49d2cda2888ca5">KUrlNavigator::locationUrl()</a> and <a class="el" href="classKUrlNavigator.html#aea123483efd867ffedd6d12b2a01150c">KUrlNavigator::locationState()</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01192">1192</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac031f8937d685739d9f9e15ef80e60e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac031f8937d685739d9f9e15ef80e60e1">&#9670;&nbsp;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::isActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True, if the URL navigator is in the active mode. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#adb5dafb6b01d070a073ef7d9f52a2a3a" title="Set the URL navigator to the active mode, if active is true. ">KUrlNavigator::setActive()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00971">971</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab9ba3331d904ca613c78124c57bef474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ba3331d904ca613c78124c57bef474">&#9670;&nbsp;</a></span>isPlacesSelectorVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::isPlacesSelectorVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True, if the places selector is visible. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00992">992</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeeed574f9d47abafd5b9816f3ab5b289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeed574f9d47abafd5b9816f3ab5b289">&#9670;&nbsp;</a></span>isUrlEditable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::isUrlEditable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True, if the URL is editable within a line editor. If false is returned, each part of the URL is presented by a button for fast navigation ("breadcrumb view"). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00936">936</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea123483efd867ffedd6d12b2a01150c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea123483efd867ffedd6d12b2a01150c">&#9670;&nbsp;</a></span>locationState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KUrlNavigator::locationState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>historyIndex</em> = <code>-1</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Location state given by <em>historyIndex</em>. If <em>historyIndex</em> is smaller than 0, the state of the current location is returned. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#a801765de960de8261977c76fc19bde48" title="Saves the location state described by state for the current location. ">KUrlNavigator::saveLocationState()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00857">857</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a978249ffb37d03f6be49d2cda2888ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978249ffb37d03f6be49d2cda2888ca5">&#9670;&nbsp;</a></span>locationUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KUrlNavigator::locationUrl </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>historyIndex</em> = <code>-1</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>URL of the location given by the <em>historyIndex</em>. If <em>historyIndex</em> is smaller than 0, the URL of the current location is returned. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00846">846</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9dd1bcc6c52d44e36484b5370fac76a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd1bcc6c52d44e36484b5370fac76a6">&#9670;&nbsp;</a></span>requestActivation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::requestActivation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates the URL navigator (<a class="el" href="classKUrlNavigator.html#ac031f8937d685739d9f9e15ef80e60e1">KUrlNavigator::isActive()</a> will return true) and emits the signal <a class="el" href="classKUrlNavigator.html#ae9caccd23861c1a444c27177c607dd50" title="Is emitted, if the URL navigator has been activated by an user interaction. ">KUrlNavigator::activated()</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKUrlNavigator.html#adb5dafb6b01d070a073ef7d9f52a2a3a" title="Set the URL navigator to the active mode, if active is true. ">KUrlNavigator::setActive()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01083">1083</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeefd61bf4cf3dd07592d22682f963958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefd61bf4cf3dd07592d22682f963958">&#9670;&nbsp;</a></span>returnPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::returnPressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when the Return or Enter key is pressed. </p>
+
+</div>
+</div>
+<a id="a801765de960de8261977c76fc19bde48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801765de960de8261977c76fc19bde48">&#9670;&nbsp;</a></span>saveLocationState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::saveLocationState </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the location state described by <em>state</em> for the current location. </p>
+<p>It is recommended that at least the scroll position of a view is remembered and restored when traversing through the history. Saving the location state should be done when the signal <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a> has been emitted. Restoring the location state (see <a class="el" href="classKUrlNavigator.html#aea123483efd867ffedd6d12b2a01150c">KUrlNavigator::locationState()</a>) should be done when the signal <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> has been emitted.</p>
+<p>Example: </p><div class="fragment"><div class="line">QByteArray state;</div><div class="line">QDataStream data(&amp;state, QIODevice::WriteOnly);</div><div class="line">data &lt;&lt; QPoint(x, y);</div><div class="line">data &lt;&lt; ...;</div><div class="line">...</div><div class="line">urlNavigator-&gt;saveLocationState(state);</div></div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00852">852</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb5dafb6b01d070a073ef7d9f52a2a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5dafb6b01d070a073ef7d9f52a2a3a">&#9670;&nbsp;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>active</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the URL navigator to the active mode, if <em>active</em> is true. </p>
+<p>The active mode is default. The inactive mode only differs visually from the active mode, no change of the behavior is given.</p>
+<p>Using the URL navigator in the inactive mode is useful when having split views, where the inactive view is indicated by an inactive URL navigator visually. </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00954">954</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a201989bbf1f382886eee1140edb78772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201989bbf1f382886eee1140edb78772">&#9670;&nbsp;</a></span>setCustomProtocols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setCustomProtocols </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>protocols</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If an application supports only some special protocols, they can be set with <em>protocols</em> . </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01207">1207</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a86c303a085724bdce12412c442306d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c303a085724bdce12412c442306d6f">&#9670;&nbsp;</a></span>setHomeUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setHomeUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the home URL used by <a class="el" href="classKUrlNavigator.html#a815d484e810c98a23e1a0de1c2e8dbbe" title="Goes to the home URL and remembers the old URL in the history. ">KUrlNavigator::goHome()</a>. </p>
+<p>If no home URL is set, the default home path of the user is used. </p><dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00919">919</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3b40e139f979cc22bb61f6678dac94d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b40e139f979cc22bb61f6678dac94d5">&#9670;&nbsp;</a></span>setLocationUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setLocationUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the location to <em>url</em>. </p>
+<p>The old URL is added to the history. The signals <a class="el" href="classKUrlNavigator.html#a448c54d2e3d77fb0fe7e9f0073c36daa" title="Is emitted, before the location URL is going to be changed to newUrl. ">KUrlNavigator::urlAboutToBeChanged()</a>, <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> and <a class="el" href="classKUrlNavigator.html#ae51c1ef6ba1b62e0b0a65df38934bc33" title="Is emitted, if the history has been changed. ">KUrlNavigator::historyChanged()</a> are emitted. Use <a class="el" href="classKUrlNavigator.html#a978249ffb37d03f6be49d2cda2888ca5">KUrlNavigator::locationUrl()</a> to read the location. </p><dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l01008">1008</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a27a2faf15920a1757c4f8b449a20252b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a2faf15920a1757c4f8b449a20252b">&#9670;&nbsp;</a></span>setPlacesSelectorVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setPlacesSelectorVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the places selector visible, if <em>visible</em> is true. </p>
+<p>The places selector allows to select the places provided by the places model passed in the constructor. Per default the places selector is visible. </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00976">976</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09d08540b75d0cb68dc2f7c867acacdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d08540b75d0cb68dc2f7c867acacdc">&#9670;&nbsp;</a></span>setShowFullPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setShowFullPath </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows the full path of the URL even if a place represents a part of the URL. </p>
+<p>Assuming that a place called "Pictures" uses the URL /home/user/Pictures. An URL like /home/user/Pictures/2008 is shown as [Pictures] &gt; [2008] in the breadcrumb view, if showing the full path is turned off. If showing the full path is turned on, the URL is shown as [/] &gt; [home] &gt; [Pictures] &gt; [2008]. </p><dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00941">941</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab4b511f1b89d440a8a7944ed08f00c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b511f1b89d440a8a7944ed08f00c23">&#9670;&nbsp;</a></span>setUrlEditable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::setUrlEditable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>editable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows to edit the URL of the navigation bar if <em>editable</em> is true, and sets the focus accordingly. </p>
+<p>If <em>editable</em> is false, each part of the URL is presented by a button for a fast navigation ("breadcrumb view"). </p>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00929">929</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acbd61fcac4dce4afcef731d1eec32e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd61fcac4dce4afcef731d1eec32e08">&#9670;&nbsp;</a></span>showFullPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KUrlNavigator::showFullPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True, if the full path of the URL should be shown in the breadcrumb view. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00949">949</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7d9b1644d1bb4738ea857f5ce8cd8f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9b1644d1bb4738ea857f5ce8cd8f67">&#9670;&nbsp;</a></span>tabRequested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::tabRequested </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted if the URL <em>url</em> should be opened in a new tab because the user clicked on a breadcrumb with the middle mouse button. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+</div>
+</div>
+<a id="a4d5a6bc648e3f25bd0dc904f32d0ed9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5a6bc648e3f25bd0dc904f32d0ed9c">&#9670;&nbsp;</a></span>uncommittedUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KUrlNavigator::uncommittedUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The currently entered, but not accepted URL. It is possible that the returned URL is not valid. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kurlnavigator_8cpp_source.html#l00997">997</a> of file <a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a448c54d2e3d77fb0fe7e9f0073c36daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448c54d2e3d77fb0fe7e9f0073c36daa">&#9670;&nbsp;</a></span>urlAboutToBeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::urlAboutToBeChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>newUrl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted, before the location URL is going to be changed to <em>newUrl</em>. </p>
+<p>The signal <a class="el" href="classKUrlNavigator.html#aff9130c588c25067fc3fe7620389d694" title="Is emitted, if the location URL has been changed e. ">KUrlNavigator::urlChanged()</a> will be emitted after the change has been done. Connecting to this signal is useful to save the state of a view with <a class="el" href="classKUrlNavigator.html#a801765de960de8261977c76fc19bde48" title="Saves the location state described by state for the current location. ">KUrlNavigator::saveLocationState()</a>. </p><dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+</div>
+</div>
+<a id="aff9130c588c25067fc3fe7620389d694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9130c588c25067fc3fe7620389d694">&#9670;&nbsp;</a></span>urlChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::urlChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted, if the location URL has been changed e. </p>
+<p>g. by the user. </p><dl class="section see"><dt>See also</dt><dd>KUrlNavigator::setUrl() </dd></dl>
+
+</div>
+</div>
+<a id="ada357ecc3b93a54d64069e1c89459694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada357ecc3b93a54d64069e1c89459694">&#9670;&nbsp;</a></span>urlsDropped</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUrlNavigator::urlsDropped </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDropEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is emitted if a dropping has been done above the destination <em>destination</em>. </p>
+<p>The receiver must accept the drop event if the dropped data can be handled. </p><dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kurlnavigator_8h_source.html">kurlnavigator.h</a></li>
+<li><a class="el" href="kurlnavigator_8cpp_source.html">kurlnavigator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:59 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

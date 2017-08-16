@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDEWebKit - KWebView Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDEWebKit</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDEWebKit"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKGraphicsWebView.html">KGraphicsWebView</option>
+        
+        <option value="classKWebPage.html">KWebPage</option>
+        
+        <option value="classKWebPluginFactory.html">KWebPluginFactory</option>
+        
+        <option value="classKWebView.html">KWebView</option>
+        
+        <option value="classKWebWallet.html">KWebWallet</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>KDE Integration for QtWebKit</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            FreeBSD, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WebKit)
+target_link_libraries(yourapp KF5::WebKit)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDEWebKit </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdewebkit-5.36.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDEWebKit on <a href="https://cgit.kde.org/kdewebkit-5.36.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDEWebKit </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KWebView">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKWebView-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KWebView Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kwebview_8h_source.html">kwebview.h</a>&gt;</code></p>
+
+<p>Inherits QWebView.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a3d1390d24dc6e879671877ef7b9e2b24"><td class="memItemLeft" align="right" valign="top"><a id="a3d1390d24dc6e879671877ef7b9e2b24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>externalContentAllowed</b></td></tr>
+<tr class="separator:a3d1390d24dc6e879671877ef7b9e2b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ac816342615e01a3077b68396b23eff76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#ac816342615e01a3077b68396b23eff76">linkMiddleOrCtrlClicked</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:ac816342615e01a3077b68396b23eff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac25da0a9bea1c705b926d0dc91c4629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#aac25da0a9bea1c705b926d0dc91c4629">linkShiftClicked</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:aac25da0a9bea1c705b926d0dc91c4629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb784fd1c9f45e36374c9d363d5ec12"><td class="memItemLeft" align="right" valign="top">KDEWEBKIT_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a7fb784fd1c9f45e36374c9d363d5ec12">selectionClipboardUrlPasted</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a7fb784fd1c9f45e36374c9d363d5ec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5305ae0f9fad6d521a159547c4a670a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a5305ae0f9fad6d521a159547c4a670a0">selectionClipboardUrlPasted</a> (const QUrl &amp;url, const QString &amp;searchText)</td></tr>
+<tr class="separator:a5305ae0f9fad6d521a159547c4a670a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7e870af8e52e2a80c899a4aa4dc678e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a7e870af8e52e2a80c899a4aa4dc678e4">KWebView</a> (QWidget *parent=nullptr, bool createCustomPage=true)</td></tr>
+<tr class="separator:a7e870af8e52e2a80c899a4aa4dc678e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a724473976cba60b6c561cfe6a76682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a5a724473976cba60b6c561cfe6a76682">~KWebView</a> ()</td></tr>
+<tr class="separator:a5a724473976cba60b6c561cfe6a76682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97d997d99a94de6007469a0b9702a8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#ae97d997d99a94de6007469a0b9702a8d">isExternalContentAllowed</a> () const</td></tr>
+<tr class="separator:ae97d997d99a94de6007469a0b9702a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38306892ef42320dc8524f3091c8e026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a38306892ef42320dc8524f3091c8e026">setAllowExternalContent</a> (bool allow)</td></tr>
+<tr class="separator:a38306892ef42320dc8524f3091c8e026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a18f3d3f31cd2292937aa01082905a873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a18f3d3f31cd2292937aa01082905a873">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a18f3d3f31cd2292937aa01082905a873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bed2c1a4c841c565362fb86009007db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a1bed2c1a4c841c565362fb86009007db">mouseReleaseEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a1bed2c1a4c841c565362fb86009007db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770f0514ba6a0492b002afd1bd667b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebView.html#a770f0514ba6a0492b002afd1bd667b3c">wheelEvent</a> (QWheelEvent *event) override</td></tr>
+<tr class="separator:a770f0514ba6a0492b002afd1bd667b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A re-implementation of QWebView that provides integration with KDE frameworks. </p>
+<p>This is a drop-in replacement for QWebView that provides full KDE frameworks integration through <a class="el" href="classKWebPage.html">KWebPage</a> as well as additional signals that capture middle, shift and ctrl mouse clicks on links and URL pasting from the selection clipboard.</p>
+<p>The specific functionality provided by this class (over and above what would be acheived by using <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> with a QWebView) is that scrolling with the mouse wheel while holding down CTRL zooms the page (see QWebView::setZoomFactor) and several useful signals are emitted when the user performs certain actions.</p>
+<p>See the signal documentation for more details.</p>
+<dl class="section author"><dt>Author</dt><dd>Urs Wolfer &lt;uwolfer @ kde.org&gt; </dd>
+<dd>
+Dawit Alemayehu &lt;adawit @ kde.org&gt; </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8h_source.html#l00057">57</a> of file <a class="el" href="kwebview_8h_source.html">kwebview.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7e870af8e52e2a80c899a4aa4dc678e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e870af8e52e2a80c899a4aa4dc678e4">&#9670;&nbsp;</a></span>KWebView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWebView::KWebView </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createCustomPage</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKWebView.html" title="A re-implementation of QWebView that provides integration with KDE frameworks. ">KWebView</a> object with parent <code>parent</code>. </p>
+<p>Set <code>createCustomPage</code> to false to prevent the creation of a <a class="el" href="classKWebPage.html">KWebPage</a> object for KDE frameworks integration. Doing so allows you to avoid unnecessary object creation and deletion if you are going to use a subclass of <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent object </td></tr>
+    <tr><td class="paramname">createCustomPage</td><td>if <code>true</code>, the view's page is set to an instance of <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00033">33</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a724473976cba60b6c561cfe6a76682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a724473976cba60b6c561cfe6a76682">&#9670;&nbsp;</a></span>~KWebView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWebView::~KWebView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classKWebView.html" title="A re-implementation of QWebView that provides integration with KDE frameworks. ">KWebView</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00041">41</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae97d997d99a94de6007469a0b9702a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97d997d99a94de6007469a0b9702a8d">&#9670;&nbsp;</a></span>isExternalContentAllowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWebView::isExternalContentAllowed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if access to remote content is allowed. </p>
+<p>By default access to remote content is allowed.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebView.html#a38306892ef42320dc8524f3091c8e026" title="Set allow to false if you want to prevent access to remote content. ">setAllowExternalContent()</a> </dd>
+<dd>
+<a class="el" href="classKWebPage.html#afcbcbcdb9b2b0bff3f6c78ca2d06704a" title="Whether access to remote content is permitted. ">KWebPage::isExternalContentAllowed()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00046">46</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac816342615e01a3077b68396b23eff76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac816342615e01a3077b68396b23eff76">&#9670;&nbsp;</a></span>linkMiddleOrCtrlClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::linkMiddleOrCtrlClicked </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a link is clicked with the middle mouse button or clicked with the left mouse button while CTRL is held down. </p>
+<p>Typically, the user would expect this to result in the URL being opened in a new tab or window.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>the URL of the clicked link </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac25da0a9bea1c705b926d0dc91c4629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac25da0a9bea1c705b926d0dc91c4629">&#9670;&nbsp;</a></span>linkShiftClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::linkShiftClicked </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a link is clicked with the left mouse button while SHIFT is held down. </p>
+<p>A user of Plasma desktop would typically expect this to result in the triggering of a "save link as" action.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>the URL of the clicked link </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18f3d3f31cd2292937aa01082905a873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f3d3f31cd2292937aa01082905a873">&#9670;&nbsp;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+<p>Reimplemented for internal reasons, the API is not affected.</p>
+<dl class="section see"><dt>See also</dt><dd>QWidget::mousePressEvent </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00065">65</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1bed2c1a4c841c565362fb86009007db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bed2c1a4c841c565362fb86009007db">&#9670;&nbsp;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+<p>Reimplemented for internal reasons, the API is not affected.</p>
+<dl class="section see"><dt>See also</dt><dd>QWidget::mouseReleaseEvent </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00072">72</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7fb784fd1c9f45e36374c9d363d5ec12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb784fd1c9f45e36374c9d363d5ec12">&#9670;&nbsp;</a></span>selectionClipboardUrlPasted <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDEWEBKIT_DEPRECATED void KWebView::selectionClipboardUrlPasted </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a URL from the selection clipboard is pasted on this view. </p>
+<p>This is triggered when the user clicks on the page with the middle mouse button when there is something in the global mouse selection clipboard. This is typically only possible on X11.</p>
+<p>Uri filters are applied to the selection clipboard to generate <code>url</code>.</p>
+<p>If the content in the selection clipboard is not a valid url and a default search engine is configured, <code>url</code> will be set to a query to the default search engine.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>url generated from the selection clipboard content</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>use selectionClipboardUrlPasted(QUrl, bool) instead </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>QClipboard </dd></dl>
+
+</div>
+</div>
+<a id="a5305ae0f9fad6d521a159547c4a670a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5305ae0f9fad6d521a159547c4a670a0">&#9670;&nbsp;</a></span>selectionClipboardUrlPasted <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::selectionClipboardUrlPasted </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>searchText</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a URL from the selection clipboard is pasted on this view. </p>
+<p>This is triggered when the user clicks on the page with the middle mouse button when there is something in the global mouse selection clipboard. This is typically only possible on X11.</p>
+<p>Uri filters are applied to the selection clipboard to generate <code>url</code>.</p>
+<p>If the content in the selection clipboard is not a valid URL and a default search engine is configured, <code>searchText</code> will be set to the content of the clipboard (250 characters maximum) and <code>url</code> will be set to a query to the default search engine.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>the URL generated from the selection clipboard content </td></tr>
+    <tr><td class="paramname">searchText</td><td>content of the selection clipboard if it is not a valid URL</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUriFilter.html">KUriFilter</a> </dd>
+<dd>
+QClipboard </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.6 </dd></dl>
+
+</div>
+</div>
+<a id="a38306892ef42320dc8524f3091c8e026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38306892ef42320dc8524f3091c8e026">&#9670;&nbsp;</a></span>setAllowExternalContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::setAllowExternalContent </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set <code>allow</code> to false if you want to prevent access to remote content. </p>
+<p>If this function is set to false only resources on the local system can be accessed through this class. By default fetching external content is allowed.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebView.html#ae97d997d99a94de6007469a0b9702a8d" title="Returns true if access to remote content is allowed. ">isExternalContentAllowed()</a> </dd>
+<dd>
+<a class="el" href="classKWebPage.html#adc97054aad8c8c07d8031dc209222aa6" title="Set whether to allow remote content. ">KWebPage::setAllowExternalContent(bool)</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00051">51</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a770f0514ba6a0492b002afd1bd667b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770f0514ba6a0492b002afd1bd667b3c">&#9670;&nbsp;</a></span>wheelEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebView::wheelEvent </td>
+          <td>(</td>
+          <td class="paramtype">QWheelEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+<p>Reimplemented for internal reasons, the API is not affected.</p>
+<dl class="section see"><dt>See also</dt><dd>QWidget::wheelEvent </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebview_8cpp_source.html#l00056">56</a> of file <a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kwebview_8h_source.html">kwebview.h</a></li>
+<li><a class="el" href="kwebview_8cpp_source.html">kwebview.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:50 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

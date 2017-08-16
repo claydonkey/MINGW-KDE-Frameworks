@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KPlotting - KPlotAxis Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KPlotting</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KPlotting"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKPlotAxis.html">KPlotAxis</option>
+        
+        <option value="classKPlotObject.html">KPlotObject</option>
+        
+        <option value="classKPlotPoint.html">KPlotPoint</option>
+        
+        <option value="classKPlotWidget.html">KPlotWidget</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Lightweight plotting framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:cfeck@kde.org">Christoph Feck</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Plotting)
+target_link_libraries(yourapp KF5::Plotting)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KPlotting </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kplotting-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KPlotting on <a href="https://cgit.kde.org/kplotting-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KPlotting </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KPlotAxis">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKPlotAxis-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KPlotAxis Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kplotaxis_8h_source.html">kplotaxis.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abdcb660d142d1cfbc091d5f67bbb10f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#abdcb660d142d1cfbc091d5f67bbb10f6">KPlotAxis</a> (const QString &amp;<a class="el" href="classKPlotAxis.html#a878e0c122913607f557f3e99b758c8ba">label</a>=QString())</td></tr>
+<tr class="separator:abdcb660d142d1cfbc091d5f67bbb10f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81739fcb0b697a85c8123955c963f739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a81739fcb0b697a85c8123955c963f739">~KPlotAxis</a> ()</td></tr>
+<tr class="separator:a81739fcb0b697a85c8123955c963f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8cee6e4eed8a2a73b69bc37885a22b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#ada8cee6e4eed8a2a73b69bc37885a22b">areTickLabelsShown</a> () const</td></tr>
+<tr class="separator:ada8cee6e4eed8a2a73b69bc37885a22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52cc134dd3ecb251d7600da0747e7e2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a52cc134dd3ecb251d7600da0747e7e2e">isVisible</a> () const</td></tr>
+<tr class="separator:a52cc134dd3ecb251d7600da0747e7e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878e0c122913607f557f3e99b758c8ba"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a878e0c122913607f557f3e99b758c8ba">label</a> () const</td></tr>
+<tr class="separator:a878e0c122913607f557f3e99b758c8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003ea5c5df5adde8779a6f7ce9853506"><td class="memItemLeft" align="right" valign="top">QList&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a003ea5c5df5adde8779a6f7ce9853506">majorTickMarks</a> () const</td></tr>
+<tr class="separator:a003ea5c5df5adde8779a6f7ce9853506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c2b27b8928ebcf379a07816f2f3247"><td class="memItemLeft" align="right" valign="top">QList&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#af1c2b27b8928ebcf379a07816f2f3247">minorTickMarks</a> () const</td></tr>
+<tr class="separator:af1c2b27b8928ebcf379a07816f2f3247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baf32ac880db5dabb221bab6a456728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a6baf32ac880db5dabb221bab6a456728">setLabel</a> (const QString &amp;<a class="el" href="classKPlotAxis.html#a878e0c122913607f557f3e99b758c8ba">label</a>)</td></tr>
+<tr class="separator:a6baf32ac880db5dabb221bab6a456728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4856fef45360a4816ad68bdd9b12a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a9e4856fef45360a4816ad68bdd9b12a0">setTickLabelFormat</a> (char format='g', int fieldWidth=0, int precision=-1)</td></tr>
+<tr class="separator:a9e4856fef45360a4816ad68bdd9b12a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f2c3f2dd9af9df1612e893cf1b9fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#ac4f2c3f2dd9af9df1612e893cf1b9fba">setTickLabelsShown</a> (bool b)</td></tr>
+<tr class="separator:ac4f2c3f2dd9af9df1612e893cf1b9fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a3ccdb0158c2cd4b00b7bb8fc53fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a13a3ccdb0158c2cd4b00b7bb8fc53fd3">setTickMarks</a> (double x0, double length)</td></tr>
+<tr class="separator:a13a3ccdb0158c2cd4b00b7bb8fc53fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1504562a12406a2fc45a96565cc39fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#ad1504562a12406a2fc45a96565cc39fe">setVisible</a> (bool visible)</td></tr>
+<tr class="separator:ad1504562a12406a2fc45a96565cc39fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2361255497243a4462ef26ba22dc82"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#afb2361255497243a4462ef26ba22dc82">tickLabel</a> (double value) const</td></tr>
+<tr class="separator:afb2361255497243a4462ef26ba22dc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f6db20c7744f0901aa26a393aba15a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a33f6db20c7744f0901aa26a393aba15a">tickLabelFormat</a> () const</td></tr>
+<tr class="separator:a33f6db20c7744f0901aa26a393aba15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3002db1869dfc8601ab61d49fe1c2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#a2d3002db1869dfc8601ab61d49fe1c2a">tickLabelPrecision</a> () const</td></tr>
+<tr class="separator:a2d3002db1869dfc8601ab61d49fe1c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af898aac175d706d1327e1791ff399ef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPlotAxis.html#af898aac175d706d1327e1791ff399ef9">tickLabelWidth</a> () const</td></tr>
+<tr class="separator:af898aac175d706d1327e1791ff399ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Axis for <a class="el" href="classKPlotWidget.html" title="Generic data plotting widget. ">KPlotWidget</a>. </p>
+<p>Contains all data for drawing an axis including format specification axis labels.</p>
+<dl class="section author"><dt>Author</dt><dd>Andreas Nicolai </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8h_source.html#l00037">37</a> of file <a class="el" href="kplotaxis_8h_source.html">kplotaxis.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abdcb660d142d1cfbc091d5f67bbb10f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcb660d142d1cfbc091d5f67bbb10f6">&#9670;&nbsp;</a></span>KPlotAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPlotAxis::KPlotAxis </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>label</em> = <code>QString()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor, constructs an axis with the label <code>label</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00049">49</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a81739fcb0b697a85c8123955c963f739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81739fcb0b697a85c8123955c963f739">&#9670;&nbsp;</a></span>~KPlotAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPlotAxis::~KPlotAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00055">55</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ada8cee6e4eed8a2a73b69bc37885a22b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8cee6e4eed8a2a73b69bc37885a22b">&#9670;&nbsp;</a></span>areTickLabelsShown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPlotAxis::areTickLabelsShown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>whether tick labels will be drawn for this axis </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00070">70</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a52cc134dd3ecb251d7600da0747e7e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52cc134dd3ecb251d7600da0747e7e2e">&#9670;&nbsp;</a></span>isVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPlotAxis::isVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>whether the axis is visible or not </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00060">60</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a878e0c122913607f557f3e99b758c8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878e0c122913607f557f3e99b758c8ba">&#9670;&nbsp;</a></span>label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPlotAxis::label </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the label string for this axis </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00085">85</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a003ea5c5df5adde8779a6f7ce9853506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003ea5c5df5adde8779a6f7ce9853506">&#9670;&nbsp;</a></span>majorTickMarks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; double &gt; KPlotAxis::majorTickMarks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the list of coordinates of the major tickmarks for this axis </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the positions of tickmarks are automatically computed by <a class="el" href="classKPlotAxis.html#a13a3ccdb0158c2cd4b00b7bb8fc53fd3" title="Determine the positions of major and minor tickmarks for this axis. ">setTickMarks()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPlotAxis.html#a13a3ccdb0158c2cd4b00b7bb8fc53fd3" title="Determine the positions of major and minor tickmarks for this axis. ">setTickMarks()</a> </dd>
+<dd>
+<a class="el" href="classKPlotAxis.html#af1c2b27b8928ebcf379a07816f2f3247">minorTickMarks()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00197">197</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af1c2b27b8928ebcf379a07816f2f3247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c2b27b8928ebcf379a07816f2f3247">&#9670;&nbsp;</a></span>minorTickMarks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; double &gt; KPlotAxis::minorTickMarks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the list with the minor tickmarks </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the positions of tickmarks are automatically computed by <a class="el" href="classKPlotAxis.html#a13a3ccdb0158c2cd4b00b7bb8fc53fd3" title="Determine the positions of major and minor tickmarks for this axis. ">setTickMarks()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPlotAxis.html#a13a3ccdb0158c2cd4b00b7bb8fc53fd3" title="Determine the positions of major and minor tickmarks for this axis. ">setTickMarks()</a> </dd>
+<dd>
+<a class="el" href="classKPlotAxis.html#a003ea5c5df5adde8779a6f7ce9853506">majorTickMarks()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00202">202</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6baf32ac880db5dabb221bab6a456728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baf32ac880db5dabb221bab6a456728">&#9670;&nbsp;</a></span>setLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPlotAxis::setLabel </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the axis label. </p>
+<p>Set the label to an empty string to omit the axis label. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>a string describing the data plotted on the axis. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00080">80</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e4856fef45360a4816ad68bdd9b12a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4856fef45360a4816ad68bdd9b12a0">&#9670;&nbsp;</a></span>setTickLabelFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPlotAxis::setTickLabelFormat </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>format</em> = <code>'g'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldWidth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the display format for converting the double value of the tick's position to the QString for the tick label. </p>
+<p>Normally, the format character is one of 'e', 'E', 'f', 'g', or 'G' (see the documentation for QString::arg(double) for details).</p>
+<p>In addition, it is possible to set the format character to 't'; in this case the tickmark value is interpreted as a time in hours, and the ticklabel string will be in "hh:mm" clock format. Note that when the format character is 't', the fieldWidth and prec values are ignored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>the format specification character </td></tr>
+    <tr><td class="paramname">fieldWidth</td><td>the number of characters in the output string. If set to 0, the string will be as wide as it needs to be to fully render the value. </td></tr>
+    <tr><td class="paramname">precision</td><td>the number of characters following the decimal point. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00090">90</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4f2c3f2dd9af9df1612e893cf1b9fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f2c3f2dd9af9df1612e893cf1b9fba">&#9670;&nbsp;</a></span>setTickLabelsShown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPlotAxis::setTickLabelsShown </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether tick labels will be drawn for this axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>if true, tick labels will be drawn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00075">75</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13a3ccdb0158c2cd4b00b7bb8fc53fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a3ccdb0158c2cd4b00b7bb8fc53fd3">&#9670;&nbsp;</a></span>setTickMarks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPlotAxis::setTickMarks </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine the positions of major and minor tickmarks for this axis. </p>
+<dl class="section note"><dt>Note</dt><dd>this function is called by <a class="el" href="classKPlotWidget.html" title="Generic data plotting widget. ">KPlotWidget</a> whenever the plot's limits are modified. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>the minimum data coordinate of the axis. </td></tr>
+    <tr><td class="paramname">length</td><td>the range covered by the axis, in data units. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPlotAxis.html#a003ea5c5df5adde8779a6f7ce9853506">majorTickMarks()</a> </dd>
+<dd>
+<a class="el" href="classKPlotAxis.html#af1c2b27b8928ebcf379a07816f2f3247">minorTickMarks()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00112">112</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad1504562a12406a2fc45a96565cc39fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1504562a12406a2fc45a96565cc39fe">&#9670;&nbsp;</a></span>setVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPlotAxis::setVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the "visible" property of the axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visible</td><td>if true, this axis will be drawn on the <a class="el" href="classKPlotWidget.html" title="Generic data plotting widget. ">KPlotWidget</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00065">65</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb2361255497243a4462ef26ba22dc82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2361255497243a4462ef26ba22dc82">&#9670;&nbsp;</a></span>tickLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPlotAxis::tickLabel </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the ticklabel string for the given value, rendered according to the current format specification. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">the</td><td>value to be rendered as a tick label. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPlotAxis.html#a9e4856fef45360a4816ad68bdd9b12a0" title="Set the display format for converting the double value of the tick&#39;s position to the QString for the ...">setTickLabelFormat()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00179">179</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a33f6db20c7744f0901aa26a393aba15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f6db20c7744f0901aa26a393aba15a">&#9670;&nbsp;</a></span>tickLabelFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char KPlotAxis::tickLabelFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the number format of the tick labels </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00102">102</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d3002db1869dfc8601ab61d49fe1c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3002db1869dfc8601ab61d49fe1c2a">&#9670;&nbsp;</a></span>tickLabelPrecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KPlotAxis::tickLabelPrecision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the number precision of the tick labels </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00107">107</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af898aac175d706d1327e1791ff399ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af898aac175d706d1327e1791ff399ef9">&#9670;&nbsp;</a></span>tickLabelWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KPlotAxis::tickLabelWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the field width of the tick labels </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplotaxis_8cpp_source.html#l00097">97</a> of file <a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kplotaxis_8h_source.html">kplotaxis.h</a></li>
+<li><a class="el" href="kplotaxis_8cpp_source.html">kplotaxis.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:47 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

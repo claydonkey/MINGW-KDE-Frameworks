@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCodecs - Email Validation Functions</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCodecs</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCodecs"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="modules.html">Modules</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCodecs_1_1Base64Codec.html">KCodecs::Base64Codec</option>
+        
+        <option value="classKCodecs_1_1BinaryCodec.html">KCodecs::BinaryCodec</option>
+        
+        <option value="classKCodecs_1_1Codec.html">KCodecs::Codec</option>
+        
+        <option value="classKCodecs_1_1Decoder.html">KCodecs::Decoder</option>
+        
+        <option value="classKCodecs_1_1EightBitCodec.html">KCodecs::EightBitCodec</option>
+        
+        <option value="classKCodecs_1_1Encoder.html">KCodecs::Encoder</option>
+        
+        <option value="classKCodecs_1_1IdentityCodec.html">KCodecs::IdentityCodec</option>
+        
+        <option value="classKCharsets.html">KCharsets</option>
+        
+        <option value="classKEncodingProber.html">KEncodingProber</option>
+        
+        <option value="classKCodecs_1_1QuotedPrintableCodec.html">KCodecs::QuotedPrintableCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2047BEncodingCodec.html">KCodecs::Rfc2047BEncodingCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2047QEncodingCodec.html">KCodecs::Rfc2047QEncodingCodec</option>
+        
+        <option value="classKCodecs_1_1Rfc2231EncodingCodec.html">KCodecs::Rfc2231EncodingCodec</option>
+        
+        <option value="classKCodecs_1_1SevenBitCodec.html">KCodecs::SevenBitCodec</option>
+        
+        <option value="classKCodecs_1_1UUCodec.html">KCodecs::UUCodec</option>
+        
+        <option value="namespaceKCodecs.html">KCodecs</option>
+        
+        <option value="namespaceKEmailAddress.html">KEmailAddress</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Text encoding</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Codecs)
+target_link_libraries(yourapp KF5::Codecs)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCodecs </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcodecs-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCodecs on <a href="https://cgit.kde.org/kcodecs-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCodecs </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">Email Validation Functions</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gadc2d42daf24ca8b10c388aba8591fcd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">KEmailAddress::EmailParseResult</a> { <br />
+&#160;&#160;<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a45243beb78125b14aa00d49d1cb995ea">KEmailAddress::AddressOk</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a6a7e808f46d0579c939dfdc75d70eff3">KEmailAddress::AddressEmpty</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a84f43f631b8f1ae23f2c208ff948fb8c">KEmailAddress::UnexpectedEnd</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a16b0b364c2347eaa3d1b74ffb2b0caf1">KEmailAddress::UnbalancedParens</a>,
+<br />
+&#160;&#160;<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a1bd296accb6a4e3c2e7bc637d81d8065">KEmailAddress::MissingDomainPart</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8aede38826223185bbf9ccff119ed4fb66">KEmailAddress::UnclosedAngleAddr</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8ac484f44e18a99c9601896f0e10f7514c">KEmailAddress::UnopenedAngleAddr</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a3d19df0222fba79c1de04fc0f1639139">KEmailAddress::TooManyAts</a>,
+<br />
+&#160;&#160;<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a23060c3639e86558293bfddcedf9542e">KEmailAddress::UnexpectedComma</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a487f1bd7f83580afbd9283aa5b366dc4">KEmailAddress::TooFewAts</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8af68db225fc1b9f7e57e819dfed17156b">KEmailAddress::MissingLocalPart</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a0e72bc2fe61077caef9c42931eada4ae">KEmailAddress::UnbalancedQuote</a>,
+<br />
+&#160;&#160;<b>NoAddressSpec</b>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8aaaa0e1f433ce98621480ceed5b68762d">KEmailAddress::DisallowedChar</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a5e40533d5344018c1b3b9276abf6bcfa">KEmailAddress::InvalidDisplayName</a>,
+<a class="el" href="group__emailvalidation.html#ggadc2d42daf24ca8b10c388aba8591fcd8a2c9ea07b1cc9cc949d4690bcc0e6310a">KEmailAddress::TooFewDots</a>
+<br />
+ }</td></tr>
+<tr class="separator:gadc2d42daf24ca8b10c388aba8591fcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gae172704df0b6b5f39245919d47670400"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#gae172704df0b6b5f39245919d47670400">KEmailAddress::emailParseResultToString</a> (<a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a> errorCode)</td></tr>
+<tr class="separator:gae172704df0b6b5f39245919d47670400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0718eac74f9d7e24b14dd230fc4726cb"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT <a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga0718eac74f9d7e24b14dd230fc4726cb">KEmailAddress::isValidAddress</a> (const QString &amp;aStr)</td></tr>
+<tr class="separator:ga0718eac74f9d7e24b14dd230fc4726cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5544625a45adea4487dc2b6c9537d92e"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT <a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga5544625a45adea4487dc2b6c9537d92e">KEmailAddress::isValidAddressList</a> (const QString &amp;aStr, QString &amp;badAddr)</td></tr>
+<tr class="separator:ga5544625a45adea4487dc2b6c9537d92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf08e03f2e2bd68905e76444c7e177d5"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#gabf08e03f2e2bd68905e76444c7e177d5">KEmailAddress::isValidSimpleAddress</a> (const QString &amp;aStr)</td></tr>
+<tr class="separator:gabf08e03f2e2bd68905e76444c7e177d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53bb072b3bb705a6b933dcb03c9f206a"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga53bb072b3bb705a6b933dcb03c9f206a">KEmailAddress::simpleEmailAddressErrorMsg</a> ()</td></tr>
+<tr class="separator:ga53bb072b3bb705a6b933dcb03c9f206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga866c90ba0d3dba47be1e1c8eea104468"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT <a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga866c90ba0d3dba47be1e1c8eea104468">KEmailAddress::splitAddress</a> (const QByteArray &amp;address, QByteArray &amp;displayName, QByteArray &amp;addrSpec, QByteArray &amp;comment)</td></tr>
+<tr class="separator:ga866c90ba0d3dba47be1e1c8eea104468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fbb08d0380070bc9907eb34c6664476"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT <a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga1fbb08d0380070bc9907eb34c6664476">KEmailAddress::splitAddress</a> (const QString &amp;address, QString &amp;displayName, QString &amp;addrSpec, QString &amp;comment)</td></tr>
+<tr class="separator:ga1fbb08d0380070bc9907eb34c6664476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga772a8e69044154ce0935250558778ddd"><td class="memItemLeft" align="right" valign="top">KCODECS_EXPORT QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emailvalidation.html#ga772a8e69044154ce0935250558778ddd">KEmailAddress::splitAddressList</a> (const QString &amp;aStr)</td></tr>
+<tr class="separator:ga772a8e69044154ce0935250558778ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>This collection of methods that can validate email addresses as supplied by the user (typically, user input from a text box). </p>
+<p>There are also functions for splitting an RFC2822 address into its component parts. </p>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gadc2d42daf24ca8b10c388aba8591fcd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc2d42daf24ca8b10c388aba8591fcd8">&#9670;&nbsp;</a></span>EmailParseResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">KEmailAddress::EmailParseResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Email validation result. </p>
+<p>The only 'success' code in this enumeration is AddressOK; all the other values indicate some specific problem with the address which is being validated.</p>
+<p>Result type for <a class="el" href="group__emailvalidation.html#ga866c90ba0d3dba47be1e1c8eea104468" title="Splits the given address into display name, email address and comment. ">splitAddress()</a>, <a class="el" href="group__emailvalidation.html#ga0718eac74f9d7e24b14dd230fc4726cb" title="Validates an email address in the form of &quot;Joe User&quot; joe@example.org. ">isValidAddress()</a> and <a class="el" href="group__emailvalidation.html#gabf08e03f2e2bd68905e76444c7e177d5" title="Validates an email address in the form of joe@example.org. ">isValidSimpleAddress()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a45243beb78125b14aa00d49d1cb995ea"></a>AddressOk&#160;</td><td class="fielddoc"><p>Email is valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a6a7e808f46d0579c939dfdc75d70eff3"></a>AddressEmpty&#160;</td><td class="fielddoc"><p>The address is empty. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a84f43f631b8f1ae23f2c208ff948fb8c"></a>UnexpectedEnd&#160;</td><td class="fielddoc"><p>Something is unbalanced. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a16b0b364c2347eaa3d1b74ffb2b0caf1"></a>UnbalancedParens&#160;</td><td class="fielddoc"><p>Unbalanced ( ) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a1bd296accb6a4e3c2e7bc637d81d8065"></a>MissingDomainPart&#160;</td><td class="fielddoc"><p>No domain in address. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8aede38826223185bbf9ccff119ed4fb66"></a>UnclosedAngleAddr&#160;</td><td class="fielddoc"><p>&lt; with no matching &gt; </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8ac484f44e18a99c9601896f0e10f7514c"></a>UnopenedAngleAddr&#160;</td><td class="fielddoc"><p>&gt; with no preceding &lt; </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a3d19df0222fba79c1de04fc0f1639139"></a>TooManyAts&#160;</td><td class="fielddoc"><p>More than one @ in address. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a23060c3639e86558293bfddcedf9542e"></a>UnexpectedComma&#160;</td><td class="fielddoc"><p>Comma not allowed here. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a487f1bd7f83580afbd9283aa5b366dc4"></a>TooFewAts&#160;</td><td class="fielddoc"><p>Missing @ in address. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8af68db225fc1b9f7e57e819dfed17156b"></a>MissingLocalPart&#160;</td><td class="fielddoc"><p>No address specified, only domain. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a0e72bc2fe61077caef9c42931eada4ae"></a>UnbalancedQuote&#160;</td><td class="fielddoc"><p>Quotes (single or double) not matched. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8aaaa0e1f433ce98621480ceed5b68762d"></a>DisallowedChar&#160;</td><td class="fielddoc"><p>An invalid character detected in address. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a5e40533d5344018c1b3b9276abf6bcfa"></a>InvalidDisplayName&#160;</td><td class="fielddoc"><p>An invalid displayname detected in address. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadc2d42daf24ca8b10c388aba8591fcd8a2c9ea07b1cc9cc949d4690bcc0e6310a"></a>TooFewDots&#160;</td><td class="fielddoc"><p>Missing . </p>
+<p>in address </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8h_source.html#l00064">64</a> of file <a class="el" href="kemailaddress_8h_source.html">kemailaddress.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gae172704df0b6b5f39245919d47670400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae172704df0b6b5f39245919d47670400">&#9670;&nbsp;</a></span>emailParseResultToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KEmailAddress::emailParseResultToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a>&#160;</td>
+          <td class="paramname"><em>errorCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate the enum errorcodes from emailParseResult into i18n'd strings that can be used for msg boxes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>an <em>error</em> code returned from one of the email validation functions. Do not pass AddressOk as a value, since that will yield a misleading error message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>human-readable and already translated message describing the validation error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00526">526</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga0718eac74f9d7e24b14dd230fc4726cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0718eac74f9d7e24b14dd230fc4726cb">&#9670;&nbsp;</a></span>isValidAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a> KEmailAddress::isValidAddress </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>aStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates an email address in the form of "Joe User" <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe@e<span style="display: none;">.nosp@m.</span>xamp<span style="display: none;">.nosp@m.</span>le.or<span style="display: none;">.nosp@m.</span>g</a>. </p>
+<p>Returns AddressOk if no error was encountered. Otherwise an appropriate error code is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aStr</td><td>a single email address, example: Joe User (comment1) <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'.u'+'ser'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe.u<span style="display: none;">.nosp@m.</span>ser@<span style="display: none;">.nosp@m.</span>examp<span style="display: none;">.nosp@m.</span>le.o<span style="display: none;">.nosp@m.</span>rg</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AddressOk if no error was encountered. Otherwise an appropriate error code is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00299">299</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga5544625a45adea4487dc2b6c9537d92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5544625a45adea4487dc2b6c9537d92e">&#9670;&nbsp;</a></span>isValidAddressList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">KEmailAddress::EmailParseResult</a> KEmailAddress::isValidAddressList </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>aStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>badAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates a list of email addresses, and also allow aliases and distribution lists to be expanded before validation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aStr</td><td>a string containing a list of email addresses. </td></tr>
+    <tr><td class="paramname">badAddr</td><td>a string to hold the address that was faulty.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AddressOk if no error was encountered. Otherwise an appropriate error code is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00503">503</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="gabf08e03f2e2bd68905e76444c7e177d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf08e03f2e2bd68905e76444c7e177d5">&#9670;&nbsp;</a></span>isValidSimpleAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KEmailAddress::isValidSimpleAddress </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>aStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates an email address in the form of <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe@e<span style="display: none;">.nosp@m.</span>xamp<span style="display: none;">.nosp@m.</span>le.or<span style="display: none;">.nosp@m.</span>g</a>. </p>
+<p>Returns true if no error was encountered. This method should be used when the input field should not allow a "full" email address with comments and other special cases that normally are valid in an email address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aStr</td><td>a single email address, example: <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'.u'+'ser'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe.u<span style="display: none;">.nosp@m.</span>ser@<span style="display: none;">.nosp@m.</span>examp<span style="display: none;">.nosp@m.</span>le.o<span style="display: none;">.nosp@m.</span>rg</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if no error was encountered.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method differs from calling <a class="el" href="group__emailvalidation.html#ga0718eac74f9d7e24b14dd230fc4726cb" title="Validates an email address in the form of &quot;Joe User&quot; joe@example.org. ">isValidAddress()</a> and checking that that returns AddressOk in two ways: it is faster, and it does <em>not</em> allow fancy addresses. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00590">590</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga53bb072b3bb705a6b933dcb03c9f206a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53bb072b3bb705a6b933dcb03c9f206a">&#9670;&nbsp;</a></span>simpleEmailAddressErrorMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KEmailAddress::simpleEmailAddressErrorMsg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a i18n string to be used in msgboxes. </p>
+<p>This allows for error messages to be the same across the board.</p>
+<dl class="section return"><dt>Returns</dt><dd>An i18n ready string for use in msgboxes. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00647">647</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga866c90ba0d3dba47be1e1c8eea104468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga866c90ba0d3dba47be1e1c8eea104468">&#9670;&nbsp;</a></span>splitAddress() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a> KEmailAddress::splitAddress </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>displayName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>addrSpec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>comment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Splits the given address into display name, email address and comment. </p>
+<p>Returns AddressOk if no error was encountered. Otherwise an appropriate error code is returned. In case of an error the values of displayName, addrSpec and comment are undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>a single email address, example: Joe User (comment1) <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'.u'+'ser'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe.u<span style="display: none;">.nosp@m.</span>ser@<span style="display: none;">.nosp@m.</span>examp<span style="display: none;">.nosp@m.</span>le.o<span style="display: none;">.nosp@m.</span>rg</a> (comment2) </td></tr>
+    <tr><td class="paramname">displayName</td><td>only out: the display-name of the email address, i.e. "Joe User" in the example; in case of an error the return value is undefined </td></tr>
+    <tr><td class="paramname">addrSpec</td><td>only out: the addr-spec, i.e. "joe.user@example.org" in the example; in case of an error the return value is undefined </td></tr>
+    <tr><td class="paramname">comment</td><td>only out: the space-separated comments, i.e. "comment1 comment2" in the example; in case of an error the return value is undefined</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AddressOk if no error was encountered. Otherwise an appropriate error code is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00270">270</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga1fbb08d0380070bc9907eb34c6664476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fbb08d0380070bc9907eb34c6664476">&#9670;&nbsp;</a></span>splitAddress() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__emailvalidation.html#gadc2d42daf24ca8b10c388aba8591fcd8">EmailParseResult</a> KEmailAddress::splitAddress </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>displayName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>addrSpec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>comment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. </p>
+<p>It behaves essentially like the above function.</p>
+<p>Splits the given address into display name, email address and comment. Returns AddressOk if no error was encountered. Otherwise an appropriate error code is returned. In case of an error the values of displayName, addrSpec and comment are undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>a single email address, example: Joe User (comment1) <a href="#" onclick="location.href='mai'+'lto:'+'joe'+'.u'+'ser'+'@e'+'xam'+'pl'+'e.o'+'rg'; return false;">joe.u<span style="display: none;">.nosp@m.</span>ser@<span style="display: none;">.nosp@m.</span>examp<span style="display: none;">.nosp@m.</span>le.o<span style="display: none;">.nosp@m.</span>rg</a> (comment2) </td></tr>
+    <tr><td class="paramname">displayName</td><td>only out: the display-name of the email address, i.e. "Joe User" in the example; in case of an error the return value is undefined </td></tr>
+    <tr><td class="paramname">addrSpec</td><td>only out: the addr-spec, i.e. "joe.user@example.org" in the example; in case of an error the return value is undefined </td></tr>
+    <tr><td class="paramname">comment</td><td>only out: the space-separated comments, i.e. "comment1 comment2" in the example; in case of an error the return value is undefined</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AddressOk if no error was encountered. Otherwise an appropriate error code is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00280">280</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga772a8e69044154ce0935250558778ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga772a8e69044154ce0935250558778ddd">&#9670;&nbsp;</a></span>splitAddressList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KEmailAddress::splitAddressList </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>aStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a comma separated list of email addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aStr</td><td>a single string representing a list of addresses </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of strings, where each string is one address from the original list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kemailaddress_8cpp_source.html#l00032">32</a> of file <a class="el" href="kemailaddress_8cpp_source.html">kemailaddress.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:09 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

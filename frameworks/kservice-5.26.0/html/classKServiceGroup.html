@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KService - KServiceGroup Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KService</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KService"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAutostart.html">KAutostart</option>
+        
+        <option value="classKDBusServiceStarter.html">KDBusServiceStarter</option>
+        
+        <option value="classKMimeTypeTrader.html">KMimeTypeTrader</option>
+        
+        <option value="classKPluginInfo.html">KPluginInfo</option>
+        
+        <option value="classKPluginTrader.html">KPluginTrader</option>
+        
+        <option value="classKService.html">KService</option>
+        
+        <option value="classKServiceAction.html">KServiceAction</option>
+        
+        <option value="classKServiceGroup.html">KServiceGroup</option>
+        
+        <option value="classKServiceOffer.html">KServiceOffer</option>
+        
+        <option value="classKServiceType.html">KServiceType</option>
+        
+        <option value="classKServiceTypeTrader.html">KServiceTypeTrader</option>
+        
+        <option value="classKSycoca.html">KSycoca</option>
+        
+        <option value="classKSycocaEntry.html">KSycocaEntry</option>
+        
+        <option value="classKToolInvocation.html">KToolInvocation</option>
+        
+        <option value="namespaceKServiceTypeProfile.html">KServiceTypeProfile</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced plugin and service introspection</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Service)
+target_link_libraries(yourapp KF5::Service)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KService </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kservice-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KService on <a href="https://cgit.kde.org/kservice-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KService </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KServiceGroup">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKServiceGroup-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KServiceGroup Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kservicegroup_8h_source.html">kservicegroup.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KServiceGroup:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKServiceGroup__inherit__graph.png" border="0" usemap="#KServiceGroup_inherit__map" alt="Inheritance graph"/></div>
+<map name="KServiceGroup_inherit__map" id="KServiceGroup_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a353eb95e9c765011b878f725152ddd61"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a353eb95e9c765011b878f725152ddd61">EntriesOption</a> { <br />
+&#160;&#160;<b>NoOptions</b> = 0x0,
+<b>SortEntries</b> = 0x1,
+<b>ExcludeNoDisplay</b> = 0x2,
+<b>AllowSeparators</b> = 0x4,
+<br />
+&#160;&#160;<b>SortByGenericName</b> = 0x8
+<br />
+ }</td></tr>
+<tr class="separator:a353eb95e9c765011b878f725152ddd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9ca996f6c17c81801617a8f78077e4"><td class="memItemLeft" align="right" valign="top"><a id="aeb9ca996f6c17c81801617a8f78077e4"></a>
+typedef QList&lt; SPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>List</b></td></tr>
+<tr class="separator:aeb9ca996f6c17c81801617a8f78077e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc3f5aab298fa8834c9162208823ec8"><td class="memItemLeft" align="right" valign="top"><a id="afdc3f5aab298fa8834c9162208823ec8"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKServiceGroup.html">KServiceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:afdc3f5aab298fa8834c9162208823ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03727a3c8afacf37c682121a9004162c"><td class="memItemLeft" align="right" valign="top"><a id="a03727a3c8afacf37c682121a9004162c"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SPtr</b></td></tr>
+<tr class="separator:a03727a3c8afacf37c682121a9004162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classKSycocaEntry"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKSycocaEntry')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td></tr>
+<tr class="memitem:a3b6b68aeefd68ae37cc5dfc1ac16ad78 inherit pub_types_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a id="a3b6b68aeefd68ae37cc5dfc1ac16ad78"></a>
+typedef QList&lt; Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>List</b></td></tr>
+<tr class="separator:a3b6b68aeefd68ae37cc5dfc1ac16ad78 inherit pub_types_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4485c2cc8ebaea5adc9b131294d629f9 inherit pub_types_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a id="a4485c2cc8ebaea5adc9b131294d629f9"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:a4485c2cc8ebaea5adc9b131294d629f9 inherit pub_types_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa8c35fdbaf9bed3da282e7719f1c2a48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#aa8c35fdbaf9bed3da282e7719f1c2a48">KServiceGroup</a> (const QString &amp;<a class="el" href="classKSycocaEntry.html#a47cc0b9a4e968ddf6593b9a99696b2a2">name</a>)</td></tr>
+<tr class="separator:aa8c35fdbaf9bed3da282e7719f1c2a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afbe0ca4bdee578e1397ab448f496c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a4afbe0ca4bdee578e1397ab448f496c1">KServiceGroup</a> (const QString &amp;_fullpath, const QString &amp;_relpath)</td></tr>
+<tr class="separator:a4afbe0ca4bdee578e1397ab448f496c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e135302533265025d7e6ef807d8033f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a9e135302533265025d7e6ef807d8033f">allowInline</a> () const</td></tr>
+<tr class="separator:a9e135302533265025d7e6ef807d8033f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54c4ba1787f8e05af1d1a31ad517eb1"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#ab54c4ba1787f8e05af1d1a31ad517eb1">baseGroupName</a> () const</td></tr>
+<tr class="separator:ab54c4ba1787f8e05af1d1a31ad517eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2fc42c31919c2f4c156730f3249f41"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#abd2fc42c31919c2f4c156730f3249f41">caption</a> () const</td></tr>
+<tr class="separator:abd2fc42c31919c2f4c156730f3249f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299819cfb1c319f5cf5605ca3d8de082"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a299819cfb1c319f5cf5605ca3d8de082">childCount</a> () const</td></tr>
+<tr class="separator:a299819cfb1c319f5cf5605ca3d8de082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e345bca464a0d8cc6be246bf55e827d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a1e345bca464a0d8cc6be246bf55e827d">comment</a> () const</td></tr>
+<tr class="separator:a1e345bca464a0d8cc6be246bf55e827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0315bd3f803785e9e08a3d4a16551c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a7e0315bd3f803785e9e08a3d4a16551c">directoryEntryPath</a> () const</td></tr>
+<tr class="separator:a7e0315bd3f803785e9e08a3d4a16551c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c3ee84bbeeb4b52effb50af9b13e78"><td class="memItemLeft" align="right" valign="top">List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a53c3ee84bbeeb4b52effb50af9b13e78">entries</a> (bool sorted, bool excludeNoDisplay, bool allowSeparators, bool sortByGenericName=false)</td></tr>
+<tr class="separator:a53c3ee84bbeeb4b52effb50af9b13e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf80632cb5773165429ec216ee3cd3d8"><td class="memItemLeft" align="right" valign="top"><a id="acf80632cb5773165429ec216ee3cd3d8"></a>
+List&#160;</td><td class="memItemRight" valign="bottom"><b>entries</b> (bool sorted, bool excludeNoDisplay)</td></tr>
+<tr class="separator:acf80632cb5773165429ec216ee3cd3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a65875af07f209221912b6c8c56c5b"><td class="memItemLeft" align="right" valign="top">List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a78a65875af07f209221912b6c8c56c5b">entries</a> (bool sorted=false)</td></tr>
+<tr class="separator:a78a65875af07f209221912b6c8c56c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fbc01ae305b700ce2360b2182f2476"><td class="memItemLeft" align="right" valign="top">QList&lt; Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a84fbc01ae305b700ce2360b2182f2476">groupEntries</a> (EntriesOptions options=ExcludeNoDisplay)</td></tr>
+<tr class="separator:a84fbc01ae305b700ce2360b2182f2476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10d4023401b230a5a225fe4cb0d43a4"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#aa10d4023401b230a5a225fe4cb0d43a4">icon</a> () const</td></tr>
+<tr class="separator:aa10d4023401b230a5a225fe4cb0d43a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aae636c15539cf29c9c865b809479e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a66aae636c15539cf29c9c865b809479e">inlineAlias</a> () const</td></tr>
+<tr class="separator:a66aae636c15539cf29c9c865b809479e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec0bbe2030016f739abdf9c706d3a90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#adec0bbe2030016f739abdf9c706d3a90">inlineValue</a> () const</td></tr>
+<tr class="separator:adec0bbe2030016f739abdf9c706d3a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567aa69be9527394aca2fd5fff6bd716"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a567aa69be9527394aca2fd5fff6bd716">layoutInfo</a> () const</td></tr>
+<tr class="separator:a567aa69be9527394aca2fd5fff6bd716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699192f67a0c0fab4c754aa1b299fd9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a699192f67a0c0fab4c754aa1b299fd9a">noDisplay</a> () const</td></tr>
+<tr class="separator:a699192f67a0c0fab4c754aa1b299fd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bafb47424325de346e96789ae74517"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a43bafb47424325de346e96789ae74517">relPath</a> () const</td></tr>
+<tr class="separator:a43bafb47424325de346e96789ae74517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7607c43c9ec641b45c41df20684550b5"><td class="memItemLeft" align="right" valign="top">KService::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a7607c43c9ec641b45c41df20684550b5">serviceEntries</a> (EntriesOptions options=ExcludeNoDisplay)</td></tr>
+<tr class="separator:a7607c43c9ec641b45c41df20684550b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe5d2ead1eb9d8a92b0bfe6e0edcec1"><td class="memItemLeft" align="right" valign="top"><a id="a9fe5d2ead1eb9d8a92b0bfe6e0edcec1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAllowInline</b> (bool _b)</td></tr>
+<tr class="separator:a9fe5d2ead1eb9d8a92b0bfe6e0edcec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09202967885b8d4767c2a34b95f2091c"><td class="memItemLeft" align="right" valign="top"><a id="a09202967885b8d4767c2a34b95f2091c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInlineAlias</b> (bool _b)</td></tr>
+<tr class="separator:a09202967885b8d4767c2a34b95f2091c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2ab637a664b829a27d38bcdf66518e"><td class="memItemLeft" align="right" valign="top"><a id="afc2ab637a664b829a27d38bcdf66518e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInlineValue</b> (int _val)</td></tr>
+<tr class="separator:afc2ab637a664b829a27d38bcdf66518e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4b6693d371909b46853d2123287ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a0d4b6693d371909b46853d2123287ab0">setLayoutInfo</a> (const QStringList &amp;layout)</td></tr>
+<tr class="separator:a0d4b6693d371909b46853d2123287ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced9e8d168e45e22a62697d6a08b3f36"><td class="memItemLeft" align="right" valign="top"><a id="aced9e8d168e45e22a62697d6a08b3f36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShowEmptyMenu</b> (bool b)</td></tr>
+<tr class="separator:aced9e8d168e45e22a62697d6a08b3f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffef02f7404b60241bf3710f7a628ca"><td class="memItemLeft" align="right" valign="top"><a id="a8ffef02f7404b60241bf3710f7a628ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShowInlineHeader</b> (bool _b)</td></tr>
+<tr class="separator:a8ffef02f7404b60241bf3710f7a628ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a87a88a51cc62c833c141450025509e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a9a87a88a51cc62c833c141450025509e">showEmptyMenu</a> () const</td></tr>
+<tr class="separator:a9a87a88a51cc62c833c141450025509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba636215b7eed1aed8771a05d6acff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a95ba636215b7eed1aed8771a05d6acff">showInlineHeader</a> () const</td></tr>
+<tr class="separator:a95ba636215b7eed1aed8771a05d6acff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d50ba9f5d9088b88388e2fedca4d40a"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a0d50ba9f5d9088b88388e2fedca4d40a">suppressGenericNames</a> () const</td></tr>
+<tr class="separator:a0d50ba9f5d9088b88388e2fedca4d40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKSycocaEntry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKSycocaEntry')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td></tr>
+<tr class="memitem:a9b09ff62f097ad6b190dcce59899cec5 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a9b09ff62f097ad6b190dcce59899cec5">entryPath</a> () const</td></tr>
+<tr class="separator:a9b09ff62f097ad6b190dcce59899cec5 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d850905e3ef323a170d03446f23552f inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a5d850905e3ef323a170d03446f23552f">isDeleted</a> () const</td></tr>
+<tr class="separator:a5d850905e3ef323a170d03446f23552f inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d36bbc7dc35829cb6f0b0929d2ddec8 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a id="a6d36bbc7dc35829cb6f0b0929d2ddec8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSeparator</b> () const</td></tr>
+<tr class="separator:a6d36bbc7dc35829cb6f0b0929d2ddec8 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dc388711eeb2a9d2cc8c1e632580b7 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a88dc388711eeb2a9d2cc8c1e632580b7">isType</a> (<a class="el" href="classKSycocaEntry.html#a8d7866d3d103bc78626732de5abed81e">KSycocaType</a> t) const</td></tr>
+<tr class="separator:a88dc388711eeb2a9d2cc8c1e632580b7 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3759073883ad2fc631457223bc8cc129 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a3759073883ad2fc631457223bc8cc129">isValid</a> () const</td></tr>
+<tr class="separator:a3759073883ad2fc631457223bc8cc129 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc0b9a4e968ddf6593b9a99696b2a2 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a47cc0b9a4e968ddf6593b9a99696b2a2">name</a> () const</td></tr>
+<tr class="separator:a47cc0b9a4e968ddf6593b9a99696b2a2 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadf03696e1a19e8f791771564ada80e inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#afadf03696e1a19e8f791771564ada80e">property</a> (const QString &amp;<a class="el" href="classKSycocaEntry.html#a47cc0b9a4e968ddf6593b9a99696b2a2">name</a>) const</td></tr>
+<tr class="separator:afadf03696e1a19e8f791771564ada80e inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb64d0c6b1c26a0f0b5f2926fa6d17d9 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#afb64d0c6b1c26a0f0b5f2926fa6d17d9">propertyNames</a> () const</td></tr>
+<tr class="separator:afb64d0c6b1c26a0f0b5f2926fa6d17d9 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ad5b6b0858402d63ff5cb6630174e3 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#ac1ad5b6b0858402d63ff5cb6630174e3">setDeleted</a> (bool deleted)</td></tr>
+<tr class="separator:ac1ad5b6b0858402d63ff5cb6630174e3 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1817b45fae1b0c54fa80a471c5f7c07a inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a1817b45fae1b0c54fa80a471c5f7c07a">storageId</a> () const</td></tr>
+<tr class="separator:a1817b45fae1b0c54fa80a471c5f7c07a inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f3bd1a835af09339d7e87d23c21366 inherit pub_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKSycocaEntry.html#a8d7866d3d103bc78626732de5abed81e">KSycocaType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#ad9f3bd1a835af09339d7e87d23c21366">sycocaType</a> () const</td></tr>
+<tr class="separator:ad9f3bd1a835af09339d7e87d23c21366 inherit pub_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a496c863535654d966a8cc264807cdbc7"><td class="memItemLeft" align="right" valign="top">static Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a496c863535654d966a8cc264807cdbc7">childGroup</a> (const QString &amp;parent)</td></tr>
+<tr class="separator:a496c863535654d966a8cc264807cdbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467aa6329a262f56c9b834bc444d53cc"><td class="memItemLeft" align="right" valign="top">static Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a467aa6329a262f56c9b834bc444d53cc">group</a> (const QString &amp;<a class="el" href="classKServiceGroup.html#a43bafb47424325de346e96789ae74517">relPath</a>)</td></tr>
+<tr class="separator:a467aa6329a262f56c9b834bc444d53cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15af7f321c6daae6e1ec9fe054b86870"><td class="memItemLeft" align="right" valign="top">static Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#a15af7f321c6daae6e1ec9fe054b86870">root</a> ()</td></tr>
+<tr class="separator:a15af7f321c6daae6e1ec9fe054b86870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae69e711f3692bf56fa3ed4425a5aa836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKServiceGroup.html#ae69e711f3692bf56fa3ed4425a5aa836">addEntry</a> (const KSycocaEntry::Ptr &amp;entry)</td></tr>
+<tr class="separator:ae69e711f3692bf56fa3ed4425a5aa836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKSycocaEntry"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKSycocaEntry')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td></tr>
+<tr class="memitem:af4bc9ced2bb8963d051bd795d4194200 inherit pro_methods_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a id="af4bc9ced2bb8963d051bd795d4194200"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KSycocaEntry</b> (KSycocaEntryPrivate &amp;d)</td></tr>
+<tr class="separator:af4bc9ced2bb8963d051bd795d4194200 inherit pro_methods_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classKSycocaEntry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKSycocaEntry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td></tr>
+<tr class="memitem:a0b2be8bdc34863638087c93a7339743d inherit pro_attribs_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top"><a id="a0b2be8bdc34863638087c93a7339743d"></a>
+KSycocaEntryPrivate *&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a0b2be8bdc34863638087c93a7339743d inherit pro_attribs_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header related_classKSycocaEntry"><td colspan="2" onclick="javascript:toggleInherit('related_classKSycocaEntry')"><img src="closed.png" alt="-"/>&#160;Related Functions inherited from <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td></tr>
+<tr class="memitem:a8d7866d3d103bc78626732de5abed81e inherit related_classKSycocaEntry"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSycocaEntry.html#a8d7866d3d103bc78626732de5abed81e">KSycocaType</a> </td></tr>
+<tr class="separator:a8d7866d3d103bc78626732de5abed81e inherit related_classKSycocaEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKServiceGroup.html" title="KServiceGroup represents a group of service, for example screensavers. ">KServiceGroup</a> represents a group of service, for example screensavers. </p>
+<p>This class is typically used like this:</p>
+<div class="fragment"><div class="line"><span class="comment">// Start from root group</span></div><div class="line">KServiceGroup::Ptr <a class="code" href="classKServiceGroup.html#a467aa6329a262f56c9b834bc444d53cc">group</a> = <a class="code" href="classKServiceGroup.html#a15af7f321c6daae6e1ec9fe054b86870">KServiceGroup::root</a>();</div><div class="line"><span class="keywordflow">if</span> (!group || !group-&gt;isValid()) <span class="keywordflow">return</span>;</div><div class="line"></div><div class="line">KServiceGroup::List list = group-&gt;entries();</div><div class="line"></div><div class="line"><span class="comment">// Iterate over all entries in the group</span></div><div class="line"><span class="keywordflow">for</span>( KServiceGroup::List::ConstIterator it = list.begin();</div><div class="line">     it != list.end(); it++)</div><div class="line">{</div><div class="line">   <a class="code" href="classKSycocaEntry.html">KSycocaEntry</a> *p = (*it);</div><div class="line">   <span class="keywordflow">if</span> (p-&gt;<a class="code" href="classKSycocaEntry.html#a88dc388711eeb2a9d2cc8c1e632580b7">isType</a>(KST_KService))</div><div class="line">   {</div><div class="line">      <a class="code" href="classKService.html">KService</a> *s = <span class="keyword">static_cast&lt;</span><a class="code" href="classKService.html">KService</a> *<span class="keyword">&gt;</span>(p);</div><div class="line">      printf(<span class="stringliteral">&quot;Name = %s\n&quot;</span>, s-&gt;<a class="code" href="classKSycocaEntry.html#a47cc0b9a4e968ddf6593b9a99696b2a2">name</a>().toLatin1());</div><div class="line">   }</div><div class="line">   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p-&gt;<a class="code" href="classKSycocaEntry.html#a88dc388711eeb2a9d2cc8c1e632580b7">isType</a>(KST_KServiceGroup))</div><div class="line">   {</div><div class="line">      <a class="code" href="classKServiceGroup.html">KServiceGroup</a> *g = <span class="keyword">static_cast&lt;</span><a class="code" href="classKServiceGroup.html">KServiceGroup</a> *<span class="keyword">&gt;</span>(p);</div><div class="line">      <span class="comment">// Sub group ...</span></div><div class="line">   }</div><div class="line">}</div></div><!-- fragment --><p>Represents a group of services </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8h_source.html#l00061">61</a> of file <a class="el" href="kservicegroup_8h_source.html">kservicegroup.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a353eb95e9c765011b878f725152ddd61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353eb95e9c765011b878f725152ddd61">&#9670;&nbsp;</a></span>EntriesOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKServiceGroup.html#a353eb95e9c765011b878f725152ddd61">KServiceGroup::EntriesOption</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>options for groupEntries and serviceEntries </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8h_source.html#l00197">197</a> of file <a class="el" href="kservicegroup_8h_source.html">kservicegroup.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa8c35fdbaf9bed3da282e7719f1c2a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c35fdbaf9bed3da282e7719f1c2a48">&#9670;&nbsp;</a></span>KServiceGroup() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::KServiceGroup </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a dummy servicegroup indexed with <code>name</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the service group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00030">30</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4afbe0ca4bdee578e1397ab448f496c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4afbe0ca4bdee578e1397ab448f496c1">&#9670;&nbsp;</a></span>KServiceGroup() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::KServiceGroup </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>_fullpath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>_relpath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a service and take all information from a config file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_fullpath</td><td>full path to the config file </td></tr>
+    <tr><td class="paramname">_relpath</td><td>relative path to the config file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00035">35</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae69e711f3692bf56fa3ed4425a5aa836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69e711f3692bf56fa3ed4425a5aa836">&#9670;&nbsp;</a></span>addEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KServiceGroup::addEntry </td>
+          <td>(</td>
+          <td class="paramtype">const KSycocaEntry::Ptr &amp;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a service to this group </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00254">254</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e135302533265025d7e6ef807d8033f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e135302533265025d7e6ef807d8033f">&#9670;&nbsp;</a></span>allowInline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KServiceGroup::allowInline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if we allow to inline menu. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00192">192</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab54c4ba1787f8e05af1d1a31ad517eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54c4ba1787f8e05af1d1a31ad517eb1">&#9670;&nbsp;</a></span>baseGroupName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::baseGroupName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a non-empty string if the group is a special base group. </p>
+<p>By default, "Settings/" is the kcontrol base group ("settings") and "System/Screensavers/" is the screensavers base group ("screensavers"). This allows moving the groups without breaking those apps.</p>
+<p>The base group is defined by the X-KDE-BaseGroup key in the .directory file. </p><dl class="section return"><dt>Returns</dt><dd>the base group name, or null if no base group </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00685">685</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abd2fc42c31919c2f4c156730f3249f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2fc42c31919c2f4c156730f3249f41">&#9670;&nbsp;</a></span>caption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::caption </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the caption of this group. </p>
+<dl class="section return"><dt>Returns</dt><dd>the caption of this group </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00098">98</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a299819cfb1c319f5cf5605ca3d8de082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299819cfb1c319f5cf5605ca3d8de082">&#9670;&nbsp;</a></span>childCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KServiceGroup::childCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the total number of displayable services in this group and any of its subgroups. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of child services </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00116">116</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a496c863535654d966a8cc264807cdbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496c863535654d966a8cc264807cdbc7">&#9670;&nbsp;</a></span>childGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::Ptr KServiceGroup::childGroup </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the group of services that have X-KDE-ParentApp equal to <code>parent</code> (siblings). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the name of the service's parent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the services group </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00679">679</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e345bca464a0d8cc6be246bf55e827d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e345bca464a0d8cc6be246bf55e827d">&#9670;&nbsp;</a></span>comment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::comment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the comment about this service group. </p>
+<dl class="section return"><dt>Returns</dt><dd>the descriptive comment for the group, if there is one, or QString() if not set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00110">110</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7e0315bd3f803785e9e08a3d4a16551c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0315bd3f803785e9e08a3d4a16551c">&#9670;&nbsp;</a></span>directoryEntryPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::directoryEntryPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a path to the .directory file describing this service group. </p>
+<p>The path is either absolute or relative to the "apps" resource. </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00691">691</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53c3ee84bbeeb4b52effb50af9b13e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c3ee84bbeeb4b52effb50af9b13e78">&#9670;&nbsp;</a></span>entries() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::List KServiceGroup::entries </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sorted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>excludeNoDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowSeparators</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sortByGenericName</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of all Services and ServiceGroups within this ServiceGroup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sorted</td><td>true to sort items </td></tr>
+    <tr><td class="paramname">excludeNoDisplay</td><td>true to exclude items marked "NoDisplay" </td></tr>
+    <tr><td class="paramname">allowSeparators</td><td>true to allow separator items to be included </td></tr>
+    <tr><td class="paramname">sortByGenericName</td><td>true to sort GenericName+Name instead of Name+GenericName </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the list of entries </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00342">342</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a78a65875af07f209221912b6c8c56c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a65875af07f209221912b6c8c56c5b">&#9670;&nbsp;</a></span>entries() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::List KServiceGroup::entries </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sorted</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of all Services and ServiceGroups within this ServiceGroup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sorted</td><td>true to sort items </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the list of entried </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00328">328</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a467aa6329a262f56c9b834bc444d53cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467aa6329a262f56c9b834bc444d53cc">&#9670;&nbsp;</a></span>group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::Ptr KServiceGroup::group </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>relPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the group with the given relative path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relPath</td><td>the path of the service group </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the group with the given relative path name. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00669">669</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a84fbc01ae305b700ce2360b2182f2476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fbc01ae305b700ce2360b2182f2476">&#9670;&nbsp;</a></span>groupEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; KServiceGroup::Ptr &gt; KServiceGroup::groupEntries </td>
+          <td>(</td>
+          <td class="paramtype">EntriesOptions&#160;</td>
+          <td class="paramname"><em>options</em> = <code>ExcludeNoDisplay</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>subgroups for this service group </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00290">290</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa10d4023401b230a5a225fe4cb0d43a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10d4023401b230a5a225fe4cb0d43a4">&#9670;&nbsp;</a></span>icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::icon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the icon associated with the group. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the icon associated with the group, or QString() if not set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00104">104</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66aae636c15539cf29c9c865b809479e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66aae636c15539cf29c9c865b809479e">&#9670;&nbsp;</a></span>inlineAlias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KServiceGroup::inlineAlias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true to show an inline alias item into menu </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00156">156</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adec0bbe2030016f739abdf9c706d3a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec0bbe2030016f739abdf9c706d3a90">&#9670;&nbsp;</a></span>inlineValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KServiceGroup::inlineValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>inline limite value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00180">180</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a567aa69be9527394aca2fd5fff6bd716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567aa69be9527394aca2fd5fff6bd716">&#9670;&nbsp;</a></span>layoutInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KServiceGroup::layoutInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns information related to the layout of services in this group. </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00655">655</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a699192f67a0c0fab4c754aa1b299fd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699192f67a0c0fab4c754aa1b299fd9a">&#9670;&nbsp;</a></span>noDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KServiceGroup::noDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the NoDisplay flag was set, i.e. </p>
+<p>if this group should be hidden from menus, while still being in ksycoca. </p><dl class="section return"><dt>Returns</dt><dd>true to hide this service group, false to display it </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00204">204</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43bafb47424325de346e96789ae74517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb47424325de346e96789ae74517">&#9670;&nbsp;</a></span>relPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KServiceGroup::relPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the relative path of the service group. </p>
+<dl class="section return"><dt>Returns</dt><dd>the service group's relative path </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00093">93</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15af7f321c6daae6e1ec9fe054b86870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15af7f321c6daae6e1ec9fe054b86870">&#9670;&nbsp;</a></span>root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KServiceGroup::Ptr KServiceGroup::root </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the root service group. </p>
+<dl class="section return"><dt>Returns</dt><dd>the root service group </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00662">662</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7607c43c9ec641b45c41df20684550b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7607c43c9ec641b45c41df20684550b5">&#9670;&nbsp;</a></span>serviceEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KService::List KServiceGroup::serviceEntries </td>
+          <td>(</td>
+          <td class="paramtype">EntriesOptions&#160;</td>
+          <td class="paramname"><em>options</em> = <code>ExcludeNoDisplay</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>entries of this service group </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00309">309</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0d4b6693d371909b46853d2123287ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4b6693d371909b46853d2123287ab0">&#9670;&nbsp;</a></span>setLayoutInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KServiceGroup::setLayoutInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>layout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets information related to the layout of services in this group. </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00649">649</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9a87a88a51cc62c833c141450025509e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a87a88a51cc62c833c141450025509e">&#9670;&nbsp;</a></span>showEmptyMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KServiceGroup::showEmptyMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if we want to display empty menu entry. </p>
+<dl class="section return"><dt>Returns</dt><dd>true to show this service group as menu entry is empty, false to hide it </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00150">150</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95ba636215b7eed1aed8771a05d6acff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ba636215b7eed1aed8771a05d6acff">&#9670;&nbsp;</a></span>showInlineHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KServiceGroup::showInlineHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true to show an inline header into menu </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00144">144</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0d50ba9f5d9088b88388e2fedca4d40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d50ba9f5d9088b88388e2fedca4d40a">&#9670;&nbsp;</a></span>suppressGenericNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KServiceGroup::suppressGenericNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of untranslated generic names that should be be suppressed when showing this group. </p>
+<p>E.g. The group "Games/Arcade" might want to suppress the generic name "Arcade Game" since it's redundant in this particular context. </p>
+
+<p class="definition">Definition at line <a class="el" href="kservicegroup_8cpp_source.html#l00210">210</a> of file <a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kservicegroup_8h_source.html">kservicegroup.h</a></li>
+<li><a class="el" href="kservicegroup_8cpp_source.html">kservicegroup.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

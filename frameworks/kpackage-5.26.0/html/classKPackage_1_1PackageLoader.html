@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Package - KPackage::PackageLoader Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">Package</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "Package"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKPackage_1_1Package.html">KPackage::Package</option>
+        
+        <option value="classKPackage_1_1PackageLoader.html">KPackage::PackageLoader</option>
+        
+        <option value="namespaceKPackage.html">KPackage</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Library to load and install packages of non binary files as they were a plugin</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Package)
+target_link_libraries(yourapp KF5::Package)</pre>
+        </dd>
+
+    
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kpackage-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>Package on <a href="https://cgit.kde.org/kpackage-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> Package </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=PackageLoader">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKPackage.html">KPackage</a></li><li class="navelem"><a class="el" href="classKPackage_1_1PackageLoader.html">PackageLoader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKPackage_1_1PackageLoader-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KPackage::PackageLoader Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="packageloader_8h_source.html">packageloader.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a737e46fd9ea0a9f9f77d64c301190032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a737e46fd9ea0a9f9f77d64c301190032">addKnownPackageStructure</a> (const QString &amp;packageFormat, KPackage::PackageStructure *structure)</td></tr>
+<tr class="separator:a737e46fd9ea0a9f9f77d64c301190032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08944f550228611fa0d5bb65020ee186"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a08944f550228611fa0d5bb65020ee186">findPackages</a> (const QString &amp;packageFormat, const QString &amp;packageRoot=QString(), std::function&lt; bool(const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;)&gt; filter=std::function&lt; bool(const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;)&gt;())</td></tr>
+<tr class="separator:a08944f550228611fa0d5bb65020ee186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2480cf85aad0055e064487a10c3cb53"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#ad2480cf85aad0055e064487a10c3cb53">listPackages</a> (const QString &amp;packageFormat, const QString &amp;packageRoot=QString())</td></tr>
+<tr class="separator:ad2480cf85aad0055e064487a10c3cb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d08c2f819966419fd2b362b87ad4ea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKPackage_1_1Package.html">Package</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a1d08c2f819966419fd2b362b87ad4ea1">loadPackage</a> (const QString &amp;packageFormat, const QString &amp;packagePath=QString())</td></tr>
+<tr class="separator:a1d08c2f819966419fd2b362b87ad4ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1b49ff73ccf6cf7a8c5afc61fa42e2"><td class="memItemLeft" align="right" valign="top">KPackage::PackageStructure *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a8e1b49ff73ccf6cf7a8c5afc61fa42e2">loadPackageStructure</a> (const QString &amp;packageFormat)</td></tr>
+<tr class="separator:a8e1b49ff73ccf6cf7a8c5afc61fa42e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4f90700cbe677d3e6d4c40cefe618fce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKPackage_1_1PackageLoader.html">PackageLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a4f90700cbe677d3e6d4c40cefe618fce">self</a> ()</td></tr>
+<tr class="separator:a4f90700cbe677d3e6d4c40cefe618fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c36fba4b6299ee5ac085f87eda04832"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#a2c36fba4b6299ee5ac085f87eda04832">setPackageLoader</a> (<a class="el" href="classKPackage_1_1PackageLoader.html">PackageLoader</a> *loader)</td></tr>
+<tr class="separator:a2c36fba4b6299ee5ac085f87eda04832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad55d500c4f2d58c3f4f634422f6e4143"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKPackage_1_1Package.html">Package</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPackage_1_1PackageLoader.html#ad55d500c4f2d58c3f4f634422f6e4143">internalLoadPackage</a> (const QString &amp;packageFormat)</td></tr>
+<tr class="separator:ad55d500c4f2d58c3f4f634422f6e4143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is an abstract base class which defines an interface to which the package loading logiccan communicate with a parent application. </p>
+<p>The plugin loader must be set before any plugins are loaded, otherwise (for safety reasons), the default <a class="el" href="classKPackage_1_1PackageLoader.html" title="This is an abstract base class which defines an interface to which the package loading logiccan commu...">PackageLoader</a> implementation will be used. The reimplemented version should not do more than simply returning a loaded plugin. It should not init() it, and it should not hang on to it.</p>
+<dl class="section author"><dt>Author</dt><dd>Ryan Rix <a href="#" onclick="location.href='mai'+'lto:'+'ry@'+'n.'+'rix'+'.s'+'i'; return false;">ry@n.<span style="display: none;">.nosp@m.</span>rix.<span style="display: none;">.nosp@m.</span>si</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8h_source.html#l00042">42</a> of file <a class="el" href="packageloader_8h_source.html">packageloader.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a737e46fd9ea0a9f9f77d64c301190032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737e46fd9ea0a9f9f77d64c301190032">&#9670;&nbsp;</a></span>addKnownPackageStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPackage::PackageLoader::addKnownPackageStructure </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KPackage::PackageStructure *&#160;</td>
+          <td class="paramname"><em>structure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new known package structure that can be used by the functions to load packages such as loadPackage, findPackages etc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the package format, such as "KPackage/GenericQML" </td></tr>
+    <tr><td class="paramname">structure</td><td>the package structure we want to be able to load packages from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.10 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00374">374</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08944f550228611fa0d5bb65020ee186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08944f550228611fa0d5bb65020ee186">&#9670;&nbsp;</a></span>findPackages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt; KPackage::PackageLoader::findPackages </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageRoot</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; bool(const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>filter</em> = <code>std::function&lt;bool(const&#160;<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a>&#160;&amp;)&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List package of a certain type that match a certain filter function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the format of the packages to list </td></tr>
+    <tr><td class="paramname">packageRoot</td><td>the root folder where the packages are installed. If not specified the default from the packageformat will be taken. </td></tr>
+    <tr><td class="paramname">filter</td><td>a filter function that will be called on each package: will return true for the matching ones</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>metadata for all the matching packages </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.10 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00272">272</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad55d500c4f2d58c3f4f634422f6e4143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55d500c4f2d58c3f4f634422f6e4143">&#9670;&nbsp;</a></span>internalLoadPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPackage_1_1Package.html">Package</a> KPackage::PackageLoader::internalLoadPackage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A re-implementable method that allows subclasses to override the default behaviour of loadPackage. </p>
+<p>If the service requested is not recognized, then the implementation should return an empty and invalid Package(). This method is called by loadPackage prior to attempting to load a <a class="el" href="classKPackage_1_1Package.html" title="object representing an installed package ">Package</a> using the standard plugin mechanisms.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the format of the package to load</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classKPackage_1_1Package.html" title="object representing an installed package ">Package</a> instance with the proper PackageStructure </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00379">379</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2480cf85aad0055e064487a10c3cb53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2480cf85aad0055e064487a10c3cb53">&#9670;&nbsp;</a></span>listPackages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt; KPackage::PackageLoader::listPackages </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageRoot</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List all available packages of a certain type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the format of the packages to list </td></tr>
+    <tr><td class="paramname">packageRoot</td><td>the root folder where the packages are installed. If not specified the default from the packageformat will be taken.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>metadata for all the matching packages </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00184">184</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d08c2f819966419fd2b362b87ad4ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d08c2f819966419fd2b362b87ad4ea1">&#9670;&nbsp;</a></span>loadPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPackage_1_1Package.html">Package</a> KPackage::PackageLoader::loadPackage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packagePath</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a <a class="el" href="classKPackage_1_1Package.html" title="object representing an installed package ">Package</a> plugin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the format of the package to load </td></tr>
+    <tr><td class="paramname">packagePath</td><td>the package name: the path of the package relative to the packageFormat root path. If not specified it will have to be set manually with <a class="el" href="classKPackage_1_1Package.html#a33ecf5e38f16b34cf703247ac8fdf540" title="Sets the path to the root of this package. ">Package::setPath()</a> by the caller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classKPackage_1_1Package.html" title="object representing an installed package ">Package</a> object matching name, or an invalid package on failure </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00151">151</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e1b49ff73ccf6cf7a8c5afc61fa42e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1b49ff73ccf6cf7a8c5afc61fa42e2">&#9670;&nbsp;</a></span>loadPackageStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPackage::PackageStructure * KPackage::PackageLoader::loadPackageStructure </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageFormat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a PackageStructure for a given format. </p>
+<p>The structure can then be used as paramenter for a <a class="el" href="classKPackage_1_1Package.html" title="object representing an installed package ">Package</a> instance constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageFormat</td><td>the package format, such as "KPackage/GenericQML" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the structure instance </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00285">285</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4f90700cbe677d3e6d4c40cefe618fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f90700cbe677d3e6d4c40cefe618fce">&#9670;&nbsp;</a></span>self()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPackage_1_1PackageLoader.html">PackageLoader</a> * KPackage::PackageLoader::self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the active plugin loader. </p>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00138">138</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c36fba4b6299ee5ac085f87eda04832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c36fba4b6299ee5ac085f87eda04832">&#9670;&nbsp;</a></span>setPackageLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPackage::PackageLoader::setPackageLoader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKPackage_1_1PackageLoader.html">PackageLoader</a> *&#160;</td>
+          <td class="paramname"><em>loader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the plugin loader which will be queried for all loads. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loader</td><td>A subclass of <a class="el" href="classKPackage_1_1PackageLoader.html" title="This is an abstract base class which defines an interface to which the package loading logiccan commu...">PackageLoader</a> which will be supplied by the application </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="packageloader_8cpp_source.html#l00127">127</a> of file <a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="packageloader_8h_source.html">packageloader.h</a></li>
+<li><a class="el" href="packageloader_8cpp_source.html">packageloader.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:35 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

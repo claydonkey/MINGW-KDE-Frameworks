@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDNSSD - KDNSSD::ServiceBrowser Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDNSSD</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDNSSD"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</option>
+        
+        <option value="classKDNSSD_1_1DomainModel.html">KDNSSD::DomainModel</option>
+        
+        <option value="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</option>
+        
+        <option value="classKDNSSD_1_1RemoteService.html">KDNSSD::RemoteService</option>
+        
+        <option value="classKDNSSD_1_1Responder.html">KDNSSD::Responder</option>
+        
+        <option value="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</option>
+        
+        <option value="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</option>
+        
+        <option value="classKDNSSD_1_1ServiceModel.html">KDNSSD::ServiceModel</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction to system DNSSD features</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5DNSSD)
+target_link_libraries(yourapp KF5::DNSSD)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDNSSD </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdnssd-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDNSSD on <a href="https://cgit.kde.org/kdnssd-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDNSSD </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=ServiceBrowser">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KDNSSD</b></li><li class="navelem"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html">ServiceBrowser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKDNSSD_1_1ServiceBrowser-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDNSSD::ServiceBrowser Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="servicebrowser_8h_source.html">KDNSSD/ServiceBrowser</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a84c7e602c7fdd47e16e58676a177f61f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61f">State</a> { <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61fa4700e42111e22353d0558464f3d12def">Working</a>,
+<a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61fa9e02f602f7e710559e19a02d55c90dc1">Stopped</a>,
+<a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61fa8032d57900b39474984c7e2f310d3f59">Unsupported</a>
+ }</td></tr>
+<tr class="separator:a84c7e602c7fdd47e16e58676a177f61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a8ce315840489147267890408d101dd4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a8ce315840489147267890408d101dd4a">finished</a> ()</td></tr>
+<tr class="separator:a8ce315840489147267890408d101dd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ab8bdba6cca8b61fb24818db1722f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8">serviceAdded</a> (KDNSSD::RemoteService::Ptr service)</td></tr>
+<tr class="separator:a37ab8bdba6cca8b61fb24818db1722f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c62e4b97fb94b2a7d94f189e552f74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74">serviceRemoved</a> (KDNSSD::RemoteService::Ptr service)</td></tr>
+<tr class="separator:a12c62e4b97fb94b2a7d94f189e552f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae2965fa63de2fb977e1bff806ab452f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ae2965fa63de2fb977e1bff806ab452f5">ServiceBrowser</a> (const QString &amp;type, bool autoResolve=false, const QString &amp;domain=QString(), const QString &amp;subtype=QString())</td></tr>
+<tr class="separator:ae2965fa63de2fb977e1bff806ab452f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258438d1f7a58b772c53f5ca907babbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a258438d1f7a58b772c53f5ca907babbc">isAutoResolving</a> () const</td></tr>
+<tr class="separator:a258438d1f7a58b772c53f5ca907babbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729f46a775f71440e163908310729436"><td class="memItemLeft" align="right" valign="top">QList&lt; RemoteService::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a729f46a775f71440e163908310729436">services</a> () const</td></tr>
+<tr class="separator:a729f46a775f71440e163908310729436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50aecd61b661f0c0925c65aa931e09fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a50aecd61b661f0c0925c65aa931e09fa">startBrowse</a> ()</td></tr>
+<tr class="separator:a50aecd61b661f0c0925c65aa931e09fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aeb8c2abd42e8fe65f354ee24cb8c2d52"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#aeb8c2abd42e8fe65f354ee24cb8c2d52">getLocalHostName</a> ()</td></tr>
+<tr class="separator:aeb8c2abd42e8fe65f354ee24cb8c2d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f402d7933c305570bb4dbc2f4ac961"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61f">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ac0f402d7933c305570bb4dbc2f4ac961">isAvailable</a> ()</td></tr>
+<tr class="separator:ac0f402d7933c305570bb4dbc2f4ac961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2537d3d0b70defc47309fd8d57de3bf2"><td class="memItemLeft" align="right" valign="top">static QHostAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a2537d3d0b70defc47309fd8d57de3bf2">resolveHostName</a> (const QString &amp;hostname)</td></tr>
+<tr class="separator:a2537d3d0b70defc47309fd8d57de3bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa071de9b4608f513ccae1d34adf35634"><td class="memItemLeft" align="right" valign="top"><a id="aa071de9b4608f513ccae1d34adf35634"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int, void *)</td></tr>
+<tr class="separator:aa071de9b4608f513ccae1d34adf35634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Browses for network services advertised over DNS-SD. </p>
+<p>Browses the service types being published on a domain.</p>
+<p>This is the central class in the KDNSSD library for applications that want to discover services on network.</p>
+<p>Suppose that you need list of web servers running. Then you might do something like </p><div class="fragment"><div class="line"><a class="code" href="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</a>* browser = <span class="keyword">new</span> <a class="code" href="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</a>(<span class="stringliteral">&quot;_http._tcp&quot;</span>);</div><div class="line">connect(browser, SIGNAL(<a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8">serviceAdded</a>(RemoteService::Ptr)),</div><div class="line">        <span class="keyword">this</span>,    SLOT(addService(RemoteService::Ptr)));</div><div class="line">connect(browser, SIGNAL(<a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74">serviceRemoved</a>(RemoteService::Ptr)),</div><div class="line">        <span class="keyword">this</span>,    SLOT(delService(RemoteService::Ptr)));</div><div class="line">browser-&gt;<a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a50aecd61b661f0c0925c65aa931e09fa">startBrowse</a>();</div></div><!-- fragment --><p>In above example addService() will be called for every web server already running and for every web service that subsequently appears on the network and delService() will be called when a server previously advertised is stopped.</p>
+<p>Because no domain was passed to constructor, the default domain will be searched. To find other domains to browse for services on, use <a class="el" href="classKDNSSD_1_1DomainBrowser.html" title="Browses recommended domains for browsing or publishing to. ">DomainBrowser</a>.</p>
+<dl class="section author"><dt>Author</dt><dd>Jakub Stachowski</dd></dl>
+<p>This class is mostly useful for generic utilities for browsing all the published services on a local network. Applications that wish to find out about available services of a particular type (such as web servers) should use <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a>.</p>
+<p>ServiceTypeBrowser provides a list of all the service types published by at least one service on a given domain.</p>
+<dl class="section author"><dt>Author</dt><dd>Jakub Stachowski </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="servicebrowser_8h_source.html#l00063">63</a> of file <a class="el" href="servicebrowser_8h_source.html">servicebrowser.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a84c7e602c7fdd47e16e58676a177f61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c7e602c7fdd47e16e58676a177f61f">&#9670;&nbsp;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61f">KDNSSD::ServiceBrowser::State</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Availability of DNS-SD services. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a84c7e602c7fdd47e16e58676a177f61fa4700e42111e22353d0558464f3d12def"></a>Working&#160;</td><td class="fielddoc"><p>the service is available </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84c7e602c7fdd47e16e58676a177f61fa9e02f602f7e710559e19a02d55c90dc1"></a>Stopped&#160;</td><td class="fielddoc"><p>not available because mDnsd or Avahi daemon is not running </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84c7e602c7fdd47e16e58676a177f61fa8032d57900b39474984c7e2f310d3f59"></a>Unsupported&#160;</td><td class="fielddoc"><p>not available because KDE was compiled without DNS-SD support </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="servicebrowser_8h_source.html#l00071">71</a> of file <a class="el" href="servicebrowser_8h_source.html">servicebrowser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae2965fa63de2fb977e1bff806ab452f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2965fa63de2fb977e1bff806ab452f5">&#9670;&nbsp;</a></span>ServiceBrowser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDNSSD::ServiceBrowser::ServiceBrowser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoResolve</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subtype</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a> for a particular service type. </p>
+<p><a class="el" href="classKDNSSD_1_1DomainBrowser.html" title="Browses recommended domains for browsing or publishing to. ">DomainBrowser</a> can be used to find other domains to browse on. If no domain is given, the default domain is used.</p>
+<p>The service type is the high-level protocol type, followed by a dot, followed by the transport protocol type (<code>_tcp</code> or <code>_udp</code>). The <a href="http://www.dns-sd.org">DNS-SD website</a> maintains <a href="http://www.dns-sd.org/ServiceTypes.html">a full list</a> of service types.</p>
+<p>The <code>subtype</code> parameter allows you to do more fine-grained filtering on the services you are interested in. So you might request only FTP servers that allow anonymous access by passing "_ftp._tcp" as the <code>type</code> and "_anon" as the <code>subtype</code>. Subtypes are particularly important for types like _soap and _upnp, which are far too generic for most applications. In these cases, the subtype can be used to specify the particular SOAP or UPnP protocol they want.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Enabling <code>autoResolve</code> will increase network usage by resolving all services, so this feature should be used only when necessary.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>service types to browse for (example: "_http._tcp") </td></tr>
+    <tr><td class="paramname">autoResolve</td><td>discovered services will be resolved before being reported with the <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> signal </td></tr>
+    <tr><td class="paramname">domain</td><td>a domain to search on instead of the default one </td></tr>
+    <tr><td class="paramname">subtype</td><td>only browse for a specific subtype</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a50aecd61b661f0c0925c65aa931e09fa" title="Starts browsing for services. ">startBrowse()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ac0f402d7933c305570bb4dbc2f4ac961" title="Checks availability of DNS-SD services. ">isAvailable()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00031">31</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ce315840489147267890408d101dd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce315840489147267890408d101dd4a">&#9670;&nbsp;</a></span>finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::ServiceBrowser::finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the list of published services has settled. </p>
+<p>This signal is emitted once after <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a50aecd61b661f0c0925c65aa931e09fa" title="Starts browsing for services. ">startBrowse()</a> is called when all the services of the requested type that are currently published have been reported (even if none are available or the DNS-SD service is not available). It is emitted again when a new batch of services become available or disappear.</p>
+<p>For example, if a new host is connected to network and announces some services watched for by this <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a>, they will be reported by one or more <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> signals and the whole batch will be concluded by <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a8ce315840489147267890408d101dd4a" title="Emitted when the list of published services has settled. ">finished()</a>.</p>
+<p>This signal can be used by applications that just want to get a list of the currently available services (similar to a directory listing) and do not care about adding or removing services that appear or disappear later.</p>
+<dl class="section warning"><dt>Warning</dt><dd>There is no guarantee any <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> pointers received by <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> will be valid by the time this signal is emitted, so you should either do all your work involving them in the slot receiving the <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> signal, or you should listen to <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74" title="Emitted when a service is no longer published over DNS-SD. ">serviceRemoved()</a> as well.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74" title="Emitted when a service is no longer published over DNS-SD. ">serviceRemoved()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aeb8c2abd42e8fe65f354ee24cb8c2d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8c2abd42e8fe65f354ee24cb8c2d52">&#9670;&nbsp;</a></span>getLocalHostName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KDNSSD::ServiceBrowser::getLocalHostName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The mDNS hostname of the local machine. </p>
+<p>Usually this will return the same as QHostInfo::localHostName(), but it may be changed to something different in the Avahi configuration file (if using the Avahi backend).</p>
+<dl class="section return"><dt>Returns</dt><dd>the hostname, or an empty string on failure </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00187">187</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a258438d1f7a58b772c53f5ca907babbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258438d1f7a58b772c53f5ca907babbc">&#9670;&nbsp;</a></span>isAutoResolving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::ServiceBrowser::isAutoResolving </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether discovered services are resolved before being reported. </p>
+<dl class="section return"><dt>Returns</dt><dd>the value of the <code>autoResolve</code> parameter passed to the constructor</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00052">52</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac0f402d7933c305570bb4dbc2f4ac961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f402d7933c305570bb4dbc2f4ac961">&#9670;&nbsp;</a></span>isAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61f">ServiceBrowser::State</a> KDNSSD::ServiceBrowser::isAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks availability of DNS-SD services. </p>
+<p>Although this method is part of <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a>, none of the classes in this library will be able to perform their intended function if this method does not return Working.</p>
+<p>If this method does not return Working, it is still safe to call any of the methods in this library. However, no services will be found or published and no domains will be found.</p>
+<p>If you use this function to report an error to the user, below is a suggestion on how to word the errors when publishing a service. The first line of each error message can also be used for reporting errors when browsing for services.</p>
+<div class="fragment"><div class="line"><span class="keywordflow">switch</span>(<a class="code" href="classKDNSSD_1_1ServiceBrowser.html#ac0f402d7933c305570bb4dbc2f4ac961">KDNSSD::ServiceBrowser::isAvailable</a>()) {</div><div class="line"><span class="keywordflow">case</span> <a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61fa4700e42111e22353d0558464f3d12def">KDNSSD::ServiceBrowser::Working</a>:</div><div class="line">    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><span class="keywordflow">case</span> <a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a84c7e602c7fdd47e16e58676a177f61fa9e02f602f7e710559e19a02d55c90dc1">KDNSSD::ServiceBrowser::Stopped</a>:</div><div class="line">    <span class="keywordflow">return</span> i18n(<span class="stringliteral">&quot;&lt;p&gt;The Zeroconf daemon is not running. See the Service&quot;</span></div><div class="line">                <span class="stringliteral">&quot; Discovery Handbook for more information.&lt;br/&gt;&quot;</span></div><div class="line">                <span class="stringliteral">&quot;Other users will not see the services provided by this</span></div><div class="line"><span class="stringliteral">                &quot;</span> system when browsing the network via zeroconf, but <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">                &quot;</span> normal access will still work.&lt;/p&gt;<span class="stringliteral">&quot;);</span></div><div class="line"><span class="stringliteral">case KDNSSD::ServiceBrowser::Unsupported:</span></div><div class="line"><span class="stringliteral">    return i18n(&quot;</span>&lt;p&gt;Zeroconf support is not available in <span class="keyword">this</span> version of KDE.<span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">                &quot;</span> See the Service Discovery Handbook <span class="keywordflow">for</span> more <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKMessageBox.html#a13570f6490c64082ec68f3a04c0d1ac5">information</a>.&lt;br/&gt;<span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">                &quot;</span>Other users will not see the <a class="code" href="classKDNSSD_1_1ServiceBrowser.html#a729f46a775f71440e163908310729436">services</a> provided by <span class="keyword">this</span></div><div class="line">                <span class="stringliteral">&quot; application when browsing the network via zeroconf, but &quot;</span></div><div class="line">                <span class="stringliteral">&quot; normal access will still work.&lt;/p&gt;&quot;</span>);</div><div class="line"><span class="keywordflow">default</span>:</div><div class="line">    <span class="keywordflow">return</span> i18n(<span class="stringliteral">&quot;&lt;p&gt;Unknown error with Zeroconf.&lt;br/&gt;&quot;</span></div><div class="line">                <span class="stringliteral">&quot;Other users will not see the services provided by this</span></div><div class="line"><span class="stringliteral">                &quot;</span> application when browsing the network via zeroconf, but <span class="stringliteral">&quot;</span></div><div class="line"><span class="stringliteral">                &quot;</span> normal access will still work.&lt;/p&gt;<span class="stringliteral">&quot;);</span></div><div class="line"><span class="stringliteral">}</span></div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00041">41</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2537d3d0b70defc47309fd8d57de3bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2537d3d0b70defc47309fd8d57de3bf2">&#9670;&nbsp;</a></span>resolveHostName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHostAddress KDNSSD::ServiceBrowser::resolveHostName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>hostname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves an mDNS hostname into an IP address. </p>
+<p>This function is very rarely useful, since a properly configured system is able to resolve an mDNS-based host name using the system resolver (ie: you can just pass the mDNS hostname to <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/namespaceKIO.html">KIO</a> or other library).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostname</td><td>the hostname to be resolved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a QHostAddress containing the IP address, or QHostAddress() if resolution failed </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00168">168</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a37ab8bdba6cca8b61fb24818db1722f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ab8bdba6cca8b61fb24818db1722f8">&#9670;&nbsp;</a></span>serviceAdded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::ServiceBrowser::serviceAdded </td>
+          <td>(</td>
+          <td class="paramtype">KDNSSD::RemoteService::Ptr&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when new service is discovered. </p>
+<p>If <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a258438d1f7a58b772c53f5ca907babbc" title="Whether discovered services are resolved before being reported. ">isAutoResolving()</a> returns <code>true</code>, this will not be emitted until the service has been resolved.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>a <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> object describing the service</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74" title="Emitted when a service is no longer published over DNS-SD. ">serviceRemoved()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a8ce315840489147267890408d101dd4a" title="Emitted when the list of published services has settled. ">finished()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a12c62e4b97fb94b2a7d94f189e552f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c62e4b97fb94b2a7d94f189e552f74">&#9670;&nbsp;</a></span>serviceRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::ServiceBrowser::serviceRemoved </td>
+          <td>(</td>
+          <td class="paramtype">KDNSSD::RemoteService::Ptr&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a service is no longer published over DNS-SD. </p>
+<p>The <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> object is removed from the <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a729f46a775f71440e163908310729436" title="The currently known services of the specified type. ">services()</a> list and deleted immediately after this signal returns.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Do <b>not</b> use a delayed connection with this signal</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>a <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> object describing the service</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a8ce315840489147267890408d101dd4a" title="Emitted when the list of published services has settled. ">finished()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a729f46a775f71440e163908310729436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729f46a775f71440e163908310729436">&#9670;&nbsp;</a></span>services()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; RemoteService::Ptr &gt; KDNSSD::ServiceBrowser::services </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The currently known services of the specified type. </p>
+<dl class="section return"><dt>Returns</dt><dd>a list of <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> pointers</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74" title="Emitted when a service is no longer published over DNS-SD. ">serviceRemoved()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00160">160</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50aecd61b661f0c0925c65aa931e09fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50aecd61b661f0c0925c65aa931e09fa">&#9670;&nbsp;</a></span>startBrowse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::ServiceBrowser::startBrowse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts browsing for services. </p>
+<p>Only the first call to this function will have any effect.</p>
+<p>Browsing stops when the <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a> object is destroyed.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a> signal may be emitted before this function returns.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a37ab8bdba6cca8b61fb24818db1722f8" title="Emitted when new service is discovered. ">serviceAdded()</a>, <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a12c62e4b97fb94b2a7d94f189e552f74" title="Emitted when a service is no longer published over DNS-SD. ">serviceRemoved()</a> and <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#a8ce315840489147267890408d101dd4a" title="Emitted when the list of published services has settled. ">finished()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-servicebrowser_8cpp_source.html#l00057">57</a> of file <a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="servicebrowser_8h_source.html">servicebrowser.h</a></li>
+<li><a class="el" href="avahi-servicebrowser_8cpp_source.html">avahi-servicebrowser.cpp</a></li>
+<li><a class="el" href="dummy-servicebrowser_8cpp_source.html">dummy-servicebrowser.cpp</a></li>
+<li><a class="el" href="mdnsd-servicebrowser_8cpp_source.html">mdnsd-servicebrowser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

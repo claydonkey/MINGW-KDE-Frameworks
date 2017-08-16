@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KArchive - KArchive Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KArchive</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KArchive"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classK7Zip.html">K7Zip</option>
+        
+        <option value="classKAr.html">KAr</option>
+        
+        <option value="classKArchive.html">KArchive</option>
+        
+        <option value="classKArchiveDirectory.html">KArchiveDirectory</option>
+        
+        <option value="classKArchiveEntry.html">KArchiveEntry</option>
+        
+        <option value="classKArchiveFile.html">KArchiveFile</option>
+        
+        <option value="classKCompressionDevice.html">KCompressionDevice</option>
+        
+        <option value="classKFilterBase.html">KFilterBase</option>
+        
+        <option value="classKFilterDev.html">KFilterDev</option>
+        
+        <option value="classKGzipFilter.html">KGzipFilter</option>
+        
+        <option value="classKNoneFilter.html">KNoneFilter</option>
+        
+        <option value="classKRcc.html">KRcc</option>
+        
+        <option value="classKTar.html">KTar</option>
+        
+        <option value="classKZip.html">KZip</option>
+        
+        <option value="classKZipFileEntry.html">KZipFileEntry</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>File compression</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Archive)
+target_link_libraries(yourapp KF5::Archive)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KArchive </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/karchive-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KArchive on <a href="https://cgit.kde.org/karchive-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KArchive </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KArchive">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKArchive-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KArchive Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="karchive_8h_source.html">karchive.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KArchive:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKArchive__inherit__graph.png" border="0" usemap="#KArchive_inherit__map" alt="Inheritance graph"/></div>
+<map name="KArchive_inherit__map" id="KArchive_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab5a2f90d4003664127e744d078162c34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ab5a2f90d4003664127e744d078162c34">addLocalDirectory</a> (const QString &amp;path, const QString &amp;destName)</td></tr>
+<tr class="separator:ab5a2f90d4003664127e744d078162c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3b4d361c4b57fe8cb956a9b49a85e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a1e3b4d361c4b57fe8cb956a9b49a85e4">addLocalFile</a> (const QString &amp;<a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a>, const QString &amp;destName)</td></tr>
+<tr class="separator:a1e3b4d361c4b57fe8cb956a9b49a85e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fc5a093095ac0315e692e81aa4fce6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a13fc5a093095ac0315e692e81aa4fce6">close</a> ()</td></tr>
+<tr class="separator:a13fc5a093095ac0315e692e81aa4fce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1126fb09ca2849da19372e62f9498a15"><td class="memItemLeft" align="right" valign="top">QIODevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a1126fb09ca2849da19372e62f9498a15">device</a> () const</td></tr>
+<tr class="separator:a1126fb09ca2849da19372e62f9498a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687f8801e5eb0b6476ddd7821c31f627"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a687f8801e5eb0b6476ddd7821c31f627">directory</a> () const</td></tr>
+<tr class="separator:a687f8801e5eb0b6476ddd7821c31f627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8c517921d59a7f48f7090cbcf5efcc"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a> () const</td></tr>
+<tr class="separator:adb8c517921d59a7f48f7090cbcf5efcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28478783281e5f729210ef7ecac9c225"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a28478783281e5f729210ef7ecac9c225">finishWriting</a> (qint64 size)</td></tr>
+<tr class="separator:a28478783281e5f729210ef7ecac9c225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec27152dc3cc0fa3df28daa8707d968d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aec27152dc3cc0fa3df28daa8707d968d">isOpen</a> () const</td></tr>
+<tr class="separator:aec27152dc3cc0fa3df28daa8707d968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4aa377c4f4fefe55f840aa6ffcb3400"><td class="memItemLeft" align="right" valign="top">QIODevice::OpenMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a> () const</td></tr>
+<tr class="separator:ac4aa377c4f4fefe55f840aa6ffcb3400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5269559282e6cfe2c261ba059e32b66a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a">open</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>)</td></tr>
+<tr class="separator:a5269559282e6cfe2c261ba059e32b66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e50420630c3bb44f617ad812b673332"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a7e50420630c3bb44f617ad812b673332">prepareWriting</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, qint64 size, mode_t perm=0100644, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a7e50420630c3bb44f617ad812b673332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16180fff07f057fbcb4a23f4c3840dc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aa16180fff07f057fbcb4a23f4c3840dc">writeData</a> (const char *data, qint64 size)</td></tr>
+<tr class="separator:aa16180fff07f057fbcb4a23f4c3840dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8dad1251bf8b2303b677445dcb86c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a8e8dad1251bf8b2303b677445dcb86c0">writeDir</a> (const QString &amp;name, const QString &amp;user=QString(), const QString &amp;group=QString(), mode_t perm=040755, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a8e8dad1251bf8b2303b677445dcb86c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cf0bf8afebd3681b62e52d417b20bf"><td class="memItemLeft" align="right" valign="top">KARCHIVE_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aa6cf0bf8afebd3681b62e52d417b20bf">writeFile</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, const char *data, qint64 size, mode_t perm=0100644, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:aa6cf0bf8afebd3681b62e52d417b20bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb615bb1d33578f57f69af2b1e72029d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aeb615bb1d33578f57f69af2b1e72029d">writeFile</a> (const QString &amp;name, const QByteArray &amp;data, mode_t perm=0100644, const QString &amp;user=QString(), const QString &amp;group=QString(), const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:aeb615bb1d33578f57f69af2b1e72029d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5625944353172a5dbd229bf1a08d8a91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a5625944353172a5dbd229bf1a08d8a91">writeSymLink</a> (const QString &amp;name, const QString &amp;target, const QString &amp;user=QString(), const QString &amp;group=QString(), mode_t perm=0120755, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a5625944353172a5dbd229bf1a08d8a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4386c6e12dc034c0687aa8bb738bf25d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a4386c6e12dc034c0687aa8bb738bf25d">KArchive</a> (const QString &amp;<a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a>)</td></tr>
+<tr class="separator:a4386c6e12dc034c0687aa8bb738bf25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efbb71ada0630d90c5af53fedce9b19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a3efbb71ada0630d90c5af53fedce9b19">KArchive</a> (QIODevice *dev)</td></tr>
+<tr class="separator:a3efbb71ada0630d90c5af53fedce9b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fa0982c4acaf9dcca8df09749e99a0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a52fa0982c4acaf9dcca8df09749e99a0">closeArchive</a> ()=0</td></tr>
+<tr class="separator:a52fa0982c4acaf9dcca8df09749e99a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e286c61a775bb3a004e23ba5f1fa46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a13e286c61a775bb3a004e23ba5f1fa46">createDevice</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>)</td></tr>
+<tr class="separator:a13e286c61a775bb3a004e23ba5f1fa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181381217cda7b1d32abd7422b3de4ff"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a181381217cda7b1d32abd7422b3de4ff">doFinishWriting</a> (qint64 size)=0</td></tr>
+<tr class="separator:a181381217cda7b1d32abd7422b3de4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719ec1a1c62c015e993dee72ecb5fce7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a719ec1a1c62c015e993dee72ecb5fce7">doPrepareWriting</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, qint64 size, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime)=0</td></tr>
+<tr class="separator:a719ec1a1c62c015e993dee72ecb5fce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4423297991d66579ea9fbf070f91ff48"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a4423297991d66579ea9fbf070f91ff48">doWriteDir</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime)=0</td></tr>
+<tr class="separator:a4423297991d66579ea9fbf070f91ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d818a6892534b4f559d3f4612a18dd5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a4d818a6892534b4f559d3f4612a18dd5">doWriteSymLink</a> (const QString &amp;name, const QString &amp;target, const QString &amp;user, const QString &amp;group, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime)=0</td></tr>
+<tr class="separator:a4d818a6892534b4f559d3f4612a18dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5dfd148c5c870da8a2330d0371e3d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aa5dfd148c5c870da8a2330d0371e3d6e">findOrCreate</a> (const QString &amp;path)</td></tr>
+<tr class="separator:aa5dfd148c5c870da8a2330d0371e3d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868eecf661cda9b0fd26b6c9a1319555"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a868eecf661cda9b0fd26b6c9a1319555">openArchive</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>)=0</td></tr>
+<tr class="separator:a868eecf661cda9b0fd26b6c9a1319555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218da40618b5ea5623656d3dbf3d9ecc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a218da40618b5ea5623656d3dbf3d9ecc">rootDir</a> ()</td></tr>
+<tr class="separator:a218da40618b5ea5623656d3dbf3d9ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39343456c9c458230546b64ffc66a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#af39343456c9c458230546b64ffc66a31">setDevice</a> (QIODevice *dev)</td></tr>
+<tr class="separator:af39343456c9c458230546b64ffc66a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12a8b556703e189b9e2ebc886a18319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ae12a8b556703e189b9e2ebc886a18319">setRootDir</a> (<a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *<a class="el" href="classKArchive.html#a218da40618b5ea5623656d3dbf3d9ecc">rootDir</a>)</td></tr>
+<tr class="separator:ae12a8b556703e189b9e2ebc886a18319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480f2e659a263c034300627135f6fb59"><td class="memItemLeft" align="right" valign="top"><a id="a480f2e659a263c034300627135f6fb59"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int id, void *data)</td></tr>
+<tr class="separator:a480f2e659a263c034300627135f6fb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a> is a base class for reading and writing archives. </p>
+<p>generic class for reading/writing archives </p><dl class="section author"><dt>Author</dt><dd>David Faure <a href="#" onclick="location.href='mai'+'lto:'+'fau'+'re'+'@kd'+'e.'+'org'; return false;">faure<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8h_source.html#l00048">48</a> of file <a class="el" href="karchive_8h_source.html">karchive.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4386c6e12dc034c0687aa8bb738bf25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4386c6e12dc034c0687aa8bb738bf25d">&#9670;&nbsp;</a></span>KArchive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KArchive::KArchive </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base constructor (protected since this is a pure virtual class). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>is a local path (e.g. "/tmp/myfile.ext"), from which the archive will be read from, or into which the archive will be written, depending on the mode given to <a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a" title="Opens the archive for reading or writing. ">open()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00056">56</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3efbb71ada0630d90c5af53fedce9b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efbb71ada0630d90c5af53fedce9b19">&#9670;&nbsp;</a></span>KArchive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KArchive::KArchive </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base constructor (protected since this is a pure virtual class). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>the I/O device where the archive reads its data Note that this can be a file, but also a data buffer, a compression filter, etc. For a file in writing mode it is better to use the other constructor though, to benefit from the use of QSaveFile when saving. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00067">67</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5a2f90d4003664127e744d078162c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a2f90d4003664127e744d078162c34">&#9670;&nbsp;</a></span>addLocalDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::addLocalDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>destName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a local directory into the archive, including all its contents, recursively. </p>
+<p>Calls addLocalFile for each file to be added.</p>
+<p>It will also add a <code>path</code> that is a symbolic link to a directory. The symbolic link will be dereferenced and the content of the directory it is pointing to added recursively. However, symbolic links <em>under</em> <code>path</code> will be stored as is. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>full path to an existing local directory, to be added to the archive. </td></tr>
+    <tr><td class="paramname">destName</td><td>the resulting name (or relative path) of the file in the archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00278">278</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e3b4d361c4b57fe8cb956a9b49a85e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3b4d361c4b57fe8cb956a9b49a85e4">&#9670;&nbsp;</a></span>addLocalFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::addLocalFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>destName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a local file into the archive. </p>
+<p>The main difference with writeFile, is that this method minimizes memory usage, by not loading the whole file into memory in one go.</p>
+<p>If <code>fileName</code> is a symbolic link, it will be written as is, i. e. it will not be resolved before. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>full path to an existing local file, to be added to the archive. </td></tr>
+    <tr><td class="paramname">destName</td><td>the resulting name (or relative path) of the file in the archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00190">190</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13fc5a093095ac0315e692e81aa4fce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fc5a093095ac0315e692e81aa4fce6">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the archive. </p>
+<p>Inherited classes might want to reimplement closeArchive instead.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if close succeeded without problems </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a" title="Opens the archive for reading or writing. ">open</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00146">146</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a52fa0982c4acaf9dcca8df09749e99a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fa0982c4acaf9dcca8df09749e99a0">&#9670;&nbsp;</a></span>closeArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::closeArchive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the archive. </p>
+<p>Called by close. </p>
+
+<p>Implemented in <a class="el" href="classKZip.html#a8b732f0df8e83658cabb7eff226941c8">KZip</a>, <a class="el" href="classKTar.html#a963f2c3fc94e0a44c1f24846a8db7a20">KTar</a>, <a class="el" href="classKRcc.html#a7d32b3a4e283ba7a66d30c76069c3f33">KRcc</a>, <a class="el" href="classKAr.html#abe954c7a9f94be4038255e056f2c1573">KAr</a>, and <a class="el" href="classK7Zip.html#a44e7c936b5613c61729ee23b34f25d9a">K7Zip</a>.</p>
+
+</div>
+</div>
+<a id="a13e286c61a775bb3a004e23ba5f1fa46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e286c61a775bb3a004e23ba5f1fa46">&#9670;&nbsp;</a></span>createDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::createDevice </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice::OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Can be reimplemented in order to change the creation of the device (when using the fileName constructor). </p>
+<p>By default this method uses QSaveFile when saving, and a simple QFile on reading. This method is called by <a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a" title="Opens the archive for reading or writing. ">open()</a>. </p>
+
+<p>Reimplemented in <a class="el" href="classKTar.html#a595e1d5daed28aa53a185f260ce8b629">KTar</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00113">113</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1126fb09ca2849da19372e62f9498a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1126fb09ca2849da19372e62f9498a15">&#9670;&nbsp;</a></span>device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIODevice * KArchive::device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The underlying device. </p>
+<dl class="section return"><dt>Returns</dt><dd>the underlying device. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00486">486</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a687f8801e5eb0b6476ddd7821c31f627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687f8801e5eb0b6476ddd7821c31f627">&#9670;&nbsp;</a></span>directory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> * KArchive::directory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If an archive is opened for reading, then the contents of the archive can be accessed via this function. </p>
+<dl class="section return"><dt>Returns</dt><dd>the directory of the archive </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00184">184</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a181381217cda7b1d32abd7422b3de4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181381217cda7b1d32abd7422b3de4ff">&#9670;&nbsp;</a></span>doFinishWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::doFinishWriting </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called after writing the data. </p>
+<p>This virtual method must be implemented by subclasses.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the size of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a28478783281e5f729210ef7ecac9c225" title="Call finishWriting after writing the data. ">finishWriting()</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classKZip.html#a779b54eddb092d2e97503a276b9fddfc">KZip</a>, <a class="el" href="classKTar.html#a3402a798f13eb00692901885c66b503c">KTar</a>, <a class="el" href="classK7Zip.html#a34c6b2faa847ea99e08839ff186e75cc">K7Zip</a>, <a class="el" href="classKAr.html#af0537ec98d8c4fcc9c04b689360a22d3">KAr</a>, and <a class="el" href="classKRcc.html#a4f34239a914071605e4a8b3a67a59c85">KRcc</a>.</p>
+
+</div>
+</div>
+<a id="a719ec1a1c62c015e993dee72ecb5fce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719ec1a1c62c015e993dee72ecb5fce7">&#9670;&nbsp;</a></span>doPrepareWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::doPrepareWriting </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This virtual method must be implemented by subclasses. </p>
+<p>Depending on the archive type not all metadata might be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the file </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the file </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the file </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the file </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the file. Use 0100644 if you don't have any more specific permissions to set. </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a7e50420630c3bb44f617ad812b673332" title="Here&#39;s another way of writing a file into an archive: Call prepareWriting(), then call writeData() as...">prepareWriting</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classKZip.html#a5c41f2268fe0ab47b463ea41b9dc4d71">KZip</a>, <a class="el" href="classKTar.html#ac83bfdbafb791894f791e33e3f5e48b7">KTar</a>, <a class="el" href="classK7Zip.html#af5509064e8d15a5f879deb8e3c690164">K7Zip</a>, <a class="el" href="classKAr.html#ac2c892eda0beb9cc94d61ae0b9337755">KAr</a>, and <a class="el" href="classKRcc.html#a9568adce115ae3efacc4d6c3928d0aaf">KRcc</a>.</p>
+
+</div>
+</div>
+<a id="a4423297991d66579ea9fbf070f91ff48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4423297991d66579ea9fbf070f91ff48">&#9670;&nbsp;</a></span>doWriteDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::doWriteDir </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write a directory to the archive. </p>
+<p>This virtual method must be implemented by subclasses.</p>
+<p>Depending on the archive type not all metadata might be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the directory </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the directory </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the directory </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the directory. Use 040755 if you don't have any other information. </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a8e8dad1251bf8b2303b677445dcb86c0" title="If an archive is opened for writing then you can add new directories using this function. ">writeDir</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classKZip.html#a1c872c7826c50ccd5b9fc6247dab3923">KZip</a>, <a class="el" href="classKTar.html#ab7e296bf9ad349e68b00b3a5755b0bcd">KTar</a>, <a class="el" href="classKAr.html#acbe42c2c913f4b89e8a596c1dd78f312">KAr</a>, <a class="el" href="classKRcc.html#a01d52e7e4b887813507382a870d66e0b">KRcc</a>, and <a class="el" href="classK7Zip.html#a0ae007127015e6c87bfb6dfd11f4377f">K7Zip</a>.</p>
+
+</div>
+</div>
+<a id="a4d818a6892534b4f559d3f4612a18dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d818a6892534b4f559d3f4612a18dd5">&#9670;&nbsp;</a></span>doWriteSymLink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::doWriteSymLink </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a symbolic link to the archive. </p>
+<p>This virtual method must be implemented by subclasses.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of symbolic link </td></tr>
+    <tr><td class="paramname">target</td><td>target of symbolic link </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the directory </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the directory </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the directory </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a5625944353172a5dbd229bf1a08d8a91" title="Writes a symbolic link to the archive if supported. ">writeSymLink</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classKZip.html#ace30d108e4428e06f33fa7c26eae4cc1">KZip</a>, <a class="el" href="classKTar.html#a397a1617c71924cb2bc57122d409f4bd">KTar</a>, <a class="el" href="classKRcc.html#a8822cbee0507ca869254b2b18c32f17d">KRcc</a>, <a class="el" href="classKAr.html#a1f669857985f78d67e9d4e83666fd21e">KAr</a>, and <a class="el" href="classK7Zip.html#a5a9a0325d0646630a2612bc157923cac">K7Zip</a>.</p>
+
+</div>
+</div>
+<a id="adb8c517921d59a7f48f7090cbcf5efcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8c517921d59a7f48f7090cbcf5efcc">&#9670;&nbsp;</a></span>fileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KArchive::fileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the archive file, as passed to the constructor that takes a fileName, or an empty string if you used the QIODevice constructor. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the file, or QString() if unknown </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00496">496</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5dfd148c5c870da8a2330d0371e3d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5dfd148c5c870da8a2330d0371e3d6e">&#9670;&nbsp;</a></span>findOrCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> * KArchive::findOrCreate </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensures that <code>path</code> exists, create otherwise. </p>
+<p>This handles e.g. tar files missing directory entries, like mico-2.3.0.tar.gz :) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>the path of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the directory with the given <code>path</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00418">418</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28478783281e5f729210ef7ecac9c225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28478783281e5f729210ef7ecac9c225">&#9670;&nbsp;</a></span>finishWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::finishWriting </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call finishWriting after writing the data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the size of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a7e50420630c3bb44f617ad812b673332" title="Here&#39;s another way of writing a file into an archive: Call prepareWriting(), then call writeData() as...">prepareWriting()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00371">371</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec27152dc3cc0fa3df28daa8707d968d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec27152dc3cc0fa3df28daa8707d968d">&#9670;&nbsp;</a></span>isOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::isOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the archive is open. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the archive is opened </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00491">491</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4aa377c4f4fefe55f840aa6ffcb3400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4aa377c4f4fefe55f840aa6ffcb3400">&#9670;&nbsp;</a></span>mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIODevice::OpenMode KArchive::mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mode in which the archive was opened. </p>
+<dl class="section return"><dt>Returns</dt><dd>the mode in which the archive was opened (QIODevice::ReadOnly or QIODevice::WriteOnly) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a" title="Opens the archive for reading or writing. ">open()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00481">481</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5269559282e6cfe2c261ba059e32b66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5269559282e6cfe2c261ba059e32b66a">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::open </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice::OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens the archive for reading or writing. </p>
+<p>Inherited classes might want to reimplement openArchive instead. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>may be QIODevice::ReadOnly or QIODevice::WriteOnly </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKArchive.html#a13fc5a093095ac0315e692e81aa4fce6" title="Closes the archive. ">close</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00082">82</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a868eecf661cda9b0fd26b6c9a1319555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868eecf661cda9b0fd26b6c9a1319555">&#9670;&nbsp;</a></span>openArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KArchive::openArchive </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice::OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens an archive for reading or writing. </p>
+<p>Called by open. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>may be QIODevice::ReadOnly or QIODevice::WriteOnly </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classKZip.html#a18c321438e2c8f44c5e2dcf69fbdbc5a">KZip</a>, <a class="el" href="classKTar.html#a85ce841ac81b8dbce228e152cda5d555">KTar</a>, <a class="el" href="classKAr.html#a8d994e724271f25c34edfb2237d61399">KAr</a>, <a class="el" href="classKRcc.html#a99aa0df3a18ec989d3633549a2e95368">KRcc</a>, and <a class="el" href="classK7Zip.html#a390f17f49925c41c6997a4ebf83bdfd3">K7Zip</a>.</p>
+
+</div>
+</div>
+<a id="a7e50420630c3bb44f617ad812b673332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e50420630c3bb44f617ad812b673332">&#9670;&nbsp;</a></span>prepareWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::prepareWriting </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em> = <code>0100644</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>QDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Here's another way of writing a file into an archive: Call <a class="el" href="classKArchive.html#a7e50420630c3bb44f617ad812b673332" title="Here&#39;s another way of writing a file into an archive: Call prepareWriting(), then call writeData() as...">prepareWriting()</a>, then call <a class="el" href="classKArchive.html#aa16180fff07f057fbcb4a23f4c3840dc" title="Write data into the current file - to be called after calling prepareWriting. ">writeData()</a> as many times as wanted then call finishWriting( totalSize ). </p>
+<p>For tar.gz files, you need to know the size before hand, it is needed in the header! For zip files, size isn't used.</p>
+<p>This method also allows some file metadata to be set. However, depending on the archive type not all metadata might be regarded. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the file </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the file </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the file </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the file </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the file </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00359">359</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a218da40618b5ea5623656d3dbf3d9ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218da40618b5ea5623656d3dbf3d9ecc">&#9670;&nbsp;</a></span>rootDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> * KArchive::rootDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves or create the root directory. </p>
+<p>The default implementation assumes that <a class="el" href="classKArchive.html#a868eecf661cda9b0fd26b6c9a1319555" title="Opens an archive for reading or writing. ">openArchive()</a> did the parsing, so it creates a dummy rootdir if none was set (write mode, or no '/' in the archive). Reimplement this to provide parsing/listing on demand. </p><dl class="section return"><dt>Returns</dt><dd>the root directory </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00406">406</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af39343456c9c458230546b64ffc66a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39343456c9c458230546b64ffc66a31">&#9670;&nbsp;</a></span>setDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KArchive::setDevice </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Can be called by derived classes in order to set the underlying device. </p>
+<p>Note that <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a> will -not- own the device, it must be deleted by the derived class. </p>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00466">466</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae12a8b556703e189b9e2ebc886a18319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12a8b556703e189b9e2ebc886a18319">&#9670;&nbsp;</a></span>setRootDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KArchive::setRootDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td>
+          <td class="paramname"><em>rootDir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Derived classes call setRootDir from openArchive, to set the root directory after parsing an existing archive. </p>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00475">475</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa16180fff07f057fbcb4a23f4c3840dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16180fff07f057fbcb4a23f4c3840dc">&#9670;&nbsp;</a></span>writeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::writeData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write data into the current file - to be called after calling prepareWriting. </p>
+
+<p>Reimplemented in <a class="el" href="classKZip.html#aaa3425245096f000f5a82d5e572ce4f9">KZip</a>, and <a class="el" href="classK7Zip.html#aa83781241d632dd22c4f30cff68a42f8">K7Zip</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00329">329</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e8dad1251bf8b2303b677445dcb86c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8dad1251bf8b2303b677445dcb86c0">&#9670;&nbsp;</a></span>writeDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::writeDir </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em> = <code>040755</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>QDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If an archive is opened for writing then you can add new directories using this function. </p>
+<p><a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a> won't write one directory twice.</p>
+<p>This method also allows some file metadata to be set. However, depending on the archive type not all metadata might be regarded.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the directory </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the directory </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the directory </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the directory </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00344">344</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa6cf0bf8afebd3681b62e52d417b20bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6cf0bf8afebd3681b62e52d417b20bf">&#9670;&nbsp;</a></span>writeFile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KARCHIVE_DEPRECATED bool KArchive::writeFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em> = <code>0100644</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>QDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>since 5.0, use <a class="el" href="classKArchive.html#aeb615bb1d33578f57f69af2b1e72029d" title="Writes a new file into the archive. ">writeFile(const QString&amp;,const QByteArray&amp;,mode_t,const QString&amp;,const QString&amp;,const QDateTime&amp;,const QDateTime&amp;,const QDateTime&amp;)</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8h_source.html#l00187">187</a> of file <a class="el" href="karchive_8h_source.html">karchive.h</a>.</p>
+
+</div>
+</div>
+<a id="aeb615bb1d33578f57f69af2b1e72029d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb615bb1d33578f57f69af2b1e72029d">&#9670;&nbsp;</a></span>writeFile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::writeFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em> = <code>0100644</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>QDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a new file into the archive. </p>
+<p>The archive must be opened for writing first.</p>
+<p>The necessary parent directories are created automatically if needed. For instance, writing "mydir/test1" does not require creating the directory "mydir" first.</p>
+<p>This method also allows some file metadata to be set. However, depending on the archive type not all metadata might be written out.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the file </td></tr>
+    <tr><td class="paramname">data</td><td>the data to write </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the file </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the file </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the file </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00304">304</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5625944353172a5dbd229bf1a08d8a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5625944353172a5dbd229bf1a08d8a91">&#9670;&nbsp;</a></span>writeSymLink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KArchive::writeSymLink </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em> = <code>0120755</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>QDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a symbolic link to the archive if supported. </p>
+<p>The archive must be opened for writing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of symbolic link </td></tr>
+    <tr><td class="paramname">target</td><td>target of symbolic link </td></tr>
+    <tr><td class="paramname">user</td><td>the user that owns the directory </td></tr>
+    <tr><td class="paramname">group</td><td>the group that owns the directory </td></tr>
+    <tr><td class="paramname">perm</td><td>permissions of the directory </td></tr>
+    <tr><td class="paramname">atime</td><td>time the file was last accessed </td></tr>
+    <tr><td class="paramname">mtime</td><td>modification time of the file </td></tr>
+    <tr><td class="paramname">ctime</td><td>time of last status change </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="karchive_8cpp_source.html#l00351">351</a> of file <a class="el" href="karchive_8cpp_source.html">karchive.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="karchive_8h_source.html">karchive.h</a></li>
+<li><a class="el" href="karchive_8cpp_source.html">karchive.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:22:52 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

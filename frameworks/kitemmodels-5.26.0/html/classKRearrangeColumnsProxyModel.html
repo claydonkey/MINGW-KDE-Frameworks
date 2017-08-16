@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KItemModels - KRearrangeColumnsProxyModel Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KItemModels</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KItemModels"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKBreadcrumbSelectionModel.html">KBreadcrumbSelectionModel</option>
+        
+        <option value="classKCheckableProxyModel.html">KCheckableProxyModel</option>
+        
+        <option value="classKConcatenateRowsProxyModel.html">KConcatenateRowsProxyModel</option>
+        
+        <option value="classKDescendantsProxyModel.html">KDescendantsProxyModel</option>
+        
+        <option value="classKExtraColumnsProxyModel.html">KExtraColumnsProxyModel</option>
+        
+        <option value="classKLinkItemSelectionModel.html">KLinkItemSelectionModel</option>
+        
+        <option value="classKModelIndexProxyMapper.html">KModelIndexProxyMapper</option>
+        
+        <option value="classKRearrangeColumnsProxyModel.html">KRearrangeColumnsProxyModel</option>
+        
+        <option value="classKRecursiveFilterProxyModel.html">KRecursiveFilterProxyModel</option>
+        
+        <option value="classKSelectionProxyModel.html">KSelectionProxyModel</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Models for Qt Model/View system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ItemModels)
+target_link_libraries(yourapp KF5::ItemModels)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KItemModels </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kitemmodels-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KItemModels on <a href="https://cgit.kde.org/kitemmodels-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KItemModels </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KRearrangeColumnsProxyModel">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKRearrangeColumnsProxyModel-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KRearrangeColumnsProxyModel Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="krearrangecolumnsproxymodel_8h_source.html">krearrangecolumnsproxymodel.h</a>&gt;</code></p>
+
+<p>Inherits QIdentityProxyModel.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a06ae66a6ab4401441d9fb9bdf5c82174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a06ae66a6ab4401441d9fb9bdf5c82174">KRearrangeColumnsProxyModel</a> (QObject *<a class="el" href="classKRearrangeColumnsProxyModel.html#ab18fbda958568f52a897ad085ea90dc7">parent</a>=0)</td></tr>
+<tr class="separator:a06ae66a6ab4401441d9fb9bdf5c82174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62e52de5371cb79e4ef62ca1804b76b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#ad62e52de5371cb79e4ef62ca1804b76b">~KRearrangeColumnsProxyModel</a> ()</td></tr>
+<tr class="separator:ad62e52de5371cb79e4ef62ca1804b76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fca4ded42d5d5496f44585000ed23d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a96fca4ded42d5d5496f44585000ed23d">columnCount</a> (const QModelIndex &amp;<a class="el" href="classKRearrangeColumnsProxyModel.html#ab18fbda958568f52a897ad085ea90dc7">parent</a>=QModelIndex()) const override</td></tr>
+<tr class="separator:a96fca4ded42d5d5496f44585000ed23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e422a4a5383919ee3aeb5995f7f545"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a58e422a4a5383919ee3aeb5995f7f545">headerData</a> (int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="separator:a58e422a4a5383919ee3aeb5995f7f545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9910f732576da30ad33712a97fc988"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#aea9910f732576da30ad33712a97fc988">index</a> (int row, int column, const QModelIndex &amp;<a class="el" href="classKRearrangeColumnsProxyModel.html#ab18fbda958568f52a897ad085ea90dc7">parent</a>=QModelIndex()) const override</td></tr>
+<tr class="separator:aea9910f732576da30ad33712a97fc988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85455ebe70cfea99892b2b4aefbf791"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#ab85455ebe70cfea99892b2b4aefbf791">mapFromSource</a> (const QModelIndex &amp;sourceIndex) const override</td></tr>
+<tr class="separator:ab85455ebe70cfea99892b2b4aefbf791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489cc688b2f5012557265eede188dbcc"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a489cc688b2f5012557265eede188dbcc">mapToSource</a> (const QModelIndex &amp;proxyIndex) const override</td></tr>
+<tr class="separator:a489cc688b2f5012557265eede188dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18fbda958568f52a897ad085ea90dc7"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#ab18fbda958568f52a897ad085ea90dc7">parent</a> (const QModelIndex &amp;child) const override</td></tr>
+<tr class="separator:ab18fbda958568f52a897ad085ea90dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da8d5b3f77b60146fa8131261a850b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a6da8d5b3f77b60146fa8131261a850b9">rowCount</a> (const QModelIndex &amp;<a class="el" href="classKRearrangeColumnsProxyModel.html#ab18fbda958568f52a897ad085ea90dc7">parent</a>=QModelIndex()) const override</td></tr>
+<tr class="separator:a6da8d5b3f77b60146fa8131261a850b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdeceba3be0efaa809820b4a62ffa02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRearrangeColumnsProxyModel.html#a3bdeceba3be0efaa809820b4a62ffa02">setSourceColumns</a> (const QVector&lt; int &gt; &amp;columns)</td></tr>
+<tr class="separator:a3bdeceba3be0efaa809820b4a62ffa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This proxy shows specific columns from the source model, in any order. </p>
+<p>This allows to reorder columns, as well as not showing all of them.</p>
+<p>The proxy supports source models that have a tree structure. It also supports editing, and propagating changes from the source model.</p>
+<p>Showing the same source column more than once is not supported.</p>
+<p>Author: David Faure, KDAB </p><dl class="section since"><dt>Since</dt><dd>5.12 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8h_source.html#l00042">42</a> of file <a class="el" href="krearrangecolumnsproxymodel_8h_source.html">krearrangecolumnsproxymodel.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a06ae66a6ab4401441d9fb9bdf5c82174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ae66a6ab4401441d9fb9bdf5c82174">&#9670;&nbsp;</a></span>KRearrangeColumnsProxyModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KRearrangeColumnsProxyModel::KRearrangeColumnsProxyModel </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classKRearrangeColumnsProxyModel.html" title="This proxy shows specific columns from the source model, in any order. ">KRearrangeColumnsProxyModel</a> proxy. </p>
+<p>Remember to call setSourceModel afterwards. </p>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00029">29</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad62e52de5371cb79e4ef62ca1804b76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62e52de5371cb79e4ef62ca1804b76b">&#9670;&nbsp;</a></span>~KRearrangeColumnsProxyModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KRearrangeColumnsProxyModel::~KRearrangeColumnsProxyModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00035">35</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a96fca4ded42d5d5496f44585000ed23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fca4ded42d5d5496f44585000ed23d">&#9670;&nbsp;</a></span>columnCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KRearrangeColumnsProxyModel::columnCount </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>QModelIndex()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00044">44</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58e422a4a5383919ee3aeb5995f7f545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e422a4a5383919ee3aeb5995f7f545">&#9670;&nbsp;</a></span>headerData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant KRearrangeColumnsProxyModel::headerData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::Orientation&#160;</td>
+          <td class="paramname"><em>orientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role</em> = <code>Qt::DisplayRole</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00090">90</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea9910f732576da30ad33712a97fc988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9910f732576da30ad33712a97fc988">&#9670;&nbsp;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KRearrangeColumnsProxyModel::index </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>QModelIndex()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00061">61</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab85455ebe70cfea99892b2b4aefbf791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85455ebe70cfea99892b2b4aefbf791">&#9670;&nbsp;</a></span>mapFromSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KRearrangeColumnsProxyModel::mapFromSource </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>sourceIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00100">100</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a489cc688b2f5012557265eede188dbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489cc688b2f5012557265eede188dbcc">&#9670;&nbsp;</a></span>mapToSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KRearrangeColumnsProxyModel::mapToSource </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>proxyIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00110">110</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab18fbda958568f52a897ad085ea90dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18fbda958568f52a897ad085ea90dc7">&#9670;&nbsp;</a></span>parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KRearrangeColumnsProxyModel::parent </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00079">79</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6da8d5b3f77b60146fa8131261a850b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da8d5b3f77b60146fa8131261a850b9">&#9670;&nbsp;</a></span>rowCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KRearrangeColumnsProxyModel::rowCount </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>QModelIndex()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass. </dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00050">50</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3bdeceba3be0efaa809820b4a62ffa02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdeceba3be0efaa809820b4a62ffa02">&#9670;&nbsp;</a></span>setSourceColumns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KRearrangeColumnsProxyModel::setSourceColumns </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>columns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the chosen source columns, in the desired order for the proxy columns columns[proxyColumn=0] is the source column to show in the first proxy column, etc. </p>
+<p>Example: QVector&lt;int&gt;() &lt;&lt; 2 &lt;&lt; 1; This examples configures the proxy to hide column 0, show column 2 from the source model, then show column 1 from the source model. </p>
+
+<p class="definition">Definition at line <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html#l00039">39</a> of file <a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="krearrangecolumnsproxymodel_8h_source.html">krearrangecolumnsproxymodel.h</a></li>
+<li><a class="el" href="krearrangecolumnsproxymodel_8cpp_source.html">krearrangecolumnsproxymodel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:18 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

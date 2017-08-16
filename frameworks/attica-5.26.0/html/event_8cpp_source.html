@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attica - event.cpp Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">Attica</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "Attica"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classAttica_1_1AccountBalance.html">Attica::AccountBalance</option>
+        
+        <option value="classAttica_1_1Activity.html">Attica::Activity</option>
+        
+        <option value="classAttica_1_1Category.html">Attica::Category</option>
+        
+        <option value="classAttica_1_1Content.html">Attica::Content</option>
+        
+        <option value="classAttica_1_1Distribution.html">Attica::Distribution</option>
+        
+        <option value="classAttica_1_1Event.html">Attica::Event</option>
+        
+        <option value="classAttica_1_1Folder.html">Attica::Folder</option>
+        
+        <option value="classAttica_1_1HomePageEntry.html">Attica::HomePageEntry</option>
+        
+        <option value="classAttica_1_1HomePageType.html">Attica::HomePageType</option>
+        
+        <option value="classAttica_1_1Icon.html">Attica::Icon</option>
+        
+        <option value="classAttica_1_1License.html">Attica::License</option>
+        
+        <option value="classAttica_1_1Metadata.html">Attica::Metadata</option>
+        
+        <option value="classAttica_1_1Provider.html">Attica::Provider</option>
+        
+        <option value="classAttica_1_1ProviderManager.html">Attica::ProviderManager</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Open Collaboration Services API</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Attica)
+target_link_libraries(yourapp KF5::Attica)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += Attica </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/attica-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>Attica on <a href="https://cgit.kde.org/attica-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> Attica </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_76a0d87c22e971ce46ad05f660582984.html">mingw-w64-attica-qt5</a></li><li class="navelem"><a class="el" href="dir_d2aa20a383bb21f3c4d75eefb0661573.html">src</a></li><li class="navelem"><a class="el" href="dir_ad4a34af868bb54c80d44e2db68d2b8a.html">attica-5.26.0</a></li><li class="navelem"><a class="el" href="dir_decd9befb39648006127a49b6f55bf54.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">event.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    This file is part of KDE.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Copyright (c) 2009 Eckhart Wörner &lt;ewoerner@kde.org&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    modify it under the terms of the GNU Lesser General Public</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    version 2.1 of the License, or (at your option) version 3, or any</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    later version accepted by the membership of KDE e.V. (or its</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    successor approved by the membership of KDE e.V.), which shall</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    act as a proxy defined in Section 6 of version 3 of the license.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    Lesser General Public License for more details.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    You should have received a copy of the GNU Lesser General Public</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    License along with this library.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;event.h&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceAttica.html">Attica</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>Event::Private : <span class="keyword">public</span> QSharedData</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QString m_id;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QString m_name;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QString m_description;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QString m_user;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QDate m_startDate;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QDate m_endDate;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    qreal m_latitude;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    qreal m_longitude;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QUrl m_homepage;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QString m_country;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString m_city;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QMap&lt;QString, QString&gt; m_extendedAttributes;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Private()</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        : m_latitude(0),</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          m_longitude(0)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a5a40dd4708297f7031e29b39e039ae10">   51</a></span>&#160;<a class="code" href="classAttica_1_1Event.html#a5a40dd4708297f7031e29b39e039ae10">Event::Event</a>()</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    : d(new Private)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#aafab65c6f5ea18f6d6f8318f1f1d6be0">   56</a></span>&#160;<a class="code" href="classAttica_1_1Event.html#a5a40dd4708297f7031e29b39e039ae10">Event::Event</a>(<span class="keyword">const</span> <a class="code" href="classAttica_1_1Event.html">Event</a> &amp;other)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    : d(other.d)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a9217ebb8c51ef2a51b43edadab519aa6">   61</a></span>&#160;<a class="code" href="classAttica_1_1Event.html">Event</a> &amp;<a class="code" href="classAttica_1_1Event.html#a9217ebb8c51ef2a51b43edadab519aa6">Event::operator=</a>(<span class="keyword">const</span> <a class="code" href="classAttica_1_1Event.html">Event</a> &amp;other)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    d = other.d;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a7704ec01ce91e673885792054214b3d2">   67</a></span>&#160;<a class="code" href="classAttica_1_1Event.html#a7704ec01ce91e673885792054214b3d2">Event::~Event</a>()</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a1c39987002e1b8a4c685b87913fb95fb">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a1c39987002e1b8a4c685b87913fb95fb">Event::setId</a>(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>)</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    d-&gt;m_id = <a class="code" href="classAttica_1_1Event.html#ae816cdf6d8f9d715bd0d2f1470203641">id</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ae816cdf6d8f9d715bd0d2f1470203641">   76</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#ae816cdf6d8f9d715bd0d2f1470203641">Event::id</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_id;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ab43996ba0d3ce86b78d19621c0d9c9b7">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#ab43996ba0d3ce86b78d19621c0d9c9b7">Event::setName</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classAttica_1_1Event.html#a067313dfa39f64def87d4321635ff365">name</a>)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    d-&gt;m_name = <a class="code" href="classAttica_1_1Event.html#a067313dfa39f64def87d4321635ff365">name</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a067313dfa39f64def87d4321635ff365">   86</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#a067313dfa39f64def87d4321635ff365">Event::name</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_name;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#acabf326b1bee0e4d08af60c66535dffe">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#acabf326b1bee0e4d08af60c66535dffe">Event::setDescription</a>(<span class="keyword">const</span> QString &amp;text)</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    d-&gt;m_description = text;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a0133fb17f45fa6c655cddb84485d27a5">   96</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#a0133fb17f45fa6c655cddb84485d27a5">Event::description</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_description;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a82b1ea61b89ade2b9fe4a2cdc4e8c313">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a82b1ea61b89ade2b9fe4a2cdc4e8c313">Event::setUser</a>(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>)</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    d-&gt;m_user = <a class="code" href="classAttica_1_1Event.html#ae816cdf6d8f9d715bd0d2f1470203641">id</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a81ead9cabf4373b2fbe381bebb029f2e">  106</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#a81ead9cabf4373b2fbe381bebb029f2e">Event::user</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_user;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#aa484ff155f1c4c8ba0a8337064dcd145">  111</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#aa484ff155f1c4c8ba0a8337064dcd145">Event::setStartDate</a>(<span class="keyword">const</span> QDate &amp;date)</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    d-&gt;m_startDate = date;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#aa33e25961807dd115139a3cb8b0764fe">  116</a></span>&#160;QDate <a class="code" href="classAttica_1_1Event.html#aa33e25961807dd115139a3cb8b0764fe">Event::startDate</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_startDate;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a67b3c6fe87d9f29c77d376eb9e5ae644">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a67b3c6fe87d9f29c77d376eb9e5ae644">Event::setEndDate</a>(<span class="keyword">const</span> QDate &amp;date)</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    d-&gt;m_endDate = date;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ad41dcc52777f37b416900982d313c7e1">  126</a></span>&#160;QDate <a class="code" href="classAttica_1_1Event.html#ad41dcc52777f37b416900982d313c7e1">Event::endDate</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_endDate;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a9ffd9b7012c76d1a0ed8e0cc49e1cb86">  131</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a9ffd9b7012c76d1a0ed8e0cc49e1cb86">Event::setLatitude</a>(qreal lat)</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    d-&gt;m_latitude = lat;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ab1c7b71f9aa40f0e05cbfc8aa246cab7">  136</a></span>&#160;qreal <a class="code" href="classAttica_1_1Event.html#ab1c7b71f9aa40f0e05cbfc8aa246cab7">Event::latitude</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_latitude;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a898266c2e7f5cda83fc8ce84378027f6">  141</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a898266c2e7f5cda83fc8ce84378027f6">Event::setLongitude</a>(qreal lon)</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    d-&gt;m_longitude = lon;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a01d098e181cb978cac4a65540e17f5b5">  146</a></span>&#160;qreal <a class="code" href="classAttica_1_1Event.html#a01d098e181cb978cac4a65540e17f5b5">Event::longitude</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_longitude;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a66d5685ae1afb250c33fe30f1ea258d4">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a66d5685ae1afb250c33fe30f1ea258d4">Event::setHomepage</a>(<span class="keyword">const</span> QUrl &amp;url)</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    d-&gt;m_homepage = url;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ae60c3965b92a81c58a4295af09f366c7">  156</a></span>&#160;QUrl <a class="code" href="classAttica_1_1Event.html#ae60c3965b92a81c58a4295af09f366c7">Event::homepage</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_homepage;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a6db4391314d6b0c3070661b8253e97df">  161</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a6db4391314d6b0c3070661b8253e97df">Event::setCountry</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classAttica_1_1Event.html#a281649bde3f38558c243a4f315987cb6">country</a>)</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    d-&gt;m_country = <a class="code" href="classAttica_1_1Event.html#a281649bde3f38558c243a4f315987cb6">country</a>;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div><div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a281649bde3f38558c243a4f315987cb6">  166</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#a281649bde3f38558c243a4f315987cb6">Event::country</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_country;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a607ebc898e4cf24aa90897173f0c4ceb">  171</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a607ebc898e4cf24aa90897173f0c4ceb">Event::setCity</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classAttica_1_1Event.html#ab25e266291854588fe69a7d682f73479">city</a>)</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    d-&gt;m_city = <a class="code" href="classAttica_1_1Event.html#ab25e266291854588fe69a7d682f73479">city</a>;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ab25e266291854588fe69a7d682f73479">  176</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#ab25e266291854588fe69a7d682f73479">Event::city</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_city;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div><div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a110011a43adb78a9b112441c7941afe6">  181</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAttica_1_1Event.html#a110011a43adb78a9b112441c7941afe6">Event::addExtendedAttribute</a>(<span class="keyword">const</span> QString &amp;key, <span class="keyword">const</span> QString &amp;value)</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    d-&gt;m_extendedAttributes.insert(key, value);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div><div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a4102a5ab4a36e1d561bae13f1a2b0f71">  186</a></span>&#160;QString <a class="code" href="classAttica_1_1Event.html#a4102a5ab4a36e1d561bae13f1a2b0f71">Event::extendedAttribute</a>(<span class="keyword">const</span> QString &amp;key)<span class="keyword"> const</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_extendedAttributes.value(key);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#a38beb0c607c1f5c69a3f587eb49ac99f">  191</a></span>&#160;QMap&lt;QString, QString&gt; <a class="code" href="classAttica_1_1Event.html#a38beb0c607c1f5c69a3f587eb49ac99f">Event::extendedAttributes</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_extendedAttributes;</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classAttica_1_1Event.html#ae64d95915992e673fbb726676ad66197">  196</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classAttica_1_1Event.html#ae64d95915992e673fbb726676ad66197">Event::isValid</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> !(d-&gt;m_id.isEmpty());</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div><div class="ttc" id="classAttica_1_1Event_html_ae64d95915992e673fbb726676ad66197"><div class="ttname"><a href="classAttica_1_1Event.html#ae64d95915992e673fbb726676ad66197">Attica::Event::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Checks whether this Event has an id. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00196">event.cpp:196</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ab1c7b71f9aa40f0e05cbfc8aa246cab7"><div class="ttname"><a href="classAttica_1_1Event.html#ab1c7b71f9aa40f0e05cbfc8aa246cab7">Attica::Event::latitude</a></div><div class="ttdeci">qreal latitude() const</div><div class="ttdoc">Gets the latitude of the position the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00136">event.cpp:136</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_acabf326b1bee0e4d08af60c66535dffe"><div class="ttname"><a href="classAttica_1_1Event.html#acabf326b1bee0e4d08af60c66535dffe">Attica::Event::setDescription</a></div><div class="ttdeci">void setDescription(const QString &amp;description)</div><div class="ttdoc">Sets the description of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00091">event.cpp:91</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ab25e266291854588fe69a7d682f73479"><div class="ttname"><a href="classAttica_1_1Event.html#ab25e266291854588fe69a7d682f73479">Attica::Event::city</a></div><div class="ttdeci">QString city() const</div><div class="ttdoc">Gets the city where the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00176">event.cpp:176</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a4102a5ab4a36e1d561bae13f1a2b0f71"><div class="ttname"><a href="classAttica_1_1Event.html#a4102a5ab4a36e1d561bae13f1a2b0f71">Attica::Event::extendedAttribute</a></div><div class="ttdeci">QString extendedAttribute(const QString &amp;key) const</div><div class="ttdoc">Get an attribute that is not included in the basis set of attributes exposed by the Event class...</div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00186">event.cpp:186</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a067313dfa39f64def87d4321635ff365"><div class="ttname"><a href="classAttica_1_1Event.html#a067313dfa39f64def87d4321635ff365">Attica::Event::name</a></div><div class="ttdeci">QString name() const</div><div class="ttdoc">Gets the name of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00086">event.cpp:86</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html"><div class="ttname"><a href="classAttica_1_1Event.html">Attica::Event</a></div><div class="ttdoc">Represents a single event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00041">event.h:41</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a9217ebb8c51ef2a51b43edadab519aa6"><div class="ttname"><a href="classAttica_1_1Event.html#a9217ebb8c51ef2a51b43edadab519aa6">Attica::Event::operator=</a></div><div class="ttdeci">Event &amp; operator=(const Event &amp;other)</div><div class="ttdoc">Assignment operator. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00061">event.cpp:61</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a67b3c6fe87d9f29c77d376eb9e5ae644"><div class="ttname"><a href="classAttica_1_1Event.html#a67b3c6fe87d9f29c77d376eb9e5ae644">Attica::Event::setEndDate</a></div><div class="ttdeci">void setEndDate(const QDate &amp;endDate)</div><div class="ttdoc">Sets the end date of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00121">event.cpp:121</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ae60c3965b92a81c58a4295af09f366c7"><div class="ttname"><a href="classAttica_1_1Event.html#ae60c3965b92a81c58a4295af09f366c7">Attica::Event::homepage</a></div><div class="ttdeci">QUrl homepage() const</div><div class="ttdoc">Gets the homepage of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00156">event.cpp:156</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a0133fb17f45fa6c655cddb84485d27a5"><div class="ttname"><a href="classAttica_1_1Event.html#a0133fb17f45fa6c655cddb84485d27a5">Attica::Event::description</a></div><div class="ttdeci">QString description() const</div><div class="ttdoc">Gets the description of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00096">event.cpp:96</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a607ebc898e4cf24aa90897173f0c4ceb"><div class="ttname"><a href="classAttica_1_1Event.html#a607ebc898e4cf24aa90897173f0c4ceb">Attica::Event::setCity</a></div><div class="ttdeci">void setCity(const QString &amp;city)</div><div class="ttdoc">Sets the city where the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00171">event.cpp:171</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a82b1ea61b89ade2b9fe4a2cdc4e8c313"><div class="ttname"><a href="classAttica_1_1Event.html#a82b1ea61b89ade2b9fe4a2cdc4e8c313">Attica::Event::setUser</a></div><div class="ttdeci">void setUser(const QString &amp;user)</div><div class="ttdoc">Sets the id of the user bound to the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00101">event.cpp:101</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a281649bde3f38558c243a4f315987cb6"><div class="ttname"><a href="classAttica_1_1Event.html#a281649bde3f38558c243a4f315987cb6">Attica::Event::country</a></div><div class="ttdeci">QString country() const</div><div class="ttdoc">Gets the country where the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00166">event.cpp:166</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a898266c2e7f5cda83fc8ce84378027f6"><div class="ttname"><a href="classAttica_1_1Event.html#a898266c2e7f5cda83fc8ce84378027f6">Attica::Event::setLongitude</a></div><div class="ttdeci">void setLongitude(qreal longitude)</div><div class="ttdoc">Sets the longitude of the position the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00141">event.cpp:141</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a9ffd9b7012c76d1a0ed8e0cc49e1cb86"><div class="ttname"><a href="classAttica_1_1Event.html#a9ffd9b7012c76d1a0ed8e0cc49e1cb86">Attica::Event::setLatitude</a></div><div class="ttdeci">void setLatitude(qreal latitude)</div><div class="ttdoc">Sets the latitude of the position the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00131">event.cpp:131</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_aa484ff155f1c4c8ba0a8337064dcd145"><div class="ttname"><a href="classAttica_1_1Event.html#aa484ff155f1c4c8ba0a8337064dcd145">Attica::Event::setStartDate</a></div><div class="ttdeci">void setStartDate(const QDate &amp;startDate)</div><div class="ttdoc">Sets the start date of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00111">event.cpp:111</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a5a40dd4708297f7031e29b39e039ae10"><div class="ttname"><a href="classAttica_1_1Event.html#a5a40dd4708297f7031e29b39e039ae10">Attica::Event::Event</a></div><div class="ttdeci">Event()</div><div class="ttdoc">Creates an empty Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00051">event.cpp:51</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a6db4391314d6b0c3070661b8253e97df"><div class="ttname"><a href="classAttica_1_1Event.html#a6db4391314d6b0c3070661b8253e97df">Attica::Event::setCountry</a></div><div class="ttdeci">void setCountry(const QString &amp;country)</div><div class="ttdoc">Sets the country where the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00161">event.cpp:161</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a38beb0c607c1f5c69a3f587eb49ac99f"><div class="ttname"><a href="classAttica_1_1Event.html#a38beb0c607c1f5c69a3f587eb49ac99f">Attica::Event::extendedAttributes</a></div><div class="ttdeci">QMap&lt; QString, QString &gt; extendedAttributes() const</div><div class="ttdoc">Get all attributes that are not included in the basis set of attributes exposed by the Event class...</div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00191">event.cpp:191</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ae816cdf6d8f9d715bd0d2f1470203641"><div class="ttname"><a href="classAttica_1_1Event.html#ae816cdf6d8f9d715bd0d2f1470203641">Attica::Event::id</a></div><div class="ttdeci">QString id() const</div><div class="ttdoc">Gets the id of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00076">event.cpp:76</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ad41dcc52777f37b416900982d313c7e1"><div class="ttname"><a href="classAttica_1_1Event.html#ad41dcc52777f37b416900982d313c7e1">Attica::Event::endDate</a></div><div class="ttdeci">QDate endDate() const</div><div class="ttdoc">Gets the start date of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00126">event.cpp:126</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a81ead9cabf4373b2fbe381bebb029f2e"><div class="ttname"><a href="classAttica_1_1Event.html#a81ead9cabf4373b2fbe381bebb029f2e">Attica::Event::user</a></div><div class="ttdeci">QString user() const</div><div class="ttdoc">Gets the id of the user bound to the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00106">event.cpp:106</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a7704ec01ce91e673885792054214b3d2"><div class="ttname"><a href="classAttica_1_1Event.html#a7704ec01ce91e673885792054214b3d2">Attica::Event::~Event</a></div><div class="ttdeci">~Event()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00067">event.cpp:67</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_aa33e25961807dd115139a3cb8b0764fe"><div class="ttname"><a href="classAttica_1_1Event.html#aa33e25961807dd115139a3cb8b0764fe">Attica::Event::startDate</a></div><div class="ttdeci">QDate startDate() const</div><div class="ttdoc">Gets the start date of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00116">event.cpp:116</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a110011a43adb78a9b112441c7941afe6"><div class="ttname"><a href="classAttica_1_1Event.html#a110011a43adb78a9b112441c7941afe6">Attica::Event::addExtendedAttribute</a></div><div class="ttdeci">void addExtendedAttribute(const QString &amp;key, const QString &amp;value)</div><div class="ttdoc">Add an attribute that is not included in the basis set of attributes exposed by the Event class...</div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00181">event.cpp:181</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a66d5685ae1afb250c33fe30f1ea258d4"><div class="ttname"><a href="classAttica_1_1Event.html#a66d5685ae1afb250c33fe30f1ea258d4">Attica::Event::setHomepage</a></div><div class="ttdeci">void setHomepage(const QUrl &amp;homepage)</div><div class="ttdoc">Sets the homepage of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00151">event.cpp:151</a></div></div>
+<div class="ttc" id="namespaceAttica_html"><div class="ttname"><a href="namespaceAttica.html">Attica</a></div><div class="ttdef"><b>Definition:</b> <a href="accountbalance_8h_source.html#l00029">accountbalance.h:29</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a1c39987002e1b8a4c685b87913fb95fb"><div class="ttname"><a href="classAttica_1_1Event.html#a1c39987002e1b8a4c685b87913fb95fb">Attica::Event::setId</a></div><div class="ttdeci">void setId(const QString &amp;id)</div><div class="ttdoc">Sets the id of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00071">event.cpp:71</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_a01d098e181cb978cac4a65540e17f5b5"><div class="ttname"><a href="classAttica_1_1Event.html#a01d098e181cb978cac4a65540e17f5b5">Attica::Event::longitude</a></div><div class="ttdeci">qreal longitude() const</div><div class="ttdoc">Gets the longitude of the position the Event takes place. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00146">event.cpp:146</a></div></div>
+<div class="ttc" id="classAttica_1_1Event_html_ab43996ba0d3ce86b78d19621c0d9c9b7"><div class="ttname"><a href="classAttica_1_1Event.html#ab43996ba0d3ce86b78d19621c0d9c9b7">Attica::Event::setName</a></div><div class="ttdeci">void setName(const QString &amp;name)</div><div class="ttdoc">Sets the name of the Event. </div><div class="ttdef"><b>Definition:</b> <a href="event_8cpp_source.html#l00081">event.cpp:81</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:22:46 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

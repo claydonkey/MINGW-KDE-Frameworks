@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KFileItemDelegate Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KFileItemDelegate">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKFileItemDelegate-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KFileItemDelegate Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>&gt;</code></p>
+
+<p>Inherits QAbstractItemDelegate.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a516a1aa42d75cb7ff15982d5ea400e28"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28">Information</a> { <br />
+&#160;&#160;<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28aea79f2ac681c54d1b8cdf9cd58d9c335">NoInformation</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28ab2b6b7aa48771f93f026204c0c93dc41">Size</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a92e991f1cf613a91dc46db7b3e47d35e">Permissions</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a1d40f4aa449ed6fb0ec47e9993e30837">OctalPermissions</a>,
+<br />
+&#160;&#160;<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28af557e8562440175c966ab35766ba3c14">Owner</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a2e08d665c8036209f8c172f29f2afeb0">OwnerAndGroup</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a644f5eafda9623e67b23358304df4e40">CreationTime</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a6e6bf7ae9962960526170a3184c044c1">ModificationTime</a>,
+<br />
+&#160;&#160;<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a61fada76efbcf6dc7b90ff64f34478c4">AccessTime</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28ab61d0a6b32ade45de1410ff4e374ae8b">MimeType</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a62891e617fa2ef56d454e5c1e210c4a5">FriendlyMimeType</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28ad18815c769bbbab1c59b635315a0684e">LinkDest</a>,
+<br />
+&#160;&#160;<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a61950fe2294a326b21ff6f332c89c6ee">LocalPathOrUrl</a>,
+<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a1c391ae9464d1dd4900672049e54ba4d">Comment</a>
+<br />
+ }</td></tr>
+<tr class="separator:a516a1aa42d75cb7ff15982d5ea400e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ada8d95fecdcd5dfc105b2175da8d3"><td class="memItemLeft" align="right" valign="top"><a id="a45ada8d95fecdcd5dfc105b2175da8d3"></a>
+typedef QList&lt; <a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28">Information</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InformationList</b></td></tr>
+<tr class="separator:a45ada8d95fecdcd5dfc105b2175da8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a39b231d7ab2aeeafb0d21a199d30ff25"><td class="memItemLeft" align="right" valign="top">InformationList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a39b231d7ab2aeeafb0d21a199d30ff25">information</a></td></tr>
+<tr class="separator:a39b231d7ab2aeeafb0d21a199d30ff25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cfff93e673b48564b3fc4ba2b44cf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ab6cfff93e673b48564b3fc4ba2b44cf2">jobTransfersVisible</a></td></tr>
+<tr class="separator:ab6cfff93e673b48564b3fc4ba2b44cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697caeff7ec522177a9b00655eb01042"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a697caeff7ec522177a9b00655eb01042">maximumSize</a></td></tr>
+<tr class="separator:a697caeff7ec522177a9b00655eb01042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e0569b494f89d983f19198217bf50b"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a40e0569b494f89d983f19198217bf50b">shadowBlur</a></td></tr>
+<tr class="separator:a40e0569b494f89d983f19198217bf50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bf60c6023389a8a12d794db81d47f6"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a16bf60c6023389a8a12d794db81d47f6">shadowColor</a></td></tr>
+<tr class="separator:a16bf60c6023389a8a12d794db81d47f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1af06f9bc97550e0e2abe6e7db5fc3"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a0e1af06f9bc97550e0e2abe6e7db5fc3">shadowOffset</a></td></tr>
+<tr class="separator:a0e1af06f9bc97550e0e2abe6e7db5fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4e62887ea5aac7cbca8728fd3a2bee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a6b4e62887ea5aac7cbca8728fd3a2bee">showToolTipWhenElided</a></td></tr>
+<tr class="separator:a6b4e62887ea5aac7cbca8728fd3a2bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:af7bd3d07bf3ff7442bcf593619365036"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#af7bd3d07bf3ff7442bcf593619365036">helpEvent</a> (QHelpEvent *event, QAbstractItemView *view, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) override</td></tr>
+<tr class="separator:af7bd3d07bf3ff7442bcf593619365036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12d9cee708050d7d29342acd4efd8e1"><td class="memItemLeft" align="right" valign="top">QRegion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ae12d9cee708050d7d29342acd4efd8e1">shape</a> (const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index)</td></tr>
+<tr class="separator:ae12d9cee708050d7d29342acd4efd8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a63d606d7d1cf7aadc27a79f0a4775ce3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a63d606d7d1cf7aadc27a79f0a4775ce3">KFileItemDelegate</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a63d606d7d1cf7aadc27a79f0a4775ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502d223430fb0d927e1ce48b3cd7e2d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a502d223430fb0d927e1ce48b3cd7e2d2">~KFileItemDelegate</a> ()</td></tr>
+<tr class="separator:a502d223430fb0d927e1ce48b3cd7e2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60791b5824fea56bec8eeb8a92742a9e"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a60791b5824fea56bec8eeb8a92742a9e">createEditor</a> (QWidget *parent, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a60791b5824fea56bec8eeb8a92742a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470b346b01aa42cbbbd14d0bb78470e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a470b346b01aa42cbbbd14d0bb78470e2">editorEvent</a> (QEvent *event, QAbstractItemModel *model, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) override</td></tr>
+<tr class="separator:a470b346b01aa42cbbbd14d0bb78470e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51b0dbb21794998c8e9aff1ddd4ba1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ae51b0dbb21794998c8e9aff1ddd4ba1c">eventFilter</a> (QObject *object, QEvent *event) override</td></tr>
+<tr class="separator:ae51b0dbb21794998c8e9aff1ddd4ba1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501325ac89b8a6afdc8a88ccd5d3f6f8"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a501325ac89b8a6afdc8a88ccd5d3f6f8">iconRect</a> (const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a501325ac89b8a6afdc8a88ccd5d3f6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5c2d3929f15a62e8b0aab55ebcc437"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#abf5c2d3929f15a62e8b0aab55ebcc437">jobTransfersVisible</a> () const</td></tr>
+<tr class="separator:abf5c2d3929f15a62e8b0aab55ebcc437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe960608099df8fea215ce5e206ccf85"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#afe960608099df8fea215ce5e206ccf85">maximumSize</a> () const</td></tr>
+<tr class="separator:afe960608099df8fea215ce5e206ccf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3761d98c1403b0d2b0b00b04f43466b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#af3761d98c1403b0d2b0b00b04f43466b">paint</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:af3761d98c1403b0d2b0b00b04f43466b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10dc9fcce2d914adca5e830cca6df50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#af10dc9fcce2d914adca5e830cca6df50">setEditorData</a> (QWidget *editor, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:af10dc9fcce2d914adca5e830cca6df50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49f47d9f874d8c6eefcb3ce5664a8bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#aa49f47d9f874d8c6eefcb3ce5664a8bb">setJobTransfersVisible</a> (bool <a class="el" href="classKFileItemDelegate.html#ab6cfff93e673b48564b3fc4ba2b44cf2">jobTransfersVisible</a>)</td></tr>
+<tr class="separator:aa49f47d9f874d8c6eefcb3ce5664a8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a40774f58b2c3323fb5c28787c43896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a4a40774f58b2c3323fb5c28787c43896">setMaximumSize</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:a4a40774f58b2c3323fb5c28787c43896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab712a60ac4ae24b0bf756c5b22ebb01b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ab712a60ac4ae24b0bf756c5b22ebb01b">setModelData</a> (QWidget *editor, QAbstractItemModel *model, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:ab712a60ac4ae24b0bf756c5b22ebb01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8bdd0c53927c7cdb26beee9cb4a84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#aaf8bdd0c53927c7cdb26beee9cb4a84f">setShadowBlur</a> (qreal radius)</td></tr>
+<tr class="separator:aaf8bdd0c53927c7cdb26beee9cb4a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6c57eaec168541176990928622b0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a0a6c57eaec168541176990928622b0bf">setShadowColor</a> (const QColor &amp;color)</td></tr>
+<tr class="separator:a0a6c57eaec168541176990928622b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4e8e848a97678d355cefe4930ba2a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a3d4e8e848a97678d355cefe4930ba2a6">setShadowOffset</a> (const QPointF &amp;offset)</td></tr>
+<tr class="separator:a3d4e8e848a97678d355cefe4930ba2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045fc4f498e5340a03bf90189e92256e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a045fc4f498e5340a03bf90189e92256e">setShowInformation</a> (const InformationList &amp;list)</td></tr>
+<tr class="separator:a045fc4f498e5340a03bf90189e92256e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17e6ced4942aa877554b5fe0b063fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#af17e6ced4942aa877554b5fe0b063fcc">setShowInformation</a> (<a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28">Information</a> <a class="el" href="classKFileItemDelegate.html#a39b231d7ab2aeeafb0d21a199d30ff25">information</a>)</td></tr>
+<tr class="separator:af17e6ced4942aa877554b5fe0b063fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add852b5f1a2c2197ce669bbc2d155ef0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#add852b5f1a2c2197ce669bbc2d155ef0">setShowToolTipWhenElided</a> (bool showToolTip)</td></tr>
+<tr class="separator:add852b5f1a2c2197ce669bbc2d155ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8b5ea280c77824511083705483ac0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a4f8b5ea280c77824511083705483ac0b">setWrapMode</a> (QTextOption::WrapMode <a class="el" href="classKFileItemDelegate.html#aded1b8a55eb546c8b0324af3085cd733">wrapMode</a>)</td></tr>
+<tr class="separator:a4f8b5ea280c77824511083705483ac0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ce4d95ac26f938738c0f3d9e974fe0"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ab3ce4d95ac26f938738c0f3d9e974fe0">shadowBlur</a> () const</td></tr>
+<tr class="separator:ab3ce4d95ac26f938738c0f3d9e974fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815831d0ac1ce2eca249f69cff2968da"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a815831d0ac1ce2eca249f69cff2968da">shadowColor</a> () const</td></tr>
+<tr class="separator:a815831d0ac1ce2eca249f69cff2968da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ca3d54fee5ad5855d21532751d9f36"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ac4ca3d54fee5ad5855d21532751d9f36">shadowOffset</a> () const</td></tr>
+<tr class="separator:ac4ca3d54fee5ad5855d21532751d9f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11b7291529609133ec6ff56dfbadfc4"><td class="memItemLeft" align="right" valign="top">InformationList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#ad11b7291529609133ec6ff56dfbadfc4">showInformation</a> () const</td></tr>
+<tr class="separator:ad11b7291529609133ec6ff56dfbadfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2748dcf6c6d84b97e4831b2d1836a3c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a2748dcf6c6d84b97e4831b2d1836a3c1">showToolTipWhenElided</a> () const</td></tr>
+<tr class="separator:a2748dcf6c6d84b97e4831b2d1836a3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654ee1d48db4133015466b7a7d8fbe0b"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a654ee1d48db4133015466b7a7d8fbe0b">sizeHint</a> (const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a654ee1d48db4133015466b7a7d8fbe0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869a9bcb3a12257c15c8926ff79a5600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#a869a9bcb3a12257c15c8926ff79a5600">updateEditorGeometry</a> (QWidget *editor, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a869a9bcb3a12257c15c8926ff79a5600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded1b8a55eb546c8b0324af3085cd733"><td class="memItemLeft" align="right" valign="top">QTextOption::WrapMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKFileItemDelegate.html#aded1b8a55eb546c8b0324af3085cd733">wrapMode</a> () const</td></tr>
+<tr class="separator:aded1b8a55eb546c8b0324af3085cd733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a> is intended to be used to provide a KDE file system view, when using one of the standard item views in Qt with <a class="el" href="classKDirModel.html" title="A model for a KIO-based directory tree. ">KDirModel</a>. </p>
+<p>While primarily intended to be used with <a class="el" href="classKDirModel.html" title="A model for a KIO-based directory tree. ">KDirModel</a>, it uses Qt::DecorationRole and Qt::DisplayRole for the icons and text labels, just like QItemDelegate, and can thus be used with any standard model.</p>
+<p>When used with <a class="el" href="classKDirModel.html" title="A model for a KIO-based directory tree. ">KDirModel</a> however, <a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a> can change the way the display and/or decoration roles are drawn, based on properties of the file items. For example, if the file item is a symbolic link, it will use an italic font to draw the file name.</p>
+<p><a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a> also supports showing additional information about the file items below the icon labels.</p>
+<p>Which information should be shown, if any, is controlled by the <a class="el" href="classKFileItemDelegate.html#a39b231d7ab2aeeafb0d21a199d30ff25">information</a> property, which is a list that can be set by calling <a class="el" href="classKFileItemDelegate.html#a045fc4f498e5340a03bf90189e92256e" title="Sets the list of information lines that are shown below the icon label in list views. ">setShowInformation()</a>, and read by calling <a class="el" href="classKFileItemDelegate.html#ad11b7291529609133ec6ff56dfbadfc4" title="Returns the file item information that should be shown below item labels in list views. ">showInformation()</a>. By default this list is empty.</p>
+<p>To use <a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a>, instantiate an object from the delegate, and call setItemDelegate() in one of the standard item views in Qt:</p>
+<div class="fragment"><div class="line">QListView *listview = <span class="keyword">new</span> QListView(<span class="keyword">this</span>);</div><div class="line"><a class="code" href="classKFileItemDelegate.html">KFileItemDelegate</a> *delegate = <span class="keyword">new</span> <a class="code" href="classKFileItemDelegate.html#a63d606d7d1cf7aadc27a79f0a4775ce3">KFileItemDelegate</a>(<span class="keyword">this</span>);</div><div class="line">listview-&gt;setItemDelegate(delegate);</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00065">65</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a516a1aa42d75cb7ff15982d5ea400e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516a1aa42d75cb7ff15982d5ea400e28">&#9670;&nbsp;</a></span>Information</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28">KFileItemDelegate::Information</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enum defines the additional information that can be displayed below item labels in icon views. </p>
+<p>The information will only be shown for indexes for which the model provides a valid value for <a class="el" href="classKDirModel.html#a5cffa317cb8e222b5f5bd26e8697aceda58b4fef0a99289bafb685b72dc8ffe6b" title="returns the KFileItem for a given index ">KDirModel::FileItemRole</a>, and only when there's sufficient vertical space to display at least one line of the information, along with the display label.</p>
+<p>For the number of items to be shown for folders, the model must provide a valid value for KDirMode::ChildCountRole, in addition to <a class="el" href="classKDirModel.html#a5cffa317cb8e222b5f5bd26e8697aceda58b4fef0a99289bafb685b72dc8ffe6b" title="returns the KFileItem for a given index ">KDirModel::FileItemRole</a>.</p>
+<p>Note that <a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a> will not call <a class="el" href="classKFileItem.html#a9d33507a96637e6a44a35cf064ee80ed" title="Returns the mimetype of the file item. ">KFileItem::determineMimeType()</a> if <a class="el" href="classKFileItem.html#a4d8e1ef1b3c92d685137f13bc49be401">KFileItem::isMimeTypeKnown()</a> returns false, so if you want to display mime types you should use a KMimeTypeResolver with the model and the view, to ensure that mime types are resolved. If the mime type isn't known, "Unknown" will be displayed until the mime type has been successfully resolved.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a045fc4f498e5340a03bf90189e92256e" title="Sets the list of information lines that are shown below the icon label in list views. ">setShowInformation()</a> </dd>
+<dd>
+<a class="el" href="classKFileItemDelegate.html#ad11b7291529609133ec6ff56dfbadfc4" title="Returns the file item information that should be shown below item labels in list views. ">showInformation()</a> </dd>
+<dd>
+<a class="el" href="classKFileItemDelegate.html#a39b231d7ab2aeeafb0d21a199d30ff25" title="This property holds which additional information (if any) should be shown below items in icon views...">information</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28aea79f2ac681c54d1b8cdf9cd58d9c335"></a>NoInformation&#160;</td><td class="fielddoc"><p>No additional information will be shown for items. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28ab2b6b7aa48771f93f026204c0c93dc41"></a>Size&#160;</td><td class="fielddoc"><p>The file size for files, and the number of items for folders. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a92e991f1cf613a91dc46db7b3e47d35e"></a>Permissions&#160;</td><td class="fielddoc"><p>A UNIX permissions string, e.g. -rwxr-xr-x. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a1d40f4aa449ed6fb0ec47e9993e30837"></a>OctalPermissions&#160;</td><td class="fielddoc"><p>The permissions as an octal value, e.g. 0644. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28af557e8562440175c966ab35766ba3c14"></a>Owner&#160;</td><td class="fielddoc"><p>The user name of the file owner, e.g. root. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a2e08d665c8036209f8c172f29f2afeb0"></a>OwnerAndGroup&#160;</td><td class="fielddoc"><p>The user and group that owns the file, e.g. root:root. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a644f5eafda9623e67b23358304df4e40"></a>CreationTime&#160;</td><td class="fielddoc"><p>The date and time the file/folder was created. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a6e6bf7ae9962960526170a3184c044c1"></a>ModificationTime&#160;</td><td class="fielddoc"><p>The date and time the file/folder was last modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a61fada76efbcf6dc7b90ff64f34478c4"></a>AccessTime&#160;</td><td class="fielddoc"><p>The date and time the file/folder was last accessed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28ab61d0a6b32ade45de1410ff4e374ae8b"></a>MimeType&#160;</td><td class="fielddoc"><p>The mime type for the item, e.g. text/html. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a62891e617fa2ef56d454e5c1e210c4a5"></a>FriendlyMimeType&#160;</td><td class="fielddoc"><p>The descriptive name for the mime type, e.g. HTML Document. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28ad18815c769bbbab1c59b635315a0684e"></a>LinkDest&#160;</td><td class="fielddoc"><p>The destination of a symbolic link. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a61950fe2294a326b21ff6f332c89c6ee"></a>LocalPathOrUrl&#160;</td><td class="fielddoc"><p>The local path to the file or the URL in case it is not a local file. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a516a1aa42d75cb7ff15982d5ea400e28a1c391ae9464d1dd4900672049e54ba4d"></a>Comment&#160;</td><td class="fielddoc"><p>A simple comment that can be displayed to the user as is. </p>
+<dl class="section since"><dt>Since</dt><dd>4.6 </dd></dl>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00159">159</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a39b231d7ab2aeeafb0d21a199d30ff25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b231d7ab2aeeafb0d21a199d30ff25">&#9670;&nbsp;</a></span>information</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InformationList KFileItemDelegate::information</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds which additional information (if any) should be shown below items in icon views. </p>
+<p>Access functions: </p><ul>
+<li>void setShownformation(InformationList information) </li>
+<li>InformationList <a class="el" href="classKFileItemDelegate.html#ad11b7291529609133ec6ff56dfbadfc4" title="Returns the file item information that should be shown below item labels in list views. ">showInformation() const</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00077">77</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="ab6cfff93e673b48564b3fc4ba2b44cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cfff93e673b48564b3fc4ba2b44cf2">&#9670;&nbsp;</a></span>jobTransfersVisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::jobTransfersVisible</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property determines if there are <a class="el" href="namespaceKIO.html" title="A namespace for KIO globals. ">KIO</a> jobs on a destination URL visible, then they will have a small animation overlay displayed on them. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00133">133</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="a697caeff7ec522177a9b00655eb01042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697caeff7ec522177a9b00655eb01042">&#9670;&nbsp;</a></span>maximumSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KFileItemDelegate::maximumSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the maximum size that can be returned by <a class="el" href="classKFileItemDelegate.html#a654ee1d48db4133015466b7a7d8fbe0b" title="Returns the nominal size for the item referred to by index, given the provided options. ">KFileItemDelegate::sizeHint()</a>. </p>
+<p>If the maximum size is empty, it will be ignored. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00117">117</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="a40e0569b494f89d983f19198217bf50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e0569b494f89d983f19198217bf50b">&#9670;&nbsp;</a></span>shadowBlur</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal KFileItemDelegate::shadowBlur</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the blur radius for the text shadow. </p>
+<p>The default value for this property is 2.</p>
+<p>Access functions: </p><ul>
+<li>void <a class="el" href="classKFileItemDelegate.html#aaf8bdd0c53927c7cdb26beee9cb4a84f" title="Sets the blur radius for the text shadow. ">setShadowBlur(qreal radius)</a> </li>
+<li>qreal <a class="el" href="classKFileItemDelegate.html#ab3ce4d95ac26f938738c0f3d9e974fe0" title="Returns the blur radius for the text shadow. ">shadowBlur() const</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00110">110</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="a16bf60c6023389a8a12d794db81d47f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bf60c6023389a8a12d794db81d47f6">&#9670;&nbsp;</a></span>shadowColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor KFileItemDelegate::shadowColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the color used for the text shadow. </p>
+<p>The alpha value in the color determines the opacity of the shadow. Shadows are only rendered when the alpha value is non-zero. The default value for this property is Qt::transparent.</p>
+<p>Access functions: </p><ul>
+<li>void <a class="el" href="classKFileItemDelegate.html#a0a6c57eaec168541176990928622b0bf" title="Sets the color used for drawing the text shadow. ">setShadowColor(const QColor &amp;color)</a> </li>
+<li>QColor <a class="el" href="classKFileItemDelegate.html#a815831d0ac1ce2eca249f69cff2968da" title="Returns the color used for the text shadow. ">shadowColor() const</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00090">90</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="a0e1af06f9bc97550e0e2abe6e7db5fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1af06f9bc97550e0e2abe6e7db5fc3">&#9670;&nbsp;</a></span>shadowOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointF KFileItemDelegate::shadowOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property holds the horizontal and vertical offset for the text shadow. </p>
+<p>The default value for this property is (1, 1).</p>
+<p>Access functions: </p><ul>
+<li>void <a class="el" href="classKFileItemDelegate.html#a3d4e8e848a97678d355cefe4930ba2a6" title="Sets the horizontal and vertical offset for the text shadow. ">setShadowOffset(const QPointF &amp;offset)</a> </li>
+<li>QPointF <a class="el" href="classKFileItemDelegate.html#ac4ca3d54fee5ad5855d21532751d9f36" title="Returns the offset used for the text shadow. ">shadowOffset() const</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00100">100</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<a id="a6b4e62887ea5aac7cbca8728fd3a2bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4e62887ea5aac7cbca8728fd3a2bee">&#9670;&nbsp;</a></span>showToolTipWhenElided</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::showToolTipWhenElided</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property determines whether a tooltip will be shown by the delegate if the display role is elided. </p>
+<p>This tooltip will contain the full display role information. The tooltip will only be shown if the Qt::ToolTipRole differs from Qt::DisplayRole, or if they match, showToolTipWhenElided flag is set and the display role information is elided. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8h_source.html#l00126">126</a> of file <a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a63d606d7d1cf7aadc27a79f0a4775ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d606d7d1cf7aadc27a79f0a4775ce3">&#9670;&nbsp;</a></span>KFileItemDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileItemDelegate::KFileItemDelegate </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="classKFileItemDelegate.html" title="KFileItemDelegate is intended to be used to provide a KDE file system view, when using one of the sta...">KFileItemDelegate</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent object for the delegate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00881">881</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a502d223430fb0d927e1ce48b3cd7e2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502d223430fb0d927e1ce48b3cd7e2d2">&#9670;&nbsp;</a></span>~KFileItemDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileItemDelegate::~KFileItemDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys the item delegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00906">906</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a60791b5824fea56bec8eeb8a92742a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60791b5824fea56bec8eeb8a92742a9e">&#9670;&nbsp;</a></span>createEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * KFileItemDelegate::createEditor </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01376">1376</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a470b346b01aa42cbbbd14d0bb78470e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470b346b01aa42cbbbd14d0bb78470e2">&#9670;&nbsp;</a></span>editorEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::editorEvent </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QAbstractItemModel *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01391">1391</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae51b0dbb21794998c8e9aff1ddd4ba1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51b0dbb21794998c8e9aff1ddd4ba1c">&#9670;&nbsp;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01562">1562</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7bd3d07bf3ff7442bcf593619365036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bd3d07bf3ff7442bcf593619365036">&#9670;&nbsp;</a></span>helpEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::helpEvent </td>
+          <td>(</td>
+          <td class="paramtype">QHelpEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QAbstractItemView *&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01477">1477</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a501325ac89b8a6afdc8a88ccd5d3f6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501325ac89b8a6afdc8a88ccd5d3f6f8">&#9670;&nbsp;</a></span>iconRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect KFileItemDelegate::iconRect </td>
+          <td>(</td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the rectangle of the icon that is aligned inside the decoration rectangle. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01049">1049</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf5c2d3929f15a62e8b0aab55ebcc437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5c2d3929f15a62e8b0aab55ebcc437">&#9670;&nbsp;</a></span>jobTransfersVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::jobTransfersVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether or not the displaying of job transfers is enabled. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#aa49f47d9f874d8c6eefcb3ce5664a8bb" title="Enable/Disable the displaying of an animated overlay that is shown for any destination urls (in the v...">setJobTransfersVisible()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+</div>
+</div>
+<a id="afe960608099df8fea215ce5e206ccf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe960608099df8fea215ce5e206ccf85">&#9670;&nbsp;</a></span>maximumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KFileItemDelegate::maximumSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum size for <a class="el" href="classKFileItemDelegate.html#a654ee1d48db4133015466b7a7d8fbe0b" title="Returns the nominal size for the item referred to by index, given the provided options. ">KFileItemDelegate::sizeHint()</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a4a40774f58b2c3323fb5c28787c43896" title="Sets the maximum size for KFileItemDelegate::sizeHint(). ">setMaximumSize()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+</div>
+</div>
+<a id="af3761d98c1403b0d2b0b00b04f43466b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3761d98c1403b0d2b0b00b04f43466b">&#9670;&nbsp;</a></span>paint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::paint </td>
+          <td>(</td>
+          <td class="paramtype">QPainter *&#160;</td>
+          <td class="paramname"><em>painter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Paints the item indicated by <code>index</code>, using <code>painter</code>. </p>
+<p>The item will be drawn in the rectangle specified by option.rect. The correct size for that rectangle can be obtained by calling <a class="el" href="classKFileItemDelegate.html#a654ee1d48db4133015466b7a7d8fbe0b">sizeHint()</a>.</p>
+<p>This function will use the following data values if the model provides them for the item, in place of the values in <code>option:</code> </p>
+<ul>
+<li>Qt::FontRole The font that should be used for the display role. </li>
+<li>Qt::AlignmentRole The alignment of the display role. </li>
+<li>Qt::ForegroundRole The text color for the display role. </li>
+<li>Qt::BackgroundRole The background color for the item.</li>
+</ul>
+<p>This function is reimplemented from QAbstractItemDelegate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>The painter with which to draw the item. </td></tr>
+    <tr><td class="paramname">option</td><td>The style options that should be used when painting the item. </td></tr>
+    <tr><td class="paramname">index</td><td>The index to the item that should be painted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01187">1187</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af10dc9fcce2d914adca5e830cca6df50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10dc9fcce2d914adca5e830cca6df50">&#9670;&nbsp;</a></span>setEditorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setEditorData </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>editor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01402">1402</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa49f47d9f874d8c6eefcb3ce5664a8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49f47d9f874d8c6eefcb3ce5664a8bb">&#9670;&nbsp;</a></span>setJobTransfersVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setJobTransfersVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>jobTransfersVisible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/Disable the displaying of an animated overlay that is shown for any destination urls (in the view). </p>
+<p>When enabled, the animations (if any) will be drawn automatically.</p>
+<p>Only the files/folders that are visible and have jobs associated with them will display the animation. You would likely not want this enabled if you perform some kind of custom painting that takes up a whole item, and will just make this(and what you paint) look funky.</p>
+<p>Default is disabled.</p>
+<p>Note: The model (<a class="el" href="classKDirModel.html" title="A model for a KIO-based directory tree. ">KDirModel</a>) needs to have it's method called with the same value, when you make the call to this method.</p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01056">1056</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a40774f58b2c3323fb5c28787c43896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a40774f58b2c3323fb5c28787c43896">&#9670;&nbsp;</a></span>setMaximumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setMaximumSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the maximum size for <a class="el" href="classKFileItemDelegate.html#a654ee1d48db4133015466b7a7d8fbe0b" title="Returns the nominal size for the item referred to by index, given the provided options. ">KFileItemDelegate::sizeHint()</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a697caeff7ec522177a9b00655eb01042" title="This property holds the maximum size that can be returned by KFileItemDelegate::sizeHint(). ">maximumSize()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01019">1019</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab712a60ac4ae24b0bf756c5b22ebb01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab712a60ac4ae24b0bf756c5b22ebb01b">&#9670;&nbsp;</a></span>setModelData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setModelData </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>editor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QAbstractItemModel *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01433">1433</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf8bdd0c53927c7cdb26beee9cb4a84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8bdd0c53927c7cdb26beee9cb4a84f">&#9670;&nbsp;</a></span>setShadowBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShadowBlur </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>radius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the blur radius for the text shadow. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a40e0569b494f89d983f19198217bf50b" title="This property holds the blur radius for the text shadow. ">shadowBlur()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01009">1009</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a6c57eaec168541176990928622b0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6c57eaec168541176990928622b0bf">&#9670;&nbsp;</a></span>setShadowColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShadowColor </td>
+          <td>(</td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the color used for drawing the text shadow. </p>
+<p>To enable text shadows, set the shadow color to a non-transparent color. To disable text shadows, set the color to Qt::transparent.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a16bf60c6023389a8a12d794db81d47f6" title="This property holds the color used for the text shadow. ">shadowColor()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00989">989</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d4e8e848a97678d355cefe4930ba2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4e8e848a97678d355cefe4930ba2a6">&#9670;&nbsp;</a></span>setShadowOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShadowOffset </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the horizontal and vertical offset for the text shadow. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a0e1af06f9bc97550e0e2abe6e7db5fc3" title="This property holds the horizontal and vertical offset for the text shadow. ">shadowOffset()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00999">999</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a045fc4f498e5340a03bf90189e92256e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045fc4f498e5340a03bf90189e92256e">&#9670;&nbsp;</a></span>setShowInformation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShowInformation </td>
+          <td>(</td>
+          <td class="paramtype">const InformationList &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the list of information lines that are shown below the icon label in list views. </p>
+<p>You will typically construct the list like this: </p><div class="fragment"><div class="line">KFileItemDelegate::InformationList <a class="code" href="namespaceKRecentDirs.html#a7e8db981ca104542337405800188f0f4">list</a>;</div><div class="line">list &lt;&lt; <a class="code" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28a62891e617fa2ef56d454e5c1e210c4a5">KFileItemDelegate::FriendlyMimeType</a> &lt;&lt; <a class="code" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28ab2b6b7aa48771f93f026204c0c93dc41">KFileItemDelegate::Size</a>;</div><div class="line">delegate-&gt;<a class="code" href="classKFileItemDelegate.html#a045fc4f498e5340a03bf90189e92256e">setShowInformation</a>(list);</div></div><!-- fragment --><p>The information lines will be displayed in the list order. The delegate will first draw the item label, and then as many information lines as will fit in the available space.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>A list of information items that should be shown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00970">970</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af17e6ced4942aa877554b5fe0b063fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17e6ced4942aa877554b5fe0b063fcc">&#9670;&nbsp;</a></span>setShowInformation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShowInformation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKFileItemDelegate.html#a516a1aa42d75cb7ff15982d5ea400e28">Information</a>&#160;</td>
+          <td class="paramname"><em>information</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a single information line that is shown below the icon label in list views. </p>
+<p>This is a convenience function for when you only want to show a single line of information.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">information</td><td>The information that should be shown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00975">975</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="add852b5f1a2c2197ce669bbc2d155ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add852b5f1a2c2197ce669bbc2d155ef0">&#9670;&nbsp;</a></span>setShowToolTipWhenElided()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setShowToolTipWhenElided </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showToolTip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether a tooltip should be shown if the display role is elided containing the full display role information. </p>
+<dl class="section note"><dt>Note</dt><dd>The tooltip will only be shown if the Qt::ToolTipRole differs from Qt::DisplayRole, or if they match, showToolTipWhenElided flag is set and the display role information is elided. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a6b4e62887ea5aac7cbca8728fd3a2bee" title="This property determines whether a tooltip will be shown by the delegate if the display role is elide...">showToolTipWhenElided()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01029">1029</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4f8b5ea280c77824511083705483ac0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8b5ea280c77824511083705483ac0b">&#9670;&nbsp;</a></span>setWrapMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::setWrapMode </td>
+          <td>(</td>
+          <td class="paramtype">QTextOption::WrapMode&#160;</td>
+          <td class="paramname"><em>wrapMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the contents text needs to be wrapped, <code>wrapMode</code> strategy will be followed. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01039">1039</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab3ce4d95ac26f938738c0f3d9e974fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ce4d95ac26f938738c0f3d9e974fe0">&#9670;&nbsp;</a></span>shadowBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal KFileItemDelegate::shadowBlur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the blur radius for the text shadow. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#aaf8bdd0c53927c7cdb26beee9cb4a84f" title="Sets the blur radius for the text shadow. ">setShadowBlur()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a815831d0ac1ce2eca249f69cff2968da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815831d0ac1ce2eca249f69cff2968da">&#9670;&nbsp;</a></span>shadowColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor KFileItemDelegate::shadowColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the color used for the text shadow. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a0a6c57eaec168541176990928622b0bf" title="Sets the color used for drawing the text shadow. ">setShadowColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac4ca3d54fee5ad5855d21532751d9f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ca3d54fee5ad5855d21532751d9f36">&#9670;&nbsp;</a></span>shadowOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointF KFileItemDelegate::shadowOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the offset used for the text shadow. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#a3d4e8e848a97678d355cefe4930ba2a6" title="Sets the horizontal and vertical offset for the text shadow. ">setShadowOffset()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae12d9cee708050d7d29342acd4efd8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12d9cee708050d7d29342acd4efd8e1">&#9670;&nbsp;</a></span>shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRegion KFileItemDelegate::shape </td>
+          <td>(</td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the shape of the item as a region. </p>
+<p>The returned region can be used for precise hit testing of the item. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01518">1518</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad11b7291529609133ec6ff56dfbadfc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11b7291529609133ec6ff56dfbadfc4">&#9670;&nbsp;</a></span>showInformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KFileItemDelegate::InformationList KFileItemDelegate::showInformation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the file item information that should be shown below item labels in list views. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00984">984</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2748dcf6c6d84b97e4831b2d1836a3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2748dcf6c6d84b97e4831b2d1836a3c1">&#9670;&nbsp;</a></span>showToolTipWhenElided()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KFileItemDelegate::showToolTipWhenElided </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether a tooltip should be shown if the display role is elided containing the full display role information. </p>
+<dl class="section note"><dt>Note</dt><dd>The tooltip will only be shown if the Qt::ToolTipRole differs from Qt::DisplayRole, or if they match, showToolTipWhenElided flag is set and the display role information is elided. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKFileItemDelegate.html#add852b5f1a2c2197ce669bbc2d155ef0" title="Sets whether a tooltip should be shown if the display role is elided containing the full display role...">setShowToolTipWhenElided()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+</div>
+</div>
+<a id="a654ee1d48db4133015466b7a7d8fbe0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654ee1d48db4133015466b7a7d8fbe0b">&#9670;&nbsp;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KFileItemDelegate::sizeHint </td>
+          <td>(</td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the nominal size for the item referred to by <code>index</code>, given the provided options. </p>
+<p>If the model provides a valid Qt::FontRole and/or Qt::AlignmentRole for the item, those will be used instead of the ones specified in the style options.</p>
+<p>This function is reimplemented from QAbstractItemDelegate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">option</td><td>The style options that should be used when painting the item. </td></tr>
+    <tr><td class="paramname">index</td><td>The index to the item for which to return the size hint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l00911">911</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a869a9bcb3a12257c15c8926ff79a5600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869a9bcb3a12257c15c8926ff79a5600">&#9670;&nbsp;</a></span>updateEditorGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KFileItemDelegate::updateEditorGeometry </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>editor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemDelegate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01441">1441</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aded1b8a55eb546c8b0324af3085cd733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded1b8a55eb546c8b0324af3085cd733">&#9670;&nbsp;</a></span>wrapMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextOption::WrapMode KFileItemDelegate::wrapMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the wrapping strategy followed to show text when it needs wrapping. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kfileitemdelegate_8cpp_source.html#l01044">1044</a> of file <a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kfileitemdelegate_8h_source.html">kfileitemdelegate.h</a></li>
+<li><a class="el" href="kfileitemdelegate_8cpp_source.html">kfileitemdelegate.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:58 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

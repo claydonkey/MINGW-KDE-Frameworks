@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCompletion - KCompletion Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCompletion</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCompletion"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKComboBox.html">KComboBox</option>
+        
+        <option value="classKCompletion.html">KCompletion</option>
+        
+        <option value="classKCompletionBase.html">KCompletionBase</option>
+        
+        <option value="classKCompletionBox.html">KCompletionBox</option>
+        
+        <option value="classKCompletionMatches.html">KCompletionMatches</option>
+        
+        <option value="classKHistoryComboBox.html">KHistoryComboBox</option>
+        
+        <option value="classKLineEdit.html">KLineEdit</option>
+        
+        <option value="classKPixmapProvider.html">KPixmapProvider</option>
+        
+        <option value="classKSortableItem.html">KSortableItem</option>
+        
+        <option value="classKSortableList.html">KSortableList</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Text completion helpers and widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:davidgiloliva@gmail.com">David Gil Oliva</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Completion)
+target_link_libraries(yourapp KF5::Completion)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCompletion </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcompletion-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCompletion on <a href="https://cgit.kde.org/kcompletion-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCompletion </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCompletion">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKCompletion-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCompletion Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KCompletion:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKCompletion__inherit__graph.png" border="0" usemap="#KCompletion_inherit__map" alt="Inheritance graph"/></div>
+<map name="KCompletion_inherit__map" id="KCompletion_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a927c284d89e41d976412201b68ca67e9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">CompletionMode</a> { <br />
+&#160;&#160;<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a103ff6b05ac57027f6cbd47a7806f263">CompletionNone</a> = 1,
+<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a75558e348f18fff4b6a0bb406625d03a">CompletionAuto</a>,
+<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a8cf32b45e4256834bc183a66d355b6a3">CompletionMan</a>,
+<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9aa62055e80f1fac714994a179f99eabc7">CompletionShell</a>,
+<br />
+&#160;&#160;<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9ab7d2690df288094515a12c902c00df36">CompletionPopup</a>,
+<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a6988c584d6699bfa473641e9720efb5e">CompletionPopupAuto</a>
+<br />
+ }</td></tr>
+<tr class="separator:a927c284d89e41d976412201b68ca67e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eb49b5b89f48f9296b136f6bfa9a62"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a> { <a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62ac0b1933cc325bb144982ab09c02376db">Sorted</a>,
+<a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62a2011ff90476ea031ab999c12a06e548a">Insertion</a>,
+<a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62a968d39944eede4761a23cce8a8b06f52">Weighted</a>
+ }</td></tr>
+<tr class="separator:a88eb49b5b89f48f9296b136f6bfa9a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a960d93432117bea9aac9a3ca0af6db1d"><td class="memItemLeft" align="right" valign="top"><a id="a960d93432117bea9aac9a3ca0af6db1d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ignoreCase</b></td></tr>
+<tr class="separator:a960d93432117bea9aac9a3ca0af6db1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996e18a53e86e14aa1fd37d2732e6aca"><td class="memItemLeft" align="right" valign="top"><a id="a996e18a53e86e14aa1fd37d2732e6aca"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
+<tr class="separator:a996e18a53e86e14aa1fd37d2732e6aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab326f4fd4fca6aeecd4a0972f2160755"><td class="memItemLeft" align="right" valign="top"><a id="ab326f4fd4fca6aeecd4a0972f2160755"></a>
+<a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>order</b></td></tr>
+<tr class="separator:ab326f4fd4fca6aeecd4a0972f2160755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:aa9df404d9a37d5b57ede9dd90f765116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116">match</a> (const QString &amp;item)</td></tr>
+<tr class="separator:aa9df404d9a37d5b57ede9dd90f765116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b32b1facc011ba6d9cc2de31447e62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b">matches</a> (const QStringList &amp;matchlist)</td></tr>
+<tr class="separator:a5b32b1facc011ba6d9cc2de31447e62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba213b48f41e2404150250f44626a55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a3ba213b48f41e2404150250f44626a55">multipleMatches</a> ()</td></tr>
+<tr class="separator:a3ba213b48f41e2404150250f44626a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ac2e280254dc163f153077ec882f05513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#ac2e280254dc163f153077ec882f05513">addItem</a> (const QString &amp;item)</td></tr>
+<tr class="separator:ac2e280254dc163f153077ec882f05513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e854a3c6d3950a9fbeb8b2cf3ecd47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a09e854a3c6d3950a9fbeb8b2cf3ecd47">addItem</a> (const QString &amp;item, uint weight)</td></tr>
+<tr class="separator:a09e854a3c6d3950a9fbeb8b2cf3ecd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83d65e9084382a6ecfcf5ff2b465a9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aa83d65e9084382a6ecfcf5ff2b465a9f">clear</a> ()</td></tr>
+<tr class="separator:aa83d65e9084382a6ecfcf5ff2b465a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b8fb6f3cd37d817418c873d1032c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a13b8fb6f3cd37d817418c873d1032c8d">insertItems</a> (const QStringList &amp;items)</td></tr>
+<tr class="separator:a13b8fb6f3cd37d817418c873d1032c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b597e5d237650cc4b0e3dec50c4d2f"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f">makeCompletion</a> (const QString &amp;string)</td></tr>
+<tr class="separator:a43b597e5d237650cc4b0e3dec50c4d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b42db3a570daa789b59f8b41474ad90"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90">nextMatch</a> ()</td></tr>
+<tr class="separator:a0b42db3a570daa789b59f8b41474ad90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b293993541d8ed3c6ca4c67941554f2"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2">previousMatch</a> ()</td></tr>
+<tr class="separator:a9b293993541d8ed3c6ca4c67941554f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ee8cc67ea1228ef88b0ab3e1be644d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a31ee8cc67ea1228ef88b0ab3e1be644d">removeItem</a> (const QString &amp;item)</td></tr>
+<tr class="separator:a31ee8cc67ea1228ef88b0ab3e1be644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf680a90533b2cbdb920a848e1bb813"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aecf680a90533b2cbdb920a848e1bb813">setItems</a> (const QStringList &amp;itemList)</td></tr>
+<tr class="separator:aecf680a90533b2cbdb920a848e1bb813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbbcdf12afab6f5e1de7b108ea33b62"><td class="memItemLeft" align="right" valign="top">KCOMPLETION_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#addbbcdf12afab6f5e1de7b108ea33b62">slotMakeCompletion</a> (const QString &amp;string)</td></tr>
+<tr class="separator:addbbcdf12afab6f5e1de7b108ea33b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af676f5cf491f4d90ed9f120f92300219"><td class="memItemLeft" align="right" valign="top">KCOMPLETION_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#af676f5cf491f4d90ed9f120f92300219">slotNextMatch</a> ()</td></tr>
+<tr class="separator:af676f5cf491f4d90ed9f120f92300219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee5b0552fb56444b5462680eee628a8"><td class="memItemLeft" align="right" valign="top">KCOMPLETION_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a4ee5b0552fb56444b5462680eee628a8">slotPreviousMatch</a> ()</td></tr>
+<tr class="separator:a4ee5b0552fb56444b5462680eee628a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a67121e28f073bfc134479845cd2a2a84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a67121e28f073bfc134479845cd2a2a84">KCompletion</a> ()</td></tr>
+<tr class="separator:a67121e28f073bfc134479845cd2a2a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed35537eb98e398d9da29df0cdbf5404"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aed35537eb98e398d9da29df0cdbf5404">~KCompletion</a> ()</td></tr>
+<tr class="separator:aed35537eb98e398d9da29df0cdbf5404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e31436d86b23b8c04b5a59a0249df65"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a5e31436d86b23b8c04b5a59a0249df65">allMatches</a> ()</td></tr>
+<tr class="separator:a5e31436d86b23b8c04b5a59a0249df65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ad9a50eb978b94242f060fdb68bfa3"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aa5ad9a50eb978b94242f060fdb68bfa3">allMatches</a> (const QString &amp;string)</td></tr>
+<tr class="separator:aa5ad9a50eb978b94242f060fdb68bfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbefa19cf6f8c44b151e6bba5f830938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCompletionMatches.html">KCompletionMatches</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#adbefa19cf6f8c44b151e6bba5f830938">allWeightedMatches</a> ()</td></tr>
+<tr class="separator:adbefa19cf6f8c44b151e6bba5f830938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6581be3dcb875c4c5a4b4b1b34d97773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCompletionMatches.html">KCompletionMatches</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a6581be3dcb875c4c5a4b4b1b34d97773">allWeightedMatches</a> (const QString &amp;string)</td></tr>
+<tr class="separator:a6581be3dcb875c4c5a4b4b1b34d97773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf79e516fa2571f4e4bb62676216e5d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">CompletionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aaf79e516fa2571f4e4bb62676216e5d3">completionMode</a> () const</td></tr>
+<tr class="separator:aaf79e516fa2571f4e4bb62676216e5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6529b902b28542afec9f149ca82712e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#ac6529b902b28542afec9f149ca82712e">hasMultipleMatches</a> () const</td></tr>
+<tr class="separator:ac6529b902b28542afec9f149ca82712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab578758792d55020b1b676dcd2cb6587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#ab578758792d55020b1b676dcd2cb6587">ignoreCase</a> () const</td></tr>
+<tr class="separator:ab578758792d55020b1b676dcd2cb6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b28387a34700956d86e7e2f509fdb98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a5b28387a34700956d86e7e2f509fdb98">isEmpty</a> () const</td></tr>
+<tr class="separator:a5b28387a34700956d86e7e2f509fdb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f51bc348dfc5bfebab12082c99bf310"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a7f51bc348dfc5bfebab12082c99bf310">items</a> () const</td></tr>
+<tr class="separator:a7f51bc348dfc5bfebab12082c99bf310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1929345c4514c06ac6c2d860071ee14"><td class="memItemLeft" align="right" valign="top">virtual const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#ad1929345c4514c06ac6c2d860071ee14">lastMatch</a> () const</td></tr>
+<tr class="separator:ad1929345c4514c06ac6c2d860071ee14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9a1c98c82819e166727e744b94e1d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a3d9a1c98c82819e166727e744b94e1d1">order</a> () const</td></tr>
+<tr class="separator:a3d9a1c98c82819e166727e744b94e1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806d98ee8eab5262255cdc04eceec3f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a806d98ee8eab5262255cdc04eceec3f0">setCompletionMode</a> (<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">CompletionMode</a> mode)</td></tr>
+<tr class="separator:a806d98ee8eab5262255cdc04eceec3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c356a9776a61aeaec7979a242ea51f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a99c356a9776a61aeaec7979a242ea51f">setIgnoreCase</a> (bool ignoreCase)</td></tr>
+<tr class="separator:a99c356a9776a61aeaec7979a242ea51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77257091180054bb7d6cf280dae1dad2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a77257091180054bb7d6cf280dae1dad2">setOrder</a> (<a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a> order)</td></tr>
+<tr class="separator:a77257091180054bb7d6cf280dae1dad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8414e207f782085f4cd38cb462542cdb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a8414e207f782085f4cd38cb462542cdb">setSoundsEnabled</a> (bool enable)</td></tr>
+<tr class="separator:a8414e207f782085f4cd38cb462542cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4714a802d1204f38836190b44b2023bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a4714a802d1204f38836190b44b2023bd">soundsEnabled</a> () const</td></tr>
+<tr class="separator:a4714a802d1204f38836190b44b2023bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a29cf04496d576dc2489f2fb1248bfa"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a8a29cf04496d576dc2489f2fb1248bfa">substringCompletion</a> (const QString &amp;string) const</td></tr>
+<tr class="separator:a8a29cf04496d576dc2489f2fb1248bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa6c51f0c61d01fd4c799880d55c957a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#aa6c51f0c61d01fd4c799880d55c957a4">postProcessMatch</a> (QString *<a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116">match</a>) const</td></tr>
+<tr class="separator:aa6c51f0c61d01fd4c799880d55c957a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535e00dfaffc58e29233b31d3248f0b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a535e00dfaffc58e29233b31d3248f0b1">postProcessMatches</a> (QStringList *matchList) const</td></tr>
+<tr class="separator:a535e00dfaffc58e29233b31d3248f0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e322919634ccc7860e70fd34c86ce08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletion.html#a7e322919634ccc7860e70fd34c86ce08">postProcessMatches</a> (<a class="el" href="classKCompletionMatches.html">KCompletionMatches</a> *<a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b">matches</a>) const</td></tr>
+<tr class="separator:a7e322919634ccc7860e70fd34c86ce08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A generic class for completing QStrings. </p>
+<p>This class offers easy use of "auto completion", "manual completion" or "shell completion" on QString objects. A common use is completing filenames or URLs (see <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html">KUrlCompletion()</a>). But it is not limited to URL-completion &ndash; everything should be completable! The user should be able to complete email addresses, telephone numbers, commands, SQL queries... Every time your program knows what the user can type into an edit field, you should offer completion. With <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a>, this is very easy, and if you are using a line edit widget (<a class="el" href="classKLineEdit.html" title="An enhanced QLineEdit widget for inputting text. ">KLineEdit</a>), it is even easier. Basically, you tell a <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> object what strings should be completable and, whenever completion should be invoked, you call <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a>. <a class="el" href="classKLineEdit.html" title="An enhanced QLineEdit widget for inputting text. ">KLineEdit</a> and (an editable) <a class="el" href="classKComboBox.html" title="A combo box with completion support. ">KComboBox</a> even do this automatically for you.</p>
+<p><a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> offers the completed string via the signal <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a> and all matching strings (when the result is ambiguous) via the method <a class="el" href="classKCompletion.html#a5e31436d86b23b8c04b5a59a0249df65" title="Returns a list of all items matching the last completed string. ">allMatches()</a>.</p>
+<p>Notice: auto completion, shell completion and manual completion work slightly differently:</p>
+<ul>
+<li>auto completion always returns a complete item as match. When more than one matching item is available, it will deliver just the first one (depending on sorting order). Iterating over all matches is possible via <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> and <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a>.</li>
+</ul>
+<ul>
+<li>popup completion works in the same way, the only difference being that the completed items are not put into the edit widget, but into a separate popup box.</li>
+</ul>
+<ul>
+<li>manual completion works the same way as auto completion, except that it is not invoked automatically while the user is typing, but only when the user presses a special key. The difference of manual and auto completion is therefore only visible in UI classes. <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> needs to know whether to deliver partial matches (shell completion) or whole matches (auto/manual completion), therefore <a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a8cf32b45e4256834bc183a66d355b6a3" title="Same as automatic, but shortest match is used for completion. ">KCompletion::CompletionMan</a> and <a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9a75558e348f18fff4b6a0bb406625d03a" title="Text is automatically filled in whenever possible. ">KCompletion::CompletionAuto</a> have the exact same effect in <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a>.</li>
+</ul>
+<ul>
+<li>shell completion works like "tab completion" in a shell: when multiple matches are available, the longest possible string of all matches is returned (i.e. only a partial item). Iterating over all matching items (complete, not partial) is possible via <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> and <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a>.</li>
+</ul>
+<p>As an application programmer, you do not normally have to worry about the different completion modes; <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> handles that for you, according to the setting <a class="el" href="classKCompletion.html#a806d98ee8eab5262255cdc04eceec3f0" title="Sets the completion mode. ">setCompletionMode()</a>. The default setting is globally configured by the user and read from <a class="el" href="classKCompletion.html#aaf79e516fa2571f4e4bb62676216e5d3" title="Returns the current completion mode. ">completionMode()</a>.</p>
+<p>A short example: </p><div class="fragment"><div class="line"><a class="code" href="classKCompletion.html">KCompletion</a> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/namespaceKStandardShortcut.html#a8a9f11ff9e1fd4ba233ac3ce68b3bfc6">completion</a>;</div><div class="line">completion.<a class="code" href="classKCompletion.html#a77257091180054bb7d6cf280dae1dad2">setOrder</a>(<a class="code" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62ac0b1933cc325bb144982ab09c02376db">KCompletion::Sorted</a>);</div><div class="line">completion.<a class="code" href="classKCompletion.html#ac2e280254dc163f153077ec882f05513">addItem</a>(<span class="stringliteral">&quot;pfeiffer@kde.org&quot;</span>);</div><div class="line">completion.<a class="code" href="classKCompletion.html#ac2e280254dc163f153077ec882f05513">addItem</a>(<span class="stringliteral">&quot;coolo@kde.org&quot;</span>);</div><div class="line">completion.<a class="code" href="classKCompletion.html#ac2e280254dc163f153077ec882f05513">addItem</a>(<span class="stringliteral">&quot;carpdjih@sp.zrz.tu-berlin.de&quot;</span>);</div><div class="line">completion.<a class="code" href="classKCompletion.html#ac2e280254dc163f153077ec882f05513">addItem</a>(<span class="stringliteral">&quot;carp@cs.tu-berlin.de&quot;</span>);</div><div class="line"></div><div class="line">cout &lt;&lt; completion.<a class="code" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f">makeCompletion</a>(<span class="stringliteral">&quot;ca&quot;</span>).latin1() &lt;&lt; endl;</div></div><!-- fragment --><p>In shell-completion mode, this will be "carp"; in auto-completion mode it will be "carp\@cs.tu-berlin.de", as that is alphabetically smaller. If setOrder was set to Insertion, "carpdjih\@sp.zrz.tu-berlin.de" would be completed in auto-completion mode, as that was inserted before "carp\@cs.tu-berlin.de".</p>
+<p>You can dynamically update the completable items by removing and adding them whenever you want. For advanced usage, you could even use multiple <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> objects. E.g. imagine an editor like kwrite with multiple open files. You could store items of each file in a different <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> object, so that you know (and tell the user) where a completion comes from.</p>
+<p>Note: <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> does not work with strings that contain 0x0 characters (unicode null), as this is used internally as a delimiter.</p>
+<p>You may inherit from <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> and override <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> in special cases (like reading directories or urls and then supplying the contents to <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a>, as <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html">KUrlCompletion</a> does), but this is usually not necessary.</p>
+<dl class="section author"><dt>Author</dt><dd>Carsten Pfeiffer <a href="#" onclick="location.href='mai'+'lto:'+'pfe'+'if'+'fer'+'@k'+'de.'+'or'+'g'; return false;">pfeif<span style="display: none;">.nosp@m.</span>fer@<span style="display: none;">.nosp@m.</span>kde.o<span style="display: none;">.nosp@m.</span>rg</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00125">125</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a927c284d89e41d976412201b68ca67e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927c284d89e41d976412201b68ca67e9">&#9670;&nbsp;</a></span>CompletionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">KCompletion::CompletionMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enum describes the completion mode used for by the <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> class. </p>
+<p>See <a href="http://developer.kde.org/documentation/standards/kde/style/keys/completion.html">the styleguide</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9a103ff6b05ac57027f6cbd47a7806f263"></a>CompletionNone&#160;</td><td class="fielddoc"><p>No completion is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9a75558e348f18fff4b6a0bb406625d03a"></a>CompletionAuto&#160;</td><td class="fielddoc"><p>Text is automatically filled in whenever possible. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9a8cf32b45e4256834bc183a66d355b6a3"></a>CompletionMan&#160;</td><td class="fielddoc"><p>Same as automatic, but shortest match is used for completion. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9aa62055e80f1fac714994a179f99eabc7"></a>CompletionShell&#160;</td><td class="fielddoc"><p>Completes text much in the same way as a typical *nix shell would. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9ab7d2690df288094515a12c902c00df36"></a>CompletionPopup&#160;</td><td class="fielddoc"><p>Lists all possible matches in a popup list box to choose from. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a927c284d89e41d976412201b68ca67e9a6988c584d6699bfa473641e9720efb5e"></a>CompletionPopupAuto&#160;</td><td class="fielddoc"><p>Lists all possible matches in a popup list box to choose from, and automatically fills the result whenever possible. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00142">142</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+
+</div>
+</div>
+<a id="a88eb49b5b89f48f9296b136f6bfa9a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88eb49b5b89f48f9296b136f6bfa9a62">&#9670;&nbsp;</a></span>CompOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">KCompletion::CompOrder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constants that represent the order in which <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> performs completion lookups. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88eb49b5b89f48f9296b136f6bfa9a62ac0b1933cc325bb144982ab09c02376db"></a>Sorted&#160;</td><td class="fielddoc"><p>Use alphabetically sorted order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88eb49b5b89f48f9296b136f6bfa9a62a2011ff90476ea031ab999c12a06e548a"></a>Insertion&#160;</td><td class="fielddoc"><p>Use order of insertion. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88eb49b5b89f48f9296b136f6bfa9a62a968d39944eede4761a23cce8a8b06f52"></a>Weighted&#160;</td><td class="fielddoc"><p>Use weighted order. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00174">174</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a67121e28f073bfc134479845cd2a2a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67121e28f073bfc134479845cd2a2a84">&#9670;&nbsp;</a></span>KCompletion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCompletion::KCompletion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor, nothing special here :) </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00140">140</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed35537eb98e398d9da29df0cdbf5404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed35537eb98e398d9da29df0cdbf5404">&#9670;&nbsp;</a></span>~KCompletion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCompletion::~KCompletion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor, nothing special here, either. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00148">148</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac2e280254dc163f153077ec882f05513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e280254dc163f153077ec882f05513">&#9670;&nbsp;</a></span>addItem <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::addItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an item to the list of available completions. </p>
+<p>Resets the current item state (<a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> and <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> won't work the next time they are called). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the item to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00227">227</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09e854a3c6d3950a9fbeb8b2cf3ecd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e854a3c6d3950a9fbeb8b2cf3ecd47">&#9670;&nbsp;</a></span>addItem <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::addItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an item to the list of available completions. </p>
+<p>Resets the current item state (<a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> and <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> won't work the next time they are called).</p>
+<p>Sets the weight of the item to <code>weight</code> or adds it to the current weight if the item is already available. The weight has to be greater than 1 to take effect (default weight is 1). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the item to add </td></tr>
+    <tr><td class="paramname">weight</td><td>the weight of the item, default is 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00237">237</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e31436d86b23b8c04b5a59a0249df65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e31436d86b23b8c04b5a59a0249df65">&#9670;&nbsp;</a></span>allMatches() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCompletion::allMatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items matching the last completed string. </p>
+<p>It might take some time if you have a <em>lot</em> of items. </p><dl class="section return"><dt>Returns</dt><dd>a list of all matches for the last completed string. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a8a29cf04496d576dc2489f2fb1248bfa" title="Returns a list of all completion items that contain the given string. ">substringCompletion</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00393">393</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5ad9a50eb978b94242f060fdb68bfa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ad9a50eb978b94242f060fdb68bfa3">&#9670;&nbsp;</a></span>allMatches() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCompletion::allMatches </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items matching <code>string</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the list of all matches </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00421">421</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adbefa19cf6f8c44b151e6bba5f830938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbefa19cf6f8c44b151e6bba5f830938">&#9670;&nbsp;</a></span>allWeightedMatches() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCompletionMatches.html">KCompletionMatches</a> KCompletion::allWeightedMatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items matching the last completed string. </p>
+<p>It might take some time if you have a <em>lot</em> of items. The matches are returned as <a class="el" href="classKCompletionMatches.html" title="This structure is returned by KCompletion::allWeightedMatches(). ">KCompletionMatches</a>, which also keeps the weight of the matches, allowing you to modify some matches or merge them with matches from another call to <a class="el" href="classKCompletion.html#adbefa19cf6f8c44b151e6bba5f830938" title="Returns a list of all items matching the last completed string. ">allWeightedMatches()</a>, and sort the matches after that in order to have the matches ordered correctly.</p>
+<dl class="section return"><dt>Returns</dt><dd>a list of all completion matches </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a8a29cf04496d576dc2489f2fb1248bfa" title="Returns a list of all completion items that contain the given string. ">substringCompletion</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00407">407</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6581be3dcb875c4c5a4b4b1b34d97773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6581be3dcb875c4c5a4b4b1b34d97773">&#9670;&nbsp;</a></span>allWeightedMatches() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCompletionMatches.html">KCompletionMatches</a> KCompletion::allWeightedMatches </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items matching <code>string</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of all matches </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00432">432</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa83d65e9084382a6ecfcf5ff2b465a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83d65e9084382a6ecfcf5ff2b465a9f">&#9670;&nbsp;</a></span>clear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes all inserted items. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00278">278</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf79e516fa2571f4e4bb62676216e5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf79e516fa2571f4e4bb62676216e5d3">&#9670;&nbsp;</a></span>completionMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">KCompletion::CompletionMode</a> KCompletion::completionMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current completion mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current completion mode, default is CompletionPopup </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a806d98ee8eab5262255cdc04eceec3f0" title="Sets the completion mode. ">setCompletionMode</a> </dd>
+<dd>
+<a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9" title="This enum describes the completion mode used for by the KCompletion class. ">CompletionMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00387">387</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6529b902b28542afec9f149ca82712e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6529b902b28542afec9f149ca82712e">&#9670;&nbsp;</a></span>hasMultipleMatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletion::hasMultipleMatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true when more than one match is found. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is more than one match </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a3ba213b48f41e2404150250f44626a55" title="This signal is emitted when calling makeCompletion() and more than one matching item is found...">multipleMatches</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00455">455</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab578758792d55020b1b676dcd2cb6587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab578758792d55020b1b676dcd2cb6587">&#9670;&nbsp;</a></span>ignoreCase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletion::ignoreCase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> acts case insensitively or not. </p>
+<p>Default is false (case sensitive). </p><dl class="section return"><dt>Returns</dt><dd>true if the case will be ignored </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a99c356a9776a61aeaec7979a242ea51f" title="Setting this to true makes KCompletion behave case insensitively. ">setIgnoreCase</a> </dd></dl>
+
+</div>
+</div>
+<a id="a13b8fb6f3cd37d817418c873d1032c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b8fb6f3cd37d817418c873d1032c8d">&#9670;&nbsp;</a></span>insertItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::insertItems </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inserts <code>items</code> into the list of possible completions. </p>
+<p>It does the same as <a class="el" href="classKCompletion.html#aecf680a90533b2cbdb920a848e1bb813" title="Sets the list of items available for completion. ">setItems()</a>, but without calling <a class="el" href="classKCompletion.html#aa83d65e9084382a6ecfcf5ff2b465a9f" title="Removes all inserted items. ">clear()</a> before. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>the items to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00183">183</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b28387a34700956d86e7e2f509fdb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b28387a34700956d86e7e2f509fdb98">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletion::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the completion object contains no entries. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00209">209</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f51bc348dfc5bfebab12082c99bf310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f51bc348dfc5bfebab12082c99bf310">&#9670;&nbsp;</a></span>items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCompletion::items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items inserted into <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a>. </p>
+<p>This is useful if you need to save the state of a <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> object and restore it later.</p>
+<p>Important note: when order() == Weighted, then every item in the stringlist has its weight appended, delimited by a colon. E.g. an item "www.kde.org" might look like "www.kde.org:4", where 4 is the weight.</p>
+<p>This is necessary so that you can save the items along with its weighting on disk and load them back with <a class="el" href="classKCompletion.html#aecf680a90533b2cbdb920a848e1bb813" title="Sets the list of items available for completion. ">setItems()</a>, restoring its weight as well. If you really don't want the appended weightings, call setOrder( KCompletion::Insertion ) before calling items().</p>
+<dl class="section return"><dt>Returns</dt><dd>a list of all items </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#aecf680a90533b2cbdb920a848e1bb813" title="Sets the list of items available for completion. ">setItems</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad1929345c4514c06ac6c2d860071ee14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1929345c4514c06ac6c2d860071ee14">&#9670;&nbsp;</a></span>lastMatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KCompletion::lastMatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last match. </p>
+<p>Might be useful if you need to check whether a completion is different from the last one. </p><dl class="section return"><dt>Returns</dt><dd>the last match. QString() is returned when there is no last match. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00496">496</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43b597e5d237650cc4b0e3dec50c4d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b597e5d237650cc4b0e3dec50c4d2f">&#9670;&nbsp;</a></span>makeCompletion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCompletion::makeCompletion </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to find an item in the list of available completions that begins with <code>string</code>. </p>
+<p>Will either return the first matching item (if there is more than one match) or QString(), if no match is found.</p>
+<p>In the latter case, a sound will be emitted, depending on <a class="el" href="classKCompletion.html#a4714a802d1204f38836190b44b2023bd" title="Tells you whether KCompletion will emit sounds on certain occasions. ">soundsEnabled()</a>. If a match is found, it will be emitted via the signal <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a>.</p>
+<p>If this is called twice or more with the same string while no items were added or removed in the meantime, all available completions will be emitted via the signal <a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b" title="This signal is emitted by makeCompletion() in shell-completion mode when the same string is passed to...">matches()</a>. This happens only in shell-completion mode.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to complete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the matching item, or QString() if there is no matching item. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a8a29cf04496d576dc2489f2fb1248bfa" title="Returns a list of all completion items that contain the given string. ">substringCompletion</a> </dd></dl>
+
+<p>Reimplemented in <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKShellCompletion.html#a1b1099e3a923779f24933209c5e0bdb3">KShellCompletion</a>, <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html#a17dcdba0d18eb3c029a223a6f424a675">KUrlCompletion</a>, <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKShellCompletion.html#a1b1099e3a923779f24933209c5e0bdb3">KShellCompletion</a>, and <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html#a17dcdba0d18eb3c029a223a6f424a675">KUrlCompletion</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00289">289</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9df404d9a37d5b57ede9dd90f765116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9df404d9a37d5b57ede9dd90f765116">&#9670;&nbsp;</a></span>match</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::match </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when a match is found. </p>
+<p>In particular, <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a>, <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> and <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> all emit this signal; <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> will only emit it when a match is found, but the other methods will alwasy emit it (and so may emit it with an empty string).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the matching item, or QString() if there were no more matching items. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b32b1facc011ba6d9cc2de31447e62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b32b1facc011ba6d9cc2de31447e62b">&#9670;&nbsp;</a></span>matches</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::matches </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>matchlist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted by <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> in shell-completion mode when the same string is passed to <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> multiple times in a row. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matchlist</td><td>the list of all matching items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ba213b48f41e2404150250f44626a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba213b48f41e2404150250f44626a55">&#9670;&nbsp;</a></span>multipleMatches</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::multipleMatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when calling <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> and more than one matching item is found. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#ac6529b902b28542afec9f149ca82712e" title="Returns true when more than one match is found. ">hasMultipleMatches</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0b42db3a570daa789b59f8b41474ad90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b42db3a570daa789b59f8b41474ad90">&#9670;&nbsp;</a></span>nextMatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCompletion::nextMatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the next item from the list of matching items. </p>
+<p>When reaching the last item, the list is rotated, so it will return the first match and a sound is emitted (depending on <a class="el" href="classKCompletion.html#a4714a802d1204f38836190b44b2023bd" title="Tells you whether KCompletion will emit sounds on certain occasions. ">soundsEnabled()</a>). </p><dl class="section return"><dt>Returns</dt><dd>the next item from the list of matching items. When there is no match, QString() is returned and a sound is emitted. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00464">464</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d9a1c98c82819e166727e744b94e1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9a1c98c82819e166727e744b94e1d1">&#9670;&nbsp;</a></span>order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a> KCompletion::order </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the completion order. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current completion order. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a77257091180054bb7d6cf280dae1dad2" title="KCompletion offers three different ways in which it offers its items: ">setOrder</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa6c51f0c61d01fd4c799880d55c957a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c51f0c61d01fd4c799880d55c957a4">&#9670;&nbsp;</a></span>postProcessMatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::postProcessMatch </td>
+          <td>(</td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>match</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called after a completion is found and before the matching string is emitted. </p>
+<p>You can override this method to modify the string that will be emitted. This is necessary e.g. in <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html">KUrlCompletion()</a>, where files with spaces in their names are shown escaped ("filename\ with\ spaces"), but stored unescaped inside <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a>. Never delete that pointer!</p>
+<p>Default implementation does nothing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">match</td><td>the match to process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a535e00dfaffc58e29233b31d3248f0b1" title="This method is called before a list of all available completions is emitted via matches(). ">postProcessMatches</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00215">215</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a535e00dfaffc58e29233b31d3248f0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535e00dfaffc58e29233b31d3248f0b1">&#9670;&nbsp;</a></span>postProcessMatches() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::postProcessMatches </td>
+          <td>(</td>
+          <td class="paramtype">QStringList *&#160;</td>
+          <td class="paramname"><em>matchList</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called before a list of all available completions is emitted via <a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b" title="This signal is emitted by makeCompletion() in shell-completion mode when the same string is passed to...">matches()</a>. </p>
+<p>You can override this method to modify the found items before <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a> or <a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b" title="This signal is emitted by makeCompletion() in shell-completion mode when the same string is passed to...">matches()</a> are emitted. Never delete that pointer!</p>
+<p>Default implementation does nothing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matchList</td><td>the matches to process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#aa6c51f0c61d01fd4c799880d55c957a4" title="This method is called after a completion is found and before the matching string is emitted...">postProcessMatch</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00219">219</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7e322919634ccc7860e70fd34c86ce08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e322919634ccc7860e70fd34c86ce08">&#9670;&nbsp;</a></span>postProcessMatches() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::postProcessMatches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCompletionMatches.html">KCompletionMatches</a> *&#160;</td>
+          <td class="paramname"><em>matches</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called before a list of all available completions is emitted via <a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b" title="This signal is emitted by makeCompletion() in shell-completion mode when the same string is passed to...">matches()</a>. </p>
+<p>You can override this method to modify the found items before <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a> or <a class="el" href="classKCompletion.html#a5b32b1facc011ba6d9cc2de31447e62b" title="This signal is emitted by makeCompletion() in shell-completion mode when the same string is passed to...">matches()</a> are emitted. Never delete that pointer!</p>
+<p>Default implementation does nothing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matches</td><td>the matches to process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#aa6c51f0c61d01fd4c799880d55c957a4" title="This method is called after a completion is found and before the matching string is emitted...">postProcessMatch</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00223">223</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b293993541d8ed3c6ca4c67941554f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b293993541d8ed3c6ca4c67941554f2">&#9670;&nbsp;</a></span>previousMatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCompletion::previousMatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the next item from the list of matching items. </p>
+<p>When reaching the beginning, the list is rotated so it will return the last match and a sound is emitted (depending on <a class="el" href="classKCompletion.html#a4714a802d1204f38836190b44b2023bd" title="Tells you whether KCompletion will emit sounds on certain occasions. ">soundsEnabled()</a>). </p><dl class="section return"><dt>Returns</dt><dd>the next item from the list of matching items. When there is no match, QString() is returned and a sound is emitted. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00502">502</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a31ee8cc67ea1228ef88b0ab3e1be644d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ee8cc67ea1228ef88b0ab3e1be644d">&#9670;&nbsp;</a></span>removeItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::removeItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes an item from the list of available completions. </p>
+<p>Resets the current item state (<a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> and <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> won't work the next time they are called). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the item to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00268">268</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a806d98ee8eab5262255cdc04eceec3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806d98ee8eab5262255cdc04eceec3f0">&#9670;&nbsp;</a></span>setCompletionMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::setCompletionMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9">CompletionMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the completion mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the completion mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9" title="This enum describes the completion mode used for by the KCompletion class. ">CompletionMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00381">381</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99c356a9776a61aeaec7979a242ea51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c356a9776a61aeaec7979a242ea51f">&#9670;&nbsp;</a></span>setIgnoreCase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::setIgnoreCase </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignoreCase</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setting this to true makes <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> behave case insensitively. </p>
+<p>E.g. makeCompletion("CA"); might return "carp\@cs.tu-berlin.de". Default is false (case sensitive). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignoreCase</td><td>true to ignore the case </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>ignoreCase </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00165">165</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aecf680a90533b2cbdb920a848e1bb813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf680a90533b2cbdb920a848e1bb813">&#9670;&nbsp;</a></span>setItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::setItems </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>itemList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the list of items available for completion. </p>
+<p>Removes all previous items.</p>
+<p>Notice: when order() == Weighted, then the weighting is looked up for every item in the stringlist. Every item should have ":number" appended, where number is an unsigned integer, specifying the weighting.</p>
+<p>If you don't like this, call setOrder(KCompletion::Insertion) before calling <a class="el" href="classKCompletion.html#aecf680a90533b2cbdb920a848e1bb813" title="Sets the list of items available for completion. ">setItems()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemList</td><td>the list of items that are available for completion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>items </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00177">177</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a77257091180054bb7d6cf280dae1dad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77257091180054bb7d6cf280dae1dad2">&#9670;&nbsp;</a></span>setOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::setOrder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCompletion.html#a88eb49b5b89f48f9296b136f6bfa9a62">CompOrder</a>&#160;</td>
+          <td class="paramname"><em>order</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> offers three different ways in which it offers its items: </p>
+<ul>
+<li>in the order of insertion </li>
+<li>sorted alphabetically </li>
+<li>weighted</li>
+</ul>
+<p>Choosing weighted makes <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> perform an implicit weighting based on how often an item is inserted. Imagine a web browser with a location bar, where the user enters URLs. The more often a URL is entered, the higher priority it gets.</p>
+<p>Note: Setting the order to sorted only affects new inserted items, already existing items will stay in the current order. So you probably want to call setOrder(Sorted) before inserting items if you want everything sorted.</p>
+<p>Default is insertion order. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">order</td><td>the new order </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>order </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00152">152</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8414e207f782085f4cd38cb462542cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8414e207f782085f4cd38cb462542cdb">&#9670;&nbsp;</a></span>setSoundsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletion::setSoundsEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables/disables emitting a sound when. </p>
+<ul>
+<li><a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> can't find a match </li>
+<li>there is a partial completion (= multiple matches in Shell-completion mode) </li>
+<li><a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> or <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> hit the last possible match and the list is rotated</li>
+</ul>
+<p>KNotifyClient() is used to emit the sounds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true to enable sounds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a4714a802d1204f38836190b44b2023bd" title="Tells you whether KCompletion will emit sounds on certain occasions. ">soundsEnabled</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00443">443</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addbbcdf12afab6f5e1de7b108ea33b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbbcdf12afab6f5e1de7b108ea33b62">&#9670;&nbsp;</a></span>slotMakeCompletion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCOMPLETION_DEPRECATED void KCompletion::slotMakeCompletion </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to complete "string" and emits the completion via <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a>. </p>
+<p>Same as <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a>, but in this case as a slot. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to complete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>since 5.0, use <a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion()</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00411">411</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+
+</div>
+</div>
+<a id="af676f5cf491f4d90ed9f120f92300219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af676f5cf491f4d90ed9f120f92300219">&#9670;&nbsp;</a></span>slotNextMatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCOMPLETION_DEPRECATED void KCompletion::slotNextMatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches the next matching item and emits it via <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a>. </p>
+<p>Same as <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a>, but in this case as a slot. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>since 5.0, use <a class="el" href="classKCompletion.html#a0b42db3a570daa789b59f8b41474ad90" title="Returns the next item from the list of matching items. ">nextMatch()</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00433">433</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+
+</div>
+</div>
+<a id="a4ee5b0552fb56444b5462680eee628a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee5b0552fb56444b5462680eee628a8">&#9670;&nbsp;</a></span>slotPreviousMatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCOMPLETION_DEPRECATED void KCompletion::slotPreviousMatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches the previous matching item and emits it via <a class="el" href="classKCompletion.html#aa9df404d9a37d5b57ede9dd90f765116" title="This signal is emitted when a match is found. ">match()</a>. </p>
+<p>Same as <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a>, but in this case as a slot. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>since 5.0, use <a class="el" href="classKCompletion.html#a9b293993541d8ed3c6ca4c67941554f2" title="Returns the next item from the list of matching items. ">previousMatch()</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8h_source.html#l00422">422</a> of file <a class="el" href="kcompletion_8h_source.html">kcompletion.h</a>.</p>
+
+</div>
+</div>
+<a id="a4714a802d1204f38836190b44b2023bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4714a802d1204f38836190b44b2023bd">&#9670;&nbsp;</a></span>soundsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletion::soundsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tells you whether <a class="el" href="classKCompletion.html" title="A generic class for completing QStrings. ">KCompletion</a> will emit sounds on certain occasions. </p>
+<p>Default is enabled. </p><dl class="section return"><dt>Returns</dt><dd>true if sounds are enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a8414e207f782085f4cd38cb462542cdb" title="Enables/disables emitting a sound when. ">setSoundsEnabled</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00449">449</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8a29cf04496d576dc2489f2fb1248bfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a29cf04496d576dc2489f2fb1248bfa">&#9670;&nbsp;</a></span>substringCompletion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCompletion::substringCompletion </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all completion items that contain the given <code>string</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to complete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of items which contain <code>text</code> as a substring, i.e. not necessarily at the beginning.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletion.html#a43b597e5d237650cc4b0e3dec50c4d2f" title="Attempts to find an item in the list of available completions that begins with string. ">makeCompletion</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletion_8cpp_source.html#l00348">348</a> of file <a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcompletion_8h_source.html">kcompletion.h</a></li>
+<li><a class="el" href="kcompletion_8cpp_source.html">kcompletion.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:13 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

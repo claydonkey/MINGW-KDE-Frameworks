@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KTextWidgets - KRichTextWidget Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KTextWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KTextWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKFind.html">KFind</option>
+        
+        <option value="classKFindDialog.html">KFindDialog</option>
+        
+        <option value="classKPluralHandlingSpinBox.html">KPluralHandlingSpinBox</option>
+        
+        <option value="classKRegExpEditorInterface.html">KRegExpEditorInterface</option>
+        
+        <option value="classKReplace.html">KReplace</option>
+        
+        <option value="classKReplaceDialog.html">KReplaceDialog</option>
+        
+        <option value="classKRichTextEdit.html">KRichTextEdit</option>
+        
+        <option value="classKRichTextWidget.html">KRichTextWidget</option>
+        
+        <option value="classKTextEdit.html">KTextEdit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced text editing widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:montel@kde.org">Laurent Montel</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5TextWidgets)
+target_link_libraries(yourapp KF5::TextWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KTextWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ktextwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KTextWidgets on <a href="https://cgit.kde.org/ktextwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KTextWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KRichTextWidget">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKRichTextWidget-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KRichTextWidget Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="krichtextwidget_8h_source.html">krichtextwidget.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KRichTextWidget:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKRichTextWidget__inherit__graph.png" border="0" usemap="#KRichTextWidget_inherit__map" alt="Inheritance graph"/></div>
+<map name="KRichTextWidget_inherit__map" id="KRichTextWidget_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:acf2d2df230962de714229f4058a9e9fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fe">RichTextSupportValues</a> { <br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea9f3d7a2124d078a74e9d4ce8f5ea71f8">DisableRichText</a> = 0x00,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea72b23c03cce8485f6d7d3923c4e33125">SupportBold</a> = 0x01,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea45776d7442cfe6103ce3d00f1503eb0e">SupportItalic</a> = 0x02,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea542a4071560373bc6f5eb62a091510fe">SupportUnderline</a> = 0x04,
+<br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea72b58cdf827afc2ae6f2224cef75b4f4">SupportStrikeOut</a> = 0x08,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea26038635dcc59e8aca48b24f9919b2be">SupportFontFamily</a> = 0x10,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa670be11acb0b18c7224fbb3cc06bb26">SupportFontSize</a> = 0x20,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa7d1f57d33f4f0921d8375bbcd2a6dbf">SupportTextForegroundColor</a> = 0x40,
+<br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea08532ee23483685333d01beb3ed113c2">SupportTextBackgroundColor</a> = 0x80,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea8149220fcd080476f242d4a276a19d5e">FullTextFormattingSupport</a> = 0xff,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea922f7b04b26e95028016e5c076e8fdc7">SupportChangeListStyle</a> = 0x100,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaf1016ff8437709a3d6252235c54a98f6">SupportIndentLists</a> = 0x200,
+<br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea910f1743cc40b2526b916c1d559f10ee">SupportDedentLists</a> = 0x400,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feab8cffb8c24ec07369a0e61efcc336b39">FullListSupport</a> = 0xf00,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaab11ca4de4cb422366cc1d020fb1b490">SupportAlignment</a> = 0x100000,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea9591f348b5b714d773bafdbaca7add43">SupportRuleLine</a> = 0x400000,
+<br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea912465908706d1a31936b80d7dbba529">SupportHyperlinks</a> = 0x800000,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa8bd031404722201856c8dc64b951e5f">SupportFormatPainting</a> = 0x1000000,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa60c6cf61289b8b81139a23609b3c9c2">SupportToPlainText</a> = 0x2000000,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feac54e4f899cfed0699e81b462a79f7005">SupportSuperScriptAndSubScript</a> = 0x4000000,
+<br />
+&#160;&#160;<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fea334a0347381bc681b5da8acfe1ad876e">SupportDirection</a> = 0x8000000,
+<a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa454f9dfd0109601fb85a9efc97da76c">FullSupport</a> = 0xffffffff
+<br />
+ }</td></tr>
+<tr class="separator:acf2d2df230962de714229f4058a9e9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classKRichTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKRichTextEdit')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKRichTextEdit.html">KRichTextEdit</a></td></tr>
+<tr class="memitem:a8f9c10b0d3e8e474c2ca4ea5d0ee751d inherit pub_types_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a8f9c10b0d3e8e474c2ca4ea5d0ee751d">Mode</a> { <a class="el" href="classKRichTextEdit.html#a8f9c10b0d3e8e474c2ca4ea5d0ee751da19bfd5d13366938c3c220abf6ffb3d68">Plain</a>,
+<a class="el" href="classKRichTextEdit.html#a8f9c10b0d3e8e474c2ca4ea5d0ee751daab45522882d83b97c2d243af649c06cd">Rich</a>
+ }</td></tr>
+<tr class="separator:a8f9c10b0d3e8e474c2ca4ea5d0ee751d inherit pub_types_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a93ad91be7b77f0eeeb2a92dd1038e762"><td class="memItemLeft" align="right" valign="top"><a id="a93ad91be7b77f0eeeb2a92dd1038e762"></a>
+RichTextSupport&#160;</td><td class="memItemRight" valign="bottom"><b>richTextSupport</b></td></tr>
+<tr class="separator:a93ad91be7b77f0eeeb2a92dd1038e762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('properties_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:a1cd63771f6577225be11ba443c24e785 inherit properties_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a1cd63771f6577225be11ba443c24e785"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkSpellingEnabled</b></td></tr>
+<tr class="separator:a1cd63771f6577225be11ba443c24e785 inherit properties_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706e3451d36391e921c2845863400213 inherit properties_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a706e3451d36391e921c2845863400213"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>clickMessage</b></td></tr>
+<tr class="separator:a706e3451d36391e921c2845863400213 inherit properties_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f3eed9154868d9b0a02b750b9370c1 inherit properties_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a55f3eed9154868d9b0a02b750b9370c1"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>spellCheckingLanguage</b></td></tr>
+<tr class="separator:a55f3eed9154868d9b0a02b750b9370c1 inherit properties_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a0f4fb3c2285588160967932b6e3d9ab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#a0f4fb3c2285588160967932b6e3d9ab5">setActionsEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:a0f4fb3c2285588160967932b6e3d9ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKRichTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKRichTextEdit')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="classKRichTextEdit.html">KRichTextEdit</a></td></tr>
+<tr class="memitem:af5fb41ab83831a6a9eb8be18c13d9f13 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#af5fb41ab83831a6a9eb8be18c13d9f13">alignCenter</a> ()</td></tr>
+<tr class="separator:af5fb41ab83831a6a9eb8be18c13d9f13 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b3029a7e39d5fbdfe1500e14b7e309 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a51b3029a7e39d5fbdfe1500e14b7e309">alignJustify</a> ()</td></tr>
+<tr class="separator:a51b3029a7e39d5fbdfe1500e14b7e309 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acddb53268c283692a231256c391a936e inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#acddb53268c283692a231256c391a936e">alignLeft</a> ()</td></tr>
+<tr class="separator:acddb53268c283692a231256c391a936e inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb0df33c4c33815720d33f5a5145f5d inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a1eb0df33c4c33815720d33f5a5145f5d">alignRight</a> ()</td></tr>
+<tr class="separator:a1eb0df33c4c33815720d33f5a5145f5d inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ef064338afd79bb4444582a7719435 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a92ef064338afd79bb4444582a7719435">indentListLess</a> ()</td></tr>
+<tr class="separator:a92ef064338afd79bb4444582a7719435 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac590e556e95c2c94ff159bbf6d3666a5 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ac590e556e95c2c94ff159bbf6d3666a5">indentListMore</a> ()</td></tr>
+<tr class="separator:ac590e556e95c2c94ff159bbf6d3666a5 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1dcaa12fd0b273c4657671376c91cb inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a3b1dcaa12fd0b273c4657671376c91cb">insertHorizontalRule</a> ()</td></tr>
+<tr class="separator:a3b1dcaa12fd0b273c4657671376c91cb inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dbca087af89b79eb03008fcce2238a inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a00dbca087af89b79eb03008fcce2238a">insertPlainTextImplementation</a> ()</td></tr>
+<tr class="separator:a00dbca087af89b79eb03008fcce2238a inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9333b02d4f853aebaa710f18d0548267 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a9333b02d4f853aebaa710f18d0548267">makeLeftToRight</a> ()</td></tr>
+<tr class="separator:a9333b02d4f853aebaa710f18d0548267 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b709d7f1b8ec56764daa24a498ac0b inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ae7b709d7f1b8ec56764daa24a498ac0b">makeRightToLeft</a> ()</td></tr>
+<tr class="separator:ae7b709d7f1b8ec56764daa24a498ac0b inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0dcd7d3a52a0d2b10e799c148535a8 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a4e0dcd7d3a52a0d2b10e799c148535a8">setFont</a> (const QFont &amp;font)</td></tr>
+<tr class="separator:a4e0dcd7d3a52a0d2b10e799c148535a8 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932544c788cfb9ab0cc776d6198ad3ac inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a932544c788cfb9ab0cc776d6198ad3ac">setFontFamily</a> (const QString &amp;fontFamily)</td></tr>
+<tr class="separator:a932544c788cfb9ab0cc776d6198ad3ac inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91147d4f98d399bc207f2c5bfe57f8ab inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a91147d4f98d399bc207f2c5bfe57f8ab">setFontSize</a> (int size)</td></tr>
+<tr class="separator:a91147d4f98d399bc207f2c5bfe57f8ab inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3eb4db01548ad19da377e27066791f5 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ac3eb4db01548ad19da377e27066791f5">setListStyle</a> (int _styleIndex)</td></tr>
+<tr class="separator:ac3eb4db01548ad19da377e27066791f5 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210e2a450aa29b44854ea2234d71bcaa inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a210e2a450aa29b44854ea2234d71bcaa">setTextBackgroundColor</a> (const QColor &amp;color)</td></tr>
+<tr class="separator:a210e2a450aa29b44854ea2234d71bcaa inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01a148c93d4f3c10bfd9f4747973f56 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ae01a148c93d4f3c10bfd9f4747973f56">setTextBold</a> (bool bold)</td></tr>
+<tr class="separator:ae01a148c93d4f3c10bfd9f4747973f56 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa9df1cdb18b74228fd0f8cf6245b06 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a1fa9df1cdb18b74228fd0f8cf6245b06">setTextForegroundColor</a> (const QColor &amp;color)</td></tr>
+<tr class="separator:a1fa9df1cdb18b74228fd0f8cf6245b06 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae610ab9813a95ca7189c19d6afd67aa0 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ae610ab9813a95ca7189c19d6afd67aa0">setTextItalic</a> (bool italic)</td></tr>
+<tr class="separator:ae610ab9813a95ca7189c19d6afd67aa0 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2bc9c0afae2f18930319dda48ecc4a inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a0c2bc9c0afae2f18930319dda48ecc4a">setTextStrikeOut</a> (bool strikeOut)</td></tr>
+<tr class="separator:a0c2bc9c0afae2f18930319dda48ecc4a inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ceeae3d0ef681571941ffad588019b4 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a1ceeae3d0ef681571941ffad588019b4">setTextSubScript</a> (bool subscript)</td></tr>
+<tr class="separator:a1ceeae3d0ef681571941ffad588019b4 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43bcbfef1a779c2b27da1544fe66e5c inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ad43bcbfef1a779c2b27da1544fe66e5c">setTextSuperScript</a> (bool superscript)</td></tr>
+<tr class="separator:ad43bcbfef1a779c2b27da1544fe66e5c inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f621412ba3417b81471f73d33b214d9 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a6f621412ba3417b81471f73d33b214d9">setTextUnderline</a> (bool underline)</td></tr>
+<tr class="separator:a6f621412ba3417b81471f73d33b214d9 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6587bb2d4e9719b260f7eebc625c9e82 inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a6587bb2d4e9719b260f7eebc625c9e82">switchToPlainText</a> ()</td></tr>
+<tr class="separator:a6587bb2d4e9719b260f7eebc625c9e82 inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cc4bb86e004828937ea4ba042f5adb inherit pub_slots_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a76cc4bb86e004828937ea4ba042f5adb">toCleanHtml</a> () const</td></tr>
+<tr class="separator:a76cc4bb86e004828937ea4ba042f5adb inherit pub_slots_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:a420370450d01255024bb23b67c45a96c inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a420370450d01255024bb23b67c45a96c">addTextDecorator</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1SpellCheckDecorator.html">Sonnet::SpellCheckDecorator</a> *decorator)</td></tr>
+<tr class="separator:a420370450d01255024bb23b67c45a96c inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af42578ce13b5d65522856e29fc29fd inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3af42578ce13b5d65522856e29fc29fd">checkSpelling</a> ()</td></tr>
+<tr class="separator:a3af42578ce13b5d65522856e29fc29fd inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2ac3f630efb0ad9e296282ad11a623 inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a1e2ac3f630efb0ad9e296282ad11a623">clearDecorator</a> ()</td></tr>
+<tr class="separator:a1e2ac3f630efb0ad9e296282ad11a623 inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ff7021d9ec4c2d0956e6c01ddb0556 inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a76ff7021d9ec4c2d0956e6c01ddb0556">replace</a> ()</td></tr>
+<tr class="separator:a76ff7021d9ec4c2d0956e6c01ddb0556 inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21942951eff625ca8cea09bef8fa7a9b inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a21942951eff625ca8cea09bef8fa7a9b">setSpellCheckingLanguage</a> (const QString &amp;language)</td></tr>
+<tr class="separator:a21942951eff625ca8cea09bef8fa7a9b inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3e1df8b5a50234e06b2eaff1e9dc97 inherit pub_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a5c3e1df8b5a50234e06b2eaff1e9dc97">showSpellConfigDialog</a> (const QString &amp;windowIcon=QString())</td></tr>
+<tr class="separator:a5c3e1df8b5a50234e06b2eaff1e9dc97 inherit pub_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0c1b4c4cd7f31e3c3453ebf5e43659cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#a0c1b4c4cd7f31e3c3453ebf5e43659cf">KRichTextWidget</a> (QWidget *parent)</td></tr>
+<tr class="separator:a0c1b4c4cd7f31e3c3453ebf5e43659cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465997aa2363c5be3b6d6371fe4abffa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#a465997aa2363c5be3b6d6371fe4abffa">KRichTextWidget</a> (const QString &amp;text, QWidget *parent=0)</td></tr>
+<tr class="separator:a465997aa2363c5be3b6d6371fe4abffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc0b25b4e48ef9dff9db1b421f7e113"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#accc0b25b4e48ef9dff9db1b421f7e113">~KRichTextWidget</a> ()</td></tr>
+<tr class="separator:accc0b25b4e48ef9dff9db1b421f7e113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d010acedd704eee67dbfff83bc6c0c"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; QAction * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c">createActions</a> ()</td></tr>
+<tr class="separator:a57d010acedd704eee67dbfff83bc6c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6e03588b173eb5946f4deca67f4787"><td class="memItemLeft" align="right" valign="top">RichTextSupport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#aac6e03588b173eb5946f4deca67f4787">richTextSupport</a> () const</td></tr>
+<tr class="separator:aac6e03588b173eb5946f4deca67f4787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3d938e9c676c4303285f91bb05ee3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#aca3d938e9c676c4303285f91bb05ee3e">setRichTextSupport</a> (const KRichTextWidget::RichTextSupport &amp;support)</td></tr>
+<tr class="separator:aca3d938e9c676c4303285f91bb05ee3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03e17b1318d034aeec87982ab77b7e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#ac03e17b1318d034aeec87982ab77b7e0">updateActionStates</a> ()</td></tr>
+<tr class="separator:ac03e17b1318d034aeec87982ab77b7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKRichTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKRichTextEdit')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKRichTextEdit.html">KRichTextEdit</a></td></tr>
+<tr class="memitem:a7a2c681f5ba0fd116638c0b4070ebf78 inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a7a2c681f5ba0fd116638c0b4070ebf78">KRichTextEdit</a> (const QString &amp;text, QWidget *parent=0)</td></tr>
+<tr class="separator:a7a2c681f5ba0fd116638c0b4070ebf78 inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b3f569afc04ce4ce575e1da69e8e6d inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a45b3f569afc04ce4ce575e1da69e8e6d">KRichTextEdit</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a45b3f569afc04ce4ce575e1da69e8e6d inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650a22df62cce09cddd574ee5248c4df inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a650a22df62cce09cddd574ee5248c4df">~KRichTextEdit</a> ()</td></tr>
+<tr class="separator:a650a22df62cce09cddd574ee5248c4df inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41da36ab2415c3e9e3fd2101691765bf inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a41da36ab2415c3e9e3fd2101691765bf">canDedentList</a> () const</td></tr>
+<tr class="separator:a41da36ab2415c3e9e3fd2101691765bf inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52a9d10d1514291824c54d9be07a3ee inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#af52a9d10d1514291824c54d9be07a3ee">canIndentList</a> () const</td></tr>
+<tr class="separator:af52a9d10d1514291824c54d9be07a3ee inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4910b09abbd21cf1bc732e04f85b008c inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a4910b09abbd21cf1bc732e04f85b008c">currentLinkText</a> () const</td></tr>
+<tr class="separator:a4910b09abbd21cf1bc732e04f85b008c inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0929fb9f81cb0a2f53b5b4c4e58f847 inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ac0929fb9f81cb0a2f53b5b4c4e58f847">currentLinkUrl</a> () const</td></tr>
+<tr class="separator:ac0929fb9f81cb0a2f53b5b4c4e58f847 inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4057a3f31ee674c40cb63b74e104d961 inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a4057a3f31ee674c40cb63b74e104d961">enableRichTextMode</a> ()</td></tr>
+<tr class="separator:a4057a3f31ee674c40cb63b74e104d961 inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d2838cd28eed1a46d3ff585eaebaea inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a50d2838cd28eed1a46d3ff585eaebaea">selectLinkText</a> (QTextCursor *cursor) const</td></tr>
+<tr class="separator:a50d2838cd28eed1a46d3ff585eaebaea inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cff1bd0d4ebcc0f1b9e53a065e2c5ad inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a8cff1bd0d4ebcc0f1b9e53a065e2c5ad">selectLinkText</a> () const</td></tr>
+<tr class="separator:a8cff1bd0d4ebcc0f1b9e53a065e2c5ad inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c27d637c8924530a07d6a50eda7a8ff inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a6c27d637c8924530a07d6a50eda7a8ff">setTextOrHtml</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a6c27d637c8924530a07d6a50eda7a8ff inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90a6a596d48c5fc336d2c006d6c6e6a inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKRichTextEdit.html#a8f9c10b0d3e8e474c2ca4ea5d0ee751d">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#ae90a6a596d48c5fc336d2c006d6c6e6a">textMode</a> () const</td></tr>
+<tr class="separator:ae90a6a596d48c5fc336d2c006d6c6e6a inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eed2647ac8c28af26a6ca56b49a3f5 inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a88eed2647ac8c28af26a6ca56b49a3f5">textOrHtml</a> () const</td></tr>
+<tr class="separator:a88eed2647ac8c28af26a6ca56b49a3f5 inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb058212ca63b0ac6d88c0bba39d017 inherit pub_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#afcb058212ca63b0ac6d88c0bba39d017">updateLink</a> (const QString &amp;linkUrl, const QString &amp;linkText)</td></tr>
+<tr class="separator:afcb058212ca63b0ac6d88c0bba39d017 inherit pub_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:a4676a18e43556c3a5e9e7c17cfbe9cd1 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a4676a18e43556c3a5e9e7c17cfbe9cd1">KTextEdit</a> (const QString &amp;text, QWidget *parent=0)</td></tr>
+<tr class="separator:a4676a18e43556c3a5e9e7c17cfbe9cd1 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2713bb88f7088289b5f9911e1769c6 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a7b2713bb88f7088289b5f9911e1769c6">KTextEdit</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a7b2713bb88f7088289b5f9911e1769c6 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab097857528abab4e15c9d595713cc3b0 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab097857528abab4e15c9d595713cc3b0">~KTextEdit</a> ()</td></tr>
+<tr class="separator:ab097857528abab4e15c9d595713cc3b0 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d059a68f11d1fc28668a678ca498aa inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a75d059a68f11d1fc28668a678ca498aa">checkSpellingEnabled</a> () const</td></tr>
+<tr class="separator:a75d059a68f11d1fc28668a678ca498aa inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac5019e14257725328877dabafdab61 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">KTEXTWIDGETS_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a2ac5019e14257725328877dabafdab61">clickMessage</a> () const</td></tr>
+<tr class="separator:a2ac5019e14257725328877dabafdab61 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4054115f62746e5ba4e9f63349c0aba2 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a4054115f62746e5ba4e9f63349c0aba2">createHighlighter</a> ()</td></tr>
+<tr class="separator:a4054115f62746e5ba4e9f63349c0aba2 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816b06b2108d51edbc812834d7df17fb inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a816b06b2108d51edbc812834d7df17fb">enableFindReplace</a> (bool enabled)</td></tr>
+<tr class="separator:a816b06b2108d51edbc812834d7df17fb inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043003de86bee9ea95bbde4d132757ca inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a043003de86bee9ea95bbde4d132757ca">forceSpellChecking</a> ()</td></tr>
+<tr class="separator:a043003de86bee9ea95bbde4d132757ca inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af442d02443cb3feff56d6f15507d182a inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#af442d02443cb3feff56d6f15507d182a">highlighter</a> () const</td></tr>
+<tr class="separator:af442d02443cb3feff56d6f15507d182a inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb69e1c3bbb99fd0bb2a6e9a975aba1 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a5eb69e1c3bbb99fd0bb2a6e9a975aba1">highlightWord</a> (int length, int pos)</td></tr>
+<tr class="separator:a5eb69e1c3bbb99fd0bb2a6e9a975aba1 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0db6d91aa29400cb7862373ccf4eb77 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab0db6d91aa29400cb7862373ccf4eb77">mousePopupMenu</a> ()</td></tr>
+<tr class="separator:ab0db6d91aa29400cb7862373ccf4eb77 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50cc10f409454cd09ae198e77568b5 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3b50cc10f409454cd09ae198e77568b5">setCheckSpellingEnabled</a> (bool check)</td></tr>
+<tr class="separator:a3b50cc10f409454cd09ae198e77568b5 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd4e252b064afb4534e93b4d17f5c34 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">KTEXTWIDGETS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3fd4e252b064afb4534e93b4d17f5c34">setClickMessage</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:a3fd4e252b064afb4534e93b4d17f5c34 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2efad20a5bf8f02f2e0e02e2b6f6c3 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#adc2efad20a5bf8f02f2e0e02e2b6f6c3">setHighlighter</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/sonnet-5.26.0/html/Sonnet.tags:../../../frameworks/sonnet-5.26.0/html/" href="../../../frameworks/sonnet-5.26.0/html/classSonnet_1_1Highlighter.html">Sonnet::Highlighter</a> *_highLighter)</td></tr>
+<tr class="separator:adc2efad20a5bf8f02f2e0e02e2b6f6c3 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60da005d60e92a8dde8f62ae4abcc967 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a60da005d60e92a8dde8f62ae4abcc967">setReadOnly</a> (bool readOnly)</td></tr>
+<tr class="separator:a60da005d60e92a8dde8f62ae4abcc967 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3349d8c8cec836c5045ff831ee481878 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3349d8c8cec836c5045ff831ee481878">shouldBlockBeSpellChecked</a> (const QString &amp;block) const</td></tr>
+<tr class="separator:a3349d8c8cec836c5045ff831ee481878 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8636d0d13b9ec8adc250522e002437a2 inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a8636d0d13b9ec8adc250522e002437a2">showAutoCorrectButton</a> (bool show)</td></tr>
+<tr class="separator:a8636d0d13b9ec8adc250522e002437a2 inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6faa160d4faa48293248c11e896a7ee inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ac6faa160d4faa48293248c11e896a7ee">showTabAction</a> (bool show)</td></tr>
+<tr class="separator:ac6faa160d4faa48293248c11e896a7ee inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd309899600cb2987f7917c5b6f24d8b inherit pub_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#acd309899600cb2987f7917c5b6f24d8b">spellCheckingLanguage</a> () const</td></tr>
+<tr class="separator:acd309899600cb2987f7917c5b6f24d8b inherit pub_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9ee873a3aead8b2525334debf029e957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextWidget.html#a9ee873a3aead8b2525334debf029e957">mouseReleaseEvent</a> (QMouseEvent *<a class="el" href="classKTextEdit.html#a97b45d3362af81b4ab89ded93ca1a12c">event</a>) override</td></tr>
+<tr class="separator:a9ee873a3aead8b2525334debf029e957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKRichTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKRichTextEdit')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKRichTextEdit.html">KRichTextEdit</a></td></tr>
+<tr class="memitem:aae77a763129143aa1702a8d0de35f52b inherit pro_methods_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#aae77a763129143aa1702a8d0de35f52b">keyPressEvent</a> (QKeyEvent *<a class="el" href="classKTextEdit.html#a97b45d3362af81b4ab89ded93ca1a12c">event</a>) override</td></tr>
+<tr class="separator:aae77a763129143aa1702a8d0de35f52b inherit pro_methods_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:aa1e492ad53dd926505f6defa43b53c09 inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa1e492ad53dd926505f6defa43b53c09">contextMenuEvent</a> (QContextMenuEvent *) override</td></tr>
+<tr class="separator:aa1e492ad53dd926505f6defa43b53c09 inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6a534fd8b4f0bd5c8e7941ad0a83f8 inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a7e6a534fd8b4f0bd5c8e7941ad0a83f8">deleteWordBack</a> ()</td></tr>
+<tr class="separator:a7e6a534fd8b4f0bd5c8e7941ad0a83f8 inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf93b9c0e4df8ed9393f6c32a461039 inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#afdf93b9c0e4df8ed9393f6c32a461039">deleteWordForward</a> ()</td></tr>
+<tr class="separator:afdf93b9c0e4df8ed9393f6c32a461039 inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b45d3362af81b4ab89ded93ca1a12c inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a97b45d3362af81b4ab89ded93ca1a12c">event</a> (QEvent *) override</td></tr>
+<tr class="separator:a97b45d3362af81b4ab89ded93ca1a12c inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c425e86b93ee7f665f1093451cfc31 inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ab6c425e86b93ee7f665f1093451cfc31">focusInEvent</a> (QFocusEvent *) override</td></tr>
+<tr class="separator:ab6c425e86b93ee7f665f1093451cfc31 inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b59b96ffadf5b56840a2908a69b5ef inherit pro_methods_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa3b59b96ffadf5b56840a2908a69b5ef">keyPressEvent</a> (QKeyEvent *) override</td></tr>
+<tr class="separator:aa3b59b96ffadf5b56840a2908a69b5ef inherit pro_methods_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header signals_classKRichTextEdit"><td colspan="2" onclick="javascript:toggleInherit('signals_classKRichTextEdit')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKRichTextEdit.html">KRichTextEdit</a></td></tr>
+<tr class="memitem:a48fac4dc2376d478cd46b42f429e72f0 inherit signals_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a48fac4dc2376d478cd46b42f429e72f0">selectionFinished</a> ()</td></tr>
+<tr class="separator:a48fac4dc2376d478cd46b42f429e72f0 inherit signals_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7425216597b008464264567db9a26f72 inherit signals_classKRichTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKRichTextEdit.html#a7425216597b008464264567db9a26f72">textModeChanged</a> (<a class="el" href="classKRichTextEdit.html#a8f9c10b0d3e8e474c2ca4ea5d0ee751d">KRichTextEdit::Mode</a> mode)</td></tr>
+<tr class="separator:a7425216597b008464264567db9a26f72 inherit signals_classKRichTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('signals_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:aee71a9b293e59cbd46ef7674a1233d28 inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aee71a9b293e59cbd46ef7674a1233d28">aboutToShowContextMenu</a> (QMenu *menu)</td></tr>
+<tr class="separator:aee71a9b293e59cbd46ef7674a1233d28 inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a3c0cb9bffe178b5a41ca7a8c5add6 inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ae8a3c0cb9bffe178b5a41ca7a8c5add6">checkSpellingChanged</a> (bool)</td></tr>
+<tr class="separator:ae8a3c0cb9bffe178b5a41ca7a8c5add6 inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af667757143c77e7093ba72769afc40c1 inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#af667757143c77e7093ba72769afc40c1">languageChanged</a> (const QString &amp;language)</td></tr>
+<tr class="separator:af667757143c77e7093ba72769afc40c1 inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7846e018ac5edc893e2d39229a66c4d inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ad7846e018ac5edc893e2d39229a66c4d">spellCheckerAutoCorrect</a> (const QString &amp;currentWord, const QString &amp;autoCorrectWord)</td></tr>
+<tr class="separator:ad7846e018ac5edc893e2d39229a66c4d inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e4c2f26e155b0ea2213005e0045f52 inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a55e4c2f26e155b0ea2213005e0045f52">spellCheckingCanceled</a> ()</td></tr>
+<tr class="separator:a55e4c2f26e155b0ea2213005e0045f52 inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46bf70e0900d81a58b85eea91c8944e inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aa46bf70e0900d81a58b85eea91c8944e">spellCheckingFinished</a> ()</td></tr>
+<tr class="separator:aa46bf70e0900d81a58b85eea91c8944e inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb28d4bcd6a8d70eb7b9e2f59be933f2 inherit signals_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#aeb28d4bcd6a8d70eb7b9e2f59be933f2">spellCheckStatus</a> (const QString &amp;)</td></tr>
+<tr class="separator:aeb28d4bcd6a8d70eb7b9e2f59be933f2 inherit signals_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKTextEdit"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKTextEdit')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="classKTextEdit.html">KTextEdit</a></td></tr>
+<tr class="memitem:a7475a0fdb2a3acf407261601a8943b68 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a7475a0fdb2a3acf407261601a8943b68"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotDoFind</b> ()</td></tr>
+<tr class="separator:a7475a0fdb2a3acf407261601a8943b68 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415eef09787f61b7c8fd0ee94f4b55cb inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a415eef09787f61b7c8fd0ee94f4b55cb">slotDoReplace</a> ()</td></tr>
+<tr class="separator:a415eef09787f61b7c8fd0ee94f4b55cb inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf84d2e96ecdb46e5850e9b74cd9810 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="aaaf84d2e96ecdb46e5850e9b74cd9810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotFind</b> ()</td></tr>
+<tr class="separator:aaaf84d2e96ecdb46e5850e9b74cd9810 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c9c53ff0a7c0a0ccd5d551a9b01d06 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a24c9c53ff0a7c0a0ccd5d551a9b01d06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotFindNext</b> ()</td></tr>
+<tr class="separator:a24c9c53ff0a7c0a0ccd5d551a9b01d06 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad986042b6ad46bdffc95a4131cf32a04 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#ad986042b6ad46bdffc95a4131cf32a04">slotFindPrevious</a> ()</td></tr>
+<tr class="separator:ad986042b6ad46bdffc95a4131cf32a04 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1979c72feb0b43b3cb26a6e6f97b7eee inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="a1979c72feb0b43b3cb26a6e6f97b7eee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotReplace</b> ()</td></tr>
+<tr class="separator:a1979c72feb0b43b3cb26a6e6f97b7eee inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34fa3513fe1846dd603803541aeeb44 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top"><a id="ab34fa3513fe1846dd603803541aeeb44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>slotReplaceNext</b> ()</td></tr>
+<tr class="separator:ab34fa3513fe1846dd603803541aeeb44 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3110dc6a4618a70664d6e8d9d542cae6 inherit pro_slots_classKTextEdit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKTextEdit.html#a3110dc6a4618a70664d6e8d9d542cae6">slotSpeakText</a> ()</td></tr>
+<tr class="separator:a3110dc6a4618a70664d6e8d9d542cae6 inherit pro_slots_classKTextEdit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classKRichTextEdit.html" title="The KRichTextEdit class provides a widget to edit and display rich text. ">KRichTextEdit</a> with common actions. </p>
+<p>This class implements common actions which are often used with <a class="el" href="classKRichTextEdit.html" title="The KRichTextEdit class provides a widget to edit and display rich text. ">KRichTextEdit</a>. All you need to do is to call <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a>, and the actions will be added to your KXMLGUIWindow. Remember to also add the chosen actions to your application ui.rc file.</p>
+<p>See the <a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fe" title="These flags describe what actions will be created by createActions() after passing a combination of t...">KRichTextWidget::RichTextSupportValues</a> enum for an overview of supported actions.</p>
+<dl class="section author"><dt>Author</dt><dd>Stephen Kelly <a href="#" onclick="location.href='mai'+'lto:'+'ste'+'ve'+'ire'+'@g'+'mai'+'l.'+'com'; return false;">steve<span style="display: none;">.nosp@m.</span>ire@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a> </dd>
+<dd>
+Thomas McGuire <a href="#" onclick="location.href='mai'+'lto:'+'tho'+'ma'+'s.m'+'cg'+'uir'+'e@'+'gmx'+'.n'+'et'; return false;">thoma<span style="display: none;">.nosp@m.</span>s.mc<span style="display: none;">.nosp@m.</span>guire<span style="display: none;">.nosp@m.</span>@gmx<span style="display: none;">.nosp@m.</span>.net</a></dd></dl>
+<div class="image">
+<img src="krichtextedit.png" alt="krichtextedit.png"/>
+<div class="caption">
+KDE Rich Text Widget</div></div>
+ <dl class="section since"><dt>Since</dt><dd>4.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="krichtextwidget_8h_source.html#l00047">47</a> of file <a class="el" href="krichtextwidget_8h_source.html">krichtextwidget.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="acf2d2df230962de714229f4058a9e9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2d2df230962de714229f4058a9e9fe">&#9670;&nbsp;</a></span>RichTextSupportValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fe">KRichTextWidget::RichTextSupportValues</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>These flags describe what actions will be created by <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a> after passing a combination of these flags to <a class="el" href="classKRichTextWidget.html#aca3d938e9c676c4303285f91bb05ee3e" title="Sets the supported rich text subset available. ">setRichTextSupport()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea9f3d7a2124d078a74e9d4ce8f5ea71f8"></a>DisableRichText&#160;</td><td class="fielddoc"><p>No rich text support at all, no actions will be created. </p>
+<p>Do not use in combination with other flags. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea72b23c03cce8485f6d7d3923c4e33125"></a>SupportBold&#160;</td><td class="fielddoc"><p>Action to format the selected text as bold. </p>
+<p>If no text is selected, the word under the cursor is formatted bold. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKToggleAction.html">KToggleAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea45776d7442cfe6103ce3d00f1503eb0e"></a>SupportItalic&#160;</td><td class="fielddoc"><p>Action to format the selected text as italic. </p>
+<p>If no text is selected, the word under the cursor is formatted italic. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKToggleAction.html">KToggleAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea542a4071560373bc6f5eb62a091510fe"></a>SupportUnderline&#160;</td><td class="fielddoc"><p>Action to underline the selected text. </p>
+<p>If no text is selected, the word under the cursor is underlined. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKToggleAction.html">KToggleAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea72b58cdf827afc2ae6f2224cef75b4f4"></a>SupportStrikeOut&#160;</td><td class="fielddoc"><p>Action to strike out the selected text. </p>
+<p>If no text is selected, the word under the cursor is struck out. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKToggleAction.html">KToggleAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea26038635dcc59e8aca48b24f9919b2be"></a>SupportFontFamily&#160;</td><td class="fielddoc"><p>Action to change the font family of the currently selected text. </p>
+<p>If no text is selected, the font family of the word under the cursor is changed. Displayed as a combobox when inserted into the toolbar. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKFontAction.html">KFontAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaa670be11acb0b18c7224fbb3cc06bb26"></a>SupportFontSize&#160;</td><td class="fielddoc"><p>Action to change the font size of the currently selected text. </p>
+<p>If no text is selected, the font size of the word under the cursor is changed. Displayed as a combobox when inserted into the toolbar. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKFontSizeAction.html">KFontSizeAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaa7d1f57d33f4f0921d8375bbcd2a6dbf"></a>SupportTextForegroundColor&#160;</td><td class="fielddoc"><p>Action to change the text color of the currently selected text. </p>
+<p>If no text is selected, the text color of the word under the cursor is changed. Opens a QColorDialog to select the color. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea08532ee23483685333d01beb3ed113c2"></a>SupportTextBackgroundColor&#160;</td><td class="fielddoc"><p>Action to change the background color of the currently selected text. </p>
+<p>If no text is selected, the backgound color of the word under the cursor is changed. Opens a QColorDialog to select the color. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea8149220fcd080476f242d4a276a19d5e"></a>FullTextFormattingSupport&#160;</td><td class="fielddoc"><p>A combination of all the flags above. </p>
+<p>Includes all actions that change the format of the text. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea922f7b04b26e95028016e5c076e8fdc7"></a>SupportChangeListStyle&#160;</td><td class="fielddoc"><p>Action to make the current line a list element, change the list style or remove list formatting. </p>
+<p>Displayed as a combobox when inserted into a toolbar. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKSelectAction.html">KSelectAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaf1016ff8437709a3d6252235c54a98f6"></a>SupportIndentLists&#160;</td><td class="fielddoc"><p>Action to increase the current list nesting level. </p>
+<p>This makes it possible to create nested lists. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea910f1743cc40b2526b916c1d559f10ee"></a>SupportDedentLists&#160;</td><td class="fielddoc"><p>Action to decrease the current list nesting level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feab8cffb8c24ec07369a0e61efcc336b39"></a>FullListSupport&#160;</td><td class="fielddoc"><p>All of the three list actions above. </p>
+<p>Includes all list-related actions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaab11ca4de4cb422366cc1d020fb1b490"></a>SupportAlignment&#160;</td><td class="fielddoc"><p>Actions to align the current paragraph left, righ, center or justify. </p>
+<p>These actions are KToogleActions. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea9591f348b5b714d773bafdbaca7add43"></a>SupportRuleLine&#160;</td><td class="fielddoc"><p>Action to insert a horizontal line. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea912465908706d1a31936b80d7dbba529"></a>SupportHyperlinks&#160;</td><td class="fielddoc"><p>Action to convert the current text to a hyperlink. </p>
+<p>If no text is selected, the word under the cursor is converted. This action opens a dialog where the user can enter the link target. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaa8bd031404722201856c8dc64b951e5f"></a>SupportFormatPainting&#160;</td><td class="fielddoc"><p>Action to make the mouse cursor a format painter. </p>
+<p>The user can select text with that painter. The selected text gets the same format as the text that was previously selected. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaa60c6cf61289b8b81139a23609b3c9c2"></a>SupportToPlainText&#160;</td><td class="fielddoc"><p>Action to change the text of the whole text edit to plain text. </p>
+<p>All rich text formatting will get lost. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feac54e4f899cfed0699e81b462a79f7005"></a>SupportSuperScriptAndSubScript&#160;</td><td class="fielddoc"><p>Actions to format text as superscript or subscript. </p>
+<p>If no text is selected, the word under the cursor is formatted as selected. This is a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/classKToggleAction.html">KToggleAction</a>. The status is automatically updated when the text cursor is moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9fea334a0347381bc681b5da8acfe1ad876e"></a>SupportDirection&#160;</td><td class="fielddoc"><p>Action to change direction of text to Right-To-Left or Left-To-Right. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf2d2df230962de714229f4058a9e9feaa454f9dfd0109601fb85a9efc97da76c"></a>FullSupport&#160;</td><td class="fielddoc"><p>Includes all above actions for full rich text support. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="krichtextwidget_8h_source.html#l00058">58</a> of file <a class="el" href="krichtextwidget_8h_source.html">krichtextwidget.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0c1b4c4cd7f31e3c3453ebf5e43659cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1b4c4cd7f31e3c3453ebf5e43659cf">&#9670;&nbsp;</a></span>KRichTextWidget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KRichTextWidget::KRichTextWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a465997aa2363c5be3b6d6371fe4abffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465997aa2363c5be3b6d6371fe4abffa">&#9670;&nbsp;</a></span>KRichTextWidget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KRichTextWidget::KRichTextWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKRichTextWidget.html" title="A KRichTextEdit with common actions. ">KRichTextWidget</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The initial text of the text edit, which is interpreted as HTML. </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="accc0b25b4e48ef9dff9db1b421f7e113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc0b25b4e48ef9dff9db1b421f7e113">&#9670;&nbsp;</a></span>~KRichTextWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KRichTextWidget::~KRichTextWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57d010acedd704eee67dbfff83bc6c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d010acedd704eee67dbfff83bc6c0c">&#9670;&nbsp;</a></span>createActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QList&lt;QAction *&gt; KRichTextWidget::createActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the actions and adds them to the given action collection. </p>
+<p>Call this before calling setupGUI() in your application, but after calling <a class="el" href="classKRichTextWidget.html#aca3d938e9c676c4303285f91bb05ee3e" title="Sets the supported rich text subset available. ">setRichTextSupport()</a>.</p>
+<p>The XML file of your <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a> needs to have the action names in them, so that the actions actually appear in the menu and in the toolbars.</p>
+<p>Below is a list of actions that are created,depending on the supported rich text subset set by <a class="el" href="classKRichTextWidget.html#aca3d938e9c676c4303285f91bb05ee3e" title="Sets the supported rich text subset available. ">setRichTextSupport()</a>. The list contains action names. Those names need to be the same in your XML file.</p>
+<p>See the <a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9fe" title="These flags describe what actions will be created by createActions() after passing a combination of t...">KRichTextWidget::RichTextSupportValues</a> enum documentation for a detailed explaination of each action.</p>
+<table class="doxtable">
+<tr>
+<td><b>XML Name</b></td><td><b>RichTextSupportValues flag</b> </td></tr>
+<tr>
+<td>format_text_foreground_color</td><td>SupportTextForegroundColor </td></tr>
+<tr>
+<td>format_text_background_color</td><td>SupportTextBackgroundColor </td></tr>
+<tr>
+<td>format_font_family</td><td>SupportFontFamily </td></tr>
+<tr>
+<td>format_font_size</td><td>SupportFontSize </td></tr>
+<tr>
+<td>format_text_bold</td><td>SupportBold </td></tr>
+<tr>
+<td>format_text_italic</td><td>SupportItalic </td></tr>
+<tr>
+<td>format_text_underline</td><td>SupportUnderline </td></tr>
+<tr>
+<td>format_text_strikeout</td><td>SupportStrikeOut </td></tr>
+<tr>
+<td>format_align_left</td><td>SupportAlignment </td></tr>
+<tr>
+<td>format_align_center</td><td>SupportAlignment </td></tr>
+<tr>
+<td>format_align_right</td><td>SupportAlignment </td></tr>
+<tr>
+<td>format_align_justify</td><td>SupportAlignment </td></tr>
+<tr>
+<td>direction_ltr</td><td>SupportDirection </td></tr>
+<tr>
+<td>direction_rtl</td><td>SupportDirection </td></tr>
+<tr>
+<td>format_list_style</td><td>SupportChangeListStyle </td></tr>
+<tr>
+<td>format_list_indent_more</td><td>SupportIndentLists </td></tr>
+<tr>
+<td>format_list_indent_less</td><td>SupportDedentLists </td></tr>
+<tr>
+<td>insert_horizontal_rule</td><td>SupportRuleLine </td></tr>
+<tr>
+<td>manage_link</td><td>SupportHyperlinks </td></tr>
+<tr>
+<td>format_painter</td><td>SupportFormatPainting </td></tr>
+<tr>
+<td>action_to_plain_text</td><td>SupportToPlainText </td></tr>
+<tr>
+<td>format_text_subscript &amp; format_text_superscript</td><td>SupportSuperScriptAndSubScript </td></tr>
+</table>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+</div>
+</div>
+<a id="a9ee873a3aead8b2525334debf029e957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee873a3aead8b2525334debf029e957">&#9670;&nbsp;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KRichTextWidget::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented. </p>
+<p>Catches mouse release events. Used to know when a selection has been completed. </p>
+
+</div>
+</div>
+<a id="aac6e03588b173eb5946f4deca67f4787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6e03588b173eb5946f4deca67f4787">&#9670;&nbsp;</a></span>richTextSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RichTextSupport KRichTextWidget::richTextSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the supported rich text subset available. </p>
+<dl class="section return"><dt>Returns</dt><dd>The supported subset. </dd></dl>
+
+</div>
+</div>
+<a id="a0f4fb3c2285588160967932b6e3d9ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4fb3c2285588160967932b6e3d9ab5">&#9670;&nbsp;</a></span>setActionsEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KRichTextWidget::setActionsEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disables or enables all of the actions created by <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a>. </p>
+<p>This may be useful in cases where rich text mode may be set on or off.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>Whether to enable or disable the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca3d938e9c676c4303285f91bb05ee3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3d938e9c676c4303285f91bb05ee3e">&#9670;&nbsp;</a></span>setRichTextSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KRichTextWidget::setRichTextSupport </td>
+          <td>(</td>
+          <td class="paramtype">const KRichTextWidget::RichTextSupport &amp;&#160;</td>
+          <td class="paramname"><em>support</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the supported rich text subset available. </p>
+<p>The default is <a class="el" href="classKRichTextWidget.html#acf2d2df230962de714229f4058a9e9feaa454f9dfd0109601fb85a9efc97da76c" title="Includes all above actions for full rich text support. ">KRichTextWidget::FullSupport</a> and will be set in the constructor.</p>
+<p>You need to call <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a> afterwards.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">support</td><td>The supported subset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac03e17b1318d034aeec87982ab77b7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03e17b1318d034aeec87982ab77b7e0">&#9670;&nbsp;</a></span>updateActionStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KRichTextWidget::updateActionStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tells <a class="el" href="classKRichTextWidget.html" title="A KRichTextEdit with common actions. ">KRichTextWidget</a> to update the state of the actions created by <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a>. </p>
+<p>This is normally automatically done, but there might be a few cases where you'll need to manually call this function.</p>
+<p>Call this function only after calling <a class="el" href="classKRichTextWidget.html#a57d010acedd704eee67dbfff83bc6c0c" title="Creates the actions and adds them to the given action collection. ">createActions()</a>. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="krichtextwidget_8h_source.html">krichtextwidget.h</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:01 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

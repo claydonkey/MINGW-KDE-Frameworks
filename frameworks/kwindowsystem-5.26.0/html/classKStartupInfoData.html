@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - KStartupInfoData Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KStartupInfoData">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKStartupInfoData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KStartupInfoData Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kstartupinfo_8h_source.html">kstartupinfo.h</a>&gt;</code></p>
+
+<p>Inherited by KStartupInfo::Data.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a04551fa9f7f3f7883d48b789b9dcd2d1"><td class="memItemLeft" align="right" valign="top"><a id="a04551fa9f7f3f7883d48b789b9dcd2d1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TriState</b> { <b>Yes</b>,
+<b>No</b>,
+<b>Unknown</b>
+ }</td></tr>
+<tr class="separator:a04551fa9f7f3f7883d48b789b9dcd2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9edda3b026a9a378d6135dd30d15ff8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a9edda3b026a9a378d6135dd30d15ff8c">KStartupInfoData</a> ()</td></tr>
+<tr class="separator:a9edda3b026a9a378d6135dd30d15ff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338d92816a97f5e7dbfff0ff764c030c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a338d92816a97f5e7dbfff0ff764c030c">KStartupInfoData</a> (const <a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;data)</td></tr>
+<tr class="separator:a338d92816a97f5e7dbfff0ff764c030c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c615764a16ff59f0c7c9c959541f01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a56c615764a16ff59f0c7c9c959541f01">addPid</a> (pid_t pid)</td></tr>
+<tr class="separator:a56c615764a16ff59f0c7c9c959541f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d4c2b67c08834599063981c5b13244"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a38d4c2b67c08834599063981c5b13244">applicationId</a> () const</td></tr>
+<tr class="separator:a38d4c2b67c08834599063981c5b13244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ad26342e192054a6a2763a3fca4fe5"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a56ad26342e192054a6a2763a3fca4fe5">bin</a> () const</td></tr>
+<tr class="separator:a56ad26342e192054a6a2763a3fca4fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df7d1584a815bb94044feacf19721d9"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a0df7d1584a815bb94044feacf19721d9">description</a> () const</td></tr>
+<tr class="separator:a0df7d1584a815bb94044feacf19721d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d3ebf5fd09a7d044f91dc99af6b852"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ad5d3ebf5fd09a7d044f91dc99af6b852">desktop</a> () const</td></tr>
+<tr class="separator:ad5d3ebf5fd09a7d044f91dc99af6b852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d06ae1051b0c9df0416a79b5413e09"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a01d06ae1051b0c9df0416a79b5413e09">findDescription</a> () const</td></tr>
+<tr class="separator:a01d06ae1051b0c9df0416a79b5413e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4317bc047f2ca0500dfd7b06f2e15c7c"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a4317bc047f2ca0500dfd7b06f2e15c7c">findIcon</a> () const</td></tr>
+<tr class="separator:a4317bc047f2ca0500dfd7b06f2e15c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae41a4879cc46ba2a1a62d1cf293a33"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#afae41a4879cc46ba2a1a62d1cf293a33">findName</a> () const</td></tr>
+<tr class="separator:afae41a4879cc46ba2a1a62d1cf293a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8af773df3b00e6aaff08a887ee88e9e"><td class="memItemLeft" align="right" valign="top">const QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ab8af773df3b00e6aaff08a887ee88e9e">findWMClass</a> () const</td></tr>
+<tr class="separator:ab8af773df3b00e6aaff08a887ee88e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad214b03eb80e723371f790b40378735d"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ad214b03eb80e723371f790b40378735d">hostname</a> () const</td></tr>
+<tr class="separator:ad214b03eb80e723371f790b40378735d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71155cf06e00922a4b0d5d085e675da"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ab71155cf06e00922a4b0d5d085e675da">icon</a> () const</td></tr>
+<tr class="separator:ab71155cf06e00922a4b0d5d085e675da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e1174148071589e7d9b0563b4a8dfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ac8e1174148071589e7d9b0563b4a8dfa">is_pid</a> (pid_t pid) const</td></tr>
+<tr class="separator:ac8e1174148071589e7d9b0563b4a8dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcbf9ac0d61500d7e2f58cc679daa8b"><td class="memItemLeft" align="right" valign="top">WId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a5dcbf9ac0d61500d7e2f58cc679daa8b">launchedBy</a> () const</td></tr>
+<tr class="separator:a5dcbf9ac0d61500d7e2f58cc679daa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56acb5aa1abf867fd5424b13f6954931"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a56acb5aa1abf867fd5424b13f6954931">name</a> () const</td></tr>
+<tr class="separator:a56acb5aa1abf867fd5424b13f6954931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df63142839b1cedcf5006c141864c20"><td class="memItemLeft" align="right" valign="top"><a id="a3df63142839b1cedcf5006c141864c20"></a>
+<a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;data)</td></tr>
+<tr class="separator:a3df63142839b1cedcf5006c141864c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563eb5182a230eca07c63e1539bd757e"><td class="memItemLeft" align="right" valign="top">QList&lt; pid_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a563eb5182a230eca07c63e1539bd757e">pids</a> () const</td></tr>
+<tr class="separator:a563eb5182a230eca07c63e1539bd757e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7846757b83742d9dd58876f2b4e78807"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a7846757b83742d9dd58876f2b4e78807">screen</a> () const</td></tr>
+<tr class="separator:a7846757b83742d9dd58876f2b4e78807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259c826f465e01264d38d419e086c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ae259c826f465e01264d38d419e086c2c">setApplicationId</a> (const QString &amp;<a class="el" href="classKStartupInfoData.html#ad5d3ebf5fd09a7d044f91dc99af6b852">desktop</a>)</td></tr>
+<tr class="separator:ae259c826f465e01264d38d419e086c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e60c173fae73691b1e3a1da73700fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a8e60c173fae73691b1e3a1da73700fe2">setBin</a> (const QString &amp;<a class="el" href="classKStartupInfoData.html#a56ad26342e192054a6a2763a3fca4fe5">bin</a>)</td></tr>
+<tr class="separator:a8e60c173fae73691b1e3a1da73700fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb7724d3c359562c7d9494c673d7935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a9fb7724d3c359562c7d9494c673d7935">setDescription</a> (const QString &amp;descr)</td></tr>
+<tr class="separator:a9fb7724d3c359562c7d9494c673d7935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3500a60366743243e99395f2b238c55b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a3500a60366743243e99395f2b238c55b">setDesktop</a> (int <a class="el" href="classKStartupInfoData.html#ad5d3ebf5fd09a7d044f91dc99af6b852">desktop</a>)</td></tr>
+<tr class="separator:a3500a60366743243e99395f2b238c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20413af8c5ac69e93990a26fd9f587f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a20413af8c5ac69e93990a26fd9f587f2">setHostname</a> (const QByteArray &amp;<a class="el" href="classKStartupInfoData.html#ad214b03eb80e723371f790b40378735d">hostname</a>=QByteArray())</td></tr>
+<tr class="separator:a20413af8c5ac69e93990a26fd9f587f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816dc1cf00e28d5eee3b791c8f5671e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a816dc1cf00e28d5eee3b791c8f5671e3">setIcon</a> (const QString &amp;<a class="el" href="classKStartupInfoData.html#ab71155cf06e00922a4b0d5d085e675da">icon</a>)</td></tr>
+<tr class="separator:a816dc1cf00e28d5eee3b791c8f5671e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b3ca4dbf552fc6cfd64c5073955a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a64b3ca4dbf552fc6cfd64c5073955a0d">setLaunchedBy</a> (WId window)</td></tr>
+<tr class="separator:a64b3ca4dbf552fc6cfd64c5073955a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588b6ca52626ba82745b88a93bd49095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a588b6ca52626ba82745b88a93bd49095">setName</a> (const QString &amp;<a class="el" href="classKStartupInfoData.html#a56acb5aa1abf867fd5424b13f6954931">name</a>)</td></tr>
+<tr class="separator:a588b6ca52626ba82745b88a93bd49095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec44e055c5fc59e423c0570322daf54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#aec44e055c5fc59e423c0570322daf54a">setScreen</a> (int <a class="el" href="classKStartupInfoData.html#a7846757b83742d9dd58876f2b4e78807">screen</a>)</td></tr>
+<tr class="separator:aec44e055c5fc59e423c0570322daf54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ff8e4196cd31399cc2cd595a373e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#ac7ff8e4196cd31399cc2cd595a373e2e">setSilent</a> (TriState state)</td></tr>
+<tr class="separator:ac7ff8e4196cd31399cc2cd595a373e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7864480d3e4e7cee7bae4ead7d832ec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a7864480d3e4e7cee7bae4ead7d832ec7">setWMClass</a> (const QByteArray &amp;wmclass)</td></tr>
+<tr class="separator:a7864480d3e4e7cee7bae4ead7d832ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60cb9fb47133a98ee58ea43df3eed95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a60cb9fb47133a98ee58ea43df3eed95c">setXinerama</a> (int <a class="el" href="classKStartupInfoData.html#a87e6e506c45ff8e2c43ad38d7654e534">xinerama</a>)</td></tr>
+<tr class="separator:a60cb9fb47133a98ee58ea43df3eed95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b77d6c80498bee93e30f81274a6c6f0"><td class="memItemLeft" align="right" valign="top">TriState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a2b77d6c80498bee93e30f81274a6c6f0">silent</a> () const</td></tr>
+<tr class="separator:a2b77d6c80498bee93e30f81274a6c6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d53526c146286cf41b8345424863c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a1d53526c146286cf41b8345424863c28">update</a> (const <a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;data)</td></tr>
+<tr class="separator:a1d53526c146286cf41b8345424863c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9c5deec86c39b7ebe91c5fd30bcd0a"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a1b9c5deec86c39b7ebe91c5fd30bcd0a">WMClass</a> () const</td></tr>
+<tr class="separator:a1b9c5deec86c39b7ebe91c5fd30bcd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e6e506c45ff8e2c43ad38d7654e534"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKStartupInfoData.html#a87e6e506c45ff8e2c43ad38d7654e534">xinerama</a> () const</td></tr>
+<tr class="separator:a87e6e506c45ff8e2c43ad38d7654e534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing data about an application startup notification. </p>
+<p>Such data include the icon of the starting application, the desktop on which the application should start, the binary name of the application, etc.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKStartupInfo.html" title="Class for manipulating the application startup notification. ">KStartupInfo</a> </dd>
+<dd>
+<a class="el" href="classKStartupInfoId.html" title="Class representing an identification of application startup notification. ">KStartupInfoId</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Lubos Lunak <a href="#" onclick="location.href='mai'+'lto:'+'l.l'+'un'+'ak@'+'kd'+'e.o'+'rg'; return false;">l.lun<span style="display: none;">.nosp@m.</span>ak@k<span style="display: none;">.nosp@m.</span>de.or<span style="display: none;">.nosp@m.</span>g</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8h_source.html#l00527">527</a> of file <a class="el" href="kstartupinfo_8h_source.html">kstartupinfo.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9edda3b026a9a378d6135dd30d15ff8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edda3b026a9a378d6135dd30d15ff8c">&#9670;&nbsp;</a></span>KStartupInfoData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KStartupInfoData::KStartupInfoData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Initializes all the data to their default empty values. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01391">1391</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a338d92816a97f5e7dbfff0ff764c030c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338d92816a97f5e7dbfff0ff764c030c">&#9670;&nbsp;</a></span>KStartupInfoData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KStartupInfoData::KStartupInfoData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01333">1333</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56c615764a16ff59f0c7c9c959541f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c615764a16ff59f0c7c9c959541f01">&#9670;&nbsp;</a></span>addPid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::addPid </td>
+          <td>(</td>
+          <td class="paramtype">pid_t&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a PID to the list of processes that belong to the startup notification. </p>
+<p>It may be used to increase the chance that the windows created by the starting application will be detected correctly, and also for detecting if the application has quit without creating any window. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>the PID to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01511">1511</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38d4c2b67c08834599063981c5b13244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d4c2b67c08834599063981c5b13244">&#9670;&nbsp;</a></span>applicationId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KStartupInfoData::applicationId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The .desktop file used to initiate this startup notification, or empty. </p>
+<p>This information should be used only to identify the application, not to read any additional information. </p><dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01590">1590</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a56ad26342e192054a6a2763a3fca4fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ad26342e192054a6a2763a3fca4fe5">&#9670;&nbsp;</a></span>bin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::bin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the binary name of the starting application. </p>
+<dl class="section return"><dt>Returns</dt><dd>the new binary name of the application </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01405">1405</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0df7d1584a815bb94044feacf19721d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df7d1584a815bb94044feacf19721d9">&#9670;&nbsp;</a></span>description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the startup notification, or empty if not available. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the startup notificaiton, or an empty string if not set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01433">1433</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5d3ebf5fd09a7d044f91dc99af6b852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d3ebf5fd09a7d044f91dc99af6b852">&#9670;&nbsp;</a></span>desktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KStartupInfoData::desktop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the desktop for the startup notification. </p>
+<dl class="section return"><dt>Returns</dt><dd>the desktop for the startup notification </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01469">1469</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a01d06ae1051b0c9df0416a79b5413e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d06ae1051b0c9df0416a79b5413e09">&#9670;&nbsp;</a></span>findDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::findDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the description of the startup notification. </p>
+<p>If it's not available, it returns <a class="el" href="classKStartupInfoData.html#a56acb5aa1abf867fd5424b13f6954931" title="Returns the name of the startup notification, or empty if not available. ">name()</a>. </p><dl class="section return"><dt>Returns</dt><dd>the description of the startup notification </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01438">1438</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4317bc047f2ca0500dfd7b06f2e15c7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4317bc047f2ca0500dfd7b06f2e15c7c">&#9670;&nbsp;</a></span>findIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::findIcon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the icon of the startup notification, and if it's not available, tries to get it from the binary name. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the startup notification's icon, or the name of the binary if not set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01451">1451</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afae41a4879cc46ba2a1a62d1cf293a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae41a4879cc46ba2a1a62d1cf293a33">&#9670;&nbsp;</a></span>findName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::findName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the startup notification. </p>
+<p>If it's not available, it tries to use other information (binary name). </p><dl class="section return"><dt>Returns</dt><dd>the name of the startup notification </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01420">1420</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab8af773df3b00e6aaff08a887ee88e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8af773df3b00e6aaff08a887ee88e9e">&#9670;&nbsp;</a></span>findWMClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QByteArray KStartupInfoData::findWMClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the WM_CLASS value for the startup notification, or binary name if not available. </p>
+<dl class="section return"><dt>Returns</dt><dd>the WM_CLASS value for the startup notification, or the binary name if not set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01479">1479</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad214b03eb80e723371f790b40378735d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad214b03eb80e723371f790b40378735d">&#9670;&nbsp;</a></span>hostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KStartupInfoData::hostname </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hostname for the startup notification. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hostname </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01506">1506</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab71155cf06e00922a4b0d5d085e675da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71155cf06e00922a4b0d5d085e675da">&#9670;&nbsp;</a></span>icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::icon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the icon of the startup notification, or empty if not available. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the icon, or an empty string if not set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01459">1459</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8e1174148071589e7d9b0563b4a8dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e1174148071589e7d9b0563b4a8dfa">&#9670;&nbsp;</a></span>is_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KStartupInfoData::is_pid </td>
+          <td>(</td>
+          <td class="paramtype">pid_t&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the given <code>pid</code> is in the list of PIDs for starup notification. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the given <code>pid</code> is in the list of PIDs for the startup notification </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01528">1528</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dcbf9ac0d61500d7e2f58cc679daa8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcbf9ac0d61500d7e2f58cc679daa8b">&#9670;&nbsp;</a></span>launchedBy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WId KStartupInfoData::launchedBy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The toplevel window of the application that caused this startup notification, 0 if unknown. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01568">1568</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a56acb5aa1abf867fd5424b13f6954931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56acb5aa1abf867fd5424b13f6954931">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; KStartupInfoData::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the startup notification, or empty if not available. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the startup notification, or an empty string if not set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01415">1415</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a563eb5182a230eca07c63e1539bd757e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563eb5182a230eca07c63e1539bd757e">&#9670;&nbsp;</a></span>pids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; pid_t &gt; KStartupInfoData::pids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns all PIDs for the startup notification. </p>
+<dl class="section return"><dt>Returns</dt><dd>the list of all PIDs </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01523">1523</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7846757b83742d9dd58876f2b4e78807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7846757b83742d9dd58876f2b4e78807">&#9670;&nbsp;</a></span>screen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KStartupInfoData::screen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The X11 screen on which the startup notification is happening, -1 if unknown. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01548">1548</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae259c826f465e01264d38d419e086c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae259c826f465e01264d38d419e086c2c">&#9670;&nbsp;</a></span>setApplicationId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setApplicationId </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the .desktop file that was used to initiate the startup notification. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01573">1573</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e60c173fae73691b1e3a1da73700fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e60c173fae73691b1e3a1da73700fe2">&#9670;&nbsp;</a></span>setBin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setBin </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the binary name of the application ( e.g. </p>
+<p>'kcontrol' ). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bin</td><td>the new binary name of the application </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01400">1400</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fb7724d3c359562c7d9494c673d7935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb7724d3c359562c7d9494c673d7935">&#9670;&nbsp;</a></span>setDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setDescription </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>descr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the description for the notification (e.g. </p>
+<p>'Launching Control Center'). I.e. <a class="el" href="classKStartupInfoData.html#a56acb5aa1abf867fd5424b13f6954931" title="Returns the name of the startup notification, or empty if not available. ">name()</a> describes what is being started, while <a class="el" href="classKStartupInfoData.html#a0df7d1584a815bb94044feacf19721d9" title="Returns the name of the startup notification, or empty if not available. ">description()</a> is the actual action performed by the starting. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01428">1428</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3500a60366743243e99395f2b238c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3500a60366743243e99395f2b238c55b">&#9670;&nbsp;</a></span>setDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setDesktop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the desktop for the startup notification ( i.e. </p>
+<p>the desktop on which the starting application should appear ). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the desktop for the startup notification </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01464">1464</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20413af8c5ac69e93990a26fd9f587f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20413af8c5ac69e93990a26fd9f587f2">&#9670;&nbsp;</a></span>setHostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setHostname </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>hostname</em> = <code>QByteArray()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the hostname on which the application is starting. </p>
+<p>It's necessary to set it if PIDs are set. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostname</td><td>the application's hostname. If it's a null string, the current hostname is used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01492">1492</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a816dc1cf00e28d5eee3b791c8f5671e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816dc1cf00e28d5eee3b791c8f5671e3">&#9670;&nbsp;</a></span>setIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>icon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the icon for the startup notification ( e.g. </p>
+<p>'kcontrol' ) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icon</td><td>the name of the icon </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01446">1446</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a64b3ca4dbf552fc6cfd64c5073955a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b3ca4dbf552fc6cfd64c5073955a0d">&#9670;&nbsp;</a></span>setLaunchedBy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setLaunchedBy </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the toplevel window of the application that caused this startup notification. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>window ID of the toplevel window that is responsible for this startup </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01563">1563</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a588b6ca52626ba82745b88a93bd49095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588b6ca52626ba82745b88a93bd49095">&#9670;&nbsp;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the name for the notification (e.g. </p>
+<p>'Control Center') </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01410">1410</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec44e055c5fc59e423c0570322daf54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec44e055c5fc59e423c0570322daf54a">&#9670;&nbsp;</a></span>setScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setScreen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>screen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the X11 screen on which the startup notification should happen. </p>
+<p>This is usually not necessary to set, as it's set by default to QX11Info::screen(). </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01543">1543</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac7ff8e4196cd31399cc2cd595a373e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ff8e4196cd31399cc2cd595a373e2e">&#9670;&nbsp;</a></span>setSilent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setSilent </td>
+          <td>(</td>
+          <td class="paramtype">TriState&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the visual feedback for this startup notification should be silenced (temporarily suspended). </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01533">1533</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7864480d3e4e7cee7bae4ead7d832ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7864480d3e4e7cee7bae4ead7d832ec7">&#9670;&nbsp;</a></span>setWMClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setWMClass </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>wmclass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a WM_CLASS value for the startup notification, it may be used for increasing the chance that the windows created by the starting application will be detected correctly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wmclass</td><td>the WM_CLASS value for the startup notification </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01474">1474</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60cb9fb47133a98ee58ea43df3eed95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cb9fb47133a98ee58ea43df3eed95c">&#9670;&nbsp;</a></span>setXinerama()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::setXinerama </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xinerama</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the Xinerama screen for the startup notification ( i.e. </p>
+<p>the screeen on which the starting application should appear ). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xinerama</td><td>the Xinerama screen for the startup notification </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01553">1553</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2b77d6c80498bee93e30f81274a6c6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b77d6c80498bee93e30f81274a6c6f0">&#9670;&nbsp;</a></span>silent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KStartupInfoData::TriState KStartupInfoData::silent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the silence status for the startup notification. </p>
+<dl class="section return"><dt>Returns</dt><dd>KStartupInfoData::Yes if visual feedback is silenced </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01538">1538</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d53526c146286cf41b8345424863c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d53526c146286cf41b8345424863c28">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KStartupInfoData::update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKStartupInfoData.html">KStartupInfoData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the notification data from the given data. </p>
+<p>Some data, such as the desktop or the name, won't be rewritten if already set. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>the data to update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01346">1346</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b9c5deec86c39b7ebe91c5fd30bcd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9c5deec86c39b7ebe91c5fd30bcd0a">&#9670;&nbsp;</a></span>WMClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KStartupInfoData::WMClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the WM_CLASS value for the startup notification, or empty if not available. </p>
+<dl class="section return"><dt>Returns</dt><dd>the WM_CLASS value for the startup notification, or empty if not set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01487">1487</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a87e6e506c45ff8e2c43ad38d7654e534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e6e506c45ff8e2c43ad38d7654e534">&#9670;&nbsp;</a></span>xinerama()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KStartupInfoData::xinerama </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Xinerama screen for the startup notification, -1 if unknown. </p>
+
+<p class="definition">Definition at line <a class="el" href="kstartupinfo_8cpp_source.html#l01558">1558</a> of file <a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kstartupinfo_8h_source.html">kstartupinfo.h</a></li>
+<li><a class="el" href="kstartupinfo_8cpp_source.html">kstartupinfo.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

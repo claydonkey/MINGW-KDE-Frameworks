@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCrash - KCrash Namespace Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCrash</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCrash"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="namespaceKCrash.html">KCrash</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Support for application crash analysis and bug report from apps</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Crash)
+target_link_libraries(yourapp KF5::Crash)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCrash </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcrash-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCrash on <a href="https://cgit.kde.org/kcrash-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCrash </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">KCrash Namespace Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a600b72c20ed993d331fc7af16eab35f6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a>) (int)</td></tr>
+<tr class="separator:a600b72c20ed993d331fc7af16eab35f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acc3079fc30842fb82fa69d9d82c17b57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57">CrashFlag</a> { <a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57adff28e937b35b09fba8155f6ad0ff57e">KeepFDs</a> = 1,
+<a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57a47e4bc442cd2e42b9e6991188e2af839">SaferDialog</a> = 2,
+<a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57a0abed225c59084baa1858c2981b57e14">AlwaysDirectly</a> = 4,
+<a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57a37954f0d0919cfa8db1b33ceae697759">AutoRestart</a> = 8
+ }</td></tr>
+<tr class="separator:acc3079fc30842fb82fa69d9d82c17b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0f43ecae9f721f26f5d94e8f28b58df6"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT <a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a0f43ecae9f721f26f5d94e8f28b58df6">crashHandler</a> ()</td></tr>
+<tr class="separator:a0f43ecae9f721f26f5d94e8f28b58df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1858e03d7b38ca03f575265b1010fed8"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a1858e03d7b38ca03f575265b1010fed8">defaultCrashHandler</a> (int signal)</td></tr>
+<tr class="separator:a1858e03d7b38ca03f575265b1010fed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869171c318888de63f9a47aec991441c"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT <a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a869171c318888de63f9a47aec991441c">emergencySaveFunction</a> ()</td></tr>
+<tr class="separator:a869171c318888de63f9a47aec991441c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cbae2933366133fd4e666568521232"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#af3cbae2933366133fd4e666568521232">initialize</a> ()</td></tr>
+<tr class="separator:af3cbae2933366133fd4e666568521232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabea15ec5f489a79737172c0cde581d"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#acabea15ec5f489a79737172c0cde581d">isDrKonqiEnabled</a> ()</td></tr>
+<tr class="separator:acabea15ec5f489a79737172c0cde581d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93f240d5e8d06d0c6bf0778e75d0563"><td class="memItemLeft" align="right" valign="top"><a id="aa93f240d5e8d06d0c6bf0778e75d0563"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setApplicationFilePath</b> (const QString &amp;filePath)</td></tr>
+<tr class="separator:aa93f240d5e8d06d0c6bf0778e75d0563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060bea066fee2e0fe824e70ed1dbdd8e"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a060bea066fee2e0fe824e70ed1dbdd8e">setCrashHandler</a> (<a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a> handler=<a class="el" href="namespaceKCrash.html#a1858e03d7b38ca03f575265b1010fed8">defaultCrashHandler</a>)</td></tr>
+<tr class="separator:a060bea066fee2e0fe824e70ed1dbdd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48919f4ca45cf8fff17e8a8c429f8df7"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a48919f4ca45cf8fff17e8a8c429f8df7">setDrKonqiEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:a48919f4ca45cf8fff17e8a8c429f8df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a59b77f8a1dcf95c9bc030d141b027"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a51a59b77f8a1dcf95c9bc030d141b027">setEmergencySaveFunction</a> (<a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a> saveFunction=0)</td></tr>
+<tr class="separator:a51a59b77f8a1dcf95c9bc030d141b027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c777b1a3c6e01f4f71a4e51e02f845"><td class="memItemLeft" align="right" valign="top">KCRASH_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKCrash.html#a53c777b1a3c6e01f4f71a4e51e02f845">setFlags</a> (KCrash::CrashFlags flags)</td></tr>
+<tr class="separator:a53c777b1a3c6e01f4f71a4e51e02f845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c28af7456eec7638454e335030d7dd"><td class="memItemLeft" align="right" valign="top"><a id="a89c28af7456eec7638454e335030d7dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startProcess</b> (int argc, const char *argv[], bool waitAndExit)</td></tr>
+<tr class="separator:a89c28af7456eec7638454e335030d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2d2e16d18feca61ead4a819199700476"><td class="memItemLeft" align="right" valign="top"><a id="a2d2e16d18feca61ead4a819199700476"></a>
+KCRASH_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadedByKdeinit</b> = false</td></tr>
+<tr class="separator:a2d2e16d18feca61ead4a819199700476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This namespace contains functions to handle crashes. </p>
+<p>It allows you to set a crash handler function that will be called when your application crashes and also provides a default crash handler that implements the following functionality: </p><ul>
+<li>Launches the KDE crash display application (DrKonqi) to let the user report the bug and/or debug it. </li>
+<li>Calls an emergency save function that you can set with <a class="el" href="namespaceKCrash.html#a51a59b77f8a1dcf95c9bc030d141b027" title="Installs a function which should try to save the application&#39;s data. ">setEmergencySaveFunction()</a> to attempt to save the application's data. </li>
+<li>Autorestarts your application.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>All the above features are optional and you need to enable them explicitly. By default, the <a class="el" href="namespaceKCrash.html#a1858e03d7b38ca03f575265b1010fed8" title="The default crash handler. ">defaultCrashHandler()</a> will not do anything. However, if you are using KApplication, it will by default enable launching DrKonqi on crashes, unless the &ndash;nocrashhandler argument was passed on the command line or the environment variable KDE_DEBUG is set to any value. </dd></dl>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a600b72c20ed993d331fc7af16eab35f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600b72c20ed993d331fc7af16eab35f6">&#9670;&nbsp;</a></span>HandlerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* KCrash::HandlerType) (int)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for a pointer to a crash handler function. </p>
+<p>The function's argument is the number of the signal. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8h_source.html#l00076">76</a> of file <a class="el" href="kcrash_8h_source.html">kcrash.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="acc3079fc30842fb82fa69d9d82c17b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3079fc30842fb82fa69d9d82c17b57">&#9670;&nbsp;</a></span>CrashFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceKCrash.html#acc3079fc30842fb82fa69d9d82c17b57">KCrash::CrashFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Options to determine how the default crash handler should behave. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc3079fc30842fb82fa69d9d82c17b57adff28e937b35b09fba8155f6ad0ff57e"></a>KeepFDs&#160;</td><td class="fielddoc"><p>don't close all file descriptors immediately </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc3079fc30842fb82fa69d9d82c17b57a47e4bc442cd2e42b9e6991188e2af839"></a>SaferDialog&#160;</td><td class="fielddoc"><p>start DrKonqi without arbitrary disk access </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc3079fc30842fb82fa69d9d82c17b57a0abed225c59084baa1858c2981b57e14"></a>AlwaysDirectly&#160;</td><td class="fielddoc"><p>never try to to start DrKonqi via kdeinit. Use fork() and exec() instead. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc3079fc30842fb82fa69d9d82c17b57a37954f0d0919cfa8db1b33ceae697759"></a>AutoRestart&#160;</td><td class="fielddoc"><p>autorestart this application. Only sensible for KUniqueApplications. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1. </dd></dl>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8h_source.html#l00120">120</a> of file <a class="el" href="kcrash_8h_source.html">kcrash.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0f43ecae9f721f26f5d94e8f28b58df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f43ecae9f721f26f5d94e8f28b58df6">&#9670;&nbsp;</a></span>crashHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">KCrash::HandlerType</a> KCrash::crashHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the installed crash handler. </p>
+<dl class="section return"><dt>Returns</dt><dd>the crash handler </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00354">354</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1858e03d7b38ca03f575265b1010fed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1858e03d7b38ca03f575265b1010fed8">&#9670;&nbsp;</a></span>defaultCrashHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::defaultCrashHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default crash handler. </p>
+<p>Do not call this function directly. Instead, use <a class="el" href="namespaceKCrash.html#a060bea066fee2e0fe824e70ed1dbdd8e" title="Install a function to be called when a crash occurs. ">setCrashHandler()</a> to set it as your application's crash handler. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>the signal number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If you implement your own crash handler, you will have to call this function from your implementation if you want to use the features of this namespace. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00373">373</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a869171c318888de63f9a47aec991441c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869171c318888de63f9a47aec991441c">&#9670;&nbsp;</a></span>emergencySaveFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">KCrash::HandlerType</a> KCrash::emergencySaveFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the currently set emergency save function. </p>
+<dl class="section return"><dt>Returns</dt><dd>the emergency save function </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00155">155</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3cbae2933366133fd4e666568521232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cbae2933366133fd4e666568521232">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize <a class="el" href="namespaceKCrash.html" title="This namespace contains functions to handle crashes. ">KCrash</a>. </p>
+<p>This does nothing if $KDE_DEBUG is set.</p>
+<p>Call this in your main() to ensure that the crash handler is always launched. </p><dl class="section since"><dt>Since</dt><dd>5.15 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00125">125</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acabea15ec5f489a79737172c0cde581d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabea15ec5f489a79737172c0cde581d">&#9670;&nbsp;</a></span>isDrKonqiEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCrash::isDrKonqiEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if DrKonqi is set to be launched from the crash handler or false otherwise. </p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00253">253</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a060bea066fee2e0fe824e70ed1dbdd8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060bea066fee2e0fe824e70ed1dbdd8e">&#9670;&nbsp;</a></span>setCrashHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::setCrashHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a>&#160;</td>
+          <td class="paramname"><em>handler</em> = <code><a class="el" href="namespaceKCrash.html#a1858e03d7b38ca03f575265b1010fed8">defaultCrashHandler</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Install a function to be called when a crash occurs. </p>
+<p>A crash occurs when one of the following signals is caught: SIGSEGV, SIGBUS, SIGFPE, SIGILL, SIGABRT. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>this can be one of: <ul>
+<li>null, in which case signal catching is disabled (by setting the signal handler for the crash signals to SIG_DFL) </li>
+<li>a user defined function in the form: static (if in a class) void myCrashHandler(int); </li>
+<li>if handler is omitted, the default crash handler is installed </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If you use setDrKonqiEnabled(true), setEmergencySaveFunction(myfunc) or setFlags(AutoRestart), you do not need to call this function explicitly. The default crash handler is automatically installed by those functions if needed. However, if you set a custom crash handler, those functions will not change it. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00297">297</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a48919f4ca45cf8fff17e8a8c429f8df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48919f4ca45cf8fff17e8a8c429f8df7">&#9670;&nbsp;</a></span>setDrKonqiEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::setDrKonqiEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables launching DrKonqi from the crash handler. </p>
+<p>By default, launching DrKonqi is enabled when QCoreApplication is created. To disable it: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> disableDrKonqi()</div><div class="line">{</div><div class="line">    <a class="code" href="namespaceKCrash.html#a48919f4ca45cf8fff17e8a8c429f8df7">KCrash::setDrKonqiEnabled</a>(<span class="keyword">false</span>);</div><div class="line">}</div><div class="line">Q_CONSTRUCTOR_FUNCTION(disableDrKonqi)</div></div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>It is the crash handler's responsibility to launch DrKonqi. Therefore, if no crash handler is set, this method also installs the default crash handler to ensure that DrKonqi will be launched. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00224">224</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51a59b77f8a1dcf95c9bc030d141b027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a59b77f8a1dcf95c9bc030d141b027">&#9670;&nbsp;</a></span>setEmergencySaveFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::setEmergencySaveFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKCrash.html#a600b72c20ed993d331fc7af16eab35f6">HandlerType</a>&#160;</td>
+          <td class="paramname"><em>saveFunction</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Installs a function which should try to save the application's data. </p>
+<dl class="section note"><dt>Note</dt><dd>It is the crash handler's responsibility to call this function. Therefore, if no crash handler is set, the default crash handler is installed to ensure the save function will be called. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveFunction</td><td>the handler to install </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00141">141</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53c777b1a3c6e01f4f71a4e51e02f845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c777b1a3c6e01f4f71a4e51e02f845">&#9670;&nbsp;</a></span>setFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCrash::setFlags </td>
+          <td>(</td>
+          <td class="paramtype">KCrash::CrashFlags&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set options to determine how the default crash handler should behave. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flags</td><td>ORed together CrashFlags </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcrash_8cpp_source.html#l00185">185</a> of file <a class="el" href="kcrash_8cpp_source.html">kcrash.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:36 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

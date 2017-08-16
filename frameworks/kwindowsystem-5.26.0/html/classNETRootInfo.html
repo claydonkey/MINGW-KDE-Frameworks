@@ -1,0 +1,3600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - NETRootInfo Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=NETRootInfo">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classNETRootInfo-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">NETRootInfo Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="netwm_8h_source.html">netwm.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NETRootInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNETRootInfo__inherit__graph.png" border="0" usemap="#NETRootInfo_inherit__map" alt="Inheritance graph"/></div>
+<map name="NETRootInfo_inherit__map" id="NETRootInfo_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae9f7740b8df7b6d749c8d3004cbd0d4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>PROTOCOLS</b>,
+<b>WINDOW_TYPES</b>,
+<b>STATES</b>,
+<b>PROTOCOLS2</b>,
+<br />
+&#160;&#160;<b>ACTIONS</b>,
+<b>PROPERTIES_SIZE</b>
+<br />
+ }</td></tr>
+<tr class="separator:ae9f7740b8df7b6d749c8d3004cbd0d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classNET"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classNET')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classNET.html">NET</a></td></tr>
+<tr class="memitem:a850e0ea12561c7467861957c873be34f inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>OnAllDesktops</b> = -1
+ }</td></tr>
+<tr class="separator:a850e0ea12561c7467861957c873be34f inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9281c19ea7e280327b01b2c6236928 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">Action</a> { <br />
+&#160;&#160;<b>ActionMove</b> = 1u &lt;&lt; 0,
+<b>ActionResize</b> = 1u &lt;&lt; 1,
+<b>ActionMinimize</b> = 1u &lt;&lt; 2,
+<b>ActionShade</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>ActionStick</b> = 1u &lt;&lt; 4,
+<b>ActionMaxVert</b> = 1u &lt;&lt; 5,
+<b>ActionMaxHoriz</b> = 1u &lt;&lt; 6,
+<b>ActionMax</b> = ActionMaxVert | ActionMaxHoriz,
+<br />
+&#160;&#160;<b>ActionFullScreen</b> = 1u &lt;&lt; 7,
+<b>ActionChangeDesktop</b> = 1u &lt;&lt; 8,
+<b>ActionClose</b> = 1u &lt;&lt; 9
+<br />
+ }</td></tr>
+<tr class="separator:afa9281c19ea7e280327b01b2c6236928 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3359c32a21f438e0e6564f26179e458f inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">DesktopLayoutCorner</a> { <b>DesktopLayoutCornerTopLeft</b> = 0,
+<b>DesktopLayoutCornerTopRight</b> = 1,
+<b>DesktopLayoutCornerBottomLeft</b> = 2,
+<b>DesktopLayoutCornerBottomRight</b> = 3
+ }</td></tr>
+<tr class="separator:a3359c32a21f438e0e6564f26179e458f inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29e22ac36b48d9cbcb28727db5258ea inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea">Direction</a> { <br />
+&#160;&#160;<b>TopLeft</b> = 0,
+<b>Top</b> = 1,
+<b>TopRight</b> = 2,
+<b>Right</b> = 3,
+<br />
+&#160;&#160;<b>BottomRight</b> = 4,
+<b>Bottom</b> = 5,
+<b>BottomLeft</b> = 6,
+<b>Left</b> = 7,
+<br />
+&#160;&#160;<b>Move</b> = 8,
+<b>KeyboardSize</b> = 9,
+<b>KeyboardMove</b> = 10,
+<b>MoveResizeCancel</b> = 11
+<br />
+ }</td></tr>
+<tr class="separator:ae29e22ac36b48d9cbcb28727db5258ea inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6eef2d78c27ea693652a30d2a07c05 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05">MappingState</a> { <a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05ac19143b5e0209f618a5518c11ac38689">Visible</a> = 1,
+<a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05a7648a58c155ce6b36e05031c7ab0a4f6">Withdrawn</a> = 0,
+<a class="el" href="classNET.html#afb6eef2d78c27ea693652a30d2a07c05a2d6d6784820519475f0177ea2cf3e04d">Iconic</a> = 3
+ }</td></tr>
+<tr class="separator:afb6eef2d78c27ea693652a30d2a07c05 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac5b26cfb4e28ec2f18cd5cc9e1989a inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">Orientation</a> { <b>OrientationHorizontal</b> = 0,
+<b>OrientationVertical</b> = 1
+ }</td></tr>
+<tr class="separator:afac5b26cfb4e28ec2f18cd5cc9e1989a inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea92340c4b9901e05aa7748587dcde5 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">Property</a> { <br />
+&#160;&#160;<b>Supported</b> = 1u &lt;&lt; 0,
+<b>ClientList</b> = 1u &lt;&lt; 1,
+<b>ClientListStacking</b> = 1u &lt;&lt; 2,
+<b>NumberOfDesktops</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>DesktopGeometry</b> = 1u &lt;&lt; 4,
+<b>DesktopViewport</b> = 1u &lt;&lt; 5,
+<b>CurrentDesktop</b> = 1u &lt;&lt; 6,
+<b>DesktopNames</b> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<b>ActiveWindow</b> = 1u &lt;&lt; 8,
+<b>WorkArea</b> = 1u &lt;&lt; 9,
+<b>SupportingWMCheck</b> = 1u &lt;&lt; 10,
+<b>VirtualRoots</b> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<b>CloseWindow</b> = 1u &lt;&lt; 13,
+<b>WMMoveResize</b> = 1u &lt;&lt; 14,
+<b>WMName</b> = 1u &lt;&lt; 15,
+<b>WMVisibleName</b> = 1u &lt;&lt; 16,
+<br />
+&#160;&#160;<b>WMDesktop</b> = 1u &lt;&lt; 17,
+<b>WMWindowType</b> = 1u &lt;&lt; 18,
+<b>WMState</b> = 1u &lt;&lt; 19,
+<b>WMStrut</b> = 1u &lt;&lt; 20,
+<br />
+&#160;&#160;<b>WMIconGeometry</b> = 1u &lt;&lt; 21,
+<b>WMIcon</b> = 1u &lt;&lt; 22,
+<b>WMPid</b> = 1u &lt;&lt; 23,
+<b>WMHandledIcons</b> = 1u &lt;&lt; 24,
+<br />
+&#160;&#160;<b>WMPing</b> = 1u &lt;&lt; 25,
+<b>XAWMState</b> = 1u &lt;&lt; 27,
+<b>WMFrameExtents</b> = 1u &lt;&lt; 28,
+<b>WMIconName</b> = 1u &lt;&lt; 29,
+<br />
+&#160;&#160;<b>WMVisibleIconName</b> = 1u &lt;&lt; 30,
+<b>WMGeometry</b> = 1u &lt;&lt; 31,
+<b>WMAllProperties</b> = ~0u
+<br />
+ }</td></tr>
+<tr class="separator:aaea92340c4b9901e05aa7748587dcde5 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851d15d9aa748b5f76e44b1e2d7c79b0 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">Property2</a> { <br />
+&#160;&#160;<b>WM2UserTime</b> = 1u &lt;&lt; 0,
+<b>WM2StartupId</b> = 1u &lt;&lt; 1,
+<b>WM2TransientFor</b> = 1u &lt;&lt; 2,
+<b>WM2GroupLeader</b> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<b>WM2AllowedActions</b> = 1u &lt;&lt; 4,
+<b>WM2RestackWindow</b> = 1u &lt;&lt; 5,
+<b>WM2MoveResizeWindow</b> = 1u &lt;&lt; 6,
+<b>WM2ExtendedStrut</b> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<b>WM2KDETemporaryRules</b> = 1u &lt;&lt; 8,
+<b>WM2WindowClass</b> = 1u &lt;&lt; 9,
+<b>WM2WindowRole</b> = 1u &lt;&lt; 10,
+<b>WM2ClientMachine</b> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<b>WM2ShowingDesktop</b> = 1u &lt;&lt; 12,
+<b>WM2Opacity</b> = 1u &lt;&lt; 13,
+<b>WM2DesktopLayout</b> = 1u &lt;&lt; 14,
+<b>WM2FullPlacement</b> = 1u &lt;&lt; 15,
+<br />
+&#160;&#160;<b>WM2FullscreenMonitors</b> = 1u &lt;&lt; 16,
+<b>WM2FrameOverlap</b> = 1u &lt;&lt; 17,
+<b>WM2Activities</b> = 1u &lt;&lt; 18,
+<b>WM2BlockCompositing</b> = 1u &lt;&lt; 19,
+<br />
+&#160;&#160;<b>WM2KDEShadow</b> = 1u &lt;&lt; 20,
+<b>WM2Urgency</b> = 1u &lt;&lt; 21,
+<b>WM2Input</b> = 1u &lt;&lt; 22,
+<b>WM2Protocols</b> = 1u &lt;&lt; 23,
+<br />
+&#160;&#160;<b>WM2InitialMappingState</b> = 1u &lt;&lt; 24,
+<b>WM2IconPixmap</b> = 1u &lt;&lt; 25,
+<b>WM2OpaqueRegion</b> = 1u &lt;&lt; 25,
+<b>WM2AllProperties</b> = ~0u
+<br />
+ }</td></tr>
+<tr class="separator:a851d15d9aa748b5f76e44b1e2d7c79b0 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02aad36d7abf162c186cdb2b0e6e961b inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961b">Protocol</a> { <br />
+&#160;&#160;<b>NoProtocol</b> = 0,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba88aab7af44c314e40504d05bea9790d4">TakeFocusProtocol</a> = 1 &lt;&lt; 0,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba55ebbf6a31791adca72f460b7e13eb39">DeleteWindowProtocol</a> = 1 &lt;&lt; 1,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961bac01fb7a0b7834f7e2385755472ca95cd">PingProtocol</a> = 1 &lt;&lt; 2,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961baed283a207c3f69d29bf9898e5e09968e">SyncRequestProtocol</a> = 1 &lt;&lt; 3,
+<a class="el" href="classNET.html#a02aad36d7abf162c186cdb2b0e6e961ba818d0a3ae2e6f85ecdd47c7f60ca60b7">ContextHelpProtocol</a> = 1 &lt;&lt; 4
+<br />
+ }</td></tr>
+<tr class="separator:a02aad36d7abf162c186cdb2b0e6e961b inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8310daed1ca6a628b77ad4f92eeae74 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a> { <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74afa9b1fe54160f94efbbd36abf3817f6d">FromUnknown</a> = 0,
+<a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74a7a242a3888a59f336a2c9091f046c204">FromApplication</a> = 1,
+<a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74ae9b1014f038b95b825ed3a5a9adaf2d0">FromTool</a> = 2
+ }</td></tr>
+<tr class="separator:ab8310daed1ca6a628b77ad4f92eeae74 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6f825794e1d7e005d56cac269e7aa0 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0">Role</a> { <a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0a4fdc6016b721032a2bd8c5f9890f5f6d">Client</a>,
+<a class="el" href="classNET.html#a5d6f825794e1d7e005d56cac269e7aa0a949cb303dc6e1c81c0f6c7b2c66055c8">WindowManager</a>
+ }</td></tr>
+<tr class="separator:a5d6f825794e1d7e005d56cac269e7aa0 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dce7f5ea8a2a6d1d38aea3498f00ee inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">State</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea59b7f512e7c7ff71430ad7349a32d91d">Modal</a> = 1u &lt;&lt; 0,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea091104e8b00c4b1a0cfb81ae186f3637">Sticky</a> = 1u &lt;&lt; 1,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea2b5dbc22e9e5f3a7a238fc0d9775b7bd">MaxVert</a> = 1u &lt;&lt; 2,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea05e760aabf98bbf0887e2f5adf4af5eb">MaxHoriz</a> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea11465696144d095ebe6d51085f7f47e6">Max</a> = MaxVert | MaxHoriz,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea2a7c8fed35a833f0b664fc577cb85015">Shaded</a> = 1u &lt;&lt; 4,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea4143fd2f9ab51548070993729951a5b4">SkipTaskbar</a> = 1u &lt;&lt; 5,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea7b5e0fc7795fc0a66930fb0937035817">KeepAbove</a> = 1u &lt;&lt; 6,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeae5698354cff53f6e3aebdad9da826dd7">StaysOnTop</a> = KeepAbove,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeaacf3a06dfb0c28d5ade1fb8f11ca06bc">SkipPager</a> = 1u &lt;&lt; 7,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea9da0cfee6ad77ce1cb2d266543244eb6">Hidden</a> = 1u &lt;&lt; 8,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea52c9fb05445b3724c1f3e02838d89e32">FullScreen</a> = 1u &lt;&lt; 9,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eeabb33d1a7ef6aeee3bd0e73cba9d8565d">KeepBelow</a> = 1u &lt;&lt; 10,
+<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00eea3bb48830079a11c504153794ebbd4213">DemandsAttention</a> = 1u &lt;&lt; 11
+<br />
+ }</td></tr>
+<tr class="separator:a08dce7f5ea8a2a6d1d38aea3498f00ee inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3115c0f40e7bc8e38119cc44dd60e0 inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">WindowType</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a53e8de9bd4352248edad9137546aa4fe">Unknown</a> = -1,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a47e478847ad30f9f71dcc5091cc0cead">Normal</a> = 0,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a379d353173caf50b0e3992e770ded7f6">Desktop</a> = 1,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aebde24b0e6a51a008f120edd01d84be1">Dock</a> = 2,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aa34709d530baff911c780166f1a5ccfd">Toolbar</a> = 3,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0ab3858ccebaa5f5dc9fe176e1308de089">Menu</a> = 4,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a9ada102bbd3caf4377ecf8fa93fc7f1d">Dialog</a> = 5,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a169c19bad87c970ee27283f2b3378b7e">Override</a> = 6,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a87b7bcd5109a36c8ffcf4705eb8865c6">TopMenu</a> = 7,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0aed5a5fbe48af6bcd46122f9bda58f0c8">Utility</a> = 8,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a07c62266f94f41d18b1f522c8f917333">Splash</a> = 9,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abbd1eb83dab2ebd2b1e1909f9bf03809">DropdownMenu</a> = 10,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0abf2250001e5fc6e63a42f8cc86fc8725">PopupMenu</a> = 11,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a8e9c1aa0e9c868b99aa8b5c2008cc45c">Tooltip</a> = 12,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a0f3f4349eae1a7aca0e44da1f7f26984">Notification</a> = 13,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0adf15e4b5b7558558fd4adb72866d5972">ComboBox</a> = 14,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a3f2e95b29fea412b74e23deb530bb7fc">DNDIcon</a> = 15,
+<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0a7b858c5d7e10f407e7c6c2d91a57184f">OnScreenDisplay</a> = 16
+<br />
+ }</td></tr>
+<tr class="separator:a4b3115c0f40e7bc8e38119cc44dd60e0 inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157924046678eec09044df42968b785a inherit pub_types_classNET"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a157924046678eec09044df42968b785a">WindowTypeMask</a> { <br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa769ee5513fae44cbc23ea06d80203525">NormalMask</a> = 1u &lt;&lt; 0,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa78b084561fcb174877983d4941ba9747">DesktopMask</a> = 1u &lt;&lt; 1,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5c1f0a7d7a70102c047db14a9de18dbc">DockMask</a> = 1u &lt;&lt; 2,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5816df72b6aedb600f0977bbbb00d32c">ToolbarMask</a> = 1u &lt;&lt; 3,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa302e156b07c1f151bcc6378cbf67c6dc">MenuMask</a> = 1u &lt;&lt; 4,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa18e3bbea0b794f61a96af05ff590ae74">DialogMask</a> = 1u &lt;&lt; 5,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa4246ace0fadfb0cc91dab281a6a5a93b">OverrideMask</a> = 1u &lt;&lt; 6,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa9c7b7555c2856befb21489b361571a78">TopMenuMask</a> = 1u &lt;&lt; 7,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa3d1837de4f3b33786169b6d1734f62d9">UtilityMask</a> = 1u &lt;&lt; 8,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa3830935ae4e085f953886aa018f2fff6">SplashMask</a> = 1u &lt;&lt; 9,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aad53a4ceb2c6250fe15685753265b4b61">DropdownMenuMask</a> = 1u &lt;&lt; 10,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa5d2dbb4e6213a85653c2784f1c110a35">PopupMenuMask</a> = 1u &lt;&lt; 11,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa1db84820110a58c01ebdb9681460a782">TooltipMask</a> = 1u &lt;&lt; 12,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa9e4aa0d1f656f17c73263424dd9d347c">NotificationMask</a> = 1u &lt;&lt; 13,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aaf58c7d2c12f39f237b2cabfa270e8ab5">ComboBoxMask</a> = 1u &lt;&lt; 14,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa4303bedea838238b651e755a56097d17">DNDIconMask</a> = 1u &lt;&lt; 15,
+<br />
+&#160;&#160;<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa31cb24e878e096c5dc302ae6d8285836">OnScreenDisplayMask</a> = 1u &lt;&lt; 16,
+<a class="el" href="classNET.html#a157924046678eec09044df42968b785aa8f1418a2a15499cc1ff2380b2d2ec34a">AllTypesMask</a> = 0U - 1
+<br />
+ }</td></tr>
+<tr class="separator:a157924046678eec09044df42968b785a inherit pub_types_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a89f26951db9fa3402ebfcac73a13b248"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a89f26951db9fa3402ebfcac73a13b248">NETRootInfo</a> (xcb_connection_t *connection, xcb_window_t <a class="el" href="classNETRootInfo.html#a8edabc7b370c743c76bea72c3253dabc">supportWindow</a>, const char *<a class="el" href="classNETRootInfo.html#af51e1fbd88028b70958f5b08cabd82be">wmName</a>, NET::Properties properties, NET::WindowTypes windowTypes, NET::States states, NET::Properties2 properties2, NET::Actions actions, int screen=-1, bool doActivate=true)</td></tr>
+<tr class="separator:a89f26951db9fa3402ebfcac73a13b248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e67e0b9e262b810b5749ac3cd31a4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa9e67e0b9e262b810b5749ac3cd31a4b">NETRootInfo</a> (xcb_connection_t *connection, NET::Properties properties, NET::Properties2 properties2=0, int screen=-1, bool doActivate=true)</td></tr>
+<tr class="separator:aa9e67e0b9e262b810b5749ac3cd31a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960dc3710c9cf34347285026b93bcd6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a960dc3710c9cf34347285026b93bcd6f">NETRootInfo</a> (const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp;rootinfo)</td></tr>
+<tr class="separator:a960dc3710c9cf34347285026b93bcd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dd4ee9906662bf072d9e703b7df710"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a88dd4ee9906662bf072d9e703b7df710">~NETRootInfo</a> ()</td></tr>
+<tr class="separator:a88dd4ee9906662bf072d9e703b7df710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600ae69b2dfbbe78f2758c19af6748aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a600ae69b2dfbbe78f2758c19af6748aa">activate</a> ()</td></tr>
+<tr class="separator:a600ae69b2dfbbe78f2758c19af6748aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae7b7baf102438cb5f6484e4237abbb"><td class="memItemLeft" align="right" valign="top">xcb_window_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a4ae7b7baf102438cb5f6484e4237abbb">activeWindow</a> () const</td></tr>
+<tr class="separator:a4ae7b7baf102438cb5f6484e4237abbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1a87a8f4f44254449151aa10895d32"><td class="memItemLeft" align="right" valign="top">const xcb_window_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aaf1a87a8f4f44254449151aa10895d32">clientList</a> () const</td></tr>
+<tr class="separator:aaf1a87a8f4f44254449151aa10895d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035ed071e2412d6496776d5079a6cb36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a035ed071e2412d6496776d5079a6cb36">clientListCount</a> () const</td></tr>
+<tr class="separator:a035ed071e2412d6496776d5079a6cb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bbdce13267e297929a8a7c47f6c1ac"><td class="memItemLeft" align="right" valign="top">const xcb_window_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a50bbdce13267e297929a8a7c47f6c1ac">clientListStacking</a> () const</td></tr>
+<tr class="separator:a50bbdce13267e297929a8a7c47f6c1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6488dbb60e1696f80ef4dbd6465203ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a6488dbb60e1696f80ef4dbd6465203ef">clientListStackingCount</a> () const</td></tr>
+<tr class="separator:a6488dbb60e1696f80ef4dbd6465203ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdbb685d45dc467039f5d682110c176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a9cdbb685d45dc467039f5d682110c176">closeWindowRequest</a> (xcb_window_t window)</td></tr>
+<tr class="separator:a9cdbb685d45dc467039f5d682110c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447ad4051423f7c099789425ae814063"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a447ad4051423f7c099789425ae814063">currentDesktop</a> (bool ignore_viewport=false) const</td></tr>
+<tr class="separator:a447ad4051423f7c099789425ae814063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97843623505e056546fde77d4f02086b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNETSize.html">NETSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a97843623505e056546fde77d4f02086b">desktopGeometry</a> () const</td></tr>
+<tr class="separator:a97843623505e056546fde77d4f02086b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5abb54b952460cc7db1271a0b1f2fb"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aad5abb54b952460cc7db1271a0b1f2fb">desktopLayoutColumnsRows</a> () const</td></tr>
+<tr class="separator:aad5abb54b952460cc7db1271a0b1f2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91be2518fd5648543ebb2bd1ef83e672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">NET::DesktopLayoutCorner</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a91be2518fd5648543ebb2bd1ef83e672">desktopLayoutCorner</a> () const</td></tr>
+<tr class="separator:a91be2518fd5648543ebb2bd1ef83e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1147ee4d8a14fe363760e250b7e64c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">NET::Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a1147ee4d8a14fe363760e250b7e64c38">desktopLayoutOrientation</a> () const</td></tr>
+<tr class="separator:a1147ee4d8a14fe363760e250b7e64c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba60eb0b7b5a4c9b1c86c1be2bcd386"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a9ba60eb0b7b5a4c9b1c86c1be2bcd386">desktopName</a> (int desktop) const</td></tr>
+<tr class="separator:a9ba60eb0b7b5a4c9b1c86c1be2bcd386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd5234c11a1eaf92b25ea1e3a1cb1c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNETPoint.html">NETPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a6cd5234c11a1eaf92b25ea1e3a1cb1c5">desktopViewport</a> (int desktop) const</td></tr>
+<tr class="separator:a6cd5234c11a1eaf92b25ea1e3a1cb1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ac9343868f6a1ad4920e0b958ed7c9"><td class="memItemLeft" align="right" valign="top">KWINDOWSYSTEM_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ad9ac9343868f6a1ad4920e0b958ed7c9">event</a> (xcb_generic_event_t *event, unsigned long *properties, int properties_size)</td></tr>
+<tr class="separator:ad9ac9343868f6a1ad4920e0b958ed7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06811a2349fa8b8e427edcfe175cb09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa06811a2349fa8b8e427edcfe175cb09">event</a> (xcb_generic_event_t *event, NET::Properties *properties, NET::Properties2 *properties2=Q_NULLPTR)</td></tr>
+<tr class="separator:aa06811a2349fa8b8e427edcfe175cb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ce5ceef60cb7130480ced856c28744"><td class="memItemLeft" align="right" valign="top">NET::Properties&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a40ce5ceef60cb7130480ced856c28744">event</a> (xcb_generic_event_t *event)</td></tr>
+<tr class="separator:a40ce5ceef60cb7130480ced856c28744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96a250ac6f683e5d2f703f8584e826a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ae96a250ac6f683e5d2f703f8584e826a">isSupported</a> (<a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">NET::Property</a> property) const</td></tr>
+<tr class="separator:ae96a250ac6f683e5d2f703f8584e826a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa727d28200a86c48563b642689b2fbcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa727d28200a86c48563b642689b2fbcf">isSupported</a> (<a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">NET::Property2</a> property) const</td></tr>
+<tr class="separator:aa727d28200a86c48563b642689b2fbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00b04f0f6aa6a0af70157a781b525a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ad00b04f0f6aa6a0af70157a781b525a2">isSupported</a> (<a class="el" href="classNET.html#a157924046678eec09044df42968b785a">NET::WindowTypeMask</a> type) const</td></tr>
+<tr class="separator:ad00b04f0f6aa6a0af70157a781b525a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276e2952063e546564c2ee5e6238ac29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a276e2952063e546564c2ee5e6238ac29">isSupported</a> (<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">NET::State</a> state) const</td></tr>
+<tr class="separator:a276e2952063e546564c2ee5e6238ac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10947572060a0c38dbe56533954de36a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a10947572060a0c38dbe56533954de36a">isSupported</a> (<a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">NET::Action</a> action) const</td></tr>
+<tr class="separator:a10947572060a0c38dbe56533954de36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef49909d42b1a1a04f2292b8605b79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a6ef49909d42b1a1a04f2292b8605b79b">moveResizeRequest</a> (xcb_window_t window, int x_root, int y_root, <a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea">Direction</a> direction)</td></tr>
+<tr class="separator:a6ef49909d42b1a1a04f2292b8605b79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedcf941d9633d7234d610511a7a50d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#abedcf941d9633d7234d610511a7a50d0">moveResizeWindowRequest</a> (xcb_window_t window, int flags, int x, int y, int width, int height)</td></tr>
+<tr class="separator:abedcf941d9633d7234d610511a7a50d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc5bf61b1a98087e0a8399b5ee107cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#afcc5bf61b1a98087e0a8399b5ee107cd">numberOfDesktops</a> (bool ignore_viewport=false) const</td></tr>
+<tr class="separator:afcc5bf61b1a98087e0a8399b5ee107cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af117a2f45605de015325765540130ecc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#af117a2f45605de015325765540130ecc">operator=</a> (const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp;rootinfo)</td></tr>
+<tr class="separator:af117a2f45605de015325765540130ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac657d1a5a2bc2bbff13ba2b3753ecc"><td class="memItemLeft" align="right" valign="top">NET::Actions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aeac657d1a5a2bc2bbff13ba2b3753ecc">passedActions</a> () const</td></tr>
+<tr class="separator:aeac657d1a5a2bc2bbff13ba2b3753ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aba0412460d5de7223850bcde26cd3c"><td class="memItemLeft" align="right" valign="top">NET::Properties&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a7aba0412460d5de7223850bcde26cd3c">passedProperties</a> () const</td></tr>
+<tr class="separator:a7aba0412460d5de7223850bcde26cd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92f2c0b90a07bb51080626b888c3fff"><td class="memItemLeft" align="right" valign="top">NET::Properties2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ab92f2c0b90a07bb51080626b888c3fff">passedProperties2</a> () const</td></tr>
+<tr class="separator:ab92f2c0b90a07bb51080626b888c3fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef3d66dffc5ae60d3974e51e09efe5e"><td class="memItemLeft" align="right" valign="top">NET::States&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a0ef3d66dffc5ae60d3974e51e09efe5e">passedStates</a> () const</td></tr>
+<tr class="separator:a0ef3d66dffc5ae60d3974e51e09efe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a82100d346fb5a3a0103a0c2a5cc27a"><td class="memItemLeft" align="right" valign="top">NET::WindowTypes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a8a82100d346fb5a3a0103a0c2a5cc27a">passedWindowTypes</a> () const</td></tr>
+<tr class="separator:a8a82100d346fb5a3a0103a0c2a5cc27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f81b08f00cf960ea63eb63e81987ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a57f81b08f00cf960ea63eb63e81987ca">restackRequest</a> (xcb_window_t window, <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a> source, xcb_window_t above, int detail, xcb_timestamp_t timestamp)</td></tr>
+<tr class="separator:a57f81b08f00cf960ea63eb63e81987ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231a5b46ec3cbfc15a73ae139fac5d92"><td class="memItemLeft" align="right" valign="top">xcb_window_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a231a5b46ec3cbfc15a73ae139fac5d92">rootWindow</a> () const</td></tr>
+<tr class="separator:a231a5b46ec3cbfc15a73ae139fac5d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e03bc4f40db8ad105e1708c22ea00eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a5e03bc4f40db8ad105e1708c22ea00eb">sendPing</a> (xcb_window_t window, xcb_timestamp_t timestamp)</td></tr>
+<tr class="separator:a5e03bc4f40db8ad105e1708c22ea00eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefac0a31c98427a5a84dd09d812fe6f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aefac0a31c98427a5a84dd09d812fe6f4">setActiveWindow</a> (xcb_window_t window, <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">NET::RequestSource</a> src, xcb_timestamp_t timestamp, xcb_window_t active_window)</td></tr>
+<tr class="separator:aefac0a31c98427a5a84dd09d812fe6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4aa5924f1f051199940828dbce4a118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ab4aa5924f1f051199940828dbce4a118">setActiveWindow</a> (xcb_window_t window)</td></tr>
+<tr class="separator:ab4aa5924f1f051199940828dbce4a118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dae359439488195aceb7f0a2b479ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a02dae359439488195aceb7f0a2b479ab">setClientList</a> (const xcb_window_t *windows, unsigned int count)</td></tr>
+<tr class="separator:a02dae359439488195aceb7f0a2b479ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af358dab6b0dfc8083a771dcc9f2dad73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#af358dab6b0dfc8083a771dcc9f2dad73">setClientListStacking</a> (const xcb_window_t *windows, unsigned int count)</td></tr>
+<tr class="separator:af358dab6b0dfc8083a771dcc9f2dad73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9e17977eec8d2a8ee8695bca184fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aab9e17977eec8d2a8ee8695bca184fbb">setCurrentDesktop</a> (int desktop, bool ignore_viewport=false)</td></tr>
+<tr class="separator:aab9e17977eec8d2a8ee8695bca184fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bbe7eec4123d1794fca9f233ebad93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa4bbe7eec4123d1794fca9f233ebad93">setDesktopGeometry</a> (const <a class="el" href="structNETSize.html">NETSize</a> &amp;geometry)</td></tr>
+<tr class="separator:aa4bbe7eec4123d1794fca9f233ebad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f991c0b1540e779e5e324404337241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a06f991c0b1540e779e5e324404337241">setDesktopLayout</a> (<a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">NET::Orientation</a> orientation, int columns, int rows, <a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">NET::DesktopLayoutCorner</a> corner)</td></tr>
+<tr class="separator:a06f991c0b1540e779e5e324404337241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b747a5f42d1627498a43c2df6670024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a5b747a5f42d1627498a43c2df6670024">setDesktopName</a> (int desktop, const char *<a class="el" href="classNETRootInfo.html#a9ba60eb0b7b5a4c9b1c86c1be2bcd386">desktopName</a>)</td></tr>
+<tr class="separator:a5b747a5f42d1627498a43c2df6670024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3325efae9006a73cc16d9c259cee6f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a3325efae9006a73cc16d9c259cee6f2b">setDesktopViewport</a> (int desktop, const <a class="el" href="structNETPoint.html">NETPoint</a> &amp;viewport)</td></tr>
+<tr class="separator:a3325efae9006a73cc16d9c259cee6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e7aca69ab4fa624eb86af70aaf70bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ad2e7aca69ab4fa624eb86af70aaf70bd">setNumberOfDesktops</a> (int <a class="el" href="classNETRootInfo.html#afcc5bf61b1a98087e0a8399b5ee107cd">numberOfDesktops</a>)</td></tr>
+<tr class="separator:ad2e7aca69ab4fa624eb86af70aaf70bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9c9aa337a71ecc6b61b3bc29e37de2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a9f9c9aa337a71ecc6b61b3bc29e37de2">setShowingDesktop</a> (bool showing)</td></tr>
+<tr class="separator:a9f9c9aa337a71ecc6b61b3bc29e37de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7935546a87ee3b27c02f861fff827e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a8b7935546a87ee3b27c02f861fff827e">setSupported</a> (<a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">NET::Property</a> property, bool on=true)</td></tr>
+<tr class="separator:a8b7935546a87ee3b27c02f861fff827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99010d9744bfca2d1866ecfda2478c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#af99010d9744bfca2d1866ecfda2478c4">setSupported</a> (<a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">NET::Property2</a> property, bool on=true)</td></tr>
+<tr class="separator:af99010d9744bfca2d1866ecfda2478c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b995911d7de433807dc7f79d5712ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa5b995911d7de433807dc7f79d5712ce">setSupported</a> (<a class="el" href="classNET.html#a157924046678eec09044df42968b785a">NET::WindowTypeMask</a> property, bool on=true)</td></tr>
+<tr class="separator:aa5b995911d7de433807dc7f79d5712ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb83b39ed3eeea9b5626c282a03e445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#adeb83b39ed3eeea9b5626c282a03e445">setSupported</a> (<a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">NET::State</a> property, bool on=true)</td></tr>
+<tr class="separator:adeb83b39ed3eeea9b5626c282a03e445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265528fb331b79a05bc2c33897141022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a265528fb331b79a05bc2c33897141022">setSupported</a> (<a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">NET::Action</a> property, bool on=true)</td></tr>
+<tr class="separator:a265528fb331b79a05bc2c33897141022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44bc95e6ca88043dbd1bba2cd20269b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ab44bc95e6ca88043dbd1bba2cd20269b">setVirtualRoots</a> (const xcb_window_t *windows, unsigned int count)</td></tr>
+<tr class="separator:ab44bc95e6ca88043dbd1bba2cd20269b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb2a8b55300c6e363efe89f6702ddb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a7cb2a8b55300c6e363efe89f6702ddb7">setWorkArea</a> (int desktop, const <a class="el" href="structNETRect.html">NETRect</a> &amp;<a class="el" href="classNETRootInfo.html#ad6c3a3adc4684ab3eeac2b48fe40801e">workArea</a>)</td></tr>
+<tr class="separator:a7cb2a8b55300c6e363efe89f6702ddb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecf7557cb87d1d6e38d183a3f2a7545"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#afecf7557cb87d1d6e38d183a3f2a7545">showingDesktop</a> () const</td></tr>
+<tr class="separator:afecf7557cb87d1d6e38d183a3f2a7545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeced8d9474a23a19c5992e1160153dea"><td class="memItemLeft" align="right" valign="top">NET::Actions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea">supportedActions</a> () const</td></tr>
+<tr class="separator:aeced8d9474a23a19c5992e1160153dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9b1ee1fb41bebf0837c465ac9dcdee"><td class="memItemLeft" align="right" valign="top">NET::Properties&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee">supportedProperties</a> () const</td></tr>
+<tr class="separator:a9c9b1ee1fb41bebf0837c465ac9dcdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61118ab0e50d5db4bb7e1128e0984b43"><td class="memItemLeft" align="right" valign="top">NET::Properties2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43">supportedProperties2</a> () const</td></tr>
+<tr class="separator:a61118ab0e50d5db4bb7e1128e0984b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3b3209ba69cd90ee91d7a8f90801d7"><td class="memItemLeft" align="right" valign="top">NET::States&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7">supportedStates</a> () const</td></tr>
+<tr class="separator:adc3b3209ba69cd90ee91d7a8f90801d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7d368ac4d319098d1291abeb92035e"><td class="memItemLeft" align="right" valign="top">NET::WindowTypes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e">supportedWindowTypes</a> () const</td></tr>
+<tr class="separator:abf7d368ac4d319098d1291abeb92035e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edabc7b370c743c76bea72c3253dabc"><td class="memItemLeft" align="right" valign="top">xcb_window_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a8edabc7b370c743c76bea72c3253dabc">supportWindow</a> () const</td></tr>
+<tr class="separator:a8edabc7b370c743c76bea72c3253dabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2002c7e9e3aa608c81ca08a1a1a02a"><td class="memItemLeft" align="right" valign="top">const xcb_window_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a5e2002c7e9e3aa608c81ca08a1a1a02a">virtualRoots</a> () const</td></tr>
+<tr class="separator:a5e2002c7e9e3aa608c81ca08a1a1a02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d97019b468992157030d773cc019fe1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a1d97019b468992157030d773cc019fe1">virtualRootsCount</a> () const</td></tr>
+<tr class="separator:a1d97019b468992157030d773cc019fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51e1fbd88028b70958f5b08cabd82be"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#af51e1fbd88028b70958f5b08cabd82be">wmName</a> () const</td></tr>
+<tr class="separator:af51e1fbd88028b70958f5b08cabd82be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c3a3adc4684ab3eeac2b48fe40801e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNETRect.html">NETRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ad6c3a3adc4684ab3eeac2b48fe40801e">workArea</a> (int desktop) const</td></tr>
+<tr class="separator:ad6c3a3adc4684ab3eeac2b48fe40801e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9613c282ce0140df8a7653a2f2adcb"><td class="memItemLeft" align="right" valign="top">xcb_connection_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a1c9613c282ce0140df8a7653a2f2adcb">xcbConnection</a> () const</td></tr>
+<tr class="separator:a1c9613c282ce0140df8a7653a2f2adcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0a4cd1ccb8097bf8aadc7dbaa5ca5ed7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a0a4cd1ccb8097bf8aadc7dbaa5ca5ed7">addClient</a> (xcb_window_t window)</td></tr>
+<tr class="separator:a0a4cd1ccb8097bf8aadc7dbaa5ca5ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ed7346a3fa56a543079678049bdae9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a57ed7346a3fa56a543079678049bdae9">changeActiveWindow</a> (xcb_window_t window, <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">NET::RequestSource</a> src, xcb_timestamp_t timestamp, xcb_window_t active_window)</td></tr>
+<tr class="separator:a57ed7346a3fa56a543079678049bdae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae305549c1052c9a56438dbbe4d85302f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#ae305549c1052c9a56438dbbe4d85302f">changeCurrentDesktop</a> (int desktop)</td></tr>
+<tr class="separator:ae305549c1052c9a56438dbbe4d85302f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbf88d76644b4e912ee7e860c89225a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a8dbf88d76644b4e912ee7e860c89225a">changeDesktopGeometry</a> (int desktop, const <a class="el" href="structNETSize.html">NETSize</a> &amp;geom)</td></tr>
+<tr class="separator:a8dbf88d76644b4e912ee7e860c89225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0081e46b972ba2efca3e0d4b301e34da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a0081e46b972ba2efca3e0d4b301e34da">changeDesktopViewport</a> (int desktop, const <a class="el" href="structNETPoint.html">NETPoint</a> &amp;viewport)</td></tr>
+<tr class="separator:a0081e46b972ba2efca3e0d4b301e34da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa177bec4607fd2b38529e9fc135d51b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#aa177bec4607fd2b38529e9fc135d51b9">changeNumberOfDesktops</a> (int <a class="el" href="classNETRootInfo.html#afcc5bf61b1a98087e0a8399b5ee107cd">numberOfDesktops</a>)</td></tr>
+<tr class="separator:aa177bec4607fd2b38529e9fc135d51b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86664c4429e79430db0360a5a608dd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#af86664c4429e79430db0360a5a608dd6">changeShowingDesktop</a> (bool showing)</td></tr>
+<tr class="separator:af86664c4429e79430db0360a5a608dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0058f0368e02834b73d164c84a58adbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a0058f0368e02834b73d164c84a58adbd">closeWindow</a> (xcb_window_t window)</td></tr>
+<tr class="separator:a0058f0368e02834b73d164c84a58adbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29decfa17ae9ef6f7b866b7dae72460e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a29decfa17ae9ef6f7b866b7dae72460e">gotPing</a> (xcb_window_t window, xcb_timestamp_t timestamp)</td></tr>
+<tr class="separator:a29decfa17ae9ef6f7b866b7dae72460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67232e7858fb5ac4bb752c32283f08bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a67232e7858fb5ac4bb752c32283f08bb">moveResize</a> (xcb_window_t window, int x_root, int y_root, unsigned long direction)</td></tr>
+<tr class="separator:a67232e7858fb5ac4bb752c32283f08bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d75ad375ac020f5acc62e4316cd350"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a17d75ad375ac020f5acc62e4316cd350">moveResizeWindow</a> (xcb_window_t window, int flags, int x, int y, int width, int height)</td></tr>
+<tr class="separator:a17d75ad375ac020f5acc62e4316cd350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ece857514d7b994cc6cc671dfc69df9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a9ece857514d7b994cc6cc671dfc69df9">removeClient</a> (xcb_window_t window)</td></tr>
+<tr class="separator:a9ece857514d7b994cc6cc671dfc69df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7f30db68710827abf9801f5440617d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a3a7f30db68710827abf9801f5440617d">restackWindow</a> (xcb_window_t window, <a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a> source, xcb_window_t above, int detail, xcb_timestamp_t timestamp)</td></tr>
+<tr class="separator:a3a7f30db68710827abf9801f5440617d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d97a3a5bb0726e991037eaece10279a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNETRootInfo.html#a8d97a3a5bb0726e991037eaece10279a">virtual_hook</a> (int id, void *data)</td></tr>
+<tr class="separator:a8d97a3a5bb0726e991037eaece10279a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classNET"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classNET')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classNET.html">NET</a></td></tr>
+<tr class="memitem:a9257abc93441d96f380d690f2aeea058 inherit pub_static_methods_classNET"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a9257abc93441d96f380d690f2aeea058">timestampCompare</a> (unsigned long time1, unsigned long time2)</td></tr>
+<tr class="separator:a9257abc93441d96f380d690f2aeea058 inherit pub_static_methods_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5353d1ebb9514a696158f46b54157f4 inherit pub_static_methods_classNET"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#ae5353d1ebb9514a696158f46b54157f4">timestampDiff</a> (unsigned long time1, unsigned long time2)</td></tr>
+<tr class="separator:ae5353d1ebb9514a696158f46b54157f4 inherit pub_static_methods_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27fbb80ed615b8a177aa38f2f65ef40f inherit pub_static_methods_classNET"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNET.html#a27fbb80ed615b8a177aa38f2f65ef40f">typeMatchesMask</a> (<a class="el" href="classNET.html#a4b3115c0f40e7bc8e38119cc44dd60e0">WindowType</a> type, WindowTypes mask)</td></tr>
+<tr class="separator:a27fbb80ed615b8a177aa38f2f65ef40f inherit pub_static_methods_classNET"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Common API for root window properties/protocols. </p>
+<p>The <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> class provides a common API for clients and window managers to set/read/change properties on the root window as defined by the <a class="el" href="classNET.html" title="Base namespace class. ">NET</a> Window Manager Specification..</p>
+<dl class="section author"><dt>Author</dt><dd>Bradley T. Hughes <a href="#" onclick="location.href='mai'+'lto:'+'bhu'+'gh'+'es@'+'tr'+'oll'+'te'+'ch.'+'co'+'m'; return false;">bhugh<span style="display: none;">.nosp@m.</span>es@t<span style="display: none;">.nosp@m.</span>rollt<span style="display: none;">.nosp@m.</span>ech.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNET.html" title="Base namespace class. ">NET</a> </dd>
+<dd>
+<a class="el" href="classNETWinInfo.html" title="Common API for application window properties/protocols. ">NETWinInfo</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00056">56</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae9f7740b8df7b6d749c8d3004cbd0d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f7740b8df7b6d749c8d3004cbd0d4a">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indexes for the properties array. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00063">63</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a89f26951db9fa3402ebfcac73a13b248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f26951db9fa3402ebfcac73a13b248">&#9670;&nbsp;</a></span>NETRootInfo() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NETRootInfo::NETRootInfo </td>
+          <td>(</td>
+          <td class="paramtype">xcb_connection_t *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>supportWindow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wmName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::WindowTypes&#160;</td>
+          <td class="paramname"><em>windowTypes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::States&#160;</td>
+          <td class="paramname"><em>states</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties2&#160;</td>
+          <td class="paramname"><em>properties2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Actions&#160;</td>
+          <td class="paramname"><em>actions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>screen</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doActivate</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window Managers should use this constructor to create a <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object, which will be used to set/update information stored on the rootWindow. </p>
+<p>The application role is automatically set to WindowManager when using this constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>XCB connection</td></tr>
+    <tr><td class="paramname">supportWindow</td><td>The Window id of the supportWindow. The supportWindow must be created by the window manager as a child of the rootWindow. The supportWindow must not be destroyed until the Window Manager exits.</td></tr>
+    <tr><td class="paramname">wmName</td><td>A string which should be the window manager's name (ie. "KWin" or "Blackbox").</td></tr>
+    <tr><td class="paramname">properties</td><td>The properties the window manager supports</td></tr>
+    <tr><td class="paramname">windowTypes</td><td>The window types the window manager supports</td></tr>
+    <tr><td class="paramname">states</td><td>The states the window manager supports</td></tr>
+    <tr><td class="paramname">properties2</td><td>The properties2 the window manager supports</td></tr>
+    <tr><td class="paramname">actions</td><td>The actions the window manager supports</td></tr>
+    <tr><td class="paramname">screen</td><td>For Window Managers that support multiple screen (ie. "multiheaded") displays, the screen number may be explicitly defined. If this argument is omitted, the default screen will be used.</td></tr>
+    <tr><td class="paramname">doActivate</td><td>true to activate the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00448">448</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9e67e0b9e262b810b5749ac3cd31a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e67e0b9e262b810b5749ac3cd31a4b">&#9670;&nbsp;</a></span>NETRootInfo() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NETRootInfo::NETRootInfo </td>
+          <td>(</td>
+          <td class="paramtype">xcb_connection_t *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties2&#160;</td>
+          <td class="paramname"><em>properties2</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>screen</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doActivate</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clients should use this constructor to create a <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object, which will be used to query information set on the root window. </p>
+<p>The application role is automatically set to Client when using this constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>XCB connection</td></tr>
+    <tr><td class="paramname">properties</td><td>The properties the client is interested in.</td></tr>
+    <tr><td class="paramname">properties2</td><td>The properties2 the client is interested in.</td></tr>
+    <tr><td class="paramname">properties_size</td><td>The number of elements in the properties array.</td></tr>
+    <tr><td class="paramname">screen</td><td>For Clients that support multiple screen (ie. "multiheaded") displays, the screen number may be explicitly defined. If this argument is omitted, the default screen will be used.</td></tr>
+    <tr><td class="paramname">doActivate</td><td>true to call <a class="el" href="classNETRootInfo.html#a600ae69b2dfbbe78f2758c19af6748aa" title="Window Managers must call this after creating the NETRootInfo object, and before using any other meth...">activate()</a> to do an initial data read/update of the query information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00507">507</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a960dc3710c9cf34347285026b93bcd6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a960dc3710c9cf34347285026b93bcd6f">&#9670;&nbsp;</a></span>NETRootInfo() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NETRootInfo::NETRootInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rootinfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a shared copy of the specified <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootinfo</td><td>the <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00568">568</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a88dd4ee9906662bf072d9e703b7df710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dd4ee9906662bf072d9e703b7df710">&#9670;&nbsp;</a></span>~NETRootInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NETRootInfo::~NETRootInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00582">582</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a600ae69b2dfbbe78f2758c19af6748aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600ae69b2dfbbe78f2758c19af6748aa">&#9670;&nbsp;</a></span>activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::activate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window Managers must call this after creating the <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> object, and before using any other method in the class. </p>
+<p>This method sets initial data on the root window and does other post-construction duties.</p>
+<p>Clients must also call this after creating the object to do an initial data read/update. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00604">604</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ae7b7baf102438cb5f6484e4237abbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae7b7baf102438cb5f6484e4237abbb">&#9670;&nbsp;</a></span>activeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xcb_window_t NETRootInfo::activeWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the active (focused) window. </p>
+<dl class="section return"><dt>Returns</dt><dd>the id of the active window </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02539">2539</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a4cd1ccb8097bf8aadc7dbaa5ca5ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4cd1ccb8097bf8aadc7dbaa5ca5ed7">&#9670;&nbsp;</a></span>addClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::addClient </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Client should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a window has been added. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00735">735</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a57ed7346a3fa56a543079678049bdae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ed7346a3fa56a543079678049bdae9">&#9670;&nbsp;</a></span>changeActiveWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeActiveWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">NET::RequestSource</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>active_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to change the active (focused) window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to activate </td></tr>
+    <tr><td class="paramname">src</td><td>the source from which the request came </td></tr>
+    <tr><td class="paramname">timestamp</td><td>the timestamp of the user action causing this request </td></tr>
+    <tr><td class="paramname">active_window</td><td>active window of the requesting application, if any </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00859">859</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="ae305549c1052c9a56438dbbe4d85302f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae305549c1052c9a56438dbbe4d85302f">&#9670;&nbsp;</a></span>changeCurrentDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeCurrentDesktop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to change the current desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00800">800</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a8dbf88d76644b4e912ee7e860c89225a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dbf88d76644b4e912ee7e860c89225a">&#9670;&nbsp;</a></span>changeDesktopGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeDesktopGeometry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structNETSize.html">NETSize</a> &amp;&#160;</td>
+          <td class="paramname"><em>geom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to change the specified desktop geometry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+    <tr><td class="paramname">geom</td><td>the new size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00772">772</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a0081e46b972ba2efca3e0d4b301e34da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0081e46b972ba2efca3e0d4b301e34da">&#9670;&nbsp;</a></span>changeDesktopViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeDesktopViewport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structNETPoint.html">NETPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to change the specified desktop viewport. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+    <tr><td class="paramname">viewport</td><td>the new position of the viewport </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00787">787</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="aa177bec4607fd2b38529e9fc135d51b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa177bec4607fd2b38529e9fc135d51b9">&#9670;&nbsp;</a></span>changeNumberOfDesktops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeNumberOfDesktops </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfDesktops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to change the number of desktops. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numberOfDesktops</td><td>the new number of desktops </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00758">758</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="af86664c4429e79430db0360a5a608dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86664c4429e79430db0360a5a608dd6">&#9670;&nbsp;</a></span>changeShowingDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::changeShowingDesktop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a pager made a request to change showing the desktop. </p>
+<p>See _NET_SHOWING_DESKTOP for details.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">showing</td><td>whether to activate the showing desktop mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00918">918</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf1a87a8f4f44254449151aa10895d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1a87a8f4f44254449151aa10895d32">&#9670;&nbsp;</a></span>clientList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const xcb_window_t * NETRootInfo::clientList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of Window id's, which contain all managed windows. </p>
+<dl class="section return"><dt>Returns</dt><dd>the array of Window id's</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a035ed071e2412d6496776d5079a6cb36" title="Returns the number of managed windows in clientList array. ">clientListCount()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02444">2444</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a035ed071e2412d6496776d5079a6cb36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a035ed071e2412d6496776d5079a6cb36">&#9670;&nbsp;</a></span>clientListCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NETRootInfo::clientListCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of managed windows in clientList array. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of managed windows in the clientList array</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#aaf1a87a8f4f44254449151aa10895d32" title="Returns an array of Window id&#39;s, which contain all managed windows. ">clientList()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02449">2449</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50bbdce13267e297929a8a7c47f6c1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bbdce13267e297929a8a7c47f6c1ac">&#9670;&nbsp;</a></span>clientListStacking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const xcb_window_t * NETRootInfo::clientListStacking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of Window id's, which contain all managed windows in stacking order. </p>
+<dl class="section return"><dt>Returns</dt><dd>the array of Window id's in stacking order</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a6488dbb60e1696f80ef4dbd6465203ef" title="Returns the number of managed windows in the clientListStacking array. ">clientListStackingCount()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02454">2454</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6488dbb60e1696f80ef4dbd6465203ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6488dbb60e1696f80ef4dbd6465203ef">&#9670;&nbsp;</a></span>clientListStackingCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NETRootInfo::clientListStackingCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of managed windows in the clientListStacking array. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of Window id's in the client list</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a50bbdce13267e297929a8a7c47f6c1ac" title="Returns an array of Window id&#39;s, which contain all managed windows in stacking order. ">clientListStacking()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02459">2459</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0058f0368e02834b73d164c84a58adbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0058f0368e02834b73d164c84a58adbd">&#9670;&nbsp;</a></span>closeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::closeWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to close a window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00811">811</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a9cdbb685d45dc467039f5d682110c176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdbb685d45dc467039f5d682110c176">&#9670;&nbsp;</a></span>closeWindowRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::closeWindowRequest </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clients (such as pagers/taskbars) that wish to close a window should call this function. </p>
+<p>This will send a request to the Window Manager, which usually can usually decide how to react to such requests.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01559">1559</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a447ad4051423f7c099789425ae814063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447ad4051423f7c099789425ae814063">&#9670;&nbsp;</a></span>currentDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NETRootInfo::currentDesktop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_viewport</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current desktop. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. They are however mapped to virtual desktops if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore_viewport</td><td>if false, viewport is mapped to virtual desktops</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of the current desktop </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02531">2531</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a97843623505e056546fde77d4f02086b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97843623505e056546fde77d4f02086b">&#9670;&nbsp;</a></span>desktopGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNETSize.html">NETSize</a> NETRootInfo::desktopGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the desktop geometry size. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. You should use calls for virtual desktops, viewport is mapped to them if needed.</p>
+<dl class="section return"><dt>Returns</dt><dd>the size of the desktop </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02464">2464</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad5abb54b952460cc7db1271a0b1f2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5abb54b952460cc7db1271a0b1f2fb">&#9670;&nbsp;</a></span>desktopLayoutColumnsRows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize NETRootInfo::desktopLayoutColumnsRows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the desktop layout number of columns and rows. </p>
+<p>Note that either may be 0 (see _NET_DESKTOP_LAYOUT). </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02513">2513</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91be2518fd5648543ebb2bd1ef83e672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91be2518fd5648543ebb2bd1ef83e672">&#9670;&nbsp;</a></span>desktopLayoutCorner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">NET::DesktopLayoutCorner</a> NETRootInfo::desktopLayoutCorner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the desktop layout starting corner. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02518">2518</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1147ee4d8a14fe363760e250b7e64c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1147ee4d8a14fe363760e250b7e64c38">&#9670;&nbsp;</a></span>desktopLayoutOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">NET::Orientation</a> NETRootInfo::desktopLayoutOrientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the desktop layout orientation. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02508">2508</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ba60eb0b7b5a4c9b1c86c1be2bcd386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba60eb0b7b5a4c9b1c86c1be2bcd386">&#9670;&nbsp;</a></span>desktopName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * NETRootInfo::desktopName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name for the specified desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the desktop </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02489">2489</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cd5234c11a1eaf92b25ea1e3a1cb1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd5234c11a1eaf92b25ea1e3a1cb1c5">&#9670;&nbsp;</a></span>desktopViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNETPoint.html">NETPoint</a> NETRootInfo::desktopViewport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the viewport of the specified desktop. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. You should use calls for virtual desktops, viewport is mapped to them if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the position of the desktop's viewport </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02469">2469</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9ac9343868f6a1ad4920e0b958ed7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ac9343868f6a1ad4920e0b958ed7c9">&#9670;&nbsp;</a></span>event() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::event </td>
+          <td>(</td>
+          <td class="paramtype">xcb_generic_event_t *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>properties_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function takes the passed XEvent and returns an OR'ed list of <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> properties that have changed in the properties argument. </p>
+<p>The new information will be read immediately by the class. The elements of the properties argument are as they would be passed to the constructor, if the array is not large enough, changed properties that don't fit in it won't be listed there (they'll be updated in the class though).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+    <tr><td class="paramname">properties</td><td>properties that changed </td></tr>
+    <tr><td class="paramname">properties_size</td><td>size of the passed properties array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>since 5.0 use <a class="el" href="classNETRootInfo.html#aa06811a2349fa8b8e427edcfe175cb09" title="This function takes the passed xcb_generic_event_t and returns the updated properties in the passed i...">event(xcb_generic_event_t*, NET::Properties*, NET::Properties2*)</a></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01665">1665</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa06811a2349fa8b8e427edcfe175cb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06811a2349fa8b8e427edcfe175cb09">&#9670;&nbsp;</a></span>event() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::event </td>
+          <td>(</td>
+          <td class="paramtype">xcb_generic_event_t *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties *&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NET::Properties2 *&#160;</td>
+          <td class="paramname"><em>properties2</em> = <code>Q_NULLPTR</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function takes the passed xcb_generic_event_t and returns the updated properties in the passed in arguments. </p>
+<p>The new information will be read immediately by the class. It is possible to pass in a null pointer in the arguments. In that case the passed in argument will obviously not be updated, but the class will process the information nevertheless.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+    <tr><td class="paramname">properties</td><td>The NET::Properties that changed </td></tr>
+    <tr><td class="paramname">properties2</td><td>The NET::Properties2 that changed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01686">1686</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40ce5ceef60cb7130480ced856c28744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ce5ceef60cb7130480ced856c28744">&#9670;&nbsp;</a></span>event() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Properties NETRootInfo::event </td>
+          <td>(</td>
+          <td class="paramtype">xcb_generic_event_t *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function takes the passed XEvent and returns an OR'ed list of <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> properties that have changed. </p>
+<p>The new information will be read immediately by the class. This overloaded version returns only a single mask, and therefore cannot check state of all properties like the other variant.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the properties </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01657">1657</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a29decfa17ae9ef6f7b866b7dae72460e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29decfa17ae9ef6f7b866b7dae72460e">&#9670;&nbsp;</a></span>gotPing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::gotPing </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to receive replies to the _NET_WM_PING protocol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window from which the reply came </td></tr>
+    <tr><td class="paramname">timestamp</td><td>timestamp of the ping </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00844">844</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="ae96a250ac6f683e5d2f703f8584e826a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96a250ac6f683e5d2f703f8584e826a">&#9670;&nbsp;</a></span>isSupported() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::isSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">NET::Property</a>&#160;</td>
+          <td class="paramname"><em>property</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the given property is supported by the window manager. </p>
+<p>Note that for Client mode, NET::Supported needs to be passed in the properties argument for this to work. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02419">2419</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa727d28200a86c48563b642689b2fbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa727d28200a86c48563b642689b2fbcf">&#9670;&nbsp;</a></span>isSupported() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::isSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">NET::Property2</a>&#160;</td>
+          <td class="paramname"><em>property</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02424">2424</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad00b04f0f6aa6a0af70157a781b525a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00b04f0f6aa6a0af70157a781b525a2">&#9670;&nbsp;</a></span>isSupported() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::isSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a157924046678eec09044df42968b785a">NET::WindowTypeMask</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02429">2429</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a276e2952063e546564c2ee5e6238ac29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276e2952063e546564c2ee5e6238ac29">&#9670;&nbsp;</a></span>isSupported() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::isSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">NET::State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02434">2434</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a10947572060a0c38dbe56533954de36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10947572060a0c38dbe56533954de36a">&#9670;&nbsp;</a></span>isSupported() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::isSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">NET::Action</a>&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02439">2439</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a67232e7858fb5ac4bb752c32283f08bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67232e7858fb5ac4bb752c32283f08bb">&#9670;&nbsp;</a></span>moveResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::moveResize </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to start a move/resize. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window that wants to move/resize</td></tr>
+    <tr><td class="paramname">x_root</td><td>X position of the cursor relative to the root window.</td></tr>
+    <tr><td class="paramname">y_root</td><td>Y position of the cursor relative to the root window.</td></tr>
+    <tr><td class="paramname">direction</td><td>One of <a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea" title="Direction for WMMoveResize. ">NET::Direction</a> (see base class documentation for a description of the different directions). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00829">829</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ef49909d42b1a1a04f2292b8605b79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef49909d42b1a1a04f2292b8605b79b">&#9670;&nbsp;</a></span>moveResizeRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::moveResizeRequest </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea">Direction</a>&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clients (such as pagers/taskbars) that wish to start a WMMoveResize (where the window manager controls the resize/movement, i.e. </p>
+<p>_NET_WM_MOVERESIZE) should call this function. This will send a request to the Window Manager.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The client window that would be resized/moved.</td></tr>
+    <tr><td class="paramname">x_root</td><td>X position of the cursor relative to the root window.</td></tr>
+    <tr><td class="paramname">y_root</td><td>Y position of the cursor relative to the root window.</td></tr>
+    <tr><td class="paramname">direction</td><td>One of <a class="el" href="classNET.html#ae29e22ac36b48d9cbcb28727db5258ea" title="Direction for WMMoveResize. ">NET::Direction</a> (see base class documentation for a description of the different directions). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01570">1570</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17d75ad375ac020f5acc62e4316cd350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d75ad375ac020f5acc62e4316cd350">&#9670;&nbsp;</a></span>moveResizeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::moveResizeWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a pager made a request to move/resize a window. </p>
+<p>See _NET_MOVERESIZE_WINDOW for details.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to more/resize </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags specifying the operation (see _NET_MOVERESIZE_WINDOW description) </td></tr>
+    <tr><td class="paramname">x</td><td>Requested X position for the window </td></tr>
+    <tr><td class="paramname">y</td><td>Requested Y position for the window </td></tr>
+    <tr><td class="paramname">width</td><td>Requested width for the window </td></tr>
+    <tr><td class="paramname">height</td><td>Requested height for the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00880">880</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="abedcf941d9633d7234d610511a7a50d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abedcf941d9633d7234d610511a7a50d0">&#9670;&nbsp;</a></span>moveResizeWindowRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::moveResizeWindowRequest </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clients (such as pagers/taskbars) that wish to move/resize a window using WM2MoveResizeWindow (_NET_MOVERESIZE_WINDOW) should call this function. </p>
+<p>This will send a request to the Window Manager. See _NET_MOVERESIZE_WINDOW description for details.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The client window that would be resized/moved. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags specifying the operation (see _NET_MOVERESIZE_WINDOW description) </td></tr>
+    <tr><td class="paramname">x</td><td>Requested X position for the window </td></tr>
+    <tr><td class="paramname">y</td><td>Requested Y position for the window </td></tr>
+    <tr><td class="paramname">width</td><td>Requested width for the window </td></tr>
+    <tr><td class="paramname">height</td><td>Requested height for the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01586">1586</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afcc5bf61b1a98087e0a8399b5ee107cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc5bf61b1a98087e0a8399b5ee107cd">&#9670;&nbsp;</a></span>numberOfDesktops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NETRootInfo::numberOfDesktops </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_viewport</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of desktops. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. They are however mapped to virtual desktops if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore_viewport</td><td>if false, viewport is mapped to virtual desktops</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of desktops </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02523">2523</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af117a2f45605de015325765540130ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af117a2f45605de015325765540130ecc">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp; NETRootInfo::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classNETRootInfo.html">NETRootInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rootinfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assignment operator. </p>
+<p>Ensures that the shared data reference counts are correct. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01636">1636</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeac657d1a5a2bc2bbff13ba2b3753ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac657d1a5a2bc2bbff13ba2b3753ecc">&#9670;&nbsp;</a></span>passedActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Actions NETRootInfo::passedActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the actions argument passed to the constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a7aba0412460d5de7223850bcde26cd3c">passedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#ab92f2c0b90a07bb51080626b888c3fff">passedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a0ef3d66dffc5ae60d3974e51e09efe5e">passedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a8a82100d346fb5a3a0103a0c2a5cc27a">passedWindowTypes()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02337">2337</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7aba0412460d5de7223850bcde26cd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aba0412460d5de7223850bcde26cd3c">&#9670;&nbsp;</a></span>passedProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Properties NETRootInfo::passedProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the properties argument passed to the constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#ab92f2c0b90a07bb51080626b888c3fff">passedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a0ef3d66dffc5ae60d3974e51e09efe5e">passedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a8a82100d346fb5a3a0103a0c2a5cc27a">passedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeac657d1a5a2bc2bbff13ba2b3753ecc">passedActions()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02309">2309</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab92f2c0b90a07bb51080626b888c3fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92f2c0b90a07bb51080626b888c3fff">&#9670;&nbsp;</a></span>passedProperties2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Properties2 NETRootInfo::passedProperties2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the properties2 argument passed to the constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a7aba0412460d5de7223850bcde26cd3c">passedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a0ef3d66dffc5ae60d3974e51e09efe5e">passedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a8a82100d346fb5a3a0103a0c2a5cc27a">passedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeac657d1a5a2bc2bbff13ba2b3753ecc">passedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02316">2316</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ef3d66dffc5ae60d3974e51e09efe5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef3d66dffc5ae60d3974e51e09efe5e">&#9670;&nbsp;</a></span>passedStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::States NETRootInfo::passedStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the states argument passed to the constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a7aba0412460d5de7223850bcde26cd3c">passedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#ab92f2c0b90a07bb51080626b888c3fff">passedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a8a82100d346fb5a3a0103a0c2a5cc27a">passedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeac657d1a5a2bc2bbff13ba2b3753ecc">passedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02323">2323</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8a82100d346fb5a3a0103a0c2a5cc27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a82100d346fb5a3a0103a0c2a5cc27a">&#9670;&nbsp;</a></span>passedWindowTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::WindowTypes NETRootInfo::passedWindowTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the windowTypes argument passed to the constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a7aba0412460d5de7223850bcde26cd3c">passedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#ab92f2c0b90a07bb51080626b888c3fff">passedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a0ef3d66dffc5ae60d3974e51e09efe5e">passedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeac657d1a5a2bc2bbff13ba2b3753ecc">passedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02330">2330</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ece857514d7b994cc6cc671dfc69df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ece857514d7b994cc6cc671dfc69df9">&#9670;&nbsp;</a></span>removeClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::removeClient </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Client should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a window has been removed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00746">746</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a57f81b08f00cf960ea63eb63e81987ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f81b08f00cf960ea63eb63e81987ca">&#9670;&nbsp;</a></span>restackRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::restackRequest </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>above</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>detail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends the _NET_RESTACK_WINDOW request. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01601">1601</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3a7f30db68710827abf9801f5440617d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7f30db68710827abf9801f5440617d">&#9670;&nbsp;</a></span>restackWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NETRootInfo::restackWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">RequestSource</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>above</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>detail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Window Manager should subclass <a class="el" href="classNETRootInfo.html" title="Common API for root window properties/protocols. ">NETRootInfo</a> and reimplement this function when it wants to know when a Client made a request to restack a window. </p>
+<p>See _NET_RESTACK_WINDOW for details.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the window to restack </td></tr>
+    <tr><td class="paramname">source</td><td>the source of the request </td></tr>
+    <tr><td class="paramname">above</td><td>other window in the restack request </td></tr>
+    <tr><td class="paramname">detail</td><td>restack detail </td></tr>
+    <tr><td class="paramname">timestamp</td><td>the timestamp of the request </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8h_source.html#l00901">901</a> of file <a class="el" href="netwm_8h_source.html">netwm.h</a>.</p>
+
+</div>
+</div>
+<a id="a231a5b46ec3cbfc15a73ae139fac5d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231a5b46ec3cbfc15a73ae139fac5d92">&#9670;&nbsp;</a></span>rootWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xcb_window_t NETRootInfo::rootWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Window id of the rootWindow. </p>
+<dl class="section return"><dt>Returns</dt><dd>the id of the root window </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02269">2269</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e03bc4f40db8ad105e1708c22ea00eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e03bc4f40db8ad105e1708c22ea00eb">&#9670;&nbsp;</a></span>sendPing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::sendPing </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a ping with the given timestamp to the window, using the _NET_WM_PING protocol. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01616">1616</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aefac0a31c98427a5a84dd09d812fe6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefac0a31c98427a5a84dd09d812fe6f4">&#9670;&nbsp;</a></span>setActiveWindow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setActiveWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#ab8310daed1ca6a628b77ad4f92eeae74">NET::RequestSource</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_timestamp_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>active_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests that the specified window becomes the active (focused) one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the id of the new active window </td></tr>
+    <tr><td class="paramname">src</td><td>whether the request comes from normal application or from a pager or similar tool </td></tr>
+    <tr><td class="paramname">timestamp</td><td>X server timestamp of the user action that caused the request </td></tr>
+    <tr><td class="paramname">active_window</td><td>active window of the requesting application, if any </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01443">1443</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab4aa5924f1f051199940828dbce4a118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4aa5924f1f051199940828dbce4a118">&#9670;&nbsp;</a></span>setActiveWindow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setActiveWindow </td>
+          <td>(</td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the active (focused) window the specified window. </p>
+<p>This should be used only in the window manager mode.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the if of the new active window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01438">1438</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a02dae359439488195aceb7f0a2b479ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dae359439488195aceb7f0a2b479ab">&#9670;&nbsp;</a></span>setClientList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setClientList </td>
+          <td>(</td>
+          <td class="paramtype">const xcb_window_t *&#160;</td>
+          <td class="paramname"><em>windows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the list of managed windows on the Root/Desktop window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windows</td><td>The array of Window id's</td></tr>
+    <tr><td class="paramname">count</td><td>The number of windows in the array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00625">625</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af358dab6b0dfc8083a771dcc9f2dad73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af358dab6b0dfc8083a771dcc9f2dad73">&#9670;&nbsp;</a></span>setClientListStacking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setClientListStacking </td>
+          <td>(</td>
+          <td class="paramtype">const xcb_window_t *&#160;</td>
+          <td class="paramname"><em>windows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the list of managed windows in stacking order on the Root/Desktop window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windows</td><td>The array of Window id's</td></tr>
+    <tr><td class="paramname">count</td><td>The number of windows in the array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00646">646</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab9e17977eec8d2a8ee8695bca184fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9e17977eec8d2a8ee8695bca184fbb">&#9670;&nbsp;</a></span>setCurrentDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setCurrentDesktop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_viewport</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the current desktop to the specified desktop. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. It is however mapped to virtual desktops if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop </td></tr>
+    <tr><td class="paramname">ignore_viewport</td><td>if false, viewport is mapped to virtual desktops </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00690">690</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa4bbe7eec4123d1794fca9f233ebad93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4bbe7eec4123d1794fca9f233ebad93">&#9670;&nbsp;</a></span>setDesktopGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setDesktopGeometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structNETSize.html">NETSize</a> &amp;&#160;</td>
+          <td class="paramname"><em>geometry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the desktop geometry to the specified geometry. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. You should use calls for virtual desktops, viewport is mapped to them if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">geometry</td><td>the new size of the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00759">759</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a06f991c0b1540e779e5e324404337241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f991c0b1540e779e5e324404337241">&#9670;&nbsp;</a></span>setDesktopLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setDesktopLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#afac5b26cfb4e28ec2f18cd5cc9e1989a">NET::Orientation</a>&#160;</td>
+          <td class="paramname"><em>orientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNET.html#a3359c32a21f438e0e6564f26179e458f">NET::DesktopLayoutCorner</a>&#160;</td>
+          <td class="paramname"><em>corner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the desktop layout. </p>
+<p>This is set by the pager. When setting, the pager must own the _NET_DESKTOP_LAYOUT_Sn manager selection. See _NET_DESKTOP_LAYOUT for details. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01516">1516</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b747a5f42d1627498a43c2df6670024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b747a5f42d1627498a43c2df6670024">&#9670;&nbsp;</a></span>setDesktopName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setDesktopName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>desktopName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the name of the specified desktop. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. Viewport is mapped to virtual desktops if needed, but not for this call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+    <tr><td class="paramname">desktopName</td><td>the new name of the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00719">719</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3325efae9006a73cc16d9c259cee6f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3325efae9006a73cc16d9c259cee6f2b">&#9670;&nbsp;</a></span>setDesktopViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setDesktopViewport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structNETPoint.html">NETPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the viewport for the current desktop to the specified point. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. You should use calls for virtual desktops, viewport is mapped to them if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+    <tr><td class="paramname">viewport</td><td>the new position of the desktop's viewport </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00785">785</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2e7aca69ab4fa624eb86af70aaf70bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e7aca69ab4fa624eb86af70aaf70bd">&#9670;&nbsp;</a></span>setNumberOfDesktops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setNumberOfDesktops </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfDesktops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the number of desktops to the specified number. </p>
+<p>NOTE: KDE uses virtual desktops and does not directly support viewport in any way. Viewport is mapped to virtual desktops if needed, but not for this call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numberOfDesktops</td><td>the number of desktops </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l00667">667</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f9c9aa337a71ecc6b61b3bc29e37de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9c9aa337a71ecc6b61b3bc29e37de2">&#9670;&nbsp;</a></span>setShowingDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setShowingDesktop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the _NET_SHOWING_DESKTOP status (whether desktop is being shown). </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01539">1539</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b7935546a87ee3b27c02f861fff827e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7935546a87ee3b27c02f861fff827e">&#9670;&nbsp;</a></span>setSupported() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#aaea92340c4b9901e05aa7748587dcde5">NET::Property</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the given property if on is true, and clears the property otherwise. </p>
+<p>In WindowManager mode this function updates _NET_SUPPORTED. In Client mode this function does nothing.</p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02344">2344</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af99010d9744bfca2d1866ecfda2478c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99010d9744bfca2d1866ecfda2478c4">&#9670;&nbsp;</a></span>setSupported() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a851d15d9aa748b5f76e44b1e2d7c79b0">NET::Property2</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02359">2359</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5b995911d7de433807dc7f79d5712ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b995911d7de433807dc7f79d5712ce">&#9670;&nbsp;</a></span>setSupported() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a157924046678eec09044df42968b785a">NET::WindowTypeMask</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02374">2374</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adeb83b39ed3eeea9b5626c282a03e445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb83b39ed3eeea9b5626c282a03e445">&#9670;&nbsp;</a></span>setSupported() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#a08dce7f5ea8a2a6d1d38aea3498f00ee">NET::State</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02389">2389</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a265528fb331b79a05bc2c33897141022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265528fb331b79a05bc2c33897141022">&#9670;&nbsp;</a></span>setSupported() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNET.html#afa9281c19ea7e280327b01b2c6236928">NET::Action</a>&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02404">2404</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab44bc95e6ca88043dbd1bba2cd20269b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44bc95e6ca88043dbd1bba2cd20269b">&#9670;&nbsp;</a></span>setVirtualRoots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setVirtualRoots </td>
+          <td>(</td>
+          <td class="paramtype">const xcb_window_t *&#160;</td>
+          <td class="paramname"><em>windows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the list of virtual root windows on the root window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windows</td><td>The array of Window id's</td></tr>
+    <tr><td class="paramname">count</td><td>The number of windows in the array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01496">1496</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7cb2a8b55300c6e363efe89f6702ddb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb2a8b55300c6e363efe89f6702ddb7">&#9670;&nbsp;</a></span>setWorkArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::setWorkArea </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structNETRect.html">NETRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>workArea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the workarea for the specified desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+    <tr><td class="paramname">workArea</td><td>the new work area of the desktop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01466">1466</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afecf7557cb87d1d6e38d183a3f2a7545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecf7557cb87d1d6e38d183a3f2a7545">&#9670;&nbsp;</a></span>showingDesktop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NETRootInfo::showingDesktop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the status of _NET_SHOWING_DESKTOP. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l01554">1554</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeced8d9474a23a19c5992e1160153dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeced8d9474a23a19c5992e1160153dea">&#9670;&nbsp;</a></span>supportedActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Actions NETRootInfo::supportedActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>In the Window Manager mode, this is equivalent to the actions argument passed to the constructor. </p>
+<p>In the Client mode, if NET::Supported was passed in the properties argument, the returned value are all actions supported by the Window Manager. Other supported protocols and properties are returned by the specific methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee" title="In the Window Manager mode, this is equivalent to the properties argument passed to the constructor...">supportedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43" title="In the Window Manager mode, this is equivalent to the properties2 argument passed to the constructor...">supportedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7" title="In the Window Manager mode, this is equivalent to the states argument passed to the constructor...">supportedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e" title="In the Window Manager mode, this is equivalent to the windowTypes argument passed to the constructor...">supportedWindowTypes()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02304">2304</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9c9b1ee1fb41bebf0837c465ac9dcdee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9b1ee1fb41bebf0837c465ac9dcdee">&#9670;&nbsp;</a></span>supportedProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Properties NETRootInfo::supportedProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>In the Window Manager mode, this is equivalent to the properties argument passed to the constructor. </p>
+<p>In the Client mode, if NET::Supported was passed in the properties argument, the returned value are all properties supported by the Window Manager. Other supported protocols and properties are returned by the specific methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43" title="In the Window Manager mode, this is equivalent to the properties2 argument passed to the constructor...">supportedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7" title="In the Window Manager mode, this is equivalent to the states argument passed to the constructor...">supportedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e" title="In the Window Manager mode, this is equivalent to the windowTypes argument passed to the constructor...">supportedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea" title="In the Window Manager mode, this is equivalent to the actions argument passed to the constructor...">supportedActions()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02284">2284</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61118ab0e50d5db4bb7e1128e0984b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61118ab0e50d5db4bb7e1128e0984b43">&#9670;&nbsp;</a></span>supportedProperties2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::Properties2 NETRootInfo::supportedProperties2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>In the Window Manager mode, this is equivalent to the properties2 argument passed to the constructor. </p>
+<p>In the Client mode, if NET::Supported was passed in the properties argument, the returned value are all properties2 supported by the Window Manager. Other supported protocols and properties are returned by the specific methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee" title="In the Window Manager mode, this is equivalent to the properties argument passed to the constructor...">supportedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7" title="In the Window Manager mode, this is equivalent to the states argument passed to the constructor...">supportedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e" title="In the Window Manager mode, this is equivalent to the windowTypes argument passed to the constructor...">supportedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea" title="In the Window Manager mode, this is equivalent to the actions argument passed to the constructor...">supportedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02289">2289</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc3b3209ba69cd90ee91d7a8f90801d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3b3209ba69cd90ee91d7a8f90801d7">&#9670;&nbsp;</a></span>supportedStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::States NETRootInfo::supportedStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>In the Window Manager mode, this is equivalent to the states argument passed to the constructor. </p>
+<p>In the Client mode, if NET::Supported was passed in the properties argument, the returned value are all states supported by the Window Manager. Other supported protocols and properties are returned by the specific methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee" title="In the Window Manager mode, this is equivalent to the properties argument passed to the constructor...">supportedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43" title="In the Window Manager mode, this is equivalent to the properties2 argument passed to the constructor...">supportedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e" title="In the Window Manager mode, this is equivalent to the windowTypes argument passed to the constructor...">supportedWindowTypes()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea" title="In the Window Manager mode, this is equivalent to the actions argument passed to the constructor...">supportedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02294">2294</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf7d368ac4d319098d1291abeb92035e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7d368ac4d319098d1291abeb92035e">&#9670;&nbsp;</a></span>supportedWindowTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NET::WindowTypes NETRootInfo::supportedWindowTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>In the Window Manager mode, this is equivalent to the windowTypes argument passed to the constructor. </p>
+<p>In the Client mode, if NET::Supported was passed in the properties argument, the returned value are all window types supported by the Window Manager. Other supported protocols and properties are returned by the specific methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee" title="In the Window Manager mode, this is equivalent to the properties argument passed to the constructor...">supportedProperties()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43" title="In the Window Manager mode, this is equivalent to the properties2 argument passed to the constructor...">supportedProperties2()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7" title="In the Window Manager mode, this is equivalent to the states argument passed to the constructor...">supportedStates()</a> </dd>
+<dd>
+<a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea" title="In the Window Manager mode, this is equivalent to the actions argument passed to the constructor...">supportedActions()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02299">2299</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8edabc7b370c743c76bea72c3253dabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8edabc7b370c743c76bea72c3253dabc">&#9670;&nbsp;</a></span>supportWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xcb_window_t NETRootInfo::supportWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Window id of the supportWindow. </p>
+<dl class="section return"><dt>Returns</dt><dd>the id of the support window </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02274">2274</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d97a3a5bb0726e991037eaece10279a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d97a3a5bb0726e991037eaece10279a">&#9670;&nbsp;</a></span>virtual_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NETRootInfo::virtual_hook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual hook, used to add new "virtual" functions while maintaining binary compatibility. </p>
+<p>Unused in this class. </p>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l04806">4806</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e2002c7e9e3aa608c81ca08a1a1a02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2002c7e9e3aa608c81ca08a1a1a02a">&#9670;&nbsp;</a></span>virtualRoots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const xcb_window_t * NETRootInfo::virtualRoots </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of Window id's, which contain the virtual root windows. </p>
+<dl class="section return"><dt>Returns</dt><dd>the array of Window id's</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a1d97019b468992157030d773cc019fe1" title="Returns the number of window in the virtualRoots array. ">virtualRootsCount()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02498">2498</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d97019b468992157030d773cc019fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d97019b468992157030d773cc019fe1">&#9670;&nbsp;</a></span>virtualRootsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NETRootInfo::virtualRootsCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of window in the virtualRoots array. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of Window id's in the virtual root array</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNETRootInfo.html#a5e2002c7e9e3aa608c81ca08a1a1a02a" title="Returns an array of Window id&#39;s, which contain the virtual root windows. ">virtualRoots()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02503">2503</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af51e1fbd88028b70958f5b08cabd82be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51e1fbd88028b70958f5b08cabd82be">&#9670;&nbsp;</a></span>wmName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * NETRootInfo::wmName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the Window Manager. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the window manager </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02279">2279</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6c3a3adc4684ab3eeac2b48fe40801e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c3a3adc4684ab3eeac2b48fe40801e">&#9670;&nbsp;</a></span>workArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNETRect.html">NETRect</a> NETRootInfo::workArea </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desktop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the workArea for the specified desktop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desktop</td><td>the number of the desktop</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the work area </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02479">2479</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c9613c282ce0140df8a7653a2f2adcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9613c282ce0140df8a7653a2f2adcb">&#9670;&nbsp;</a></span>xcbConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xcb_connection_t * NETRootInfo::xcbConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the xcb connection used. </p>
+<dl class="section return"><dt>Returns</dt><dd>the XCB connection </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="netwm_8cpp_source.html#l02264">2264</a> of file <a class="el" href="netwm_8cpp_source.html">netwm.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="netwm_8h_source.html">netwm.h</a></li>
+<li><a class="el" href="netwm_8cpp_source.html">netwm.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KJobWidgets - KUiServerJobTracker Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KJobWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KJobWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAbstractWidgetJobTracker.html">KAbstractWidgetJobTracker</option>
+        
+        <option value="classKDialogJobUiDelegate.html">KDialogJobUiDelegate</option>
+        
+        <option value="classKStatusBarJobTracker.html">KStatusBarJobTracker</option>
+        
+        <option value="classKUiServerJobTracker.html">KUiServerJobTracker</option>
+        
+        <option value="classKWidgetJobTracker.html">KWidgetJobTracker</option>
+        
+        <option value="namespaceKJobWidgets.html">KJobWidgets</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widgets for tracking KJob instances</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5JobWidgets)
+target_link_libraries(yourapp KF5::JobWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KJobWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kjobwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KJobWidgets on <a href="https://cgit.kde.org/kjobwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KJobWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KUiServerJobTracker">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="classKUiServerJobTracker-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KUiServerJobTracker Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kuiserverjobtracker_8h_source.html">kuiserverjobtracker.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KUiServerJobTracker:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKUiServerJobTracker__inherit__graph.png" border="0" usemap="#KUiServerJobTracker_inherit__map" alt="Inheritance graph"/></div>
+<map name="KUiServerJobTracker_inherit__map" id="KUiServerJobTracker_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad23f82f16c959f02faa7b832dfb4703f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUiServerJobTracker.html#ad23f82f16c959f02faa7b832dfb4703f">KUiServerJobTracker</a> (QObject *parent=0)</td></tr>
+<tr class="separator:ad23f82f16c959f02faa7b832dfb4703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576cc01e0b8982efc85a172fdc959f61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUiServerJobTracker.html#a576cc01e0b8982efc85a172fdc959f61">~KUiServerJobTracker</a> ()</td></tr>
+<tr class="separator:a576cc01e0b8982efc85a172fdc959f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a28aa52162844a292cb750fbf0e65a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUiServerJobTracker.html#a56a28aa52162844a292cb750fbf0e65a">registerJob</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job) override</td></tr>
+<tr class="separator:a56a28aa52162844a292cb750fbf0e65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c9c03483c49a9443eefe9f8ec546ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUiServerJobTracker.html#a12c9c03483c49a9443eefe9f8ec546ba">unregisterJob</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job) override</td></tr>
+<tr class="separator:a12c9c03483c49a9443eefe9f8ec546ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKJobTrackerInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKJobTrackerInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a></td></tr>
+<tr class="memitem:a61a43771e17bdfdedf4a209344a840d5 inherit pub_methods_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a61a43771e17bdfdedf4a209344a840d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a61a43771e17bdfdedf4a209344a840d5">KJobTrackerInterface</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a61a43771e17bdfdedf4a209344a840d5 inherit pub_methods_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:ad511a942ec1b08335f9a94e953df2fa7"><td class="memItemLeft" align="right" valign="top"><a id="ad511a942ec1b08335f9a94e953df2fa7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, const QString &amp;title, const QPair&lt; QString, QString &gt; &amp;field1, const QPair&lt; QString, QString &gt; &amp;field2) override</td></tr>
+<tr class="separator:ad511a942ec1b08335f9a94e953df2fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65c3360aacbe943c70d9ca7f388fb07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKUiServerJobTracker.html#aa65c3360aacbe943c70d9ca7f388fb07">finished</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job) override</td></tr>
+<tr class="separator:aa65c3360aacbe943c70d9ca7f388fb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ef60d3a47da57005edc96a47a2deda"><td class="memItemLeft" align="right" valign="top"><a id="a49ef60d3a47da57005edc96a47a2deda"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>infoMessage</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, const QString &amp;plain, const QString &amp;rich) override</td></tr>
+<tr class="separator:a49ef60d3a47da57005edc96a47a2deda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4602889aab84f7d01ee267aae160c70"><td class="memItemLeft" align="right" valign="top"><a id="ae4602889aab84f7d01ee267aae160c70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>percent</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, unsigned long percent) override</td></tr>
+<tr class="separator:ae4602889aab84f7d01ee267aae160c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282b88c6bccd173ce0c6e57b89546632"><td class="memItemLeft" align="right" valign="top"><a id="a282b88c6bccd173ce0c6e57b89546632"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processedAmount</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, KJob::Unit unit, qulonglong amount) override</td></tr>
+<tr class="separator:a282b88c6bccd173ce0c6e57b89546632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6eedf39aeff0542121358606c57ecd"><td class="memItemLeft" align="right" valign="top"><a id="a9f6eedf39aeff0542121358606c57ecd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resumed</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job) override</td></tr>
+<tr class="separator:a9f6eedf39aeff0542121358606c57ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af6ec4ba579fee1b7d25a643b057b17"><td class="memItemLeft" align="right" valign="top"><a id="a6af6ec4ba579fee1b7d25a643b057b17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, unsigned long value) override</td></tr>
+<tr class="separator:a6af6ec4ba579fee1b7d25a643b057b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513b8f62beb5d3e8d691372795f76760"><td class="memItemLeft" align="right" valign="top"><a id="a513b8f62beb5d3e8d691372795f76760"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>suspended</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job) override</td></tr>
+<tr class="separator:a513b8f62beb5d3e8d691372795f76760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4cd71a2a619b83d710b905bc6d9e38"><td class="memItemLeft" align="right" valign="top"><a id="acc4cd71a2a619b83d710b905bc6d9e38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>totalAmount</b> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, KJob::Unit unit, qulonglong amount) override</td></tr>
+<tr class="separator:acc4cd71a2a619b83d710b905bc6d9e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKJobTrackerInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKJobTrackerInterface')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a></td></tr>
+<tr class="memitem:ae707c5705de5fb48a081a59af767342a inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="ae707c5705de5fb48a081a59af767342a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#ae707c5705de5fb48a081a59af767342a">description</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, const QString &amp;title, const QPair&lt; QString, QString &gt; &amp;field1, const QPair&lt; QString, QString &gt; &amp;field2)</td></tr>
+<tr class="separator:ae707c5705de5fb48a081a59af767342a inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4695d9dd038002e4a2e70ffbea048c02 inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a4695d9dd038002e4a2e70ffbea048c02"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a4695d9dd038002e4a2e70ffbea048c02">finished</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job)</td></tr>
+<tr class="separator:a4695d9dd038002e4a2e70ffbea048c02 inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a2749f6a0b599ce8461c932eafbdf7 inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a83a2749f6a0b599ce8461c932eafbdf7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a83a2749f6a0b599ce8461c932eafbdf7">infoMessage</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, const QString &amp;plain, const QString &amp;rich)</td></tr>
+<tr class="separator:a83a2749f6a0b599ce8461c932eafbdf7 inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a47dddce842359b084dd72617d2e7ce inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a7a47dddce842359b084dd72617d2e7ce"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a7a47dddce842359b084dd72617d2e7ce">percent</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, unsigned long percent)</td></tr>
+<tr class="separator:a7a47dddce842359b084dd72617d2e7ce inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71054d631ef917edfec348036c54da8 inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="ac71054d631ef917edfec348036c54da8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#ac71054d631ef917edfec348036c54da8">processedAmount</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, KJob::Unit unit, qulonglong amount)</td></tr>
+<tr class="separator:ac71054d631ef917edfec348036c54da8 inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714d9455c56e1a3bca4ce09e4851c972 inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a714d9455c56e1a3bca4ce09e4851c972"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a714d9455c56e1a3bca4ce09e4851c972">resumed</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job)</td></tr>
+<tr class="separator:a714d9455c56e1a3bca4ce09e4851c972 inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a65cf36946ba0465ee9654698c3ba4d inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a0a65cf36946ba0465ee9654698c3ba4d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a0a65cf36946ba0465ee9654698c3ba4d">speed</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, unsigned long value)</td></tr>
+<tr class="separator:a0a65cf36946ba0465ee9654698c3ba4d inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8111af0befa29c993d9ad8dc600fcc9e inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a8111af0befa29c993d9ad8dc600fcc9e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a8111af0befa29c993d9ad8dc600fcc9e">suspended</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job)</td></tr>
+<tr class="separator:a8111af0befa29c993d9ad8dc600fcc9e inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6accf2294a34bee0a04f2f99936fbf4d inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="a6accf2294a34bee0a04f2f99936fbf4d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a6accf2294a34bee0a04f2f99936fbf4d">totalAmount</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, KJob::Unit unit, qulonglong amount)</td></tr>
+<tr class="separator:a6accf2294a34bee0a04f2f99936fbf4d inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41710553e93757f552e742835b09fa3 inherit pro_slots_classKJobTrackerInterface"><td class="memItemLeft" align="right" valign="top"><a id="ac41710553e93757f552e742835b09fa3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#ac41710553e93757f552e742835b09fa3">warning</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *job, const QString &amp;plain, const QString &amp;rich)</td></tr>
+<tr class="separator:ac41710553e93757f552e742835b09fa3 inherit pro_slots_classKJobTrackerInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_slots_classKJobTrackerInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKJobTrackerInterface')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The interface to implement to track the progresses of a job. </p>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8h_source.html#l00031">31</a> of file <a class="el" href="kuiserverjobtracker_8h_source.html">kuiserverjobtracker.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad23f82f16c959f02faa7b832dfb4703f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23f82f16c959f02faa7b832dfb4703f">&#9670;&nbsp;</a></span>KUiServerJobTracker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KUiServerJobTracker::KUiServerJobTracker </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8cpp_source.html#l00062">62</a> of file <a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a576cc01e0b8982efc85a172fdc959f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576cc01e0b8982efc85a172fdc959f61">&#9670;&nbsp;</a></span>~KUiServerJobTracker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KUiServerJobTracker::~KUiServerJobTracker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8cpp_source.html#l00068">68</a> of file <a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa65c3360aacbe943c70d9ca7f388fb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65c3360aacbe943c70d9ca7f388fb07">&#9670;&nbsp;</a></span>finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUiServerJobTracker::finished </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The following slots are inherited from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html">KJobTrackerInterface</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8cpp_source.html#l00160">160</a> of file <a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a56a28aa52162844a292cb750fbf0e65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a28aa52162844a292cb750fbf0e65a">&#9670;&nbsp;</a></span>registerJob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUiServerJobTracker::registerJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a new job in this tracker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job</td><td>the job to register </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a02be1fe828ead6c57601272950c1cd4d">KJobTrackerInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8cpp_source.html#l00078">78</a> of file <a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a12c9c03483c49a9443eefe9f8ec546ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c9c03483c49a9443eefe9f8ec546ba">&#9670;&nbsp;</a></span>unregisterJob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KUiServerJobTracker::unregisterJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJob.html">KJob</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unregister a job from this tracker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job</td><td>the job to unregister </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKJobTrackerInterface.html#a9f944a5327b7ec929011e5bc96b9b8c6">KJobTrackerInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kuiserverjobtracker_8cpp_source.html#l00139">139</a> of file <a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kuiserverjobtracker_8h_source.html">kuiserverjobtracker.h</a></li>
+<li><a class="el" href="kuiserverjobtracker_8cpp_source.html">kuiserverjobtracker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:24 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

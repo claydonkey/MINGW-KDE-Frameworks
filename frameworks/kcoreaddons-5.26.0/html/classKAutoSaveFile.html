@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCoreAddons - KAutoSaveFile Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCoreAddons</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCoreAddons"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAboutData.html">KAboutData</option>
+        
+        <option value="classKAboutLicense.html">KAboutLicense</option>
+        
+        <option value="classKAboutPerson.html">KAboutPerson</option>
+        
+        <option value="classKAutoSaveFile.html">KAutoSaveFile</option>
+        
+        <option value="classKCharMacroExpander.html">KCharMacroExpander</option>
+        
+        <option value="classKCompositeJob.html">KCompositeJob</option>
+        
+        <option value="classKdelibs4ConfigMigrator.html">Kdelibs4ConfigMigrator</option>
+        
+        <option value="classKdelibs4Migration.html">Kdelibs4Migration</option>
+        
+        <option value="classKDirWatch.html">KDirWatch</option>
+        
+        <option value="classKFormat.html">KFormat</option>
+        
+        <option value="classKJob.html">KJob</option>
+        
+        <option value="classKJobTrackerInterface.html">KJobTrackerInterface</option>
+        
+        <option value="classKJobUiDelegate.html">KJobUiDelegate</option>
+        
+        <option value="classKMacroExpanderBase.html">KMacroExpanderBase</option>
+        
+        <option value="classKMessageHandler.html">KMessageHandler</option>
+        
+        <option value="classKPluginFactory.html">KPluginFactory</option>
+        
+        <option value="classKPluginLoader.html">KPluginLoader</option>
+        
+        <option value="classKPluginMetaData.html">KPluginMetaData</option>
+        
+        <option value="classKPluginName.html">KPluginName</option>
+        
+        <option value="classKProcess.html">KProcess</option>
+        
+        <option value="classKRandomSequence.html">KRandomSequence</option>
+        
+        <option value="classKSharedDataCache.html">KSharedDataCache</option>
+        
+        <option value="classKTextToHTMLEmoticonsInterface.html">KTextToHTMLEmoticonsInterface</option>
+        
+        <option value="classKUser.html">KUser</option>
+        
+        <option value="classKUserGroup.html">KUserGroup</option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_GID ></option>
+        
+        <option value="structKUserOrGroupId.html">KUserOrGroupId< K_UID ></option>
+        
+        <option value="classKWordMacroExpander.html">KWordMacroExpander</option>
+        
+        <option value="namespaceKMacroExpander.html">KMacroExpander</option>
+        
+        <option value="namespaceKMessage.html">KMessage</option>
+        
+        <option value="namespaceKRandom.html">KRandom</option>
+        
+        <option value="namespaceKShell.html">KShell</option>
+        
+        <option value="namespaceKStringHandler.html">KStringHandler</option>
+        
+        <option value="namespaceKTextToHTML.html">KTextToHTML</option>
+        
+        <option value="namespaceKUrlMimeData.html">KUrlMimeData</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Addons to QtCore</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mpyne@kde.org">Michael Pyne</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5CoreAddons)
+target_link_libraries(yourapp KF5::CoreAddons)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCoreAddons </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcoreaddons-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCoreAddons on <a href="https://cgit.kde.org/kcoreaddons-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCoreAddons </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KAutoSaveFile">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classKAutoSaveFile-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KAutoSaveFile Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kautosavefile_8h_source.html">KAutoSaveFile</a>&gt;</code></p>
+
+<p>Inherits QFile.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae02fc2cb752540bf344707a7c76d34bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#ae02fc2cb752540bf344707a7c76d34bb">KAutoSaveFile</a> (const QUrl &amp;filename, QObject *parent=0)</td></tr>
+<tr class="separator:ae02fc2cb752540bf344707a7c76d34bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47054f4c458454efb17fbae8c90115c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#a47054f4c458454efb17fbae8c90115c0">KAutoSaveFile</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a47054f4c458454efb17fbae8c90115c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae63b18df5b87afbab97a43bbde214ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#aae63b18df5b87afbab97a43bbde214ec">~KAutoSaveFile</a> ()</td></tr>
+<tr class="separator:aae63b18df5b87afbab97a43bbde214ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c1d3827046819ebaf28d7c52aa7a59"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#a95c1d3827046819ebaf28d7c52aa7a59">managedFile</a> () const</td></tr>
+<tr class="separator:a95c1d3827046819ebaf28d7c52aa7a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026a39bb0951fbcbc0a8716633e37df5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5">open</a> (OpenMode openmode) override</td></tr>
+<tr class="separator:a026a39bb0951fbcbc0a8716633e37df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4952212230600ca0597e6fc4b267da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#a4f4952212230600ca0597e6fc4b267da">releaseLock</a> ()</td></tr>
+<tr class="separator:a4f4952212230600ca0597e6fc4b267da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2d7648e881e305eb9c7b9fab2f321c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#acf2d7648e881e305eb9c7b9fab2f321c">setManagedFile</a> (const QUrl &amp;filename)</td></tr>
+<tr class="separator:acf2d7648e881e305eb9c7b9fab2f321c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aba2b27b275b911329d8e560fa177d617"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="classKAutoSaveFile.html">KAutoSaveFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#aba2b27b275b911329d8e560fa177d617">allStaleFiles</a> (const QString &amp;applicationName=QString())</td></tr>
+<tr class="separator:aba2b27b275b911329d8e560fa177d617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3c7421945d41fb26438aba08c492ea"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="classKAutoSaveFile.html">KAutoSaveFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAutoSaveFile.html#afc3c7421945d41fb26438aba08c492ea">staleFiles</a> (const QUrl &amp;url, const QString &amp;applicationName=QString())</td></tr>
+<tr class="separator:afc3c7421945d41fb26438aba08c492ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Creates and manages a temporary "auto-save" file. </p>
+<p>Autosave files are temporary files that applications use to store the unsaved data in a file they have open for editing. <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> allows you to easily create and manage such files, as well as to recover the unsaved data left over by a crashed or otherwise gone process.</p>
+<p>Each <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> object is associated with one specific file that the application holds open. <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> is also a QObject, so it can be reparented to the actual opened file object, so as to manage the lifetime of the temporary file.</p>
+<p>Typical use consists of:</p><ul>
+<li>verifying whether stale autosave files exist for the opened file</li>
+<li>deciding whether to recover the old, autosaved data</li>
+<li>if not recovering, creating a <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> object for the opened file</li>
+<li>during normal execution of the program, periodically save unsaved data into the <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> file.</li>
+</ul>
+<p><a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> holds a lock on the autosave file, so it's safe to delete the file and recreate it later. Because of that, disposing of stale autosave files should be done with <a class="el" href="classKAutoSaveFile.html#a4f4952212230600ca0597e6fc4b267da" title="Closes the autosave file resource and removes the lock file. ">releaseLock()</a>. No lock is held on the managed file.</p>
+<p>Examples: Opening a new file: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> Document::open(<span class="keyword">const</span> QUrl &amp;url)</div><div class="line">{</div><div class="line">    <span class="comment">// check whether autosave files exist:</span></div><div class="line">    QList&lt;KAutoSaveFile *&gt; <a class="code" href="classKAutoSaveFile.html#afc3c7421945d41fb26438aba08c492ea">staleFiles</a> = <a class="code" href="classKAutoSaveFile.html#afc3c7421945d41fb26438aba08c492ea">KAutoSaveFile::staleFiles</a>(url);</div><div class="line">    <span class="keywordflow">if</span> (!staleFiles.isEmpty()) {</div><div class="line">        <span class="keywordflow">if</span> (<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKMessageBox.html#a5698734a436f26b1446a0da78371a34e">KMessageBox::questionYesNo</a>(parent,</div><div class="line">                                       <span class="stringliteral">&quot;Auto-saved files exist. Do you want to recover them now?&quot;</span>,</div><div class="line">                                       <span class="stringliteral">&quot;File Recovery&quot;</span>,</div><div class="line">                                       <span class="stringliteral">&quot;Recover&quot;</span>, <span class="stringliteral">&quot;Don&#39;t recover&quot;</span>) == KMessage::Yes) {</div><div class="line">            recoverFiles(staleFiles);</div><div class="line">            <span class="keywordflow">return</span>;</div><div class="line">        } <span class="keywordflow">else</span> {</div><div class="line">            <span class="comment">// remove the stale files</span></div><div class="line">            <span class="keywordflow">foreach</span> (<a class="code" href="classKAutoSaveFile.html">KAutoSaveFile</a> *stale, staleFiles) {</div><div class="line">                stale-&gt;<a class="code" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5">open</a>(QIODevice::ReadWrite);</div><div class="line">                <span class="keyword">delete</span> stale;</div><div class="line">            }</div><div class="line">        }</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// create new autosave object</span></div><div class="line">    m_autosave = <span class="keyword">new</span> <a class="code" href="classKAutoSaveFile.html#ae02fc2cb752540bf344707a7c76d34bb">KAutoSaveFile</a>(url, <span class="keyword">this</span>);</div><div class="line"></div><div class="line">    <span class="comment">// continue the process of opening file &#39;url&#39;</span></div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>The function recoverFiles could loop over the list of files and do this: </p><div class="fragment"><div class="line"><span class="keywordflow">foreach</span> (<a class="code" href="classKAutoSaveFile.html">KAutoSaveFile</a> *stale, staleFiles) {</div><div class="line">    <span class="keywordflow">if</span> (!stale-&gt;<a class="code" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5">open</a>(QIODevice::ReadWrite)) {</div><div class="line">        <span class="comment">// show an error message; we could not steal the lockfile</span></div><div class="line">        <span class="comment">// maybe another application got to the file before us?</span></div><div class="line">        <span class="keyword">delete</span> stale;</div><div class="line">        <span class="keywordflow">continue</span>;</div><div class="line">    }</div><div class="line">    Document *doc = <span class="keyword">new</span> Document;</div><div class="line">    doc-&gt;m_autosave = stale;</div><div class="line">    stale-&gt;setParent(doc); <span class="comment">// reparent</span></div><div class="line"></div><div class="line">    doc-&gt;setUrl(stale-&gt;<a class="code" href="classKAutoSaveFile.html#a95c1d3827046819ebaf28d7c52aa7a59">managedFile</a>());</div><div class="line">    doc-&gt;setContents(stale-&gt;readAll());</div><div class="line">    doc-&gt;setState(Document::Modified); <span class="comment">// mark it as modified and unsaved</span></div><div class="line"></div><div class="line">    documentManager-&gt;addDocument(doc);</div><div class="line">}</div></div><!-- fragment --><p>If the file is unsaved, periodically write the contents to the save file: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (!m_autosave-&gt;isOpen() &amp;&amp; !m_autosave-&gt;open(QIODevice::ReadWrite)) {</div><div class="line">    <span class="comment">// show error: could not open the autosave file</span></div><div class="line">}</div><div class="line">m_autosave-&gt;write(contents());</div></div><!-- fragment --><p>When the user saves the file, the autosaved file is no longer necessary and can be removed or emptied. </p><div class="fragment"><div class="line">m_autosave-&gt;resize(0);    <span class="comment">// leaves the file open</span></div></div><!-- fragment --><div class="fragment"><div class="line">m_autosave-&gt;remove();     <span class="comment">// closes the file</span></div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Jacob R Rideout <a href="#" onclick="location.href='mai'+'lto:'+'kde'+'@j'+'aco'+'br'+'ide'+'ou'+'t.n'+'et'; return false;">kde@j<span style="display: none;">.nosp@m.</span>acob<span style="display: none;">.nosp@m.</span>rideo<span style="display: none;">.nosp@m.</span>ut.n<span style="display: none;">.nosp@m.</span>et</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8h_source.html#l00129">129</a> of file <a class="el" href="kautosavefile_8h_source.html">kautosavefile.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae02fc2cb752540bf344707a7c76d34bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02fc2cb752540bf344707a7c76d34bb">&#9670;&nbsp;</a></span>KAutoSaveFile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAutoSaveFile::KAutoSaveFile </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> for file <code>filename</code>. </p>
+<p>The temporary file is not opened or created until actually needed. The file <code>filename</code> does not have to exist for <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> to be constructed (if it exists, it will not be touched).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the filename that this <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> refers to </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00086">86</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47054f4c458454efb17fbae8c90115c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47054f4c458454efb17fbae8c90115c0">&#9670;&nbsp;</a></span>KAutoSaveFile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAutoSaveFile::KAutoSaveFile </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Constructs a <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> object. </p>
+<p>Note that you need to call <a class="el" href="classKAutoSaveFile.html#acf2d7648e881e305eb9c7b9fab2f321c" title="Sets the URL of the file managed by KAutoSaveFile. ">setManagedFile()</a> before calling <a class="el" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5" title="Opens the autosave file and locks it if it wasn&#39;t already locked. ">open()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00093">93</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae63b18df5b87afbab97a43bbde214ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae63b18df5b87afbab97a43bbde214ec">&#9670;&nbsp;</a></span>~KAutoSaveFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAutoSaveFile::~KAutoSaveFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> object, removes the autosave file and drops the lock being held (if any). </p>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00100">100</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aba2b27b275b911329d8e560fa177d617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2b27b275b911329d8e560fa177d617">&#9670;&nbsp;</a></span>allStaleFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKAutoSaveFile.html">KAutoSaveFile</a> * &gt; KAutoSaveFile::allStaleFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>applicationName</em> = <code>QString()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all stale autosave files left behind by crashed or otherwise gone instances of this application. </p>
+<p>If not given, the application name is obtained from QCoreApplication, so be sure to have set it correctly before calling this function.</p>
+<p>See <a class="el" href="classKAutoSaveFile.html#afc3c7421945d41fb26438aba08c492ea" title="Checks for stale autosave files for the file url. ">staleFiles()</a> for information on the returned objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00212">212</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95c1d3827046819ebaf28d7c52aa7a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c1d3827046819ebaf28d7c52aa7a59">&#9670;&nbsp;</a></span>managedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KAutoSaveFile::managedFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the URL of the file managed by <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a>. </p>
+<p>This is the same URL that was given to <a class="el" href="classKAutoSaveFile.html#acf2d7648e881e305eb9c7b9fab2f321c" title="Sets the URL of the file managed by KAutoSaveFile. ">setManagedFile()</a> or the <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> constructor.</p>
+<p>This is the name of the real file being edited by the application. To get the name of the temporary file where data can be saved, use fileName() (after you have called <a class="el" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5" title="Opens the autosave file and locks it if it wasn&#39;t already locked. ">open()</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00107">107</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a026a39bb0951fbcbc0a8716633e37df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026a39bb0951fbcbc0a8716633e37df5">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KAutoSaveFile::open </td>
+          <td>(</td>
+          <td class="paramtype">OpenMode&#160;</td>
+          <td class="paramname"><em>openmode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens the autosave file and locks it if it wasn't already locked. </p>
+<p>The name of the temporary file where data can be saved to will be set by this function and can be retrieved with fileName(). It will not change unless <a class="el" href="classKAutoSaveFile.html#a4f4952212230600ca0597e6fc4b267da" title="Closes the autosave file resource and removes the lock file. ">releaseLock()</a> is called. No other application will attempt to edit such a file either while the lock is held.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">openmode</td><td>the mode that should be used to open the file, probably QIODevice::ReadWrite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file could be opened (= locked and created), false if the operation failed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00131">131</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4f4952212230600ca0597e6fc4b267da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4952212230600ca0597e6fc4b267da">&#9670;&nbsp;</a></span>releaseLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAutoSaveFile::releaseLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the autosave file resource and removes the lock file. </p>
+<p>The file name returned by fileName() will no longer be protected and can be overwritten by another application at any time. To obtain a new lock, call <a class="el" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5" title="Opens the autosave file and locks it if it wasn&#39;t already locked. ">open()</a> again.</p>
+<p>This function calls remove(), so the autosave temporary file will be removed too. </p>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00120">120</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf2d7648e881e305eb9c7b9fab2f321c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2d7648e881e305eb9c7b9fab2f321c">&#9670;&nbsp;</a></span>setManagedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAutoSaveFile::setManagedFile </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the URL of the file managed by <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a>. </p>
+<p>This should be the name of the real file being edited by the application. If the file was previously set, this function calls <a class="el" href="classKAutoSaveFile.html#a4f4952212230600ca0597e6fc4b267da" title="Closes the autosave file resource and removes the lock file. ">releaseLock()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the filename that this <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> refers to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00112">112</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc3c7421945d41fb26438aba08c492ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc3c7421945d41fb26438aba08c492ea">&#9670;&nbsp;</a></span>staleFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKAutoSaveFile.html">KAutoSaveFile</a> * &gt; KAutoSaveFile::staleFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>applicationName</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks for stale autosave files for the file <code>url</code>. </p>
+<p>Returns a list of autosave files that contain autosaved data left behind by other instances of the application, due to crashing or otherwise uncleanly exiting.</p>
+<p>It is the application's job to determine what to do with such unsaved data. Generally, this is done by asking the user if he wants to see the recovered data, and then allowing the user to save if he wants to.</p>
+<p>If not given, the application name is obtained from QCoreApplication, so be sure to have set it correctly before calling this function.</p>
+<p>This function returns a list of unopened <a class="el" href="classKAutoSaveFile.html" title="Creates and manages a temporary &quot;auto-save&quot; file. ">KAutoSaveFile</a> objects. By calling <a class="el" href="classKAutoSaveFile.html#a026a39bb0951fbcbc0a8716633e37df5" title="Opens the autosave file and locks it if it wasn&#39;t already locked. ">open()</a> on them, the application will steal the lock. Subsequent <a class="el" href="classKAutoSaveFile.html#a4f4952212230600ca0597e6fc4b267da" title="Closes the autosave file resource and removes the lock file. ">releaseLock()</a> or deleting of the object will then erase the stale autosave file. </p>
+
+<p class="definition">Definition at line <a class="el" href="kautosavefile_8cpp_source.html#l00184">184</a> of file <a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kautosavefile_8h_source.html">kautosavefile.h</a></li>
+<li><a class="el" href="kautosavefile_8cpp_source.html">kautosavefile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:31 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - Class Members - Functions</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="contents">
+&#160;
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>KSelectionOwner()
+: <a class="el" href="classKSelectionOwner.html#a9ba1fbe497e7bec7f8e5cc9003134bd7">KSelectionOwner</a>
+</li>
+<li>KSelectionWatcher()
+: <a class="el" href="classKSelectionWatcher.html#ae816d65596d60f37dbeea798d48a5e27">KSelectionWatcher</a>
+</li>
+<li>KStartupInfo()
+: <a class="el" href="classKStartupInfo.html#af2a53237d3ab8da943acab51e5387105">KStartupInfo</a>
+</li>
+<li>KStartupInfoData()
+: <a class="el" href="classKStartupInfoData.html#a9edda3b026a9a378d6135dd30d15ff8c">KStartupInfoData</a>
+</li>
+<li>KStartupInfoId()
+: <a class="el" href="classKStartupInfoId.html#a3f69c9d94b4dfd25a1483cb0a215dde0">KStartupInfoId</a>
+</li>
+<li>screen()
+: <a class="el" href="classKStartupInfoData.html#a7846757b83742d9dd58876f2b4e78807">KStartupInfoData</a>
+</li>
+<li>self()
+: <a class="el" href="classKWindowSystem.html#af6ca1136d4f7f25f94b0568d9e596572">KWindowSystem</a>
+</li>
+<li>sendChange()
+: <a class="el" href="classKStartupInfo.html#a6dd6155a22a516f6f84eab701f115dc1">KStartupInfo</a>
+</li>
+<li>sendChangeX()
+: <a class="el" href="classKStartupInfo.html#a8a1e24c1d875f70c0dffc21aff246b0b">KStartupInfo</a>
+</li>
+<li>sendChangeXcb()
+: <a class="el" href="classKStartupInfo.html#aa19be0587024f62ebf3e7d1dfebce853">KStartupInfo</a>
+</li>
+<li>sendFinish()
+: <a class="el" href="classKStartupInfo.html#ad91e250a9fa439d2fc95299e68e3a4bd">KStartupInfo</a>
+</li>
+<li>sendFinishX()
+: <a class="el" href="classKStartupInfo.html#aad4f7c3403919e32ab55a418d408649e">KStartupInfo</a>
+</li>
+<li>sendFinishXcb()
+: <a class="el" href="classKStartupInfo.html#adb81d1aae0254d760b9690e131f46953">KStartupInfo</a>
+</li>
+<li>sendPing()
+: <a class="el" href="classNETRootInfo.html#a5e03bc4f40db8ad105e1708c22ea00eb">NETRootInfo</a>
+</li>
+<li>sendStartup()
+: <a class="el" href="classKStartupInfo.html#a617accc81738e76713bbd3956ddec9b2">KStartupInfo</a>
+</li>
+<li>sendStartupX()
+: <a class="el" href="classKStartupInfo.html#a3f29c95250e817abb314196612b4ed25">KStartupInfo</a>
+</li>
+<li>sendStartupXcb()
+: <a class="el" href="classKStartupInfo.html#a759c076313d219487aeddff6158afad8">KStartupInfo</a>
+</li>
+<li>setActiveWindow()
+: <a class="el" href="classNETRootInfo.html#aefac0a31c98427a5a84dd09d812fe6f4">NETRootInfo</a>
+</li>
+<li>setActivities()
+: <a class="el" href="classNETWinInfo.html#a90d3b14186b074aaa0309ca4c8c670db">NETWinInfo</a>
+</li>
+<li>setAllowedActions()
+: <a class="el" href="classNETWinInfo.html#af0b92d7673ce879ec377ed47fc312ad7">NETWinInfo</a>
+</li>
+<li>setApplicationId()
+: <a class="el" href="classKStartupInfoData.html#ae259c826f465e01264d38d419e086c2c">KStartupInfoData</a>
+</li>
+<li>setBin()
+: <a class="el" href="classKStartupInfoData.html#a8e60c173fae73691b1e3a1da73700fe2">KStartupInfoData</a>
+</li>
+<li>setBlockingCompositing()
+: <a class="el" href="classKWindowSystem.html#a77a2e23da581d69bbd80387306eafc10">KWindowSystem</a>
+, <a class="el" href="classNETWinInfo.html#ac264bd0ff15058b4158ea2932ea2fda2">NETWinInfo</a>
+</li>
+<li>setClientList()
+: <a class="el" href="classNETRootInfo.html#a02dae359439488195aceb7f0a2b479ab">NETRootInfo</a>
+</li>
+<li>setClientListStacking()
+: <a class="el" href="classNETRootInfo.html#af358dab6b0dfc8083a771dcc9f2dad73">NETRootInfo</a>
+</li>
+<li>setCurrentDesktop()
+: <a class="el" href="classKWindowSystem.html#ad390e52c8dd6331b89a5a9f372435129">KWindowSystem</a>
+, <a class="el" href="classNETRootInfo.html#aab9e17977eec8d2a8ee8695bca184fbb">NETRootInfo</a>
+</li>
+<li>setData()
+: <a class="el" href="classKSelectionOwner.html#a23943c7a17a0452a6dfb61708f680c57">KSelectionOwner</a>
+</li>
+<li>setDescription()
+: <a class="el" href="classKStartupInfoData.html#a9fb7724d3c359562c7d9494c673d7935">KStartupInfoData</a>
+</li>
+<li>setDesktop()
+: <a class="el" href="classKStartupInfoData.html#a3500a60366743243e99395f2b238c55b">KStartupInfoData</a>
+, <a class="el" href="classNETWinInfo.html#ac4d23861033e10ca674b0434f246a690">NETWinInfo</a>
+</li>
+<li>setDesktopGeometry()
+: <a class="el" href="classNETRootInfo.html#aa4bbe7eec4123d1794fca9f233ebad93">NETRootInfo</a>
+</li>
+<li>setDesktopLayout()
+: <a class="el" href="classNETRootInfo.html#a06f991c0b1540e779e5e324404337241">NETRootInfo</a>
+</li>
+<li>setDesktopName()
+: <a class="el" href="classKWindowSystem.html#a2cc00668de9eb13084c2f8eb480f097f">KWindowSystem</a>
+, <a class="el" href="classNETRootInfo.html#a5b747a5f42d1627498a43c2df6670024">NETRootInfo</a>
+</li>
+<li>setDesktopViewport()
+: <a class="el" href="classNETRootInfo.html#a3325efae9006a73cc16d9c259cee6f2b">NETRootInfo</a>
+</li>
+<li>setExtendedStrut()
+: <a class="el" href="classKWindowSystem.html#a669469a6738ccb8642a1c57c4ce08227">KWindowSystem</a>
+, <a class="el" href="classNETWinInfo.html#a6a6964c115a4f2f24e9fc6688b2d79dc">NETWinInfo</a>
+</li>
+<li>setFrameExtents()
+: <a class="el" href="classNETWinInfo.html#ab50f281e50e6652abfc56e36cab398f4">NETWinInfo</a>
+</li>
+<li>setFrameOverlap()
+: <a class="el" href="classNETWinInfo.html#a0d27f5e71e08990e3aa0b2cd74694216">NETWinInfo</a>
+</li>
+<li>setFullscreenMonitors()
+: <a class="el" href="classNETWinInfo.html#ae026b1b5d2aca9ae0fb0a70ce03913a9">NETWinInfo</a>
+</li>
+<li>setHandledIcons()
+: <a class="el" href="classNETWinInfo.html#a05c22f70a2d7659b4b8e836c926b350f">NETWinInfo</a>
+</li>
+<li>setHostname()
+: <a class="el" href="classKStartupInfoData.html#a20413af8c5ac69e93990a26fd9f587f2">KStartupInfoData</a>
+</li>
+<li>setIcon()
+: <a class="el" href="classKStartupInfoData.html#a816dc1cf00e28d5eee3b791c8f5671e3">KStartupInfoData</a>
+, <a class="el" href="classNETWinInfo.html#aeacf220f1698b64cefa715ca70b5e38a">NETWinInfo</a>
+</li>
+<li>setIconGeometry()
+: <a class="el" href="classNETWinInfo.html#aff2aba23f23b7cd0efd120449706fda4">NETWinInfo</a>
+</li>
+<li>setIconName()
+: <a class="el" href="classNETWinInfo.html#a5f141654450eec3b153b866e0299e02c">NETWinInfo</a>
+</li>
+<li>setIcons()
+: <a class="el" href="classKWindowSystem.html#a8dcba86e828ff19749e3d3e8746b898b">KWindowSystem</a>
+</li>
+<li>setLaunchedBy()
+: <a class="el" href="classKStartupInfoData.html#a64b3ca4dbf552fc6cfd64c5073955a0d">KStartupInfoData</a>
+</li>
+<li>setMainWindow()
+: <a class="el" href="classKWindowSystem.html#a5f06ffab37bd705735f9d326f2969f52">KWindowSystem</a>
+</li>
+<li>setName()
+: <a class="el" href="classKStartupInfoData.html#a588b6ca52626ba82745b88a93bd49095">KStartupInfoData</a>
+, <a class="el" href="classNETWinInfo.html#aff40999729f1304c6ce6a8fafb9e7b45">NETWinInfo</a>
+</li>
+<li>setNewStartupId()
+: <a class="el" href="classKStartupInfo.html#a3cee4fc464df9f18276d98609ebf1df1">KStartupInfo</a>
+</li>
+<li>setNumberOfDesktops()
+: <a class="el" href="classNETRootInfo.html#ad2e7aca69ab4fa624eb86af70aaf70bd">NETRootInfo</a>
+</li>
+<li>setOnActivities()
+: <a class="el" href="classKWindowSystem.html#a63fe335efaca06bb43ad107b8e28936c">KWindowSystem</a>
+</li>
+<li>setOnAllDesktops()
+: <a class="el" href="classKWindowSystem.html#a3dfdfbe26d5bb59dd34ade9afa4d3971">KWindowSystem</a>
+</li>
+<li>setOnDesktop()
+: <a class="el" href="classKWindowSystem.html#a252fc7c6e389a41b73075a98d4bb843a">KWindowSystem</a>
+</li>
+<li>setOpacity()
+: <a class="el" href="classNETWinInfo.html#a1bd1f2ff92d908eece1ef675d68002ae">NETWinInfo</a>
+</li>
+<li>setPid()
+: <a class="el" href="classNETWinInfo.html#a0c2dc2f4babf3efa3b0454c51504f9b1">NETWinInfo</a>
+</li>
+<li>setScreen()
+: <a class="el" href="classKStartupInfoData.html#aec44e055c5fc59e423c0570322daf54a">KStartupInfoData</a>
+</li>
+<li>setShowingDesktop()
+: <a class="el" href="classKWindowSystem.html#a38b8c889d4b129845c2592acf54767cf">KWindowSystem</a>
+, <a class="el" href="classNETRootInfo.html#a9f9c9aa337a71ecc6b61b3bc29e37de2">NETRootInfo</a>
+</li>
+<li>setSilent()
+: <a class="el" href="classKStartupInfoData.html#ac7ff8e4196cd31399cc2cd595a373e2e">KStartupInfoData</a>
+</li>
+<li>setStartupId()
+: <a class="el" href="classKStartupInfo.html#acd274ab683025f22236d2b84b4a4f31b">KStartupInfo</a>
+, <a class="el" href="classNETWinInfo.html#ad92c6841ffdcc826065554bd0df89c62">NETWinInfo</a>
+</li>
+<li>setState()
+: <a class="el" href="classKWindowSystem.html#a2fcec2ab4297afe9edae7971b1a4cd86">KWindowSystem</a>
+, <a class="el" href="classNETWinInfo.html#a15fd655ed64a418397b2c93dacf45a3a">NETWinInfo</a>
+</li>
+<li>setStrut()
+: <a class="el" href="classKWindowSystem.html#af83b6d1db5390b191b5b9b0c061a1e03">KWindowSystem</a>
+, <a class="el" href="classNETWinInfo.html#a55d3265cab9042f4a3904a46ca02fcdd">NETWinInfo</a>
+</li>
+<li>setSupported()
+: <a class="el" href="classNETRootInfo.html#af99010d9744bfca2d1866ecfda2478c4">NETRootInfo</a>
+</li>
+<li>setTimeout()
+: <a class="el" href="classKStartupInfo.html#a032993d3c40202e63745c4aebb9f642d">KStartupInfo</a>
+</li>
+<li>setType()
+: <a class="el" href="classKWindowSystem.html#a0f45456ff470a7b464dfe26d33bc322e">KWindowSystem</a>
+</li>
+<li>setupStartupEnv()
+: <a class="el" href="classKStartupInfoId.html#a287905c62ddda413f3833d9eadd63cb2">KStartupInfoId</a>
+</li>
+<li>setUserTime()
+: <a class="el" href="classKWindowSystem.html#a850371a25bf332c921617c8080553cdb">KWindowSystem</a>
+, <a class="el" href="classNETWinInfo.html#aea17de9b0eaa052bafa25e2ec2a6af54">NETWinInfo</a>
+</li>
+<li>setVirtualRoots()
+: <a class="el" href="classNETRootInfo.html#ab44bc95e6ca88043dbd1bba2cd20269b">NETRootInfo</a>
+</li>
+<li>setVisibleIconName()
+: <a class="el" href="classNETWinInfo.html#ac2d7bcff77df4a068fa56736077dca33">NETWinInfo</a>
+</li>
+<li>setVisibleName()
+: <a class="el" href="classNETWinInfo.html#abcf5bf06a71c4b73b67f5acd1b216cbc">NETWinInfo</a>
+</li>
+<li>setWindowStartupId()
+: <a class="el" href="classKStartupInfo.html#a819a12e54346d8be814a914d7d3874be">KStartupInfo</a>
+</li>
+<li>setWindowType()
+: <a class="el" href="classNETWinInfo.html#ab617fe015564e043bfa5ca8e708b6e8f">NETWinInfo</a>
+</li>
+<li>setWMClass()
+: <a class="el" href="classKStartupInfoData.html#a7864480d3e4e7cee7bae4ead7d832ec7">KStartupInfoData</a>
+</li>
+<li>setWorkArea()
+: <a class="el" href="classNETRootInfo.html#a7cb2a8b55300c6e363efe89f6702ddb7">NETRootInfo</a>
+</li>
+<li>setXinerama()
+: <a class="el" href="classKStartupInfoData.html#a60cb9fb47133a98ee58ea43df3eed95c">KStartupInfoData</a>
+</li>
+<li>showingDesktop()
+: <a class="el" href="classKWindowSystem.html#ae8850e1e845ee1bb88bab638387aa2fb">KWindowSystem</a>
+, <a class="el" href="classNETRootInfo.html#afecf7557cb87d1d6e38d183a3f2a7545">NETRootInfo</a>
+</li>
+<li>showingDesktopChanged()
+: <a class="el" href="classKWindowSystem.html#a6d97985ef9d827e44b978751d860bdf6">KWindowSystem</a>
+</li>
+<li>silenceStartup()
+: <a class="el" href="classKStartupInfo.html#af919bb5570da1e00457746b6f4aa1512">KStartupInfo</a>
+</li>
+<li>silent()
+: <a class="el" href="classKStartupInfoData.html#a2b77d6c80498bee93e30f81274a6c6f0">KStartupInfoData</a>
+</li>
+<li>stackingOrder()
+: <a class="el" href="classKWindowSystem.html#a625644ee62355a88f32ab4e84130122a">KWindowSystem</a>
+</li>
+<li>stackingOrderChanged()
+: <a class="el" href="classKWindowSystem.html#a067998d6a47bad2ccdd2ea129b434312">KWindowSystem</a>
+</li>
+<li>startupId()
+: <a class="el" href="classKStartupInfo.html#adde69db7956c38bc9ed967e9c3a53def">KStartupInfo</a>
+, <a class="el" href="classNETWinInfo.html#aac76a94e5d3d5017cf82c06a83d482fa">NETWinInfo</a>
+</li>
+<li>state()
+: <a class="el" href="classKWindowInfo.html#a48bbaefcad809f73568ba6969571e3eb">KWindowInfo</a>
+, <a class="el" href="classNETWinInfo.html#aa26a0bc40a868cfbfb9f335e800d3fe2">NETWinInfo</a>
+</li>
+<li>strut()
+: <a class="el" href="classNETWinInfo.html#a6acff362532b5e3a276cae6b09f5f68a">NETWinInfo</a>
+</li>
+<li>strutChanged()
+: <a class="el" href="classKWindowSystem.html#a2a44b678bd812e2dbd34c80759a24e81">KWindowSystem</a>
+</li>
+<li>supportedActions()
+: <a class="el" href="classNETRootInfo.html#aeced8d9474a23a19c5992e1160153dea">NETRootInfo</a>
+</li>
+<li>supportedProperties()
+: <a class="el" href="classNETRootInfo.html#a9c9b1ee1fb41bebf0837c465ac9dcdee">NETRootInfo</a>
+</li>
+<li>supportedProperties2()
+: <a class="el" href="classNETRootInfo.html#a61118ab0e50d5db4bb7e1128e0984b43">NETRootInfo</a>
+</li>
+<li>supportedStates()
+: <a class="el" href="classNETRootInfo.html#adc3b3209ba69cd90ee91d7a8f90801d7">NETRootInfo</a>
+</li>
+<li>supportedWindowTypes()
+: <a class="el" href="classNETRootInfo.html#abf7d368ac4d319098d1291abeb92035e">NETRootInfo</a>
+</li>
+<li>supportsProtocol()
+: <a class="el" href="classNETWinInfo.html#a0291f40413807b62431b8e2878efe04c">NETWinInfo</a>
+</li>
+<li>supportWindow()
+: <a class="el" href="classNETRootInfo.html#a8edabc7b370c743c76bea72c3253dabc">NETRootInfo</a>
+</li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:44 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

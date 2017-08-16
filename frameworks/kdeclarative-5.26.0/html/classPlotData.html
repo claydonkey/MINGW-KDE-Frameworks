@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDeclarative - PlotData Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDeclarative</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDeclarative"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKQuickAddons_1_1ConfigModule.html">KQuickAddons::ConfigModule</option>
+        
+        <option value="classDeclarativeMimeData.html">DeclarativeMimeData</option>
+        
+        <option value="classImageTexturesCache.html">ImageTexturesCache</option>
+        
+        <option value="classKDeclarativeMouseEvent.html">KDeclarativeMouseEvent</option>
+        
+        <option value="classKUserProxy.html">KUserProxy</option>
+        
+        <option value="classKWindowSystemProxy.html">KWindowSystemProxy</option>
+        
+        <option value="classManagedTextureNode.html">ManagedTextureNode</option>
+        
+        <option value="classMimeDataWrapper.html">MimeDataWrapper</option>
+        
+        <option value="classPlotData.html">PlotData</option>
+        
+        <option value="classKDeclarative_1_1QmlObject.html">KDeclarative::QmlObject</option>
+        
+        <option value="classKDeclarative_1_1QmlObjectSharedEngine.html">KDeclarative::QmlObjectSharedEngine</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Provides integration of QML and KDE Frameworks</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Declarative)
+target_link_libraries(yourapp KF5::Declarative)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDeclarative </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdeclarative-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDeclarative on <a href="https://cgit.kde.org/kdeclarative-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDeclarative </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=PlotData">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classPlotData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">PlotData Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="plotter_8h_source.html">plotter.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:aa17ac3c2cca6a905bf52591f8bb3fd32"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotData.html#aa17ac3c2cca6a905bf52591f8bb3fd32">color</a></td></tr>
+<tr class="separator:aa17ac3c2cca6a905bf52591f8bb3fd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122cf4f029c73f27cb9ad6728ece06f1"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotData.html#a122cf4f029c73f27cb9ad6728ece06f1">label</a></td></tr>
+<tr class="separator:a122cf4f029c73f27cb9ad6728ece06f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e59d123cffa235f4c0b5619c8df39bf"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotData.html#a9e59d123cffa235f4c0b5619c8df39bf">max</a></td></tr>
+<tr class="separator:a9e59d123cffa235f4c0b5619c8df39bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fde7f7a952eca460a3779daa5a7ff7"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotData.html#ad9fde7f7a952eca460a3779daa5a7ff7">min</a></td></tr>
+<tr class="separator:ad9fde7f7a952eca460a3779daa5a7ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbcb4de86dbf07c898bb9102b2f20a8"><td class="memItemLeft" align="right" valign="top">QList&lt; qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotData.html#a2bbcb4de86dbf07c898bb9102b2f20a8">values</a></td></tr>
+<tr class="separator:a2bbcb4de86dbf07c898bb9102b2f20a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a502ed96cdc01777aefe9fee18dd36bb9"><td class="memItemLeft" align="right" valign="top"><a id="a502ed96cdc01777aefe9fee18dd36bb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>colorChanged</b> ()</td></tr>
+<tr class="separator:a502ed96cdc01777aefe9fee18dd36bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76027311305f248e1fd20ef455c8bb69"><td class="memItemLeft" align="right" valign="top"><a id="a76027311305f248e1fd20ef455c8bb69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>labelChanged</b> ()</td></tr>
+<tr class="separator:a76027311305f248e1fd20ef455c8bb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1eff8ae39ebb20b95baefc014595e9b"><td class="memItemLeft" align="right" valign="top"><a id="af1eff8ae39ebb20b95baefc014595e9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>maxChanged</b> ()</td></tr>
+<tr class="separator:af1eff8ae39ebb20b95baefc014595e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbef25aa67ecb25f2e17765a56021933"><td class="memItemLeft" align="right" valign="top"><a id="abbef25aa67ecb25f2e17765a56021933"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>minChanged</b> ()</td></tr>
+<tr class="separator:abbef25aa67ecb25f2e17765a56021933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5cabd912745d7114de6ee287e889a5"><td class="memItemLeft" align="right" valign="top"><a id="aba5cabd912745d7114de6ee287e889a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>valuesChanged</b> ()</td></tr>
+<tr class="separator:aba5cabd912745d7114de6ee287e889a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a72491026d5d0db6af12cfe76198a900b"><td class="memItemLeft" align="right" valign="top"><a id="a72491026d5d0db6af12cfe76198a900b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PlotData</b> (QObject *parent=0)</td></tr>
+<tr class="separator:a72491026d5d0db6af12cfe76198a900b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28f457aa0e7cb065d7eb3ffb2a02804"><td class="memItemLeft" align="right" valign="top"><a id="aa28f457aa0e7cb065d7eb3ffb2a02804"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSample</b> (qreal value)</td></tr>
+<tr class="separator:aa28f457aa0e7cb065d7eb3ffb2a02804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3e0b4841ef7aba93e8fc5a8e72a02f"><td class="memItemLeft" align="right" valign="top"><a id="aee3e0b4841ef7aba93e8fc5a8e72a02f"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> () const</td></tr>
+<tr class="separator:aee3e0b4841ef7aba93e8fc5a8e72a02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bb95181e9bc56617be4ae2fde579c0"><td class="memItemLeft" align="right" valign="top"><a id="a42bb95181e9bc56617be4ae2fde579c0"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const</td></tr>
+<tr class="separator:a42bb95181e9bc56617be4ae2fde579c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150517be0b438a1ea02224e8af925802"><td class="memItemLeft" align="right" valign="top"><a id="a150517be0b438a1ea02224e8af925802"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> () const</td></tr>
+<tr class="separator:a150517be0b438a1ea02224e8af925802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479e2418dab2f06c23a5be49ee4768bc"><td class="memItemLeft" align="right" valign="top"><a id="a479e2418dab2f06c23a5be49ee4768bc"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> () const</td></tr>
+<tr class="separator:a479e2418dab2f06c23a5be49ee4768bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969de45a7873ae503b5979c9d7581ac0"><td class="memItemLeft" align="right" valign="top"><a id="a969de45a7873ae503b5979c9d7581ac0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const QColor &amp;<a class="el" href="classPlotData.html#aa17ac3c2cca6a905bf52591f8bb3fd32">color</a>)</td></tr>
+<tr class="separator:a969de45a7873ae503b5979c9d7581ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434d8699f1b95f30e66b24c93b302f04"><td class="memItemLeft" align="right" valign="top"><a id="a434d8699f1b95f30e66b24c93b302f04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLabel</b> (const QString &amp;<a class="el" href="classPlotData.html#a122cf4f029c73f27cb9ad6728ece06f1">label</a>)</td></tr>
+<tr class="separator:a434d8699f1b95f30e66b24c93b302f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2a98dcce7b92be687bdcc1482ce95d"><td class="memItemLeft" align="right" valign="top"><a id="aff2a98dcce7b92be687bdcc1482ce95d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSampleSize</b> (int size)</td></tr>
+<tr class="separator:aff2a98dcce7b92be687bdcc1482ce95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcad44b8d2974e1fd2b49b531411e55"><td class="memItemLeft" align="right" valign="top"><a id="a5dcad44b8d2974e1fd2b49b531411e55"></a>
+QList&lt; qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> () const</td></tr>
+<tr class="separator:a5dcad44b8d2974e1fd2b49b531411e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a47df8b726010701a379a3d49db30fb52"><td class="memItemLeft" align="right" valign="top"><a id="a47df8b726010701a379a3d49db30fb52"></a>
+QVector&lt; qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalizedValues</b></td></tr>
+<tr class="separator:a47df8b726010701a379a3d49db30fb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>a Plotter can draw a graph of values arriving from an arbitrary number of data sources to show their evoluton in time. </p>
+<p>an example can be a plot of the network transfer speed or CPU temperature over time. Multiple plots can be fitted in the same graph, either stacked or intersected. </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00048">48</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a id="aa17ac3c2cca6a905bf52591f8bb3fd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17ac3c2cca6a905bf52591f8bb3fd32">&#9670;&nbsp;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor PlotData::color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Color to plot this data set. </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00059">59</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a122cf4f029c73f27cb9ad6728ece06f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122cf4f029c73f27cb9ad6728ece06f1">&#9670;&nbsp;</a></span>label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString PlotData::label</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>text Label of the data set: note this is purely a model, it will need a Label somewhere to be actually painted </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00054">54</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a9e59d123cffa235f4c0b5619c8df39bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e59d123cffa235f4c0b5619c8df39bf">&#9670;&nbsp;</a></span>max</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal PlotData::max</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum value of this data set. </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00069">69</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad9fde7f7a952eca460a3779daa5a7ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9fde7f7a952eca460a3779daa5a7ff7">&#9670;&nbsp;</a></span>min</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal PlotData::min</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimum value of this data set. </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00074">74</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a2bbcb4de86dbf07c898bb9102b2f20a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbcb4de86dbf07c898bb9102b2f20a8">&#9670;&nbsp;</a></span>values</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; qreal &gt; PlotData::values</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>All the values currently in this data set. </p>
+
+<p class="definition">Definition at line <a class="el" href="plotter_8h_source.html#l00064">64</a> of file <a class="el" href="plotter_8h_source.html">plotter.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="plotter_8h_source.html">plotter.h</a></li>
+<li><a class="el" href="plotter_8cpp_source.html">plotter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:42 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

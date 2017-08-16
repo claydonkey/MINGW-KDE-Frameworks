@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWallet - KWallet::Wallet Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWallet</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWallet"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKWallet_1_1MD5Digest.html">KWallet::MD5Digest</option>
+        
+        <option value="classKWallet_1_1Wallet.html">KWallet::Wallet</option>
+        
+        <option value="namespaceGpgME.html">GpgME</option>
+        
+        <option value="namespaceKWallet.html">KWallet</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Secure and unified container for user passwords</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:valir@kde.org">Valentin Rusu</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Wallet)
+target_link_libraries(yourapp KF5::Wallet)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWallet </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwallet-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWallet on <a href="https://cgit.kde.org/kwallet-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWallet </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=Wallet">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKWallet.html">KWallet</a></li><li class="navelem"><a class="el" href="classKWallet_1_1Wallet.html">Wallet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKWallet_1_1Wallet-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KWallet::Wallet Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kwallet_8h_source.html">kwallet.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa45a98e3d8bdd621cf33336864ee4e72"><td class="memItemLeft" align="right" valign="top"><a id="aa45a98e3d8bdd621cf33336864ee4e72"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EntryType</b> { <br />
+&#160;&#160;<b>Unknown</b> = 0,
+<b>Password</b>,
+<b>Stream</b>,
+<b>Map</b>,
+<br />
+&#160;&#160;<b>Unused</b> = 0xffff
+<br />
+ }</td></tr>
+<tr class="separator:aa45a98e3d8bdd621cf33336864ee4e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eea2cb2c9ffba29cedd866ec30d986f"><td class="memItemLeft" align="right" valign="top"><a id="a1eea2cb2c9ffba29cedd866ec30d986f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OpenType</b> { <b>Synchronous</b> = 0,
+<b>Asynchronous</b>,
+<b>Path</b>,
+<b>OpenTypeUnused</b> = 0xff
+ }</td></tr>
+<tr class="separator:a1eea2cb2c9ffba29cedd866ec30d986f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a6b4f07c045d7650ce30aa8df584ca975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a6b4f07c045d7650ce30aa8df584ca975">folderListUpdated</a> ()</td></tr>
+<tr class="separator:a6b4f07c045d7650ce30aa8df584ca975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe99da68e094ad218c302c0851692980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#abe99da68e094ad218c302c0851692980">folderRemoved</a> (const QString &amp;folder)</td></tr>
+<tr class="separator:abe99da68e094ad218c302c0851692980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0129c74641130020b7b95a56539580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a2b0129c74641130020b7b95a56539580">folderUpdated</a> (const QString &amp;folder)</td></tr>
+<tr class="separator:a2b0129c74641130020b7b95a56539580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697ff23f1fbc85bd6e18f5e6bb078e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a697ff23f1fbc85bd6e18f5e6bb078e01">walletClosed</a> ()</td></tr>
+<tr class="separator:a697ff23f1fbc85bd6e18f5e6bb078e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7f7a9d3f2f1e81bb32d1c025e2a799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aef7f7a9d3f2f1e81bb32d1c025e2a799">walletOpened</a> (bool success)</td></tr>
+<tr class="separator:aef7f7a9d3f2f1e81bb32d1c025e2a799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a443dc95f50e4a9d8e6d5282e13fedcde"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">~Wallet</a> ()</td></tr>
+<tr class="separator:a443dc95f50e4a9d8e6d5282e13fedcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ea912cda6bb610c3888dad2fd52989"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a13ea912cda6bb610c3888dad2fd52989">createFolder</a> (const QString &amp;f)</td></tr>
+<tr class="separator:a13ea912cda6bb610c3888dad2fd52989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5897988799772b275b1ce6b7f96aff5d"><td class="memItemLeft" align="right" valign="top">virtual const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a5897988799772b275b1ce6b7f96aff5d">currentFolder</a> () const</td></tr>
+<tr class="separator:a5897988799772b275b1ce6b7f96aff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1b80deaefb2aafc956a9dedf3110f8"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a8f1b80deaefb2aafc956a9dedf3110f8">entryList</a> ()</td></tr>
+<tr class="separator:a8f1b80deaefb2aafc956a9dedf3110f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70609a0f05f136c45bb6ca516f9fe00"><td class="memItemLeft" align="right" valign="top">virtual EntryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ac70609a0f05f136c45bb6ca516f9fe00">entryType</a> (const QString &amp;key)</td></tr>
+<tr class="separator:ac70609a0f05f136c45bb6ca516f9fe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a0c9ce1bb132ea65f57152d607f719"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a41a0c9ce1bb132ea65f57152d607f719">folderList</a> ()</td></tr>
+<tr class="separator:a41a0c9ce1bb132ea65f57152d607f719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37950be8a2712446a7a86dca489499d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a37950be8a2712446a7a86dca489499d2">hasEntry</a> (const QString &amp;key)</td></tr>
+<tr class="separator:a37950be8a2712446a7a86dca489499d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75593f21796f7423405dea3a65b74dfe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a75593f21796f7423405dea3a65b74dfe">hasFolder</a> (const QString &amp;f)</td></tr>
+<tr class="separator:a75593f21796f7423405dea3a65b74dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acf596db7d79c10cf2778b6892d4d5f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a4acf596db7d79c10cf2778b6892d4d5f">isOpen</a> () const</td></tr>
+<tr class="separator:a4acf596db7d79c10cf2778b6892d4d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fb06745ae8c526baeff2b41fb3c1f0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a17fb06745ae8c526baeff2b41fb3c1f0">lockWallet</a> ()</td></tr>
+<tr class="separator:a17fb06745ae8c526baeff2b41fb3c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8287b46482402cf70d6d8831e4c06473"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a8287b46482402cf70d6d8831e4c06473">readEntry</a> (const QString &amp;key, QByteArray &amp;value)</td></tr>
+<tr class="separator:a8287b46482402cf70d6d8831e4c06473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d357348d5687dc66f0ecfaf2702f997"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a0d357348d5687dc66f0ecfaf2702f997">readEntryList</a> (const QString &amp;key, QMap&lt; QString, QByteArray &gt; &amp;value)</td></tr>
+<tr class="separator:a0d357348d5687dc66f0ecfaf2702f997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b5e38d102373e501463daa9c648082"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aa0b5e38d102373e501463daa9c648082">readMap</a> (const QString &amp;key, QMap&lt; QString, QString &gt; &amp;value)</td></tr>
+<tr class="separator:aa0b5e38d102373e501463daa9c648082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937a4191ec43f84798ab5e3e2ca6ad8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a937a4191ec43f84798ab5e3e2ca6ad8e">readMapList</a> (const QString &amp;key, QMap&lt; QString, QMap&lt; QString, QString &gt; &gt; &amp;value)</td></tr>
+<tr class="separator:a937a4191ec43f84798ab5e3e2ca6ad8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d99286d1b1be392fe9a4ec540388ac"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ac8d99286d1b1be392fe9a4ec540388ac">readPassword</a> (const QString &amp;key, QString &amp;value)</td></tr>
+<tr class="separator:ac8d99286d1b1be392fe9a4ec540388ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6efc9a0c696b662be1528094311b6078"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a6efc9a0c696b662be1528094311b6078">readPasswordList</a> (const QString &amp;key, QMap&lt; QString, QString &gt; &amp;value)</td></tr>
+<tr class="separator:a6efc9a0c696b662be1528094311b6078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f8b5ae0670de3d1ec57ca1194047f0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a24f8b5ae0670de3d1ec57ca1194047f0">removeEntry</a> (const QString &amp;key)</td></tr>
+<tr class="separator:a24f8b5ae0670de3d1ec57ca1194047f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0b8a3b0eeb3cfb221581ae49c81ceb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aaa0b8a3b0eeb3cfb221581ae49c81ceb">removeFolder</a> (const QString &amp;f)</td></tr>
+<tr class="separator:aaa0b8a3b0eeb3cfb221581ae49c81ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0dee017afd3b4d2ed05ae35d0af034"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a0f0dee017afd3b4d2ed05ae35d0af034">renameEntry</a> (const QString &amp;oldName, const QString &amp;newName)</td></tr>
+<tr class="separator:a0f0dee017afd3b4d2ed05ae35d0af034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa143f30c1dda14a75c0f5b0ec4458be6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aa143f30c1dda14a75c0f5b0ec4458be6">requestChangePassword</a> (WId w)</td></tr>
+<tr class="separator:aa143f30c1dda14a75c0f5b0ec4458be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3da6744454ec13fb52f41731b215765"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ae3da6744454ec13fb52f41731b215765">setFolder</a> (const QString &amp;f)</td></tr>
+<tr class="separator:ae3da6744454ec13fb52f41731b215765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130cd4fc92605d7e237d1105a9ef08c5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a130cd4fc92605d7e237d1105a9ef08c5">sync</a> ()</td></tr>
+<tr class="separator:a130cd4fc92605d7e237d1105a9ef08c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3715e8f2018d84c27da165476bc3a70"><td class="memItemLeft" align="right" valign="top">virtual const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ae3715e8f2018d84c27da165476bc3a70">walletName</a> () const</td></tr>
+<tr class="separator:ae3715e8f2018d84c27da165476bc3a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5989cc8fbe7e304a44dadf7de3e635"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a6d5989cc8fbe7e304a44dadf7de3e635">writeEntry</a> (const QString &amp;key, const QByteArray &amp;value, EntryType <a class="el" href="classKWallet_1_1Wallet.html#ac70609a0f05f136c45bb6ca516f9fe00">entryType</a>)</td></tr>
+<tr class="separator:a6d5989cc8fbe7e304a44dadf7de3e635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459ca4c60660976ebcfb53389c015df7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a459ca4c60660976ebcfb53389c015df7">writeEntry</a> (const QString &amp;key, const QByteArray &amp;value)</td></tr>
+<tr class="separator:a459ca4c60660976ebcfb53389c015df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af859025af4a612a25e24724c9cdada52"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#af859025af4a612a25e24724c9cdada52">writeMap</a> (const QString &amp;key, const QMap&lt; QString, QString &gt; &amp;value)</td></tr>
+<tr class="separator:af859025af4a612a25e24724c9cdada52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad855eaa7974e230a5d26abb74fbbc89d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ad855eaa7974e230a5d26abb74fbbc89d">writePassword</a> (const QString &amp;key, const QString &amp;value)</td></tr>
+<tr class="separator:ad855eaa7974e230a5d26abb74fbbc89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a76bda5b7832c205296c15b0b84f510a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a76bda5b7832c205296c15b0b84f510a6">changePassword</a> (const QString &amp;name, WId w)</td></tr>
+<tr class="separator:a76bda5b7832c205296c15b0b84f510a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31165700f48d8deb3c8568ff551c5c25"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a31165700f48d8deb3c8568ff551c5c25">closeWallet</a> (const QString &amp;name, bool force)</td></tr>
+<tr class="separator:a31165700f48d8deb3c8568ff551c5c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a01ec7d9c1caf5d45150202b611ff92"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a6a01ec7d9c1caf5d45150202b611ff92">deleteWallet</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a6a01ec7d9c1caf5d45150202b611ff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95980714151651d98b40b4572681d5b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aa95980714151651d98b40b4572681d5b">disconnectApplication</a> (const QString &amp;wallet, const QString &amp;app)</td></tr>
+<tr class="separator:aa95980714151651d98b40b4572681d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e1b26496c6316b1a02c71063d997b3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ac0e1b26496c6316b1a02c71063d997b3">folderDoesNotExist</a> (const QString &amp;wallet, const QString &amp;folder)</td></tr>
+<tr class="separator:ac0e1b26496c6316b1a02c71063d997b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af644bc9318e68cc09b569a762daa3597"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#af644bc9318e68cc09b569a762daa3597">FormDataFolder</a> ()</td></tr>
+<tr class="separator:af644bc9318e68cc09b569a762daa3597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4967b716b8f2be3647e1725e4b912e8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#aa4967b716b8f2be3647e1725e4b912e8">isEnabled</a> ()</td></tr>
+<tr class="separator:aa4967b716b8f2be3647e1725e4b912e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ec0560e99f0ea21f524de8edbca77f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a82ec0560e99f0ea21f524de8edbca77f">isOpen</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a82ec0560e99f0ea21f524de8edbca77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc3dddd5a1cdd50f94d399fcf1aacab"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#acbc3dddd5a1cdd50f94d399fcf1aacab">isUsingKSecretsService</a> ()</td></tr>
+<tr class="separator:acbc3dddd5a1cdd50f94d399fcf1aacab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af480db9d17fdf17c94a333bacdf22785"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#af480db9d17fdf17c94a333bacdf22785">keyDoesNotExist</a> (const QString &amp;wallet, const QString &amp;folder, const QString &amp;key)</td></tr>
+<tr class="separator:af480db9d17fdf17c94a333bacdf22785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b58623275af43a137859e13a0f22ed"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#ab1b58623275af43a137859e13a0f22ed">LocalWallet</a> ()</td></tr>
+<tr class="separator:ab1b58623275af43a137859e13a0f22ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571cde1bda4b8d00b4b43d3eb08530bb"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a571cde1bda4b8d00b4b43d3eb08530bb">NetworkWallet</a> ()</td></tr>
+<tr class="separator:a571cde1bda4b8d00b4b43d3eb08530bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdc7a90f734a614cd55f57568854a28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKWallet_1_1Wallet.html">Wallet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#acfdc7a90f734a614cd55f57568854a28">openWallet</a> (const QString &amp;name, WId w, OpenType ot=Synchronous)</td></tr>
+<tr class="separator:acfdc7a90f734a614cd55f57568854a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000df53c2ab5e6824ce93d3fcf44ebb7"><td class="memItemLeft" align="right" valign="top">static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a000df53c2ab5e6824ce93d3fcf44ebb7">PasswordFolder</a> ()</td></tr>
+<tr class="separator:a000df53c2ab5e6824ce93d3fcf44ebb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aaf970f40573b4e39ae6167f4c2badd"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a1aaf970f40573b4e39ae6167f4c2badd">users</a> (const QString &amp;wallet)</td></tr>
+<tr class="separator:a1aaf970f40573b4e39ae6167f4c2badd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ef2d3a1c1622cce7bb1c1655b2b842"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a48ef2d3a1c1622cce7bb1c1655b2b842">walletList</a> ()</td></tr>
+<tr class="separator:a48ef2d3a1c1622cce7bb1c1655b2b842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0dc090b1e78c54242ff4e14d8270013e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a0dc090b1e78c54242ff4e14d8270013e">Wallet</a> (int handle, const QString &amp;name)</td></tr>
+<tr class="separator:a0dc090b1e78c54242ff4e14d8270013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9183eb0d05e5cd53058570cb3596b3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a9183eb0d05e5cd53058570cb3596b3b0">Wallet</a> (const <a class="el" href="classKWallet_1_1Wallet.html">Wallet</a> &amp;)</td></tr>
+<tr class="separator:a9183eb0d05e5cd53058570cb3596b3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1702f5678c494c39bd1160debdd0b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWallet_1_1Wallet.html#a0e1702f5678c494c39bd1160debdd0b6">virtual_hook</a> (int id, void *data)</td></tr>
+<tr class="separator:a0e1702f5678c494c39bd1160debdd0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>KDE <a class="el" href="classKWallet_1_1Wallet.html" title="KDE Wallet. ">Wallet</a>. </p>
+<p>This class implements a generic system-wide <a class="el" href="classKWallet_1_1Wallet.html" title="KDE Wallet. ">Wallet</a> for KDE. This is the ONLY public interface.</p>
+<dl class="section author"><dt>Author</dt><dd>George Staikos <a href="#" onclick="location.href='mai'+'lto:'+'sta'+'ik'+'os@'+'kd'+'e.o'+'rg'; return false;">staik<span style="display: none;">.nosp@m.</span>os@k<span style="display: none;">.nosp@m.</span>de.or<span style="display: none;">.nosp@m.</span>g</a> KDE <a class="el" href="classKWallet_1_1Wallet.html" title="KDE Wallet. ">Wallet</a> Class </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8h_source.html#l00060">60</a> of file <a class="el" href="kwallet_8h_source.html">kwallet.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0dc090b1e78c54242ff4e14d8270013e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc090b1e78c54242ff4e14d8270013e">&#9670;&nbsp;</a></span>Wallet() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wallet::Wallet </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="namespaceKWallet.html" title="This file is part of the KDE project Copyright (C) 2013 Valentin Rusu kde@rusu.info ...">KWallet</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The handle for the wallet. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the wallet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00232">232</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9183eb0d05e5cd53058570cb3596b3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9183eb0d05e5cd53058570cb3596b3b0">&#9670;&nbsp;</a></span>Wallet() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWallet::Wallet::Wallet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKWallet_1_1Wallet.html">Wallet</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy a <a class="el" href="namespaceKWallet.html" title="This file is part of the KDE project Copyright (C) 2013 Valentin Rusu kde@rusu.info ...">KWallet</a> object. </p>
+
+</div>
+</div>
+<a id="a443dc95f50e4a9d8e6d5282e13fedcde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a443dc95f50e4a9d8e6d5282e13fedcde">&#9670;&nbsp;</a></span>~Wallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wallet::~Wallet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy a <a class="el" href="namespaceKWallet.html" title="This file is part of the KDE project Copyright (C) 2013 Valentin Rusu kde@rusu.info ...">KWallet</a> object. </p>
+<p>Closes the wallet. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00259">259</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a76bda5b7832c205296c15b0b84f510a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bda5b7832c205296c15b0b84f510a6">&#9670;&nbsp;</a></span>changePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wallet::changePassword </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request to the wallet service to change the password of the wallet <code>name</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The wallet to change the password of. </td></tr>
+    <tr><td class="paramname">w</td><td>The window id to associate any dialogs with. You can pass 0 if you don't have a window the password dialog should associate with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00313">313</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a31165700f48d8deb3c8568ff551c5c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31165700f48d8deb3c8568ff551c5c25">&#9670;&nbsp;</a></span>closeWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::closeWallet </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close the wallet <code>name</code>. </p>
+<p>The wallet will only be closed if it is open but not in use (rare), or if it is forced closed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the wallet to close. </td></tr>
+    <tr><td class="paramname">force</td><td>Set true to force the wallet closed even if it is in use by others. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00379">379</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13ea912cda6bb610c3888dad2fd52989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ea912cda6bb610c3888dad2fd52989">&#9670;&nbsp;</a></span>createFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::createFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Created the folder <code>f</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>the name of the folder to create </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder was successfully created. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00818">818</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5897988799772b275b1ce6b7f96aff5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5897988799772b275b1ce6b7f96aff5d">&#9670;&nbsp;</a></span>currentFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; Wallet::currentFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine the current working folder in the wallet. </p>
+<p>If the folder name is empty, it is working in the global folder, which is valid but discouraged. </p><dl class="section return"><dt>Returns</dt><dd>Returns the current working folder. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00931">931</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a01ec7d9c1caf5d45150202b611ff92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a01ec7d9c1caf5d45150202b611ff92">&#9670;&nbsp;</a></span>deleteWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::deleteWallet </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete the wallet <code>name</code>. </p>
+<p>The wallet will be forced closed first. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the wallet to delete. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00402">402</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa95980714151651d98b40b4572681d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95980714151651d98b40b4572681d5b">&#9670;&nbsp;</a></span>disconnectApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::disconnectApplication </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>wallet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>app</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnect the application <code>app</code> from <code>wallet</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wallet</td><td>The name of the wallet to disconnect. </td></tr>
+    <tr><td class="paramname">app</td><td>The name of the application to disconnect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true on success, false on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00545">545</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f1b80deaefb2aafc956a9dedf3110f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1b80deaefb2aafc956a9dedf3110f8">&#9670;&nbsp;</a></span>entryList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Wallet::entryList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the list of keys of all entries in this folder. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns an empty list if the wallet is not open, or if the folder is empty. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00752">752</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac70609a0f05f136c45bb6ca516f9fe00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70609a0f05f136c45bb6ca516f9fe00">&#9670;&nbsp;</a></span>entryType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wallet::EntryType Wallet::entryType </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine the type of the entry <code>key</code> in this folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an enumerated type representing the type of the entry. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01421">1421</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac0e1b26496c6316b1a02c71063d997b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e1b26496c6316b1a02c71063d997b3">&#9670;&nbsp;</a></span>folderDoesNotExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::folderDoesNotExist </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>wallet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if a folder does not exist in a wallet. </p>
+<p>This does not require decryption of the wallet. This is a handy optimization to avoid prompting the user if your data is certainly not in the wallet. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wallet</td><td>The wallet to look in. </td></tr>
+    <tr><td class="paramname">folder</td><td>The folder to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder does NOT exist in the wallet, or the wallet does not exist. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01551">1551</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a41a0c9ce1bb132ea65f57152d607f719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a0c9ce1bb132ea65f57152d607f719">&#9670;&nbsp;</a></span>folderList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Wallet::folderList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the list of all folders contained in the wallet. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns an empty list if the wallet is not open. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00706">706</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b4f07c045d7650ce30aa8df584ca975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4f07c045d7650ce30aa8df584ca975">&#9670;&nbsp;</a></span>folderListUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWallet::Wallet::folderListUpdated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the folder list is changed in this wallet. </p>
+
+</div>
+</div>
+<a id="abe99da68e094ad218c302c0851692980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe99da68e094ad218c302c0851692980">&#9670;&nbsp;</a></span>folderRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWallet::Wallet::folderRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a folder in this wallet is removed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>The folder that was removed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b0129c74641130020b7b95a56539580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0129c74641130020b7b95a56539580">&#9670;&nbsp;</a></span>folderUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWallet::Wallet::folderUpdated </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a folder in this wallet is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>The folder that was updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af644bc9318e68cc09b569a762daa3597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af644bc9318e68cc09b569a762daa3597">&#9670;&nbsp;</a></span>FormDataFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString Wallet::FormDataFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The standardized name of the form data folder. </p>
+<p>It is automatically created when a wallet is created, but the user may still delete it so you should check for its existence and recreate it if necessary and desired. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00130">130</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a37950be8a2712446a7a86dca489499d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37950be8a2712446a7a86dca489499d2">&#9670;&nbsp;</a></span>hasEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::hasEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the current folder has they entry <code>key</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder contains <code>key</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01366">1366</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a75593f21796f7423405dea3a65b74dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75593f21796f7423405dea3a65b74dfe">&#9670;&nbsp;</a></span>hasFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::hasFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the folder <code>f</code> exists in the wallet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>the name of the folder to check for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder exists in the wallet. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00791">791</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa4967b716b8f2be3647e1725e4b912e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4967b716b8f2be3647e1725e4b912e8">&#9670;&nbsp;</a></span>isEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::isEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the KDE wallet is enabled. </p>
+<p>Normally you do not need to use this because <a class="el" href="classKWallet_1_1Wallet.html#acfdc7a90f734a614cd55f57568854a28" title="Open the wallet name. ">openWallet()</a> will just fail. </p><dl class="section return"><dt>Returns</dt><dd>Returns true if the wallet enabled, else false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00339">339</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a82ec0560e99f0ea21f524de8edbca77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ec0560e99f0ea21f524de8edbca77f">&#9670;&nbsp;</a></span>isOpen() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::isOpen </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the wallet <code>name</code> is open by any application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the wallet to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the wallet is open, else false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00352">352</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4acf596db7d79c10cf2778b6892d4d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acf596db7d79c10cf2778b6892d4d5f">&#9670;&nbsp;</a></span>isOpen() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::isOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the current wallet is open, and is a valid wallet handle. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the wallet handle is valid and open. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00647">647</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acbc3dddd5a1cdd50f94d399fcf1aacab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc3dddd5a1cdd50f94d399fcf1aacab">&#9670;&nbsp;</a></span>isUsingKSecretsService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWallet::Wallet::isUsingKSecretsService </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the <a class="el" href="namespaceKWallet.html" title="This file is part of the KDE project Copyright (C) 2013 Valentin Rusu kde@rusu.info ...">KWallet</a> API is using the KSecretsService infrastructure This can ben changed in system settings. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the KSecretsService infrastructure is active </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00089">89</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af480db9d17fdf17c94a333bacdf22785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af480db9d17fdf17c94a333bacdf22785">&#9670;&nbsp;</a></span>keyDoesNotExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::keyDoesNotExist </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>wallet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if an entry in a folder does not exist in a wallet. </p>
+<p>This does not require decryption of the wallet. This is a handy optimization to avoid prompting the user if your data is certainly not in the wallet. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wallet</td><td>The wallet to look in. </td></tr>
+    <tr><td class="paramname">folder</td><td>The folder to look in. </td></tr>
+    <tr><td class="paramname">key</td><td>The key to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the key does NOT exist in the wallet, or the folder or wallet does not exist. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01578">1578</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1b58623275af43a137859e13a0f22ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b58623275af43a137859e13a0f22ed">&#9670;&nbsp;</a></span>LocalWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString Wallet::LocalWallet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the wallet used to store local passwords. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00094">94</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17fb06745ae8c526baeff2b41fb3c1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fb06745ae8c526baeff2b41fb3c1f0">&#9670;&nbsp;</a></span>lockWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::lockWallet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This closes and locks the current wallet. </p>
+<p>It will disconnect all applications using the wallet. </p><dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00608">608</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a571cde1bda4b8d00b4b43d3eb08530bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571cde1bda4b8d00b4b43d3eb08530bb">&#9670;&nbsp;</a></span>NetworkWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString Wallet::NetworkWallet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the wallet used to store network passwords. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00113">113</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acfdc7a90f734a614cd55f57568854a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdc7a90f734a614cd55f57568854a28">&#9670;&nbsp;</a></span>openWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKWallet_1_1Wallet.html">Wallet</a> * Wallet::openWallet </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenType&#160;</td>
+          <td class="paramname"><em>ot</em> = <code>Synchronous</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open the wallet <code>name</code>. </p>
+<p>The user will be prompted to allow your application to open the wallet, and may be prompted for a password. You are responsible for deleting this object when you are done with it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the wallet to open. </td></tr>
+    <tr><td class="paramname">ot</td><td>If Asynchronous, the call will return immediately with a non-null pointer to an invalid wallet. You must immediately connect the <a class="el" href="classKWallet_1_1Wallet.html#aef7f7a9d3f2f1e81bb32d1c025e2a799" title="Emitted when a wallet is opened in asynchronous mode. ">walletOpened()</a> signal to a slot so that you will know when it is opened, or when it fails. </td></tr>
+    <tr><td class="paramname">w</td><td>The window id to associate any dialogs with. You can pass 0 if you don't have a window the password dialog should associate with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the wallet if successful, or a null pointer on error or if rejected. A null pointer can also be returned if user choose to deactivate the wallet system. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00429">429</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a000df53c2ab5e6824ce93d3fcf44ebb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000df53c2ab5e6824ce93d3fcf44ebb7">&#9670;&nbsp;</a></span>PasswordFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString Wallet::PasswordFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The standardized name of the password folder. </p>
+<p>It is automatically created when a wallet is created, but the user may still delete it so you should check for its existence and recreate it if necessary and desired. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00125">125</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8287b46482402cf70d6d8831e4c06473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8287b46482402cf70d6d8831e4c06473">&#9670;&nbsp;</a></span>readEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the entry <code>key</code> from the current folder. </p>
+<p>The entry format is unknown except that it is either a QByteArray or a QDataStream, which effectively means that it is anything. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. </td></tr>
+    <tr><td class="paramname">value</td><td>A buffer to fill with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00994">994</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0d357348d5687dc66f0ecfaf2702f997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d357348d5687dc66f0ecfaf2702f997">&#9670;&nbsp;</a></span>readEntryList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readEntryList </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QMap&lt; QString, QByteArray &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the entries matching <code>key</code> from the current folder. </p>
+<p>The entry format is unknown except that it is either a QByteArray or a QDataStream, which effectively means that it is anything. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. Wildcards are supported. </td></tr>
+    <tr><td class="paramname">value</td><td>A buffer to fill with the value. The key in the map is the entry key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01038">1038</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0b5e38d102373e501463daa9c648082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b5e38d102373e501463daa9c648082">&#9670;&nbsp;</a></span>readMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readMap </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QMap&lt; QString, QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the map entry <code>key</code> from the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. </td></tr>
+    <tr><td class="paramname">value</td><td>A map buffer to fill with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. Will return an error if the key was not originally written as a map. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01103">1103</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a937a4191ec43f84798ab5e3e2ca6ad8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937a4191ec43f84798ab5e3e2ca6ad8e">&#9670;&nbsp;</a></span>readMapList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readMapList </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QMap&lt; QString, QMap&lt; QString, QString &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the map entry <code>key</code> from the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. Wildcards are supported. </td></tr>
+    <tr><td class="paramname">value</td><td>A buffer to fill with the value. The key in the map is the entry key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. Will return an error if the key was not originally written as a map. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01156">1156</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8d99286d1b1be392fe9a4ec540388ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d99286d1b1be392fe9a4ec540388ac">&#9670;&nbsp;</a></span>readPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readPassword </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the password entry <code>key</code> from the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. </td></tr>
+    <tr><td class="paramname">value</td><td>A password buffer to fill with the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. Will return an error if the key was not originally written as a password. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01193">1193</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6efc9a0c696b662be1528094311b6078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6efc9a0c696b662be1528094311b6078">&#9670;&nbsp;</a></span>readPasswordList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::readPasswordList </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QMap&lt; QString, QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the password entry <code>key</code> from the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the entry to read. Wildcards are supported. </td></tr>
+    <tr><td class="paramname">value</td><td>A buffer to fill with the value. The key in the map is the entry key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. Will return an error if the key was not originally written as a password. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01235">1235</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a24f8b5ae0670de3d1ec57ca1194047f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f8b5ae0670de3d1ec57ca1194047f0">&#9670;&nbsp;</a></span>removeEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::removeEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove the entry <code>key</code> from the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01390">1390</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa0b8a3b0eeb3cfb221581ae49c81ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0b8a3b0eeb3cfb221581ae49c81ceb">&#9670;&nbsp;</a></span>removeFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::removeFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove the folder <code>f</code> and all its entries from the wallet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>the name of the folder to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder was successfully removed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00883">883</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0f0dee017afd3b4d2ed05ae35d0af034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0dee017afd3b4d2ed05ae35d0af034">&#9670;&nbsp;</a></span>renameEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::renameEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>oldName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>newName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rename the entry <code>oldName</code> to <code>newName</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldName</td><td>The original key of the entry. </td></tr>
+    <tr><td class="paramname">newName</td><td>The new key of the entry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01070">1070</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa143f30c1dda14a75c0f5b0ec4458be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa143f30c1dda14a75c0f5b0ec4458be6">&#9670;&nbsp;</a></span>requestChangePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wallet::requestChangePassword </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request to the wallet service to change the password of the current wallet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>The window id to associate any dialogs with. You can pass 0 if you don't have a window the password dialog should associate with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00660">660</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae3da6744454ec13fb52f41731b215765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3da6744454ec13fb52f41731b215765">&#9670;&nbsp;</a></span>setFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Wallet::setFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current working folder to <code>f</code>. </p>
+<p>The folder must exist, or this call will fail. Create a folder with <a class="el" href="classKWallet_1_1Wallet.html#a13ea912cda6bb610c3888dad2fd52989" title="Created the folder f. ">createFolder()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>the name of the folder to make the working folder </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the folder was successfully set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00849">849</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a130cd4fc92605d7e237d1105a9ef08c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130cd4fc92605d7e237d1105a9ef08c5">&#9670;&nbsp;</a></span>sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::sync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This syncs the wallet file on disk with what is in memory. </p>
+<p>You don't normally need to use this. It happens automatically on close. </p><dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00590">590</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1aaf970f40573b4e39ae6167f4c2badd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aaf970f40573b4e39ae6167f4c2badd">&#9670;&nbsp;</a></span>users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Wallet::users </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>wallet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List the applications that are using the wallet <code>wallet</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wallet</td><td>The wallet to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a list of all DCOP application IDs using the wallet. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00568">568</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e1702f5678c494c39bd1160debdd0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1702f5678c494c39bd1160debdd0b6">&#9670;&nbsp;</a></span>virtual_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wallet::virtual_hook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01604">1604</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a697ff23f1fbc85bd6e18f5e6bb078e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697ff23f1fbc85bd6e18f5e6bb078e01">&#9670;&nbsp;</a></span>walletClosed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWallet::Wallet::walletClosed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when this wallet is closed. </p>
+
+</div>
+</div>
+<a id="a48ef2d3a1c1622cce7bb1c1655b2b842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ef2d3a1c1622cce7bb1c1655b2b842">&#9670;&nbsp;</a></span>walletList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Wallet::walletList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List all the wallets available. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a list of the names of all wallets that are open. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00285">285</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae3715e8f2018d84c27da165476bc3a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3715e8f2018d84c27da165476bc3a70">&#9670;&nbsp;</a></span>walletName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; Wallet::walletName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the current wallet. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l00642">642</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aef7f7a9d3f2f1e81bb32d1c025e2a799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7f7a9d3f2f1e81bb32d1c025e2a799">&#9670;&nbsp;</a></span>walletOpened</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWallet::Wallet::walletOpened </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>success</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when a wallet is opened in asynchronous mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">success</td><td>True if the wallet was opened successfully. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d5989cc8fbe7e304a44dadf7de3e635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5989cc8fbe7e304a44dadf7de3e635">&#9670;&nbsp;</a></span>writeEntry() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::writeEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntryType&#160;</td>
+          <td class="paramname"><em>entryType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write <code>key</code> = <code>value</code> as a binary entry to the current folder. </p>
+<p>Be careful with this, it could cause inconsistency in the future since you can put an arbitrary entry type in place. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the new entry. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the entry. </td></tr>
+    <tr><td class="paramname">entryType</td><td>The type of the entry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01265">1265</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a459ca4c60660976ebcfb53389c015df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459ca4c60660976ebcfb53389c015df7">&#9670;&nbsp;</a></span>writeEntry() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::writeEntry </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write <code>key</code> = <code>value</code> as a binary entry to the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the new entry. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the entry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01289">1289</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af859025af4a612a25e24724c9cdada52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af859025af4a612a25e24724c9cdada52">&#9670;&nbsp;</a></span>writeMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::writeMap </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QMap&lt; QString, QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write <code>key</code> = <code>value</code> as a map to the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the new entry. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the map. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01313">1313</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad855eaa7974e230a5d26abb74fbbc89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad855eaa7974e230a5d26abb74fbbc89d">&#9670;&nbsp;</a></span>writePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Wallet::writePassword </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write <code>key</code> = <code>value</code> as a password to the current folder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the new entry. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the password. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, non-zero on error. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwallet_8cpp_source.html#l01342">1342</a> of file <a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kwallet_8h_source.html">kwallet.h</a></li>
+<li><a class="el" href="kwallet_8cpp_source.html">kwallet.cpp</a></li>
+<li><a class="el" href="kwallet__mac_8cpp_source.html">kwallet_mac.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:13 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

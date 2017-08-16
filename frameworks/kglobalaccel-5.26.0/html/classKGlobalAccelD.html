@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KGlobalAccel - KGlobalAccelD Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KGlobalAccel</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KGlobalAccel"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKdeDGlobalAccel_1_1Component.html">KdeDGlobalAccel::Component</option>
+        
+        <option value="classGlobalShortcut.html">GlobalShortcut</option>
+        
+        <option value="classGlobalShortcutContext.html">GlobalShortcutContext</option>
+        
+        <option value="classGlobalShortcutsRegistry.html">GlobalShortcutsRegistry</option>
+        
+        <option value="classKGlobalAccel.html">KGlobalAccel</option>
+        
+        <option value="classKGlobalAccelD.html">KGlobalAccelD</option>
+        
+        <option value="classKGlobalAccelImpl.html">KGlobalAccelImpl</option>
+        
+        <option value="classKGlobalAccelInterface.html">KGlobalAccelInterface</option>
+        
+        <option value="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</option>
+        
+        <option value="classKdeDGlobalAccel_1_1KServiceActionComponent.html">KdeDGlobalAccel::KServiceActionComponent</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Add support for global workspace shortcuts</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5GlobalAccel)
+target_link_libraries(yourapp KF5::GlobalAccel)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KGlobalAccel </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kglobalaccel-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KGlobalAccel on <a href="https://cgit.kde.org/kglobalaccel-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KGlobalAccel </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KGlobalAccelD">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKGlobalAccelD-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KGlobalAccelD Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kglobalacceld_8h_source.html">kglobalacceld.h</a>&gt;</code></p>
+
+<p>Inherits QObject, and QDBusContext.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a63e6a67bade7830206942cbca2f17928"><td class="memItemLeft" align="right" valign="top"><a id="a63e6a67bade7830206942cbca2f17928"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SetShortcutFlag</b> { <b>SetPresent</b> = 2,
+<b>NoAutoloading</b> = 4,
+<b>IsDefault</b> = 8
+ }</td></tr>
+<tr class="separator:a63e6a67bade7830206942cbca2f17928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a2b33a0e062a819a332822a51f8368998"><td class="memItemLeft" align="right" valign="top"><a id="a2b33a0e062a819a332822a51f8368998"></a>
+Q_SCRIPTABLE QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (int key) const</td></tr>
+<tr class="separator:a2b33a0e062a819a332822a51f8368998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae292e8ed82216a772215c8d269dfb7bc"><td class="memItemLeft" align="right" valign="top"><a id="ae292e8ed82216a772215c8d269dfb7bc"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>activateGlobalShortcutContext</b> (const QString &amp;component, const QString &amp;context)</td></tr>
+<tr class="separator:ae292e8ed82216a772215c8d269dfb7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7ca563357a53b390c0e7db689e2ebb"><td class="memItemLeft" align="right" valign="top"><a id="a9c7ca563357a53b390c0e7db689e2ebb"></a>
+Q_SCRIPTABLE QList&lt; QStringList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allActionsForComponent</b> (const QStringList &amp;actionId) const</td></tr>
+<tr class="separator:a9c7ca563357a53b390c0e7db689e2ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8f917acc00a747e14ee794456fcc36"><td class="memItemLeft" align="right" valign="top">Q_SCRIPTABLE QList&lt; QDBusObjectPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKGlobalAccelD.html#aef8f917acc00a747e14ee794456fcc36">allComponents</a> () const</td></tr>
+<tr class="separator:aef8f917acc00a747e14ee794456fcc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870bf307607bbfebab7790b1f1a76761"><td class="memItemLeft" align="right" valign="top"><a id="a870bf307607bbfebab7790b1f1a76761"></a>
+Q_SCRIPTABLE QList&lt; QStringList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allMainComponents</b> () const</td></tr>
+<tr class="separator:a870bf307607bbfebab7790b1f1a76761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fbd6072b73325164833abf31a2e407"><td class="memItemLeft" align="right" valign="top"><a id="ab1fbd6072b73325164833abf31a2e407"></a>
+Q_SCRIPTABLE QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>defaultShortcut</b> (const QStringList &amp;actionId) const</td></tr>
+<tr class="separator:ab1fbd6072b73325164833abf31a2e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdb2a0c781790c20323978cae0bd9b6"><td class="memItemLeft" align="right" valign="top"><a id="a3fdb2a0c781790c20323978cae0bd9b6"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>doRegister</b> (const QStringList &amp;actionId)</td></tr>
+<tr class="separator:a3fdb2a0c781790c20323978cae0bd9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d20f0e83ead7196a6533fb9052a9e9"><td class="memItemLeft" align="right" valign="top">Q_SCRIPTABLE QDBusObjectPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKGlobalAccelD.html#af6d20f0e83ead7196a6533fb9052a9e9">getComponent</a> (const QString &amp;componentUnique) const</td></tr>
+<tr class="separator:af6d20f0e83ead7196a6533fb9052a9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1361ef80f4d6aecdd49deab0cc679a"><td class="memItemLeft" align="right" valign="top">Q_SCRIPTABLE QList&lt; <a class="el" href="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKGlobalAccelD.html#a6a1361ef80f4d6aecdd49deab0cc679a">getGlobalShortcutsByKey</a> (int key) const</td></tr>
+<tr class="separator:a6a1361ef80f4d6aecdd49deab0cc679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda18930cbdaa3996a928df59d2a7f3e"><td class="memItemLeft" align="right" valign="top">Q_SCRIPTABLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKGlobalAccelD.html#aeda18930cbdaa3996a928df59d2a7f3e">isGlobalShortcutAvailable</a> (int key, const QString &amp;component) const</td></tr>
+<tr class="separator:aeda18930cbdaa3996a928df59d2a7f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d01399b246a5497bd0ae5b3a9d9d50"><td class="memItemLeft" align="right" valign="top"><a id="ab1d01399b246a5497bd0ae5b3a9d9d50"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>setForeignShortcut</b> (const QStringList &amp;actionId, const QList&lt; int &gt; &amp;keys)</td></tr>
+<tr class="separator:ab1d01399b246a5497bd0ae5b3a9d9d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d248400b14e0f94797e1d37e436238"><td class="memItemLeft" align="right" valign="top"><a id="a73d248400b14e0f94797e1d37e436238"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>setInactive</b> (const QStringList &amp;actionId)</td></tr>
+<tr class="separator:a73d248400b14e0f94797e1d37e436238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14052dd41e61fdef4befdcf1093ef0b"><td class="memItemLeft" align="right" valign="top"><a id="ab14052dd41e61fdef4befdcf1093ef0b"></a>
+Q_SCRIPTABLE QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>setShortcut</b> (const QStringList &amp;actionId, const QList&lt; int &gt; &amp;keys, uint flags)</td></tr>
+<tr class="separator:ab14052dd41e61fdef4befdcf1093ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea13f17d25cab29c0c43be58d2d694dd"><td class="memItemLeft" align="right" valign="top"><a id="aea13f17d25cab29c0c43be58d2d694dd"></a>
+Q_SCRIPTABLE QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shortcut</b> (const QStringList &amp;actionId) const</td></tr>
+<tr class="separator:aea13f17d25cab29c0c43be58d2d694dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491a4c753b4a8e45e33aa33bf94e9382"><td class="memItemLeft" align="right" valign="top">Q_SCRIPTABLE QT_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKGlobalAccelD.html#a491a4c753b4a8e45e33aa33bf94e9382">unRegister</a> (const QStringList &amp;actionId)</td></tr>
+<tr class="separator:a491a4c753b4a8e45e33aa33bf94e9382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a19d4dd99eb86e614f2fdbd838b3c0b"><td class="memItemLeft" align="right" valign="top"><a id="a0a19d4dd99eb86e614f2fdbd838b3c0b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KGlobalAccelD</b> (QObject *parent=NULL)</td></tr>
+<tr class="separator:a0a19d4dd99eb86e614f2fdbd838b3c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9801e635806c8c4b7e569b20cc4b07"><td class="memItemLeft" align="right" valign="top"><a id="a8a9801e635806c8c4b7e569b20cc4b07"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="separator:a8a9801e635806c8c4b7e569b20cc4b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+.</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp5058f1af8388633f609cadb75a75dc9d"></a>Delete the shortcut with <em>component</em> and</p>
+<p>The shortcut is removed from the registry even if it is currently present.</p>
+<p>It is removed from all contexts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentUnique</td><td>the components unique identifier </td></tr>
+    <tr><td class="paramname">shortcutUnique</td><td>the shortcut id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the shortcuts was deleted, <code>false</code> if it didn't * exist. </dd></dl>
+</td></tr>
+<tr class="memitem:a1bb667415530ed01597dea5b19614b6b"><td class="memItemLeft" align="right" valign="top"><a id="a1bb667415530ed01597dea5b19614b6b"></a>
+Q_SCRIPTABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>unregister</b> (const QString &amp;componentUnique, const QString &amp;shortcutUnique)</td></tr>
+<tr class="separator:a1bb667415530ed01597dea5b19614b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdb8b4973b187dd5e0b90dc4776fc28"><td class="memItemLeft" align="right" valign="top"><a id="afcdb8b4973b187dd5e0b90dc4776fc28"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>blockGlobalShortcuts</b> (bool)</td></tr>
+<tr class="separator:afcdb8b4973b187dd5e0b90dc4776fc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fa2c3516f279447aa8d0e4e7795a32"><td class="memItemLeft" align="right" valign="top"><a id="a40fa2c3516f279447aa8d0e4e7795a32"></a>
+Q_SCRIPTABLE void&#160;</td><td class="memItemRight" valign="bottom"><b>yourShortcutGotChanged</b> (const QStringList &amp;actionId, const QList&lt; int &gt; &amp;newKeys)</td></tr>
+<tr class="separator:a40fa2c3516f279447aa8d0e4e7795a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>get rid of all of those QStringList parameters.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8h_source.html#l00038">38</a> of file <a class="el" href="kglobalacceld_8h_source.html">kglobalacceld.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef8f917acc00a747e14ee794456fcc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8f917acc00a747e14ee794456fcc36">&#9670;&nbsp;</a></span>allComponents</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QDBusObjectPath &gt; KGlobalAccelD::allComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the dbus path for all known components. </p>
+<p>The returned path is absolute. No need to prepend anything. </p>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8cpp_source.html#l00336">336</a> of file <a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6d20f0e83ead7196a6533fb9052a9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d20f0e83ead7196a6533fb9052a9e9">&#9670;&nbsp;</a></span>getComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDBusObjectPath KGlobalAccelD::getComponent </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentUnique</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the dbus path for @ componentUnique. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentUnique</td><td>the components unique identifier</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the absolute dbus path </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8cpp_source.html#l00411">411</a> of file <a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a1361ef80f4d6aecdd49deab0cc679a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1361ef80f4d6aecdd49deab0cc679a">&#9670;&nbsp;</a></span>getGlobalShortcutsByKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKGlobalShortcutInfo.html">KGlobalShortcutInfo</a> &gt; KGlobalAccelD::getGlobalShortcutsByKey </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the shortcuts registered for <code>key</code>. </p>
+<p>If there is more than one shortcut they are guaranteed to be from the same component but different contexts. All shortcuts are searched. </p>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8cpp_source.html#l00432">432</a> of file <a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeda18930cbdaa3996a928df59d2a7f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda18930cbdaa3996a928df59d2a7f3e">&#9670;&nbsp;</a></span>isGlobalShortcutAvailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KGlobalAccelD::isGlobalShortcutAvailable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the <code>shortcut</code> is available for <code>component</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8cpp_source.html#l00453">453</a> of file <a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a491a4c753b4a8e45e33aa33bf94e9382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491a4c753b4a8e45e33aa33bf94e9382">&#9670;&nbsp;</a></span>unRegister</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KGlobalAccelD::unRegister </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>actionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>unregister </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kglobalacceld_8cpp_source.html#l00492">492</a> of file <a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kglobalacceld_8h_source.html">kglobalacceld.h</a></li>
+<li><a class="el" href="kglobalacceld_8cpp_source.html">kglobalacceld.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:00 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

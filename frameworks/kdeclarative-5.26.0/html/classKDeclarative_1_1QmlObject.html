@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDeclarative - KDeclarative::QmlObject Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDeclarative</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDeclarative"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKQuickAddons_1_1ConfigModule.html">KQuickAddons::ConfigModule</option>
+        
+        <option value="classDeclarativeMimeData.html">DeclarativeMimeData</option>
+        
+        <option value="classImageTexturesCache.html">ImageTexturesCache</option>
+        
+        <option value="classKDeclarativeMouseEvent.html">KDeclarativeMouseEvent</option>
+        
+        <option value="classKUserProxy.html">KUserProxy</option>
+        
+        <option value="classKWindowSystemProxy.html">KWindowSystemProxy</option>
+        
+        <option value="classManagedTextureNode.html">ManagedTextureNode</option>
+        
+        <option value="classMimeDataWrapper.html">MimeDataWrapper</option>
+        
+        <option value="classPlotData.html">PlotData</option>
+        
+        <option value="classKDeclarative_1_1QmlObject.html">KDeclarative::QmlObject</option>
+        
+        <option value="classKDeclarative_1_1QmlObjectSharedEngine.html">KDeclarative::QmlObjectSharedEngine</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Provides integration of QML and KDE Frameworks</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Declarative)
+target_link_libraries(yourapp KF5::Declarative)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDeclarative </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdeclarative-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDeclarative on <a href="https://cgit.kde.org/kdeclarative-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDeclarative </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=QmlObject">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KDeclarative</b></li><li class="navelem"><a class="el" href="classKDeclarative_1_1QmlObject.html">QmlObject</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKDeclarative_1_1QmlObject-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDeclarative::QmlObject Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for KDeclarative::QmlObject:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKDeclarative_1_1QmlObject__inherit__graph.png" border="0" usemap="#KDeclarative_1_1QmlObject_inherit__map" alt="Inheritance graph"/></div>
+<map name="KDeclarative_1_1QmlObject_inherit__map" id="KDeclarative_1_1QmlObject_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a71e9d14e51c63cff1c7f008501e26f33"><td class="memItemLeft" align="right" valign="top"><a id="a71e9d14e51c63cff1c7f008501e26f33"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initializationDelayed</b></td></tr>
+<tr class="separator:a71e9d14e51c63cff1c7f008501e26f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a38b0a537fa97c755b6e519ddc4261"><td class="memItemLeft" align="right" valign="top"><a id="a80a38b0a537fa97c755b6e519ddc4261"></a>
+QObject&#160;</td><td class="memItemRight" valign="bottom"><b>rootObject</b></td></tr>
+<tr class="separator:a80a38b0a537fa97c755b6e519ddc4261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab27038895f7ae352bea30e6638bfe35"><td class="memItemLeft" align="right" valign="top"><a id="aab27038895f7ae352bea30e6638bfe35"></a>
+QUrl&#160;</td><td class="memItemRight" valign="bottom"><b>source</b></td></tr>
+<tr class="separator:aab27038895f7ae352bea30e6638bfe35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48a29bb4f7650fd95edc95f27767860"><td class="memItemLeft" align="right" valign="top"><a id="ac48a29bb4f7650fd95edc95f27767860"></a>
+QQmlComponent::Status&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:ac48a29bb4f7650fd95edc95f27767860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197416bc243ec5387876744437f70271"><td class="memItemLeft" align="right" valign="top"><a id="a197416bc243ec5387876744437f70271"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>translationDomain</b></td></tr>
+<tr class="separator:a197416bc243ec5387876744437f70271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a25e3e86a183e2c9273c1119271d4cff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a25e3e86a183e2c9273c1119271d4cff8">finished</a> ()</td></tr>
+<tr class="separator:a25e3e86a183e2c9273c1119271d4cff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90cc301a1b120e56f5eb5e1d28251de"><td class="memItemLeft" align="right" valign="top"><a id="ae90cc301a1b120e56f5eb5e1d28251de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>statusChanged</b> (QQmlComponent::Status)</td></tr>
+<tr class="separator:ae90cc301a1b120e56f5eb5e1d28251de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a0d279161a226bd02d4e41177d93cf0ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a0d279161a226bd02d4e41177d93cf0ee">completeInitialization</a> (const QVariantHash &amp;initialProperties=QVariantHash())</td></tr>
+<tr class="separator:a0d279161a226bd02d4e41177d93cf0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab153f10cbcfdd8ab7a6f8c801a42db56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#ab153f10cbcfdd8ab7a6f8c801a42db56">QmlObject</a> (QObject *parent=0)</td></tr>
+<tr class="separator:ab153f10cbcfdd8ab7a6f8c801a42db56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1720770de8b91876e2f055ce7437ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a0a1720770de8b91876e2f055ce7437ff">QmlObject</a> (QQmlEngine *<a class="el" href="classKDeclarative_1_1QmlObject.html#a6eb64b1fa4e365b9bb8860b0de6e5bf1">engine</a>, QObject *parent=0)</td></tr>
+<tr class="separator:a0a1720770de8b91876e2f055ce7437ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6e219cd6e32f3dd4a1c7b2583187e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a0e6e219cd6e32f3dd4a1c7b2583187e1">QmlObject</a> (QQmlEngine *<a class="el" href="classKDeclarative_1_1QmlObject.html#a6eb64b1fa4e365b9bb8860b0de6e5bf1">engine</a>, QQmlContext *<a class="el" href="classKDeclarative_1_1QmlObject.html#a26bc8084d1aa225ef66de677c788e40a">rootContext</a>, QObject *parent=0)</td></tr>
+<tr class="separator:a0e6e219cd6e32f3dd4a1c7b2583187e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0470139f6e29c69ca979c7025a24ab0"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#ac0470139f6e29c69ca979c7025a24ab0">createObjectFromComponent</a> (QQmlComponent *component, QQmlContext *context=0, const QVariantHash &amp;initialProperties=QVariantHash())</td></tr>
+<tr class="separator:ac0470139f6e29c69ca979c7025a24ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d134912553606dc9190af0c6452154"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a56d134912553606dc9190af0c6452154">createObjectFromSource</a> (const QUrl &amp;source, QQmlContext *context=0, const QVariantHash &amp;initialProperties=QVariantHash())</td></tr>
+<tr class="separator:a56d134912553606dc9190af0c6452154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb64b1fa4e365b9bb8860b0de6e5bf1"><td class="memItemLeft" align="right" valign="top">QQmlEngine *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a6eb64b1fa4e365b9bb8860b0de6e5bf1">engine</a> ()</td></tr>
+<tr class="separator:a6eb64b1fa4e365b9bb8860b0de6e5bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b722721ef1ad829e9ae7bf2a4c6e18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#ad2b722721ef1ad829e9ae7bf2a4c6e18">isInitializationDelayed</a> () const</td></tr>
+<tr class="separator:ad2b722721ef1ad829e9ae7bf2a4c6e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380bfa50f3ba1e8a580af0285ac64c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a380bfa50f3ba1e8a580af0285ac64c4b">loadPackage</a> (const QString &amp;packageName)</td></tr>
+<tr class="separator:a380bfa50f3ba1e8a580af0285ac64c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403a03892096f7aaca2aacfb8dc37f1"><td class="memItemLeft" align="right" valign="top">QQmlComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a6403a03892096f7aaca2aacfb8dc37f1">mainComponent</a> () const</td></tr>
+<tr class="separator:a6403a03892096f7aaca2aacfb8dc37f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f1702180e0c3a9ca6d5409254b55c5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/classKPackage_1_1Package.html">KPackage::Package</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#ab2f1702180e0c3a9ca6d5409254b55c5">package</a> () const</td></tr>
+<tr class="separator:ab2f1702180e0c3a9ca6d5409254b55c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bc8084d1aa225ef66de677c788e40a"><td class="memItemLeft" align="right" valign="top">QQmlContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a26bc8084d1aa225ef66de677c788e40a">rootContext</a> () const</td></tr>
+<tr class="separator:a26bc8084d1aa225ef66de677c788e40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99915dcdd5a8b737f35815b1b96babec"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a99915dcdd5a8b737f35815b1b96babec">rootObject</a> () const</td></tr>
+<tr class="separator:a99915dcdd5a8b737f35815b1b96babec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61dd42137458e04f3d61081070244ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a61dd42137458e04f3d61081070244ae6">setInitializationDelayed</a> (const bool delay)</td></tr>
+<tr class="separator:a61dd42137458e04f3d61081070244ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa0473c0c29f402c6973d3b2d03b38f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a1aa0473c0c29f402c6973d3b2d03b38f">setPackage</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/classKPackage_1_1Package.html">KPackage::Package</a> &amp;<a class="el" href="classKDeclarative_1_1QmlObject.html#ab2f1702180e0c3a9ca6d5409254b55c5">package</a>)</td></tr>
+<tr class="separator:a1aa0473c0c29f402c6973d3b2d03b38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1066a0e0ccc1e3f9a506f9fa9d8b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a0e1066a0e0ccc1e3f9a506f9fa9d8b5c">setSource</a> (const QUrl &amp;source)</td></tr>
+<tr class="separator:a0e1066a0e0ccc1e3f9a506f9fa9d8b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b983bb835fc045fa61fe5c075d7821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#af7b983bb835fc045fa61fe5c075d7821">setTranslationDomain</a> (const QString &amp;translationDomain)</td></tr>
+<tr class="separator:af7b983bb835fc045fa61fe5c075d7821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c69d867ef860e765ae35b39c15940"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a8b7c69d867ef860e765ae35b39c15940">source</a> () const</td></tr>
+<tr class="separator:a8b7c69d867ef860e765ae35b39c15940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c82a60ec98fddbf34af5e96999278bf"><td class="memItemLeft" align="right" valign="top">QQmlComponent::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a9c82a60ec98fddbf34af5e96999278bf">status</a> () const</td></tr>
+<tr class="separator:a9c82a60ec98fddbf34af5e96999278bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de78762c0c133cdd3577de5ce243521"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDeclarative_1_1QmlObject.html#a2de78762c0c133cdd3577de5ce243521">translationDomain</a> () const</td></tr>
+<tr class="separator:a2de78762c0c133cdd3577de5ce243521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An object that instantiates an entire QML context, with its own declarative engine. </p>
+<dl class="section author"><dt>Author</dt><dd>Marco Martin <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'t@'+'kde'+'.o'+'rg'; return false;">mart@<span style="display: none;">.nosp@m.</span>kde.<span style="display: none;">.nosp@m.</span>org</a></dd></dl>
+<p>Plasma::QmlObject provides a class for conveniently use QML based declarative user interfaces inside Plasma widgets. To one <a class="el" href="classKDeclarative_1_1QmlObject.html" title="An object that instantiates an entire QML context, with its own declarative engine. ">QmlObject</a> corresponds one QML file (that can eventually include others) tere will be its own QQmlEngine with a single root object, described in the QML file. </p>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8h_source.html#l00055">55</a> of file <a class="el" href="qmlobject_8h_source.html">qmlobject.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab153f10cbcfdd8ab7a6f8c801a42db56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab153f10cbcfdd8ab7a6f8c801a42db56">&#9670;&nbsp;</a></span>QmlObject() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDeclarative::QmlObject::QmlObject </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="classKDeclarative_1_1QmlObject.html" title="An object that instantiates an entire QML context, with its own declarative engine. ">QmlObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent of this object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00144">144</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a1720770de8b91876e2f055ce7437ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1720770de8b91876e2f055ce7437ff">&#9670;&nbsp;</a></span>QmlObject() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDeclarative::QmlObject::QmlObject </td>
+          <td>(</td>
+          <td class="paramtype">QQmlEngine *&#160;</td>
+          <td class="paramname"><em>engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="classKDeclarative_1_1QmlObject.html" title="An object that instantiates an entire QML context, with its own declarative engine. ">QmlObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>a QQmlEngine we want to use </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent of this object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00157">157</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e6e219cd6e32f3dd4a1c7b2583187e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6e219cd6e32f3dd4a1c7b2583187e1">&#9670;&nbsp;</a></span>QmlObject() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDeclarative::QmlObject::QmlObject </td>
+          <td>(</td>
+          <td class="paramtype">QQmlEngine *&#160;</td>
+          <td class="paramname"><em>engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QQmlContext *&#160;</td>
+          <td class="paramname"><em>rootContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="classKDeclarative_1_1QmlObject.html" title="An object that instantiates an entire QML context, with its own declarative engine. ">QmlObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>a QQmlEngine we want to use </td></tr>
+    <tr><td class="paramname">rootContext</td><td>the root context we want to use for objects creation </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent of this object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00174">174</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0d279161a226bd02d4e41177d93cf0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d279161a226bd02d4e41177d93cf0ee">&#9670;&nbsp;</a></span>completeInitialization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::completeInitialization </td>
+          <td>(</td>
+          <td class="paramtype">const QVariantHash &amp;&#160;</td>
+          <td class="paramname"><em>initialProperties</em> = <code>QVariantHash()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finishes the process of initialization. </p>
+<p>If <a class="el" href="classKDeclarative_1_1QmlObject.html#ad2b722721ef1ad829e9ae7bf2a4c6e18">isInitializationDelayed()</a> is false, calling this will have no effect. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initialProperties</td><td>optional properties that will be set on the object when created (and before Component.onCompleted gets emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00304">304</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac0470139f6e29c69ca979c7025a24ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0470139f6e29c69ca979c7025a24ab0">&#9670;&nbsp;</a></span>createObjectFromComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * KDeclarative::QmlObject::createObjectFromComponent </td>
+          <td>(</td>
+          <td class="paramtype">QQmlComponent *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QQmlContext *&#160;</td>
+          <td class="paramname"><em>context</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantHash &amp;&#160;</td>
+          <td class="paramname"><em>initialProperties</em> = <code>QVariantHash()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates and returns an object based on the provided QQmlComponent with the same QQmlEngine and the same root context as the amin object, that will be the parent of the newly created object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>the component we want to instantiate </td></tr>
+    <tr><td class="paramname">context</td><td>The QQmlContext in which we will create the object, if 0 it will use the engine's root context </td></tr>
+    <tr><td class="paramname">initialProperties</td><td>optional properties that will be set on the object when created (and before Component.onCompleted gets emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00345">345</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a56d134912553606dc9190af0c6452154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d134912553606dc9190af0c6452154">&#9670;&nbsp;</a></span>createObjectFromSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * KDeclarative::QmlObject::createObjectFromSource </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QQmlContext *&#160;</td>
+          <td class="paramname"><em>context</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantHash &amp;&#160;</td>
+          <td class="paramname"><em>initialProperties</em> = <code>QVariantHash()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates and returns an object based on the provided url to a Qml file with the same QQmlEngine and the same root context as the amin object, that will be the parent of the newly created object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>url where the QML file is located </td></tr>
+    <tr><td class="paramname">context</td><td>The QQmlContext in which we will create the object, if 0 it will use the engine's root context </td></tr>
+    <tr><td class="paramname">initialProperties</td><td>optional properties that will be set on the object when created (and before Component.onCompleted gets emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00337">337</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6eb64b1fa4e365b9bb8860b0de6e5bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb64b1fa4e365b9bb8860b0de6e5bf1">&#9670;&nbsp;</a></span>engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQmlEngine * KDeclarative::QmlObject::engine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the declarative engine that runs the qml file assigned to this widget. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00253">253</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25e3e86a183e2c9273c1119271d4cff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e3e86a183e2c9273c1119271d4cff8">&#9670;&nbsp;</a></span>finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the parsing and execution of the QML file is terminated. </p>
+
+</div>
+</div>
+<a id="ad2b722721ef1ad829e9ae7bf2a4c6e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b722721ef1ad829e9ae7bf2a4c6e18">&#9670;&nbsp;</a></span>isInitializationDelayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDeclarative::QmlObject::isInitializationDelayed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the initialization of the QML file will be delayed at the end of the event loop </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00248">248</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a380bfa50f3ba1e8a580af0285ac64c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380bfa50f3ba1e8a580af0285ac64c4b">&#9670;&nbsp;</a></span>loadPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::loadPackage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>packageName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the package called packageName, then loads the mainscript file for that package. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packageName</td><td>the plugin name of the package </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00225">225</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6403a03892096f7aaca2aacfb8dc37f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6403a03892096f7aaca2aacfb8dc37f1">&#9670;&nbsp;</a></span>mainComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQmlComponent * KDeclarative::QmlObject::mainComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the main QQmlComponent of the engine </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00267">267</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab2f1702180e0c3a9ca6d5409254b55c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f1702180e0c3a9ca6d5409254b55c5">&#9670;&nbsp;</a></span>package()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/classKPackage_1_1Package.html">KPackage::Package</a> KDeclarative::QmlObject::package </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the optional package, if any </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00238">238</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a26bc8084d1aa225ef66de677c788e40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bc8084d1aa225ef66de677c788e40a">&#9670;&nbsp;</a></span>rootContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQmlContext * KDeclarative::QmlObject::rootContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The components's creation context. </p>
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00272">272</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99915dcdd5a8b737f35815b1b96babec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99915dcdd5a8b737f35815b1b96babec">&#9670;&nbsp;</a></span>rootObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject* KDeclarative::QmlObject::rootObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the root object of the declarative object tree </dd></dl>
+
+</div>
+</div>
+<a id="a61dd42137458e04f3d61081070244ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dd42137458e04f3d61081070244ae6">&#9670;&nbsp;</a></span>setInitializationDelayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::setInitializationDelayed </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the execution of the QML file has to be delayed later in the event loop. </p>
+<p>It has to be called before setQmlPath(). In this case will be possible to assign new objects in the main engine context before the main component gets initialized. So it will be possible to access it immediately from the QML code. The initialization will either be completed automatically asyncronously or explicitly by calling <a class="el" href="classKDeclarative_1_1QmlObject.html#a0d279161a226bd02d4e41177d93cf0ee" title="Finishes the process of initialization. ">completeInitialization()</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delay</td><td>if true the initialization of the QML file will be delayed at the end of the event loop </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00243">243</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1aa0473c0c29f402c6973d3b2d03b38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa0473c0c29f402c6973d3b2d03b38f">&#9670;&nbsp;</a></span>setPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::setPackage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/classKPackage_1_1Package.html">KPackage::Package</a> &amp;&#160;</td>
+          <td class="paramname"><em>package</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a package, then loads the mainscript file for that package. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">package</td><td>the package we want to use to provide QML files to this QML object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00232">232</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e1066a0e0ccc1e3f9a506f9fa9d8b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1066a0e0ccc1e3f9a506f9fa9d8b5c">&#9670;&nbsp;</a></span>setSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::setSource </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the path of the QML file to parse and execute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>the absolute path of a QML file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00214">214</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7b983bb835fc045fa61fe5c075d7821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b983bb835fc045fa61fe5c075d7821">&#9670;&nbsp;</a></span>setTranslationDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDeclarative::QmlObject::setTranslationDomain </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>translationDomain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this method before calling setupBindings to install a translation domain for all i18n global functions. </p>
+<p>If a translation domain is set all i18n calls delegate to the matching i18nd calls with the provided translation domain.</p>
+<p>The translationDomain affects all i18n calls including those from imports. Because of that modules intended to be used as imports should prefer the i18nd variants and set the translation domain explicitly in each call.</p>
+<p>This method is only required if your declarative usage is inside a library. If it's in an application there is no need to set the translation domain as the application's domain can be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">translationDomain</td><td>The translation domain to be used for i18n calls. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="qmlobject_8cpp_source.html#l00204">204</a> of file <a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b7c69d867ef860e765ae35b39c15940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7c69d867ef860e765ae35b39c15940">&#9670;&nbsp;</a></span>source()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KDeclarative::QmlObject::source </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the absolute path of the current QML file </dd></dl>
+
+</div>
+</div>
+<a id="a9c82a60ec98fddbf34af5e96999278bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c82a60ec98fddbf34af5e96999278bf">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQmlComponent::Status KDeclarative::QmlObject::status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The component's current status. </p>
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+</div>
+</div>
+<a id="a2de78762c0c133cdd3577de5ce243521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de78762c0c133cdd3577de5ce243521">&#9670;&nbsp;</a></span>translationDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KDeclarative::QmlObject::translationDomain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the translation domain for the i18n calls done in this QML engine </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="qmlobject_8h_source.html">qmlobject.h</a></li>
+<li><a class="el" href="qmlobject_8cpp_source.html">qmlobject.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:42 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

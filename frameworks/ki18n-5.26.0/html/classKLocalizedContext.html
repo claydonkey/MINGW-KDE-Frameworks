@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KI18n - KLocalizedContext Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KI18n</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KI18n"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKLocalizedContext.html">KLocalizedContext</option>
+        
+        <option value="classKLocalizedString.html">KLocalizedString</option>
+        
+        <option value="classKLocalizedTranslator.html">KLocalizedTranslator</option>
+        
+        <option value="classKuitSetup.html">KuitSetup</option>
+        
+        <option value="namespaceKuit.html">Kuit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced internationalization framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5I18n)
+target_link_libraries(yourapp KF5::I18n)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KI18n </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ki18n-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KI18n on <a href="https://cgit.kde.org/ki18n-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KI18n </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KLocalizedContext">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKLocalizedContext-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KLocalizedContext Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="klocalizedcontext_8h_source.html">klocalizedcontext.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:aed9b155fd7d09d98f173f4d2bf30a2e4"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLocalizedContext.html#aed9b155fd7d09d98f173f4d2bf30a2e4">translationDomain</a></td></tr>
+<tr class="separator:aed9b155fd7d09d98f173f4d2bf30a2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a59aa6ccb045d948f9704010baa290949"><td class="memItemLeft" align="right" valign="top"><a id="a59aa6ccb045d948f9704010baa290949"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>translationDomainChanged</b> (const QString &amp;<a class="el" href="classKLocalizedContext.html#aed9b155fd7d09d98f173f4d2bf30a2e4">translationDomain</a>)</td></tr>
+<tr class="separator:a59aa6ccb045d948f9704010baa290949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac1ddeafc33b29eabea3c1cce22930aa7"><td class="memItemLeft" align="right" valign="top"><a id="ac1ddeafc33b29eabea3c1cce22930aa7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KLocalizedContext</b> (QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:ac1ddeafc33b29eabea3c1cce22930aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada87bb7a64d3241911bf00dfc20fb23a"><td class="memItemLeft" align="right" valign="top"><a id="ada87bb7a64d3241911bf00dfc20fb23a"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18n</b> (const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:ada87bb7a64d3241911bf00dfc20fb23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18f0516d5b03186b88a5fbe95a04fb6"><td class="memItemLeft" align="right" valign="top"><a id="aa18f0516d5b03186b88a5fbe95a04fb6"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18nc</b> (const QString &amp;context, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:aa18f0516d5b03186b88a5fbe95a04fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec3e583d03f2014485248004722938b"><td class="memItemLeft" align="right" valign="top"><a id="a3ec3e583d03f2014485248004722938b"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18ncp</b> (const QString &amp;context, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a3ec3e583d03f2014485248004722938b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fbd3fcdd2fbcd2c303ded1793289f9"><td class="memItemLeft" align="right" valign="top"><a id="af4fbd3fcdd2fbcd2c303ded1793289f9"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18nd</b> (const QString &amp;domain, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:af4fbd3fcdd2fbcd2c303ded1793289f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e3a75c0bcfb0622124817b3c618423"><td class="memItemLeft" align="right" valign="top"><a id="ad6e3a75c0bcfb0622124817b3c618423"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18ndc</b> (const QString &amp;domain, const QString &amp;context, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:ad6e3a75c0bcfb0622124817b3c618423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98f5e8d863062bda3f5ddd6af772c26"><td class="memItemLeft" align="right" valign="top"><a id="ac98f5e8d863062bda3f5ddd6af772c26"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18ndcp</b> (const QString &amp;domain, const QString &amp;context, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:ac98f5e8d863062bda3f5ddd6af772c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd228f0abd06396a761357f9c143b5d"><td class="memItemLeft" align="right" valign="top"><a id="a2bd228f0abd06396a761357f9c143b5d"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18ndp</b> (const QString &amp;domain, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a2bd228f0abd06396a761357f9c143b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1b849ad0a81f283acf3d5df00f0d96"><td class="memItemLeft" align="right" valign="top"><a id="a8d1b849ad0a81f283acf3d5df00f0d96"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>i18np</b> (const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a8d1b849ad0a81f283acf3d5df00f0d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09bb4b2668e0d8c2adaa4a299d42a62"><td class="memItemLeft" align="right" valign="top"><a id="ab09bb4b2668e0d8c2adaa4a299d42a62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTranslationDomain</b> (const QString &amp;domain)</td></tr>
+<tr class="separator:ab09bb4b2668e0d8c2adaa4a299d42a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c17548164408c5881c192cae9c0d59d"><td class="memItemLeft" align="right" valign="top"><a id="a8c17548164408c5881c192cae9c0d59d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>translationDomain</b> () const</td></tr>
+<tr class="separator:a8c17548164408c5881c192cae9c0d59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1917d4b287be7c0685e3a7ffeb14f4"><td class="memItemLeft" align="right" valign="top"><a id="a9a1917d4b287be7c0685e3a7ffeb14f4"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18n</b> (const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a9a1917d4b287be7c0685e3a7ffeb14f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbe47f56c347070871daf77d3dc6f54"><td class="memItemLeft" align="right" valign="top"><a id="afcbe47f56c347070871daf77d3dc6f54"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18nc</b> (const QString &amp;context, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:afcbe47f56c347070871daf77d3dc6f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2194c4cd39d7131d4e85815978cdc44"><td class="memItemLeft" align="right" valign="top"><a id="ac2194c4cd39d7131d4e85815978cdc44"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18ncp</b> (const QString &amp;context, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:ac2194c4cd39d7131d4e85815978cdc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1fd9c4be89a7fc13461ef1a7b92473"><td class="memItemLeft" align="right" valign="top"><a id="acc1fd9c4be89a7fc13461ef1a7b92473"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18nd</b> (const QString &amp;domain, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:acc1fd9c4be89a7fc13461ef1a7b92473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9502152b41d91af5c837c379a5cb09fd"><td class="memItemLeft" align="right" valign="top"><a id="a9502152b41d91af5c837c379a5cb09fd"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18ndc</b> (const QString &amp;domain, const QString &amp;context, const QString &amp;message, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a9502152b41d91af5c837c379a5cb09fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ca7cf2486d879af068d0633fb8c912"><td class="memItemLeft" align="right" valign="top"><a id="a04ca7cf2486d879af068d0633fb8c912"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18ndcp</b> (const QString &amp;domain, const QString &amp;context, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:a04ca7cf2486d879af068d0633fb8c912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa312592537d77ce320459d8c3da574"><td class="memItemLeft" align="right" valign="top"><a id="abaa312592537d77ce320459d8c3da574"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18ndp</b> (const QString &amp;domain, const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:abaa312592537d77ce320459d8c3da574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55e2fa9e674527aa7188656aac926fd"><td class="memItemLeft" align="right" valign="top"><a id="aa55e2fa9e674527aa7188656aac926fd"></a>
+Q_INVOKABLE QString&#160;</td><td class="memItemRight" valign="bottom"><b>xi18np</b> (const QString &amp;singular, const QString &amp;plural, const QVariant &amp;p1=QVariant(), const QVariant &amp;p2=QVariant(), const QVariant &amp;p3=QVariant(), const QVariant &amp;p4=QVariant(), const QVariant &amp;p5=QVariant(), const QVariant &amp;p6=QVariant(), const QVariant &amp;p7=QVariant(), const QVariant &amp;p8=QVariant(), const QVariant &amp;p9=QVariant(), const QVariant &amp;p10=QVariant()) const</td></tr>
+<tr class="separator:aa55e2fa9e674527aa7188656aac926fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is meant to be used to simplify integration of the KI18n framework in QML. </p>
+<p>The way to do so, is by creating this object and setting it as a context object:</p>
+<div class="fragment"><div class="line">QQuickView* view = <span class="keyword">new</span> QQuickView;</div><div class="line">view.engine()-&gt;rootContext()-&gt;setContextObject(<span class="keyword">new</span> <a class="code" href="classKLocalizedContext.html">KLocalizedContext</a>(view));</div></div><!-- fragment --><p>Then i18n*() and xi18n*() functions should be available for use from the code loaded in the engine, for the view.</p>
+<dl class="section note"><dt>Note</dt><dd>Plural functions differ from the C/C++ version. On QML/JS we can get a real value easily. To solve warnings on those cases we'll cast the first argument to make sure it's taken into account for the plural.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.17 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedcontext_8h_source.html#l00050">50</a> of file <a class="el" href="klocalizedcontext_8h_source.html">klocalizedcontext.h</a>.</p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a id="aed9b155fd7d09d98f173f4d2bf30a2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9b155fd7d09d98f173f4d2bf30a2e4">&#9670;&nbsp;</a></span>translationDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLocalizedContext::translationDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This property only needs to be specified if the context is being run on a library. </p>
+<p>in an application there is no need to set the translation domain as the application's domain can be used. </p>
+
+<p class="definition">Definition at line <a class="el" href="klocalizedcontext_8h_source.html#l00059">59</a> of file <a class="el" href="klocalizedcontext_8h_source.html">klocalizedcontext.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="klocalizedcontext_8h_source.html">klocalizedcontext.h</a></li>
+<li><a class="el" href="klocalizedcontext_8cpp_source.html">klocalizedcontext.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:07 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

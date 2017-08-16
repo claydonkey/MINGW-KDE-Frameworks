@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KItemViews - KCategorizedView Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KItemViews</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KItemViews"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCategorizedSortFilterProxyModel.html">KCategorizedSortFilterProxyModel</option>
+        
+        <option value="classKCategorizedView.html">KCategorizedView</option>
+        
+        <option value="classKCategoryDrawer.html">KCategoryDrawer</option>
+        
+        <option value="classKCategoryDrawerV3.html">KCategoryDrawerV3</option>
+        
+        <option value="classKFilterProxySearchLine.html">KFilterProxySearchLine</option>
+        
+        <option value="classKListWidgetSearchLine.html">KListWidgetSearchLine</option>
+        
+        <option value="classKTreeWidgetSearchLine.html">KTreeWidgetSearchLine</option>
+        
+        <option value="classKTreeWidgetSearchLineWidget.html">KTreeWidgetSearchLineWidget</option>
+        
+        <option value="classKWidgetItemDelegate.html">KWidgetItemDelegate</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widget addons for Qt Model/View</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:david@davidedmundson.co.uk">David Edmundson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ItemViews)
+target_link_libraries(yourapp KF5::ItemViews)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KItemViews </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kitemviews-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KItemViews on <a href="https://cgit.kde.org/kitemviews-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KItemViews </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCategorizedView">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKCategorizedView-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCategorizedView Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcategorizedview_8h_source.html">kcategorizedview.h</a>&gt;</code></p>
+
+<p>Inherits QListView.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a050d2019f9411dceca942cb45afa3bfe"><td class="memItemLeft" align="right" valign="top"><a id="a050d2019f9411dceca942cb45afa3bfe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alternatingBlockColors</b></td></tr>
+<tr class="separator:a050d2019f9411dceca942cb45afa3bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebba0d2b6f0a4c38879628d712d12f15"><td class="memItemLeft" align="right" valign="top"><a id="aebba0d2b6f0a4c38879628d712d12f15"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>categorySpacing</b></td></tr>
+<tr class="separator:aebba0d2b6f0a4c38879628d712d12f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa487191ed13557f533347bc66f2fc321"><td class="memItemLeft" align="right" valign="top"><a id="aa487191ed13557f533347bc66f2fc321"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>collapsibleBlocks</b></td></tr>
+<tr class="separator:aa487191ed13557f533347bc66f2fc321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a027a965747aec74f1bbd7dbef5b9bc8b"><td class="memItemLeft" align="right" valign="top"><a id="a027a965747aec74f1bbd7dbef5b9bc8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KCategorizedView</b> (QWidget *parent=0)</td></tr>
+<tr class="separator:a027a965747aec74f1bbd7dbef5b9bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1483818578ce82a30596627cc4504e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a3a1483818578ce82a30596627cc4504e">alternatingBlockColors</a> () const</td></tr>
+<tr class="separator:a3a1483818578ce82a30596627cc4504e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22676501fecf1ae31b7b6cc5c71b6a2"><td class="memItemLeft" align="right" valign="top">QModelIndexList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ac22676501fecf1ae31b7b6cc5c71b6a2">block</a> (const QString &amp;category)</td></tr>
+<tr class="separator:ac22676501fecf1ae31b7b6cc5c71b6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bff285c21b93b75c6b9ddfd2147a1e"><td class="memItemLeft" align="right" valign="top">QModelIndexList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#aa8bff285c21b93b75c6b9ddfd2147a1e">block</a> (const QModelIndex &amp;representative)</td></tr>
+<tr class="separator:aa8bff285c21b93b75c6b9ddfd2147a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb4b52c66d779b755272d0aed6746f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCategoryDrawer.html">KCategoryDrawer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a6fb4b52c66d779b755272d0aed6746f2">categoryDrawer</a> () const</td></tr>
+<tr class="separator:a6fb4b52c66d779b755272d0aed6746f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85de4803e828d662c0116252d4792087"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a85de4803e828d662c0116252d4792087">categorySpacing</a> () const</td></tr>
+<tr class="separator:a85de4803e828d662c0116252d4792087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7217186b7ff94eb9ba896a3a76f0d55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ad7217186b7ff94eb9ba896a3a76f0d55">collapsibleBlocks</a> () const</td></tr>
+<tr class="separator:ad7217186b7ff94eb9ba896a3a76f0d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d06ad740c7cb4c1b4496888ee797c7b"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a1d06ad740c7cb4c1b4496888ee797c7b">indexAt</a> (const QPoint &amp;point) const override</td></tr>
+<tr class="separator:a1d06ad740c7cb4c1b4496888ee797c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44370621d62fe00deb8ff1c5024870f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ae44370621d62fe00deb8ff1c5024870f">reset</a> () override</td></tr>
+<tr class="separator:ae44370621d62fe00deb8ff1c5024870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f26ac5deb64578677061a0640770b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a7f26ac5deb64578677061a0640770b36">setAlternatingBlockColors</a> (bool enable)</td></tr>
+<tr class="separator:a7f26ac5deb64578677061a0640770b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d4f557bfc08b96af0a269e092bb45d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ab0d4f557bfc08b96af0a269e092bb45d">setCategoryDrawer</a> (<a class="el" href="classKCategoryDrawer.html">KCategoryDrawer</a> *<a class="el" href="classKCategorizedView.html#a6fb4b52c66d779b755272d0aed6746f2">categoryDrawer</a>)</td></tr>
+<tr class="separator:ab0d4f557bfc08b96af0a269e092bb45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba741b1b8fe91355cbcd4aeae82ac7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a1ba741b1b8fe91355cbcd4aeae82ac7b">setCategorySpacing</a> (int categorySpacing)</td></tr>
+<tr class="separator:a1ba741b1b8fe91355cbcd4aeae82ac7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712c6f9f7100907f3a124da7c9b6a14a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a712c6f9f7100907f3a124da7c9b6a14a">setCollapsibleBlocks</a> (bool enable)</td></tr>
+<tr class="separator:a712c6f9f7100907f3a124da7c9b6a14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53a33c80553424ba3e0ade4b5bbbdbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#af53a33c80553424ba3e0ade4b5bbbdbc">setGridSize</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:af53a33c80553424ba3e0ade4b5bbbdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a4cfaf71933a4d3402c85b047dd48d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ad9a4cfaf71933a4d3402c85b047dd48d">setGridSizeOwn</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:ad9a4cfaf71933a4d3402c85b047dd48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064ea46c94e1e77d9e2f624d19d8ffbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a064ea46c94e1e77d9e2f624d19d8ffbe">setModel</a> (QAbstractItemModel *model) override</td></tr>
+<tr class="separator:a064ea46c94e1e77d9e2f624d19d8ffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23853dcd8193ba07819cf3ac200c1543"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a23853dcd8193ba07819cf3ac200c1543">visualRect</a> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a23853dcd8193ba07819cf3ac200c1543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a4a9a0d89be068356bd8e53e916326056"><td class="memItemLeft" align="right" valign="top">virtual KITEMVIEWS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a4a9a0d89be068356bd8e53e916326056">rowsInsertedArtifficial</a> (const QModelIndex &amp;parent, int start, int end)</td></tr>
+<tr class="separator:a4a9a0d89be068356bd8e53e916326056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6468de56d6982092038bd6bc31247b"><td class="memItemLeft" align="right" valign="top">virtual KITEMVIEWS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a6a6468de56d6982092038bd6bc31247b">rowsRemoved</a> (const QModelIndex &amp;parent, int start, int end)</td></tr>
+<tr class="separator:a6a6468de56d6982092038bd6bc31247b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ce40b6bcd7effaa21af4d7a452e191"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#af3ce40b6bcd7effaa21af4d7a452e191">slotLayoutChanged</a> ()</td></tr>
+<tr class="separator:af3ce40b6bcd7effaa21af4d7a452e191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae22c5887af59723f1afcf7534b30e964"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ae22c5887af59723f1afcf7534b30e964">currentChanged</a> (const QModelIndex &amp;current, const QModelIndex &amp;previous) override</td></tr>
+<tr class="separator:ae22c5887af59723f1afcf7534b30e964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2b1b8283ee2df3c27292708d951d91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a4a2b1b8283ee2df3c27292708d951d91">dataChanged</a> (const QModelIndex &amp;topLeft, const QModelIndex &amp;bottomRight, const QVector&lt; int &gt; &amp;roles=QVector&lt; int &gt;()) override</td></tr>
+<tr class="separator:a4a2b1b8283ee2df3c27292708d951d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec8bfdedbe9da8de81694e86d5a6721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a5ec8bfdedbe9da8de81694e86d5a6721">dragEnterEvent</a> (QDragEnterEvent *event) override</td></tr>
+<tr class="separator:a5ec8bfdedbe9da8de81694e86d5a6721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e6a171ba5951929573a906cbba418e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ae4e6a171ba5951929573a906cbba418e">dragLeaveEvent</a> (QDragLeaveEvent *event) override</td></tr>
+<tr class="separator:ae4e6a171ba5951929573a906cbba418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21067ba4d360f94b61af37c3240616ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a21067ba4d360f94b61af37c3240616ee">dragMoveEvent</a> (QDragMoveEvent *event) override</td></tr>
+<tr class="separator:a21067ba4d360f94b61af37c3240616ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489cc55c224c6eab9be04f1a4f82b781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a489cc55c224c6eab9be04f1a4f82b781">dropEvent</a> (QDropEvent *event) override</td></tr>
+<tr class="separator:a489cc55c224c6eab9be04f1a4f82b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874620be699f6298f1931e92985964f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a874620be699f6298f1931e92985964f6">leaveEvent</a> (QEvent *event) override</td></tr>
+<tr class="separator:a874620be699f6298f1931e92985964f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a7f1c2e8002ef21951ecc28ce14206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a58a7f1c2e8002ef21951ecc28ce14206">mouseMoveEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a58a7f1c2e8002ef21951ecc28ce14206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f3261899777effde62c3ff7e547cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a77f3261899777effde62c3ff7e547cd8">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a77f3261899777effde62c3ff7e547cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f7e2a50057278c2084ea5a1faf2643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ad2f7e2a50057278c2084ea5a1faf2643">mouseReleaseEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="separator:ad2f7e2a50057278c2084ea5a1faf2643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d38f516fc7b0283601e3d98e2021474"><td class="memItemLeft" align="right" valign="top">virtual QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a4d38f516fc7b0283601e3d98e2021474">moveCursor</a> (CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override</td></tr>
+<tr class="separator:a4d38f516fc7b0283601e3d98e2021474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e8b1b34f663eeb6d552a73f5b1d80b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a90e8b1b34f663eeb6d552a73f5b1d80b">paintEvent</a> (QPaintEvent *event) override</td></tr>
+<tr class="separator:a90e8b1b34f663eeb6d552a73f5b1d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf28b8503a5a64031a1718d690f92ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a4bf28b8503a5a64031a1718d690f92ae">resizeEvent</a> (QResizeEvent *event) override</td></tr>
+<tr class="separator:a4bf28b8503a5a64031a1718d690f92ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29064aab7a6abd99027cd3fb18fc822e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#a29064aab7a6abd99027cd3fb18fc822e">rowsAboutToBeRemoved</a> (const QModelIndex &amp;parent, int start, int end) override</td></tr>
+<tr class="separator:a29064aab7a6abd99027cd3fb18fc822e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8627d5b9e60ace4d83d0d0f5041a13f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#af8627d5b9e60ace4d83d0d0f5041a13f">rowsInserted</a> (const QModelIndex &amp;parent, int start, int end) override</td></tr>
+<tr class="separator:af8627d5b9e60ace4d83d0d0f5041a13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05b6e058e2e48aa6862982dcc2bfec9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#af05b6e058e2e48aa6862982dcc2bfec9">setSelection</a> (const QRect &amp;rect, QItemSelectionModel::SelectionFlags flags) override</td></tr>
+<tr class="separator:af05b6e058e2e48aa6862982dcc2bfec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99d41e1ef6b43dcf2169389274ef1f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ac99d41e1ef6b43dcf2169389274ef1f4">startDrag</a> (Qt::DropActions supportedActions) override</td></tr>
+<tr class="separator:ac99d41e1ef6b43dcf2169389274ef1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22448fd084c42e5de0bfbfb8e17710c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCategorizedView.html#ae22448fd084c42e5de0bfbfb8e17710c">updateGeometries</a> () override</td></tr>
+<tr class="separator:ae22448fd084c42e5de0bfbfb8e17710c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Item view for listing items in a categorized fashion optionally. </p>
+<p><a class="el" href="classKCategorizedView.html" title="Item view for listing items in a categorized fashion optionally. ">KCategorizedView</a> basically has the same functionality as QListView, only that it also lets you layout items in a way that they are categorized visually.</p>
+<p>For it to work you will need to set a <a class="el" href="classKCategorizedSortFilterProxyModel.html" title="This class lets you categorize a view. ">KCategorizedSortFilterProxyModel</a> and a <a class="el" href="classKCategoryDrawer.html" title="The category drawing is performed by this class. ">KCategoryDrawer</a> with methods <a class="el" href="classKCategorizedView.html#a064ea46c94e1e77d9e2f624d19d8ffbe" title="Reimplemented from QAbstractItemView. ">setModel()</a> and <a class="el" href="classKCategorizedView.html#ab0d4f557bfc08b96af0a269e092bb45d" title="The category drawer that will be used for drawing categories. ">setCategoryDrawer()</a> respectively. Also, the model will need to be flagged as categorized with KCategorizedSortFilterProxyModel::setCategorizedModel(true).</p>
+<p>The way it works (if categorization enabled): </p><pre class="fragment">- When sorting, it does more things than QListView does. It will ask the model for the
+  special role CategorySortRole (@see KCategorizedSortFilterProxyModel). This can return
+  a QString or an int in order to tell the view the order of categories. In this sense, for
+  instance, if we are sorting by name ascending, "A" would be before than "B". If we are
+  sorting by size ascending, 512 bytes would be before 1024 bytes. This way categories are
+  also sorted.
+
+- When the view has to paint, it will ask the model with the role CategoryDisplayRole
+  (@see KCategorizedSortFilterProxyModel). It will for instance return "F" for "foo.pdf" if
+  we are sorting by name ascending, or "Small" if a certain item has 100 bytes, for example.
+</pre><p>For drawing categories, <a class="el" href="classKCategoryDrawer.html" title="The category drawing is performed by this class. ">KCategoryDrawer</a> will be used. You can inherit this class to do your own drawing.</p>
+<dl class="section note"><dt>Note</dt><dd>All examples cited before talk about filesystems and such, but have present that this is a completely generic class, and it can be used for whatever your purpose is. For instance when talking about animals, you can separate them by "Mammal" and "Oviparous". In this very case, for example, the CategorySortRole and the CategoryDisplayRole could be the same ("Mammal" and "Oviparous").</dd>
+<dd>
+There is a really performance boost if CategorySortRole returns an int instead of a QString. Have present that this role is asked (n * log n) times when sorting and compared. Comparing ints is always faster than comparing strings, whithout mattering how fast the string comparison is. Consider thinking of a way of returning ints instead of QStrings if your model can contain a high number of items.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Note that for really drawing items in blocks you will need some things to be done:<ul>
+<li>The model set to this view has to be (or inherit if you want to do special stuff in it) <a class="el" href="classKCategorizedSortFilterProxyModel.html" title="This class lets you categorize a view. ">KCategorizedSortFilterProxyModel</a>.</li>
+<li>This model needs to be set setCategorizedModel to true.</li>
+<li>Set a category drawer by calling setCategoryDrawer.</li>
+</ul>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCategorizedSortFilterProxyModel.html" title="This class lets you categorize a view. ">KCategorizedSortFilterProxyModel</a>, <a class="el" href="classKCategoryDrawer.html" title="The category drawing is performed by this class. ">KCategoryDrawer</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Rafael Fernández López <a href="#" onclick="location.href='mai'+'lto:'+'ere'+'sl'+'ibr'+'e@'+'kde'+'.o'+'rg'; return false;">eresl<span style="display: none;">.nosp@m.</span>ibre<span style="display: none;">.nosp@m.</span>@kde.<span style="display: none;">.nosp@m.</span>org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8h_source.html#l00078">78</a> of file <a class="el" href="kcategorizedview_8h_source.html">kcategorizedview.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a1483818578ce82a30596627cc4504e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1483818578ce82a30596627cc4504e">&#9670;&nbsp;</a></span>alternatingBlockColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCategorizedView::alternatingBlockColors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether blocks should be drawn with alternating colors.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+</div>
+</div>
+<a id="ac22676501fecf1ae31b7b6cc5c71b6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22676501fecf1ae31b7b6cc5c71b6a2">&#9670;&nbsp;</a></span>block() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndexList KCategorizedView::block </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Block of indexes that are into <code>category</code>.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00687">687</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8bff285c21b93b75c6b9ddfd2147a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8bff285c21b93b75c6b9ddfd2147a1e">&#9670;&nbsp;</a></span>block() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndexList KCategorizedView::block </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>representative</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Block of indexes that are represented by <code>representative</code>.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00705">705</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6fb4b52c66d779b755272d0aed6746f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb4b52c66d779b755272d0aed6746f2">&#9670;&nbsp;</a></span>categoryDrawer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCategoryDrawer.html">KCategoryDrawer</a> * KCategorizedView::categoryDrawer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current category drawer. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00630">630</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85de4803e828d662c0116252d4792087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85de4803e828d662c0116252d4792087">&#9670;&nbsp;</a></span>categorySpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KCategorizedView::categorySpacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Category spacing. The spacing between categories.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+</div>
+</div>
+<a id="ad7217186b7ff94eb9ba896a3a76f0d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7217186b7ff94eb9ba896a3a76f0d55">&#9670;&nbsp;</a></span>collapsibleBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCategorizedView::collapsibleBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether blocks can be collapsed or not.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+</div>
+</div>
+<a id="ae22c5887af59723f1afcf7534b30e964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22c5887af59723f1afcf7534b30e964">&#9670;&nbsp;</a></span>currentChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::currentChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>previous</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01439">1439</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a2b1b8283ee2df3c27292708d951d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2b1b8283ee2df3c27292708d951d91">&#9670;&nbsp;</a></span>dataChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::dataChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>topLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>bottomRight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>roles</em> = <code>QVector&lt;int&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01445">1445</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ec8bfdedbe9da8de81694e86d5a6721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec8bfdedbe9da8de81694e86d5a6721">&#9670;&nbsp;</a></span>dragEnterEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::dragEnterEvent </td>
+          <td>(</td>
+          <td class="paramtype">QDragEnterEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01085">1085</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4e6a171ba5951929573a906cbba418e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e6a171ba5951929573a906cbba418e">&#9670;&nbsp;</a></span>dragLeaveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::dragLeaveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QDragLeaveEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01090">1090</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a21067ba4d360f94b61af37c3240616ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21067ba4d360f94b61af37c3240616ee">&#9670;&nbsp;</a></span>dragMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::dragMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QDragMoveEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01079">1079</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a489cc55c224c6eab9be04f1a4f82b781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489cc55c224c6eab9be04f1a4f82b781">&#9670;&nbsp;</a></span>dropEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::dropEvent </td>
+          <td>(</td>
+          <td class="paramtype">QDropEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01095">1095</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d06ad740c7cb4c1b4496888ee797c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d06ad740c7cb4c1b4496888ee797c7b">&#9670;&nbsp;</a></span>indexAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KCategorizedView::indexAt </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00710">710</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a874620be699f6298f1931e92985964f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874620be699f6298f1931e92985964f6">&#9670;&nbsp;</a></span>leaveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::leaveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01057">1057</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58a7f1c2e8002ef21951ecc28ce14206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a7f1c2e8002ef21951ecc28ce14206">&#9670;&nbsp;</a></span>mouseMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00943">943</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a77f3261899777effde62c3ff7e547cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f3261899777effde62c3ff7e547cd8">&#9670;&nbsp;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01000">1000</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2f7e2a50057278c2084ea5a1faf2643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f7e2a50057278c2084ea5a1faf2643">&#9670;&nbsp;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01030">1030</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d38f516fc7b0283601e3d98e2021474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d38f516fc7b0283601e3d98e2021474">&#9670;&nbsp;</a></span>moveCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex KCategorizedView::moveCursor </td>
+          <td>(</td>
+          <td class="paramtype">CursorAction&#160;</td>
+          <td class="paramname"><em>cursorAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::KeyboardModifiers&#160;</td>
+          <td class="paramname"><em>modifiers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01102">1102</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a90e8b1b34f663eeb6d552a73f5b1d80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e8b1b34f663eeb6d552a73f5b1d80b">&#9670;&nbsp;</a></span>paintEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00782">782</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae44370621d62fe00deb8ff1c5024870f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44370621d62fe00deb8ff1c5024870f">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00776">776</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4bf28b8503a5a64031a1718d690f92ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf28b8503a5a64031a1718d690f92ae">&#9670;&nbsp;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QWidget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00893">893</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a29064aab7a6abd99027cd3fb18fc822e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29064aab7a6abd99027cd3fb18fc822e">&#9670;&nbsp;</a></span>rowsAboutToBeRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::rowsAboutToBeRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01219">1219</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af8627d5b9e60ace4d83d0d0f5041a13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8627d5b9e60ace4d83d0d0f5041a13f">&#9670;&nbsp;</a></span>rowsInserted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::rowsInserted </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01478">1478</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a9a0d89be068356bd8e53e916326056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9a0d89be068356bd8e53e916326056">&#9670;&nbsp;</a></span>rowsInsertedArtifficial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::rowsInsertedArtifficial </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>Deprecated since 4.4. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01493">1493</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a6468de56d6982092038bd6bc31247b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6468de56d6982092038bd6bc31247b">&#9670;&nbsp;</a></span>rowsRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::rowsRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>Deprecated since 4.4. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01504">1504</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f26ac5deb64578677061a0640770b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f26ac5deb64578677061a0640770b36">&#9670;&nbsp;</a></span>setAlternatingBlockColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setAlternatingBlockColors </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether blocks should be drawn with alternating colors. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00672">672</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab0d4f557bfc08b96af0a269e092bb45d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d4f557bfc08b96af0a269e092bb45d">&#9670;&nbsp;</a></span>setCategoryDrawer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setCategoryDrawer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCategoryDrawer.html">KCategoryDrawer</a> *&#160;</td>
+          <td class="paramname"><em>categoryDrawer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The category drawer that will be used for drawing categories. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00635">635</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ba741b1b8fe91355cbcd4aeae82ac7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba741b1b8fe91355cbcd4aeae82ac7b">&#9670;&nbsp;</a></span>setCategorySpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setCategorySpacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>categorySpacing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stablishes the category spacing. </p>
+<p>This is the spacing between categories.</p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00653">653</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a712c6f9f7100907f3a124da7c9b6a14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712c6f9f7100907f3a124da7c9b6a14a">&#9670;&nbsp;</a></span>setCollapsibleBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setCollapsibleBlocks </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether blocks can be collapsed or not. </p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00682">682</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af53a33c80553424ba3e0ade4b5bbbdbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53a33c80553424ba3e0ade4b5bbbdbc">&#9670;&nbsp;</a></span>setGridSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setGridSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls to <a class="el" href="classKCategorizedView.html#ad9a4cfaf71933a4d3402c85b047dd48d">setGridSizeOwn()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00538">538</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9a4cfaf71933a4d3402c85b047dd48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a4cfaf71933a4d3402c85b047dd48d">&#9670;&nbsp;</a></span>setGridSizeOwn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setGridSizeOwn </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>note that setGridSize is not virtual in the base class (QListView), so if you are calling to this method, make sure you have a <a class="el" href="classKCategorizedView.html" title="Item view for listing items in a categorized fashion optionally. ">KCategorizedView</a> pointer around. This means that something like: <div class="fragment"><div class="line">QListView *lv = <span class="keyword">new</span> <a class="code" href="classKCategorizedView.html">KCategorizedView</a>();</div><div class="line">lv-&gt;setGridSize(mySize);</div></div><!-- fragment --></dd></dl>
+<p>will not call to the expected setGridSize method. Instead do something like this:</p>
+<div class="fragment"><div class="line">QListView *lv;</div><div class="line">...</div><div class="line">KCategorizedView *cv = qobject_cast&lt;<a class="code" href="classKCategorizedView.html">KCategorizedView</a>*&gt;(lv);</div><div class="line"><span class="keywordflow">if</span> (cv) {</div><div class="line">    cv-&gt;<a class="code" href="classKCategorizedView.html#ad9a4cfaf71933a4d3402c85b047dd48d">setGridSizeOwn</a>(mySize);</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">    lv-&gt;setGridSize(mySize);</div><div class="line">}</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>this method will call to QListView::setGridSize among other operations.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00543">543</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a064ea46c94e1e77d9e2f624d19d8ffbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a064ea46c94e1e77d9e2f624d19d8ffbe">&#9670;&nbsp;</a></span>setModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setModel </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractItemModel *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00512">512</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af05b6e058e2e48aa6862982dcc2bfec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05b6e058e2e48aa6862982dcc2bfec9">&#9670;&nbsp;</a></span>setSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::setSelection </td>
+          <td>(</td>
+          <td class="paramtype">const QRect &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QItemSelectionModel::SelectionFlags&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00899">899</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3ce40b6bcd7effaa21af4d7a452e191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ce40b6bcd7effaa21af4d7a452e191">&#9670;&nbsp;</a></span>slotLayoutChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::slotLayoutChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reposition items as needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01514">1514</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac99d41e1ef6b43dcf2169389274ef1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac99d41e1ef6b43dcf2169389274ef1f4">&#9670;&nbsp;</a></span>startDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::startDrag </td>
+          <td>(</td>
+          <td class="paramtype">Qt::DropActions&#160;</td>
+          <td class="paramname"><em>supportedActions</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01074">1074</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae22448fd084c42e5de0bfbfb8e17710c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22448fd084c42e5de0bfbfb8e17710c">&#9670;&nbsp;</a></span>updateGeometries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCategorizedView::updateGeometries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l01341">1341</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a23853dcd8193ba07819cf3ac200c1543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23853dcd8193ba07819cf3ac200c1543">&#9670;&nbsp;</a></span>visualRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect KCategorizedView::visualRect </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QAbstractItemView. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcategorizedview_8cpp_source.html#l00549">549</a> of file <a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcategorizedview_8h_source.html">kcategorizedview.h</a></li>
+<li><a class="el" href="kcategorizedview_8cpp_source.html">kcategorizedview.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:21 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

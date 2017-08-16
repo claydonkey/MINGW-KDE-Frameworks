@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KDirLister Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KDirLister">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKDirLister-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDirLister Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kdirlister_8h_source.html">kdirlister.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KDirLister:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKDirLister__inherit__graph.png" border="0" usemap="#KDirLister_inherit__map" alt="Inheritance graph"/></div>
+<map name="KDirLister_inherit__map" id="KDirLister_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:aeb99da342afa3d8989ad53501490cf44"><td class="memItemLeft" align="right" valign="top"><a id="aeb99da342afa3d8989ad53501490cf44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoErrorHandlingEnabled</b></td></tr>
+<tr class="separator:aeb99da342afa3d8989ad53501490cf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('properties_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:ab5265912260f0feed8b3988f94d9a236 inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="ab5265912260f0feed8b3988f94d9a236"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoUpdate</b></td></tr>
+<tr class="separator:ab5265912260f0feed8b3988f94d9a236 inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ef540c4e6df0e2119b2c8acfe01909 inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="a60ef540c4e6df0e2119b2c8acfe01909"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delayedMimeTypes</b></td></tr>
+<tr class="separator:a60ef540c4e6df0e2119b2c8acfe01909 inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3bf956acdd4b0617b5a723c4dc1243 inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="a5b3bf956acdd4b0617b5a723c4dc1243"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dirOnlyMode</b></td></tr>
+<tr class="separator:a5b3bf956acdd4b0617b5a723c4dc1243 inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdd733a137729d880d7e1dc76840074 inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="a2cdd733a137729d880d7e1dc76840074"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>mimeFilter</b></td></tr>
+<tr class="separator:a2cdd733a137729d880d7e1dc76840074 inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade868c0f37f372c6bc59cd7934bb2911 inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="ade868c0f37f372c6bc59cd7934bb2911"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>nameFilter</b></td></tr>
+<tr class="separator:ade868c0f37f372c6bc59cd7934bb2911 inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae751852954dfbbfd205d3b8746f37cde inherit properties_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a id="ae751852954dfbbfd205d3b8746f37cde"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>showingDotFiles</b></td></tr>
+<tr class="separator:ae751852954dfbbfd205d3b8746f37cde inherit properties_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acecdb9239e02667ca4573735a7b52336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#acecdb9239e02667ca4573735a7b52336">KDirLister</a> (QObject *parent=0)</td></tr>
+<tr class="separator:acecdb9239e02667ca4573735a7b52336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e9f092899c1fb3e4b938b236b8c1dc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a96e9f092899c1fb3e4b938b236b8c1dc">~KDirLister</a> ()</td></tr>
+<tr class="separator:a96e9f092899c1fb3e4b938b236b8c1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23135635ded8c015523d299b9c35b777"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a23135635ded8c015523d299b9c35b777">autoErrorHandlingEnabled</a> () const</td></tr>
+<tr class="separator:a23135635ded8c015523d299b9c35b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113ef9f1cfda144ea8c827212d5c5a6d"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a113ef9f1cfda144ea8c827212d5c5a6d">mainWindow</a> ()</td></tr>
+<tr class="separator:a113ef9f1cfda144ea8c827212d5c5a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818588f30d84bd8751dbf3af1c88182d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a818588f30d84bd8751dbf3af1c88182d">setAutoErrorHandlingEnabled</a> (bool enable, QWidget *parent)</td></tr>
+<tr class="separator:a818588f30d84bd8751dbf3af1c88182d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246a31e6b1d6c3bcaa2bdcf36d44d180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a246a31e6b1d6c3bcaa2bdcf36d44d180">setMainWindow</a> (QWidget *window)</td></tr>
+<tr class="separator:a246a31e6b1d6c3bcaa2bdcf36d44d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:ad697fd59d69652f37a97e9e79be75cb7 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ad697fd59d69652f37a97e9e79be75cb7">KCoreDirLister</a> (QObject *parent=0)</td></tr>
+<tr class="separator:ad697fd59d69652f37a97e9e79be75cb7 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a821a80dac989ae87ed5c190359af3f inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a5a821a80dac989ae87ed5c190359af3f">~KCoreDirLister</a> ()</td></tr>
+<tr class="separator:a5a821a80dac989ae87ed5c190359af3f inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31d044b7a2726cfe79210269f182e94 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#af31d044b7a2726cfe79210269f182e94">autoUpdate</a> () const</td></tr>
+<tr class="separator:af31d044b7a2726cfe79210269f182e94 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9666624feaa9036bc14af37a32778c5 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ad9666624feaa9036bc14af37a32778c5">clearMimeFilter</a> ()</td></tr>
+<tr class="separator:ad9666624feaa9036bc14af37a32778c5 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae01c8857f80c43b56ca764cac8853b inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#afae01c8857f80c43b56ca764cac8853b">delayedMimeTypes</a> () const</td></tr>
+<tr class="separator:afae01c8857f80c43b56ca764cac8853b inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba61ce25c2d1658c7a0416dd8c59a55 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">QList&lt; QUrl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a4ba61ce25c2d1658c7a0416dd8c59a55">directories</a> () const</td></tr>
+<tr class="separator:a4ba61ce25c2d1658c7a0416dd8c59a55 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3070d9e48b5612f48924eb1ef1d9f27f inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3070d9e48b5612f48924eb1ef1d9f27f">dirOnlyMode</a> () const</td></tr>
+<tr class="separator:a3070d9e48b5612f48924eb1ef1d9f27f inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014cb76ebe7cf9edf4ba7c925aeb4b8e inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e">emitChanges</a> ()</td></tr>
+<tr class="separator:a014cb76ebe7cf9edf4ba7c925aeb4b8e inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d223b9b499d67b9fcff66e7f296e9f inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aa8d223b9b499d67b9fcff66e7f296e9f">findByName</a> (const QString &amp;name) const</td></tr>
+<tr class="separator:aa8d223b9b499d67b9fcff66e7f296e9f inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab931adf0d9ca988b31582f72f6c963e3 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab931adf0d9ca988b31582f72f6c963e3">findByUrl</a> (const QUrl &amp;_url) const</td></tr>
+<tr class="separator:ab931adf0d9ca988b31582f72f6c963e3 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf720a4a7a3f42f61e7944d08f6e17cb inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#abf720a4a7a3f42f61e7944d08f6e17cb">isFinished</a> () const</td></tr>
+<tr class="separator:abf720a4a7a3f42f61e7944d08f6e17cb inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbb0044f4c9bb9d38259739e8835431 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItemList.html">KFileItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a> (<a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> which=FilteredItems) const</td></tr>
+<tr class="separator:a6bbb0044f4c9bb9d38259739e8835431 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366890bc3a2a74236ef4ba1e1b06ab6d inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItemList.html">KFileItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a366890bc3a2a74236ef4ba1e1b06ab6d">itemsForDir</a> (const QUrl &amp;dir, <a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> which=FilteredItems) const</td></tr>
+<tr class="separator:a366890bc3a2a74236ef4ba1e1b06ab6d inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dae984ac3182dd1c6481affcee9df40 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a1dae984ac3182dd1c6481affcee9df40">matchesFilter</a> (const QString &amp;name) const</td></tr>
+<tr class="separator:a1dae984ac3182dd1c6481affcee9df40 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5690bba3a3e21defc7f2678e7b6aca inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca">matchesMimeFilter</a> (const QString &amp;mime) const</td></tr>
+<tr class="separator:a9f5690bba3a3e21defc7f2678e7b6aca inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835ed3bc9c82d415985e5f54342ba648 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a835ed3bc9c82d415985e5f54342ba648">mimeFilters</a> () const</td></tr>
+<tr class="separator:a835ed3bc9c82d415985e5f54342ba648 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dbffb4ab7ed887701b5380281a1f50 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a89dbffb4ab7ed887701b5380281a1f50">nameFilter</a> () const</td></tr>
+<tr class="separator:a89dbffb4ab7ed887701b5380281a1f50 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368d4dea91fd99a19bc4f8fbe770aee1 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1">openUrl</a> (const QUrl &amp;_url, OpenUrlFlags _flags=<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b">NoFlags</a>)</td></tr>
+<tr class="separator:a368d4dea91fd99a19bc4f8fbe770aee1 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab719951e81378b4378614bcb0adf54da inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab719951e81378b4378614bcb0adf54da">rootItem</a> () const</td></tr>
+<tr class="separator:ab719951e81378b4378614bcb0adf54da inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a407dce9c53f682b41bb797e94b8cb5 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a8a407dce9c53f682b41bb797e94b8cb5">setAutoUpdate</a> (bool enable)</td></tr>
+<tr class="separator:a8a407dce9c53f682b41bb797e94b8cb5 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d642557de6e1ca12fb213b24a89898 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a73d642557de6e1ca12fb213b24a89898">setDelayedMimeTypes</a> (bool delayedMimeTypes)</td></tr>
+<tr class="separator:a73d642557de6e1ca12fb213b24a89898 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8ddc1e6e29633fa3823ac2cb6914f3 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aaa8ddc1e6e29633fa3823ac2cb6914f3">setDirOnlyMode</a> (bool dirsOnly)</td></tr>
+<tr class="separator:aaa8ddc1e6e29633fa3823ac2cb6914f3 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f08c37eb1002d5c68ae9afc1a03a10 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a50f08c37eb1002d5c68ae9afc1a03a10">setMimeExcludeFilter</a> (const QStringList &amp;mimeList)</td></tr>
+<tr class="separator:a50f08c37eb1002d5c68ae9afc1a03a10 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7d40876cc95468bc036af4453dec04 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04">setMimeFilter</a> (const QStringList &amp;mimeList)</td></tr>
+<tr class="separator:a9d7d40876cc95468bc036af4453dec04 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdea4a1b8f59e76351c50151e625b93 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3fdea4a1b8f59e76351c50151e625b93">setNameFilter</a> (const QString &amp;filter)</td></tr>
+<tr class="separator:a3fdea4a1b8f59e76351c50151e625b93 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b60eec6f6fc7fe9bb34aa6d6dceab4 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a60b60eec6f6fc7fe9bb34aa6d6dceab4">setShowingDotFiles</a> (bool _showDotFiles)</td></tr>
+<tr class="separator:a60b60eec6f6fc7fe9bb34aa6d6dceab4 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7683a9e778c8b33d5dbcec276fba10 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aee7683a9e778c8b33d5dbcec276fba10">showingDotFiles</a> () const</td></tr>
+<tr class="separator:aee7683a9e778c8b33d5dbcec276fba10 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d382e30ad7c791237021f7c73d822b inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a16d382e30ad7c791237021f7c73d822b">stop</a> ()</td></tr>
+<tr class="separator:a16d382e30ad7c791237021f7c73d822b inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f2300e2dc8f17cf5e8bd86a7c8c5b7 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a27f2300e2dc8f17cf5e8bd86a7c8c5b7">stop</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a27f2300e2dc8f17cf5e8bd86a7c8c5b7 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d09ec0ce117e0f8d62a3ccd7a0f001 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab7d09ec0ce117e0f8d62a3ccd7a0f001">updateDirectory</a> (const QUrl &amp;_dir)</td></tr>
+<tr class="separator:ab7d09ec0ce117e0f8d62a3ccd7a0f001 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525468385e8b870a92b0885dd4e9f9c8 inherit pub_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8">url</a> () const</td></tr>
+<tr class="separator:a525468385e8b870a92b0885dd4e9f9c8 inherit pub_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aebdce9903fecb78e605005432d3551c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#aebdce9903fecb78e605005432d3551c7">handleError</a> (<a class="el" href="classKIO_1_1Job.html">KIO::Job</a> *) override</td></tr>
+<tr class="separator:aebdce9903fecb78e605005432d3551c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b09ea1589ecd8fe9d08a90ebdfc98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#a68b09ea1589ecd8fe9d08a90ebdfc98d">handleErrorMessage</a> (const QString &amp;message) override</td></tr>
+<tr class="separator:a68b09ea1589ecd8fe9d08a90ebdfc98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56dea4d1432c8e0f423baced55abab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDirLister.html#af56dea4d1432c8e0f423baced55abab7">jobStarted</a> (<a class="el" href="classKIO_1_1ListJob.html">KIO::ListJob</a> *) override</td></tr>
+<tr class="separator:af56dea4d1432c8e0f423baced55abab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:acbcb0fafe5a8c8ef7d9b9483eccfb3e0 inherit pro_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#acbcb0fafe5a8c8ef7d9b9483eccfb3e0">doMimeFilter</a> (const QString &amp;mime, const QStringList &amp;filters) const</td></tr>
+<tr class="separator:acbcb0fafe5a8c8ef7d9b9483eccfb3e0 inherit pro_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3bbf87623e64af692a70d1d029074b inherit pro_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ada3bbf87623e64af692a70d1d029074b">doNameFilter</a> (const QString &amp;name, const QList&lt; QRegExp &gt; &amp;filters) const</td></tr>
+<tr class="separator:ada3bbf87623e64af692a70d1d029074b inherit pro_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f06bc0fd1c6dfc72d5ad83456c62541 inherit pro_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9f06bc0fd1c6dfc72d5ad83456c62541">matchesFilter</a> (const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;) const</td></tr>
+<tr class="separator:a9f06bc0fd1c6dfc72d5ad83456c62541 inherit pro_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938cfd79459de536e0d0c4c05f5274e5 inherit pro_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a938cfd79459de536e0d0c4c05f5274e5">matchesMimeFilter</a> (const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;) const</td></tr>
+<tr class="separator:a938cfd79459de536e0d0c4c05f5274e5 inherit pro_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:ab23142318e83abbd075772d9a86736e5 inherit pub_types_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5">OpenUrlFlag</a> { <a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b">NoFlags</a> = 0x0,
+<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5a55a91f2568dda3c1e4fd609bd41a15c2">Keep</a> = 0x1,
+<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5a22e97811a0252e9b5fa99242b7ec0b2f">Reload</a> = 0x2
+ }</td></tr>
+<tr class="separator:ab23142318e83abbd075772d9a86736e5 inherit pub_types_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d24c490b5bbe4b5795de207c6a3b256 inherit pub_types_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> { <b>AllItems</b> = 0,
+<b>FilteredItems</b> = 1
+ }</td></tr>
+<tr class="separator:a3d24c490b5bbe4b5795de207c6a3b256 inherit pub_types_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('signals_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:ac161a24689e6ad0c3b1cf728c0eb5baf inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ac161a24689e6ad0c3b1cf728c0eb5baf">canceled</a> ()</td></tr>
+<tr class="separator:ac161a24689e6ad0c3b1cf728c0eb5baf inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab47670aedb99916b3c260ca112cc9c inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a0ab47670aedb99916b3c260ca112cc9c">canceled</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a0ab47670aedb99916b3c260ca112cc9c inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee2899a6baaf848a5dff7f9d5bd5dd4 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3ee2899a6baaf848a5dff7f9d5bd5dd4">clear</a> ()</td></tr>
+<tr class="separator:a3ee2899a6baaf848a5dff7f9d5bd5dd4 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e99cec180a19160904745d8b4cd9fa3 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a2e99cec180a19160904745d8b4cd9fa3">clear</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a2e99cec180a19160904745d8b4cd9fa3 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb08430ff6d75a34648b3c98dd989e68 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#acb08430ff6d75a34648b3c98dd989e68">completed</a> ()</td></tr>
+<tr class="separator:acb08430ff6d75a34648b3c98dd989e68 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7272f3ccf6be1c655c00330f345fefe3 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a7272f3ccf6be1c655c00330f345fefe3">completed</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a7272f3ccf6be1c655c00330f345fefe3 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9ae3ea1f9c65e6fb81bbe0a7a913bb inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#abf9ae3ea1f9c65e6fb81bbe0a7a913bb">infoMessage</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:abf9ae3ea1f9c65e6fb81bbe0a7a913bb inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5896ae48077cb860102be0d4cb89293 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#af5896ae48077cb860102be0d4cb89293">itemsAdded</a> (const QUrl &amp;directoryUrl, const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:af5896ae48077cb860102be0d4cb89293 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2dceaad89e37165e68c52724f5e8c8 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aaa2dceaad89e37165e68c52724f5e8c8">itemsDeleted</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:aaa2dceaad89e37165e68c52724f5e8c8 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df76c13d5a6bc296d1c1fab57b5822c inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a5df76c13d5a6bc296d1c1fab57b5822c">itemsFilteredByMime</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:a5df76c13d5a6bc296d1c1fab57b5822c inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c295baa9a066163fa220bd1b54bf29 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29">newItems</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:ac6c295baa9a066163fa220bd1b54bf29 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12498b08a166a626170877523ca6fffb inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a12498b08a166a626170877523ca6fffb">percent</a> (int percent)</td></tr>
+<tr class="separator:a12498b08a166a626170877523ca6fffb inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb901acaf246dd5652c0e8bae399ce47 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#afb901acaf246dd5652c0e8bae399ce47">processedSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size)</td></tr>
+<tr class="separator:afb901acaf246dd5652c0e8bae399ce47 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9f2a825d7a0f7754ce7ab47f5b3f42 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#adb9f2a825d7a0f7754ce7ab47f5b3f42">redirection</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:adb9f2a825d7a0f7754ce7ab47f5b3f42 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c03aeac405ef36d97626f34bac42892 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9c03aeac405ef36d97626f34bac42892">redirection</a> (const QUrl &amp;oldUrl, const QUrl &amp;newUrl)</td></tr>
+<tr class="separator:a9c03aeac405ef36d97626f34bac42892 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7d7f9745a0991138e607465e36bb8a inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a8c7d7f9745a0991138e607465e36bb8a">refreshItems</a> (const QList&lt; QPair&lt; <a class="el" href="classKFileItem.html">KFileItem</a>, <a class="el" href="classKFileItem.html">KFileItem</a> &gt; &gt; &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:a8c7d7f9745a0991138e607465e36bb8a inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f7bddedb29c361af0ba0c2bb3b7740 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a03f7bddedb29c361af0ba0c2bb3b7740">speed</a> (int bytes_per_second)</td></tr>
+<tr class="separator:a03f7bddedb29c361af0ba0c2bb3b7740 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b52d80cdab488416c4c33ec04b84d78 inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a4b52d80cdab488416c4c33ec04b84d78">started</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a4b52d80cdab488416c4c33ec04b84d78 inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6302fdeb4fbf21cf908a385a7e8f6f inherit signals_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a2e6302fdeb4fbf21cf908a385a7e8f6f">totalSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size)</td></tr>
+<tr class="separator:a2e6302fdeb4fbf21cf908a385a7e8f6f inherit signals_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:a21e56ed46b616a2264fbe19f2afc5430 inherit pub_static_methods_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a21e56ed46b616a2264fbe19f2afc5430">cachedItemForUrl</a> (const QUrl &amp;<a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8">url</a>)</td></tr>
+<tr class="separator:a21e56ed46b616a2264fbe19f2afc5430 inherit pub_static_methods_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classKCoreDirLister"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classKCoreDirLister')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classKCoreDirLister.html">KCoreDirLister</a></td></tr>
+<tr class="memitem:a369751eafebc6a7809fd4eee745a4591 inherit pro_types_classKCoreDirLister"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a369751eafebc6a7809fd4eee745a4591">Changes</a> { <br />
+&#160;&#160;<b>NONE</b> = 0,
+<b>NAME_FILTER</b> = 1,
+<b>MIME_FILTER</b> = 2,
+<b>DOT_FILES</b> = 4,
+<br />
+&#160;&#160;<b>DIR_ONLY_MODE</b> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a369751eafebc6a7809fd4eee745a4591 inherit pro_types_classKCoreDirLister"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Subclass of <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a> which uses QWidgets to show error messages and to associate jobs with windows. </p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8h_source.html#l00032">32</a> of file <a class="el" href="kdirlister_8h_source.html">kdirlister.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acecdb9239e02667ca4573735a7b52336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecdb9239e02667ca4573735a7b52336">&#9670;&nbsp;</a></span>KDirLister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDirLister::KDirLister </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a directory lister. </p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00046">46</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a96e9f092899c1fb3e4b938b236b8c1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e9f092899c1fb3e4b938b236b8c1dc">&#9670;&nbsp;</a></span>~KDirLister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDirLister::~KDirLister </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy the directory lister. </p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00052">52</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a23135635ded8c015523d299b9c35b777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23135635ded8c015523d299b9c35b777">&#9670;&nbsp;</a></span>autoErrorHandlingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDirLister::autoErrorHandlingEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether auto error handling is enabled. </p>
+<p>If enabled, it will show an error dialog to the user when an error occurs. It is turned on by default. </p><dl class="section return"><dt>Returns</dt><dd>true if auto error handling is enabled, false otherwise </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDirLister.html#a818588f30d84bd8751dbf3af1c88182d" title="Enable or disable auto error handling is enabled. ">setAutoErrorHandlingEnabled()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aebdce9903fecb78e605005432d3551c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdce9903fecb78e605005432d3551c7">&#9670;&nbsp;</a></span>handleError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDirLister::handleError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKIO_1_1Job.html">KIO::Job</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to customize error handling. </p>
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+
+<p>Reimplemented from <a class="el" href="classKCoreDirLister.html#a1fefc33b214875885063e727880b0896">KCoreDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00078">78</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a68b09ea1589ecd8fe9d08a90ebdfc98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b09ea1589ecd8fe9d08a90ebdfc98d">&#9670;&nbsp;</a></span>handleErrorMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDirLister::handleErrorMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to customize error handling. </p>
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+
+<p>Reimplemented from <a class="el" href="classKCoreDirLister.html#acace62ce471ec11523c336f414b6a307">KCoreDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00087">87</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af56dea4d1432c8e0f423baced55abab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56dea4d1432c8e0f423baced55abab7">&#9670;&nbsp;</a></span>jobStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDirLister::jobStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKIO_1_1ListJob.html">KIO::ListJob</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented to associate a window with new jobs. </p>
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+
+<p>Reimplemented from <a class="el" href="classKCoreDirLister.html#a0b87c24d4b267443617016561fe4e11b">KCoreDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00096">96</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a113ef9f1cfda144ea8c827212d5c5a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113ef9f1cfda144ea8c827212d5c5a6d">&#9670;&nbsp;</a></span>mainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * KDirLister::mainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the main window associated with this object. </p>
+<dl class="section return"><dt>Returns</dt><dd>the associated main window, or 0 if there is none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00073">73</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a818588f30d84bd8751dbf3af1c88182d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818588f30d84bd8751dbf3af1c88182d">&#9670;&nbsp;</a></span>setAutoErrorHandlingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDirLister::setAutoErrorHandlingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable auto error handling is enabled. </p>
+<p>If enabled, it will show an error dialog to the user when an error occurs. It is turned on by default. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true to enable auto error handling, false to disable </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent widget for the error dialogs, can be 0 for top-level </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>autoErrorHandlingEnabled() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00062">62</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a246a31e6b1d6c3bcaa2bdcf36d44d180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246a31e6b1d6c3bcaa2bdcf36d44d180">&#9670;&nbsp;</a></span>setMainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDirLister::setMainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pass the main window this object is associated with this is used for caching authentication data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>the window to associate with, 0 to disassociate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kdirlister_8cpp_source.html#l00068">68</a> of file <a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kdirlister_8h_source.html">kdirlister.h</a></li>
+<li><a class="el" href="kdirlister_8cpp_source.html">kdirlister.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:57 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

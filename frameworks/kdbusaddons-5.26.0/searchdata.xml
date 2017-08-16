@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusconnectionpool.cpp</field>
+    <field name="url">kdbusconnectionpool_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QAtomicInt s_connectionCounter KDBusConnectionPoolPrivate KDBusConnectionPoolPrivate m_connection QDBusConnection connectToBus QDBusConnection SessionBus QStringLiteral arg newNumber KDBusConnectionPoolPrivate QDBusConnection::disconnectFromBus m_connection name QDBusConnection connection m_connection newNumber s_connectionCounter fetchAndAddRelaxed QDBusConnection m_connection QThreadStorage&lt;KDBusConnectionPoolPrivate *&gt; s_perThreadConnection QDBusConnection KDBusConnectionPool::threadConnection Q_ASSERT QCoreApplication::instance QCoreApplication::instance thread QThread::currentThread QDBusConnection::sessionBus s_perThreadConnection hasLocalData s_perThreadConnection setLocalData KDBusConnectionPoolPrivate s_perThreadConnection localData connection</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusconnectionpool.h</field>
+    <field name="url">kdbusconnectionpool_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusConnectionPool KDBUSADDONS_EXPORT QDBusConnection threadConnection</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLockPrivate KDBusInterProcessLockPrivate QString resource KDBusInterProcessLock parent m_resource resource m_parent parent m_serviceName QStringLiteral arg m_resource m_parent connect QDBusConnection::sessionBus interface SIGNAL serviceRegistered QString m_parent SLOT _k_serviceRegistered QString KDBusInterProcessLockPrivate _k_serviceRegistered QString service service m_serviceName emit m_parent lockGranted m_parent QString m_resource QString m_serviceName KDBusInterProcessLock m_parent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00058</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLock::KDBusInterProcessLock QString resource d new KDBusInterProcessLockPrivate resource this</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00063</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLock::~KDBusInterProcessLock d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00068</field>
+    <field name="keywords"></field>
+    <field name="text">QString KDBusInterProcessLock::resource d m_resource</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00073</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLock::lock QDBusConnection::sessionBus interface registerService d m_serviceName QDBusConnectionInterface::QueueService QDBusConnectionInterface::DontAllowReplacement</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00080</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLock::unlock QDBusConnection::sessionBus interface unregisterService d m_serviceName</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.cpp</field>
+    <field name="url">kdbusinterprocesslock_8cpp_source.html#l00085</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLock::waitForLockGranted QEventLoop loop connect SIGNAL lockGranted KDBusInterProcessLock loop SLOT quit loop exec</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.h</field>
+    <field name="url">kdbusinterprocesslock_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusInterProcessLockPrivate</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusinterprocesslock.h</field>
+    <field name="url">kdbusinterprocesslock_8h_source.html#l00062</field>
+    <field name="keywords"></field>
+    <field name="text">KDBUSADDONS_EXPORT KDBusInterProcessLock QObject Q_OBJECT KDBusInterProcessLock QString resource KDBusInterProcessLock QString resource lock unlock waitForLockGranted Q_SIGNALS lockGranted KDBusInterProcessLock lock KDBusInterProcessLockPrivate KDBusInterProcessLockPrivate d Q_PRIVATE_SLOT d _k_serviceRegistered QString</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusServicePrivate KDBusServicePrivate registered false exitValue QString generateServiceName QCoreApplication app QCoreApplication::instance QString domain app organizationDomain QStringList parts domain split QLatin1Char QString::SkipEmptyParts QString reversedDomain parts isEmpty reversedDomain QStringLiteral Q_FOREACH QString part parts reversedDomain prepend QLatin1Char reversedDomain prepend part reversedDomain app applicationName registered QString serviceName QString errorMessage exitValue</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00077</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusService::KDBusService StartupOptions options QObject parent QObject parent d new KDBusServicePrivate KDBusServiceAdaptor KDBusServiceExtensionsAdaptor QDBusConnectionInterface bus QDBusConnection::sessionBus isConnected bus QDBusConnection::sessionBus interface d errorMessage QLatin1String bus d serviceName d generateServiceName QString objectPath QLatin1Char d serviceName objectPath replace QLatin1Char QLatin1Char objectPath replace QLatin1Char QLatin1Char options Multiple QString pid QString::number QCoreApplication::applicationPid d serviceName QLatin1Char pid QDBusConnection::sessionBus registerObject QStringLiteral QCoreApplication::instance QDBusConnection::ExportAllSlots QDBusConnection::ExportScriptableProperties QDBusConnection::ExportAdaptors QDBusConnection::sessionBus registerObject objectPath QDBusConnection::ExportAdaptors d registered bus registerService d serviceName QDBusConnectionInterface::ServiceRegistered d registered options Unique QVariantMap platform_data platform_data insert QStringLiteral QString::fromUtf8 qgetenv QCoreApplication::arguments count OrgKdeKDBusServiceInterface iface d serviceName objectPath QDBusConnection::sessionBus iface setTimeout QDBusReply&lt;int&gt; reply iface CommandLine QCoreApplication::arguments QDir::currentPath platform_data reply isValid exit reply value d errorMessage reply error message OrgFreedesktopApplicationInterface iface d serviceName objectPath QDBusConnection::sessionBus iface setTimeout QDBusReply&lt;void&gt; reply iface Activate platform_data reply isValid exit d errorMessage reply error message d errorMessage QLatin1String d serviceName QLatin1String QCoreApplication app QCoreApplication::instance connect app SIGNAL aboutToQuit SLOT unregister d registered options NoExitOnFailure qCritical d errorMessage exit</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00153</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusService::~KDBusService d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00158</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusService::isRegistered d registered</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00163</field>
+    <field name="keywords"></field>
+    <field name="text">QString KDBusService::errorMessage d errorMessage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00168</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusService::setExitValue value d exitValue value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.cpp</field>
+    <field name="url">kdbusservice_8cpp_source.html#l00173</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusService::unregister QDBusConnectionInterface bus d registered QDBusConnection::sessionBus isConnected bus QDBusConnection::sessionBus interface bus unregisterService d serviceName KDBusService::Activate QVariantMap platform_data Q_UNUSED platform_data QX11Info::isPlatformX11 QX11Info::setAppTime QX11Info::getTimestamp emit activateRequested QStringList QString KDBusService::Open QStringList uris QVariantMap platform_data Q_UNUSED platform_data emit openRequested QUrl::fromStringList uris KDBusService::ActivateAction QString action_name QVariantList maybeParameter QVariantMap platform_data Q_UNUSED platform_data QVariant param maybeParameter count maybeParameter first QVariant emit activateActionRequested action_name param KDBusService::CommandLine QStringList arguments QString workingDirectory QVariantMap platform_data Q_UNUSED platform_data d exitValue emit activateRequested arguments workingDirectory d exitValue</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusServicePrivate</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00089</field>
+    <field name="keywords"></field>
+    <field name="text">KDBUSADDONS_EXPORT KDBusService QObject Q_OBJECT Q_ENUMS StartupOption Q_FLAGS StartupOptions</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00097</field>
+    <field name="keywords"></field>
+    <field name="text">StartupOption</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00103</field>
+    <field name="keywords"></field>
+    <field name="text">Unique</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00108</field>
+    <field name="keywords"></field>
+    <field name="text">Multiple</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdbusservice.h</field>
+    <field name="url">kdbusservice_8h_source.html#l00118</field>
+    <field name="keywords"></field>
+    <field name="text">NoExitOnFailure Q_DECLARE_FLAGS StartupOptions StartupOption KDBusService StartupOptions options Multiple QObject parent KDBusService isRegistered QString errorMessage setExitValue value Q_SIGNALS activateRequested QStringList arguments QString workingDirectory openRequested QList&lt;QUrl&gt; uris activateActionRequested QString actionName QVariant parameter Q_SLOTS unregister Activate QVariantMap platform_data Open QStringList uris QVariantMap platform_data ActivateAction QString action_name QVariantList maybeParameter QVariantMap platform_data KDBusServiceAdaptor CommandLine QStringList arguments QString workingDirectory QVariantMap platform_data KDBusServiceExtensionsAdaptor KDBusServicePrivate d Q_DECLARE_OPERATORS_FOR_FLAGS KDBusService::StartupOptions</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.cpp</field>
+    <field name="url">kdedmodule_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDEDModulePrivate QString moduleName</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.cpp</field>
+    <field name="url">kdedmodule_8cpp_source.html#l00037</field>
+    <field name="keywords"></field>
+    <field name="text">KDEDModule::KDEDModule QObject parent QObject parent d new KDEDModulePrivate KDEDModule::~KDEDModule emit moduleDeleted d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.cpp</field>
+    <field name="url">kdedmodule_8cpp_source.html#l00048</field>
+    <field name="keywords"></field>
+    <field name="text">KDEDModule::setModuleName QString name d moduleName name QDBusObjectPath realPath QLatin1String d moduleName realPath path isEmpty qWarning name QDBusConnection::RegisterOptions regOptions metaObject indexOfClassInfo regOptions QDBusConnection::ExportScriptableContents QDBusConnection::ExportAdaptors regOptions QDBusConnection::ExportScriptableSlots QDBusConnection::ExportScriptableProperties QDBusConnection::ExportAdaptors qDebug d moduleName QDBusConnection::sessionBus registerObject realPath path regOptions qDebug d moduleName QMetaObject::invokeMethod Qt::QueuedConnection Q_ARG QDBusObjectPath realPath QString KDEDModule::moduleName d moduleName s_modules_path</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.cpp</field>
+    <field name="url">kdedmodule_8cpp_source.html#l00095</field>
+    <field name="keywords"></field>
+    <field name="text">QString KDEDModule::moduleForMessage QDBusMessage message message type QDBusMessage::MethodCallMessage QString QString obj message path obj startsWith QLatin1String s_modules_path QString obj obj mid strlen s_modules_path index obj indexOf QLatin1Char index obj obj left index obj</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.h</field>
+    <field name="url">kdedmodule_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDEDModulePrivate Kded QDBusObjectPath QDBusMessage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdedmodule.h</field>
+    <field name="url">kdedmodule_8h_source.html#l00048</field>
+    <field name="keywords"></field>
+    <field name="text">KDBUSADDONS_EXPORT KDEDModule QObject Q_OBJECT Q_CLASSINFO Kded KDEDModule QObject parent KDEDModule setModuleName QString name QString moduleName QString moduleForMessage QDBusMessage message Q_SIGNALS moduleDeleted KDEDModule windowRegistered qlonglong windowId windowUnregistered qlonglong windowId moduleRegistered QDBusObjectPath path KDEDModulePrivate d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdeinitinterface.cpp</field>
+    <field name="url">kdeinitinterface_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDEInitInterface::ensureKdeinitRunning QDBusConnectionInterface dbusDaemon KDBusConnectionPool::threadConnection interface dbusDaemon isServiceRegistered QStringLiteral qDebug QLockFile lock QDir::tempPath QLatin1Char QLatin1String lock tryLock lock lock dbusDaemon isServiceRegistered QStringLiteral QString srv QStandardPaths::findExecutable QStringLiteral srv isEmpty QStringList searchPaths QStringList QCoreApplication::applicationDirPath QLibraryInfo::location QLibraryInfo::BinariesPath srv QStandardPaths::findExecutable QStringLiteral searchPaths srv isEmpty qWarning qgetenv searchPaths join QStringLiteral QStringList args args QStringLiteral QProcess::execute srv args</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdeinitinterface.h</field>
+    <field name="url">kdeinitinterface_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kdeinitinterface.h</field>
+    <field name="url">kdeinitinterface_8h_source.html#l00040</field>
+    <field name="keywords"></field>
+    <field name="text">KDEInitInterface KDBUSADDONS_EXPORT ensureKdeinitRunning</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kquitapp.cpp</field>
+    <field name="url">kquitapp_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">main argc argv QCoreApplication app argc argv app setApplicationName QStringLiteral app setApplicationVersion QStringLiteral QCommandLineParser parser parser setApplicationDescription QCoreApplication::translate parser addOption QCommandLineOption QStringLiteral QCoreApplication::translate QStringLiteral parser addOption QCommandLineOption QStringLiteral QCoreApplication::translate QStringLiteral QStringLiteral parser addPositionalArgument QStringLiteral QCoreApplication::translate parser addHelpOption parser addVersionOption parser process app QString service parser isSet QStringLiteral service parser value QStringLiteral parser positionalArguments isEmpty service QStringLiteral arg parser positionalArguments at parser showHelp QString path parser value QStringLiteral QDBusInterface interface service path interface isValid qWarning QCoreApplication::translate arg parser positionalArguments at service path interface call QStringLiteral QDBusError error interface lastError error type QDBusError::NoError qWarning QCoreApplication::translate arg parser positionalArguments join QStringLiteral error name error message</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KDBusInterProcessLock</field>
+    <field name="url">classKDBusInterProcessLock.html</field>
+    <field name="keywords">KDBusInterProcessLock</field>
+    <field name="text">This class can be used to serialize access to a resource between multiple processes Instead of using lock files which could become stale easily the registration of dummy dbus services is used to allow only one process at a time to access the resource Example Tobias Koenig</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDBusInterProcessLock::lockGranted</field>
+    <field name="args">(KDBusInterProcessLock *lock)</field>
+    <field name="url">classKDBusInterProcessLock.html#ac62167a063c9b40a2b3f8bf98da5145f</field>
+    <field name="keywords">lockGranted KDBusInterProcessLock::lockGranted KDBusInterProcessLock</field>
+    <field name="text">lock The lock that has been granted</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::KDBusInterProcessLock</field>
+    <field name="args">(const QString &amp;resource)</field>
+    <field name="url">classKDBusInterProcessLock.html#a9322fbb826e6626a5bcb6dfab9d9a8b8</field>
+    <field name="keywords">KDBusInterProcessLock KDBusInterProcessLock::KDBusInterProcessLock KDBusInterProcessLock</field>
+    <field name="text">resource The identifier of the resource that shall be locked This identifier can be any string however it must be unique for the resource and every client that wants to access the resource must know it</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::~KDBusInterProcessLock</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusInterProcessLock.html#a519e6b63bf6062c95e00506d34c6bb06</field>
+    <field name="keywords">KDBusInterProcessLock::~KDBusInterProcessLock KDBusInterProcessLock</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::lock</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusInterProcessLock.html#a41480ff8fbb36988a6df6217815519db</field>
+    <field name="keywords">lock KDBusInterProcessLock::lock KDBusInterProcessLock</field>
+    <field name="text">The lock is granted as soon as the lockGranted() signal is emitted</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::resource</field>
+    <field name="args">() const</field>
+    <field name="url">classKDBusInterProcessLock.html#a5536595e1f285a0c88a61436071bb91d</field>
+    <field name="keywords">resource KDBusInterProcessLock::resource KDBusInterProcessLock</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::unlock</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusInterProcessLock.html#acf278cddaba11314520bad8ebc6c1ea9</field>
+    <field name="keywords">unlock KDBusInterProcessLock::unlock KDBusInterProcessLock</field>
+    <field name="text">This method should be called as soon as the critical area is left in your code path and the lock is no longer needed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusInterProcessLock::waitForLockGranted</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusInterProcessLock.html#a34c2cc245e2fdfb0b37dc2e2dc983106</field>
+    <field name="keywords">waitForLockGranted KDBusInterProcessLock::waitForLockGranted KDBusInterProcessLock</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KDBusService</field>
+    <field name="url">classKDBusService.html</field>
+    <field name="keywords">KDBusService</field>
+    <field name="text">This registers the application at a predictable location on D-Bus registers the QCoreApplication or subclass object at and assists in implementing the application side of D-Bus activation from the Desktop Entry Specification An application can either work in Multiple mode or Unique mode In Multiple mode the application can be launched many times The service name in the D-Bus registration will contain the PID to distinguish the various instances for example org.kde.konqueror In Unique mode only one instance of this application can ever run The first instance of the application registers with D-Bus without the PID and any attempt to run the application again will cause the activateRequested() signal to be emitted in the already-running instance the duplicate instance will then quit The exit value can be set by the already running instance with setExitValue() the default value is 0 Unique-mode applications should usually delay parsing command-line arguments until after creating a KDBusService object that way they know they are the original instance of the application Applications that set the D-Bus activation entries in their desktop files should use Unique mode and connect to the signals emitted by this class Note that the D-Bus interface is exported for Multiple-mode applications as well so it also makes sense for such applications to connect to the signals emitted by this class In order to avoid a race the application should export its objects to D-Bus before allowing the event loop to run for example by calling QCoreApplication::exec() Otherwise the application will appear on the bus before its objects are accessible via D-Bus which could be a problem for other applications or scripts which start the application in order to talk D-Bus to it immediately Example usage 5.0</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KDBusService::StartupOption</field>
+    <field name="url">classKDBusService.html#ae926a530a0b87b6a01f30f967cb4d1d4</field>
+    <field name="keywords">StartupOption KDBusService::StartupOption KDBusService</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KDBusService::Unique</field>
+    <field name="url">classKDBusService.html#ae926a530a0b87b6a01f30f967cb4d1d4a904b4e552e06d76c5719da1f888da048</field>
+    <field name="keywords">Unique KDBusService::Unique KDBusService</field>
+    <field name="text">Indicates that only one instance of this application should ever exist Cannot be combined with Multiple</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KDBusService::Multiple</field>
+    <field name="url">classKDBusService.html#ae926a530a0b87b6a01f30f967cb4d1d4a5ddca7a02a6a3571066844bedd678823</field>
+    <field name="keywords">Multiple KDBusService::Multiple KDBusService</field>
+    <field name="text">Indicates that multiple instances of the application may exist Cannot be combined with Unique This is the default</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KDBusService::NoExitOnFailure</field>
+    <field name="url">classKDBusService.html#ae926a530a0b87b6a01f30f967cb4d1d4a3061fcf4e67a77975c843c8316d404f9</field>
+    <field name="keywords">NoExitOnFailure KDBusService::NoExitOnFailure KDBusService</field>
+    <field name="text">Indicates that the application should not exit if it failed to register with D-Bus If not set KDBusService will quit the application if it failed to register the service with D-Bus or a Unique instance can not be activated A Multiple instance will exit with error code 1 The exit value of a Unique instance can be set from the running instance with setExitValue() the default value is 0</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDBusService::activateActionRequested</field>
+    <field name="args">(const QString &amp;actionName, const QVariant &amp;parameter)</field>
+    <field name="url">classKDBusService.html#ac4485cbdad1d8cc9dba7989c038bef3b</field>
+    <field name="keywords">activateActionRequested KDBusService::activateActionRequested KDBusService</field>
+    <field name="text">See the desktop entry specification for more information</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDBusService::activateRequested</field>
+    <field name="args">(const QStringList &amp;arguments, const QString &amp;workingDirectory)</field>
+    <field name="url">classKDBusService.html#af0ad38f597aedaf22a30045d0423ed0e</field>
+    <field name="keywords">activateRequested KDBusService::activateRequested KDBusService</field>
+    <field name="text">If this is a Unique application when KDBusService is constructed in subsequent instances of the application ie when the executable is run when an instance is already running it will cause this signal to be emitted in the already-running instance with the arguments passed to the duplicate instance and the duplicate instance will then exit If this application s desktop file indicates that it supports D-Bus activation DBusActivatable true a command launcher may also call the Activate() D-Bus method to trigger this signal In this case args will be empty In single-window applications the connected signal should typically raise the window arguments The arguments the executable was called with See QCoreApplication::arguments() A typical implementation of the slot would be setExitValue()</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDBusService::openRequested</field>
+    <field name="args">(const QList&lt; QUrl &gt; &amp;uris)</field>
+    <field name="url">classKDBusService.html#a3e5216561a31a2ee74b8c62f5323ba03</field>
+    <field name="keywords">openRequested KDBusService::openRequested KDBusService</field>
+    <field name="text">uris The URLs of the files to open</field>
+  </doc>
+  <doc>
+    <field name="type">slot</field>
+    <field name="name">KDBusService::unregister</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusService.html#a4962f833b90cadd1e0b70631a5ea5aec</field>
+    <field name="keywords">unregister KDBusService::unregister KDBusService</field>
+    <field name="text">This is called automatically when the application is about to quit to make sure it doesn t keep receiving calls to its D-Bus interface while it is doing final cleanups</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusService::KDBusService</field>
+    <field name="args">(StartupOptions options=Multiple, QObject *parent=0)</field>
+    <field name="url">classKDBusService.html#a2b430cfbe1e706d963afc2774c52306d</field>
+    <field name="keywords">KDBusService KDBusService::KDBusService KDBusService</field>
+    <field name="text">The DBus service name is the reversed organization domain followed by the application name If options includes the Multiple flag the application PID will be appended For example will make KDBusService register as org.kde.kuiserver in Unique mode and org.kde.kuiserver if the process has PID 1234 in Multiple mode</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusService::~KDBusService</field>
+    <field name="args">()</field>
+    <field name="url">classKDBusService.html#a8cc46efc19c97a43d2721a93d354ca5a</field>
+    <field name="keywords">KDBusService::~KDBusService KDBusService</field>
+    <field name="text">Deleting this object before unregister() is called either manually or because QCoreApplication::aboutToQuit() was emitted could confuse clients who will see the service on the bus but will be unable to use the activation methods</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusService::errorMessage</field>
+    <field name="args">() const</field>
+    <field name="url">classKDBusService.html#a5c502481ec803aac33f90c11ffe1c550</field>
+    <field name="keywords">errorMessage KDBusService::errorMessage KDBusService</field>
+    <field name="text">Note that this is only useful when specifying the option NoExitOnFailure Otherwise the process has quit by the time you can get a chance to call this</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusService::isRegistered</field>
+    <field name="args">() const</field>
+    <field name="url">classKDBusService.html#ab2dfc71e1297d34244cdb8440e9060f4</field>
+    <field name="keywords">isRegistered KDBusService::isRegistered KDBusService</field>
+    <field name="text">Note that this is only useful when specifying the option NoExitOnFailure Otherwise the simple fact that this process is still running indicates that the registration succeeded</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDBusService::setExitValue</field>
+    <field name="args">(int value)</field>
+    <field name="url">classKDBusService.html#aeb640e48b69d89c3ea5e776e3610f024</field>
+    <field name="keywords">setExitValue KDBusService::setExitValue KDBusService</field>
+    <field name="text">If this is a Unique application a slot connected to activateRequested() can use this to specify a non-zero exit value for the duplicate instance This would typically be done if invalid command-line arguments are passed Note that this will only work if the signal-slot connection type is Qt::DirectConnection value The exit value for the duplicate instance</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KDEDModule</field>
+    <field name="url">classKDEDModule.html</field>
+    <field name="keywords">KDEDModule</field>
+    <field name="text">KDED modules are realized as shared libraries that are loaded on-demand into kded at runtime See kdelibs/kded/HOWTO for documentation about writing kded modules Waldo Bastian</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDEDModule::moduleDeleted</field>
+    <field name="args">(KDEDModule *)</field>
+    <field name="url">classKDEDModule.html#aefe4a320992f6ffff6e24a699cc095cd</field>
+    <field name="keywords">moduleDeleted KDEDModule::moduleDeleted KDEDModule</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDEDModule::moduleRegistered</field>
+    <field name="args">(const QDBusObjectPath &amp;path)</field>
+    <field name="url">classKDEDModule.html#ae32a3f939aaf2e09b5fca63b00f6c502</field>
+    <field name="keywords">moduleRegistered KDEDModule::moduleRegistered KDEDModule</field>
+    <field name="text">4.2</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDEDModule::windowRegistered</field>
+    <field name="args">(qlonglong windowId)</field>
+    <field name="url">classKDEDModule.html#aa7b274634821ae4e49e24e3171d2b184</field>
+    <field name="keywords">windowRegistered KDEDModule::windowRegistered KDEDModule</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KDEDModule::windowUnregistered</field>
+    <field name="args">(qlonglong windowId)</field>
+    <field name="url">classKDEDModule.html#a9499ce79524bc1e424726aa7232821b3</field>
+    <field name="keywords">windowUnregistered KDEDModule::windowUnregistered KDEDModule</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDEDModule::KDEDModule</field>
+    <field name="args">(QObject *parent=0)</field>
+    <field name="url">classKDEDModule.html#a1014a3d162c420e2bd464ffbf5043a53</field>
+    <field name="keywords">KDEDModule KDEDModule::KDEDModule KDEDModule</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDEDModule::setModuleName</field>
+    <field name="args">(const QString &amp;name)</field>
+    <field name="url">classKDEDModule.html#a8b53a3f52fa10b30a968aafdf24cd8d4</field>
+    <field name="keywords">setModuleName KDEDModule::setModuleName KDEDModule</field>
+    <field name="text">For modules loaded as plugins by a daemon this is called automatically by the daemon after loading the module Module authors should NOT call this</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KDEDModule::moduleForMessage</field>
+    <field name="args">(const QDBusMessage &amp;message)</field>
+    <field name="url">classKDEDModule.html#a5d7436e21e7f429d274ee55f3f715c67</field>
+    <field name="keywords">moduleForMessage KDEDModule::moduleForMessage KDEDModule</field>
+    <field name="text">Useful for autoloading modules in kded and similar daemons 5.7</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">KDEInitInterface</field>
+    <field name="url">namespaceKDEInitInterface.html</field>
+    <field name="keywords">KDEInitInterface</field>
+    <field name="text">A function to ensure kdeinit and klauncher are running This is necessary before making D-Bus calls to org.kde.klauncher5 5.0</field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">index</field>
+    <field name="url">index.html</field>
+    <field name="keywords"></field>
+    <field name="text">KDBusAddons Convenience classes for DBus Introduction KDBusAddons provides convenience classes on top of QtDBus as well as an API to create KDED modules</field>
+  </doc>
+</add>

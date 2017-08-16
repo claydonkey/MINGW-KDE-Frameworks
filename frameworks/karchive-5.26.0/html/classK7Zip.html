@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KArchive - K7Zip Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KArchive</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KArchive"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classK7Zip.html">K7Zip</option>
+        
+        <option value="classKAr.html">KAr</option>
+        
+        <option value="classKArchive.html">KArchive</option>
+        
+        <option value="classKArchiveDirectory.html">KArchiveDirectory</option>
+        
+        <option value="classKArchiveEntry.html">KArchiveEntry</option>
+        
+        <option value="classKArchiveFile.html">KArchiveFile</option>
+        
+        <option value="classKCompressionDevice.html">KCompressionDevice</option>
+        
+        <option value="classKFilterBase.html">KFilterBase</option>
+        
+        <option value="classKFilterDev.html">KFilterDev</option>
+        
+        <option value="classKGzipFilter.html">KGzipFilter</option>
+        
+        <option value="classKNoneFilter.html">KNoneFilter</option>
+        
+        <option value="classKRcc.html">KRcc</option>
+        
+        <option value="classKTar.html">KTar</option>
+        
+        <option value="classKZip.html">KZip</option>
+        
+        <option value="classKZipFileEntry.html">KZipFileEntry</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>File compression</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Archive)
+target_link_libraries(yourapp KF5::Archive)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KArchive </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/karchive-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KArchive on <a href="https://cgit.kde.org/karchive-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KArchive </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=K7Zip">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classK7Zip-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">K7Zip Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="k7zip_8h_source.html">k7zip.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for K7Zip:</div>
+<div class="dyncontent">
+<div class="center"><img src="classK7Zip__inherit__graph.png" border="0" usemap="#K7Zip_inherit__map" alt="Inheritance graph"/></div>
+<map name="K7Zip_inherit__map" id="K7Zip_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae631f40a58dcb35d4dddf75dec9f6e72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#ae631f40a58dcb35d4dddf75dec9f6e72">K7Zip</a> (const QString &amp;filename)</td></tr>
+<tr class="separator:ae631f40a58dcb35d4dddf75dec9f6e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46251247fccaf4f1498fd356f08748dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a46251247fccaf4f1498fd356f08748dc">K7Zip</a> (QIODevice *dev)</td></tr>
+<tr class="separator:a46251247fccaf4f1498fd356f08748dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edd3e9789efbb90a974497551234698"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a8edd3e9789efbb90a974497551234698">~K7Zip</a> ()</td></tr>
+<tr class="separator:a8edd3e9789efbb90a974497551234698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKArchive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKArchive')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKArchive.html">KArchive</a></td></tr>
+<tr class="memitem:ab5a2f90d4003664127e744d078162c34 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ab5a2f90d4003664127e744d078162c34">addLocalDirectory</a> (const QString &amp;path, const QString &amp;destName)</td></tr>
+<tr class="separator:ab5a2f90d4003664127e744d078162c34 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3b4d361c4b57fe8cb956a9b49a85e4 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a1e3b4d361c4b57fe8cb956a9b49a85e4">addLocalFile</a> (const QString &amp;<a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a>, const QString &amp;destName)</td></tr>
+<tr class="separator:a1e3b4d361c4b57fe8cb956a9b49a85e4 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fc5a093095ac0315e692e81aa4fce6 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a13fc5a093095ac0315e692e81aa4fce6">close</a> ()</td></tr>
+<tr class="separator:a13fc5a093095ac0315e692e81aa4fce6 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1126fb09ca2849da19372e62f9498a15 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">QIODevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a1126fb09ca2849da19372e62f9498a15">device</a> () const</td></tr>
+<tr class="separator:a1126fb09ca2849da19372e62f9498a15 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687f8801e5eb0b6476ddd7821c31f627 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a687f8801e5eb0b6476ddd7821c31f627">directory</a> () const</td></tr>
+<tr class="separator:a687f8801e5eb0b6476ddd7821c31f627 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8c517921d59a7f48f7090cbcf5efcc inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a> () const</td></tr>
+<tr class="separator:adb8c517921d59a7f48f7090cbcf5efcc inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28478783281e5f729210ef7ecac9c225 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a28478783281e5f729210ef7ecac9c225">finishWriting</a> (qint64 size)</td></tr>
+<tr class="separator:a28478783281e5f729210ef7ecac9c225 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec27152dc3cc0fa3df28daa8707d968d inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aec27152dc3cc0fa3df28daa8707d968d">isOpen</a> () const</td></tr>
+<tr class="separator:aec27152dc3cc0fa3df28daa8707d968d inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4aa377c4f4fefe55f840aa6ffcb3400 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">QIODevice::OpenMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a> () const</td></tr>
+<tr class="separator:ac4aa377c4f4fefe55f840aa6ffcb3400 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5269559282e6cfe2c261ba059e32b66a inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a5269559282e6cfe2c261ba059e32b66a">open</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>)</td></tr>
+<tr class="separator:a5269559282e6cfe2c261ba059e32b66a inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e50420630c3bb44f617ad812b673332 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a7e50420630c3bb44f617ad812b673332">prepareWriting</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, qint64 size, mode_t perm=0100644, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a7e50420630c3bb44f617ad812b673332 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8dad1251bf8b2303b677445dcb86c0 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a8e8dad1251bf8b2303b677445dcb86c0">writeDir</a> (const QString &amp;name, const QString &amp;user=QString(), const QString &amp;group=QString(), mode_t perm=040755, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a8e8dad1251bf8b2303b677445dcb86c0 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cf0bf8afebd3681b62e52d417b20bf inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">KARCHIVE_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aa6cf0bf8afebd3681b62e52d417b20bf">writeFile</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, const char *data, qint64 size, mode_t perm=0100644, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:aa6cf0bf8afebd3681b62e52d417b20bf inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb615bb1d33578f57f69af2b1e72029d inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aeb615bb1d33578f57f69af2b1e72029d">writeFile</a> (const QString &amp;name, const QByteArray &amp;data, mode_t perm=0100644, const QString &amp;user=QString(), const QString &amp;group=QString(), const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:aeb615bb1d33578f57f69af2b1e72029d inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5625944353172a5dbd229bf1a08d8a91 inherit pub_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a5625944353172a5dbd229bf1a08d8a91">writeSymLink</a> (const QString &amp;name, const QString &amp;target, const QString &amp;user=QString(), const QString &amp;group=QString(), mode_t perm=0120755, const QDateTime &amp;atime=QDateTime(), const QDateTime &amp;mtime=QDateTime(), const QDateTime &amp;ctime=QDateTime())</td></tr>
+<tr class="separator:a5625944353172a5dbd229bf1a08d8a91 inherit pub_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a44e7c936b5613c61729ee23b34f25d9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a44e7c936b5613c61729ee23b34f25d9a">closeArchive</a> () override</td></tr>
+<tr class="separator:a44e7c936b5613c61729ee23b34f25d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c6b2faa847ea99e08839ff186e75cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a34c6b2faa847ea99e08839ff186e75cc">doFinishWriting</a> (qint64 size) override</td></tr>
+<tr class="separator:a34c6b2faa847ea99e08839ff186e75cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5509064e8d15a5f879deb8e3c690164"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#af5509064e8d15a5f879deb8e3c690164">doPrepareWriting</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, qint64 size, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime) override</td></tr>
+<tr class="separator:af5509064e8d15a5f879deb8e3c690164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae007127015e6c87bfb6dfd11f4377f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a0ae007127015e6c87bfb6dfd11f4377f">doWriteDir</a> (const QString &amp;name, const QString &amp;user, const QString &amp;group, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime) override</td></tr>
+<tr class="separator:a0ae007127015e6c87bfb6dfd11f4377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9a0325d0646630a2612bc157923cac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a5a9a0325d0646630a2612bc157923cac">doWriteSymLink</a> (const QString &amp;name, const QString &amp;target, const QString &amp;user, const QString &amp;group, mode_t perm, const QDateTime &amp;atime, const QDateTime &amp;mtime, const QDateTime &amp;ctime) override</td></tr>
+<tr class="separator:a5a9a0325d0646630a2612bc157923cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390f17f49925c41c6997a4ebf83bdfd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#a390f17f49925c41c6997a4ebf83bdfd3">openArchive</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>) override</td></tr>
+<tr class="separator:a390f17f49925c41c6997a4ebf83bdfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f948bf16c4b8f484d8372bd81381ea"><td class="memItemLeft" align="right" valign="top"><a id="a75f948bf16c4b8f484d8372bd81381ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int id, void *data) override</td></tr>
+<tr class="separator:a75f948bf16c4b8f484d8372bd81381ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83781241d632dd22c4f30cff68a42f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK7Zip.html#aa83781241d632dd22c4f30cff68a42f8">writeData</a> (const char *data, qint64 size) override</td></tr>
+<tr class="separator:aa83781241d632dd22c4f30cff68a42f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKArchive"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKArchive')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKArchive.html">KArchive</a></td></tr>
+<tr class="memitem:a4386c6e12dc034c0687aa8bb738bf25d inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a4386c6e12dc034c0687aa8bb738bf25d">KArchive</a> (const QString &amp;<a class="el" href="classKArchive.html#adb8c517921d59a7f48f7090cbcf5efcc">fileName</a>)</td></tr>
+<tr class="separator:a4386c6e12dc034c0687aa8bb738bf25d inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efbb71ada0630d90c5af53fedce9b19 inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a3efbb71ada0630d90c5af53fedce9b19">KArchive</a> (QIODevice *dev)</td></tr>
+<tr class="separator:a3efbb71ada0630d90c5af53fedce9b19 inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e286c61a775bb3a004e23ba5f1fa46 inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a13e286c61a775bb3a004e23ba5f1fa46">createDevice</a> (QIODevice::OpenMode <a class="el" href="classKArchive.html#ac4aa377c4f4fefe55f840aa6ffcb3400">mode</a>)</td></tr>
+<tr class="separator:a13e286c61a775bb3a004e23ba5f1fa46 inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5dfd148c5c870da8a2330d0371e3d6e inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#aa5dfd148c5c870da8a2330d0371e3d6e">findOrCreate</a> (const QString &amp;path)</td></tr>
+<tr class="separator:aa5dfd148c5c870da8a2330d0371e3d6e inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218da40618b5ea5623656d3dbf3d9ecc inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#a218da40618b5ea5623656d3dbf3d9ecc">rootDir</a> ()</td></tr>
+<tr class="separator:a218da40618b5ea5623656d3dbf3d9ecc inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39343456c9c458230546b64ffc66a31 inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#af39343456c9c458230546b64ffc66a31">setDevice</a> (QIODevice *dev)</td></tr>
+<tr class="separator:af39343456c9c458230546b64ffc66a31 inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12a8b556703e189b9e2ebc886a18319 inherit pro_methods_classKArchive"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKArchive.html#ae12a8b556703e189b9e2ebc886a18319">setRootDir</a> (<a class="el" href="classKArchiveDirectory.html">KArchiveDirectory</a> *<a class="el" href="classKArchive.html#a218da40618b5ea5623656d3dbf3d9ecc">rootDir</a>)</td></tr>
+<tr class="separator:ae12a8b556703e189b9e2ebc886a18319 inherit pro_methods_classKArchive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class for reading / writing p7zip archives. </p>
+<dl class="section author"><dt>Author</dt><dd>Mario Bensi </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8h_source.html#l00028">28</a> of file <a class="el" href="k7zip_8h_source.html">k7zip.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae631f40a58dcb35d4dddf75dec9f6e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae631f40a58dcb35d4dddf75dec9f6e72">&#9670;&nbsp;</a></span>K7Zip() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">K7Zip::K7Zip </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an instance that operates on the given filename using the compression filter associated to given mimetype. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>is a local path (e.g. "/home/user/myfile.7z") </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l00533">533</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a46251247fccaf4f1498fd356f08748dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46251247fccaf4f1498fd356f08748dc">&#9670;&nbsp;</a></span>K7Zip() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">K7Zip::K7Zip </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an instance that operates on the given device. </p>
+<p>The device can be compressed (<a class="el" href="classKFilterDev.html" title="A class for reading and writing compressed data onto a device (e.g. ">KFilterDev</a>) or not (QFile, etc.). </p><dl class="section warning"><dt>Warning</dt><dd>Do not assume that giving a QFile here will decompress the file, in case it's compressed! </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>the device to read from. If the source is compressed, the QIODevice must take care of decompression </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l00539">539</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8edd3e9789efbb90a974497551234698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8edd3e9789efbb90a974497551234698">&#9670;&nbsp;</a></span>~K7Zip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">K7Zip::~K7Zip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the archive is still opened, then it will be closed automatically by the destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l00546">546</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a44e7c936b5613c61729ee23b34f25d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e7c936b5613c61729ee23b34f25d9a">&#9670;&nbsp;</a></span>closeArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::closeArchive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the archive. </p>
+<p>Called by close. </p>
+
+<p>Implements <a class="el" href="classKArchive.html#a52fa0982c4acaf9dcca8df09749e99a0">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02700">2700</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a34c6b2faa847ea99e08839ff186e75cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c6b2faa847ea99e08839ff186e75cc">&#9670;&nbsp;</a></span>doFinishWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::doFinishWriting </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a>. </p>
+
+<p>Implements <a class="el" href="classKArchive.html#a181381217cda7b1d32abd7422b3de4ff">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02827">2827</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5509064e8d15a5f879deb8e3c690164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5509064e8d15a5f879deb8e3c690164">&#9670;&nbsp;</a></span>doPrepareWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::doPrepareWriting </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a>. </p>
+
+<p>Implements <a class="el" href="classKArchive.html#a719ec1a1c62c015e993dee72ecb5fce7">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02852">2852</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ae007127015e6c87bfb6dfd11f4377f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae007127015e6c87bfb6dfd11f4377f">&#9670;&nbsp;</a></span>doWriteDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::doWriteDir </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a>. </p>
+
+<p>Implements <a class="el" href="classKArchive.html#a4423297991d66579ea9fbf070f91ff48">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02893">2893</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a9a0325d0646630a2612bc157923cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9a0325d0646630a2612bc157923cac">&#9670;&nbsp;</a></span>doWriteSymLink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::doWriteSymLink </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mode_t&#160;</td>
+          <td class="paramname"><em>perm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>atime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>mtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>ctime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a>. </p>
+
+<p>Implements <a class="el" href="classKArchive.html#a4d818a6892534b4f559d3f4612a18dd5">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02929">2929</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a390f17f49925c41c6997a4ebf83bdfd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390f17f49925c41c6997a4ebf83bdfd3">&#9670;&nbsp;</a></span>openArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::openArchive </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice::OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens the archive for reading. </p>
+<p>Parses the directory listing of the archive and creates the KArchiveDirectory/KArchiveFile entries. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the mode of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classKArchive.html#a868eecf661cda9b0fd26b6c9a1319555">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02294">2294</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa83781241d632dd22c4f30cff68a42f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83781241d632dd22c4f30cff68a42f8">&#9670;&nbsp;</a></span>writeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool K7Zip::writeData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classKArchive.html" title="KArchive is a base class for reading and writing archives. ">KArchive</a>. </p>
+
+<p>Reimplemented from <a class="el" href="classKArchive.html#aa16180fff07f057fbcb4a23f4c3840dc">KArchive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="k7zip_8cpp_source.html#l02836">2836</a> of file <a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="k7zip_8h_source.html">k7zip.h</a></li>
+<li><a class="el" href="k7zip_8cpp_source.html">k7zip.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:22:52 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

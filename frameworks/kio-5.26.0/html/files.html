@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - File List</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">File List</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">Here is a list of all documented files with brief descriptions:</div><div class="directory">
+<table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="accessmanager_8cpp_source.html"><span class="icondoc"></span></a><b>accessmanager.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="accessmanager_8h_source.html"><span class="icondoc"></span></a><b>accessmanager.h</b></td><td class="desc"></td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="authinfo_8cpp_source.html"><span class="icondoc"></span></a><b>authinfo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="authinfo_8h_source.html"><span class="icondoc"></span></a><b>authinfo.h</b></td><td class="desc"></td></tr>
+<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="cache_8cpp_source.html"><span class="icondoc"></span></a><b>cache.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="cache_8h_source.html"><span class="icondoc"></span></a><b>cache.h</b></td><td class="desc"></td></tr>
+<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="chmodjob_8cpp_source.html"><span class="icondoc"></span></a><b>chmodjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="chmodjob_8h_source.html"><span class="icondoc"></span></a><b>chmodjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="clipboardupdater_8cpp_source.html"><span class="icondoc"></span></a><b>clipboardupdater.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_9_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="connection_8cpp_source.html"><span class="icondoc"></span></a><b>connection.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="connectionbackend_8cpp_source.html"><span class="icondoc"></span></a><b>connectionbackend.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="connectionserver_8cpp_source.html"><span class="icondoc"></span></a><b>connectionserver.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="connectionserver_8h_source.html"><span class="icondoc"></span></a><b>connectionserver.h</b></td><td class="desc"></td></tr>
+<tr id="row_13_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="copyjob_8cpp_source.html"><span class="icondoc"></span></a><b>copyjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_14_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="copyjob_8h_source.html"><span class="icondoc"></span></a><b>copyjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_15_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dataprotocol_8cpp_source.html"><span class="icondoc"></span></a><b>dataprotocol.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_16_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dataslave_8cpp_source.html"><span class="icondoc"></span></a><b>dataslave.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_17_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="davjob_8cpp_source.html"><span class="icondoc"></span></a><b>davjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_18_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="davjob_8h_source.html"><span class="icondoc"></span></a><b>davjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_19_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="defaults-kfile_8h_source.html"><span class="icondoc"></span></a><b>defaults-kfile.h</b></td><td class="desc"></td></tr>
+<tr id="row_20_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="defaultviewadapter_8cpp_source.html"><span class="icondoc"></span></a><b>defaultviewadapter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_21_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="delegateanimationhandler_8cpp_source.html"><span class="icondoc"></span></a><b>delegateanimationhandler.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_22_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="deletejob_8cpp_source.html"><span class="icondoc"></span></a><b>deletejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_23_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="deletejob_8h_source.html"><span class="icondoc"></span></a><b>deletejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_24_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="des_8cpp_source.html"><span class="icondoc"></span></a><b>des.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_25_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="des_8h_source.html"><span class="icondoc"></span></a><b>des.h</b></td><td class="desc"></td></tr>
+<tr id="row_26_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="desktopexecparser_8cpp_source.html"><span class="icondoc"></span></a><b>desktopexecparser.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_27_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="desktopexecparser_8h_source.html"><span class="icondoc"></span></a><b>desktopexecparser.h</b></td><td class="desc"></td></tr>
+<tr id="row_28_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dhcp_8h_source.html"><span class="icondoc"></span></a><b>dhcp.h</b></td><td class="desc"></td></tr>
+<tr id="row_29_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="directorysizejob_8cpp_source.html"><span class="icondoc"></span></a><b>directorysizejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_30_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="directorysizejob_8h_source.html"><span class="icondoc"></span></a><b>directorysizejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_31_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="discovery_8cpp_source.html"><span class="icondoc"></span></a><b>discovery.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_32_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="discovery_8h_source.html"><span class="icondoc"></span></a><b>discovery.h</b></td><td class="desc"></td></tr>
+<tr id="row_33_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="discspaceutil_8cpp_source.html"><span class="icondoc"></span></a><b>discspaceutil.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_34_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="discspaceutil_8h_source.html"><span class="icondoc"></span></a><b>discspaceutil.h</b></td><td class="desc"></td></tr>
+<tr id="row_35_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dndpopupmenuplugin_8cpp_source.html"><span class="icondoc"></span></a><b>dndpopupmenuplugin.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_36_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dndpopupmenuplugin_8h_source.html"><span class="icondoc"></span></a><b>dndpopupmenuplugin.h</b></td><td class="desc"></td></tr>
+<tr id="row_37_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="downloader_8cpp_source.html"><span class="icondoc"></span></a><b>downloader.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_38_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="downloader_8h_source.html"><span class="icondoc"></span></a><b>downloader.h</b></td><td class="desc"></td></tr>
+<tr id="row_39_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dropjob_8cpp_source.html"><span class="icondoc"></span></a><b>dropjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_40_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="dropjob_8h_source.html"><span class="icondoc"></span></a><b>dropjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_41_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="emptytrashjob_8cpp_source.html"><span class="icondoc"></span></a><b>emptytrashjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_42_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="emptytrashjob_8h_source.html"><span class="icondoc"></span></a><b>emptytrashjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_43_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="executablefileopendialog_8cpp_source.html"><span class="icondoc"></span></a><b>executablefileopendialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_44_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="faviconrequestjob_8cpp_source.html"><span class="icondoc"></span></a><b>faviconrequestjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_45_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="faviconrequestjob_8h_source.html"><span class="icondoc"></span></a><b>faviconrequestjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_46_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="faviconscache_8cpp_source.html"><span class="icondoc"></span></a><b>faviconscache.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_47_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="file_8cpp_source.html"><span class="icondoc"></span></a><b>file.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_48_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="file_8h_source.html"><span class="icondoc"></span></a><b>file.h</b></td><td class="desc"></td></tr>
+<tr id="row_49_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="file__unix_8cpp_source.html"><span class="icondoc"></span></a><b>file_unix.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_50_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="file__win_8cpp_source.html"><span class="icondoc"></span></a><b>file_win.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_51_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filecopyjob_8cpp_source.html"><span class="icondoc"></span></a><b>filecopyjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_52_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filecopyjob_8h_source.html"><span class="icondoc"></span></a><b>filecopyjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_53_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filejob_8cpp_source.html"><span class="icondoc"></span></a><b>filejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_54_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filejob_8h_source.html"><span class="icondoc"></span></a><b>filejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_55_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filesystemfreespacejob_8cpp_source.html"><span class="icondoc"></span></a><b>filesystemfreespacejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_56_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="filesystemfreespacejob_8h_source.html"><span class="icondoc"></span></a><b>filesystemfreespacejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_57_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="fileundomanager_8cpp_source.html"><span class="icondoc"></span></a><b>fileundomanager.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_58_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="fileundomanager_8h_source.html"><span class="icondoc"></span></a><b>fileundomanager.h</b></td><td class="desc"></td></tr>
+<tr id="row_59_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="fixhosturifilter_8cpp_source.html"><span class="icondoc"></span></a><b>fixhosturifilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_60_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="fixhosturifilter_8h_source.html"><span class="icondoc"></span></a><b>fixhosturifilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_61_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="forwardingslavebase_8cpp_source.html"><span class="icondoc"></span></a><b>forwardingslavebase.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_62_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="forwardingslavebase_8h_source.html"><span class="icondoc"></span></a><b>forwardingslavebase.h</b></td><td class="desc"></td></tr>
+<tr id="row_63_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ftp_8cpp_source.html"><span class="icondoc"></span></a><b>ftp.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_64_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ftp_8h_source.html"><span class="icondoc"></span></a><b>ftp.h</b></td><td class="desc"></td></tr>
+<tr id="row_65_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="global_8cpp_source.html"><span class="icondoc"></span></a><b>global.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_66_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="global_8h_source.html"><span class="icondoc"></span></a><b>global.h</b></td><td class="desc"></td></tr>
+<tr id="row_67_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="hostinfo_8cpp_source.html"><span class="icondoc"></span></a><b>hostinfo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_68_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="hostinfo_8h_source.html"><span class="icondoc"></span></a><b>hostinfo.h</b></td><td class="desc"></td></tr>
+<tr id="row_69_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="http_8cpp_source.html"><span class="icondoc"></span></a><b>http.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_70_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="http_8h_source.html"><span class="icondoc"></span></a><b>http.h</b></td><td class="desc"></td></tr>
+<tr id="row_71_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="http__cache__cleaner_8cpp_source.html"><span class="icondoc"></span></a><b>http_cache_cleaner.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_72_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="http__slave__defaults_8h_source.html"><span class="icondoc"></span></a><b>http_slave_defaults.h</b></td><td class="desc"></td></tr>
+<tr id="row_73_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="httpauthentication_8cpp_source.html"><span class="icondoc"></span></a><b>httpauthentication.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_74_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="httpauthentication_8h_source.html"><span class="icondoc"></span></a><b>httpauthentication.h</b></td><td class="desc"></td></tr>
+<tr id="row_75_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="httpfilter_8cpp_source.html"><span class="icondoc"></span></a><b>httpfilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_76_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="httpfilter_8h_source.html"><span class="icondoc"></span></a><b>httpfilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_77_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="idleslave_8cpp_source.html"><span class="icondoc"></span></a><b>idleslave.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_78_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="idleslave_8h_source.html"><span class="icondoc"></span></a><b>idleslave.h</b></td><td class="desc"></td></tr>
+<tr id="row_79_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ikwsopts_8cpp_source.html"><span class="icondoc"></span></a><b>ikwsopts.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_80_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ikwsopts_8h_source.html"><span class="icondoc"></span></a><b>ikwsopts.h</b></td><td class="desc"></td></tr>
+<tr id="row_81_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="imagefilter_8cpp_source.html"><span class="icondoc"></span></a><b>imagefilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_82_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ioslave__defaults_8h_source.html"><span class="icondoc"></span></a><b>ioslave_defaults.h</b></td><td class="desc"></td></tr>
+<tr id="row_83_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="job_8cpp_source.html"><span class="icondoc"></span></a><b>job.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_84_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="job_8h_source.html"><span class="icondoc"></span></a><b>job.h</b></td><td class="desc"></td></tr>
+<tr id="row_85_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="job__base_8h_source.html"><span class="icondoc"></span></a><b>job_base.h</b></td><td class="desc"></td></tr>
+<tr id="row_86_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="job__error_8cpp_source.html"><span class="icondoc"></span></a><b>job_error.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_87_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobclasses_8h_source.html"><span class="icondoc"></span></a><b>jobclasses.h</b></td><td class="desc"></td></tr>
+<tr id="row_88_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobtracker_8cpp_source.html"><span class="icondoc"></span></a><b>jobtracker.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_89_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobtracker_8h_source.html"><span class="icondoc"></span></a><b>jobtracker.h</b></td><td class="desc"></td></tr>
+<tr id="row_90_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegate_8cpp_source.html"><span class="icondoc"></span></a><b>jobuidelegate.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_91_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegate_8h_source.html"><span class="icondoc"></span></a><b>jobuidelegate.h</b></td><td class="desc"></td></tr>
+<tr id="row_92_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegateextension_8cpp_source.html"><span class="icondoc"></span></a><b>jobuidelegateextension.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_93_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegateextension_8h_source.html"><span class="icondoc"></span></a><b>jobuidelegateextension.h</b></td><td class="desc"></td></tr>
+<tr id="row_94_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegatefactory_8cpp_source.html"><span class="icondoc"></span></a><b>jobuidelegatefactory.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_95_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="jobuidelegatefactory_8h_source.html"><span class="icondoc"></span></a><b>jobuidelegatefactory.h</b></td><td class="desc"></td></tr>
+<tr id="row_96_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="joburlcache_8cpp_source.html"><span class="icondoc"></span></a><b>joburlcache.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_97_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kabstractfileitemactionplugin_8cpp_source.html"><span class="icondoc"></span></a><b>kabstractfileitemactionplugin.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_98_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kabstractfileitemactionplugin_8h_source.html"><span class="icondoc"></span></a><b>kabstractfileitemactionplugin.h</b></td><td class="desc"></td></tr>
+<tr id="row_99_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kabstractviewadapter_8h_source.html"><span class="icondoc"></span></a><b>kabstractviewadapter.h</b></td><td class="desc"></td></tr>
+<tr id="row_100_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kacl_8cpp_source.html"><span class="icondoc"></span></a><b>kacl.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_101_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kacl_8h_source.html"><span class="icondoc"></span></a><b>kacl.h</b></td><td class="desc"></td></tr>
+<tr id="row_102_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kacleditwidget_8cpp_source.html"><span class="icondoc"></span></a><b>kacleditwidget.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_103_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kacleditwidget_8h_source.html"><span class="icondoc"></span></a><b>kacleditwidget.h</b></td><td class="desc"></td></tr>
+<tr id="row_104_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kautomount_8cpp_source.html"><span class="icondoc"></span></a><b>kautomount.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_105_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kautomount_8h_source.html"><span class="icondoc"></span></a><b>kautomount.h</b></td><td class="desc"></td></tr>
+<tr id="row_106_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kbuildsycocaprogressdialog_8cpp_source.html"><span class="icondoc"></span></a><b>kbuildsycocaprogressdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_107_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kbuildsycocaprogressdialog_8h_source.html"><span class="icondoc"></span></a><b>kbuildsycocaprogressdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_108_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcmtrash_8cpp_source.html"><span class="icondoc"></span></a><b>kcmtrash.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_109_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcmtrash_8h_source.html"><span class="icondoc"></span></a><b>kcmtrash.h</b></td><td class="desc"></td></tr>
+<tr id="row_110_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiejar_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiejar.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_111_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiejar_8h_source.html"><span class="icondoc"></span></a><b>kcookiejar.h</b></td><td class="desc"></td></tr>
+<tr id="row_112_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiejar__include_8h_source.html"><span class="icondoc"></span></a><b>kcookiejar_include.h</b></td><td class="desc"></td></tr>
+<tr id="row_113_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookieserver_8cpp_source.html"><span class="icondoc"></span></a><b>kcookieserver.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_114_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookieserver_8h_source.html"><span class="icondoc"></span></a><b>kcookieserver.h</b></td><td class="desc"></td></tr>
+<tr id="row_115_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiesmain_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiesmain.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_116_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiesmain_8h_source.html"><span class="icondoc"></span></a><b>kcookiesmain.h</b></td><td class="desc"></td></tr>
+<tr id="row_117_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiesmanagement_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiesmanagement.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_118_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiesmanagement_8h_source.html"><span class="icondoc"></span></a><b>kcookiesmanagement.h</b></td><td class="desc"></td></tr>
+<tr id="row_119_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiespolicies_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiespolicies.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_120_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiespolicies_8h_source.html"><span class="icondoc"></span></a><b>kcookiespolicies.h</b></td><td class="desc"></td></tr>
+<tr id="row_121_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiespolicyselectiondlg_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiespolicyselectiondlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_122_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiespolicyselectiondlg_8h_source.html"><span class="icondoc"></span></a><b>kcookiespolicyselectiondlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_123_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiewin_8cpp_source.html"><span class="icondoc"></span></a><b>kcookiewin.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_124_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcookiewin_8h_source.html"><span class="icondoc"></span></a><b>kcookiewin.h</b></td><td class="desc"></td></tr>
+<tr id="row_125_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcoredirlister_8cpp_source.html"><span class="icondoc"></span></a><b>kcoredirlister.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_126_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcoredirlister_8h_source.html"><span class="icondoc"></span></a><b>kcoredirlister.h</b></td><td class="desc"></td></tr>
+<tr id="row_127_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdesktopfileactions_8cpp_source.html"><span class="icondoc"></span></a><b>kdesktopfileactions.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_128_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdesktopfileactions_8h_source.html"><span class="icondoc"></span></a><b>kdesktopfileactions.h</b></td><td class="desc"></td></tr>
+<tr id="row_129_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirlister_8cpp_source.html"><span class="icondoc"></span></a><b>kdirlister.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_130_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirlister_8h_source.html"><span class="icondoc"></span></a><b>kdirlister.h</b></td><td class="desc"></td></tr>
+<tr id="row_131_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirmodel_8cpp_source.html"><span class="icondoc"></span></a><b>kdirmodel.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_132_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirmodel_8h_source.html"><span class="icondoc"></span></a><b>kdirmodel.h</b></td><td class="desc"></td></tr>
+<tr id="row_133_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirnotify_8cpp_source.html"><span class="icondoc"></span></a><b>kdirnotify.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_134_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirnotify_8h_source.html"><span class="icondoc"></span></a><b>kdirnotify.h</b></td><td class="desc"></td></tr>
+<tr id="row_135_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdiroperator_8cpp_source.html"><span class="icondoc"></span></a><b>kdiroperator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_136_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdiroperator_8h_source.html"><span class="icondoc"></span></a><b>kdiroperator.h</b></td><td class="desc"></td></tr>
+<tr id="row_137_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdiroperatordetailview_8cpp_source.html"><span class="icondoc"></span></a><b>kdiroperatordetailview.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_138_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirsortfilterproxymodel_8cpp_source.html"><span class="icondoc"></span></a><b>kdirsortfilterproxymodel.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_139_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdirsortfilterproxymodel_8h_source.html"><span class="icondoc"></span></a><b>kdirsortfilterproxymodel.h</b></td><td class="desc"></td></tr>
+<tr id="row_140_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdiskfreespaceinfo_8cpp_source.html"><span class="icondoc"></span></a><b>kdiskfreespaceinfo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_141_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdiskfreespaceinfo_8h_source.html"><span class="icondoc"></span></a><b>kdiskfreespaceinfo.h</b></td><td class="desc"></td></tr>
+<tr id="row_142_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kdynamicjobtracker_8cpp_source.html"><span class="icondoc"></span></a><b>kdynamicjobtracker.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_143_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kencodingfiledialog_8cpp_source.html"><span class="icondoc"></span></a><b>kencodingfiledialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_144_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kencodingfiledialog_8h_source.html"><span class="icondoc"></span></a><b>kencodingfiledialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_145_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfile_8cpp_source.html"><span class="icondoc"></span></a><b>kfile.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_146_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfile_8h_source.html"><span class="icondoc"></span></a><b>kfile.h</b></td><td class="desc"></td></tr>
+<tr id="row_147_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilebookmarkhandler_8cpp_source.html"><span class="icondoc"></span></a><b>kfilebookmarkhandler.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_148_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilecopytomenu_8cpp_source.html"><span class="icondoc"></span></a><b>kfilecopytomenu.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_149_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilecopytomenu_8h_source.html"><span class="icondoc"></span></a><b>kfilecopytomenu.h</b></td><td class="desc"></td></tr>
+<tr id="row_150_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilefiltercombo_8cpp_source.html"><span class="icondoc"></span></a><b>kfilefiltercombo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_151_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilefiltercombo_8h_source.html"><span class="icondoc"></span></a><b>kfilefiltercombo.h</b></td><td class="desc"></td></tr>
+<tr id="row_152_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitem_8cpp_source.html"><span class="icondoc"></span></a><b>kfileitem.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_153_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitem_8h_source.html"><span class="icondoc"></span></a><b>kfileitem.h</b></td><td class="desc"></td></tr>
+<tr id="row_154_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemactions_8cpp_source.html"><span class="icondoc"></span></a><b>kfileitemactions.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_155_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemactions_8h_source.html"><span class="icondoc"></span></a><b>kfileitemactions.h</b></td><td class="desc"></td></tr>
+<tr id="row_156_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemdelegate_8cpp_source.html"><span class="icondoc"></span></a><b>kfileitemdelegate.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_157_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemdelegate_8h_source.html"><span class="icondoc"></span></a><b>kfileitemdelegate.h</b></td><td class="desc"></td></tr>
+<tr id="row_158_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemlistproperties_8cpp_source.html"><span class="icondoc"></span></a><b>kfileitemlistproperties.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_159_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileitemlistproperties_8h_source.html"><span class="icondoc"></span></a><b>kfileitemlistproperties.h</b></td><td class="desc"></td></tr>
+<tr id="row_160_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilemetapreview_8cpp_source.html"><span class="icondoc"></span></a><b>kfilemetapreview.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_161_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplaceeditdialog_8cpp_source.html"><span class="icondoc"></span></a><b>kfileplaceeditdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_162_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplaceeditdialog_8h_source.html"><span class="icondoc"></span></a><b>kfileplaceeditdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_163_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplacesitem_8cpp_source.html"><span class="icondoc"></span></a><b>kfileplacesitem.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_164_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplacesmodel_8cpp_source.html"><span class="icondoc"></span></a><b>kfileplacesmodel.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_165_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplacesmodel_8h_source.html"><span class="icondoc"></span></a><b>kfileplacesmodel.h</b></td><td class="desc"></td></tr>
+<tr id="row_166_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplacesview_8cpp_source.html"><span class="icondoc"></span></a><b>kfileplacesview.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_167_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfileplacesview_8h_source.html"><span class="icondoc"></span></a><b>kfileplacesview.h</b></td><td class="desc"></td></tr>
+<tr id="row_168_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilepreviewgenerator_8cpp_source.html"><span class="icondoc"></span></a><b>kfilepreviewgenerator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_169_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilepreviewgenerator_8h_source.html"><span class="icondoc"></span></a><b>kfilepreviewgenerator.h</b></td><td class="desc"></td></tr>
+<tr id="row_170_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilewidget_8cpp_source.html"><span class="icondoc"></span></a><b>kfilewidget.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_171_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kfilewidget_8h_source.html"><span class="icondoc"></span></a><b>kfilewidget.h</b></td><td class="desc"></td></tr>
+<tr id="row_172_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kimagefilepreview_8cpp_source.html"><span class="icondoc"></span></a><b>kimagefilepreview.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_173_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kimagefilepreview_8h_source.html"><span class="icondoc"></span></a><b>kimagefilepreview.h</b></td><td class="desc"></td></tr>
+<tr id="row_174_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kinterprocesslock_8cpp_source.html"><span class="icondoc"></span></a><b>kinterprocesslock.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_175_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kinterprocesslock_8h_source.html"><span class="icondoc"></span></a><b>kinterprocesslock.h</b></td><td class="desc"></td></tr>
+<tr id="row_176_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__help_8cpp_source.html"><span class="icondoc"></span></a><b>kio_help.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_177_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__help_8h_source.html"><span class="icondoc"></span></a><b>kio_help.h</b></td><td class="desc"></td></tr>
+<tr id="row_178_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__trash_8cpp_source.html"><span class="icondoc"></span></a><b>kio_trash.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_179_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__trash_8h_source.html"><span class="icondoc"></span></a><b>kio_trash.h</b></td><td class="desc"></td></tr>
+<tr id="row_180_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__trash__win_8cpp_source.html"><span class="icondoc"></span></a><b>kio_trash_win.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_181_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kio__trash__win_8h_source.html"><span class="icondoc"></span></a><b>kio_trash_win.h</b></td><td class="desc"></td></tr>
+<tr id="row_182_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kiocoredebug_8cpp_source.html"><span class="icondoc"></span></a><b>kiocoredebug.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_183_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kiocoredebug_8h_source.html"><span class="icondoc"></span></a><b>kiocoredebug.h</b></td><td class="desc"></td></tr>
+<tr id="row_184_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kiod__kpasswdserver_8cpp_source.html"><span class="icondoc"></span></a><b>kiod_kpasswdserver.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_185_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kiod__main_8cpp_source.html"><span class="icondoc"></span></a><b>kiod_main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_186_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kioglobal__p__unix_8cpp_source.html"><span class="icondoc"></span></a><b>kioglobal_p_unix.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_187_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kioglobal__p__win_8cpp_source.html"><span class="icondoc"></span></a><b>kioglobal_p_win.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_188_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kioslave_8cpp_source.html"><span class="icondoc"></span></a><b>kioslave.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_189_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="klocalsocket_8cpp_source.html"><span class="icondoc"></span></a><b>klocalsocket.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_190_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="klocalsocket_8h_source.html"><span class="icondoc"></span></a><b>klocalsocket.h</b></td><td class="desc"></td></tr>
+<tr id="row_191_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="klocalsocket__unix_8cpp_source.html"><span class="icondoc"></span></a><b>klocalsocket_unix.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_192_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="klocalsocket__win_8cpp_source.html"><span class="icondoc"></span></a><b>klocalsocket_win.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_193_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kmountpoint_8cpp_source.html"><span class="icondoc"></span></a><b>kmountpoint.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_194_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kmountpoint_8h_source.html"><span class="icondoc"></span></a><b>kmountpoint.h</b></td><td class="desc"></td></tr>
+<tr id="row_195_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knameandurlinputdialog_8cpp_source.html"><span class="icondoc"></span></a><b>knameandurlinputdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_196_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knameandurlinputdialog_8h_source.html"><span class="icondoc"></span></a><b>knameandurlinputdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_197_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knewfilemenu_8cpp_source.html"><span class="icondoc"></span></a><b>knewfilemenu.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_198_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knewfilemenu_8h_source.html"><span class="icondoc"></span></a><b>knewfilemenu.h</b></td><td class="desc"></td></tr>
+<tr id="row_199_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knfsshare_8cpp_source.html"><span class="icondoc"></span></a><b>knfsshare.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_200_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="knfsshare_8h_source.html"><span class="icondoc"></span></a><b>knfsshare.h</b></td><td class="desc"></td></tr>
+<tr id="row_201_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kntlm_8cpp_source.html"><span class="icondoc"></span></a><b>kntlm.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_202_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kntlm_8h_source.html"><span class="icondoc"></span></a><b>kntlm.h</b></td><td class="desc"></td></tr>
+<tr id="row_203_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kopenwithdialog_8cpp_source.html"><span class="icondoc"></span></a><b>kopenwithdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_204_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kopenwithdialog_8h_source.html"><span class="icondoc"></span></a><b>kopenwithdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_205_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="koverlayiconplugin_8cpp_source.html"><span class="icondoc"></span></a><b>koverlayiconplugin.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_206_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="koverlayiconplugin_8h_source.html"><span class="icondoc"></span></a><b>koverlayiconplugin.h</b></td><td class="desc"></td></tr>
+<tr id="row_207_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpasswdserver_8cpp_source.html"><span class="icondoc"></span></a><b>kpasswdserver.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_208_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpasswdserver_8h_source.html"><span class="icondoc"></span></a><b>kpasswdserver.h</b></td><td class="desc"></td></tr>
+<tr id="row_209_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpasswdserverclient_8cpp_source.html"><span class="icondoc"></span></a><b>kpasswdserverclient.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_210_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpasswdserverloop_8cpp_source.html"><span class="icondoc"></span></a><b>kpasswdserverloop.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_211_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpreviewwidgetbase_8cpp_source.html"><span class="icondoc"></span></a><b>kpreviewwidgetbase.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_212_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpreviewwidgetbase_8h_source.html"><span class="icondoc"></span></a><b>kpreviewwidgetbase.h</b></td><td class="desc"></td></tr>
+<tr id="row_213_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpropertiesdialog_8cpp_source.html"><span class="icondoc"></span></a><b>kpropertiesdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_214_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kpropertiesdialog_8h_source.html"><span class="icondoc"></span></a><b>kpropertiesdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_215_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kprotocolinfo_8cpp_source.html"><span class="icondoc"></span></a><b>kprotocolinfo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_216_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kprotocolinfo_8h_source.html"><span class="icondoc"></span></a><b>kprotocolinfo.h</b></td><td class="desc"></td></tr>
+<tr id="row_217_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kprotocolinfofactory_8cpp_source.html"><span class="icondoc"></span></a><b>kprotocolinfofactory.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_218_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kprotocolmanager_8cpp_source.html"><span class="icondoc"></span></a><b>kprotocolmanager.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_219_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kprotocolmanager_8h_source.html"><span class="icondoc"></span></a><b>kprotocolmanager.h</b></td><td class="desc"></td></tr>
+<tr id="row_220_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kproxydlg_8cpp_source.html"><span class="icondoc"></span></a><b>kproxydlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_221_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kproxydlg_8h_source.html"><span class="icondoc"></span></a><b>kproxydlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_222_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krecentdirs_8cpp_source.html"><span class="icondoc"></span></a><b>krecentdirs.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_223_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krecentdirs_8h_source.html"><span class="icondoc"></span></a><b>krecentdirs.h</b></td><td class="desc"></td></tr>
+<tr id="row_224_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krecentdocument_8cpp_source.html"><span class="icondoc"></span></a><b>krecentdocument.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_225_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krecentdocument_8h_source.html"><span class="icondoc"></span></a><b>krecentdocument.h</b></td><td class="desc"></td></tr>
+<tr id="row_226_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kremoteencoding_8cpp_source.html"><span class="icondoc"></span></a><b>kremoteencoding.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_227_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kremoteencoding_8h_source.html"><span class="icondoc"></span></a><b>kremoteencoding.h</b></td><td class="desc"></td></tr>
+<tr id="row_228_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krun_8cpp_source.html"><span class="icondoc"></span></a><b>krun.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_229_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krun_8h_source.html"><span class="icondoc"></span></a><b>krun.h</b></td><td class="desc"></td></tr>
+<tr id="row_230_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="krun__win_8cpp_source.html"><span class="icondoc"></span></a><b>krun_win.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_231_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksambashare_8cpp_source.html"><span class="icondoc"></span></a><b>ksambashare.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_232_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksambashare_8h_source.html"><span class="icondoc"></span></a><b>ksambashare.h</b></td><td class="desc"></td></tr>
+<tr id="row_233_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksambasharedata_8cpp_source.html"><span class="icondoc"></span></a><b>ksambasharedata.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_234_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksambasharedata_8h_source.html"><span class="icondoc"></span></a><b>ksambasharedata.h</b></td><td class="desc"></td></tr>
+<tr id="row_235_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksaveioconfig_8cpp_source.html"><span class="icondoc"></span></a><b>ksaveioconfig.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_236_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksaveioconfig_8h_source.html"><span class="icondoc"></span></a><b>ksaveioconfig.h</b></td><td class="desc"></td></tr>
+<tr id="row_237_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kshellcompletion_8cpp_source.html"><span class="icondoc"></span></a><b>kshellcompletion.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_238_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kshellcompletion_8h_source.html"><span class="icondoc"></span></a><b>kshellcompletion.h</b></td><td class="desc"></td></tr>
+<tr id="row_239_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kshorturifilter_8cpp_source.html"><span class="icondoc"></span></a><b>kshorturifilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_240_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kshorturifilter_8h_source.html"><span class="icondoc"></span></a><b>kshorturifilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_241_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslcertificatebox_8cpp_source.html"><span class="icondoc"></span></a><b>ksslcertificatebox.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_242_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslcertificatebox_8h_source.html"><span class="icondoc"></span></a><b>ksslcertificatebox.h</b></td><td class="desc"></td></tr>
+<tr id="row_243_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslcertificatemanager_8cpp_source.html"><span class="icondoc"></span></a><b>ksslcertificatemanager.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_244_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslcertificatemanager_8h_source.html"><span class="icondoc"></span></a><b>ksslcertificatemanager.h</b></td><td class="desc"></td></tr>
+<tr id="row_245_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kssld_8cpp_source.html"><span class="icondoc"></span></a><b>kssld.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_246_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kssld_8h_source.html"><span class="icondoc"></span></a><b>kssld.h</b></td><td class="desc"></td></tr>
+<tr id="row_247_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kssld__adaptor_8h_source.html"><span class="icondoc"></span></a><b>kssld_adaptor.h</b></td><td class="desc"></td></tr>
+<tr id="row_248_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kssld__dbusmetatypes_8h_source.html"><span class="icondoc"></span></a><b>kssld_dbusmetatypes.h</b></td><td class="desc"></td></tr>
+<tr id="row_249_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kssld__interface_8h_source.html"><span class="icondoc"></span></a><b>kssld_interface.h</b></td><td class="desc"></td></tr>
+<tr id="row_250_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslinfodialog_8cpp_source.html"><span class="icondoc"></span></a><b>ksslinfodialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_251_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslinfodialog_8h_source.html"><span class="icondoc"></span></a><b>ksslinfodialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_252_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslsettings_8cpp_source.html"><span class="icondoc"></span></a><b>ksslsettings.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_253_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ksslsettings_8h_source.html"><span class="icondoc"></span></a><b>ksslsettings.h</b></td><td class="desc"></td></tr>
+<tr id="row_254_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kstatusbarofflineindicator_8cpp_source.html"><span class="icondoc"></span></a><b>kstatusbarofflineindicator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_255_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kstatusbarofflineindicator_8h_source.html"><span class="icondoc"></span></a><b>kstatusbarofflineindicator.h</b></td><td class="desc"></td></tr>
+<tr id="row_256_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ktcpsocket_8cpp_source.html"><span class="icondoc"></span></a><b>ktcpsocket.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_257_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ktcpsocket_8h_source.html"><span class="icondoc"></span></a><b>ktcpsocket.h</b></td><td class="desc"></td></tr>
+<tr id="row_258_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ktelnetservice_8cpp_source.html"><span class="icondoc"></span></a><b>ktelnetservice.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_259_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ktrash_8cpp_source.html"><span class="icondoc"></span></a><b>ktrash.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_260_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurifilter_8cpp_source.html"><span class="icondoc"></span></a><b>kurifilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_261_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurifilter_8h_source.html"><span class="icondoc"></span></a><b>kurifilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_262_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurifiltersearchprovideractions_8cpp_source.html"><span class="icondoc"></span></a><b>kurifiltersearchprovideractions.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_263_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurifiltersearchprovideractions_8h_source.html"><span class="icondoc"></span></a><b>kurifiltersearchprovideractions.h</b></td><td class="desc"></td></tr>
+<tr id="row_264_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kuriikwsfilter_8cpp_source.html"><span class="icondoc"></span></a><b>kuriikwsfilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_265_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kuriikwsfilter_8h_source.html"><span class="icondoc"></span></a><b>kuriikwsfilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_266_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kuriikwsfiltereng_8cpp_source.html"><span class="icondoc"></span></a><b>kuriikwsfiltereng.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_267_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kuriikwsfiltereng_8h_source.html"><span class="icondoc"></span></a><b>kuriikwsfiltereng.h</b></td><td class="desc"></td></tr>
+<tr id="row_268_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurisearchfilter_8cpp_source.html"><span class="icondoc"></span></a><b>kurisearchfilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_269_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurisearchfilter_8h_source.html"><span class="icondoc"></span></a><b>kurisearchfilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_270_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlauthorized_8cpp_source.html"><span class="icondoc"></span></a><b>kurlauthorized.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_271_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlauthorized_8h_source.html"><span class="icondoc"></span></a><b>kurlauthorized.h</b></td><td class="desc"></td></tr>
+<tr id="row_272_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlcombobox_8cpp_source.html"><span class="icondoc"></span></a><b>kurlcombobox.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_273_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlcombobox_8h_source.html"><span class="icondoc"></span></a><b>kurlcombobox.h</b></td><td class="desc"></td></tr>
+<tr id="row_274_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlcompletion_8cpp_source.html"><span class="icondoc"></span></a><b>kurlcompletion.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_275_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlcompletion_8h_source.html"><span class="icondoc"></span></a><b>kurlcompletion.h</b></td><td class="desc"></td></tr>
+<tr id="row_276_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigator_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_277_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigator_8h_source.html"><span class="icondoc"></span></a><b>kurlnavigator.h</b></td><td class="desc"></td></tr>
+<tr id="row_278_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatorbutton_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatorbutton.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_279_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatorbuttonbase_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatorbuttonbase.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_280_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatordropdownbutton_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatordropdownbutton.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_281_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatormenu_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatormenu.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_282_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatorplacesselector_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatorplacesselector.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_283_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatorprotocolcombo_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatorprotocolcombo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_284_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlnavigatortogglebutton_8cpp_source.html"><span class="icondoc"></span></a><b>kurlnavigatortogglebutton.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_285_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlpixmapprovider_8cpp_source.html"><span class="icondoc"></span></a><b>kurlpixmapprovider.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_286_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlpixmapprovider_8h_source.html"><span class="icondoc"></span></a><b>kurlpixmapprovider.h</b></td><td class="desc"></td></tr>
+<tr id="row_287_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlrequester_8cpp_source.html"><span class="icondoc"></span></a><b>kurlrequester.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_288_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlrequester_8h_source.html"><span class="icondoc"></span></a><b>kurlrequester.h</b></td><td class="desc"></td></tr>
+<tr id="row_289_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlrequesterdialog_8cpp_source.html"><span class="icondoc"></span></a><b>kurlrequesterdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_290_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kurlrequesterdialog_8h_source.html"><span class="icondoc"></span></a><b>kurlrequesterdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_291_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="listjob_8cpp_source.html"><span class="icondoc"></span></a><b>listjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_292_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="listjob_8h_source.html"><span class="icondoc"></span></a><b>listjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_293_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="localdomainurifilter_8cpp_source.html"><span class="icondoc"></span></a><b>localdomainurifilter.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_294_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="localdomainurifilter_8h_source.html"><span class="icondoc"></span></a><b>localdomainurifilter.h</b></td><td class="desc"></td></tr>
+<tr id="row_295_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ioslaves_2help_2main_8cpp_source.html"><span class="icondoc"></span></a><b>ioslaves/help/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_296_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="ioslaves_2http_2kcookiejar_2main_8cpp_source.html"><span class="icondoc"></span></a><b>ioslaves/http/kcookiejar/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_297_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcms_2kio_2main_8cpp_source.html"><span class="icondoc"></span></a><b>kcms/kio/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_298_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcms_2webshortcuts_2main_8cpp_source.html"><span class="icondoc"></span></a><b>kcms/webshortcuts/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_299_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kioexec_2main_8cpp_source.html"><span class="icondoc"></span></a><b>kioexec/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_300_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="protocoltojson_2main_8cpp_source.html"><span class="icondoc"></span></a><b>protocoltojson/main.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_301_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kcms_2webshortcuts_2main_8h_source.html"><span class="icondoc"></span></a><b>kcms/webshortcuts/main.h</b></td><td class="desc"></td></tr>
+<tr id="row_302_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="kioexec_2main_8h_source.html"><span class="icondoc"></span></a><b>kioexec/main.h</b></td><td class="desc"></td></tr>
+<tr id="row_303_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="main__ghelp_8cpp_source.html"><span class="icondoc"></span></a><b>main_ghelp.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_304_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="metadata_8cpp_source.html"><span class="icondoc"></span></a><b>metadata.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_305_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="metadata_8h_source.html"><span class="icondoc"></span></a><b>metadata.h</b></td><td class="desc"></td></tr>
+<tr id="row_306_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mimetypejob_8cpp_source.html"><span class="icondoc"></span></a><b>mimetypejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_307_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mimetypejob_8h_source.html"><span class="icondoc"></span></a><b>mimetypejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_308_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mkdirjob_8cpp_source.html"><span class="icondoc"></span></a><b>mkdirjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_309_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mkdirjob_8h_source.html"><span class="icondoc"></span></a><b>mkdirjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_310_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mkpathjob_8cpp_source.html"><span class="icondoc"></span></a><b>mkpathjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_311_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="mkpathjob_8h_source.html"><span class="icondoc"></span></a><b>mkpathjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_312_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="multigetjob_8cpp_source.html"><span class="icondoc"></span></a><b>multigetjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_313_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="multigetjob_8h_source.html"><span class="icondoc"></span></a><b>multigetjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_314_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="netpref_8cpp_source.html"><span class="icondoc"></span></a><b>netpref.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_315_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="netpref_8h_source.html"><span class="icondoc"></span></a><b>netpref.h</b></td><td class="desc"></td></tr>
+<tr id="row_316_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="openfilemanagerwindowjob_8cpp_source.html"><span class="icondoc"></span></a><b>openfilemanagerwindowjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_317_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="openfilemanagerwindowjob_8h_source.html"><span class="icondoc"></span></a><b>openfilemanagerwindowjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_318_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="parsinghelpers_8cpp_source.html"><span class="icondoc"></span></a><b>parsinghelpers.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_319_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="parsinghelpers_8h_source.html"><span class="icondoc"></span></a><b>parsinghelpers.h</b></td><td class="desc"></td></tr>
+<tr id="row_320_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="paste_8cpp_source.html"><span class="icondoc"></span></a><b>paste.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_321_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="paste_8h_source.html"><span class="icondoc"></span></a><b>paste.h</b></td><td class="desc"></td></tr>
+<tr id="row_322_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="pastedialog_8cpp_source.html"><span class="icondoc"></span></a><b>pastedialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_323_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="pastejob_8cpp_source.html"><span class="icondoc"></span></a><b>pastejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_324_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="pastejob_8h_source.html"><span class="icondoc"></span></a><b>pastejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_325_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="pixmaploader_8cpp_source.html"><span class="icondoc"></span></a><b>pixmaploader.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_326_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="pixmaploader_8h_source.html"><span class="icondoc"></span></a><b>pixmaploader.h</b></td><td class="desc"></td></tr>
+<tr id="row_327_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="previewjob_8cpp_source.html"><span class="icondoc"></span></a><b>previewjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_328_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="previewjob_8h_source.html"><span class="icondoc"></span></a><b>previewjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_329_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="proxyscout_8cpp_source.html"><span class="icondoc"></span></a><b>proxyscout.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_330_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="proxyscout_8h_source.html"><span class="icondoc"></span></a><b>proxyscout.h</b></td><td class="desc"></td></tr>
+<tr id="row_331_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="renamedialog_8cpp_source.html"><span class="icondoc"></span></a><b>renamedialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_332_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="renamedialog_8h_source.html"><span class="icondoc"></span></a><b>renamedialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_333_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="restorejob_8cpp_source.html"><span class="icondoc"></span></a><b>restorejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_334_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="restorejob_8h_source.html"><span class="icondoc"></span></a><b>restorejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_335_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="scheduler_8cpp_source.html"><span class="icondoc"></span></a><b>scheduler.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_336_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="scheduler_8h_source.html"><span class="icondoc"></span></a><b>scheduler.h</b></td><td class="desc"></td></tr>
+<tr id="row_337_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="script_8cpp_source.html"><span class="icondoc"></span></a><b>script.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_338_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="script_8h_source.html"><span class="icondoc"></span></a><b>script.h</b></td><td class="desc"></td></tr>
+<tr id="row_339_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="searchprovider_8cpp_source.html"><span class="icondoc"></span></a><b>searchprovider.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_340_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="searchprovider_8h_source.html"><span class="icondoc"></span></a><b>searchprovider.h</b></td><td class="desc"></td></tr>
+<tr id="row_341_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="searchproviderdlg_8cpp_source.html"><span class="icondoc"></span></a><b>searchproviderdlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_342_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="searchproviderdlg_8h_source.html"><span class="icondoc"></span></a><b>searchproviderdlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_343_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="sessiondata_8cpp_source.html"><span class="icondoc"></span></a><b>sessiondata.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_344_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="simplejob_8cpp_source.html"><span class="icondoc"></span></a><b>simplejob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_345_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="simplejob_8h_source.html"><span class="icondoc"></span></a><b>simplejob.h</b></td><td class="desc"></td></tr>
+<tr id="row_346_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="skipdialog_8cpp_source.html"><span class="icondoc"></span></a><b>skipdialog.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_347_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="skipdialog_8h_source.html"><span class="icondoc"></span></a><b>skipdialog.h</b></td><td class="desc"></td></tr>
+<tr id="row_348_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slave_8cpp_source.html"><span class="icondoc"></span></a><b>slave.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_349_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slave_8h_source.html"><span class="icondoc"></span></a><b>slave.h</b></td><td class="desc"></td></tr>
+<tr id="row_350_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slavebase_8cpp_source.html"><span class="icondoc"></span></a><b>slavebase.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_351_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slavebase_8h_source.html"><span class="icondoc"></span></a><b>slavebase.h</b></td><td class="desc"></td></tr>
+<tr id="row_352_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slaveconfig_8cpp_source.html"><span class="icondoc"></span></a><b>slaveconfig.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_353_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slaveconfig_8h_source.html"><span class="icondoc"></span></a><b>slaveconfig.h</b></td><td class="desc"></td></tr>
+<tr id="row_354_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slaveinterface_8cpp_source.html"><span class="icondoc"></span></a><b>slaveinterface.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_355_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="slaveinterface_8h_source.html"><span class="icondoc"></span></a><b>slaveinterface.h</b></td><td class="desc"></td></tr>
+<tr id="row_356_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="smbrodlg_8cpp_source.html"><span class="icondoc"></span></a><b>smbrodlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_357_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="smbrodlg_8h_source.html"><span class="icondoc"></span></a><b>smbrodlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_358_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="specialjob_8cpp_source.html"><span class="icondoc"></span></a><b>specialjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_359_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="specialjob_8h_source.html"><span class="icondoc"></span></a><b>specialjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_360_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="sslui_8cpp_source.html"><span class="icondoc"></span></a><b>sslui.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_361_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="sslui_8h_source.html"><span class="icondoc"></span></a><b>sslui.h</b></td><td class="desc"></td></tr>
+<tr id="row_362_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="statjob_8cpp_source.html"><span class="icondoc"></span></a><b>statjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_363_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="statjob_8h_source.html"><span class="icondoc"></span></a><b>statjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_364_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="storedtransferjob_8cpp_source.html"><span class="icondoc"></span></a><b>storedtransferjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_365_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="storedtransferjob_8h_source.html"><span class="icondoc"></span></a><b>storedtransferjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_366_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="tcpslavebase_8cpp_source.html"><span class="icondoc"></span></a><b>tcpslavebase.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_367_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="tcpslavebase_8h_source.html"><span class="icondoc"></span></a><b>tcpslavebase.h</b></td><td class="desc"></td></tr>
+<tr id="row_368_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="thumbcreator_8cpp_source.html"><span class="icondoc"></span></a><b>thumbcreator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_369_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="thumbcreator_8h_source.html"><span class="icondoc"></span></a><b>thumbcreator.h</b></td><td class="desc"></td></tr>
+<tr id="row_370_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="thumbsequencecreator_8cpp_source.html"><span class="icondoc"></span></a><b>thumbsequencecreator.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_371_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="thumbsequencecreator_8h_source.html"><span class="icondoc"></span></a><b>thumbsequencecreator.h</b></td><td class="desc"></td></tr>
+<tr id="row_372_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="transferjob_8cpp_source.html"><span class="icondoc"></span></a><b>transferjob.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_373_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="transferjob_8h_source.html"><span class="icondoc"></span></a><b>transferjob.h</b></td><td class="desc"></td></tr>
+<tr id="row_374_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="trashimpl_8cpp_source.html"><span class="icondoc"></span></a><b>trashimpl.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_375_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="trashimpl_8h_source.html"><span class="icondoc"></span></a><b>trashimpl.h</b></td><td class="desc"></td></tr>
+<tr id="row_376_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="trashsizecache_8cpp_source.html"><span class="icondoc"></span></a><b>trashsizecache.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_377_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="trashsizecache_8h_source.html"><span class="icondoc"></span></a><b>trashsizecache.h</b></td><td class="desc"></td></tr>
+<tr id="row_378_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="udsentry_8cpp_source.html"><span class="icondoc"></span></a><b>udsentry.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_379_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="udsentry_8h_source.html"><span class="icondoc"></span></a><b>udsentry.h</b></td><td class="desc"></td></tr>
+<tr id="row_380_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentdlg_8cpp_source.html"><span class="icondoc"></span></a><b>useragentdlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_381_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentdlg_8h_source.html"><span class="icondoc"></span></a><b>useragentdlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_382_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentinfo_8cpp_source.html"><span class="icondoc"></span></a><b>useragentinfo.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_383_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentinfo_8h_source.html"><span class="icondoc"></span></a><b>useragentinfo.h</b></td><td class="desc"></td></tr>
+<tr id="row_384_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentselectordlg_8cpp_source.html"><span class="icondoc"></span></a><b>useragentselectordlg.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_385_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="useragentselectordlg_8h_source.html"><span class="icondoc"></span></a><b>useragentselectordlg.h</b></td><td class="desc"></td></tr>
+<tr id="row_386_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="usernotificationhandler_8cpp_source.html"><span class="icondoc"></span></a><b>usernotificationhandler.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_387_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="xslt__help_8cpp_source.html"><span class="icondoc"></span></a><b>xslt_help.cpp</b></td><td class="desc"></td></tr>
+<tr id="row_388_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="xslt__help_8h_source.html"><span class="icondoc"></span></a><b>xslt_help.h</b></td><td class="desc"></td></tr>
+</table>
+</div><!-- directory -->
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:02 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

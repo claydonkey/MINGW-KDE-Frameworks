@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDEWebKit - KWebPage Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDEWebKit</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDEWebKit"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKGraphicsWebView.html">KGraphicsWebView</option>
+        
+        <option value="classKWebPage.html">KWebPage</option>
+        
+        <option value="classKWebPluginFactory.html">KWebPluginFactory</option>
+        
+        <option value="classKWebView.html">KWebView</option>
+        
+        <option value="classKWebWallet.html">KWebWallet</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>KDE Integration for QtWebKit</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            FreeBSD, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WebKit)
+target_link_libraries(yourapp KF5::WebKit)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDEWebKit </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdewebkit-5.36.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDEWebKit on <a href="https://cgit.kde.org/kdewebkit-5.36.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDEWebKit </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KWebPage">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKWebPage-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KWebPage Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kwebpage_8h_source.html">kwebpage.h</a>&gt;</code></p>
+
+<p>Inherits QWebPage.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2b9db8392addba15e635fa9699606dca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dca">IntegrationFlags</a> { <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaadfc4da385b216bfb1a6fd729892797a7">NoIntegration</a> = 0x01,
+<a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa111ea913f1ec92d7e3cc461856fe03a6">KIOIntegration</a> = 0x02,
+<a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa9ff4cd4d85d105ce1e314ebbf2179cd3">KPartsIntegration</a> = 0x04,
+<a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa87897276aab2366a6c1f57f7d5ccf14b">KWalletIntegration</a> = 0x08
+ }</td></tr>
+<tr class="separator:a2b9db8392addba15e635fa9699606dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ab8890aa6053f2538983d28949f67a7f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#ab8890aa6053f2538983d28949f67a7f5">downloadRequest</a> (const QNetworkRequest &amp;request)</td></tr>
+<tr class="separator:ab8890aa6053f2538983d28949f67a7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb849007c3c3488d45411fd251d08414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#adb849007c3c3488d45411fd251d08414">downloadResponse</a> (QNetworkReply *reply)</td></tr>
+<tr class="separator:adb849007c3c3488d45411fd251d08414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfd82f9d64c38c245d6727e1a4b21d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#addfd82f9d64c38c245d6727e1a4b21d8">downloadUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:addfd82f9d64c38c245d6727e1a4b21d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a11052bfc159527fc84f3e8706c2b1d6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a11052bfc159527fc84f3e8706c2b1d6d">KWebPage</a> (QObject *parent=nullptr, Integration flags=Integration())</td></tr>
+<tr class="separator:a11052bfc159527fc84f3e8706c2b1d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3eac29ff1e4d7b1a1a0efaecd84ae9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a3e3eac29ff1e4d7b1a1a0efaecd84ae9">~KWebPage</a> ()</td></tr>
+<tr class="separator:a3e3eac29ff1e4d7b1a1a0efaecd84ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbcbcdb9b2b0bff3f6c78ca2d06704a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#afcbcbcdb9b2b0bff3f6c78ca2d06704a">isExternalContentAllowed</a> () const</td></tr>
+<tr class="separator:afcbcbcdb9b2b0bff3f6c78ca2d06704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc97054aad8c8c07d8031dc209222aa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#adc97054aad8c8c07d8031dc209222aa6">setAllowExternalContent</a> (bool allow)</td></tr>
+<tr class="separator:adc97054aad8c8c07d8031dc209222aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e58a4aa6900a6b5ea4341c0939c7041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a9e58a4aa6900a6b5ea4341c0939c7041">setWallet</a> (<a class="el" href="classKWebWallet.html">KWebWallet</a> *<a class="el" href="classKWebPage.html#aea8504e350519cdc159ada70cfe7b631">wallet</a>)</td></tr>
+<tr class="separator:a9e58a4aa6900a6b5ea4341c0939c7041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8504e350519cdc159ada70cfe7b631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKWebWallet.html">KWebWallet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#aea8504e350519cdc159ada70cfe7b631">wallet</a> () const</td></tr>
+<tr class="separator:aea8504e350519cdc159ada70cfe7b631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6962fb1549415bb4e3a0c97bc9b8ea9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a6962fb1549415bb4e3a0c97bc9b8ea9b">acceptNavigationRequest</a> (QWebFrame *frame, const QNetworkRequest &amp;request, NavigationType type) override</td></tr>
+<tr class="separator:a6962fb1549415bb4e3a0c97bc9b8ea9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8422fbc70e39b7886a89998524dc50eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a8422fbc70e39b7886a89998524dc50eb">handleReply</a> (QNetworkReply *reply, QString *contentType=nullptr, <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKIO_1_1MetaData.html">KIO::MetaData</a> *metaData=nullptr)</td></tr>
+<tr class="separator:a8422fbc70e39b7886a89998524dc50eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5773e74d14d61b37b10639eaa6a7755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#ab5773e74d14d61b37b10639eaa6a7755">removeRequestMetaData</a> (const QString &amp;key)</td></tr>
+<tr class="separator:ab5773e74d14d61b37b10639eaa6a7755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5974b67f245ad100045769d4bdb466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#aed5974b67f245ad100045769d4bdb466">removeSessionMetaData</a> (const QString &amp;key)</td></tr>
+<tr class="separator:aed5974b67f245ad100045769d4bdb466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d9ebed6ecea87999f63e62109d3940"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#ad5d9ebed6ecea87999f63e62109d3940">requestMetaData</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:ad5d9ebed6ecea87999f63e62109d3940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a41492885b72239ead00bec9ef7f5c6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a3a41492885b72239ead00bec9ef7f5c6">sessionMetaData</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:a3a41492885b72239ead00bec9ef7f5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e98e79b90a35fac062bd3ff98f0fa35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a2e98e79b90a35fac062bd3ff98f0fa35">setRequestMetaData</a> (const QString &amp;key, const QString &amp;value)</td></tr>
+<tr class="separator:a2e98e79b90a35fac062bd3ff98f0fa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6808e64a840e8615d1e4553e7cd65d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#a0d6808e64a840e8615d1e4553e7cd65d">setSessionMetaData</a> (const QString &amp;key, const QString &amp;value)</td></tr>
+<tr class="separator:a0d6808e64a840e8615d1e4553e7cd65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1eb02f6466d77492534557f17525f7"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKWebPage.html#adc1eb02f6466d77492534557f17525f7">userAgentForUrl</a> (const QUrl &amp;url) const override</td></tr>
+<tr class="separator:adc1eb02f6466d77492534557f17525f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An enhanced QWebPage that provides integration with KDE Frameworks. </p>
+<p>This is a convenience class that provides full integration with KDE frameworks technologies such as KIO for network request handling, KCookiejar for cookie handling, KParts for embedding non-html content and <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> for storing form data. It also sets standard icons for many of the actions provided by QWebPage.</p>
+<p>Most of this integration happens behind the scenes. If you want <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> integration, however, you will have to provide a mechanism for deciding whether to allow form data to be stored. To do this, you will need to connect to the <a class="el" href="classKWebWallet.html#ada3b0bb3b288bac65d45f5dfc6bf8e5e" title="This signal is emitted whenever a save form data request is received. ">KWebWallet::saveFormDataRequested</a> signal and call either <a class="el" href="classKWebWallet.html#a762ce276bec132574ea05d08bd60c281" title="Accepts the save form data request associated with key. ">KWebWallet::acceptSaveFormDataRequest</a> or <a class="el" href="classKWebWallet.html#ab7f1828b449e9f79699ce0f17cfe465e" title="Rejects the save form data request associated with key. ">KWebWallet::rejectSaveFormDataRequest</a>, typically after asking the user whether they want to save the form data. If you do not do this, no form data will be saved.</p>
+<p><a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> will also not automatically load form data for you. You should connect to QWebPage::loadFinished and, if the page was loaded successfully, call </p><div class="fragment"><div class="line">page-&gt;wallet()-&gt;fillFormData(page-&gt;mainFrame());</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration</a> </dd>
+<dd>
+<a class="el" href="classKWebWallet.html" title="A class that provides KWallet integration for QWebFrame. ">KWebWallet</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Urs Wolfer &lt;uwolfer @ kde.org&gt; </dd>
+<dd>
+Dawit Alemayehu &lt;adawit @ kde.org&gt;</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8h_source.html#l00075">75</a> of file <a class="el" href="kwebpage_8h_source.html">kwebpage.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2b9db8392addba15e635fa9699606dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9db8392addba15e635fa9699606dca">&#9670;&nbsp;</a></span>IntegrationFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dca">KWebPage::IntegrationFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flags for setting the desired level of integration. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b9db8392addba15e635fa9699606dcaadfc4da385b216bfb1a6fd729892797a7"></a>NoIntegration&#160;</td><td class="fielddoc"><p>Provide only very basic integration such as using KDE icons for the actions provided by QWebPage. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b9db8392addba15e635fa9699606dcaa111ea913f1ec92d7e3cc461856fe03a6"></a>KIOIntegration&#160;</td><td class="fielddoc"><p>Use KIO to handle network requests. </p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b9db8392addba15e635fa9699606dcaa9ff4cd4d85d105ce1e314ebbf2179cd3"></a>KPartsIntegration&#160;</td><td class="fielddoc"><p>Use KPart componenets, if available, to display content in &lt;embed&gt; and &lt;object&gt; tags. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b9db8392addba15e635fa9699606dcaa87897276aab2366a6c1f57f7d5ccf14b"></a>KWalletIntegration&#160;</td><td class="fielddoc"><p>Use <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> to store login credentials and other form data from web sites. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebPage.html#aea8504e350519cdc159ada70cfe7b631" title="The wallet integration manager. ">wallet()</a> and <a class="el" href="classKWebPage.html#a9e58a4aa6900a6b5ea4341c0939c7041" title="Set the KWebWallet that is used to store form data. ">setWallet()</a> </dd></dl>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8h_source.html#l00083">83</a> of file <a class="el" href="kwebpage_8h_source.html">kwebpage.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a11052bfc159527fc84f3e8706c2b1d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11052bfc159527fc84f3e8706c2b1d6d">&#9670;&nbsp;</a></span>KWebPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWebPage::KWebPage </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integration&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>Integration()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> with parent <code>parent</code>. </p>
+<p>Note that if no integration flags are set (the default), all integration options are activated. If you inherit from this class you can use the flags in <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dca">IntegrationFlags</a> to control how much integration should be used.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</a> </dd>
+<dd>
+KIO::Integration::AccessManager </dd>
+<dd>
+<a class="el" href="classKWebPage.html#aea8504e350519cdc159ada70cfe7b631" title="The wallet integration manager. ">wallet()</a> and <a class="el" href="classKWebPage.html#a9e58a4aa6900a6b5ea4341c0939c7041" title="Set the KWebWallet that is used to store form data. ">setWallet()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00231">231</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e3eac29ff1e4d7b1a1a0efaecd84ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3eac29ff1e4d7b1a1a0efaecd84ae9">&#9670;&nbsp;</a></span>~KWebPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWebPage::~KWebPage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00295">295</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6962fb1549415bb4e3a0c97bc9b8ea9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6962fb1549415bb4e3a0c97bc9b8ea9b">&#9670;&nbsp;</a></span>acceptNavigationRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWebPage::acceptNavigationRequest </td>
+          <td>(</td>
+          <td class="paramtype">QWebFrame *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QNetworkRequest &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NavigationType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+<p>This performs various integration-related actions when navigation is requested. If you override this method, make sure you call the parent's implementation unless you want to block the request outright.</p>
+<p>If you do override acceptNavigationRequest and call this method, however, be aware of the effect of the page's linkDelegationPolicy on how * QWebPage::acceptNavigationRequest behaves.</p>
+<dl class="section see"><dt>See also</dt><dd>QWebPage::acceptNavigationRequest </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00466">466</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab8890aa6053f2538983d28949f67a7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8890aa6053f2538983d28949f67a7f5">&#9670;&nbsp;</a></span>downloadRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::downloadRequest </td>
+          <td>(</td>
+          <td class="paramtype">const QNetworkRequest &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Download <code>request</code> using KIO. </p>
+<p>This slot first prompts the user where to save the requested resource and then downloads it using KIO. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00336">336</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb849007c3c3488d45411fd251d08414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb849007c3c3488d45411fd251d08414">&#9670;&nbsp;</a></span>downloadResponse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::downloadResponse </td>
+          <td>(</td>
+          <td class="paramtype">QNetworkReply *&#160;</td>
+          <td class="paramname"><em>reply</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Download the resource specified by <code>reply</code> using KIO. </p>
+<p>This slot first prompts the user where to save the requested resource and then downloads it using KIO.</p>
+<p>If <code>reply</code> contains a QObject property called "DownloadManagerExe", then an attempt will be made to the command specified by that property to download the specified resource.</p>
+<p>If the "DownloadManagerExe" property is not defined or the command specified by it could not be successfully executed, then the user will be prompted for the action to take.</p>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebPage.html#a8422fbc70e39b7886a89998524dc50eb" title="Attempts to handle reply and returns true on success, false otherwise. ">handleReply</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00353">353</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addfd82f9d64c38c245d6727e1a4b21d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfd82f9d64c38c245d6727e1a4b21d8">&#9670;&nbsp;</a></span>downloadUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::downloadUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Download <code>url</code> using KIO. </p>
+<p>This slot first prompts the user where to save the requested resource and then downloads it using KIO. </p>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00348">348</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8422fbc70e39b7886a89998524dc50eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8422fbc70e39b7886a89998524dc50eb">&#9670;&nbsp;</a></span>handleReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWebPage::handleReply </td>
+          <td>(</td>
+          <td class="paramtype">QNetworkReply *&#160;</td>
+          <td class="paramname"><em>reply</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>contentType</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKIO_1_1MetaData.html">KIO::MetaData</a> *&#160;</td>
+          <td class="paramname"><em>metaData</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to handle <code>reply</code> and returns true on success, false otherwise. </p>
+<p>If <code>reply</code> contains a QObject property called "DownloadManagerExe", then an attempt will be made to let the command specified by that property to download the requested resource.</p>
+<p>If the "DownloadManagerExe" property is not defined or the command specified by it could not be successfully executed, then the user will be prompted for the action to take.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reply</td><td>the QNetworkReply object to be handled. </td></tr>
+    <tr><td class="paramname">contentType</td><td>if not null, it will be set to the content-type specified in <code>reply</code>, if any. </td></tr>
+    <tr><td class="paramname">metaData</td><td>if not null, it will be set to the KIO meta-data specified in <code>reply</code>, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.6.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00500">500</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afcbcbcdb9b2b0bff3f6c78ca2d06704a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbcbcdb9b2b0bff3f6c78ca2d06704a">&#9670;&nbsp;</a></span>isExternalContentAllowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KWebPage::isExternalContentAllowed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether access to remote content is permitted. </p>
+<p>If this is <code>false</code>, only resources on the local system can be accessed through this web page. By default access to remote content is allowed.</p>
+<p>If KIO integration is disabled, this will always return <code>true</code>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebPage.html#adc97054aad8c8c07d8031dc209222aa6" title="Set whether to allow remote content. ">setAllowExternalContent()</a> </dd>
+<dd>
+KIO::Integration::AccessManager::isExternalContentAllowed()</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if access to remote content is permitted, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00300">300</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5773e74d14d61b37b10639eaa6a7755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5773e74d14d61b37b10639eaa6a7755">&#9670;&nbsp;</a></span>removeRequestMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::removeRequestMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove an item of request metadata. </p>
+<p>Removes the temporary (per-request) metadata associated with <code>key</code>.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::requestMetaData </dd>
+<dd>
+<a class="el" href="classKWebPage.html#a2e98e79b90a35fac062bd3ff98f0fa35" title="Set an item of metadata to be sent to the KIO slave with the next request. ">setRequestMetaData</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key for the metadata to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00435">435</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed5974b67f245ad100045769d4bdb466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5974b67f245ad100045769d4bdb466">&#9670;&nbsp;</a></span>removeSessionMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::removeSessionMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove an item of session metadata. </p>
+<p>Removes the permanent (per-session) metadata associated with <code>key</code>.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::sessionMetaData </dd>
+<dd>
+<a class="el" href="classKWebPage.html#a0d6808e64a840e8615d1e4553e7cd65d" title="Set an item of metadata to be sent to the KIO slave with every request. ">setSessionMetaData</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key for the metadata to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00427">427</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5d9ebed6ecea87999f63e62109d3940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d9ebed6ecea87999f63e62109d3940">&#9670;&nbsp;</a></span>requestMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KWebPage::requestMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get an item of request metadata. </p>
+<p>Retrieves the value of the temporary (per-request) metadata for <code>key</code>.</p>
+<p>If KIO integration is disabled, this will always return an empty string.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::requestMetaData </dd>
+<dd>
+<a class="el" href="classKWebPage.html#a2e98e79b90a35fac062bd3ff98f0fa35" title="Set an item of metadata to be sent to the KIO slave with the next request. ">setRequestMetaData</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key of the metadata to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the metadata associated with <code>key</code>, or an empty string if there is no such metadata </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00399">399</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3a41492885b72239ead00bec9ef7f5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a41492885b72239ead00bec9ef7f5c6">&#9670;&nbsp;</a></span>sessionMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KWebPage::sessionMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get an item of session metadata. </p>
+<p>Retrieves the value of the permanent (per-session) metadata for <code>key</code>.</p>
+<p>If KIO integration is disabled, this will always return an empty string.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::sessionMetaData </dd>
+<dd>
+<a class="el" href="classKWebPage.html#a0d6808e64a840e8615d1e4553e7cd65d" title="Set an item of metadata to be sent to the KIO slave with every request. ">setSessionMetaData</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key of the metadata to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the metadata associated with <code>key</code>, or an empty string if there is no such metadata </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00387">387</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc97054aad8c8c07d8031dc209222aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc97054aad8c8c07d8031dc209222aa6">&#9670;&nbsp;</a></span>setAllowExternalContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::setAllowExternalContent </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether to allow remote content. </p>
+<p>If KIO integration is not enabled, this method will have no effect.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebPage.html#afcbcbcdb9b2b0bff3f6c78ca2d06704a" title="Whether access to remote content is permitted. ">isExternalContentAllowed()</a> </dd>
+<dd>
+KIO::Integration::AccessManager::setAllowExternalContent(bool)</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allow</td><td><code>true</code> if access to remote content should be allowed, <code>false</code> if only local content should be accessible </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00314">314</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e98e79b90a35fac062bd3ff98f0fa35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e98e79b90a35fac062bd3ff98f0fa35">&#9670;&nbsp;</a></span>setRequestMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::setRequestMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set an item of metadata to be sent to the KIO slave with the next request. </p>
+<p>If KIO integration is disabled, this method will have no effect.</p>
+<p>Metadata set using this method will be deleted after it has been sent once.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::requestMetaData</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key for the metadata; any existing metadata associated with this key will be overwritten </td></tr>
+    <tr><td class="paramname">value</td><td>the value to associate with <code>key</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00419">419</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0d6808e64a840e8615d1e4553e7cd65d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6808e64a840e8615d1e4553e7cd65d">&#9670;&nbsp;</a></span>setSessionMetaData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::setSessionMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set an item of metadata to be sent to the KIO slave with every request. </p>
+<p>If KIO integration is disabled, this method will have no effect.</p>
+<p>Metadata set using this method will be sent with every request.</p>
+<dl class="section see"><dt>See also</dt><dd>KIO::Integration::AccessManager::sessionMetaData</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key for the metadata; any existing metadata associated with this key will be overwritten </td></tr>
+    <tr><td class="paramname">value</td><td>the value to associate with <code>key</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00411">411</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e58a4aa6900a6b5ea4341c0939c7041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e58a4aa6900a6b5ea4341c0939c7041">&#9670;&nbsp;</a></span>setWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KWebPage::setWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKWebWallet.html">KWebWallet</a> *&#160;</td>
+          <td class="paramname"><em>wallet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the <a class="el" href="classKWebWallet.html">KWebWallet</a> that is used to store form data. </p>
+<p>This <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> will take ownership of <code>wallet</code>, so that the wallet is deleted when the <a class="el" href="classKWebPage.html" title="An enhanced QWebPage that provides integration with KDE Frameworks. ">KWebPage</a> is deleted. If you do not want that to happen, you should call setParent() on <code>wallet</code> after calling this function.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKWebWallet.html" title="A class that provides KWallet integration for QWebFrame. ">KWebWallet</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wallet</td><td>the <a class="el" href="classKWebWallet.html" title="A class that provides KWallet integration for QWebFrame. ">KWebWallet</a> to be used for storing form data, or 0 to disable <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> integration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00322">322</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc1eb02f6466d77492534557f17525f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1eb02f6466d77492534557f17525f7">&#9670;&nbsp;</a></span>userAgentForUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KWebPage::userAgentForUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Reimplemented from superclass.</dt><dd></dd></dl>
+<p>This function is re-implemented to provide KIO user-agent management integration with <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKProtocolManager.html">KProtocolManager</a>.</p>
+<p>If a special user-agent has been configured for the host indicated by <code>url</code>, that user-agent will be returned. Otherwise, QWebPage's default user agent is returned.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKProtocolManager.html#ace2ef890e1eb6b3674d2f38f3e445922">KProtocolManager::userAgentForHost</a>. </dd>
+<dd>
+QWebPage::userAgentForUrl. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00443">443</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea8504e350519cdc159ada70cfe7b631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8504e350519cdc159ada70cfe7b631">&#9670;&nbsp;</a></span>wallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKWebWallet.html">KWebWallet</a> * KWebPage::wallet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The wallet integration manager. </p>
+<p>If you wish to use <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> integration, you will have to connect to signals emitted by this object and react accordingly. See <a class="el" href="classKWebWallet.html" title="A class that provides KWallet integration for QWebFrame. ">KWebWallet</a> for more information.</p>
+<dl class="section return"><dt>Returns</dt><dd>the wallet integration manager, or 0 if <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwallet-5.26.0/html/KWallet.tags:../../../frameworks/kwallet-5.26.0/html/" href="../../../frameworks/kwallet-5.26.0/html/namespaceKWallet.html">KWallet</a> integration is disabled </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kwebpage_8cpp_source.html#l00309">309</a> of file <a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kwebpage_8h_source.html">kwebpage.h</a></li>
+<li><a class="el" href="kwebpage_8cpp_source.html">kwebpage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:50 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

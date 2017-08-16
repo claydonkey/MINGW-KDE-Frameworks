@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KParts - KParts::MainWindow Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KParts</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KParts"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="modules.html">Modules</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKParts_1_1BrowserExtension.html">KParts::BrowserExtension</option>
+        
+        <option value="classKParts_1_1BrowserHostExtension.html">KParts::BrowserHostExtension</option>
+        
+        <option value="classKParts_1_1BrowserInterface.html">KParts::BrowserInterface</option>
+        
+        <option value="classKParts_1_1BrowserOpenOrSaveQuestion.html">KParts::BrowserOpenOrSaveQuestion</option>
+        
+        <option value="classKParts_1_1BrowserRun.html">KParts::BrowserRun</option>
+        
+        <option value="classKParts_1_1Event.html">KParts::Event</option>
+        
+        <option value="classKParts_1_1FileInfoExtension.html">KParts::FileInfoExtension</option>
+        
+        <option value="classKParts_1_1GUIActivateEvent.html">KParts::GUIActivateEvent</option>
+        
+        <option value="classKParts_1_1HistoryProvider.html">KParts::HistoryProvider</option>
+        
+        <option value="classKParts_1_1HtmlExtension.html">KParts::HtmlExtension</option>
+        
+        <option value="classKParts_1_1HtmlSettingsInterface.html">KParts::HtmlSettingsInterface</option>
+        
+        <option value="classKParts_1_1ListingFilterExtension.html">KParts::ListingFilterExtension</option>
+        
+        <option value="classKParts_1_1ListingNotificationExtension.html">KParts::ListingNotificationExtension</option>
+        
+        <option value="classKParts_1_1LiveConnectExtension.html">KParts::LiveConnectExtension</option>
+        
+        <option value="classKParts_1_1MainWindow.html">KParts::MainWindow</option>
+        
+        <option value="classKParts_1_1OpenUrlArguments.html">KParts::OpenUrlArguments</option>
+        
+        <option value="classKParts_1_1OpenUrlEvent.html">KParts::OpenUrlEvent</option>
+        
+        <option value="classKParts_1_1Part.html">KParts::Part</option>
+        
+        <option value="classKParts_1_1PartActivateEvent.html">KParts::PartActivateEvent</option>
+        
+        <option value="classKParts_1_1PartBase.html">KParts::PartBase</option>
+        
+        <option value="classKParts_1_1PartManager.html">KParts::PartManager</option>
+        
+        <option value="classKParts_1_1PartSelectEvent.html">KParts::PartSelectEvent</option>
+        
+        <option value="classKParts_1_1Plugin.html">KParts::Plugin</option>
+        
+        <option value="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</option>
+        
+        <option value="classKParts_1_1ReadWritePart.html">KParts::ReadWritePart</option>
+        
+        <option value="classKParts_1_1ScriptableExtension.html">KParts::ScriptableExtension</option>
+        
+        <option value="classKParts_1_1SelectorInterface.html">KParts::SelectorInterface</option>
+        
+        <option value="classKParts_1_1StatusBarExtension.html">KParts::StatusBarExtension</option>
+        
+        <option value="classTerminalInterface.html">TerminalInterface</option>
+        
+        <option value="classKParts_1_1TextExtension.html">KParts::TextExtension</option>
+        
+        <option value="classKParts_1_1WindowArgs.html">KParts::WindowArgs</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Document centric plugin system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Parts)
+target_link_libraries(yourapp KF5::Parts)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KParts </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kparts-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KParts on <a href="https://cgit.kde.org/kparts-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KParts </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=MainWindow">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KParts</b></li><li class="navelem"><a class="el" href="classKParts_1_1MainWindow.html">MainWindow</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKParts_1_1MainWindow-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KParts::MainWindow Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KParts::MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKParts_1_1MainWindow__inherit__graph.png" border="0" usemap="#KParts_1_1MainWindow_inherit__map" alt="Inheritance graph"/></div>
+<map name="KParts_1_1MainWindow_inherit__map" id="KParts_1_1MainWindow_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ab28f7f67f0925fdd8a5a90ecc6b1d306"><td class="memItemLeft" align="right" valign="top"><a id="ab28f7f67f0925fdd8a5a90ecc6b1d306"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configureToolbars</b> () override</td></tr>
+<tr class="separator:ab28f7f67f0925fdd8a5a90ecc6b1d306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:aafe4f734c7258c0780fd7b906047daac inherit pub_slots_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="aafe4f734c7258c0780fd7b906047daac"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#aafe4f734c7258c0780fd7b906047daac">configureToolbars</a> ()</td></tr>
+<tr class="separator:aafe4f734c7258c0780fd7b906047daac inherit pub_slots_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95feb8c1b3663d3681aaab0794167780 inherit pub_slots_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a95feb8c1b3663d3681aaab0794167780"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a95feb8c1b3663d3681aaab0794167780">slotStateChanged</a> (const QString &amp;newstate, bool reverse)</td></tr>
+<tr class="separator:a95feb8c1b3663d3681aaab0794167780 inherit pub_slots_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9def1acee2fbd4de7f09554dd9ff8c5d inherit pub_slots_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a9def1acee2fbd4de7f09554dd9ff8c5d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a9def1acee2fbd4de7f09554dd9ff8c5d">slotStateChanged</a> (const QString &amp;newstate)</td></tr>
+<tr class="separator:a9def1acee2fbd4de7f09554dd9ff8c5d inherit pub_slots_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKMainWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKMainWindow')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a></td></tr>
+<tr class="memitem:a68dcfc84b239b34f182acd8f36266231 inherit pub_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a68dcfc84b239b34f182acd8f36266231"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a68dcfc84b239b34f182acd8f36266231">appHelpActivated</a> (void)</td></tr>
+<tr class="separator:a68dcfc84b239b34f182acd8f36266231 inherit pub_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbcb194925a0b559bb200023c6d4416 inherit pub_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a8fbcb194925a0b559bb200023c6d4416"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a8fbcb194925a0b559bb200023c6d4416">setCaption</a> (const QString &amp;caption)</td></tr>
+<tr class="separator:a8fbcb194925a0b559bb200023c6d4416 inherit pub_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78364d5eeb1c1f5bd333c733378741d inherit pub_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="aa78364d5eeb1c1f5bd333c733378741d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#aa78364d5eeb1c1f5bd333c733378741d">setCaption</a> (const QString &amp;caption, bool modified)</td></tr>
+<tr class="separator:aa78364d5eeb1c1f5bd333c733378741d inherit pub_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa264989b7fe997983bd0c990c911f7f7 inherit pub_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="aa264989b7fe997983bd0c990c911f7f7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#aa264989b7fe997983bd0c990c911f7f7">setPlainCaption</a> (const QString &amp;caption)</td></tr>
+<tr class="separator:aa264989b7fe997983bd0c990c911f7f7 inherit pub_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f60cfc96af7dc428ced559abb62c660 inherit pub_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a5f60cfc96af7dc428ced559abb62c660"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a5f60cfc96af7dc428ced559abb62c660">setSettingsDirty</a> ()</td></tr>
+<tr class="separator:a5f60cfc96af7dc428ced559abb62c660 inherit pub_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a5e07b7a5a176d0d2b4b76dc63e0825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#a3a5e07b7a5a176d0d2b4b76dc63e0825">MainWindow</a> (QWidget *parent=0, Qt::WindowFlags f=KDE_DEFAULT_WINDOWFLAGS)</td></tr>
+<tr class="separator:a3a5e07b7a5a176d0d2b4b76dc63e0825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:a9b1fdbcf1d3e9475ae5a7abb10885faf inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a9b1fdbcf1d3e9475ae5a7abb10885faf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a9b1fdbcf1d3e9475ae5a7abb10885faf">KXmlGuiWindow</a> (QWidget *parent=0, Qt::WindowFlags f=KDE_DEFAULT_WINDOWFLAGS)</td></tr>
+<tr class="separator:a9b1fdbcf1d3e9475ae5a7abb10885faf inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e14a356c84df6992c201a017e2bb62b inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a7e14a356c84df6992c201a017e2bb62b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a7e14a356c84df6992c201a017e2bb62b">applyMainWindowSettings</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;config) override</td></tr>
+<tr class="separator:a7e14a356c84df6992c201a017e2bb62b inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b526ffaaca18d6662eb70b820155c1a inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a0b526ffaaca18d6662eb70b820155c1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a0b526ffaaca18d6662eb70b820155c1a">createGUI</a> (const QString &amp;xmlfile=QString())</td></tr>
+<tr class="separator:a0b526ffaaca18d6662eb70b820155c1a inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7371171cafabe30cb3bb7355fdfed1 inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a3d7371171cafabe30cb3bb7355fdfed1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a3d7371171cafabe30cb3bb7355fdfed1">createStandardStatusBarAction</a> ()</td></tr>
+<tr class="separator:a3d7371171cafabe30cb3bb7355fdfed1 inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46c5ce2490835b81234bb8d0590bc7a inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="ad46c5ce2490835b81234bb8d0590bc7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#ad46c5ce2490835b81234bb8d0590bc7a">finalizeGUI</a> (bool force)</td></tr>
+<tr class="separator:ad46c5ce2490835b81234bb8d0590bc7a inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec46debe81b9a68be49ffdf815f95ef0 inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="aec46debe81b9a68be49ffdf815f95ef0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#aec46debe81b9a68be49ffdf815f95ef0">isHelpMenuEnabled</a> () const</td></tr>
+<tr class="separator:aec46debe81b9a68be49ffdf815f95ef0 inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe01cc33b7f4c9a86d3b789e5be295b inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="abbe01cc33b7f4c9a86d3b789e5be295b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#abbe01cc33b7f4c9a86d3b789e5be295b">setHelpMenuEnabled</a> (bool showHelpMenu=true)</td></tr>
+<tr class="separator:abbe01cc33b7f4c9a86d3b789e5be295b inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c29bc42aa086a0557fc3c3ed0353f1 inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a70c29bc42aa086a0557fc3c3ed0353f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a70c29bc42aa086a0557fc3c3ed0353f1">setStandardToolBarMenuEnabled</a> (bool enable)</td></tr>
+<tr class="separator:a70c29bc42aa086a0557fc3c3ed0353f1 inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ac6ec22a61a4d854600c0f5a41e8d4 inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="ae5ac6ec22a61a4d854600c0f5a41e8d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#ae5ac6ec22a61a4d854600c0f5a41e8d4">setupGUI</a> (const QSize &amp;defaultSize, StandardWindowOptions options=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7">Default</a>, const QString &amp;xmlfile=QString())</td></tr>
+<tr class="separator:ae5ac6ec22a61a4d854600c0f5a41e8d4 inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af532cb013c5e80c68ece02bd1c14269d inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="af532cb013c5e80c68ece02bd1c14269d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#af532cb013c5e80c68ece02bd1c14269d">setupGUI</a> (StandardWindowOptions options=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7">Default</a>, const QString &amp;xmlfile=QString())</td></tr>
+<tr class="separator:af532cb013c5e80c68ece02bd1c14269d inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98212c507867538f3f6bd8894d0ec721 inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a98212c507867538f3f6bd8894d0ec721"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a98212c507867538f3f6bd8894d0ec721">setupToolbarMenuActions</a> ()</td></tr>
+<tr class="separator:a98212c507867538f3f6bd8894d0ec721 inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a2ed6b17b34239305130d04729e0fc inherit pub_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a36a2ed6b17b34239305130d04729e0fc"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a36a2ed6b17b34239305130d04729e0fc">toolBarMenuAction</a> ()</td></tr>
+<tr class="separator:a36a2ed6b17b34239305130d04729e0fc inherit pub_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKMainWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKMainWindow')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a></td></tr>
+<tr class="memitem:ab2f7f5f30e920d8490f3f83fe46149d0 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="ab2f7f5f30e920d8490f3f83fe46149d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#ab2f7f5f30e920d8490f3f83fe46149d0">KMainWindow</a> (QWidget *parent=0, Qt::WindowFlags f=KDE_DEFAULT_WINDOWFLAGS)</td></tr>
+<tr class="separator:ab2f7f5f30e920d8490f3f83fe46149d0 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6478064a6e38bd97a7eab4455725d962 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a6478064a6e38bd97a7eab4455725d962"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a6478064a6e38bd97a7eab4455725d962">autoSaveConfigGroup</a> () const</td></tr>
+<tr class="separator:a6478064a6e38bd97a7eab4455725d962 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d864b61e1e918840b0e90650fc236a inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="aa8d864b61e1e918840b0e90650fc236a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#aa8d864b61e1e918840b0e90650fc236a">autoSaveGroup</a> () const</td></tr>
+<tr class="separator:aa8d864b61e1e918840b0e90650fc236a inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857036e6958383521bde4c078100bb01 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a857036e6958383521bde4c078100bb01"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a857036e6958383521bde4c078100bb01">autoSaveSettings</a> () const</td></tr>
+<tr class="separator:a857036e6958383521bde4c078100bb01 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff97bcd122771b99b699a4837b728907 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="aff97bcd122771b99b699a4837b728907"></a>
+KXMLGUI_DEPRECATED QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#aff97bcd122771b99b699a4837b728907">customHelpMenu</a> (bool showWhatsThis=true)</td></tr>
+<tr class="separator:aff97bcd122771b99b699a4837b728907 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea42f24e8a9e58e6a333fe53c524c54 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="aeea42f24e8a9e58e6a333fe53c524c54"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#aeea42f24e8a9e58e6a333fe53c524c54">dbusName</a> () const</td></tr>
+<tr class="separator:aeea42f24e8a9e58e6a333fe53c524c54 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abb6f30dbe3d417e42d945025d678b0 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a2abb6f30dbe3d417e42d945025d678b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a2abb6f30dbe3d417e42d945025d678b0">hasMenuBar</a> ()</td></tr>
+<tr class="separator:a2abb6f30dbe3d417e42d945025d678b0 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669da563f6d8e85e6f590980593353b4 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a669da563f6d8e85e6f590980593353b4"></a>
+KXMLGUI_DEPRECATED QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a669da563f6d8e85e6f590980593353b4">helpMenu</a> (const QString &amp;aboutAppText=QString(), bool showWhatsThis=true)</td></tr>
+<tr class="separator:a669da563f6d8e85e6f590980593353b4 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111f7fce6133327ccba37a6d505691b1 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a111f7fce6133327ccba37a6d505691b1"></a>
+KXMLGUI_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a111f7fce6133327ccba37a6d505691b1">initialGeometrySet</a> () const</td></tr>
+<tr class="separator:a111f7fce6133327ccba37a6d505691b1 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50794fac648c5bcded2c6f446f919440 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a50794fac648c5bcded2c6f446f919440"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a50794fac648c5bcded2c6f446f919440">resetAutoSaveSettings</a> ()</td></tr>
+<tr class="separator:a50794fac648c5bcded2c6f446f919440 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e01bd1aa6d488f1be2a5010030efb2 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a46e01bd1aa6d488f1be2a5010030efb2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a46e01bd1aa6d488f1be2a5010030efb2">restore</a> (int number, bool show=true)</td></tr>
+<tr class="separator:a46e01bd1aa6d488f1be2a5010030efb2 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e3361f5ac95ab01c49746c6b03d3b9 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a80e3361f5ac95ab01c49746c6b03d3b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a80e3361f5ac95ab01c49746c6b03d3b9">saveMainWindowSettings</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;config)</td></tr>
+<tr class="separator:a80e3361f5ac95ab01c49746c6b03d3b9 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421a8ca496cd11ff388b630357735cf4 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a421a8ca496cd11ff388b630357735cf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a421a8ca496cd11ff388b630357735cf4">setAutoSaveSettings</a> (const QString &amp;groupName=QStringLiteral(&quot;MainWindow&quot;), bool <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a6ff94db3910198c41ee688ef9ba122cf">saveWindowSize</a>=true)</td></tr>
+<tr class="separator:a421a8ca496cd11ff388b630357735cf4 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f9488e32fd6050ed8351d90a587b6c inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a89f9488e32fd6050ed8351d90a587b6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a89f9488e32fd6050ed8351d90a587b6c">setAutoSaveSettings</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;group, bool <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a6ff94db3910198c41ee688ef9ba122cf">saveWindowSize</a>=true)</td></tr>
+<tr class="separator:a89f9488e32fd6050ed8351d90a587b6c inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4a27013543027fd70c707041068777 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a2a4a27013543027fd70c707041068777"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKToolBar.html">KToolBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a2a4a27013543027fd70c707041068777">toolBar</a> (const QString &amp;name=QString())</td></tr>
+<tr class="separator:a2a4a27013543027fd70c707041068777 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d97442f7651a701e5b4bc14155da322 inherit pub_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a7d97442f7651a701e5b4bc14155da322"></a>
+QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKToolBar.html">KToolBar</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a7d97442f7651a701e5b4bc14155da322">toolBars</a> () const</td></tr>
+<tr class="separator:a7d97442f7651a701e5b4bc14155da322 inherit pub_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKXMLGUIBuilder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKXMLGUIBuilder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html">KXMLGUIBuilder</a></td></tr>
+<tr class="memitem:a54632db248afd9590f853975423d2b84 inherit pub_methods_classKXMLGUIBuilder"><td class="memItemLeft" align="right" valign="top"><a id="a54632db248afd9590f853975423d2b84"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html#a54632db248afd9590f853975423d2b84">createContainer</a> (QWidget *parent, int index, const QDomElement &amp;element, QAction *&amp;containerAction)</td></tr>
+<tr class="separator:a54632db248afd9590f853975423d2b84 inherit pub_methods_classKXMLGUIBuilder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe027feb2b55a01c3823a2c1765afcea inherit pub_methods_classKXMLGUIBuilder"><td class="memItemLeft" align="right" valign="top"><a id="afe027feb2b55a01c3823a2c1765afcea"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html#afe027feb2b55a01c3823a2c1765afcea">removeContainer</a> (QWidget *container, QWidget *parent, QDomElement &amp;element, QAction *containerAction)</td></tr>
+<tr class="separator:afe027feb2b55a01c3823a2c1765afcea inherit pub_methods_classKXMLGUIBuilder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79addb091bde6cfcdaf39e4dbb85ad9f inherit pub_methods_classKXMLGUIBuilder"><td class="memItemLeft" align="right" valign="top"><a id="a79addb091bde6cfcdaf39e4dbb85ad9f"></a>
+virtual KXMLGUI_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html#a79addb091bde6cfcdaf39e4dbb85ad9f">removeCustomElement</a> (QWidget *parent, QAction *action)</td></tr>
+<tr class="separator:a79addb091bde6cfcdaf39e4dbb85ad9f inherit pub_methods_classKXMLGUIBuilder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:a94a5e253d2f61f2d73ee26944b34391d inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a94a5e253d2f61f2d73ee26944b34391d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a94a5e253d2f61f2d73ee26944b34391d">KXMLGUIClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *parent)</td></tr>
+<tr class="separator:a94a5e253d2f61f2d73ee26944b34391d inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1895d52a8aee6bb2727782d2498e2fcc inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a1895d52a8aee6bb2727782d2498e2fcc"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a1895d52a8aee6bb2727782d2498e2fcc">action</a> (const char *name) const</td></tr>
+<tr class="separator:a1895d52a8aee6bb2727782d2498e2fcc inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f67052cd3af17ddcd5415310537c6 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a9d9f67052cd3af17ddcd5415310537c6"></a>
+virtual QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a9d9f67052cd3af17ddcd5415310537c6">action</a> (const QDomElement &amp;element) const</td></tr>
+<tr class="separator:a9d9f67052cd3af17ddcd5415310537c6 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638115232a877a631b53e741de7c17ab inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a638115232a877a631b53e741de7c17ab"></a>
+virtual <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKActionCollection.html">KActionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a638115232a877a631b53e741de7c17ab">actionCollection</a> () const</td></tr>
+<tr class="separator:a638115232a877a631b53e741de7c17ab inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6567b9217304a9abe367d152e3a082 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a7e6567b9217304a9abe367d152e3a082"></a>
+QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a7e6567b9217304a9abe367d152e3a082">childClients</a> ()</td></tr>
+<tr class="separator:a7e6567b9217304a9abe367d152e3a082 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2021ca953a60a2aedc5a0f07e095591 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ac2021ca953a60a2aedc5a0f07e095591"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html">KXMLGUIBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ac2021ca953a60a2aedc5a0f07e095591">clientBuilder</a> () const</td></tr>
+<tr class="separator:ac2021ca953a60a2aedc5a0f07e095591 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3751a68722bda0427bac1488c6018c04 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a3751a68722bda0427bac1488c6018c04"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3751a68722bda0427bac1488c6018c04">componentName</a> () const</td></tr>
+<tr class="separator:a3751a68722bda0427bac1488c6018c04 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aad0df1825891d465e5a0c599199b20 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4aad0df1825891d465e5a0c599199b20"></a>
+virtual QDomDocument&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4aad0df1825891d465e5a0c599199b20">domDocument</a> () const</td></tr>
+<tr class="separator:a4aad0df1825891d465e5a0c599199b20 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a588b37c85746d70fa030a68d411a2 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a81a588b37c85746d70fa030a68d411a2"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIFactory.html">KXMLGUIFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a81a588b37c85746d70fa030a68d411a2">factory</a> () const</td></tr>
+<tr class="separator:a81a588b37c85746d70fa030a68d411a2 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5dead4d8da7a6aa7d6bdf258aa43168 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ad5dead4d8da7a6aa7d6bdf258aa43168"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ad5dead4d8da7a6aa7d6bdf258aa43168">insertChildClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *child)</td></tr>
+<tr class="separator:ad5dead4d8da7a6aa7d6bdf258aa43168 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0424264fb1a70a0d6f7355a50493cb77 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a0424264fb1a70a0d6f7355a50493cb77"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a0424264fb1a70a0d6f7355a50493cb77">parentClient</a> () const</td></tr>
+<tr class="separator:a0424264fb1a70a0d6f7355a50493cb77 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b09fd0cc566bd64b49f775501374ac6 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a7b09fd0cc566bd64b49f775501374ac6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a7b09fd0cc566bd64b49f775501374ac6">plugActionList</a> (const QString &amp;name, const QList&lt; QAction * &gt; &amp;actionList)</td></tr>
+<tr class="separator:a7b09fd0cc566bd64b49f775501374ac6 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4844c3b6a7362cd4dc2e05cc8211d5de inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4844c3b6a7362cd4dc2e05cc8211d5de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4844c3b6a7362cd4dc2e05cc8211d5de">reloadXML</a> ()</td></tr>
+<tr class="separator:a4844c3b6a7362cd4dc2e05cc8211d5de inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e2620214e77a8c4edc7597710b7b32 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a37e2620214e77a8c4edc7597710b7b32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a37e2620214e77a8c4edc7597710b7b32">removeChildClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *child)</td></tr>
+<tr class="separator:a37e2620214e77a8c4edc7597710b7b32 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3528715de4f96ee174bbc594402cb2ec inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a3528715de4f96ee174bbc594402cb2ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3528715de4f96ee174bbc594402cb2ec">replaceXMLFile</a> (const QString &amp;xmlfile, const QString &amp;localxmlfile, bool merge=false)</td></tr>
+<tr class="separator:a3528715de4f96ee174bbc594402cb2ec inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a2422a35274351314ac5eb4fc9a23e inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a95a2422a35274351314ac5eb4fc9a23e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a95a2422a35274351314ac5eb4fc9a23e">setClientBuilder</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html">KXMLGUIBuilder</a> *builder)</td></tr>
+<tr class="separator:a95a2422a35274351314ac5eb4fc9a23e inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1989539c961858a273ca841618e0bf7 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ab1989539c961858a273ca841618e0bf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ab1989539c961858a273ca841618e0bf7">setFactory</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIFactory.html">KXMLGUIFactory</a> *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a81a588b37c85746d70fa030a68d411a2">factory</a>)</td></tr>
+<tr class="separator:ab1989539c961858a273ca841618e0bf7 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f952857036d4be2e42657fe4f981bb inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a90f952857036d4be2e42657fe4f981bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a90f952857036d4be2e42657fe4f981bb">setXMLGUIBuildDocument</a> (const QDomDocument &amp;doc)</td></tr>
+<tr class="separator:a90f952857036d4be2e42657fe4f981bb inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b212e793ec67d341d7f1ac9355b7fd inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a65b212e793ec67d341d7f1ac9355b7fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a65b212e793ec67d341d7f1ac9355b7fd">unplugActionList</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a65b212e793ec67d341d7f1ac9355b7fd inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a64a13f335a218796081eccc37b51d inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a04a64a13f335a218796081eccc37b51d"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a04a64a13f335a218796081eccc37b51d">xmlFile</a> () const</td></tr>
+<tr class="separator:a04a64a13f335a218796081eccc37b51d inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e252a6ddd84eaf95bd61856d3951e5 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ae5e252a6ddd84eaf95bd61856d3951e5"></a>
+QDomDocument&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ae5e252a6ddd84eaf95bd61856d3951e5">xmlguiBuildDocument</a> () const</td></tr>
+<tr class="separator:ae5e252a6ddd84eaf95bd61856d3951e5 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:afd87c7912f9feef662662dbfb66ee110 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#afd87c7912f9feef662662dbfb66ee110">PartBase</a> ()</td></tr>
+<tr class="separator:afd87c7912f9feef662662dbfb66ee110 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d451269133053c06247ec4cc647afc inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a95d451269133053c06247ec4cc647afc">~PartBase</a> ()</td></tr>
+<tr class="separator:a95d451269133053c06247ec4cc647afc inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d360cb6334059a5813d5441ddf8af8 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="ae5d360cb6334059a5813d5441ddf8af8"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>componentData</b> () const</td></tr>
+<tr class="separator:ae5d360cb6334059a5813d5441ddf8af8 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e95657ce8899e78e5f98f27914641f inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="a31e95657ce8899e78e5f98f27914641f"></a>
+QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>partObject</b> () const</td></tr>
+<tr class="separator:a31e95657ce8899e78e5f98f27914641f inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad672e8e40af0aed3c5edff69f737d920 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ad672e8e40af0aed3c5edff69f737d920">setPartObject</a> (QObject *object)</td></tr>
+<tr class="separator:ad672e8e40af0aed3c5edff69f737d920 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:af96742c32da821dd7350deebc0a65382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#af96742c32da821dd7350deebc0a65382">createGUI</a> (<a class="el" href="classKParts_1_1Part.html">KParts::Part</a> *part)</td></tr>
+<tr class="separator:af96742c32da821dd7350deebc0a65382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa312f0eff55e1a2b69bff4e27e195187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#aa312f0eff55e1a2b69bff4e27e195187">saveNewToolbarConfig</a> () override</td></tr>
+<tr class="separator:aa312f0eff55e1a2b69bff4e27e195187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97d90473a0899f30b729b16d3f096ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#aa97d90473a0899f30b729b16d3f096ed">setWindowTitleHandling</a> (bool enabled)</td></tr>
+<tr class="separator:aa97d90473a0899f30b729b16d3f096ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af391fc98a82478ee389a3357d487141f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1MainWindow.html#af391fc98a82478ee389a3357d487141f">slotSetStatusBarText</a> (const QString &amp;)</td></tr>
+<tr class="separator:af391fc98a82478ee389a3357d487141f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:ad108ac96374f7938a02d70b0d6b3193e inherit pro_slots_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="ad108ac96374f7938a02d70b0d6b3193e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#ad108ac96374f7938a02d70b0d6b3193e">saveNewToolbarConfig</a> ()</td></tr>
+<tr class="separator:ad108ac96374f7938a02d70b0d6b3193e inherit pro_slots_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKMainWindow"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKMainWindow')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a></td></tr>
+<tr class="memitem:a38702e739ebaf55d2519982e933713cf inherit pro_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a38702e739ebaf55d2519982e933713cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a38702e739ebaf55d2519982e933713cf">saveAutoSaveSettings</a> ()</td></tr>
+<tr class="separator:a38702e739ebaf55d2519982e933713cf inherit pro_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160a7a1853fccae4518a5083405eeac4 inherit pro_slots_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a160a7a1853fccae4518a5083405eeac4"></a>
+virtual KXMLGUI_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a160a7a1853fccae4518a5083405eeac4">showAboutApplication</a> ()</td></tr>
+<tr class="separator:a160a7a1853fccae4518a5083405eeac4 inherit pro_slots_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7f1190c18799d4b2bee82fb91a5cd8b2"><td class="memItemLeft" align="right" valign="top"><a id="a7f1190c18799d4b2bee82fb91a5cd8b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createShellGUI</b> (bool create=true)</td></tr>
+<tr class="separator:a7f1190c18799d4b2bee82fb91a5cd8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:ac8f836df811d05f40fd2f430916106a9 inherit pro_methods_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="ac8f836df811d05f40fd2f430916106a9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#ac8f836df811d05f40fd2f430916106a9">event</a> (QEvent *event) override</td></tr>
+<tr class="separator:ac8f836df811d05f40fd2f430916106a9 inherit pro_methods_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKMainWindow"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKMainWindow')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a></td></tr>
+<tr class="memitem:a433d7bee79191266ca4ae335464922d5 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a433d7bee79191266ca4ae335464922d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a433d7bee79191266ca4ae335464922d5">closeEvent</a> (QCloseEvent *) override</td></tr>
+<tr class="separator:a433d7bee79191266ca4ae335464922d5 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c72a2346be60bcb89c7e00f27fb3c1 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a36c72a2346be60bcb89c7e00f27fb3c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a36c72a2346be60bcb89c7e00f27fb3c1">event</a> (QEvent *event) override</td></tr>
+<tr class="separator:a36c72a2346be60bcb89c7e00f27fb3c1 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c5708414be62f259114b0453ef8432 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="af8c5708414be62f259114b0453ef8432"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#af8c5708414be62f259114b0453ef8432">queryClose</a> ()</td></tr>
+<tr class="separator:af8c5708414be62f259114b0453ef8432 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4da4f305f00e8a5c94f5b978334231 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a2d4da4f305f00e8a5c94f5b978334231"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a2d4da4f305f00e8a5c94f5b978334231">readGlobalProperties</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfig.html">KConfig</a> *sessionConfig)</td></tr>
+<tr class="separator:a2d4da4f305f00e8a5c94f5b978334231 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d0d64ed5b309ba1da410423120d0a6 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="ac8d0d64ed5b309ba1da410423120d0a6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#ac8d0d64ed5b309ba1da410423120d0a6">readProperties</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;)</td></tr>
+<tr class="separator:ac8d0d64ed5b309ba1da410423120d0a6 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065547cffb7d84d243bc86c5ffbc1b04 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a065547cffb7d84d243bc86c5ffbc1b04"></a>
+KXMLGUI_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a065547cffb7d84d243bc86c5ffbc1b04">restoreWindowSize</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;config)</td></tr>
+<tr class="separator:a065547cffb7d84d243bc86c5ffbc1b04 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf811d77a3acdcf2b61f8826429615a7 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="acf811d77a3acdcf2b61f8826429615a7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#acf811d77a3acdcf2b61f8826429615a7">saveGlobalProperties</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfig.html">KConfig</a> *sessionConfig)</td></tr>
+<tr class="separator:acf811d77a3acdcf2b61f8826429615a7 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7a6c395eec0bb245cd9ad6c884f897 inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a4c7a6c395eec0bb245cd9ad6c884f897"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a4c7a6c395eec0bb245cd9ad6c884f897">saveProperties</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;)</td></tr>
+<tr class="separator:a4c7a6c395eec0bb245cd9ad6c884f897 inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff94db3910198c41ee688ef9ba122cf inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a6ff94db3910198c41ee688ef9ba122cf"></a>
+KXMLGUI_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a6ff94db3910198c41ee688ef9ba122cf">saveWindowSize</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;config) const</td></tr>
+<tr class="separator:a6ff94db3910198c41ee688ef9ba122cf inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2442aa8c7c0e537455fe8f72763923a inherit pro_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="ad2442aa8c7c0e537455fe8f72763923a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#ad2442aa8c7c0e537455fe8f72763923a">settingsDirty</a> () const</td></tr>
+<tr class="separator:ad2442aa8c7c0e537455fe8f72763923a inherit pro_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:aa0900256f3909953bf8948886b26dda6 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="aa0900256f3909953bf8948886b26dda6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#aa0900256f3909953bf8948886b26dda6">loadStandardsXmlFile</a> ()</td></tr>
+<tr class="separator:aa0900256f3909953bf8948886b26dda6 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecde1988dfb60a54990a50c6c158039 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="afecde1988dfb60a54990a50c6c158039"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#afecde1988dfb60a54990a50c6c158039">setComponentName</a> (const QString &amp;<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3751a68722bda0427bac1488c6018c04">componentName</a>, const QString &amp;componentDisplayName)</td></tr>
+<tr class="separator:afecde1988dfb60a54990a50c6c158039 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17566d518fa7c2b45f81b85fb8c4fc97 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a17566d518fa7c2b45f81b85fb8c4fc97"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a17566d518fa7c2b45f81b85fb8c4fc97">setDOMDocument</a> (const QDomDocument &amp;document, bool merge=false)</td></tr>
+<tr class="separator:a17566d518fa7c2b45f81b85fb8c4fc97 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986969c71e595c2b849847ba2d35da21 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a986969c71e595c2b849847ba2d35da21"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a986969c71e595c2b849847ba2d35da21">setLocalXMLFile</a> (const QString &amp;file)</td></tr>
+<tr class="separator:a986969c71e595c2b849847ba2d35da21 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6518f2d8705ed69f24fceec4ec88cb3 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ab6518f2d8705ed69f24fceec4ec88cb3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ab6518f2d8705ed69f24fceec4ec88cb3">setXML</a> (const QString &amp;document, bool merge=false)</td></tr>
+<tr class="separator:ab6518f2d8705ed69f24fceec4ec88cb3 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de555afb77fb964db93d306a5122368 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a6de555afb77fb964db93d306a5122368"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a6de555afb77fb964db93d306a5122368">setXMLFile</a> (const QString &amp;file, bool merge=false, bool setXMLDoc=true)</td></tr>
+<tr class="separator:a6de555afb77fb964db93d306a5122368 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5c7bb39d27c6082ea989e19b3e3bcf inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4a5c7bb39d27c6082ea989e19b3e3bcf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4a5c7bb39d27c6082ea989e19b3e3bcf">stateChanged</a> (const QString &amp;newstate, ReverseStateChange reverse=StateNoReverse)</td></tr>
+<tr class="separator:a4a5c7bb39d27c6082ea989e19b3e3bcf inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:aeffb59831ec40f998a860021c915c165 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="aeffb59831ec40f998a860021c915c165"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PartBase</b> (PartBasePrivate &amp;dd)</td></tr>
+<tr class="separator:aeffb59831ec40f998a860021c915c165 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc6495c1dd313ee16e903ce396a1df0 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#abdc6495c1dd313ee16e903ce396a1df0">loadPlugins</a> (QObject *parent, <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *parentGUIClient, const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;aboutData)</td></tr>
+<tr class="separator:abdc6495c1dd313ee16e903ce396a1df0 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9088a2da884260f9dafa07513ae9af1 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ac9088a2da884260f9dafa07513ae9af1">setComponentData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;componentData)</td></tr>
+<tr class="separator:ac9088a2da884260f9dafa07513ae9af1 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad508aa84a1e2109e5dcdabe3bdde3af8 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ad508aa84a1e2109e5dcdabe3bdde3af8">setComponentData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;pluginData, bool <a class="el" href="classKParts_1_1PartBase.html#abdc6495c1dd313ee16e903ce396a1df0">loadPlugins</a>)</td></tr>
+<tr class="separator:ad508aa84a1e2109e5dcdabe3bdde3af8 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ed59560edb848e787c4b3cee878b1 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a5a9ed59560edb848e787c4b3cee878b1">setPluginInterfaceVersion</a> (int <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/namespaceKPackage.html#a54e3f7be495f220dd0071ca568f6cdfd">version</a>)</td></tr>
+<tr class="separator:a5a9ed59560edb848e787c4b3cee878b1 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e418df2d77f5f915aa7addfeec455e inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a49e418df2d77f5f915aa7addfeec455e">setPluginLoadingMode</a> (<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76">PluginLoadingMode</a> loadingMode)</td></tr>
+<tr class="separator:a49e418df2d77f5f915aa7addfeec455e inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121f inherit pub_types_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>StandardWindowOption</b> </td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121f inherit pub_types_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classKMainWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classKMainWindow')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a></td></tr>
+<tr class="memitem:a5dc9f5789c4451918104429f4af1cb97 inherit pub_static_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a5dc9f5789c4451918104429f4af1cb97"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a5dc9f5789c4451918104429f4af1cb97">canBeRestored</a> (int number)</td></tr>
+<tr class="separator:a5dc9f5789c4451918104429f4af1cb97 inherit pub_static_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b826dabc2fe32547acdfa20a7d1fc8a inherit pub_static_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a9b826dabc2fe32547acdfa20a7d1fc8a"></a>
+static const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a9b826dabc2fe32547acdfa20a7d1fc8a">classNameOfToplevel</a> (int number)</td></tr>
+<tr class="separator:a9b826dabc2fe32547acdfa20a7d1fc8a inherit pub_static_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9439f20fe8282c949fb88b30cb0bc462 inherit pub_static_methods_classKMainWindow"><td class="memItemLeft" align="right" valign="top"><a id="a9439f20fe8282c949fb88b30cb0bc462"></a>
+static QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#a9439f20fe8282c949fb88b30cb0bc462">memberList</a> ()</td></tr>
+<tr class="separator:a9439f20fe8282c949fb88b30cb0bc462 inherit pub_static_methods_classKMainWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classKXmlGuiWindow"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classKXmlGuiWindow')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html">KXmlGuiWindow</a></td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121fab21e394f15c27dba750c4e5e88427184 inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121fab21e394f15c27dba750c4e5e88427184"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fab21e394f15c27dba750c4e5e88427184">Create</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121fab21e394f15c27dba750c4e5e88427184 inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7 inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7">Default</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121faac7a2b05b0ab84b5ebee7dca57ec6fb7 inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121fad05048977b9194ece91a7e52d70e0986 inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121fad05048977b9194ece91a7e52d70e0986"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fad05048977b9194ece91a7e52d70e0986">Keys</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121fad05048977b9194ece91a7e52d70e0986 inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121fa48ad6f0768126f836d1ad2ff22212fbb inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121fa48ad6f0768126f836d1ad2ff22212fbb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa48ad6f0768126f836d1ad2ff22212fbb">Save</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121fa48ad6f0768126f836d1ad2ff22212fbb inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121fa3b59bb5faded209732d1befe2f8a1a4a inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121fa3b59bb5faded209732d1befe2f8a1a4a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa3b59bb5faded209732d1befe2f8a1a4a">StatusBar</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121fa3b59bb5faded209732d1befe2f8a1a4a inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938a747d4c9aad833848dee2e0b3121fa9053b34f157c1ce738bfdabca2eb4c91 inherit pub_attribs_classKXmlGuiWindow"><td class="memItemLeft" align="right" valign="top"><a id="a938a747d4c9aad833848dee2e0b3121fa9053b34f157c1ce738bfdabca2eb4c91"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa9053b34f157c1ce738bfdabca2eb4c91">ToolBar</a></td></tr>
+<tr class="separator:a938a747d4c9aad833848dee2e0b3121fa9053b34f157c1ce738bfdabca2eb4c91 inherit pub_attribs_classKXmlGuiWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:a73b04eba759c3505ac722b2ceaaa8b76 inherit pro_types_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76">PluginLoadingMode</a> { <a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76a3ffe0a5005d5e1d00b4d3fd8c4d51a1e">DoNotLoadPlugins</a> = 0,
+<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76aeff505f5627f1539e03730d042e39522">LoadPlugins</a> = 1,
+<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76aeaf6ca999ef635e22e3f52234226e931">LoadPluginsIfEnabled</a> = 2
+ }</td></tr>
+<tr class="separator:a73b04eba759c3505ac722b2ceaaa8b76 inherit pro_types_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:a596dde78a1cee1b8699ef9f5585dd773 inherit pro_static_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a596dde78a1cee1b8699ef9f5585dd773"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a596dde78a1cee1b8699ef9f5585dd773">standardsXmlFileLocation</a> ()</td></tr>
+<tr class="separator:a596dde78a1cee1b8699ef9f5585dd773 inherit pro_static_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:a5655e19a6338ea12c0e0a92956277e08 inherit pro_attribs_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="a5655e19a6338ea12c0e0a92956277e08"></a>
+PartBasePrivate *&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a5655e19a6338ea12c0e0a92956277e08 inherit pro_attribs_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A KPart-aware main window, whose user interface is described in XML. </p>
+<p>It implements all internal interfaces in the case of a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a> as host: the builder and servant interface (for menu merging).</p>
+<p>Inherit your main window from this class and don't forget to call <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#af532cb013c5e80c68ece02bd1c14269d">setupGUI()</a> before you call <a class="el" href="classKParts_1_1MainWindow.html#af96742c32da821dd7350deebc0a65382" title="Create the GUI (by merging the host&#39;s and the active part&#39;s) You must call this in order to see any G...">createGUI()</a> on the KPart. For example:</p>
+<div class="fragment"><div class="line">setCentralWidget(m_part-&gt;widget());</div><div class="line"><a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#af532cb013c5e80c68ece02bd1c14269d">setupGUI</a>(<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa9053b34f157c1ce738bfdabca2eb4c91">ToolBar</a> | <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fad05048977b9194ece91a7e52d70e0986">Keys</a> | <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa3b59bb5faded209732d1befe2f8a1a4a">StatusBar</a> | <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#a938a747d4c9aad833848dee2e0b3121fa48ad6f0768126f836d1ad2ff22212fbb">Save</a>, <span class="stringliteral">&quot;appui.rc&quot;</span>);</div><div class="line"><a class="code" href="classKParts_1_1MainWindow.html#af96742c32da821dd7350deebc0a65382">createGUI</a>(m_part);</div></div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>you should not pass the Default flag to <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#af532cb013c5e80c68ece02bd1c14269d">setupGUI()</a>, since it contains the Create flag that is not supposed to be used from this class. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXmlGuiWindow.html#af532cb013c5e80c68ece02bd1c14269d">setupGUI</a>, </dd>
+<dd>
+<a class="el" href="classKParts_1_1MainWindow.html#af96742c32da821dd7350deebc0a65382" title="Create the GUI (by merging the host&#39;s and the active part&#39;s) You must call this in order to see any G...">createGUI</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00056">56</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3a5e07b7a5a176d0d2b4b76dc63e0825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5e07b7a5a176d0d2b4b76dc63e0825">&#9670;&nbsp;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>f</em> = <code>KDE_DEFAULT_WINDOWFLAGS</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor, same signature as <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html">KMainWindow</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00067">67</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98d00a93bc118200eeef9f9bba1dba7">&#9670;&nbsp;</a></span>~MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00073">73</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af96742c32da821dd7350deebc0a65382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96742c32da821dd7350deebc0a65382">&#9670;&nbsp;</a></span>createGUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::createGUI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKParts_1_1Part.html">KParts::Part</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create the GUI (by merging the host's and the active part's) You <em>must</em> call this in order to see any GUI being created. </p>
+<p>In a main window with multiple parts being shown (e.g. as in Konqueror) you need to connect this slot to the KPartManager::activePartChanged() signal</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>The active part (set to 0L if no part). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00078">78</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa312f0eff55e1a2b69bff4e27e195187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa312f0eff55e1a2b69bff4e27e195187">&#9670;&nbsp;</a></span>saveNewToolbarConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KParts::MainWindow::saveNewToolbarConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rebuilds the GUI after KEditToolbar changed the toolbar layout. </p>
+<dl class="section see"><dt>See also</dt><dd>configureToolbars() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00202">202</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa97d90473a0899f30b729b16d3f096ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97d90473a0899f30b729b16d3f096ed">&#9670;&nbsp;</a></span>setWindowTitleHandling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KParts::MainWindow::setWindowTitleHandling </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable or disable the automatic setting of window titles by the part's document title. </p>
+<p>By default, a part always changes the window title when the document changes. </p><dl class="section note"><dt>Note</dt><dd>This value must be set before calling </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKParts_1_1MainWindow.html#af96742c32da821dd7350deebc0a65382" title="Create the GUI (by merging the host&#39;s and the active part&#39;s) You must call this in order to see any G...">createGUI</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>boolean to enable or disable the window title handling </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.24 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00197">197</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af391fc98a82478ee389a3357d487141f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af391fc98a82478ee389a3357d487141f">&#9670;&nbsp;</a></span>slotSetStatusBarText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::slotSetStatusBarText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the active part wants to change the statusbar message Reimplement if your mainwindow has a complex statusbar (with several items) </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00131">131</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li><a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:40 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

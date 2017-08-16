@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KIO::TCPSlaveBase Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=TCPSlaveBase">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKIO.html">KIO</a></li><li class="navelem"><a class="el" href="classKIO_1_1TCPSlaveBase.html">TCPSlaveBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKIO_1_1TCPSlaveBase-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KIO::TCPSlaveBase Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tcpslavebase_8h_source.html">tcpslavebase.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KIO::TCPSlaveBase:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKIO_1_1TCPSlaveBase__inherit__graph.png" border="0" usemap="#KIO_1_1TCPSlaveBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="KIO_1_1TCPSlaveBase_inherit__map" id="KIO_1_1TCPSlaveBase_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5eec53e951f999df7744b53fe34eff86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#a5eec53e951f999df7744b53fe34eff86">TCPSlaveBase</a> (const QByteArray &amp;protocol, const QByteArray &amp;poolSocket, const QByteArray &amp;appSocket, bool autoSsl=false)</td></tr>
+<tr class="separator:a5eec53e951f999df7744b53fe34eff86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKIO_1_1SlaveBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKIO_1_1SlaveBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKIO_1_1SlaveBase.html">KIO::SlaveBase</a></td></tr>
+<tr class="memitem:a73f2cdfc70a1d190bebf1bd808463955 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a73f2cdfc70a1d190bebf1bd808463955"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SlaveBase</b> (const QByteArray &amp;protocol, const QByteArray &amp;pool_socket, const QByteArray &amp;app_socket)</td></tr>
+<tr class="separator:a73f2cdfc70a1d190bebf1bd808463955 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f46cf0df9aefda5d78923dc1f925b71 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKIO_1_1MetaData.html">MetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a0f46cf0df9aefda5d78923dc1f925b71">allMetaData</a> () const</td></tr>
+<tr class="separator:a0f46cf0df9aefda5d78923dc1f925b71 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55551c0a0f2e5df188188e93f923c366 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a55551c0a0f2e5df188188e93f923c366">cacheAuthentication</a> (const <a class="el" href="classKIO_1_1AuthInfo.html">AuthInfo</a> &amp;info)</td></tr>
+<tr class="separator:a55551c0a0f2e5df188188e93f923c366 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf63a85dff9c3240a810bb3db6bc84cb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#adf63a85dff9c3240a810bb3db6bc84cb">canResume</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> offset)</td></tr>
+<tr class="separator:adf63a85dff9c3240a810bb3db6bc84cb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec09ee8ba746d275511a74b73a9b5e42 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aec09ee8ba746d275511a74b73a9b5e42">canResume</a> ()</td></tr>
+<tr class="separator:aec09ee8ba746d275511a74b73a9b5e42 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee686a3ca9912f27dd4d7b6654a851f0 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aee686a3ca9912f27dd4d7b6654a851f0">checkCachedAuthentication</a> (<a class="el" href="classKIO_1_1AuthInfo.html">AuthInfo</a> &amp;info)</td></tr>
+<tr class="separator:aee686a3ca9912f27dd4d7b6654a851f0 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e9de05108d95b1a0ae6e68e7cf21b4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ab3e9de05108d95b1a0ae6e68e7cf21b4">chmod</a> (const QUrl &amp;url, int permissions)</td></tr>
+<tr class="separator:ab3e9de05108d95b1a0ae6e68e7cf21b4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d26566e6bab8bff46cf3a9ab3b6fe71 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a7d26566e6bab8bff46cf3a9ab3b6fe71">chown</a> (const QUrl &amp;url, const QString &amp;owner, const QString &amp;group)</td></tr>
+<tr class="separator:a7d26566e6bab8bff46cf3a9ab3b6fe71 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af678e2f1887e6da7fe9d34ed6a8c8fe5 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="af678e2f1887e6da7fe9d34ed6a8c8fe5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="separator:af678e2f1887e6da7fe9d34ed6a8c8fe5 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb154c5b60f5dd11de7df4acf20572f0 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#acb154c5b60f5dd11de7df4acf20572f0">closeConnection</a> ()</td></tr>
+<tr class="separator:acb154c5b60f5dd11de7df4acf20572f0 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38e09997c5ac86bb9bd96645013fb8e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#af38e09997c5ac86bb9bd96645013fb8e">config</a> ()</td></tr>
+<tr class="separator:af38e09997c5ac86bb9bd96645013fb8e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eeae308a8c3dac6ce59c54839cb6e67 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a7eeae308a8c3dac6ce59c54839cb6e67">connected</a> ()</td></tr>
+<tr class="separator:a7eeae308a8c3dac6ce59c54839cb6e67 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985d6642f4d331032d02b69c19399313 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a985d6642f4d331032d02b69c19399313">connectSlave</a> (const QString &amp;path)</td></tr>
+<tr class="separator:a985d6642f4d331032d02b69c19399313 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6837dedec839a8f5a0806cfcf0dc4f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a4b6837dedec839a8f5a0806cfcf0dc4f">connectTimeout</a> ()</td></tr>
+<tr class="separator:a4b6837dedec839a8f5a0806cfcf0dc4f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f382438285d8f1112e9340f3c0e8bbf inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a1f382438285d8f1112e9340f3c0e8bbf">copy</a> (const QUrl &amp;src, const QUrl &amp;dest, int permissions, JobFlags flags)</td></tr>
+<tr class="separator:a1f382438285d8f1112e9340f3c0e8bbf inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad44fb5ca04e9fc4d9f4e0ecebde3736 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a> (const QByteArray &amp;data)</td></tr>
+<tr class="separator:aad44fb5ca04e9fc4d9f4e0ecebde3736 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1e0e56a1589c04533d8a5498883257 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a5d1e0e56a1589c04533d8a5498883257">dataReq</a> ()</td></tr>
+<tr class="separator:a5d1e0e56a1589c04533d8a5498883257 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabac509906f26db0d77dc0686628e877 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aabac509906f26db0d77dc0686628e877">del</a> (const QUrl &amp;url, bool isfile)</td></tr>
+<tr class="separator:aabac509906f26db0d77dc0686628e877 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab6d77f28be1e5e232a6e48878d972a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a9ab6d77f28be1e5e232a6e48878d972a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnectSlave</b> ()</td></tr>
+<tr class="separator:a9ab6d77f28be1e5e232a6e48878d972a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126bdaa493498ce9248cd4daa70457e4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a126bdaa493498ce9248cd4daa70457e4">dispatch</a> (int command, const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>)</td></tr>
+<tr class="separator:a126bdaa493498ce9248cd4daa70457e4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8394f884891c97e10cdc90d1a3259949 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a8394f884891c97e10cdc90d1a3259949">dispatchLoop</a> ()</td></tr>
+<tr class="separator:a8394f884891c97e10cdc90d1a3259949 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8534dec8d082323cbe3086553b55debb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a8534dec8d082323cbe3086553b55debb">dispatchOpenCommand</a> (int command, const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>)</td></tr>
+<tr class="separator:a8534dec8d082323cbe3086553b55debb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5767b4647af3db820a2f874e47183ee inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aa5767b4647af3db820a2f874e47183ee">dropNetwork</a> (const QString &amp;host=QString())</td></tr>
+<tr class="separator:aa5767b4647af3db820a2f874e47183ee inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6938ad4b6647c3f0150ba77d06725efb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a6938ad4b6647c3f0150ba77d06725efb">error</a> (int _errid, const QString &amp;_text)</td></tr>
+<tr class="separator:a6938ad4b6647c3f0150ba77d06725efb inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a60ea8659c176dd0f48f704a4a191c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a41a60ea8659c176dd0f48f704a4a191c">errorPage</a> ()</td></tr>
+<tr class="separator:a41a60ea8659c176dd0f48f704a4a191c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff32641e4d9c385e89d704030f3e7e80 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">Q_NORETURN void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aff32641e4d9c385e89d704030f3e7e80">exit</a> ()</td></tr>
+<tr class="separator:aff32641e4d9c385e89d704030f3e7e80 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4987924a8e9e087ebf4a9edc11299708 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a4987924a8e9e087ebf4a9edc11299708">finished</a> ()</td></tr>
+<tr class="separator:a4987924a8e9e087ebf4a9edc11299708 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f1efb520cf925caad8d63ba80f334a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a14f1efb520cf925caad8d63ba80f334a">get</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a14f1efb520cf925caad8d63ba80f334a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7505e3573ad549c42fdeb029ed821544 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a7505e3573ad549c42fdeb029ed821544">hasMetaData</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:a7505e3573ad549c42fdeb029ed821544 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3154faa5dc1693fddfb3a179093cad5e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a3154faa5dc1693fddfb3a179093cad5e">infoMessage</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:a3154faa5dc1693fddfb3a179093cad5e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ee0360af49ab99377d7054d362b68d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a72ee0360af49ab99377d7054d362b68d">listDir</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a72ee0360af49ab99377d7054d362b68d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ef312d646dd82062ce03f5edc55879 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ab8ef312d646dd82062ce03f5edc55879">listEntries</a> (const <a class="el" href="namespaceKIO.html#abb17978b4ca2ffacf7a1147576f255a5">UDSEntryList</a> &amp;_entry)</td></tr>
+<tr class="separator:ab8ef312d646dd82062ce03f5edc55879 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac144ec3a8fcbaed9488bd9a0d71de22c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">KIOCORE_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ac144ec3a8fcbaed9488bd9a0d71de22c">listEntry</a> (const <a class="el" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;_entry, bool ready)</td></tr>
+<tr class="separator:ac144ec3a8fcbaed9488bd9a0d71de22c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7434d6379b92d40405d6071d28a89f96 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a7434d6379b92d40405d6071d28a89f96">listEntry</a> (const <a class="el" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;entry)</td></tr>
+<tr class="separator:a7434d6379b92d40405d6071d28a89f96 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af777dbc60f0c0aae8380b564c1b11b62 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#af777dbc60f0c0aae8380b564c1b11b62">lookupHost</a> (const QString &amp;host)</td></tr>
+<tr class="separator:af777dbc60f0c0aae8380b564c1b11b62 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac2da00f0e2b7bc7bccde699c0c4b0e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#adac2da00f0e2b7bc7bccde699c0c4b0e">messageBox</a> (<a class="el" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> type, const QString &amp;text, const QString &amp;caption=QString(), const QString &amp;buttonYes=QString(), const QString &amp;buttonNo=QString())</td></tr>
+<tr class="separator:adac2da00f0e2b7bc7bccde699c0c4b0e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3be6f0c5dd3d7492b334de4334d5f08 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aa3be6f0c5dd3d7492b334de4334d5f08">messageBox</a> (const QString &amp;text, <a class="el" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> type, const QString &amp;caption=QString(), const QString &amp;buttonYes=QString(), const QString &amp;buttonNo=QString(), const QString &amp;dontAskAgainName=QString())</td></tr>
+<tr class="separator:aa3be6f0c5dd3d7492b334de4334d5f08 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb6df63e46923c1acc4f98107b9830c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a1cb6df63e46923c1acc4f98107b9830c">metaData</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:a1cb6df63e46923c1acc4f98107b9830c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f72b6d4e8c94b39d208be0852ea2f50 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a0f72b6d4e8c94b39d208be0852ea2f50">mimeType</a> (const QString &amp;_type)</td></tr>
+<tr class="separator:a0f72b6d4e8c94b39d208be0852ea2f50 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052ab077cdcbef0c692f23a27893b42b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a052ab077cdcbef0c692f23a27893b42b">mimetype</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a052ab077cdcbef0c692f23a27893b42b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae119e0e1ec2366d6601d89c3497fe359 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ae119e0e1ec2366d6601d89c3497fe359">mkdir</a> (const QUrl &amp;url, int permissions)</td></tr>
+<tr class="separator:ae119e0e1ec2366d6601d89c3497fe359 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23180c391259b8abd8e386c868cd559 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#af23180c391259b8abd8e386c868cd559">multiGet</a> (const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>)</td></tr>
+<tr class="separator:af23180c391259b8abd8e386c868cd559 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3361d2d4fa6fc2ec936fe83b0527c1f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ae3361d2d4fa6fc2ec936fe83b0527c1f">needSubUrlData</a> ()</td></tr>
+<tr class="separator:ae3361d2d4fa6fc2ec936fe83b0527c1f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1a0ca99f081d2ce246efc8c30c72c4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a3b1a0ca99f081d2ce246efc8c30c72c4">open</a> (const QUrl &amp;url, QIODevice::OpenMode mode)</td></tr>
+<tr class="separator:a3b1a0ca99f081d2ce246efc8c30c72c4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc0692960fe1c11d318c4ef272e332c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a4cc0692960fe1c11d318c4ef272e332c">openConnection</a> ()</td></tr>
+<tr class="separator:a4cc0692960fe1c11d318c4ef272e332c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c6657a857f7244609826ddb3317154 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#af8c6657a857f7244609826ddb3317154">opened</a> ()</td></tr>
+<tr class="separator:af8c6657a857f7244609826ddb3317154 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775e30d2f1e3c449ad100c17dda7ec1f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">KIOCORE_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a775e30d2f1e3c449ad100c17dda7ec1f">openPasswordDialog</a> (<a class="el" href="classKIO_1_1AuthInfo.html">KIO::AuthInfo</a> &amp;info, const QString &amp;errorMsg=QString())</td></tr>
+<tr class="separator:a775e30d2f1e3c449ad100c17dda7ec1f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddb627ad4287197e7c5961c09db3bf2 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a1ddb627ad4287197e7c5961c09db3bf2">openPasswordDialogV2</a> (<a class="el" href="classKIO_1_1AuthInfo.html">KIO::AuthInfo</a> &amp;info, const QString &amp;errorMsg=QString())</td></tr>
+<tr class="separator:a1ddb627ad4287197e7c5961c09db3bf2 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cb7d98da904938587d63d63e2f9a9a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a82cb7d98da904938587d63d63e2f9a9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _pos)</td></tr>
+<tr class="separator:a82cb7d98da904938587d63d63e2f9a9a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b0e9a7973c3fab3512aff3e3775b3d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aa2b0e9a7973c3fab3512aff3e3775b3d">processedPercent</a> (float percent)</td></tr>
+<tr class="separator:aa2b0e9a7973c3fab3512aff3e3775b3d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c2dce719c07647edc8ac695bf1632d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a34c2dce719c07647edc8ac695bf1632d">processedSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes)</td></tr>
+<tr class="separator:a34c2dce719c07647edc8ac695bf1632d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b257fae6b0a4e3a5a7b01887426fec inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a02b257fae6b0a4e3a5a7b01887426fec">proxyConnectTimeout</a> ()</td></tr>
+<tr class="separator:a02b257fae6b0a4e3a5a7b01887426fec inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b140e7b6f40ef9531e73ecde1ba6e6a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a9b140e7b6f40ef9531e73ecde1ba6e6a">put</a> (const QUrl &amp;url, int permissions, JobFlags flags)</td></tr>
+<tr class="separator:a9b140e7b6f40ef9531e73ecde1ba6e6a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce9cedad601199c23d681ecc083541f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="adce9cedad601199c23d681ecc083541f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size)</td></tr>
+<tr class="separator:adce9cedad601199c23d681ecc083541f inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916816221119da4dda1f78b33f5748ae inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a916816221119da4dda1f78b33f5748ae">readData</a> (QByteArray &amp;buffer)</td></tr>
+<tr class="separator:a916816221119da4dda1f78b33f5748ae inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba229df038eb2c52a21127a971f7a5b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#abba229df038eb2c52a21127a971f7a5b">readTimeout</a> ()</td></tr>
+<tr class="separator:abba229df038eb2c52a21127a971f7a5b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e50004d94e4e7044325fdeb49cf488d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a1e50004d94e4e7044325fdeb49cf488d">redirection</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a1e50004d94e4e7044325fdeb49cf488d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8099184cb7144a07de3ed83b0940dfa1 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKRemoteEncoding.html">KRemoteEncoding</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a8099184cb7144a07de3ed83b0940dfa1">remoteEncoding</a> ()</td></tr>
+<tr class="separator:a8099184cb7144a07de3ed83b0940dfa1 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1a09350a7812552cd96bee8c036832 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a5f1a09350a7812552cd96bee8c036832">rename</a> (const QUrl &amp;src, const QUrl &amp;dest, JobFlags flags)</td></tr>
+<tr class="separator:a5f1a09350a7812552cd96bee8c036832 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36448af5d807bdcd01143d4394287f1a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a36448af5d807bdcd01143d4394287f1a">reparseConfiguration</a> ()</td></tr>
+<tr class="separator:a36448af5d807bdcd01143d4394287f1a inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739fbadb65d058550ebde417ed7a1ae4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a739fbadb65d058550ebde417ed7a1ae4">requestNetwork</a> (const QString &amp;host=QString())</td></tr>
+<tr class="separator:a739fbadb65d058550ebde417ed7a1ae4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6283e14c737a1144bb1feba44f7b4fcd inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a6283e14c737a1144bb1feba44f7b4fcd">responseTimeout</a> ()</td></tr>
+<tr class="separator:a6283e14c737a1144bb1feba44f7b4fcd inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4961835233eb5852ec96c18f0bb28a29 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a4961835233eb5852ec96c18f0bb28a29"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> offset)</td></tr>
+<tr class="separator:a4961835233eb5852ec96c18f0bb28a29 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8c1538d17c62765394a5e427d6833b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a1f8c1538d17c62765394a5e427d6833b">sendAndKeepMetaData</a> ()</td></tr>
+<tr class="separator:a1f8c1538d17c62765394a5e427d6833b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dfc533c2c9126e9af7e347a4016f2b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a73dfc533c2c9126e9af7e347a4016f2b">sendMetaData</a> ()</td></tr>
+<tr class="separator:a73dfc533c2c9126e9af7e347a4016f2b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1b14e9990c830a4eb76b308eaf7d62 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a7d1b14e9990c830a4eb76b308eaf7d62">setHost</a> (const QString &amp;host, quint16 port, const QString &amp;user, const QString &amp;pass)</td></tr>
+<tr class="separator:a7d1b14e9990c830a4eb76b308eaf7d62 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec67d7af5a083429029c47dc02fc488 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#adec67d7af5a083429029c47dc02fc488">setKillFlag</a> ()</td></tr>
+<tr class="separator:adec67d7af5a083429029c47dc02fc488 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ffe0496d0067d63e2d54d10da94bf4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a71ffe0496d0067d63e2d54d10da94bf4">setLinkDest</a> (const QUrl &amp;url, const QString &amp;target)</td></tr>
+<tr class="separator:a71ffe0496d0067d63e2d54d10da94bf4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34190cea639885ec37b279ba9fed624 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#af34190cea639885ec37b279ba9fed624">setMetaData</a> (const QString &amp;key, const QString &amp;value)</td></tr>
+<tr class="separator:af34190cea639885ec37b279ba9fed624 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d7e6d6897944918a0e911cfc192377 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ac3d7e6d6897944918a0e911cfc192377">setModificationTime</a> (const QUrl &amp;url, const QDateTime &amp;mtime)</td></tr>
+<tr class="separator:ac3d7e6d6897944918a0e911cfc192377 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a24803efeceaff5077cee61edcb52f4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a8a24803efeceaff5077cee61edcb52f4">setSubUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a8a24803efeceaff5077cee61edcb52f4 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3682aa116f843af6c60211e7eddd3c60 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a3682aa116f843af6c60211e7eddd3c60">setTimeoutSpecialCommand</a> (int timeout, const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>=QByteArray())</td></tr>
+<tr class="separator:a3682aa116f843af6c60211e7eddd3c60 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42712ebb2fad1237050521c2d9bafe7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ac42712ebb2fad1237050521c2d9bafe7">slave_status</a> ()</td></tr>
+<tr class="separator:ac42712ebb2fad1237050521c2d9bafe7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8216f4d231b9afce5c298ebc9bc9b1 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a4e8216f4d231b9afce5c298ebc9bc9b1">slaveStatus</a> (const QString &amp;host, bool <a class="el" href="classKIO_1_1SlaveBase.html#a7eeae308a8c3dac6ce59c54839cb6e67">connected</a>)</td></tr>
+<tr class="separator:a4e8216f4d231b9afce5c298ebc9bc9b1 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53ecc830f2f57cde6b8c81cf3a1d14c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#aa53ecc830f2f57cde6b8c81cf3a1d14c">special</a> (const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>)</td></tr>
+<tr class="separator:aa53ecc830f2f57cde6b8c81cf3a1d14c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21412eed653f9b4fdd0d2b4ea7a7897b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a21412eed653f9b4fdd0d2b4ea7a7897b">speed</a> (unsigned long _bytes_per_second)</td></tr>
+<tr class="separator:a21412eed653f9b4fdd0d2b4ea7a7897b inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03032a76311bac5ae06fc1c11369cbd inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ae03032a76311bac5ae06fc1c11369cbd">stat</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:ae03032a76311bac5ae06fc1c11369cbd inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ec4b5f1c05be67d51bd2704afdfc32 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a75ec4b5f1c05be67d51bd2704afdfc32">statEntry</a> (const <a class="el" href="classKIO_1_1UDSEntry.html">UDSEntry</a> &amp;_entry)</td></tr>
+<tr class="separator:a75ec4b5f1c05be67d51bd2704afdfc32 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bee45f494a76382adbd44ffb823dd70 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a8bee45f494a76382adbd44ffb823dd70">symlink</a> (const QString &amp;target, const QUrl &amp;dest, JobFlags flags)</td></tr>
+<tr class="separator:a8bee45f494a76382adbd44ffb823dd70 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94502ceba28f85c51301beb34d5850d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#ac94502ceba28f85c51301beb34d5850d">totalSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes)</td></tr>
+<tr class="separator:ac94502ceba28f85c51301beb34d5850d inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5303431dc9f943fcce8961011aa8f951 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a5303431dc9f943fcce8961011aa8f951">waitForAnswer</a> (int expected1, int expected2, QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>, int *pCmd=0)</td></tr>
+<tr class="separator:a5303431dc9f943fcce8961011aa8f951 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eebf2e871ec71fc6d2f2d6ff924241c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a9eebf2e871ec71fc6d2f2d6ff924241c">waitForHostInfo</a> (QHostInfo &amp;info)</td></tr>
+<tr class="separator:a9eebf2e871ec71fc6d2f2d6ff924241c inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482f0189b8b21ec7ae05b69d197941e7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a482f0189b8b21ec7ae05b69d197941e7">warning</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:a482f0189b8b21ec7ae05b69d197941e7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080ee760852c81e7a505d8ce5435ac4e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a080ee760852c81e7a505d8ce5435ac4e">wasKilled</a> () const</td></tr>
+<tr class="separator:a080ee760852c81e7a505d8ce5435ac4e inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632135a6e5adac9a215787de4cee74ec inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a632135a6e5adac9a215787de4cee74ec"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (const QByteArray &amp;<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>)</td></tr>
+<tr class="separator:a632135a6e5adac9a215787de4cee74ec inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a47cdff797108f357f2d341f76ddf7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a63a47cdff797108f357f2d341f76ddf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>written</b> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> _bytes)</td></tr>
+<tr class="separator:a63a47cdff797108f357f2d341f76ddf7 inherit pub_methods_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a748dae4b16a53664c119416b1483b865"><td class="memItemLeft" align="right" valign="top"><a id="a748dae4b16a53664c119416b1483b865"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SslResultDetail</b> { <b>ResultOk</b> = 1,
+<b>ResultOverridden</b> = 2,
+<b>ResultFailed</b> = 4,
+<b>ResultFailedEarly</b> = 8
+ }</td></tr>
+<tr class="separator:a748dae4b16a53664c119416b1483b865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classKIO_1_1SlaveBase"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classKIO_1_1SlaveBase')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classKIO_1_1SlaveBase.html">KIO::SlaveBase</a></td></tr>
+<tr class="memitem:a110596fd9c0705807697ac428d1c1fbe inherit pro_types_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a110596fd9c0705807697ac428d1c1fbe"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>VirtualFunctionId</b> { <b>AppConnectionMade</b> = 0,
+<b>GetFileSystemFreeSpace</b> = 1
+ }</td></tr>
+<tr class="separator:a110596fd9c0705807697ac428d1c1fbe inherit pro_types_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac81867a9e300580d1fca791994a81079"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#ac81867a9e300580d1fca791994a81079">atEnd</a> () const</td></tr>
+<tr class="separator:ac81867a9e300580d1fca791994a81079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38262d6009f150246b6b3f4cb85d7688"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#a38262d6009f150246b6b3f4cb85d7688">connectToHost</a> (const QString &amp;protocol, const QString &amp;host, quint16 <a class="el" href="classKIO_1_1TCPSlaveBase.html#aa6bb00965feb3e8301f3fad0c8020a7a">port</a>)</td></tr>
+<tr class="separator:a38262d6009f150246b6b3f4cb85d7688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa932ffc570505aa05e350310f177b836"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#aa932ffc570505aa05e350310f177b836">connectToHost</a> (const QString &amp;host, quint16 <a class="el" href="classKIO_1_1TCPSlaveBase.html#aa6bb00965feb3e8301f3fad0c8020a7a">port</a>, QString *errorString=0)</td></tr>
+<tr class="separator:aa932ffc570505aa05e350310f177b836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dfc2aa2ac48e4571883fd1240d19b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#a85dfc2aa2ac48e4571883fd1240d19b4">disconnectFromHost</a> ()</td></tr>
+<tr class="separator:a85dfc2aa2ac48e4571883fd1240d19b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7d7620baa9418511a4636d29ecae35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#aab7d7620baa9418511a4636d29ecae35">isAutoSsl</a> () const</td></tr>
+<tr class="separator:aab7d7620baa9418511a4636d29ecae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb29a2e060116b6c963cb3635b9dc2e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#afb29a2e060116b6c963cb3635b9dc2e6">isConnected</a> () const</td></tr>
+<tr class="separator:afb29a2e060116b6c963cb3635b9dc2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbcf4497c07e120c8d0fefe522e4a06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#accbcf4497c07e120c8d0fefe522e4a06">isUsingSsl</a> () const</td></tr>
+<tr class="separator:accbcf4497c07e120c8d0fefe522e4a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bb00965feb3e8301f3fad0c8020a7a"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#aa6bb00965feb3e8301f3fad0c8020a7a">port</a> () const</td></tr>
+<tr class="separator:aa6bb00965feb3e8301f3fad0c8020a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af881d4db9d275d69db27f6592052eaf3"><td class="memItemLeft" align="right" valign="top"><a id="af881d4db9d275d69db27f6592052eaf3"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (char *<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>, ssize_t len)</td></tr>
+<tr class="separator:af881d4db9d275d69db27f6592052eaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9bc3a1faf94d3cc60f99363e6c20ac"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#abb9bc3a1faf94d3cc60f99363e6c20ac">readLine</a> (char *<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>, ssize_t len)</td></tr>
+<tr class="separator:abb9bc3a1faf94d3cc60f99363e6c20ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a55f084718392dfa17696908d1e13b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#a31a55f084718392dfa17696908d1e13b">setBlocking</a> (bool b)</td></tr>
+<tr class="separator:a31a55f084718392dfa17696908d1e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafecb9f9882f0480c2892af10d2db9ef"><td class="memItemLeft" align="right" valign="top">QIODevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#aafecb9f9882f0480c2892af10d2db9ef">socket</a> () const</td></tr>
+<tr class="separator:aafecb9f9882f0480c2892af10d2db9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efd022aa3979aa255cbade0af2f65c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#a2efd022aa3979aa255cbade0af2f65c3">startSsl</a> ()</td></tr>
+<tr class="separator:a2efd022aa3979aa255cbade0af2f65c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62acda7d0ca0cfbd93c6294deaba404c"><td class="memItemLeft" align="right" valign="top"><a id="a62acda7d0ca0cfbd93c6294deaba404c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int id, void *<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>) override</td></tr>
+<tr class="separator:a62acda7d0ca0cfbd93c6294deaba404c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22f07240663e8d6a0b595b1f6717433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1TCPSlaveBase.html#ab22f07240663e8d6a0b595b1f6717433">waitForResponse</a> (int t)</td></tr>
+<tr class="separator:ab22f07240663e8d6a0b595b1f6717433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a83c9331c0f8419dd7f5a8d7da7994"><td class="memItemLeft" align="right" valign="top"><a id="a19a83c9331c0f8419dd7f5a8d7da7994"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (const char *<a class="el" href="classKIO_1_1SlaveBase.html#aad44fb5ca04e9fc4d9f4e0ecebde3736">data</a>, ssize_t len)</td></tr>
+<tr class="separator:a19a83c9331c0f8419dd7f5a8d7da7994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classKIO_1_1SlaveBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKIO_1_1SlaveBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKIO_1_1SlaveBase.html">KIO::SlaveBase</a></td></tr>
+<tr class="memitem:a3f8ad655257948150ce78e225a0510bd inherit pub_types_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a3f8ad655257948150ce78e225a0510bd">ButtonCode</a> { <br />
+&#160;&#160;<b>Ok</b> = 1,
+<b>Cancel</b> = 2,
+<b>Yes</b> = 3,
+<b>No</b> = 4,
+<br />
+&#160;&#160;<b>Continue</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a3f8ad655257948150ce78e225a0510bd inherit pub_types_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982d3a4e2dee02ce2d6e46d268dc9823 inherit pub_types_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a982d3a4e2dee02ce2d6e46d268dc9823">MessageBoxType</a> { <br />
+&#160;&#160;<b>QuestionYesNo</b> = 1,
+<b>WarningYesNo</b> = 2,
+<b>WarningContinueCancel</b> = 3,
+<b>WarningYesNoCancel</b> = 4,
+<br />
+&#160;&#160;<b>Information</b> = 5,
+<b>SSLMessageBox</b> = 6
+<br />
+ }</td></tr>
+<tr class="separator:a982d3a4e2dee02ce2d6e46d268dc9823 inherit pub_types_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classKIO_1_1SlaveBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKIO_1_1SlaveBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKIO_1_1SlaveBase.html">KIO::SlaveBase</a></td></tr>
+<tr class="memitem:acaee09a2f6fc5c9cf0ee90f3560d74a0 inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="acaee09a2f6fc5c9cf0ee90f3560d74a0"></a>
+<a class="el" href="classKIO_1_1MetaData.html">MetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mIncomingMetaData</b></td></tr>
+<tr class="separator:acaee09a2f6fc5c9cf0ee90f3560d74a0 inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579b2fca0b1ae9813ba9ab17ceae1d2d inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top"><a id="a579b2fca0b1ae9813ba9ab17ceae1d2d"></a>
+<a class="el" href="classKIO_1_1MetaData.html">MetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mOutgoingMetaData</b></td></tr>
+<tr class="separator:a579b2fca0b1ae9813ba9ab17ceae1d2d inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c608c0690a6527e5a3736081171181 inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKIO_1_1SlaveBase.html#a69c608c0690a6527e5a3736081171181">mProtocol</a></td></tr>
+<tr class="separator:a69c608c0690a6527e5a3736081171181 inherit pro_attribs_classKIO_1_1SlaveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>There are two classes that specifies the protocol between application (job) and kioslave. </p>
+<p><a class="el" href="classKIO_1_1SlaveInterface.html" title="There are two classes that specifies the protocol between application ( KIO::Job) and kioslave...">SlaveInterface</a> is the class to use on the application end, <a class="el" href="classKIO_1_1SlaveBase.html" title="There are two classes that specifies the protocol between application (job) and kioslave. ">SlaveBase</a> is the one to use on the slave end.</p>
+<p>Slave implementations should simply inherit <a class="el" href="classKIO_1_1SlaveBase.html" title="There are two classes that specifies the protocol between application (job) and kioslave. ">SlaveBase</a></p>
+<p>A call to foo() results in a call to slotFoo() on the other end. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8h_source.html#l00048">48</a> of file <a class="el" href="tcpslavebase_8h_source.html">tcpslavebase.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5eec53e951f999df7744b53fe34eff86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eec53e951f999df7744b53fe34eff86">&#9670;&nbsp;</a></span>TCPSlaveBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCPSlaveBase::TCPSlaveBase </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>poolSocket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>appSocket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoSsl</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autoSsl</td><td>if true, will automatically invoke <a class="el" href="classKIO_1_1TCPSlaveBase.html#a2efd022aa3979aa255cbade0af2f65c3" title="Start using SSL on the connection. ">startSsl()</a> right after connecting. In the absence of errors the use of SSL will therefore be transparent to higher layers. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00183">183</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac81867a9e300580d1fca791994a81079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac81867a9e300580d1fca791994a81079">&#9670;&nbsp;</a></span>atEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::atEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true when end of data is reached. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00485">485</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38262d6009f150246b6b3f4cb85d7688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38262d6009f150246b6b3f4cb85d7688">&#9670;&nbsp;</a></span>connectToHost() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::connectToHost </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs the initial TCP connection stuff and/or SSL handshaking as necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocol</td><td>the protocol being used </td></tr>
+    <tr><td class="paramname">host</td><td>hostname </td></tr>
+    <tr><td class="paramname">port</td><td>port number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>on succes, true is returned. on failure, false is returned and an appropriate error message is sent to the application. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00287">287</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa932ffc570505aa05e350310f177b836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa932ffc570505aa05e350310f177b836">&#9670;&nbsp;</a></span>connectToHost() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TCPSlaveBase::connectToHost </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>errorString</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Connects to the specified host and port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>host name </td></tr>
+    <tr><td class="paramname">port</td><td>port number </td></tr>
+    <tr><td class="paramname">errorString</td><td>if not NULL, this string will contain error information on why the connection request failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>on success, 0 is returned. on failure, a <a class="el" href="namespaceKIO.html#ae3b43d88fc092c0f5380cf97ca4256a7" title="Error codes that can be emitted by KIO. ">KIO::Error</a> code is returned. errorString, if not NULL, will contain the appropriate error message that can be sent back to the client.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.7.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00301">301</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85dfc2aa2ac48e4571883fd1240d19b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85dfc2aa2ac48e4571883fd1240d19b4">&#9670;&nbsp;</a></span>disconnectFromHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPSlaveBase::disconnectFromHost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close the connection and forget non-permanent data like the peer host. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00446">446</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab7d7620baa9418511a4636d29ecae35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7d7620baa9418511a4636d29ecae35">&#9670;&nbsp;</a></span>isAutoSsl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::isAutoSsl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Will start SSL after connecting? </p>
+<dl class="section return"><dt>Returns</dt><dd>if so, true is returned. if not, false is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00470">470</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb29a2e060116b6c963cb3635b9dc2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb29a2e060116b6c963cb3635b9dc2e6">&#9670;&nbsp;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether or not we are still connected to the remote machine. </p>
+<p>return <code>true</code> if the socket is still active or false otherwise. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00970">970</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="accbcf4497c07e120c8d0fefe522e4a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accbcf4497c07e120c8d0fefe522e4a06">&#9670;&nbsp;</a></span>isUsingSsl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::isUsingSsl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the current connection using SSL? </p>
+<dl class="section return"><dt>Returns</dt><dd>if so, true is returned. if not, false is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00475">475</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa6bb00965feb3e8301f3fad0c8020a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6bb00965feb3e8301f3fad0c8020a7a">&#9670;&nbsp;</a></span>port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint16 TCPSlaveBase::port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the current port for this service </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00480">480</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb9bc3a1faf94d3cc60f99363e6c20ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9bc3a1faf94d3cc60f99363e6c20ac">&#9670;&nbsp;</a></span>readLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t TCPSlaveBase::readLine </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as read() except it reads data one line at a time. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00263">263</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a31a55f084718392dfa17696908d1e13b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a55f084718392dfa17696908d1e13b">&#9670;&nbsp;</a></span>setBlocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPSlaveBase::setBlocking </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the mode of the connection to blocking or non-blocking. </p>
+<p>Be sure to call this function before calling connectToHost. Otherwise, this setting will not have any effect until the next <code>connectToHost</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>true to make the connection a blocking one, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00984">984</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aafecb9f9882f0480c2892af10d2db9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafecb9f9882f0480c2892af10d2db9ef">&#9670;&nbsp;</a></span>socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QIODevice * TCPSlaveBase::socket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the socket object, if the class ever needs to do anything to it. </p>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00178">178</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2efd022aa3979aa255cbade0af2f65c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efd022aa3979aa255cbade0af2f65c3">&#9670;&nbsp;</a></span>startSsl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::startSsl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start using SSL on the connection. </p>
+<p>You can use it right after connecting for classic, transparent to the protocol SSL. Calling it later can be used to implement e.g. SMTP's STARTTLS feature.</p>
+<dl class="section return"><dt>Returns</dt><dd>on success, true is returned. on failure, false is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00490">490</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab22f07240663e8d6a0b595b1f6717433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22f07240663e8d6a0b595b1f6717433">&#9670;&nbsp;</a></span>waitForResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TCPSlaveBase::waitForResponse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wait for incoming data on the socket for the period specified by <code>t</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>length of time in seconds that we should monitor the socket before timing out.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if any data arrived on the socket before the timeout value was reached, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tcpslavebase_8cpp_source.html#l00976">976</a> of file <a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="tcpslavebase_8h_source.html">tcpslavebase.h</a></li>
+<li><a class="el" href="tcpslavebase_8cpp_source.html">tcpslavebase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:00 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCompletion - KCompletionBox Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCompletion</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCompletion"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKComboBox.html">KComboBox</option>
+        
+        <option value="classKCompletion.html">KCompletion</option>
+        
+        <option value="classKCompletionBase.html">KCompletionBase</option>
+        
+        <option value="classKCompletionBox.html">KCompletionBox</option>
+        
+        <option value="classKCompletionMatches.html">KCompletionMatches</option>
+        
+        <option value="classKHistoryComboBox.html">KHistoryComboBox</option>
+        
+        <option value="classKLineEdit.html">KLineEdit</option>
+        
+        <option value="classKPixmapProvider.html">KPixmapProvider</option>
+        
+        <option value="classKSortableItem.html">KSortableItem</option>
+        
+        <option value="classKSortableList.html">KSortableList</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Text completion helpers and widgets</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:davidgiloliva@gmail.com">David Gil Oliva</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Completion)
+target_link_libraries(yourapp KF5::Completion)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCompletion </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcompletion-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCompletion on <a href="https://cgit.kde.org/kcompletion-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCompletion </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCompletionBox">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKCompletionBox-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCompletionBox Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcompletionbox_8h_source.html">kcompletionbox.h</a>&gt;</code></p>
+
+<p>Inherits QListWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ad914834c113ea9930339563f0e358c46"><td class="memItemLeft" align="right" valign="top"><a id="ad914834c113ea9930339563f0e358c46"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>activateOnSelect</b></td></tr>
+<tr class="separator:ad914834c113ea9930339563f0e358c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d1b4fedae257a7d774f26b766e3d01"><td class="memItemLeft" align="right" valign="top"><a id="a07d1b4fedae257a7d774f26b766e3d01"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>cancelledText</b></td></tr>
+<tr class="separator:a07d1b4fedae257a7d774f26b766e3d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d89a03725ab1bc1938aa3447e38c4fd"><td class="memItemLeft" align="right" valign="top"><a id="a1d89a03725ab1bc1938aa3447e38c4fd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTabHandling</b></td></tr>
+<tr class="separator:a1d89a03725ab1bc1938aa3447e38c4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a3608a457b6466be137fd24549e4cc36a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a3608a457b6466be137fd24549e4cc36a">activated</a> (const QString &amp;)</td></tr>
+<tr class="separator:a3608a457b6466be137fd24549e4cc36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4c759719847ecd180e65bfd7fede86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a4f4c759719847ecd180e65bfd7fede86">userCancelled</a> (const QString &amp;)</td></tr>
+<tr class="separator:a4f4c759719847ecd180e65bfd7fede86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:abe15cc623385077deb1aa29a1a0de5fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#abe15cc623385077deb1aa29a1a0de5fe">down</a> ()</td></tr>
+<tr class="separator:abe15cc623385077deb1aa29a1a0de5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bcf7116f1d6c26c2683dba78fb8548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a68bcf7116f1d6c26c2683dba78fb8548">end</a> ()</td></tr>
+<tr class="separator:a68bcf7116f1d6c26c2683dba78fb8548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c17b3905949c4b47fc33cf41326049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a72c17b3905949c4b47fc33cf41326049">home</a> ()</td></tr>
+<tr class="separator:a72c17b3905949c4b47fc33cf41326049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7740f8acfda3c06455b4e205548419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a0e7740f8acfda3c06455b4e205548419">insertItems</a> (const QStringList &amp;<a class="el" href="classKCompletionBox.html#ac649d00b60b7a0d31fa0f547e8780b56">items</a>, int index=-1)</td></tr>
+<tr class="separator:a0e7740f8acfda3c06455b4e205548419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf582e591583372153ede6a8e925dc64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#adf582e591583372153ede6a8e925dc64">pageDown</a> ()</td></tr>
+<tr class="separator:adf582e591583372153ede6a8e925dc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf16e434ec11a1d1dadb8acd8efd55c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#aaaf16e434ec11a1d1dadb8acd8efd55c">pageUp</a> ()</td></tr>
+<tr class="separator:aaaf16e434ec11a1d1dadb8acd8efd55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb114b16cd57f23985999e75deb73099"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#adb114b16cd57f23985999e75deb73099">popup</a> ()</td></tr>
+<tr class="separator:adb114b16cd57f23985999e75deb73099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95323c5f57badda9dbdda72fd065d672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a95323c5f57badda9dbdda72fd065d672">setActivateOnSelect</a> (bool doEmit)</td></tr>
+<tr class="separator:a95323c5f57badda9dbdda72fd065d672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7607a493b4cb207c613f1abd90a28a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a7c7607a493b4cb207c613f1abd90a28a">setCancelledText</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a7c7607a493b4cb207c613f1abd90a28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b85cdf4a048565f61ce070750845de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a6b85cdf4a048565f61ce070750845de8">setItems</a> (const QStringList &amp;<a class="el" href="classKCompletionBox.html#ac649d00b60b7a0d31fa0f547e8780b56">items</a>)</td></tr>
+<tr class="separator:a6b85cdf4a048565f61ce070750845de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae048988dd55c5c39bd2e64c52be05bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#ae048988dd55c5c39bd2e64c52be05bef">setTabHandling</a> (bool enable)</td></tr>
+<tr class="separator:ae048988dd55c5c39bd2e64c52be05bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecaaa0b9390cf8905a59446c6b3a5dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#aecaaa0b9390cf8905a59446c6b3a5dce">setVisible</a> (bool visible) override</td></tr>
+<tr class="separator:aecaaa0b9390cf8905a59446c6b3a5dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0789111fff26d5e7966aa8e0d4edac55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a0789111fff26d5e7966aa8e0d4edac55">up</a> ()</td></tr>
+<tr class="separator:a0789111fff26d5e7966aa8e0d4edac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a17f94ce41b891fc15325425be3bd7782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a17f94ce41b891fc15325425be3bd7782">KCompletionBox</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a17f94ce41b891fc15325425be3bd7782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c86c4c783499bc467ea8465595427b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a7c86c4c783499bc467ea8465595427b9">~KCompletionBox</a> ()</td></tr>
+<tr class="separator:a7c86c4c783499bc467ea8465595427b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd3f59694bcdd49cc530a42c37b7714"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a4cd3f59694bcdd49cc530a42c37b7714">activateOnSelect</a> () const</td></tr>
+<tr class="separator:a4cd3f59694bcdd49cc530a42c37b7714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bf4bbca7dd4cf2e5aec93955a24a84"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a63bf4bbca7dd4cf2e5aec93955a24a84">cancelledText</a> () const</td></tr>
+<tr class="separator:a63bf4bbca7dd4cf2e5aec93955a24a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0552852052c23bf30b1caf2318e27e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#ab0552852052c23bf30b1caf2318e27e1">isTabHandling</a> () const</td></tr>
+<tr class="separator:ab0552852052c23bf30b1caf2318e27e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac649d00b60b7a0d31fa0f547e8780b56"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#ac649d00b60b7a0d31fa0f547e8780b56">items</a> () const</td></tr>
+<tr class="separator:ac649d00b60b7a0d31fa0f547e8780b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbb71bfe8319d1c498dcf8696d55ce6"><td class="memItemLeft" align="right" valign="top"><a id="a1cbb71bfe8319d1c498dcf8696d55ce6"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
+<tr class="separator:a1cbb71bfe8319d1c498dcf8696d55ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a1577e14b5112c4fc44fc4d6f5129ea6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a1577e14b5112c4fc44fc4d6f5129ea6c">slotActivated</a> (QListWidgetItem *)</td></tr>
+<tr class="separator:a1577e14b5112c4fc44fc4d6f5129ea6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae30c0d6821e6572a699fa1e2347c8003"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#ae30c0d6821e6572a699fa1e2347c8003">calculateGeometry</a> () const</td></tr>
+<tr class="separator:ae30c0d6821e6572a699fa1e2347c8003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4dd77d21a44adb7fbbd3b365b41654"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#abf4dd77d21a44adb7fbbd3b365b41654">eventFilter</a> (QObject *, QEvent *) override</td></tr>
+<tr class="separator:abf4dd77d21a44adb7fbbd3b365b41654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac150acac8743808bd1689a864098b267"><td class="memItemLeft" align="right" valign="top">virtual QPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#ac150acac8743808bd1689a864098b267">globalPositionHint</a> () const</td></tr>
+<tr class="separator:ac150acac8743808bd1689a864098b267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a69bf36eb83fedeec330b745aa0eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a42a69bf36eb83fedeec330b745aa0eed">resizeAndReposition</a> ()</td></tr>
+<tr class="separator:a42a69bf36eb83fedeec330b745aa0eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dca87586a4128f2256409d3d71c407e"><td class="memItemLeft" align="right" valign="top">KCOMPLETION_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCompletionBox.html#a5dca87586a4128f2256409d3d71c407e">sizeAndPosition</a> ()</td></tr>
+<tr class="separator:a5dca87586a4128f2256409d3d71c407e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A helper widget for "completion-widgets" (<a class="el" href="classKLineEdit.html" title="An enhanced QLineEdit widget for inputting text. ">KLineEdit</a>, <a class="el" href="classKComboBox.html" title="A combo box with completion support. ">KComboBox</a>)) </p>
+<p>A little utility class for "completion-widgets", like <a class="el" href="classKLineEdit.html" title="An enhanced QLineEdit widget for inputting text. ">KLineEdit</a> or <a class="el" href="classKComboBox.html" title="A combo box with completion support. ">KComboBox</a>. <a class="el" href="classKCompletionBox.html" title="A helper widget for &quot;completion-widgets&quot; (KLineEdit, KComboBox)) ">KCompletionBox</a> is a listbox, displayed as a rectangle without any window decoration, usually directly under the lineedit or combobox. It is filled with all possible matches for a completion, so the user can select the one he wants.</p>
+<p>It is used when <a class="el" href="classKCompletion.html#a927c284d89e41d976412201b68ca67e9" title="This enum describes the completion mode used for by the KCompletion class. ">KCompletion::CompletionMode</a> == CompletionPopup or CompletionPopupAuto.</p>
+<dl class="section author"><dt>Author</dt><dd>Carsten Pfeiffer <a href="#" onclick="location.href='mai'+'lto:'+'pfe'+'if'+'fer'+'@k'+'de.'+'or'+'g'; return false;">pfeif<span style="display: none;">.nosp@m.</span>fer@<span style="display: none;">.nosp@m.</span>kde.o<span style="display: none;">.nosp@m.</span>rg</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8h_source.html#l00045">45</a> of file <a class="el" href="kcompletionbox_8h_source.html">kcompletionbox.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a17f94ce41b891fc15325425be3bd7782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f94ce41b891fc15325425be3bd7782">&#9670;&nbsp;</a></span>KCompletionBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCompletionBox::KCompletionBox </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKCompletionBox.html" title="A helper widget for &quot;completion-widgets&quot; (KLineEdit, KComboBox)) ">KCompletionBox</a>. </p>
+<p>The parent widget is used to give the focus back when pressing the up-button on the very first item. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00049">49</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7c86c4c783499bc467ea8465595427b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c86c4c783499bc467ea8465595427b9">&#9670;&nbsp;</a></span>~KCompletionBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCompletionBox::~KCompletionBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the box. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00083">83</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3608a457b6466be137fd24549e4cc36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3608a457b6466be137fd24549e4cc36a">&#9670;&nbsp;</a></span>activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::activated </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when an item was selected, contains the text of the selected item. </p>
+
+</div>
+</div>
+<a id="a4cd3f59694bcdd49cc530a42c37b7714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd3f59694bcdd49cc530a42c37b7714">&#9670;&nbsp;</a></span>activateOnSelect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletionBox::activateOnSelect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if selecting an item results in the emission of the selected() signal. </dd></dl>
+
+</div>
+</div>
+<a id="ae30c0d6821e6572a699fa1e2347c8003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30c0d6821e6572a699fa1e2347c8003">&#9670;&nbsp;</a></span>calculateGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect KCompletionBox::calculateGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This calculates the size of the dropdown and the relative position of the top left corner with respect to the parent widget. </p>
+<p>This matches the geometry and position normally used by K/QComboBox when used with one. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00365">365</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a63bf4bbca7dd4cf2e5aec93955a24a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63bf4bbca7dd4cf2e5aec93955a24a84">&#9670;&nbsp;</a></span>cancelledText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCompletionBox::cancelledText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the text set via <a class="el" href="classKCompletionBox.html#a7c7607a493b4cb207c613f1abd90a28a" title="Sets the text to be emitted if the user chooses not to pick from the available matches. ">setCancelledText()</a> or QString(). </dd></dl>
+
+</div>
+</div>
+<a id="abe15cc623385077deb1aa29a1a0de5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe15cc623385077deb1aa29a1a0de5fe">&#9670;&nbsp;</a></span>down</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::down </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection one line down or select the first item if nothing is selected yet. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00387">387</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a68bcf7116f1d6c26c2683dba78fb8548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bcf7116f1d6c26c2683dba78fb8548">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection down to the last item. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00430">430</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf4dd77d21a44adb7fbbd3b365b41654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4dd77d21a44adb7fbbd3b365b41654">&#9670;&nbsp;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletionBox::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from QListWidget to get events from the viewport (to hide this widget on mouse-click, Escape-presses, etc. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00112">112</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac150acac8743808bd1689a864098b267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac150acac8743808bd1689a864098b267">&#9670;&nbsp;</a></span>globalPositionHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPoint KCompletionBox::globalPositionHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The preferred global coordinate at which the completion box's top left corner should be positioned. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00324">324</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72c17b3905949c4b47fc33cf41326049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c17b3905949c4b47fc33cf41326049">&#9670;&nbsp;</a></span>home</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::home </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection up to the first item. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00425">425</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e7740f8acfda3c06455b4e205548419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7740f8acfda3c06455b4e205548419">&#9670;&nbsp;</a></span>insertItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::insertItems </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inserts <code>items</code> into the box. </p>
+<p>Does not clear the items before. <code>index</code> determines at which position <code>items</code> will be inserted. (defaults to appending them at the end) </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00484">484</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab0552852052c23bf30b1caf2318e27e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0552852052c23bf30b1caf2318e27e1">&#9670;&nbsp;</a></span>isTabHandling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCompletionBox::isTabHandling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if this widget is handling Tab-key events to traverse the items in the dropdown list, otherwise false.</dd></dl>
+<p>Default is true.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletionBox.html#ae048988dd55c5c39bd2e64c52be05bef" title="Makes this widget (when visible) capture Tab-key events to traverse the items in the dropdown list (T...">setTabHandling</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac649d00b60b7a0d31fa0f547e8780b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac649d00b60b7a0d31fa0f547e8780b56">&#9670;&nbsp;</a></span>items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCompletionBox::items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of all items currently in the box. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00089">89</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adf582e591583372153ede6a8e925dc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf582e591583372153ede6a8e925dc64">&#9670;&nbsp;</a></span>pageDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::pageDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection one page down. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00415">415</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaaf16e434ec11a1d1dadb8acd8efd55c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf16e434ec11a1d1dadb8acd8efd55c">&#9670;&nbsp;</a></span>pageUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::pageUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection one page up. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00420">420</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb114b16cd57f23985999e75deb73099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb114b16cd57f23985999e75deb73099">&#9670;&nbsp;</a></span>popup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::popup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adjusts the size of the box to fit the width of the parent given in the constructor and pops it up at the most appropriate place, relative to the parent. </p>
+<p>Depending on the screensize and the position of the parent, this may be a different place, however the default is to pop it up and the lower left corner of the parent.</p>
+<p>Make sure to hide() the box when appropriate. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00272">272</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a42a69bf36eb83fedeec330b745aa0eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a69bf36eb83fedeec330b745aa0eed">&#9670;&nbsp;</a></span>resizeAndReposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::resizeAndReposition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This properly resizes and repositions the listbox. </p>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00290">290</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95323c5f57badda9dbdda72fd065d672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95323c5f57badda9dbdda72fd065d672">&#9670;&nbsp;</a></span>setActivateOnSelect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::setActivateOnSelect </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doEmit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set whether or not the selected signal should be emitted when an item is selected. </p>
+<p>By default the selected() signal is emitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doEmit</td><td>false if the signal should not be emitted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00553">553</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7c7607a493b4cb207c613f1abd90a28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7607a493b4cb207c613f1abd90a28a">&#9670;&nbsp;</a></span>setCancelledText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::setCancelledText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the text to be emitted if the user chooses not to pick from the available matches. </p>
+<p>If the cancelled text is not set through this function, the userCancelled signal will not be emitted.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCompletionBox.html#a4f4c759719847ecd180e65bfd7fede86" title="Emitted whenever the user chooses to ignore the available selections and closes this box...">userCancelled( const QString&amp; )</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>the text to be emitted if the user cancels this box </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00447">447</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b85cdf4a048565f61ce070750845de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b85cdf4a048565f61ce070750845de8">&#9670;&nbsp;</a></span>setItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::setItems </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the box and inserts <code>items</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00493">493</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae048988dd55c5c39bd2e64c52be05bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae048988dd55c5c39bd2e64c52be05bef">&#9670;&nbsp;</a></span>setTabHandling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::setTabHandling </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes this widget (when visible) capture Tab-key events to traverse the items in the dropdown list (Tab goes down, Shift+Tab goes up). </p>
+<p>On by default, but should be turned off when used in combination with <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html">KUrlCompletion</a>. When off, <a class="el" href="classKLineEdit.html" title="An enhanced QLineEdit widget for inputting text. ">KLineEdit</a> handles Tab itself, making it select the current item from the completion box, which is particularly useful when using <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKUrlCompletion.html">KUrlCompletion</a>.</p>
+<dl class="section see"><dt>See also</dt><dd>isTabHandling </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00435">435</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aecaaa0b9390cf8905a59446c6b3a5dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecaaa0b9390cf8905a59446c6b3a5dce">&#9670;&nbsp;</a></span>setVisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::setVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented for internal reasons. </p>
+<p>API is unaffected. Call it only if you really need it (i.e. the widget was hidden before) to have better performance. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00333">333</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dca87586a4128f2256409d3d71c407e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dca87586a4128f2256409d3d71c407e">&#9670;&nbsp;</a></span>sizeAndPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCOMPLETION_DEPRECATED void KCompletionBox::sizeAndPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>since 5.0, use resizeAndReposition instead.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8h_source.html#l00213">213</a> of file <a class="el" href="kcompletionbox_8h_source.html">kcompletionbox.h</a>.</p>
+
+</div>
+</div>
+<a id="a1577e14b5112c4fc44fc4d6f5129ea6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1577e14b5112c4fc44fc4d6f5129ea6c">&#9670;&nbsp;</a></span>slotActivated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::slotActivated </td>
+          <td>(</td>
+          <td class="paramtype">QListWidgetItem *&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when an item was activated. </p>
+<p>Emits <a class="el" href="classKCompletionBox.html#a3608a457b6466be137fd24549e4cc36a" title="Emitted when an item was selected, contains the text of the selected item. ">activated()</a> with the item. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00102">102</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0789111fff26d5e7966aa8e0d4edac55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0789111fff26d5e7966aa8e0d4edac55">&#9670;&nbsp;</a></span>up</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the selection one line up or select the first item if nothing is selected yet. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcompletionbox_8cpp_source.html#l00401">401</a> of file <a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4f4c759719847ecd180e65bfd7fede86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4c759719847ecd180e65bfd7fede86">&#9670;&nbsp;</a></span>userCancelled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCompletionBox::userCancelled </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted whenever the user chooses to ignore the available selections and closes this box. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcompletionbox_8h_source.html">kcompletionbox.h</a></li>
+<li><a class="el" href="kcompletionbox_8cpp_source.html">kcompletionbox.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:13 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

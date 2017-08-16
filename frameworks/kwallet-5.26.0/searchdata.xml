@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">backendpersisthandler.cpp</field>
+    <field name="url">backendpersisthandler_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">boost throw_exception std::exception e qDebug e what KWallet Digest getRandomBlock QByteArray randBlock HCRYPTPROV hProv CryptAcquireContext hProv NULL NULL PROV_RSA_FULL CRYPT_VERIFYCONTEXT CRYPT_SILENT CryptGenRandom hProv static_cast&lt;DWORD&gt; randBlock size BYTE randBlock data CryptReleaseContext hProv randBlock size QFile::exists QStringLiteral QFile devrand QStringLiteral devrand open QIODevice::ReadOnly rc devrand read randBlock data randBlock size rc randBlock size QFile::exists QStringLiteral QFile devrand QStringLiteral devrand open QIODevice::ReadOnly rc cnt rc2 devrand read randBlock data rc randBlock size rc2 rc rc2 cnt cnt randBlock size rc randBlock size QString randFilename QString::fromLocal8Bit qgetenv randFilename isEmpty QFile::exists randFilename QFile devrand randFilename devrand open QIODevice::ReadOnly rc devrand read randBlock data randBlock size rc randBlock size BackendPersistHandler BackendPersistHandler::getPersistHandler BackendCipherType cipherType cipherType BACKEND_CIPHER_BLOWFISH BlowfishPersistHandler BACKEND_CIPHER_GPG GpgPersistHandler Q_ASSERT BackendPersistHandler BackendPersistHandler::getPersistHandler magicBuf magicBuf KWALLET_CIPHER_BLOWFISH_ECB magicBuf KWALLET_CIPHER_BLOWFISH_CBC magicBuf KWALLET_HASH_SHA1 magicBuf KWALLET_HASH_PBKDF2_SHA512 useECBforReading magicBuf KWALLET_CIPHER_BLOWFISH_ECB useECBforReading qDebug BlowfishPersistHandler useECBforReading magicBuf KWALLET_CIPHER_GPG magicBuf GpgPersistHandler BlowfishPersistHandler::write Backend wb QSaveFile sf QByteArray version WId assert wb _cipherType BACKEND_CIPHER_BLOWFISH _useECBforReading qDebug _useECBforReading version KWALLET_CIPHER_BLOWFISH_CBC wb _useNewHash version KWALLET_HASH_SHA1 version KWALLET_HASH_PBKDF2_SHA512 sf write version sf cancelWriting QByteArray hashes QDataStream hashStream hashes QIODevice::WriteOnly QCryptographicHash md5 QCryptographicHash::Md5 hashStream &lt;&lt; static_cast&lt;quint32&gt; wb _entries count QByteArray decrypted QDataStream dStream decrypted QIODevice::WriteOnly Backend::FolderMap::ConstIterator i wb _entries constBegin i wb _entries constEnd i dStream i key dStream &lt;&lt; static_cast&lt;quint32&gt; i value count md5 reset md5 addData i key toUtf8 hashStream writeRawData md5 result constData hashStream &lt;&lt; static_cast&lt;quint32&gt; i value count Backend::EntryMap::ConstIterator j i value constBegin j i value constEnd j dStream j key dStream &lt;&lt; static_cast&lt;qint32&gt; j value type dStream j value value md5 reset md5 addData j key toUtf8 hashStream writeRawData md5 result constData sf write hashes hashes size sf cancelWriting SHA1 sha BlowFish _bf CipherBlockChain bf _bf sha process decrypted data decrypted size QByteArray wholeFile blksz bf blockSize newsize decrypted size blksz delta blksz newsize blksz newsize delta wholeFile resize newsize QByteArray randBlock randBlock resize blksz delta getRandomBlock randBlock sha reset decrypted fill sf cancelWriting i i blksz i wholeFile i randBlock i i i i wholeFile int i blksz decrypted size i i i decrypted size i wholeFile int i blksz decrypted i i i delta i wholeFile int i blksz decrypted size randBlock i blksz hash sha hash i i i wholeFile int newsize i hash i sha reset decrypted fill bf setKey wb _passhash data wb _passhash size wholeFile fill sf cancelWriting rc bf encrypt wholeFile data wholeFile size rc wholeFile fill sf cancelWriting written sf write wholeFile written wholeFile size wholeFile fill sf cancelWriting sf commit qDebug sf errorString wholeFile fill wholeFile fill BlowfishPersistHandler::read Backend wb QFile db WId wb _cipherType BACKEND_CIPHER_BLOWFISH wb _hashes clear QDataStream hds db quint32 n hds n n xffff i i n i Digest d d2 MD5Digest ba QMap&lt;MD5Digest, QList&lt;MD5Digest&gt; it quint32 fsz hds atEnd hds readRawData d hds fsz ba MD5Digest reinterpret_cast&lt;char *&gt; d it wb _hashes insert ba QList&lt;MD5Digest&gt; j j fsz j hds readRawData d2 ba MD5Digest d2 append ba QByteArray encrypted db readAll assert encrypted size db size BlowFish _bf CipherBlockChain bf _bf _useECBforReading blksz bf blockSize encrypted size blksz bf setKey wb _passhash data wb _passhash size encrypted data wb _passhash fill encrypted fill rc bf decrypt encrypted data encrypted size rc wb _passhash fill encrypted fill t encrypted data t blksz fsize fsize long t xff000000 t fsize long t x00ff0000 t fsize long t x0000ff00 t fsize long t t fsize &lt; 0 || fsize &gt; encrypted size blksz qDebug fsize encrypted size blksz encrypted fill SHA1 sha sha process t fsize testhash sha hash sz encrypted size i i i testhash i encrypted sz i encrypted fill sha reset sha reset QByteArray tmpenc encrypted data blksz fsize encrypted tmpenc tmpenc fill QDataStream eStream encrypted eStream atEnd QString folder quint32 n eStream folder eStream n wb _entries folder clear i i n i QString key KWallet::Wallet::EntryType et KWallet::Wallet::Unknown Entry e Entry eStream key qint32 x eStream x et KWallet::Wallet::EntryType x et KWallet::Wallet::Password KWallet::Wallet::Stream KWallet::Wallet::Map e QByteArray a eStream a e setValue a e setType et e setKey key wb _entries folder key e wb _open encrypted fill GpgME::Error initGpgME GpgME::Error err alreadyInitialized alreadyInitialized GpgME::initializeLibrary err GpgME::checkEngine GpgME::OpenPGP err qDebug alreadyInitialized err GpgPersistHandler::write Backend wb QSaveFile sf QByteArray version WId w version KWALLET_CIPHER_GPG version sf write version sf cancelWriting GpgME::Error err initGpgME err qDebug err code KMessageBox::errorWId w i18n wb _name toHtmlEscaped err code sf cancelWriting boost::shared_ptr&lt; GpgME::Context &gt; ctx GpgME::Context::createForProtocol GpgME::OpenPGP ctx qDebug KMessageBox::errorWId w i18n wb _name toHtmlEscaped assert wb _cipherType BACKEND_CIPHER_GPG QByteArray hashes QDataStream hashStream hashes QIODevice::WriteOnly QCryptographicHash md5 QCryptographicHash::Md5 hashStream &lt;&lt; static_cast&lt;quint32&gt; wb _entries count QByteArray values QDataStream valueStream values QIODevice::WriteOnly Backend::FolderMap::ConstIterator i wb _entries constBegin Backend::FolderMap::ConstIterator ie wb _entries constEnd i ie i valueStream i key valueStream &lt;&lt; static_cast&lt;quint32&gt; i value count md5 reset md5 addData i key toUtf8 hashStream writeRawData md5 result constData hashStream &lt;&lt; static_cast&lt;quint32&gt; i value count Backend::EntryMap::ConstIterator j i value constBegin Backend::EntryMap::ConstIterator je i value constEnd j je j valueStream j key valueStream &lt;&lt; static_cast&lt;qint32&gt; j value type valueStream j value value md5 reset md5 addData j key toUtf8 hashStream writeRawData md5 result constData QByteArray dataBuffer QDataStream dataStream dataBuffer QIODevice::WriteOnly QString keyID wb _gpgKey keyID dataStream keyID dataStream hashes dataStream values GpgME::Data decryptedData dataBuffer data dataBuffer size GpgME::Data encryptedData std::vector&lt; GpgME::Key &gt; keys keys push_back wb _gpgKey GpgME::EncryptionResult res ctx encrypt keys decryptedData encryptedData GpgME::Context::None res error gpgerr res error code KMessageBox::errorWId w i18n wb _name toHtmlEscaped gpgerr gpgme_strerror gpgerr qDebug res error code sf cancelWriting buffer ssize_t bytes encryptedData seek SEEK_SET bytes encryptedData read buffer buffer buffer sf write buffer bytes bytes KMessageBox::errorWId w i18n wb _name toHtmlEscaped sf errorString sf cancelWriting sf commit qDebug sf errorString GpgPersistHandler::read Backend wb QFile sf WId w GpgME::Error err initGpgME err KMessageBox::errorWId w i18n wb _name toHtmlEscaped err code wb _cipherType BACKEND_CIPHER_GPG wb _hashes clear GpgME::Data encryptedData buffer ssize_t bytes bytes sf read buffer buffer buffer encryptedData write buffer bytes retry_label boost::shared_ptr&lt; GpgME::Context &gt; ctx GpgME::Context::createForProtocol GpgME::OpenPGP ctx KMessageBox::errorWId w i18n wb _name toHtmlEscaped qDebug GpgME::Data decryptedData encryptedData seek SEEK_SET GpgME::DecryptionResult res ctx decrypt encryptedData decryptedData res error qDebug res error asString res error code res error source KGuiItem btnRetry i18n userChoice KMessageBox::warningYesNoWId w i18n wb _name toHtmlEscaped res error asString i18n btnRetry KStandardGuiItem::cancel userChoice KMessageBox::Yes decryptedData seek SEEK_SET retry_label decryptedData seek SEEK_SET QByteArray dataBuffer bytes decryptedData read buffer buffer buffer dataBuffer append buffer bytes QDataStream dataStream dataBuffer QString keyID QByteArray hashes QByteArray values dataStream keyID dataStream hashes dataStream values QDataStream fileStream sf fileStream unsetDevice qDebug keyID ctx setKeyListMode GPGME_KEYLIST_MODE_LOCAL std::vector&lt; GpgME::Key &gt; keys err ctx startKeyListing err GpgME::Key k ctx nextKey err err keyID k keyID qDebug wb _gpgKey k ctx endKeyListing wb _gpgKey isNull KMessageBox::errorWId w i18n wb _name toHtmlEscaped keyID QDataStream hashStream hashes QDataStream valueStream values quint32 hashCount hashStream hashCount hashCount xFFFF quint32 folderCount hashCount hashCount Digest d hashStream readRawData d quint32 folderSize hashStream folderSize MD5Digest ba MD5Digest reinterpret_cast&lt;char *&gt; d QMap&lt;MD5Digest, QList&lt;MD5Digest&gt; it wb _hashes insert ba QList&lt;MD5Digest&gt; folderSize Digest d2 hashStream readRawData d2 ba MD5Digest d2 append ba folderCount QString folder valueStream folder quint32 entryCount valueStream entryCount wb _entries folder clear entryCount KWallet::Wallet::EntryType et KWallet::Wallet::Unknown Entry e Entry QString key valueStream key qint32 x valueStream x et KWallet::Wallet::EntryType x et KWallet::Wallet::Password KWallet::Wallet::Stream KWallet::Wallet::Map e QByteArray a valueStream a e setValue a e setType et e setKey key wb _entries folder key e wb _open</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">backendpersisthandler.h</field>
+    <field name="url">backendpersisthandler_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QFile QSaveFile KWallet Backend</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">backendpersisthandler.h</field>
+    <field name="url">backendpersisthandler_8h_source.html#l00033</field>
+    <field name="keywords"></field>
+    <field name="text">BackendCipherType BACKEND_CIPHER_UNKNOWN</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">backendpersisthandler.h</field>
+    <field name="url">backendpersisthandler_8h_source.html#l00035</field>
+    <field name="keywords"></field>
+    <field name="text">BACKEND_CIPHER_BLOWFISH BACKEND_CIPHER_GPG BackendPersistHandler BackendPersistHandler BackendPersistHandler BackendPersistHandler getPersistHandler BackendCipherType cipherType BackendPersistHandler getPersistHandler magicBuf KWMAGIC_LEN write Backend wb QSaveFile sf QByteArray version WId w read Backend wb QFile sf WId w BlowfishPersistHandler BackendPersistHandler BlowfishPersistHandler useECBforReading _useECBforReading useECBforReading BlowfishPersistHandler write Backend wb QSaveFile sf QByteArray version WId w read Backend wb QFile sf WId w _useECBforReading GpgPersistHandler BackendPersistHandler GpgPersistHandler GpgPersistHandler write Backend wb QSaveFile sf QByteArray version WId w read Backend wb QFile sf WId w</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">blockcipher.cc</field>
+    <field name="url">blockcipher_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">BlockCipher::BlockCipher _blksz BlockCipher::~BlockCipher BlockCipher::blockSize _blksz</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">blockcipher.h</field>
+    <field name="url">blockcipher_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">BlockCipher BlockCipher BlockCipher blockSize setKey key bitlength keyLen variableKeyLen readyToGo encrypt block len decrypt block len _blksz _keylen</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">blowfish.cc</field>
+    <field name="url">blowfish_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">BlowFish::BlowFish _blksz _key L _init BlowFish::init i i i _S i ks0 i _S i ks1 i _S i ks2 i _S i ks3 i uint32_t datal uint32_t datar uint32_t data j i i i data k k k data data _key j j _keylen j _P i P i data i i i encipher datal datar _P i datal _P i datar j j j i i i encipher datal datar _S j i datal _S j i datar i i i j i j j _S i _S j _S i _S j _S i _S j _S i _S j _init BlowFish::~BlowFish _key _key L BlowFish::keyLen BlowFish::variableKeyLen BlowFish::readyToGo _init BlowFish::setKey key bitlength bitlength &lt;= 0 || bitlength &gt; bitlength _key _key bitlength memcpy _key key bitlength _keylen bitlength init BlowFish::encrypt block len uint32_t d uint32_t block _init len _blksz i i len _blksz i shuffle d shuffle d encipher d d shuffle d shuffle d d len BlowFish::decrypt block len uint32_t d uint32_t block _init len _blksz i i len _blksz i shuffle d shuffle d decipher d d shuffle d shuffle d d len uint32_t BlowFish::F uint32_t x a b c d uint32_t y d x x c x x b x x a x y _S a _S b y _S c y _S d y BlowFish::encipher uint32_t xl uint32_t xr uint32_t Xl xl Xr xr temp i i i Xl _P i Xr F Xl temp Xl Xl Xr Xr temp temp Xl Xl Xr Xr temp Xr _P Xl _P xl Xl xr Xr BlowFish::decipher uint32_t xl uint32_t xr uint32_t Xl xl Xr xr temp i i i Xl _P i Xr F Xl temp Xl Xl Xr Xr temp temp Xl Xl Xr Xr temp Xr _P Xl _P xl Xl xr Xr</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">blowfish.h</field>
+    <field name="url">blowfish_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWALLETBACKEND5_EXPORT BlowFish BlockCipher BlowFish BlowFish setKey key bitlength keyLen variableKeyLen readyToGo encrypt block len decrypt block len uint32_t _S uint32_t _P _key _keylen _init init uint32_t F uint32_t x encipher uint32_t xl uint32_t xr decipher uint32_t xl uint32_t xr</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">blowfishtables.h</field>
+    <field name="url">blowfishtables_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">ks0 ks1 ks2 ks3 P</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">cbc.cc</field>
+    <field name="url">cbc_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">CipherBlockChain::CipherBlockChain BlockCipher cipher useECBforReading _cipher cipher _useECBforReading useECBforReading _next _register _len _reader _writer L cipher _blksz cipher blockSize CipherBlockChain::~CipherBlockChain _register _register _next _next CipherBlockChain::setKey key bitlength _cipher _cipher setKey key bitlength CipherBlockChain::keyLen _cipher _cipher keyLen CipherBlockChain::variableKeyLen _cipher _cipher variableKeyLen CipherBlockChain::readyToGo _cipher _cipher readyToGo CipherBlockChain::initRegister _register registerLen _cipher blockSize _register registerLen _len registerLen memset _register _len CipherBlockChain::encrypt block len _cipher _reader rc _writer initRegister len _len qDebug len _len elemBlock block b b len _len b tb elemBlock i i _len i tb _register i rc _cipher encrypt elemBlock _len rc memcpy _register elemBlock _len elemBlock _len rc CipherBlockChain::decryptECB block len _cipher _writer rc _reader _register _register len _len len memset _register len len _len _next _next _len memcpy _next block _len rc _cipher decrypt block len rc tb block i i len i tb i _register i temp temp _next _next _register _register temp rc CipherBlockChain::decrypt block len _useECBforReading qDebug decryptECB block len _cipher _writer rc _reader initRegister len _len qDebug len _len elemBlock block b b len _len b _next _next _len memcpy _next elemBlock _len bytesDecrypted _cipher decrypt elemBlock _len bytesDecrypted rc bytesDecrypted tb elemBlock i i _len i tb _register i temp temp _next _next _register _register temp elemBlock _len rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">cbc.h</field>
+    <field name="url">cbc_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">CipherBlockChain BlockCipher CipherBlockChain BlockCipher cipher useECBforReading CipherBlockChain setKey key bitlength keyLen variableKeyLen readyToGo encrypt block len decrypt block len initRegister decryptECB block len BlockCipher _cipher _register _next _len _reader _writer _useECBforReading</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">cbc.master.cc</field>
+    <field name="url">cbc_8master_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">CipherBlockChain::CipherBlockChain BlockCipher cipher _cipher cipher _next L _register L _len _reader _writer L cipher _blksz cipher blockSize CipherBlockChain::~CipherBlockChain _register _register L _next _next L CipherBlockChain::setKey key bitlength _cipher _cipher setKey key bitlength CipherBlockChain::keyLen _cipher _cipher keyLen CipherBlockChain::variableKeyLen _cipher _cipher variableKeyLen CipherBlockChain::readyToGo _cipher _cipher readyToGo CipherBlockChain::encrypt block len _cipher _reader rc _writer _register _register len _len len memset _register len len _len tb block i i len i tb i _register i rc _cipher encrypt block len rc memcpy _register block len rc CipherBlockChain::decrypt block len _cipher _writer rc _reader _register _register len _len len memset _register len len _len _next _next _len memcpy _next block _len rc _cipher decrypt block len rc tb block i i len i tb i _register i temp temp _next _next _register _register temp rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kbetterthankdialog.cpp</field>
+    <field name="url">kbetterthankdialog_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KBetterThanKDialog::KBetterThanKDialog QWidget parent QDialog parent setupUi connect _allowOnce SIGNAL clicked SLOT allowOnceClicked connect _allowAlways SIGNAL clicked SLOT allowAlwaysClicked connect _deny SIGNAL clicked SLOT denyClicked connect _denyForever SIGNAL clicked SLOT denyForeverClicked init KBetterThanKDialog::init _allowOnce setIcon KDE::icon QStringLiteral _allowAlways setIcon KDE::icon QStringLiteral _deny setIcon KDE::icon QStringLiteral _denyForever setIcon KDE::icon QStringLiteral _allowOnce setFocus KBetterThanKDialog::setLabel QString label _label setText label KBetterThanKDialog::accept setResult KBetterThanKDialog::reject QDialog::reject setResult KBetterThanKDialog::allowOnceClicked done KBetterThanKDialog::allowAlwaysClicked done KBetterThanKDialog::denyClicked done KBetterThanKDialog::denyForeverClicked done</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kbetterthankdialog.h</field>
+    <field name="url">kbetterthankdialog_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KBetterThanKDialog QDialog Ui_KBetterThanKDialogBase Q_OBJECT KBetterThanKDialog QWidget parent init setLabel QString label Q_SLOTS accept reject Q_SLOTS allowOnceClicked allowAlwaysClicked denyClicked denyForeverClicked</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">knewwalletdialog.cpp</field>
+    <field name="url">knewwalletdialog_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">Q_DECLARE_METATYPE GpgME::Key KWallet KNewWalletDialog::KNewWalletDialog QString appName QString walletName QWidget parent QWizard parent _intro _introId _gpg _gpgId setOption HaveFinishButtonOnEarlyPages _intro KNewWalletDialogIntro appName walletName _introId addPage _intro _gpg KNewWalletDialogGpg appName walletName _gpgId addPage _gpg KNewWalletDialog::isBlowfish _intro isBlowfish GpgME::Key KNewWalletDialog::gpgKey QVariant varKey field QStringLiteral varKey value GpgME::Key KNewWalletDialogIntro::KNewWalletDialogIntro QString appName QString walletName QWidget parent QWizardPage parent _ui setupUi appName isEmpty _ui labelIntro setText i18n walletName toHtmlEscaped _ui labelIntro setText i18n appName toHtmlEscaped walletName toHtmlEscaped KNewWalletDialogIntro::onBlowfishToggled blowfish setFinalPage blowfish KNewWalletDialogIntro::isBlowfish _ui radioBlowfish isChecked KNewWalletDialogIntro::nextId isBlowfish qobject_cast KNewWalletDialog wizard gpgId KNewWalletDialogGpg::KNewWalletDialogGpg QString appName QString walletName QWidget parent QWizardPage parent _alreadyInitialized false _complete false _ui setupUi AddKeyToList QTableWidget _list _row AddKeyToList QTableWidget list _list list _row operator() GpgME::Key k GpgME::UserID uid k userID QString name uid name uid comment name QStringLiteral arg name arg uid comment _list setItem _row QTableWidgetItem name _list setItem _row QTableWidgetItem uid email _list setItem _row QTableWidgetItem k shortKeyID QVariant varKey varKey setValue k _list item _row setData Qt::UserRole varKey _row KNewWalletDialogGpg::initializePage _alreadyInitialized registerField QStringLiteral GpgME::initializeLibrary GpgME::Error err GpgME::checkEngine GpgME::OpenPGP err qDebug KMessageBox::error i18n emit completeChanged boost::shared_ptr&lt; GpgME::Context &gt; _ctx GpgME::Context::createForProtocol GpgME::OpenPGP _ctx KMessageBox::error i18n emit completeChanged _ctx setKeyListMode GpgME::Local std::vector&lt; GpgME::Key &gt; keys row err _ctx startKeyListing err GpgME::Key k _ctx nextKey err err k isInvalid k canEncrypt k ownerTrust GpgME::Key::Ultimate keys push_back k _ctx endKeyListing keys size KMessageBox::error i18n emit completeChanged _ui listCertificates setRowCount keys size std::for_each keys begin keys end AddKeyToList _ui listCertificates _ui listCertificates resizeColumnsToContents _ui listCertificates setCurrentCell _alreadyInitialized KNewWalletDialogGpg::onItemSelectionChanged _complete _ui listCertificates currentRow QVariant varKey _ui listCertificates item _ui listCertificates currentRow data Qt::UserRole setField QStringLiteral varKey emit completeChanged KNewWalletDialogGpg::isComplete _complete KNewWalletDialogGpg::validateCurrentPage</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">knewwalletdialog.h</field>
+    <field name="url">knewwalletdialog_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">knewwalletdialog.h</field>
+    <field name="url">knewwalletdialog_8h_source.html#l00028</field>
+    <field name="keywords"></field>
+    <field name="text">GpgME Key KWallet KNewWalletDialogIntro KNewWalletDialogGpg KNewWalletDialog QWizard Q_OBJECT KNewWalletDialog QString appName QString walletName QWidget parent isBlowfish gpgId _gpgId GpgME::Key gpgKey KNewWalletDialogIntro _intro _introId KNewWalletDialogGpg _gpg _gpgId KNewWalletDialogIntro QWizardPage Q_OBJECT KNewWalletDialogIntro QString appName QString walletName QWidget parent isBlowfish nextId Q_SLOTS onBlowfishToggled Ui_KNewWalletDialogIntro _ui KNewWalletDialogGpg QWizardPage Q_OBJECT KNewWalletDialogGpg QString appName QString walletName QWidget parent initializePage isComplete validateCurrentPage Q_SLOTS onItemSelectionChanged _alreadyInitialized Ui_KNewWalletDialogGpg _ui _complete</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">ktimeout.cpp</field>
+    <field name="url">ktimeout_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KTimeout::KTimeout QObject parent QObject parent KTimeout::~KTimeout KTimeout::clear timerId _timers killTimer timerId _timers clear KTimeout::removeTimer timerId _timers value timerId killTimer timerId _timers remove KTimeout::addTimer timeout _timers contains _timers insert startTimer timeout KTimeout::resetTimer timeout timerId _timers value timerId killTimer timerId _timers insert startTimer timeout KTimeout::timerEvent QTimerEvent ev QHash&lt;int, int&gt;::const_iterator it _timers constBegin it _timers constEnd it it value ev timerId emit timedOut it key</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">ktimeout.h</field>
+    <field name="url">ktimeout_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KTimeout QObject Q_OBJECT KTimeout QObject parent KTimeout Q_SIGNALS timedOut Q_SLOTS resetTimer timeout addTimer timeout removeTimer clear timerEvent QTimerEvent QHash _timers</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QMap&lt;QString, KSecretsService::StringStringMap&gt; StringToStringStringMapMap Q_DECLARE_METATYPE StringToStringStringMapMap QMap&lt;QString, QByteArray&gt; StringByteArrayMap Q_DECLARE_METATYPE StringByteArrayMap</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00049</field>
+    <field name="keywords"></field>
+    <field name="text">namespace KWallet KWalletDLauncher KWalletDLauncher KWalletDLauncher org::kde::KWallet getInterface m_useKSecretsService org::kde::KWallet m_wallet_deamon KConfigGroup m_cgroup m_walletEnabled Q_GLOBAL_STATIC KWalletDLauncher walletLauncher QString appid qApp applicationName registerTypes registered registered qDBusRegisterMetaType&lt;KSecretsService::StringStringMap&gt; qDBusRegisterMetaType&lt;StringToStringStringMapMap&gt; qDBusRegisterMetaType&lt;StringByteArrayMap&gt; registered</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00089</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::isUsingKSecretsService walletLauncher m_useKSecretsService</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00094</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::LocalWallet KConfigGroup cfg KSharedConfig::openConfig QStringLiteral group cfg readEntry QString tmp cfg readEntry tmp isEmpty QStringLiteral tmp QString tmp cfg readEntry tmp isEmpty QStringLiteral tmp</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00113</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::NetworkWallet KConfigGroup cfg KSharedConfig::openConfig QStringLiteral group QString tmp cfg readEntry tmp isEmpty QStringLiteral tmp</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00125</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::PasswordFolder QStringLiteral</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00130</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::FormDataFolder QStringLiteral Wallet::WalletPrivate WalletPrivate Wallet wallet h QString n q wallet name n handle h secretsCollection walletServiceUnregistered writeEntry QString key T value Wallet::EntryType entryType rc KSecretsService::Secret secret secret setValue QVariant::fromValue&lt;T&gt; value KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER folder attrs KSS_ATTR_WALLETTYPE QString arg entryType KSecretsService::CreateCollectionItemJob createItemJob secretsCollection createItem key attrs secret createItemJob exec qDebug createItemJob errorString rc createItemJob error rc QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; findItem QString key readEntry QString key T value readSecret QString key KSecretsService::Secret value forEachItemThatMatches QString key V verb rc KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER folder KSecretsService::SearchCollectionItemsJob searchItemsJob secretsCollection searchItems attrs searchItemsJob exec QRegExp re key Qt::CaseSensitive QRegExp::Wildcard KSecretsService::SearchCollectionItemsJob::Item item searchItemsJob items KSecretsService::ReadItemPropertyJob readLabelJob item label readLabelJob exec QString label readLabelJob propertyValue toString re exactMatch label verb label item data rc qDebug readLabelJob errorString qDebug searchItemsJob errorString rc createDefaultFolders InsertIntoEntryList InsertIntoMapList InsertIntoPasswordList KSecretsService::Collection secretsCollection Wallet q QString name QString folder handle transactionId Wallet::WalletPrivate::createDefaultFolders QString strDummy folder PasswordFolder writeEntry PasswordFolder strDummy KWallet::Wallet::Unknown folder FormDataFolder writeEntry FormDataFolder strDummy KWallet::Wallet::Unknown s_kwalletdServiceName</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00232</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::Wallet handle QString name QObject L d new WalletPrivate this handle name walletLauncher m_useKSecretsService QDBusServiceWatcher watcher QDBusServiceWatcher QString::fromLatin1 s_kwalletdServiceName QDBusConnection::sessionBus QDBusServiceWatcher::WatchForUnregistration connect watcher SIGNAL serviceUnregistered QString SLOT walletServiceUnregistered connect walletLauncher getInterface SIGNAL walletClosed SLOT slotWalletClosed connect walletLauncher getInterface SIGNAL folderListUpdated QString SLOT slotFolderListUpdated QString connect walletLauncher getInterface SIGNAL folderUpdated QString QString SLOT slotFolderUpdated QString QString connect walletLauncher getInterface SIGNAL applicationDisconnected QString QString SLOT slotApplicationDisconnected QString QString d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface isOpen d handle r isValid r d handle d name clear</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00259</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::~Wallet walletLauncher m_useKSecretsService d folder clear d name clear d secretsCollection d handle walletLauncher isDestroyed walletLauncher getInterface close d handle appid qDebug d handle d folder clear d name clear d</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00285</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Wallet::walletList QStringList result walletLauncher m_useKSecretsService KSecretsService::ListCollectionsJob listJob KSecretsService::Collection::listCollections listJob exec result listJob collections qDebug listJob errorString walletLauncher m_walletEnabled QDBusReply&lt;QStringList&gt; r walletLauncher getInterface wallets r isValid qDebug r error result r result</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00313</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::changePassword QString name WId w w qDebug KWindowSystem::allowExternalProcessWindowActivation walletLauncher m_useKSecretsService KSecretsService::Collection coll KSecretsService::Collection::findCollection name KSecretsService::ChangeCollectionPasswordJob changePwdJob coll changePassword changePwdJob exec qDebug changePwdJob errorString coll deleteLater walletLauncher m_walletEnabled walletLauncher getInterface changePassword name qlonglong w appid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00339</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::isEnabled walletLauncher m_useKSecretsService walletLauncher m_cgroup readEntry walletLauncher m_walletEnabled</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00352</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::isOpen QString name walletLauncher m_useKSecretsService KSecretsService::Collection coll KSecretsService::Collection::findCollection name KSecretsService::Collection::OpenOnly KSecretsService::ReadCollectionPropertyJob readLocked coll isLocked readLocked exec readLocked propertyValue toBool qDebug QDBusReply&lt;bool&gt; r walletLauncher getInterface isOpen name r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00379</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::closeWallet QString name force walletLauncher m_useKSecretsService qDebug walletLauncher m_walletEnabled QDBusReply&lt;int&gt; r walletLauncher getInterface close name force r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00402</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::deleteWallet QString name walletLauncher m_useKSecretsService KSecretsService::Collection coll KSecretsService::Collection::findCollection name KSecretsService::Collection::OpenOnly KJob deleteJob coll deleteCollection deleteJob exec qDebug deleteJob errorString deleteJob error walletLauncher m_walletEnabled QDBusReply&lt;int&gt; r walletLauncher getInterface deleteWallet name r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00429</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet Wallet::openWallet QString name WId w OpenType ot w qDebug walletLauncher m_walletEnabled qDebug walletLauncher m_useKSecretsService Wallet wallet Wallet name wallet d secretsCollection KSecretsService::Collection::findCollection name KSecretsService::Collection::CreateCollection QVariantMap w connect wallet d secretsCollection SIGNAL statusChanged wallet SLOT slotCollectionStatusChanged connect wallet d secretsCollection SIGNAL deleted wallet SLOT slotCollectionDeleted ot Synchronous qDebug wallet Wallet wallet Wallet name connect walletLauncher getInterface SIGNAL walletAsyncOpened wallet SLOT walletAsyncOpened KWindowSystem::allowExternalProcessWindowActivation org::kde::KWallet walletLauncher getInterface QDBusReply&lt;int&gt; r ot Synchronous interface setTimeout x7FFFFFFF r interface open name qlonglong w appid interface setTimeout ot Asynchronous r interface openAsync name qlonglong w appid ot Path r interface openPathAsync name qlonglong w appid wallet r isValid qDebug r error wallet wallet d transactionId r value ot Synchronous ot Path wallet d transactionId wallet wallet wallet d handle r value ot Asynchronous wallet d transactionId QTimer::singleShot wallet SLOT emitWalletAsyncOpenError wallet Wallet::slotCollectionStatusChanged status KSecretsService::Collection::Status collStatus KSecretsService::Collection::Status status collStatus KSecretsService::Collection::NewlyCreated d createDefaultFolders KSecretsService::Collection::FoundExisting emitWalletOpened KSecretsService::Collection::Deleted KSecretsService::Collection::Invalid KSecretsService::Collection::Pending KSecretsService::Collection::NotFound emitWalletAsyncOpenError Q_UNUSED status Wallet::slotCollectionDeleted d folder clear d name clear emit walletClosed</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00545</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::disconnectApplication QString wallet QString app walletLauncher m_useKSecretsService qDebug walletLauncher m_walletEnabled QDBusReply&lt;bool&gt; r walletLauncher getInterface disconnectApplication wallet app r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00568</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Wallet::users QString name walletLauncher m_useKSecretsService qDebug QStringList walletLauncher m_walletEnabled QDBusReply&lt;QStringList&gt; r walletLauncher getInterface users name r isValid qDebug r error QStringList r QStringList</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00590</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::sync walletLauncher m_useKSecretsService d handle walletLauncher getInterface sync d handle appid</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00608</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::lockWallet walletLauncher m_useKSecretsService KSecretsService::CollectionLockJob lockJob d secretsCollection lock lockJob exec d folder clear d name clear qDebug lockJob errorString lockJob error d handle QDBusReply&lt;int&gt; r walletLauncher getInterface close d handle appid d handle d folder clear d name clear r isValid r qDebug r error</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00642</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::walletName d name</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00647</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::isOpen walletLauncher m_useKSecretsService d secretsCollection isLocked d handle</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00660</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::requestChangePassword WId w w qDebug walletLauncher m_useKSecretsService KSecretsService::ChangeCollectionPasswordJob changePwdJob d secretsCollection changePassword changePwdJob exec qDebug changePwdJob errorString d handle KWindowSystem::allowExternalProcessWindowActivation walletLauncher getInterface changePassword d name qlonglong w appid Wallet::slotWalletClosed handle walletLauncher m_useKSecretsService Q_ASSERT d handle handle d handle d folder clear d name clear emit walletClosed</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00706</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Wallet::folderList walletLauncher m_useKSecretsService QStringList result KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER KSecretsService::SearchCollectionItemsJob searchJob d secretsCollection searchItems attrs searchJob exec KSecretsService::ReadCollectionItemsJob::ItemList itemList searchJob items KSecretsService::ReadCollectionItemsJob::Item item itemList KSecretsService::ReadItemPropertyJob readAttrsJob item attributes readAttrsJob exec KSecretsService::StringStringMap attrs readAttrsJob propertyValue value KSecretsService::StringStringMap QString folder attrs KSS_ATTR_ENTRYFOLDER folder isEmpty result contains folder result append folder qDebug readAttrsJob errorString qDebug searchJob errorString result d handle QStringList QDBusReply&lt;QStringList&gt; r walletLauncher getInterface folderList d handle appid r isValid qDebug r error QStringList r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00752</field>
+    <field name="keywords"></field>
+    <field name="text">QStringList Wallet::entryList walletLauncher m_useKSecretsService QStringList result KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER d folder KSecretsService::SearchCollectionItemsJob readItemsJob d secretsCollection searchItems attrs readItemsJob exec KSecretsService::SearchCollectionItemsJob::Item item readItemsJob items KSecretsService::ReadItemPropertyJob readLabelJob item label readLabelJob exec result append readLabelJob propertyValue toString qDebug readItemsJob errorString qDebug readItemsJob errorString result d handle QStringList QDBusReply&lt;QStringList&gt; r walletLauncher getInterface entryList d handle d folder appid r isValid qDebug r error QStringList r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00791</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::hasFolder QString f walletLauncher m_useKSecretsService QStringList folders folderList folders contains f d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface hasFolder d handle f appid r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00818</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::createFolder QString f walletLauncher m_useKSecretsService QString strDummy d folder f d writeEntry f strDummy KWallet::Wallet::Unknown d handle hasFolder f QDBusReply&lt;bool&gt; r walletLauncher getInterface createFolder d handle f appid r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00849</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::setFolder QString f rc walletLauncher m_useKSecretsService hasFolder f d folder f rc d handle rc f d folder hasFolder f d folder f rc rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00883</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::removeFolder QString f walletLauncher m_useKSecretsService result KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER f KSecretsService::SearchCollectionItemsJob searchJob d secretsCollection searchItems attrs searchJob exec KSecretsService::SearchCollectionItemsJob::ItemList itemList searchJob items itemList isEmpty result KSecretsService::SearchCollectionItemsJob::Item item itemList KSecretsService::SecretItemDeleteJob deleteJob item deleteItem deleteJob exec qDebug deleteJob errorString result result qDebug searchJob errorString result d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface removeFolder d handle f appid d folder f setFolder QString r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00931</field>
+    <field name="keywords"></field>
+    <field name="text">QString Wallet::currentFolder d folder QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; Wallet::WalletPrivate::findItem QString key QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; result KSecretsService::StringStringMap attrs attrs KSS_ATTR_ENTRYFOLDER folder attrs key KSecretsService::SearchCollectionItemsJob searchJob secretsCollection searchItems attrs searchJob exec KSecretsService::SearchCollectionItemsJob::ItemList itemList searchJob items itemList isEmpty result itemList first qDebug key folder qDebug searchJob errorString result Wallet::WalletPrivate::readEntry QString key T value rc QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item findItem key item KSecretsService::GetSecretItemSecretJob readJob item getSecret readJob exec KSecretsService::Secret theSecret readJob secret qDebug theSecret contentType value theSecret value value T rc qDebug readJob errorString rc Wallet::WalletPrivate::readSecret QString key KSecretsService::Secret value result QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item findItem key item KSecretsService::GetSecretItemSecretJob readJob item getSecret readJob exec value readJob secret result qDebug readJob errorString result</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l00994</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readEntry QString key QByteArray value rc walletLauncher m_useKSecretsService d readEntry QByteArray key value d handle rc QDBusReply&lt;QByteArray&gt; r walletLauncher getInterface readEntry d handle d folder key appid r isValid value r rc rc Wallet::WalletPrivate::InsertIntoEntryList InsertIntoEntryList QMap&lt; QString, QByteArray&gt; value _value value operator() Wallet::WalletPrivate QString label KSecretsService::SecretItem item result KSecretsService::GetSecretItemSecretJob readSecretJob item getSecret readSecretJob exec _value insert label readSecretJob secret value toByteArray result qDebug readSecretJob errorString result QMap&lt; QString, QByteArray &gt; _value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01038</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readEntryList QString key QMap&lt;QString, QByteArray&gt; value rc walletLauncher m_useKSecretsService rc d forEachItemThatMatches key WalletPrivate::InsertIntoEntryList value registerTypes d handle rc QDBusReply&lt;QVariantMap&gt; r walletLauncher getInterface readEntryList d handle d folder key appid r isValid rc QVariantMap val r value QVariantMap::const_iterator it val begin it val end it value insert it key it value toByteArray rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01070</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::renameEntry QString oldName QString newName rc walletLauncher m_useKSecretsService QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item d findItem oldName item KSecretsService::WriteItemPropertyJob writeJob item setLabel newName writeJob exec qDebug writeJob errorString rc writeJob error qDebug oldName d folder d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface renameEntry d handle d folder oldName newName appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01103</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readMap QString key QMap&lt;QString, QString&gt; value rc walletLauncher m_useKSecretsService QByteArray ba rc d readEntry QByteArray key ba rc ba isEmpty QDataStream ds ba QIODevice::ReadOnly ds value registerTypes d handle rc QDBusReply&lt;QByteArray&gt; r walletLauncher getInterface readMap d handle d folder key appid r isValid rc QByteArray v r v isEmpty QDataStream ds v QIODevice::ReadOnly ds value rc Wallet::WalletPrivate::InsertIntoMapList InsertIntoMapList QMap QString QMap&lt; QString, QString &gt; value _value value operator() Wallet::WalletPrivate d QString label KSecretsService::SecretItem result QMap&lt;QString, QString&gt; map d readEntry QMap&lt; QString, QString&gt; label map _value insert label map result result QMap&lt; QString, QMap&lt; QString, QString&gt; _value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01156</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readMapList QString key QMap QString QMap&lt;QString, QString&gt; value rc walletLauncher m_useKSecretsService rc d forEachItemThatMatches key WalletPrivate::InsertIntoMapList value registerTypes d handle rc QDBusReply&lt;QVariantMap&gt; r walletLauncher getInterface readMapList d handle d folder key appid r isValid rc QVariantMap val r value QVariantMap::const_iterator it val begin it val end it QByteArray mapData it value toByteArray mapData isEmpty QDataStream ds mapData QIODevice::ReadOnly QMap&lt;QString, QString&gt; v ds v value insert it key v rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01193</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readPassword QString key QString value rc walletLauncher m_useKSecretsService rc d readEntry QString key value d handle rc QDBusReply&lt;QString&gt; r walletLauncher getInterface readPassword d handle d folder key appid r isValid value r rc rc Wallet::WalletPrivate::InsertIntoPasswordList InsertIntoPasswordList QMap&lt; QString, QString&gt; value _value value operator() Wallet::WalletPrivate d QString label KSecretsService::SecretItem result QString pwd d readEntry QString label pwd _value insert label pwd result result QMap&lt; QString, QString &gt; _value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01235</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::readPasswordList QString key QMap&lt;QString, QString&gt; value rc walletLauncher m_useKSecretsService rc d forEachItemThatMatches key WalletPrivate::InsertIntoPasswordList value registerTypes d handle rc QDBusReply&lt;QVariantMap&gt; r walletLauncher getInterface readPasswordList d handle d folder key appid r isValid rc QVariantMap val r value QVariantMap::const_iterator it val begin it val end it value insert it key it value toString rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01265</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::writeEntry QString key QByteArray value EntryType entryType rc walletLauncher m_useKSecretsService rc d writeEntry key value entryType d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface writeEntry d handle d folder key value entryType appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01289</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::writeEntry QString key QByteArray value rc walletLauncher m_useKSecretsService rc writeEntry key value Stream d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface writeEntry d handle d folder key value appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01313</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::writeMap QString key QMap&lt;QString, QString&gt; value rc walletLauncher m_useKSecretsService d writeEntry key value Map registerTypes d handle rc QByteArray mapData QDataStream ds mapData QIODevice::WriteOnly ds value QDBusReply&lt;int&gt; r walletLauncher getInterface writeMap d handle d folder key mapData appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01342</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::writePassword QString key QString value rc walletLauncher m_useKSecretsService rc d writeEntry key value Password d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface writePassword d handle d folder key value appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01366</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::hasEntry QString key walletLauncher m_useKSecretsService QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item d findItem key item d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface hasEntry d handle d folder key appid r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01390</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::removeEntry QString key rc walletLauncher m_useKSecretsService QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item d findItem key item KSecretsService::SecretItemDeleteJob deleteJob item deleteItem deleteJob exec qDebug deleteJob errorString rc deleteJob error d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface removeEntry d handle d folder key appid r isValid rc r rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01421</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::EntryType Wallet::entryType QString key rc walletLauncher m_useKSecretsService QExplicitlySharedDataPointer&lt;KSecretsService::SecretItem&gt; item d findItem key item KSecretsService::ReadItemPropertyJob readAttrsJob item attributes readAttrsJob exec KSecretsService::StringStringMap attrs readAttrsJob propertyValue value KSecretsService::StringStringMap attrs contains KSS_ATTR_WALLETTYPE QString entryType attrs KSS_ATTR_WALLETTYPE ok rc entryType toInt ok ok rc qDebug KSS_ATTR_WALLETTYPE attrs KSS_ATTR_WALLETTYPE qDebug readAttrsJob errorString d handle Wallet::Unknown QDBusReply&lt;int&gt; r walletLauncher getInterface entryType d handle d folder key appid r isValid rc r EntryType rc Wallet::WalletPrivate::walletServiceUnregistered handle q slotWalletClosed handle Wallet::slotFolderUpdated QString wallet QString folder walletLauncher m_useKSecretsService Q_ASSERT d name wallet emit folderUpdated folder Wallet::slotFolderListUpdated QString wallet walletLauncher m_useKSecretsService Q_ASSERT d name wallet emit folderListUpdated Wallet::slotApplicationDisconnected QString wallet QString application walletLauncher m_useKSecretsService Q_ASSERT d handle d name wallet application appid slotWalletClosed d handle Wallet::walletAsyncOpened tId handle walletLauncher m_useKSecretsService Q_ASSERT d transactionId tId d handle disconnect SLOT walletAsyncOpened d handle handle emit walletOpened handle Wallet::emitWalletAsyncOpenError emit walletOpened Wallet::emitWalletOpened emit walletOpened</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01551</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::folderDoesNotExist QString wallet QString folder walletLauncher m_useKSecretsService qDebug Wallet w openWallet wallet Synchronous w w hasFolder folder walletLauncher m_walletEnabled QDBusReply&lt;bool&gt; r walletLauncher getInterface folderDoesNotExist wallet folder r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01578</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::keyDoesNotExist QString wallet QString folder QString key walletLauncher m_useKSecretsService qDebug Wallet w openWallet wallet Synchronous w w hasEntry key walletLauncher m_walletEnabled QDBusReply&lt;bool&gt; r walletLauncher getInterface keyDoesNotExist wallet folder key r isValid qDebug r error r</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.cpp</field>
+    <field name="url">kwallet_8cpp_source.html#l01604</field>
+    <field name="keywords"></field>
+    <field name="text">Wallet::virtual_hook KWalletDLauncher::KWalletDLauncher m_wallet_deamon m_cgroup KSharedConfig::openConfig QStringLiteral KConfig::NoGlobals group m_walletEnabled m_useKSecretsService m_cgroup readEntry m_walletEnabled m_cgroup readEntry m_walletEnabled qDebug m_useKSecretsService m_wallet_deamon org::kde::KWallet QString::fromLatin1 s_kwalletdServiceName QStringLiteral QDBusConnection::sessionBus KWalletDLauncher::~KWalletDLauncher m_wallet_deamon org::kde::KWallet KWalletDLauncher::getInterface Q_ASSERT m_wallet_deamon QDBusConnectionInterface bus QDBusConnection::sessionBus interface bus isServiceRegistered QString::fromLatin1 s_kwalletdServiceName m_walletEnabled QDBusReply&lt;void&gt; reply bus startService s_kwalletdServiceName reply isValid qCritical reply error bus isServiceRegistered QString::fromLatin1 s_kwalletdServiceName qDebug qDebug qCritical m_wallet_deamon</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.h</field>
+    <field name="url">kwallet_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet.h</field>
+    <field name="url">kwallet_8h_source.html#l00060</field>
+    <field name="keywords"></field>
+    <field name="text">KWALLET_EXPORT Wallet QObject Q_OBJECT Wallet handle QString name Wallet Wallet EntryType Unknown Password Stream Map Unused Wallet QStringList walletList isEnabled isOpen QString name closeWallet QString name force deleteWallet QString name disconnectApplication QString wallet QString app OpenType Synchronous Asynchronous Path OpenTypeUnused Wallet openWallet QString name WId w OpenType ot Synchronous QStringList users QString wallet QString LocalWallet QString NetworkWallet QString PasswordFolder QString FormDataFolder changePassword QString name WId w sync lockWallet QString walletName isOpen requestChangePassword WId w QStringList folderList hasFolder QString f setFolder QString f removeFolder QString f createFolder QString f QString currentFolder QStringList entryList renameEntry QString oldName QString newName readEntry QString key QByteArray value readMap QString key QMap&lt;QString, QString&gt; value readPassword QString key QString value readEntryList QString key QMap&lt;QString, QByteArray&gt; value readMapList QString key QMap QString QMap&lt;QString, QString&gt; value readPasswordList QString key QMap&lt;QString, QString&gt; value writeEntry QString key QByteArray value EntryType entryType writeEntry QString key QByteArray value writeMap QString key QMap&lt;QString, QString&gt; value writePassword QString key QString value hasEntry QString key removeEntry QString key EntryType entryType QString key folderDoesNotExist QString wallet QString folder keyDoesNotExist QString wallet QString folder QString key isUsingKSecretsService Q_SIGNALS walletClosed folderUpdated QString folder folderListUpdated folderRemoved QString folder walletOpened success Q_SLOTS slotWalletClosed handle slotFolderUpdated QString wallet QString folder slotFolderListUpdated QString wallet slotApplicationDisconnected QString wallet QString application walletAsyncOpened tId handle emitWalletAsyncOpenError emitWalletOpened slotCollectionStatusChanged slotCollectionDeleted WalletPrivate WalletPrivate d Q_PRIVATE_SLOT d walletServiceUnregistered virtual_hook data</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwallet_mac.cpp</field>
+    <field name="url">kwallet__mac_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet QMap&lt;QString, QString&gt; StringStringMap Q_DECLARE_METATYPE StringStringMap QMap&lt;QString, StringStringMap&gt; StringToStringStringMapMap Q_DECLARE_METATYPE StringToStringStringMapMap QMap&lt;QString, QByteArray&gt; StringByteArrayMap Q_DECLARE_METATYPE StringByteArrayMap CFReleaser CFReleaser T r ref r CFReleaser CFRelease ref T ref QString asQString CFStringRef sr QString::fromLatin1 CFStringGetCStringPtr sr NULL QString errorString OSStatus s CFReleaser&lt;CFStringRef&gt; ref SecCopyErrorMessageString s NULL asQString ref ref isError OSStatus s QString errMsg errMsg errMsg errorString s s QString appid qApp applicationName OSStatus removeEntryImplementation QString walletName QString key QByteArray serviceName walletName toUtf8 QByteArray accountName key toUtf8 SecKeychainItemRef itemRef QString errMsg OSStatus result SecKeychainFindGenericPassword NULL serviceName size serviceName constData accountName size accountName constData NULL NULL itemRef isError result errMsg qWarning qPrintable errMsg result CFReleaser&lt;SecKeychainItemRef&gt; itemReleaser itemRef result SecKeychainItemDelete itemRef isError result errMsg qWarning qPrintable errMsg result result QString Wallet::LocalWallet KConfigGroup cfg KSharedConfig::openConfig group cfg readEntry QString tmp cfg readEntry tmp isEmpty tmp QString tmp cfg readEntry tmp isEmpty tmp QString Wallet::NetworkWallet KConfigGroup cfg KSharedConfig::openConfig group QString tmp cfg readEntry tmp isEmpty tmp QString Wallet::PasswordFolder QString Wallet::FormDataFolder Wallet::WalletPrivate WalletPrivate QString n name n walletServiceUnregistered QString name QString folder Wallet::Wallet handle QString name QObject L d new WalletPrivate name Q_UNUSED handle Wallet::~Wallet d QStringList Wallet::walletList walletLauncher getInterface wallets QStringList Wallet::changePassword QString name WId w w qDebug walletLauncher getInterface changePassword name qlonglong w appid Wallet::isEnabled Wallet::isOpen QString name walletLauncher getInterface isOpen name Wallet::closeWallet QString name force QDBusReply&lt;int&gt; r walletLauncher getInterface close name force r isValid r Wallet::deleteWallet QString name QDBusReply&lt;int&gt; r walletLauncher getInterface deleteWallet name r isValid r Wallet Wallet::openWallet QString name WId w OpenType ot Q_UNUSED w Q_UNUSED ot Wallet wallet Wallet name QMetaObject::invokeMethod wallet Qt::QueuedConnection wallet Wallet::disconnectApplication QString wallet QString app walletLauncher getInterface disconnectApplication wallet app QStringList Wallet::users QString name walletLauncher getInterface users name QStringList Wallet::sync d handle walletLauncher getInterface sync d handle appid Wallet::lockWallet d handle QDBusReply&lt;int&gt; r walletLauncher getInterface close d handle appid d handle d folder clear d name clear r isValid r QString Wallet::walletName d name Wallet::isOpen d handle Wallet::requestChangePassword WId w w qDebug d handle walletLauncher getInterface changePassword d name qlonglong w appid Wallet::slotWalletClosed handle d handle handle d handle d folder clear d name clear emit walletClosed QStringList Wallet::folderList d handle QStringList QDBusReply&lt;QStringList&gt; r walletLauncher getInterface folderList d handle appid r QStringList QStringList Wallet::entryList d handle QStringList QDBusReply&lt;QStringList&gt; r walletLauncher getInterface entryList d handle d folder appid r QStringList Wallet::hasFolder QString f d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface hasFolder d handle f appid r Wallet::createFolder QString f d handle hasFolder f QDBusReply&lt;bool&gt; r walletLauncher getInterface createFolder d handle f appid r Wallet::setFolder QString f rc d handle rc f d folder hasFolder f d folder f rc rc Wallet::removeFolder QString f d handle QDBusReply&lt;bool&gt; r walletLauncher getInterface removeFolder d handle f appid d folder f setFolder QString r QString Wallet::currentFolder d folder Wallet::readEntry QString key QByteArray value QByteArray serviceName walletName toUtf8 QByteArray accountName key toUtf8 UInt32 passwordSize passwordData QString errMsg isError SecKeychainFindGenericPassword NULL serviceName size serviceName constData accountName size accountName constData passwordSize passwordData NULL errMsg qWarning qPrintable errMsg value QByteArray reinterpret_cast&lt;const char *&gt; passwordData passwordSize SecKeychainItemFreeContent NULL passwordData Wallet::readEntryList QString key QMap&lt;QString, QByteArray&gt; value registerTypes rc d handle rc QDBusReply&lt;QVariantMap&gt; r walletLauncher getInterface readEntryList d handle d folder key appid r isValid rc QVariantMap val r value QVariantMap::const_iterator it val begin it val end it value insert it key it value toByteArray rc Wallet::renameEntry QString oldName QString newName rc d handle rc QDBusReply&lt;int&gt; r walletLauncher getInterface renameEntry d handle d folder oldName newName appid r isValid rc r rc Wallet::readMap QString key QMap&lt;QString, QString&gt; value QByteArray v ret readEntry key v ret ret v isEmpty QDataStream ds v QIODevice::ReadOnly ds value Wallet::readMapList QString key QMap QString QMap&lt;QString, QString&gt; value registerTypes rc d handle rc QDBusReply&lt;QVariantMap&gt; r walletLauncher getInterface readMapList d handle d folder key appid r isValid rc QVariantMap val r value QVariantMap::const_iterator it val begin it val end it QByteArray mapData it value toByteArray mapData isEmpty QDataStream ds mapData QIODevice::ReadOnly QMap&lt;QString, QString&gt; v ds v value insert it key v rc Wallet::readPassword QString key QString value QByteArray ba ret readEntry key ba ret value QString::fromUtf8 ba constData ret Wallet::readPasswordList QString key QMap&lt;QString, QString&gt; value OSStatus writeEntryImplementation QString walletName QString key QByteArray value QByteArray serviceName walletName toUtf8 QByteArray accountName key toUtf8 QString errMsg OSStatus err SecKeychainAddGenericPassword NULL serviceName size serviceName constData accountName size accountName constData value size value constData NULL err errSecDuplicateItem err removeEntryImplementation walletName key isError err errMsg qWarning qPrintable errMsg err isError err errMsg qWarning qPrintable errMsg err err Wallet::writeEntry QString key QByteArray password EntryType entryType Q_UNUSED entryType writeEntryImplementation walletName key password Wallet::writeEntry QString key QByteArray value writeEntryImplementation walletName key value Wallet::writeMap QString key QMap&lt;QString, QString&gt; value QByteArray mapData QDataStream ds mapData QIODevice::WriteOnly ds value writeEntry key mapData Wallet::writePassword QString key QString value writeEntry key value toUtf8 Wallet::hasEntry QString key QByteArray serviceName walletName toUtf8 QByteArray accountName key toUtf8 isError SecKeychainFindGenericPassword NULL serviceName size serviceName constData accountName size accountName constData NULL NULL NULL Wallet::removeEntry QString key removeEntryImplementation walletName key Wallet::EntryType Wallet::entryType QString key rc d handle Wallet::Unknown QDBusReply&lt;int&gt; r walletLauncher getInterface entryType d handle d folder key appid r isValid rc r EntryType rc Wallet::Unknown Wallet::slotFolderUpdated QString wallet QString folder d name wallet emit folderUpdated folder Wallet::slotFolderListUpdated QString wallet d name wallet emit folderListUpdated Wallet::slotApplicationDisconnected QString wallet QString application d handle d name wallet application appid slotWalletClosed d handle Wallet::walletAsyncOpened tId handle d transactionId tId d handle disconnect SLOT walletAsyncOpened d handle handle emit walletOpened handle Wallet::emitWalletAsyncOpenError emit walletOpened Wallet::emitWalletOpened emit walletOpened Wallet::folderDoesNotExist QString wallet QString folder QDBusReply&lt;bool&gt; r walletLauncher getInterface folderDoesNotExist wallet folder r Wallet::keyDoesNotExist QString wallet QString folder QString key QDBusReply&lt;bool&gt; r walletLauncher getInterface keyDoesNotExist wallet folder key r Wallet::slotCollectionStatusChanged status Wallet::slotCollectionDeleted d folder clear d name clear emit walletClosed Wallet::virtual_hook</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletbackend.cc</field>
+    <field name="url">kwalletbackend_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet Backend::BackendPrivate Backend::Backend QString name isPath d _name name _useNewHash false _ref _cipherType KWallet BACKEND_CIPHER_UNKNOWN isPath _path name _path getSaveLocation QDir::separator _name _open Backend::~Backend _open close d QString Backend::getSaveLocation QString writeLocation QStandardPaths::writableLocation QStandardPaths::DataLocation writeLocation right QLatin1String writeLocation writeLocation left writeLocation length QDir writeDir writeLocation writeDir exists writeDir mkpath writeLocation qFatal writeLocation Backend::setCipherType BackendCipherType ct assert _cipherType KWallet::BACKEND_CIPHER_UNKNOWN _cipherType ct password2PBKDF2_SHA512 QByteArray password QByteArray hash QByteArray salt gcry_check_version printf GPG_ERR_USER_2 gcry_error_t error gcry_secmem_init gcry_secmem_init error gcry_control GCRYCTL_INIT_SECMEM error qWarning error error gcry_secmem_init gcry_control GCRYCTL_INITIALIZATION_FINISHED error gcry_kdf_derive password constData password size GCRY_KDF_PBKDF2 GCRY_MD_SHA512 salt data salt size PBKDF2_SHA512_ITERATIONS PBKDF2_SHA512_KEYSIZE hash data error password2hash QByteArray password QByteArray hash SHA1 sha shasz sha size assert shasz QByteArray block1 shasz sha process password data qMin password size i i i memcpy block1 data sha hash shasz sha reset sha process block1 data shasz sha reset password size sha process password data qMin password size QByteArray block2 shasz i i i memcpy block2 data sha hash shasz sha reset sha process block2 data shasz sha reset password size sha process password data qMin password size QByteArray block3 shasz i i i memcpy block3 data sha hash shasz sha reset sha process block3 data shasz sha reset password size sha process password data password size QByteArray block4 shasz i i i memcpy block4 data sha hash shasz sha reset sha process block4 data shasz sha reset hash resize memcpy hash data block1 data memcpy hash data block2 data memcpy hash data block3 data memcpy hash data block4 data block4 fill hash resize memcpy hash data block1 data memcpy hash data block2 data memcpy hash data block3 data block3 fill hash resize memcpy hash data block1 data memcpy hash data block2 data block2 fill hash resize memcpy hash data block1 data block1 fill Backend::deref _ref qDebug _ref _ref Backend::exists QString wallet QString saveLocation getSaveLocation QString path saveLocation wallet QLatin1String QFile::exists path QFileInfo path size QString Backend::openRCToString rc rc i18n i18n i18n i18n QStringLiteral i18n i18n i18n i18n i18n QString Backend::open QByteArray password WId w _open setPassword password openInternal w Backend::open GpgME::Key key _open _gpgKey key openInternal Backend::openPreHashed QByteArray passwordHash _open passwordHash size passwordHash size passwordHash size _passhash passwordHash _newPassHash passwordHash _useNewHash openInternal Backend::openInternal WId w QFile::exists _path QFileInfo _path size QFile newfile _path newfile open QIODevice::ReadWrite newfile close _open sync w QFile db _path db open QIODevice::ReadOnly magicBuf KWMAGIC_LEN db read magicBuf KWMAGIC_LEN memcmp magicBuf KWMAGIC KWMAGIC_LEN db read magicBuf magicBuf KWALLET_VERSION_MAJOR magicBuf qDebug swapToNewHash magicBuf qDebug BackendPersistHandler phandler BackendPersistHandler::getPersistHandler magicBuf phandler result phandler read db w phandler result Backend::swapToNewHash _useNewHash qDebug _passhash fill _passhash _newPassHash QByteArray Backend::createAndSaveSalt QString path QFile saltFile path saltFile remove saltFile open QIODevice::WriteOnly QByteArray saltFile setPermissions QFile::ReadUser QFile::WriteUser randomData gcry_random_bytes PBKDF2_SHA512_SALTSIZE GCRY_STRONG_RANDOM QByteArray salt randomData PBKDF2_SHA512_SALTSIZE free randomData saltFile write salt PBKDF2_SHA512_SALTSIZE QByteArray saltFile close salt Backend::sync WId w _open QFile::exists _path QSaveFile sf _path sf open QIODevice::WriteOnly QIODevice::Unbuffered sf setPermissions QFile::ReadUser QFile::WriteUser sf write KWMAGIC KWMAGIC_LEN KWMAGIC_LEN sf cancelWriting QByteArray version version KWALLET_VERSION_MAJOR _useNewHash version KWALLET_VERSION_MINOR swapToNewHash version BackendPersistHandler phandler BackendPersistHandler::getPersistHandler _cipherType phandler rc phandler write sf version w rc KNotification notification KNotification QStringLiteral notification setText i18n arg _name arg rc arg sf errorString notification sendEvent phandler rc Backend::close save save rc sync rc rc FolderMap::ConstIterator i _entries constBegin i _entries constEnd i EntryMap::ConstIterator j i value constBegin j i value constEnd j j value _entries clear _passhash fill _newPassHash fill _open QString Backend::walletName _name Backend::isOpen _open QStringList Backend::folderList _entries keys QStringList Backend::entryList _entries _folder keys Entry Backend::readEntry QString key Entry rc L _open hasEntry key rc _entries _folder key rc QList&lt;Entry *&gt; Backend::readEntryList QString key QList&lt;Entry *&gt; rc _open rc QRegExp re key Qt::CaseSensitive QRegExp::Wildcard EntryMap map _entries _folder EntryMap::ConstIterator i map begin i map end i re exactMatch i key rc append i value rc Backend::createFolder QString f _entries contains f _entries insert f EntryMap QCryptographicHash folderMd5 QCryptographicHash::Md5 folderMd5 addData f toUtf8 _hashes insert MD5Digest folderMd5 result QList&lt;MD5Digest&gt; Backend::renameEntry QString oldName QString newName EntryMap emap _entries _folder EntryMap::Iterator oi emap find oldName EntryMap::Iterator ni emap find newName oi emap end ni emap end Entry e oi value emap erase oi emap newName e QCryptographicHash folderMd5 QCryptographicHash::Md5 folderMd5 addData _folder toUtf8 HashMap::iterator i _hashes find MD5Digest folderMd5 result i _hashes end QCryptographicHash oldMd5 QCryptographicHash::Md5 newMd5 QCryptographicHash::Md5 oldMd5 addData oldName toUtf8 newMd5 addData newName toUtf8 i value removeAll MD5Digest oldMd5 result i value append MD5Digest newMd5 result Backend::writeEntry Entry e _open hasEntry e key _entries _folder e key Entry _entries _folder e key copy e QCryptographicHash folderMd5 QCryptographicHash::Md5 folderMd5 addData _folder toUtf8 HashMap::iterator i _hashes find MD5Digest folderMd5 result i _hashes end QCryptographicHash md5 QCryptographicHash::Md5 md5 addData e key toUtf8 i value append MD5Digest md5 result Backend::hasEntry QString key _entries contains _folder _entries _folder contains key Backend::removeEntry QString key _open FolderMap::Iterator fi _entries find _folder EntryMap::Iterator ei fi value find key fi _entries end ei fi value end ei value fi value erase ei QCryptographicHash folderMd5 QCryptographicHash::Md5 folderMd5 addData _folder toUtf8 HashMap::iterator i _hashes find MD5Digest folderMd5 result i _hashes end QCryptographicHash md5 QCryptographicHash::Md5 md5 addData key toUtf8 i value removeAll MD5Digest md5 result Backend::removeFolder QString f _open FolderMap::Iterator fi _entries find f fi _entries end _folder f _folder clear EntryMap::Iterator ei fi value begin ei fi value end ei ei value _entries erase fi QCryptographicHash folderMd5 QCryptographicHash::Md5 folderMd5 addData f toUtf8 _hashes remove MD5Digest folderMd5 result Backend::folderDoesNotExist QString folder QCryptographicHash md5 QCryptographicHash::Md5 md5 addData folder toUtf8 _hashes contains MD5Digest md5 result Backend::entryDoesNotExist QString folder QString entry QCryptographicHash md5 QCryptographicHash::Md5 md5 addData folder toUtf8 HashMap::const_iterator i _hashes find MD5Digest md5 result i _hashes end md5 reset md5 addData entry toUtf8 i value contains MD5Digest md5 result Backend::setPassword QByteArray password _passhash fill BlowFish _bf CipherBlockChain bf _bf _passhash resize bf keyLen _newPassHash resize bf keyLen _newPassHash fill password2hash password _passhash QByteArray salt QFile saltFile getSaveLocation QDir::separator _name saltFile exists saltFile size salt createAndSaveSalt saltFile fileName saltFile open QIODevice::ReadOnly salt createAndSaveSalt saltFile fileName salt saltFile readAll salt isEmpty password2PBKDF2_SHA512 password _newPassHash salt qDebug _useNewHash GpgME::Key Backend::gpgKey _gpgKey</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletbackend.h</field>
+    <field name="url">kwalletbackend_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletbackend.h</field>
+    <field name="url">kwalletbackend_8h_source.html#l00045</field>
+    <field name="keywords"></field>
+    <field name="text">MD5Digest QByteArray MD5Digest QByteArray MD5Digest data QByteArray data MD5Digest QByteArray digest QByteArray digest MD5Digest operator&lt; MD5Digest r i x y i i x at i y r at i x y i x y KWALLETBACKEND5_EXPORT Backend Backend QString name QStringLiteral isPath Backend open QByteArray password WId w open GpgME::Key key openPreHashed QByteArray passwordHash close save sync WId w isOpen QString walletName QStringList folderList createFolder QString f setFolder QString f _folder f QString folder _folder hasFolder QString f _entries contains f Entry readEntry QString key QList&lt;Entry *&gt; readEntryList QString key writeEntry Entry e hasEntry QString key removeEntry QString key removeFolder QString f QStringList entryList renameEntry QString oldName QString newName setPassword QByteArray password ref _ref deref refCount _ref exists QString wallet folderDoesNotExist QString folder entryDoesNotExist QString folder QString entry QString openRCToString rc setCipherType BackendCipherType ct BackendCipherType cipherType _cipherType GpgME::Key gpgKey QString getSaveLocation Q_DISABLE_COPY Backend BackendPrivate BackendPrivate d QString _name QString _path _open _useNewHash QString _folder _ref QMap&lt; QString, Entry * &gt; EntryMap QMap&lt; QString, EntryMap &gt; FolderMap FolderMap _entries QMap&lt;MD5Digest, QList&lt;MD5Digest&gt; HashMap HashMap _hashes QByteArray _passhash QByteArray _newPassHash BackendCipherType _cipherType GpgME::Key _gpgKey BlowfishPersistHandler GpgPersistHandler openInternal WId w swapToNewHash QByteArray createAndSaveSalt QString path</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletd.cpp</field>
+    <field name="url">kwalletd_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">boost throw_exception std::exception e qDebug e what KWalletTransaction KWalletTransaction QDBusConnection conn tType Unknown cancelled false tId nextTransactionId res connection conn nextTransactionId nextTransactionId nextTransactionId KWalletTransaction Type Unknown Open ChangePassword OpenFail CloseCancelled Type tType QString appid qlonglong wId QString wallet QString service cancelled modal isPath tId res QDBusMessage message QDBusConnection connection nextTransactionId KWalletTransaction::nextTransactionId KWalletD::KWalletD QObject _failed _syncTime _curtrans _useGpg false _useGpg srand time _showingFailureNotify _closeIdle _idleTime connect _closeTimers SIGNAL timedOut SLOT timedOutClose connect _syncTimers SIGNAL timedOut SLOT timedOutSync void KWalletAdaptor QDBusConnection::sessionBus registerService QStringLiteral QDBusConnection::sessionBus registerObject QStringLiteral screensaver reconfigure _dw KDirWatch _dw setObjectName QStringLiteral _dw addDir KWallet::Backend::getSaveLocation _dw startScan connect _dw SIGNAL dirty QString SLOT emitWalletListDirty connect _dw KDirWatch::deleted KWalletD::emitWalletListDirty _serviceWatcher setWatchMode QDBusServiceWatcher::WatchForOwnerChange connect _serviceWatcher SIGNAL serviceOwnerChanged QString QString QString SLOT slotServiceOwnerChanged QString QString QString KWalletD::~KWalletD screensaver screensaver closeAllWallets qDeleteAll _transactions KWalletD::connectToScreenSaver screensaver QDBusInterface screensaver isValid qDebug QTimer::singleShot SLOT connectToScreenSaver connect screensaver SIGNAL ActiveChanged SLOT screenSaverChanged qDebug KWalletD::generateHandle rc rc rand _wallets contains rc rc rc QPair&lt;int, KWallet::Backend*&gt; KWalletD::findWallet QString walletName Wallets::const_iterator it _wallets constBegin Wallets::const_iterator end _wallets constEnd it end it it value walletName walletName qMakePair it key it value qMakePair static_cast&lt;KWallet::Backend*&gt; KWalletD::_processing KWalletD::processTransactions _processing _processing _transactions isEmpty _curtrans _transactions takeFirst res assert _curtrans tType KWalletTransaction::Unknown _curtrans tType KWalletTransaction::Open res doTransactionOpen _curtrans appid _curtrans wallet _curtrans isPath _curtrans wId _curtrans modal _curtrans service res QList&lt;KWalletTransaction*&gt;::iterator it it _transactions begin it _transactions end it KWalletTransaction x it _curtrans appid x appid x tType KWalletTransaction::Open x wallet _curtrans wallet x wId _curtrans wId x tType KWalletTransaction::OpenFail _curtrans cancelled KWalletTransaction _xact KWalletTransaction _curtrans connection _xact tType KWalletTransaction::CloseCancelled _xact appid _curtrans appid _xact wallet _curtrans wallet _xact service _curtrans service _transactions append _xact _curtrans res res emit walletAsyncOpened _curtrans tId res KWalletTransaction::OpenFail _curtrans res emit walletAsyncOpened _curtrans tId KWalletTransaction::ChangePassword doTransactionChangePassword _curtrans appid _curtrans wallet _curtrans wId KWalletTransaction::CloseCancelled doTransactionOpenCancelled _curtrans appid _curtrans wallet _curtrans service KWalletTransaction::Unknown _curtrans message type QDBusMessage::InvalidMessage _curtrans connection isConnected QDBusMessage reply _curtrans message createReply reply _curtrans res _curtrans connection send reply _curtrans _curtrans _processing KWalletD::openPath QString path qlonglong wId QString appid tId openPathAsync path wId appid tId tId KWalletD::open QString wallet qlonglong wId QString appid _enabled QRegExp QString::fromLatin1 exactMatch wallet KWalletTransaction xact KWalletTransaction connection _transactions append xact message setDelayedReply xact message message xact appid appid xact wallet wallet xact wId wId xact modal xact tType KWalletTransaction::Open xact isPath QTimer::singleShot SLOT processTransactions checkActiveDialog KWalletD::openAsync QString wallet qlonglong wId QString appid handleSession _enabled QRegExp QString::fromLatin1 exactMatch wallet KWalletTransaction xact KWalletTransaction connection _transactions append xact xact appid appid xact wallet wallet xact wId wId xact modal xact tType KWalletTransaction::Open xact isPath handleSession qDebug message service _serviceWatcher setConnection connection _serviceWatcher addWatchedService message service xact service message service QTimer::singleShot SLOT processTransactions checkActiveDialog xact tId KWalletD::openPathAsync QString path qlonglong wId QString appid handleSession _enabled KWalletTransaction xact KWalletTransaction connection _transactions append xact xact appid appid xact wallet path xact wId wId xact modal xact tType KWalletTransaction::Open xact isPath handleSession qDebug message service _serviceWatcher setConnection connection _serviceWatcher addWatchedService message service xact service message service QTimer::singleShot SLOT processTransactions checkActiveDialog xact tId KWalletD::setupDialog QWidget dialog WId wId QString appid modal wId KWindowSystem::setMainWindow dialog wId appid isEmpty qWarning qWarning appid modal KWindowSystem::setState dialog winId NET::Modal KWindowSystem::clearState dialog winId NET::Modal activeDialog dialog KWalletD::checkActiveDialog activeDialog activeDialog show WId window activeDialog winId KWindowSystem::setState window NET::KeepAbove KWindowSystem::setOnAllDesktops window KWindowSystem::forceActiveWindow window KWindowSystem::raiseWindow window KWalletD::doTransactionOpen QString appid QString wallet isPath qlonglong wId modal QString service _firstUse isPath wallet KWallet::Wallet::LocalWallet KConfig kwalletrc QStringLiteral KConfigGroup cfg kwalletrc cfg writeEntry wallet wallets contains KWallet::Wallet::LocalWallet KConfig kwalletrc QStringLiteral KConfigGroup cfg kwalletrc _firstUse cfg writeEntry rc internalOpen appid wallet isPath WId wId modal service rc KWalletD::internalOpen QString appid QString wallet isPath WId w modal QString service brandNew QString thisApp appid isEmpty thisApp QStringLiteral thisApp appid implicitDeny wallet thisApp QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet rc walletInfo first rc _wallets count qDebug KWallet::Backend b KWallet::Backend wallet isPath QString password emptyPass isPath QFile::exists wallet isPath KWallet::Backend::exists wallet pwless b open QByteArray w assert b cipherType KWallet::BACKEND_CIPHER_UNKNOWN b cipherType KWallet::BACKEND_CIPHER_GPG b isOpen b emptyPass pwless b isOpen pwless b b KWallet::Backend wallet isPath KPasswordDialog kpd KPasswordDialog appid isEmpty kpd setPrompt i18n wallet toHtmlEscaped kpd setPrompt i18n appid toHtmlEscaped wallet toHtmlEscaped brandNew kpd setWindowTitle i18n kpd setPixmap KIconLoader::global loadIcon QStringLiteral KIconLoader::Desktop KIconLoader::SizeHuge w KWindowSystem::activeWindow w L KNotification notification KNotification QStringLiteral kpd KNotification::Persistent KNotification::CloseWhenWidgetActivated QStringList actions appid isEmpty notification setText i18n wallet toHtmlEscaped actions append i18nc notification setText i18n appid toHtmlEscaped wallet toHtmlEscaped actions append i18nc appid toHtmlEscaped notification setActions actions connect notification SIGNAL action1Activated SLOT activatePasswordDialog notification sendEvent b isOpen setupDialog kpd w appid modal kpd exec QDialog::Accepted password kpd password rc b open password toUtf8 b isOpen kpd setPrompt i18n wallet toHtmlEscaped rc KWallet::Backend::openRCToString rc kpd setPassword QLatin1String kpd emptyPass brandNew KWallet::BackendCipherType newWalletType KWallet::BACKEND_CIPHER_UNKNOWN boost::shared_ptr&lt;KWallet::KNewWalletDialog&gt; newWalletDlg KWallet::KNewWalletDialog appid wallet QWidget::find w GpgME::Key gpgKey setupDialog newWalletDlg get WId w appid newWalletDlg exec QDialog::Accepted newWalletType newWalletDlg isBlowfish KWallet::BACKEND_CIPHER_BLOWFISH KWallet::BACKEND_CIPHER_GPG gpgKey newWalletDlg gpgKey b newWalletType KWallet::BACKEND_CIPHER_GPG b setCipherType newWalletType b open gpgKey newWalletType KWallet::BACKEND_CIPHER_BLOWFISH b setCipherType KWallet::BACKEND_CIPHER_BLOWFISH KNewPasswordDialog kpd KNewPasswordDialog KColorScheme colorScheme QPalette::Active KColorScheme::View kpd setBackgroundWarningColor colorScheme background KColorScheme::NegativeBackground color wallet KWallet::Wallet::LocalWallet wallet KWallet::Wallet::NetworkWallet appid isEmpty kpd setPrompt i18n kpd setPrompt i18n appid toHtmlEscaped appid length kpd setPrompt i18n wallet toHtmlEscaped kpd setPrompt i18n appid toHtmlEscaped wallet toHtmlEscaped kpd setWindowTitle i18n kpd setPixmap KIconLoader::global loadIcon QStringLiteral KIconLoader::Desktop KIconLoader::SizeHuge b isOpen setupDialog kpd w appid modal kpd exec QDialog::Accepted password kpd password rc b open password toUtf8 b isOpen kpd setPrompt i18n wallet toHtmlEscaped rc KWallet::Backend::openRCToString rc kpd b cipherType KWallet::BACKEND_CIPHER_BLOWFISH emptyPass password isNull b isOpen b emptyPass isAuthorizedApp appid wallet w b _wallets insert rc generateHandle b _sessions addSession appid service rc _syncTimers addTimer rc _syncTime brandNew createFolder rc KWallet::Wallet::PasswordFolder appid createFolder rc KWallet::Wallet::FormDataFolder appid b ref _closeIdle _closeTimers addTimer rc _idleTime brandNew emit walletCreated wallet emit walletOpened wallet _wallets count _launchManager KToolInvocation::startServiceByDesktopName QStringLiteral walletInfo second ref isAuthorized _sessions hasSession appid rc isAuthorizedApp appid wallet w walletInfo findWallet wallet isAuthorized walletInfo first walletInfo second deref internalClose walletInfo second walletInfo first walletInfo first _sessions addSession appid service rc rc KWalletD::isAuthorizedApp QString appid QString wallet WId w _openPrompt response QString thisApp appid isEmpty thisApp QStringLiteral thisApp appid implicitAllow wallet thisApp KConfigGroup cfg KSharedConfig::openConfig QStringLiteral group cfg isEntryImmutable wallet KBetterThanKDialog dialog KBetterThanKDialog dialog setWindowTitle i18n appid isEmpty dialog setLabel i18n wallet toHtmlEscaped dialog setLabel i18n appid toHtmlEscaped wallet toHtmlEscaped setupDialog dialog w appid response dialog exec dialog response response response KConfigGroup cfg KSharedConfig::openConfig QStringLiteral group QStringList apps cfg readEntry wallet QStringList apps contains thisApp cfg isEntryImmutable wallet apps thisApp _implicitAllowMap wallet thisApp cfg writeEntry wallet apps cfg sync response KConfigGroup cfg KSharedConfig::openConfig QStringLiteral group QStringList apps cfg readEntry wallet QStringList apps contains thisApp apps thisApp _implicitDenyMap wallet thisApp cfg writeEntry wallet apps cfg sync KWalletD::deleteWallet QString wallet result QString path KWallet::Backend::getSaveLocation wallet QString pathSalt KWallet::Backend::getSaveLocation wallet QFile::exists path QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet internalClose walletInfo second walletInfo first QFile::remove path emit walletDeleted wallet KConfigGroup cfgAllow KSharedConfig::openConfig QStringLiteral group cfgAllow deleteEntry wallet KConfigGroup cfgDeny KSharedConfig::openConfig QStringLiteral group cfgDeny deleteEntry wallet QFile::exists pathSalt QFile::remove pathSalt result result KWalletD::changePassword QString wallet qlonglong wId QString appid KWalletTransaction xact KWalletTransaction connection message setDelayedReply xact message message xact appid appid xact wallet wallet xact wId wId xact modal xact tType KWalletTransaction::ChangePassword _transactions append xact QTimer::singleShot SLOT processTransactions checkActiveDialog checkActiveDialog KWalletD::initiateSync handle _syncTimers addTimer handle _syncTime _syncTimers resetTimer handle _syncTime KWalletD::doTransactionChangePassword QString appid QString wallet qlonglong wId QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet handle walletInfo first KWallet::Backend w walletInfo second reclose w handle doTransactionOpen appid wallet wId QLatin1String handle KMessageBox::sorryWId WId wId i18n i18n w _wallets value handle reclose assert w w cipherType KWallet::BACKEND_CIPHER_GPG QString keyID w gpgKey shortKeyID assert keyID isNull KMessageBox::errorWId WId wId i18n wallet toHtmlEscaped keyID QPointer&lt;KNewPasswordDialog&gt; kpd KNewPasswordDialog kpd setPrompt i18n wallet toHtmlEscaped kpd setWindowTitle i18n kpd setAllowEmptyPasswords KColorScheme colorScheme QPalette::Active KColorScheme::View kpd setBackgroundWarningColor colorScheme background KColorScheme::NegativeBackground color setupDialog kpd WId wId appid kpd exec QDialog::Accepted kpd QString p kpd password p isNull w setPassword p toUtf8 rc w close rc KMessageBox::sorryWId WId wId i18n i18n reclose rc w open p toUtf8 rc KMessageBox::sorryWId WId wId i18n i18n reclose kpd reclose internalClose w handle KWalletD::close QString wallet force QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet handle walletInfo first KWallet::Backend w walletInfo second internalClose w handle force KWalletD::internalClose KWallet::Backend w handle force saveBeforeClose w QString wallet w walletName w refCount _leaveOpen force _sessions removeAllSessions handle _closeIdle _closeTimers removeTimer handle _syncTimers removeTimer handle _wallets remove handle w close saveBeforeClose doCloseSignals handle wallet w KWalletD::close handle force QString appid KWallet::Backend w _wallets value handle w _sessions hasSession appid handle removed _sessions removeSession appid message service handle removed _sessions removeSession appid QLatin1String handle w deref internalClose w handle force KWalletD::isOpen QString wallet QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet walletInfo second KWalletD::isOpen handle handle KWallet::Backend rc _wallets value handle rc _failed _failed QTimer::singleShot SLOT notifyFailures rc _failed rc QStringList KWalletD::wallets QString path KWallet::Backend::getSaveLocation QDir dir path QStringLiteral QStringList rc dir setFilter QDir::Files QDir::Hidden QFileInfo fi dir entryInfoList QString fn fi fileName fn endsWith QLatin1String fn truncate fn length rc fn rc KWalletD::sync handle QString appid KWallet::Backend b b getWallet appid handle QString wallet b walletName b sync KWalletD::timedOutSync handle _syncTimers removeTimer handle _wallets contains handle _wallets handle _wallets handle sync qDebug KWalletD::doTransactionOpenCancelled QString appid QString wallet QString service _sessions hasSession appid QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet handle walletInfo first KWallet::Backend b walletInfo second handle b b deref internalClose b handle _sessions removeSession appid service handle QStringList KWalletD::folderList handle QString appid KWallet::Backend b b getWallet appid handle b folderList QStringList KWalletD::hasFolder handle QString f QString appid KWallet::Backend b b getWallet appid handle b hasFolder f KWalletD::removeFolder handle QString f QString appid KWallet::Backend b b getWallet appid handle rc b removeFolder f initiateSync handle emit folderListUpdated b walletName rc KWalletD::createFolder handle QString f QString appid KWallet::Backend b b getWallet appid handle rc b createFolder f initiateSync handle emit folderListUpdated b walletName rc QByteArray KWalletD::readMap handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e b readEntry key e e type KWallet::Wallet::Map e map QByteArray QVariantMap KWalletD::readMapList handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder QVariantMap rc KWallet::Entry entry b readEntryList key entry type KWallet::Wallet::Map rc insert entry key entry map rc QVariantMap QByteArray KWalletD::readEntry handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e b readEntry key e e value QByteArray QVariantMap KWalletD::readEntryList handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder QVariantMap rc KWallet::Entry entry b readEntryList key rc insert entry key entry value rc QVariantMap QStringList KWalletD::entryList handle QString folder QString appid KWallet::Backend b b getWallet appid handle b setFolder folder b entryList QStringList QString KWalletD::readPassword handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e b readEntry key e e type KWallet::Wallet::Password e password QString QVariantMap KWalletD::readPasswordList handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b setFolder folder QVariantMap rc KWallet::Entry entry b readEntryList key entry type KWallet::Wallet::Password rc insert entry key entry password rc QVariantMap KWalletD::writeMap handle QString folder QString key QByteArray value QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e e setKey key e setValue value e setType KWallet::Wallet::Map b writeEntry e initiateSync handle emitFolderUpdated b walletName folder KWalletD::writeEntry handle QString folder QString key QByteArray value entryType QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e e setKey key e setValue value e setType KWallet::Wallet::EntryType entryType b writeEntry e initiateSync handle emitFolderUpdated b walletName folder KWalletD::writeEntry handle QString folder QString key QByteArray value QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e e setKey key e setValue value e setType KWallet::Wallet::Stream b writeEntry e initiateSync handle emitFolderUpdated b walletName folder KWalletD::writePassword handle QString folder QString key QString value QString appid KWallet::Backend b b getWallet appid handle b setFolder folder KWallet::Entry e e setKey key e setValue value e setType KWallet::Wallet::Password b writeEntry e initiateSync handle emitFolderUpdated b walletName folder KWalletD::entryType handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b hasFolder folder KWallet::Wallet::Unknown b setFolder folder b hasEntry key b readEntry key type KWallet::Wallet::Unknown KWalletD::hasEntry handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b hasFolder folder b setFolder folder b hasEntry key KWalletD::removeEntry handle QString folder QString key QString appid KWallet::Backend b b getWallet appid handle b hasFolder folder b setFolder folder rc b removeEntry key initiateSync handle emitFolderUpdated b walletName folder rc KWalletD::slotServiceOwnerChanged QString name QString oldOwner QString newOwner Q_UNUSED name qDebug name oldOwner newOwner newOwner isEmpty QString service oldOwner QList&lt;KWalletAppHandlePair&gt; sessremove _sessions findSessions service KWallet::Backend b Q_FOREACH KWalletAppHandlePair s sessremove b getWallet s first s second b b deref internalClose b s second Q_FOREACH KWalletAppHandlePair s sessremove _sessions removeSession s first service s second QList&lt;KWalletTransaction*&gt;::iterator tit tit _transactions begin tit _transactions end tit tType KWalletTransaction::Open service oldOwner tit _transactions removeAll _curtrans _curtrans tType KWalletTransaction::Open _curtrans service oldOwner qDebug _curtrans cancelled _serviceWatcher removeWatchedService oldOwner KWallet::Backend KWalletD::getWallet QString appid handle handle L KWallet::Backend w _wallets value handle w _sessions hasSession appid handle _failed _closeIdle _closeTimers resetTimer handle _idleTime w _failed _failed QTimer::singleShot SLOT notifyFailures L KWalletD::notifyFailures _showingFailureNotify _showingFailureNotify KMessageBox::information i18n i18n _showingFailureNotify KWalletD::doCloseSignals handle QString wallet emit walletClosed handle emit walletClosed wallet _wallets isEmpty emit allWalletsClosed KWalletD::renameEntry handle QString folder QString oldName QString newName QString appid KWallet::Backend b b getWallet appid handle b setFolder folder rc b renameEntry oldName newName initiateSync handle emitFolderUpdated b walletName folder rc QStringList KWalletD::users QString wallet QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet _sessions getApplications walletInfo first KWalletD::disconnectApplication QString wallet QString application QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet handle walletInfo first KWallet::Backend backend walletInfo second handle _sessions hasSession application handle removed _sessions removeAllSessions application handle i i removed i backend deref internalClose backend handle emit applicationDisconnected wallet application KWalletD::emitFolderUpdated QString wallet QString folder emit folderUpdated wallet folder KWalletD::emitWalletListDirty QStringList walletsInDisk wallets i _wallets values walletsInDisk contains i walletName internalClose i _wallets key i emit walletListDirty KWalletD::reconfigure KConfig cfg QStringLiteral KConfigGroup walletGroup cfg _firstUse walletGroup readEntry _enabled walletGroup readEntry _launchManager walletGroup readEntry _leaveOpen walletGroup readEntry idleSave _closeIdle _closeIdle walletGroup readEntry _openPrompt walletGroup readEntry timeSave _idleTime _idleTime walletGroup readEntry walletGroup readEntry QTimer::singleShot SLOT connectToScreenSaver screensaver screensaver isValid screensaver disconnect SIGNAL ActiveChanged SLOT screenSaverChanged screensaver screensaver _closeIdle _idleTime timeSave Wallets::const_iterator it _wallets constBegin Wallets::const_iterator end _wallets constEnd it end it _closeTimers resetTimer it key _idleTime idleSave Wallets::const_iterator it _wallets constBegin Wallets::const_iterator end _wallets constEnd it end it _closeTimers addTimer it key _idleTime _closeTimers clear _implicitAllowMap clear KConfigGroup autoAllowGroup cfg QStringList entries autoAllowGroup entryMap keys QStringList::const_iterator i entries constBegin i entries constEnd i _implicitAllowMap i autoAllowGroup readEntry i QStringList _implicitDenyMap clear KConfigGroup autoDenyGroup cfg entries autoDenyGroup entryMap keys QStringList::const_iterator i entries constBegin i entries constEnd i _implicitDenyMap i autoDenyGroup readEntry i QStringList _enabled _wallets isEmpty Wallets::const_iterator it _wallets constBegin internalClose it value it key QApplication::exit KWalletD::isEnabled _enabled KWalletD::folderDoesNotExist QString wallet QString folder wallets contains wallet QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet walletInfo second walletInfo second folderDoesNotExist folder KWallet::Backend b KWallet::Backend wallet b open QByteArray rc b folderDoesNotExist folder b rc KWalletD::keyDoesNotExist QString wallet QString folder QString key wallets contains wallet QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet walletInfo second walletInfo second entryDoesNotExist folder key KWallet::Backend b KWallet::Backend wallet b open QByteArray rc b entryDoesNotExist folder key b rc KWalletD::implicitAllow QString wallet QString app _implicitAllowMap wallet contains app KWalletD::implicitDeny QString wallet QString app _implicitDenyMap wallet contains app KWalletD::timedOutClose KWallet::Backend w _wallets value w internalClose w KWalletD::closeAllWallets Wallets walletsCopy _wallets Wallets::const_iterator it walletsCopy constBegin Wallets::const_iterator end walletsCopy constEnd it end it internalClose it value it key walletsCopy clear _wallets clear QString KWalletD::networkWallet KWallet::Wallet::NetworkWallet QString KWalletD::localWallet KWallet::Wallet::LocalWallet KWalletD::screenSaverChanged s s closeAllWallets KWalletD::activatePasswordDialog checkActiveDialog KWalletD::pamOpen QString wallet QByteArray passwordHash sessionTimeout _processing QRegExp QString::fromLatin1 exactMatch wallet QPair&lt;int, KWallet::Backend*&gt; walletInfo findWallet wallet rc walletInfo first rc rc _wallets count KWallet::Backend b wallets contains wallet b KWallet::Backend wallet b setCipherType KWallet::BACKEND_CIPHER_BLOWFISH b KWallet::Backend wallet openrc b openPreHashed passwordHash openrc b isOpen b openrc handle generateHandle _wallets insert handle b _syncTimers addTimer handle _syncTime sessionTimeout _closeTimers addTimer handle sessionTimeout _closeIdle _closeTimers addTimer handle _idleTime emit walletOpened wallet _wallets count _launchManager KToolInvocation::startServiceByDesktopName QStringLiteral handle</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletd.h</field>
+    <field name="url">kwalletd_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KDirWatch KTimeout KWalletTransaction KWalletSessionStore KWalletD QObject QDBusContext Q_OBJECT KWalletD KWalletD Q_SLOTS isEnabled open QString wallet qlonglong wId QString appid openPath QString path qlonglong wId QString appid openAsync QString wallet qlonglong wId QString appid handleSession openPathAsync QString path qlonglong wId QString appid handleSession close QString wallet force close handle force QString appid Q_NOREPLY sync handle QString appid deleteWallet QString wallet isOpen QString wallet isOpen handle QStringList users QString wallet changePassword QString wallet qlonglong wId QString appid QStringList wallets QStringList folderList handle QString appid hasFolder handle QString folder QString appid createFolder handle QString folder QString appid removeFolder handle QString folder QString appid QStringList entryList handle QString folder QString appid QByteArray readEntry handle QString folder QString key QString appid QByteArray readMap handle QString folder QString key QString appid QString readPassword handle QString folder QString key QString appid QVariantMap readEntryList handle QString folder QString key QString appid QVariantMap readMapList handle QString folder QString key QString appid QVariantMap readPasswordList handle QString folder QString key QString appid renameEntry handle QString folder QString oldName QString newName QString appid writeEntry handle QString folder QString key QByteArray value entryType QString appid writeEntry handle QString folder QString key QByteArray value QString appid writeMap handle QString folder QString key QByteArray value QString appid writePassword handle QString folder QString key QString value QString appid hasEntry handle QString folder QString key QString appid entryType handle QString folder QString key QString appid removeEntry handle QString folder QString key QString appid disconnectApplication QString wallet QString application reconfigure folderDoesNotExist QString wallet QString folder keyDoesNotExist QString wallet QString folder QString key closeAllWallets QString networkWallet QString localWallet screenSaverChanged pamOpen QString wallet QByteArray passwordHash sessionTimeout Q_SIGNALS walletAsyncOpened handle walletListDirty walletCreated QString wallet walletOpened QString wallet walletDeleted QString wallet walletClosed QString wallet walletClosed handle allWalletsClosed folderListUpdated QString wallet folderUpdated QString QString applicationDisconnected QString wallet QString application Q_SLOTS slotServiceOwnerChanged QString name QString oldOwner QString newOwner emitWalletListDirty timedOutClose handle timedOutSync handle notifyFailures processTransactions activatePasswordDialog connectToScreenSaver MigrationAgent internalOpen QString appid QString wallet isPath WId w modal QString service internalClose KWallet::Backend w handle force saveBeforeClose isAuthorizedApp QString appid QString wallet WId w KWallet::Backend getWallet QString appid handle generateHandle doCloseSignals QString emitFolderUpdated QString QString implicitAllow QString wallet QString app implicitDeny QString wallet QString app doTransactionChangePassword QString appid QString wallet qlonglong wId doTransactionOpenCancelled QString appid QString wallet QString service doTransactionOpen QString appid QString wallet isPath qlonglong wId modal QString service initiateSync handle setupDialog QWidget dialog WId wId QString appid modal checkActiveDialog QPair&lt;int, KWallet::Backend *&gt; findWallet QString walletName QHash&lt;int, KWallet::Backend *&gt; Wallets Wallets _wallets KDirWatch _dw _failed _leaveOpen _closeIdle _launchManager _enabled _openPrompt _firstUse _showingFailureNotify _idleTime QMap&lt;QString, QStringList&gt; _implicitAllowMap _implicitDenyMap KTimeout _closeTimers KTimeout _syncTimers _syncTime _processing KWalletTransaction _curtrans QList&lt;KWalletTransaction *&gt; _transactions QPointer&lt; QWidget &gt; activeDialog QDBusInterface screensaver KWalletSessionStore _sessions QDBusServiceWatcher _serviceWatcher _useGpg</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletentry.cc</field>
+    <field name="url">kwalletentry_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet Entry::Entry Entry::~Entry _value fill QString Entry::key _key QByteArray Entry::value _value QString Entry::password QString x QDataStream qds _value qds x x Entry::setValue QByteArray val _value fill _value val Entry::setValue QString val _value fill QDataStream qds _value QIODevice::WriteOnly qds val Entry::setKey QString key _key key Wallet::EntryType Entry::type _type Entry::setType Wallet::EntryType type _type type Entry::copy Entry x _type x _type _key x _key _value fill _value x _value</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletentry.h</field>
+    <field name="url">kwalletentry_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet KWALLETBACKEND5_EXPORT Entry Entry Entry QString key QByteArray value QString password QByteArray map value setValue QByteArray val setValue QString val setKey QString key Wallet::EntryType type setType Wallet::EntryType type copy Entry x QString _key QByteArray _value Wallet::EntryType _type</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletsessionstore.cpp</field>
+    <field name="url">kwalletsessionstore_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWalletSessionStore::Session QString m_service m_handle KWalletSessionStore::KWalletSessionStore KWalletSessionStore::~KWalletSessionStore Q_FOREACH QList&lt;Session *&gt; l m_sessions qDeleteAll l KWalletSessionStore::addSession QString appid QString service handle Session sess Session sess m_service service sess m_handle handle m_sessions appid append sess KWalletSessionStore::hasSession QString appid handle m_sessions contains appid handle QList&lt;Session *&gt;::const_iterator it QList&lt;Session *&gt;::const_iterator end m_sessions appid constEnd it m_sessions appid constBegin it end it Q_ASSERT it m_handle handle QList&lt;KWalletAppHandlePair&gt; KWalletSessionStore::findSessions QString service QList&lt;KWalletAppHandlePair&gt; rc QList&lt;QString&gt; sessionKeys m_sessions keys Q_FOREACH QString appid sessionKeys Q_FOREACH Session sess m_sessions appid Q_ASSERT sess sess m_service service rc append qMakePair appid sess m_handle rc KWalletSessionStore::removeSession QString appid QString service handle m_sessions contains appid QList&lt;Session *&gt;::const_iterator it QList&lt;Session *&gt;::const_iterator end m_sessions appid constEnd it m_sessions appid constBegin it end it Q_ASSERT it m_service service m_handle handle Session sess it m_sessions appid removeAll sess sess m_sessions appid isEmpty m_sessions remove appid KWalletSessionStore::removeAllSessions QString appid handle m_sessions contains appid QList&lt;Session *&gt;::iterator it QList&lt;Session *&gt;::iterator end m_sessions appid end it m_sessions appid begin it end it Q_ASSERT it m_handle handle it it removed m_sessions appid removeAll m_sessions appid isEmpty m_sessions remove appid removed KWalletSessionStore::removeAllSessions handle QList&lt;QString&gt; appremove numrem QList&lt;QString&gt; sessionKeys m_sessions keys Q_FOREACH QString appid sessionKeys QList&lt;Session *&gt;::iterator it QList&lt;Session *&gt;::iterator end m_sessions appid end it m_sessions appid begin it end it Q_ASSERT it m_handle handle it it numrem m_sessions appid removeAll m_sessions appid isEmpty appremove append appid Q_FOREACH QString appid appremove m_sessions remove appid numrem QStringList KWalletSessionStore::getApplications handle QStringList rc Q_FOREACH QString appid m_sessions uniqueKeys hasSession appid handle rc append appid rc</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletsessionstore.h</field>
+    <field name="url">kwalletsessionstore_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QPair&lt;QString, int&gt; KWalletAppHandlePair KWalletSessionStore KWalletSessionStore KWalletSessionStore addSession QString appid QString service handle hasSession QString appid handle QList&lt;KWalletAppHandlePair&gt; findSessions QString service removeSession QString appid QString service handle removeAllSessions QString appid handle removeAllSessions handle QStringList getApplications handle Session QHash&lt; QString, QList&lt;Session *&gt; m_sessions</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletwizard.cpp</field>
+    <field name="url">kwalletwizard_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">PageIntro QWizardPage PageIntro QWidget parent QWizardPage parent ui setupUi ui ktitlewidget setText i18n iconSize fontMetrics height iconSize iconSize QPixmap pix KIconLoader::global loadIcon QStringLiteral KIconLoader::Dialog iconSize ui ktitlewidget setPixmap pix bg QButtonGroup bg setExclusive bg addButton ui _basic bg addButton ui _advanced ui _basic setChecked QButtonGroup bg Ui::KWalletWizardPageIntro ui PagePassword QWizardPage PagePassword QWidget parent QWizardPage parent ui setupUi registerField QStringLiteral ui _useWallet registerField QStringLiteral ui _pass1 registerField QStringLiteral ui _pass2 registerField QStringLiteral ui _radioGpg registerField QStringLiteral ui _radioBlowfish connect ui _radioBlowfish SIGNAL toggled parent SLOT passwordPageUpdate connect ui _useWallet SIGNAL clicked parent SLOT passwordPageUpdate connect ui _pass1 SIGNAL textChanged QString parent SLOT passwordPageUpdate connect ui _pass2 SIGNAL textChanged QString parent SLOT passwordPageUpdate ui _useWallet setChecked nextId nextId field QStringLiteral toBool field QStringLiteral toBool nextId KWalletWizard wizard wizardType KWalletWizard::Basic KWalletWizard::PageOptionsId nextId KWalletWizard::PageGpgKeyId nextId KWalletWizard wizard wizardType KWalletWizard::Basic KWalletWizard::PageOptionsId setMatchLabelText QString text ui _matchLabel setText text Ui::KWalletWizardPagePasswordGpg ui Ui::KWalletWizardPagePassword ui std::vector&lt; GpgME::Key &gt; KeysVector Q_DECLARE_METATYPE GpgME::Key AddKeyToCombo QComboBox _list AddKeyToCombo QComboBox list _list list operator() GpgME::Key k QString text QStringLiteral arg k shortKeyID arg k userID email QVariant varKey varKey setValue k _list addItem text varKey PageGpgKey QWizardPage PageGpgKey QWidget parent QWizardPage parent userHasGpgKeys false ui setupUi registerField QStringLiteral ui _gpgKey KeysVector keys GpgME::initializeLibrary GpgME::Error err GpgME::checkEngine GpgME::OpenPGP err qDebug KMessageBox::error i18n boost::shared_ptr&lt; GpgME::Context &gt; ctx GpgME::Context::createForProtocol GpgME::OpenPGP ctx KMessageBox::error i18n ctx setKeyListMode GPGME_KEYLIST_MODE_LOCAL err ctx startKeyListing err GpgME::Key k ctx nextKey err err k isInvalid k canEncrypt k ownerTrust GpgME::Key::Ultimate keys push_back k ctx endKeyListing std::for_each keys begin keys end AddKeyToCombo ui _gpgKey userHasGpgKeys keys size userHasGpgKeys ui stackedWidget setCurrentWidget ui _pageWhenHasKeys ui stackedWidget setCurrentWidget ui _pageNoKeys setFinalPage emit completeChanged nextId KWalletWizard wizard wizardType KWalletWizard::Basic KWalletWizard::PageOptionsId isComplete userHasGpgKeys hasGpgKeys userHasGpgKeys GpgME::Key gpgKey QVariant varKey ui _gpgKey itemData field QStringLiteral toInt varKey value GpgME::Key Ui::KWalletWizardPageGpgKey ui userHasGpgKeys PageOptions QWizardPage PageOptions QWidget parent QWizardPage parent ui setupUi registerField QStringLiteral ui _closeIdle registerField QStringLiteral ui _networkWallet Ui::KWalletWizardPageOptions ui PageExplanation QWizardPage PageExplanation QWidget parent QWizardPage parent ui setupUi setFinalPage Ui::KWalletWizardPageExplanation ui KWalletWizard::KWalletWizard QWidget parent QWizard parent setOption HaveFinishButtonOnEarlyPages m_pageIntro PageIntro setPage PageIntroId m_pageIntro m_pagePasswd PagePassword setPage PagePasswordId m_pagePasswd m_pageGpgKey PageGpgKey setPage PageGpgKeyId m_pageGpgKey setPage PageOptionsId PageOptions setPage PageExplanationId PageExplanation resize KWalletWizard::passwordPageUpdate complete field QStringLiteral toBool field QStringLiteral toBool m_pagePasswd setFinalPage wizardType Basic button NextButton setVisible wizardType Basic field QStringLiteral toString field QStringLiteral toString field QStringLiteral toString isEmpty m_pagePasswd setMatchLabelText i18n m_pagePasswd setMatchLabelText i18n m_pagePasswd setMatchLabelText i18n complete m_pagePasswd setFinalPage button NextButton setEnabled m_pagePasswd setMatchLabelText QString button wizardType Basic FinishButton NextButton setEnabled complete KWalletWizard::WizardType KWalletWizard::wizardType KWalletWizard::WizardType m_pageIntro bg checkedId KWalletWizard::initializePage PagePasswordId islast m_pageIntro bg checkedId m_pagePasswd setFinalPage islast button NextButton setVisible islast GpgME::Key KWalletWizard::gpgKey m_pageGpgKey gpgKey</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">kwalletwizard.h</field>
+    <field name="url">kwalletwizard_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">PageGpgKey PagePassword PageIntro KWalletWizard QWizard Q_OBJECT WizardType Basic Advanced PageIntroId PagePasswordId PageGpgKeyId PageOptionsId PageExplanationId KWalletWizard QWidget parent WizardType wizardType GpgME::Key gpgKey initializePage Q_SLOTS passwordPageUpdate PageIntro m_pageIntro PagePassword m_pagePasswd PageGpgKey m_pageGpgKey</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">main.cpp</field>
+    <field name="url">kwallet-query_2src_2main_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">main argc argv KLocalizedString::setApplicationDomain KAboutData aboutData QStringLiteral i18n QStringLiteral i18n KAboutLicense::GPL i18n QueryDriver app argc argv QCommandLineParser cmdParser QCommandLineOption verboseOption QStringList QStringLiteral QStringLiteral i18n QCommandLineOption listOption QStringList QStringLiteral QStringLiteral i18n QCommandLineOption readOption QStringList QStringLiteral QStringLiteral i18n i18n QCommandLineOption writeOption QStringList QStringLiteral QStringLiteral i18n i18n QCommandLineOption folderOption QStringList QStringLiteral QStringLiteral i18n i18n cmdParser addHelpOption cmdParser addPositionalArgument I18N_NOOP i18n cmdParser addOption listOption cmdParser addOption readOption cmdParser addOption writeOption cmdParser addOption folderOption cmdParser addOption verboseOption cmdParser process app QStringList args cmdParser positionalArguments args empty std::cout i18n toStdString std::endl args count std::cout i18n toStdString std::endl app setWalletName args first cmdParser isSet listOption cmdParser isSet readOption cmdParser isSet writeOption std::cout i18n toStdString std::endl cmdParser isSet listOption cmdParser isSet readOption cmdParser isSet writeOption std::cout i18n toStdString std::endl cmdParser isSet listOption app setMode QueryDriver::List cmdParser isSet readOption app setEntryName cmdParser value readOption app setMode QueryDriver::Read cmdParser isSet writeOption app setEntryName cmdParser value writeOption app setMode QueryDriver::Write cmdParser isSet folderOption app setEntryFolder cmdParser value folderOption cmdParser isSet verboseOption app setVerbose app exec</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">main.cpp</field>
+    <field name="url">kwalletd_2main_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">pipefd socketfd isWalletEnabled KConfig cfg QStringLiteral KConfigGroup walletGroup cfg walletGroup readEntry waitForHash printf pipefd totalRead readBytes attempts buf malloc PBKDF2_SHA512_KEYSIZE memset buf PBKDF2_SHA512_KEYSIZE totalRead PBKDF2_SHA512_KEYSIZE readBytes read pipefd buf totalRead PBKDF2_SHA512_KEYSIZE totalRead readBytes attempts free buf NULL totalRead readBytes attempts close pipefd buf waitForEnvironment printf socketfd s2 sockaddr_un remote socklen_t t remote s2 accept socketfd sockaddr remote t fprintf stdout printf str BSIZE chop FILE s3 fdopen dup s2 feof s3 fgets str BSIZE s3 chop strlen str str chop str chop putenv strdup str fclose s3 printf close socketfd checkPamModule argc argv printf hash NULL x x argc x strcmp argv x printf argv x NULL x x argc printf NULL pipefd atoi argv x argv x NULL x socketfd atoi argv x argv x NULL pipefd socketfd printf pipefd socketfd NULL hash waitForHash hash NULL waitForEnvironment printf free hash NULL hash Q_DECL_EXPORT kdemain argc argv main argc argv hash NULL getenv hash checkPamModule argc argv QApplication app argc argv app setApplicationName QStringLiteral app setApplicationDisplayName i18n app setOrganizationDomain QStringLiteral app setApplicationVersion KWALLETD_VERSION_STRING KAboutData aboutdata I18N_NOOP i18n KWALLETD_VERSION_STRING i18n KAboutLicense::LGPL i18n aboutdata addAuthor i18n i18n QStringLiteral aboutdata addAuthor i18n i18n QStringLiteral aboutdata addAuthor i18n i18n QStringLiteral aboutdata addAuthor i18n i18n QStringLiteral KWalletD walletd MigrationAgent migrationAgent walletd hash KDBusService dbusUniqueInstance KDBusService::Unique QCommandLineParser cmdParser aboutdata setupCommandLine cmdParser cmdParser process app aboutdata setProgramIconName QStringLiteral app setQuitOnLastWindowClosed disableSessionManagement QSessionManager sm sm setRestartHint QSessionManager::RestartNever QObject::connect app QGuiApplication::commitDataRequest disableSessionManagement QObject::connect app QGuiApplication::saveStateRequest disableSessionManagement isWalletEnabled qDebug qDebug hash QByteArray passHash hash PBKDF2_SHA512_KEYSIZE wallet walletd pamOpen KWallet::Wallet::LocalWallet passHash wallet qWarning wallet qDebug free hash app exec</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">migrationagent.cpp</field>
+    <field name="url">migrationagent_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">MigrationAgent::MigrationAgent KWalletD kd hash _kf5_daemon kd _kde4_daemon _pam_hash hash QTimer::singleShot SLOT migrateWallets MigrationAgent::migrateWallets qDebug isAlreadyMigrated connectOldDaemon isEmptyOldWallet isMigrationWizardOk setAlreadyMigrated qDebug qDebug setAlreadyMigrated qDebug qDebug qDebug MigrationAgent::isAlreadyMigrated KConfig kwalletrc QStringLiteral KConfigGroup cfg kwalletrc cfg readEntry ENTRY_ALREADY_MIGRATED MigrationAgent::setAlreadyMigrated KConfig kwalletrc QStringLiteral KConfigGroup cfg kwalletrc cfg writeEntry ENTRY_ALREADY_MIGRATED MigrationAgent::connectOldDaemon QDBusConnectionInterface bus QDBusConnection::sessionBus interface bus isServiceRegistered QStringLiteral SERVICE_KWALLETD4 qDebug QDBusReply&lt;void&gt; reply bus startService SERVICE_KWALLETD4 reply isValid qDebug reply error bus isServiceRegistered QStringLiteral SERVICE_KWALLETD4 qDebug qDebug _kde4_daemon org::kde::KWallet QLatin1String SERVICE_KWALLETD4 QStringLiteral QDBusConnection::sessionBus _kde4_daemon isValid MigrationAgent::isMigrationWizardOk ok KConfig kwalletrc QStringLiteral KConfigGroup cfg kwalletrc showMigrationWizard cfg readEntry ENTRY_SHOW_MIGRATION_WIZARD showMigrationWizard MigrationWizard wizard MigrationWizard result wizard exec QDialog::Accepted result ok performMigration ok qDebug ok MigrationAgent::emitProgressMessage QString msg emit progressMessage msg MigrationException MigrationException QString msg _msg msg QString _msg R invokeAndCheck MigrationAgent migrationAgent F f QString errorMsg QDBusPendingReply&lt;R&gt; reply f reply waitForFinished QApplication::processEvents reply isValid migrationAgent emitProgressMessage errorMsg MigrationException errorMsg reply value MigrationAgent::isEmptyOldWallet QStringList wallets wallets invokeAndCheck&lt;QStringList&gt; MigrationAgent _kde4_daemon wallets i18n MigrationException ex wallets length MigrationAgent::performMigration WId wid withoutWizard appId i18n QStringList wallets invokeAndCheck&lt;QStringList&gt; _kde4_daemon wallets i18n QString wallet wallets emit progressMessage i18n wallet emit progressMessage i18n wallet handle5 withoutWizard _pam_hash handle5 _kf5_daemon pamOpen KWallet::Wallet::LocalWallet _pam_hash handle5 _kf5_daemon internalOpen appId wallet QString handle5 emit progressMessage i18n handle4 invokeAndCheck&lt;int&gt; wallet wid appId _kde4_daemon open wallet wid appId i18n wallet emit progressMessage i18n wallet QStringList folders invokeAndCheck&lt;QStringList&gt; handle4 appId _kde4_daemon folderList handle4 appId i18n QString folder folders emit progressMessage i18n folder QStringList entries invokeAndCheck&lt;QStringList&gt; handle4 folder appId _kde4_daemon entryList handle4 folder appId i18n folder QString key entries entryType invokeAndCheck&lt;int&gt; handle4 folder key appId _kde4_daemon entryType handle4 folder key appId i18n key _kf5_daemon hasEntry handle5 folder key appId emit progressMessage i18n key folder QByteArray entry invokeAndCheck&lt;QByteArray&gt; handle4 folder key appId _kde4_daemon readEntry handle4 folder key appId i18n key _kf5_daemon writeEntry handle5 folder key entry entryType appId msg i18n key emit progressMessage msg MigrationException msg _kf5_daemon sync handle5 appId emit progressMessage i18n MigrationException ex</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">migrationagent.h</field>
+    <field name="url">migrationagent_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWalletD MigrationAgent QObject Q_OBJECT MigrationAgent KWalletD kd hash isEmptyOldWallet performMigration WId wid withoutWizard Q_SLOTS migrateWallets isAlreadyMigrated connectOldDaemon isMigrationWizardOk setAlreadyMigrated Q_SLOTS emitProgressMessage QString Q_SIGNALS progressMessage QString KWalletD _kf5_daemon org::kde::KWallet _kde4_daemon _pam_hash</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">migrationwizard.cpp</field>
+    <field name="url">migrationwizard_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">MigrationPage1 QWizardPage MigrationPage1 QWidget wizard QWizardPage wizard _ui setupUi connect _ui _optionNo SIGNAL toggled wizard SLOT page1Updated connect _ui _optionNotInterested SIGNAL toggled wizard SLOT page1Updated connect _ui _optionYes SIGNAL toggled wizard SLOT page1Updated connect _ui _optionNo QRadioButton::toggled t isComplete _ui _optionNo isChecked Ui::MigrationPage1 _ui MigrationPage2 QWizardPage MigrationPage2 MigrationWizard wizard QWizardPage wizard _agent wizard agent _migrationCompleted false _ui setupUi initializePage connect _agent SIGNAL progressMessage QString _ui _report SLOT append QString _migrationCompleted _agent performMigration winId emit completeChanged isComplete _migrationCompleted Ui::MigrationPage2 _ui MigrationAgent _agent _migrationCompleted MigrationPage1 page1 NULL MigrationPage2 page2 NULL MigrationWizard::MigrationWizard MigrationAgent agent _agent agent setOption HaveFinishButtonOnEarlyPages page1 MigrationPage1 addPage page1 page2 MigrationPage2 addPage page2 MigrationWizard::~MigrationWizard page1 page2 MigrationWizard::page1Updated page1 _ui _optionYes isChecked page1 setFinalPage button NextButton setEnabled page1 _ui _optionNo isChecked page1 setFinalPage button NextButton setEnabled page1 _ui _optionNotInterested isChecked page1 setFinalPage button NextButton setEnabled</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">migrationwizard.h</field>
+    <field name="url">migrationwizard_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">MigrationAgent MigrationWizard QWizard Q_OBJECT MigrationWizard MigrationAgent agent MigrationWizard MigrationAgent agent _agent Q_SLOTS page1Updated MigrationAgent _agent</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">querydriver.cpp</field>
+    <field name="url">querydriver_8cpp_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">QueryDriver::QueryDriver argc argv QApplication argc argv theWallet verbose false entryFolder QStringLiteral QTimerEvent timerEvent QTimerEvent postEvent timerEvent QueryDriver::~QueryDriver theWallet QueryDriver::timerEvent QTimerEvent event QApplication::timerEvent event verbose qDebug wl Wallet::walletList wl indexOf walletName std::cout i18n walletName toUtf8 constData std::endl exit verbose qDebug walletName theWallet Wallet::openWallet walletName desktop screen winId Wallet::Asynchronous connect theWallet SIGNAL walletOpened SLOT walletOpened QueryDriver::setWalletName QString name walletName name QueryDriver::setMode Mode mode mode mode QueryDriver::walletOpened success success std::cout i18n walletName toUtf8 constData std::endl exit mode List readEntries Read readValue Write writeValue Q_ASSERT QueryDriver::readEntries theWallet Wallet::openWallet walletName entryFolder isEmpty fl theWallet folderList f fl std::cout f toUtf8 constData std::endl Q_ASSERT theWallet setFolder f el theWallet entryList e el std::cout e toUtf8 constData std::endl theWallet setFolder entryFolder std::cout i18n entryFolder toUtf8 constData std::endl exit el theWallet entryList e el std::cout e toUtf8 constData std::endl quit QueryDriver::readValue verbose qDebug entryName entryFolder walletName theWallet setFolder entryFolder std::cout i18n entryFolder toUtf8 constData std::endl exit Wallet::EntryType kind theWallet entryType entryName kind Wallet::Password readPasswordValue kind Wallet::Map readMapValue std::cout i18n entryName walletName toUtf8 constData std::endl exit quit QueryDriver::readMapValue QMap&lt;QString, QString&gt; map rc theWallet readMap entryName map rc std::cout i18n entryName walletName toUtf8 constData std::endl exit QJsonObject json e map keys json insert e QJsonValue::fromVariant QVariant map value e std::cout QJsonDocument json toJson constData std::endl QueryDriver::readPasswordValue QString entryValue rc theWallet readPassword entryName entryValue rc std::cout i18n entryName walletName toUtf8 constData std::endl exit QStringList el entryValue split QStringLiteral QString::SkipEmptyParts e el std::cout e toUtf8 constData std::endl QueryDriver::writeValue verbose qDebug entryName entryFolder walletName theWallet setFolder entryFolder QString passwordContents std::string line std::getline std::cin line passwordContents isEmpty passwordContents passwordContents QString::fromStdString line std::cin Wallet::EntryType kind theWallet entryType entryName kind Wallet::Password verbose qDebug passwordContents rc theWallet writePassword entryName passwordContents rc std::cout i18n entryName walletName toUtf8 constData std::endl exit kind Wallet::Map QJsonDocument json QJsonDocument::fromJson passwordContents toLatin1 json isNull QJsonObject values json object QMap&lt;QString, QString&gt; map e values keys map insert e values value e toString verbose qDebug map rc theWallet writeMap entryName map rc std::cout i18n entryName walletName toUtf8 constData std::endl exit quit</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">querydriver.h</field>
+    <field name="url">querydriver_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet QueryDriver QApplication Q_OBJECT Mode List Read Write QueryDriver argc argv QueryDriver setWalletName QString walletName setMode Mode mode setVerbose verbose setEntryName QString entryName entryName entryName setEntryFolder QString entryFolder entryFolder entryFolder timerEvent QTimerEvent event readEntries readValue readMapValue readPasswordValue writeValue Q_SLOTS walletOpened QString walletName Wallet theWallet Mode mode verbose QString entryName QString entryFolder</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">sha1.cc</field>
+    <field name="url">sha1_8cc_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">SHA1::SHA1 _hashlen _init reset SHA1::reset _h0 _h1 _h2 _h3 _h4 _nblocks _count memset _buf _init SHA1::size _hashlen SHA1::~SHA1 SHA1::transform data a b c d e tm x _data data a _h0 b _h1 c _h2 d _h3 e _h4 memcpy x _data i p2 i p2 x i i p2 p2 _data p2 _data p2 _data p2 _data R a b c d e F1 K1 x R e a b c d F1 K1 x R d e a b c F1 K1 x R c d e a b F1 K1 x R b c d e a F1 K1 x R a b c d e F1 K1 x R e a b c d F1 K1 x R d e a b c F1 K1 x R c d e a b F1 K1 x R b c d e a F1 K1 x R a b c d e F1 K1 x R e a b c d F1 K1 x R d e a b c F1 K1 x R c d e a b F1 K1 x R b c d e a F1 K1 x R a b c d e F1 K1 x R e a b c d F1 K1 M R d e a b c F1 K1 M R c d e a b F1 K1 M R b c d e a F1 K1 M R a b c d e F2 K2 M R e a b c d F2 K2 M R d e a b c F2 K2 M R c d e a b F2 K2 M R b c d e a F2 K2 M R a b c d e F2 K2 M R e a b c d F2 K2 M R d e a b c F2 K2 M R c d e a b F2 K2 M R b c d e a F2 K2 M R a b c d e F2 K2 M R e a b c d F2 K2 M R d e a b c F2 K2 M R c d e a b F2 K2 M R b c d e a F2 K2 M R a b c d e F2 K2 M R e a b c d F2 K2 M R d e a b c F2 K2 M R c d e a b F2 K2 M R b c d e a F2 K2 M R a b c d e F3 K3 M R e a b c d F3 K3 M R d e a b c F3 K3 M R c d e a b F3 K3 M R b c d e a F3 K3 M R a b c d e F3 K3 M R e a b c d F3 K3 M R d e a b c F3 K3 M R c d e a b F3 K3 M R b c d e a F3 K3 M R a b c d e F3 K3 M R e a b c d F3 K3 M R d e a b c F3 K3 M R c d e a b F3 K3 M R b c d e a F3 K3 M R a b c d e F3 K3 M R e a b c d F3 K3 M R d e a b c F3 K3 M R c d e a b F3 K3 M R b c d e a F3 K3 M R a b c d e F4 K4 M R e a b c d F4 K4 M R d e a b c F4 K4 M R c d e a b F4 K4 M R b c d e a F4 K4 M R a b c d e F4 K4 M R e a b c d F4 K4 M R d e a b c F4 K4 M R c d e a b F4 K4 M R b c d e a F4 K4 M R a b c d e F4 K4 M R e a b c d F4 K4 M R d e a b c F4 K4 M R c d e a b F4 K4 M R b c d e a F4 K4 M R a b c d e F4 K4 M R e a b c d F4 K4 M R d e a b c F4 K4 M R c d e a b F4 K4 M R b c d e a F4 K4 M _h0 a _h1 b _h2 c _h3 d _h4 e SHA1::readyToGo _init SHA1::process block len _init _block block cnt _count transform _buf _count _nblocks _block _count len _count len cnt _buf _count _block process len cnt len transform _block _count _nblocks len cnt _block len _count len cnt _buf _count _block cnt SHA1::hash t msb lsb p _init _buf process msb t _nblocks lsb t t msb msb t t lsb lsb t _count t msb t lsb lsb t t msb msb t _buf _count _count _count _buf _count _count _buf _count process memset _buf _buf msb _buf msb _buf msb _buf msb _buf lsb _buf lsb _buf lsb _buf lsb transform _buf p _buf X X X X X _init _buf</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">sha1.h</field>
+    <field name="url">sha1_8h_source.html#l00001</field>
+    <field name="keywords"></field>
+    <field name="text">KWALLETBACKEND5_EXPORT SHA1 SHA1 SHA1 size readyToGo process block len hash reset _hashlen _init _h0 _h1 _h2 _h3 _h4 _nblocks _count _buf transform data</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">GpgME</field>
+    <field name="url">namespaceGpgME.html</field>
+    <field name="keywords">GpgME</field>
+    <field name="text">This library is free software you can redistribute it and/or modify it under the terms of the GNU Library General Public License version 2 as published by the Free Software Foundation This library is distributed in the hope that it will be useful but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU Library General Public License for more details You should have received a copy of the GNU Library General Public License along with this library see the file COPYING.LIB If not write to the Free Software Foundation Inc 51 Franklin Street Fifth Floor Boston MA 02110-1301 USA</field>
+  </doc>
+  <doc>
+    <field name="type">namespace</field>
+    <field name="name">KWallet</field>
+    <field name="url">namespaceKWallet.html</field>
+    <field name="keywords">KWallet</field>
+    <field name="text">This library is free software you can redistribute it and/or modify it under the terms of the GNU Library General Public License version 2 as published by the Free Software Foundation This library is distributed in the hope that it will be useful but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU Library General Public License for more details You should have received a copy of the GNU Library General Public License along with this library see the file COPYING.LIB If not write to the Free Software Foundation Inc 51 Franklin Street Fifth Floor Boston MA 02110-1301 USA</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">KWallet::BackendCipherType</field>
+    <field name="url">namespaceKWallet.html#a1d12dae1e1df4225120626842392ec8f</field>
+    <field name="keywords">BackendCipherType KWallet::BackendCipherType KWallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">KWallet::BACKEND_CIPHER_BLOWFISH</field>
+    <field name="url">namespaceKWallet.html#a1d12dae1e1df4225120626842392ec8faaa02fb36d0d0c619a69103af4e434366</field>
+    <field name="keywords">BACKEND_CIPHER_BLOWFISH KWallet::BACKEND_CIPHER_BLOWFISH KWallet</field>
+    <field name="text">this is used by freshly allocated wallets</field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KWallet::MD5Digest</field>
+    <field name="url">classKWallet_1_1MD5Digest.html</field>
+    <field name="keywords">MD5Digest</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">class</field>
+    <field name="name">KWallet::Wallet</field>
+    <field name="url">classKWallet_1_1Wallet.html</field>
+    <field name="keywords">Wallet</field>
+    <field name="text">This class implements a generic system-wide Wallet for KDE This is the ONLY public interface George Staikos KDE Wallet Class</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KWallet::Wallet::folderListUpdated</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a6b4f07c045d7650ce30aa8df584ca975</field>
+    <field name="keywords">folderListUpdated KWallet::Wallet::folderListUpdated KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KWallet::Wallet::folderRemoved</field>
+    <field name="args">(const QString &amp;folder)</field>
+    <field name="url">classKWallet_1_1Wallet.html#abe99da68e094ad218c302c0851692980</field>
+    <field name="keywords">folderRemoved KWallet::Wallet::folderRemoved KWallet::Wallet</field>
+    <field name="text">folder The folder that was removed</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KWallet::Wallet::folderUpdated</field>
+    <field name="args">(const QString &amp;folder)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a2b0129c74641130020b7b95a56539580</field>
+    <field name="keywords">folderUpdated KWallet::Wallet::folderUpdated KWallet::Wallet</field>
+    <field name="text">folder The folder that was updated</field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KWallet::Wallet::walletClosed</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a697ff23f1fbc85bd6e18f5e6bb078e01</field>
+    <field name="keywords">walletClosed KWallet::Wallet::walletClosed KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">signal</field>
+    <field name="name">KWallet::Wallet::walletOpened</field>
+    <field name="args">(bool success)</field>
+    <field name="url">classKWallet_1_1Wallet.html#aef7f7a9d3f2f1e81bb32d1c025e2a799</field>
+    <field name="keywords">walletOpened KWallet::Wallet::walletOpened KWallet::Wallet</field>
+    <field name="text">success True if the wallet was opened successfully</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::~Wallet</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a443dc95f50e4a9d8e6d5282e13fedcde</field>
+    <field name="keywords">KWallet::Wallet::~Wallet KWallet::Wallet</field>
+    <field name="text">Closes the wallet</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::createFolder</field>
+    <field name="args">(const QString &amp;f)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a13ea912cda6bb610c3888dad2fd52989</field>
+    <field name="keywords">createFolder KWallet::Wallet::createFolder KWallet::Wallet</field>
+    <field name="text">f the name of the folder to create Returns true if the folder was successfully created</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::currentFolder</field>
+    <field name="args">() const</field>
+    <field name="url">classKWallet_1_1Wallet.html#a5897988799772b275b1ce6b7f96aff5d</field>
+    <field name="keywords">currentFolder KWallet::Wallet::currentFolder KWallet::Wallet</field>
+    <field name="text">If the folder name is empty it is working in the global folder which is valid but discouraged Returns the current working folder</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::entryList</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a8f1b80deaefb2aafc956a9dedf3110f8</field>
+    <field name="keywords">entryList KWallet::Wallet::entryList KWallet::Wallet</field>
+    <field name="text">Returns an empty list if the wallet is not open or if the folder is empty</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::entryType</field>
+    <field name="args">(const QString &amp;key)</field>
+    <field name="url">classKWallet_1_1Wallet.html#ac70609a0f05f136c45bb6ca516f9fe00</field>
+    <field name="keywords">entryType KWallet::Wallet::entryType KWallet::Wallet</field>
+    <field name="text">key The key to look up Returns an enumerated type representing the type of the entry</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::folderList</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a41a0c9ce1bb132ea65f57152d607f719</field>
+    <field name="keywords">folderList KWallet::Wallet::folderList KWallet::Wallet</field>
+    <field name="text">Returns an empty list if the wallet is not open</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::hasEntry</field>
+    <field name="args">(const QString &amp;key)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a37950be8a2712446a7a86dca489499d2</field>
+    <field name="keywords">hasEntry KWallet::Wallet::hasEntry KWallet::Wallet</field>
+    <field name="text">key The key to search for Returns true if the folder contains key</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::hasFolder</field>
+    <field name="args">(const QString &amp;f)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a75593f21796f7423405dea3a65b74dfe</field>
+    <field name="keywords">hasFolder KWallet::Wallet::hasFolder KWallet::Wallet</field>
+    <field name="text">f the name of the folder to check for Returns true if the folder exists in the wallet</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::isOpen</field>
+    <field name="args">() const</field>
+    <field name="url">classKWallet_1_1Wallet.html#a4acf596db7d79c10cf2778b6892d4d5f</field>
+    <field name="keywords">isOpen KWallet::Wallet::isOpen KWallet::Wallet</field>
+    <field name="text">Returns true if the wallet handle is valid and open</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::lockWallet</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a17fb06745ae8c526baeff2b41fb3c1f0</field>
+    <field name="keywords">lockWallet KWallet::Wallet::lockWallet KWallet::Wallet</field>
+    <field name="text">It will disconnect all applications using the wallet Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readEntry</field>
+    <field name="args">(const QString &amp;key, QByteArray &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a8287b46482402cf70d6d8831e4c06473</field>
+    <field name="keywords">readEntry KWallet::Wallet::readEntry KWallet::Wallet</field>
+    <field name="text">The entry format is unknown except that it is either a QByteArray or a QDataStream which effectively means that it is anything key The key of the entry to read value A buffer to fill with the value Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readEntryList</field>
+    <field name="args">(const QString &amp;key, QMap&lt; QString, QByteArray &gt; &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a0d357348d5687dc66f0ecfaf2702f997</field>
+    <field name="keywords">readEntryList KWallet::Wallet::readEntryList KWallet::Wallet</field>
+    <field name="text">The entry format is unknown except that it is either a QByteArray or a QDataStream which effectively means that it is anything key The key of the entry to read Wildcards are supported value A buffer to fill with the value The key in the map is the entry key Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readMap</field>
+    <field name="args">(const QString &amp;key, QMap&lt; QString, QString &gt; &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#aa0b5e38d102373e501463daa9c648082</field>
+    <field name="keywords">readMap KWallet::Wallet::readMap KWallet::Wallet</field>
+    <field name="text">key The key of the entry to read value A map buffer to fill with the value Returns 0 on success non-zero on error Will return an error if the key was not originally written as a map</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readMapList</field>
+    <field name="args">(const QString &amp;key, QMap&lt; QString, QMap&lt; QString, QString &gt; &gt; &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a937a4191ec43f84798ab5e3e2ca6ad8e</field>
+    <field name="keywords">readMapList KWallet::Wallet::readMapList KWallet::Wallet</field>
+    <field name="text">key The key of the entry to read Wildcards are supported value A buffer to fill with the value The key in the map is the entry key Returns 0 on success non-zero on error Will return an error if the key was not originally written as a map</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readPassword</field>
+    <field name="args">(const QString &amp;key, QString &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#ac8d99286d1b1be392fe9a4ec540388ac</field>
+    <field name="keywords">readPassword KWallet::Wallet::readPassword KWallet::Wallet</field>
+    <field name="text">key The key of the entry to read value A password buffer to fill with the value Returns 0 on success non-zero on error Will return an error if the key was not originally written as a password</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::readPasswordList</field>
+    <field name="args">(const QString &amp;key, QMap&lt; QString, QString &gt; &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a6efc9a0c696b662be1528094311b6078</field>
+    <field name="keywords">readPasswordList KWallet::Wallet::readPasswordList KWallet::Wallet</field>
+    <field name="text">key The key of the entry to read Wildcards are supported value A buffer to fill with the value The key in the map is the entry key Returns 0 on success non-zero on error Will return an error if the key was not originally written as a password</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::removeEntry</field>
+    <field name="args">(const QString &amp;key)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a24f8b5ae0670de3d1ec57ca1194047f0</field>
+    <field name="keywords">removeEntry KWallet::Wallet::removeEntry KWallet::Wallet</field>
+    <field name="text">key The key to remove Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::removeFolder</field>
+    <field name="args">(const QString &amp;f)</field>
+    <field name="url">classKWallet_1_1Wallet.html#aaa0b8a3b0eeb3cfb221581ae49c81ceb</field>
+    <field name="keywords">removeFolder KWallet::Wallet::removeFolder KWallet::Wallet</field>
+    <field name="text">f the name of the folder to remove Returns true if the folder was successfully removed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::renameEntry</field>
+    <field name="args">(const QString &amp;oldName, const QString &amp;newName)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a0f0dee017afd3b4d2ed05ae35d0af034</field>
+    <field name="keywords">renameEntry KWallet::Wallet::renameEntry KWallet::Wallet</field>
+    <field name="text">oldName The original key of the entry newName The new key of the entry Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::requestChangePassword</field>
+    <field name="args">(WId w)</field>
+    <field name="url">classKWallet_1_1Wallet.html#aa143f30c1dda14a75c0f5b0ec4458be6</field>
+    <field name="keywords">requestChangePassword KWallet::Wallet::requestChangePassword KWallet::Wallet</field>
+    <field name="text">w The window id to associate any dialogs with You can pass 0 if you don t have a window the password dialog should associate with</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::setFolder</field>
+    <field name="args">(const QString &amp;f)</field>
+    <field name="url">classKWallet_1_1Wallet.html#ae3da6744454ec13fb52f41731b215765</field>
+    <field name="keywords">setFolder KWallet::Wallet::setFolder KWallet::Wallet</field>
+    <field name="text">The folder must exist or this call will fail Create a folder with createFolder() f the name of the folder to make the working folder Returns true if the folder was successfully set</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::sync</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a130cd4fc92605d7e237d1105a9ef08c5</field>
+    <field name="keywords">sync KWallet::Wallet::sync KWallet::Wallet</field>
+    <field name="text">You don t normally need to use this It happens automatically on close Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::walletName</field>
+    <field name="args">() const</field>
+    <field name="url">classKWallet_1_1Wallet.html#ae3715e8f2018d84c27da165476bc3a70</field>
+    <field name="keywords">walletName KWallet::Wallet::walletName KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::writeEntry</field>
+    <field name="args">(const QString &amp;key, const QByteArray &amp;value, EntryType entryType)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a6d5989cc8fbe7e304a44dadf7de3e635</field>
+    <field name="keywords">writeEntry KWallet::Wallet::writeEntry KWallet::Wallet</field>
+    <field name="text">Be careful with this it could cause inconsistency in the future since you can put an arbitrary entry type in place key The key of the new entry value The value of the entry entryType The type of the entry Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::writeEntry</field>
+    <field name="args">(const QString &amp;key, const QByteArray &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a459ca4c60660976ebcfb53389c015df7</field>
+    <field name="keywords">writeEntry KWallet::Wallet::writeEntry KWallet::Wallet</field>
+    <field name="text">key The key of the new entry value The value of the entry Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::writeMap</field>
+    <field name="args">(const QString &amp;key, const QMap&lt; QString, QString &gt; &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#af859025af4a612a25e24724c9cdada52</field>
+    <field name="keywords">writeMap KWallet::Wallet::writeMap KWallet::Wallet</field>
+    <field name="text">key The key of the new entry value The value of the map Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::writePassword</field>
+    <field name="args">(const QString &amp;key, const QString &amp;value)</field>
+    <field name="url">classKWallet_1_1Wallet.html#ad855eaa7974e230a5d26abb74fbbc89d</field>
+    <field name="keywords">writePassword KWallet::Wallet::writePassword KWallet::Wallet</field>
+    <field name="text">key The key of the new entry value The value of the password Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::changePassword</field>
+    <field name="args">(const QString &amp;name, WId w)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a76bda5b7832c205296c15b0b84f510a6</field>
+    <field name="keywords">changePassword KWallet::Wallet::changePassword KWallet::Wallet</field>
+    <field name="text">name The wallet to change the password of w The window id to associate any dialogs with You can pass 0 if you don t have a window the password dialog should associate with</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::closeWallet</field>
+    <field name="args">(const QString &amp;name, bool force)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a31165700f48d8deb3c8568ff551c5c25</field>
+    <field name="keywords">closeWallet KWallet::Wallet::closeWallet KWallet::Wallet</field>
+    <field name="text">The wallet will only be closed if it is open but not in use rare or if it is forced closed name The name of the wallet to close force Set true to force the wallet closed even if it is in use by others Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::deleteWallet</field>
+    <field name="args">(const QString &amp;name)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a6a01ec7d9c1caf5d45150202b611ff92</field>
+    <field name="keywords">deleteWallet KWallet::Wallet::deleteWallet KWallet::Wallet</field>
+    <field name="text">The wallet will be forced closed first name The name of the wallet to delete Returns 0 on success non-zero on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::disconnectApplication</field>
+    <field name="args">(const QString &amp;wallet, const QString &amp;app)</field>
+    <field name="url">classKWallet_1_1Wallet.html#aa95980714151651d98b40b4572681d5b</field>
+    <field name="keywords">disconnectApplication KWallet::Wallet::disconnectApplication KWallet::Wallet</field>
+    <field name="text">wallet The name of the wallet to disconnect app The name of the application to disconnect Returns true on success false on error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::folderDoesNotExist</field>
+    <field name="args">(const QString &amp;wallet, const QString &amp;folder)</field>
+    <field name="url">classKWallet_1_1Wallet.html#ac0e1b26496c6316b1a02c71063d997b3</field>
+    <field name="keywords">folderDoesNotExist KWallet::Wallet::folderDoesNotExist KWallet::Wallet</field>
+    <field name="text">This does not require decryption of the wallet This is a handy optimization to avoid prompting the user if your data is certainly not in the wallet wallet The wallet to look in folder The folder to look up Returns true if the folder does NOT exist in the wallet or the wallet does not exist</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::FormDataFolder</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#af644bc9318e68cc09b569a762daa3597</field>
+    <field name="keywords">FormDataFolder KWallet::Wallet::FormDataFolder KWallet::Wallet</field>
+    <field name="text">It is automatically created when a wallet is created but the user may still delete it so you should check for its existence and recreate it if necessary and desired</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::isEnabled</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#aa4967b716b8f2be3647e1725e4b912e8</field>
+    <field name="keywords">isEnabled KWallet::Wallet::isEnabled KWallet::Wallet</field>
+    <field name="text">Normally you do not need to use this because openWallet() will just fail Returns true if the wallet enabled else false</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::isOpen</field>
+    <field name="args">(const QString &amp;name)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a82ec0560e99f0ea21f524de8edbca77f</field>
+    <field name="keywords">isOpen KWallet::Wallet::isOpen KWallet::Wallet</field>
+    <field name="text">name The name of the wallet to check Returns true if the wallet is open else false</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::isUsingKSecretsService</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#acbc3dddd5a1cdd50f94d399fcf1aacab</field>
+    <field name="keywords">isUsingKSecretsService KWallet::Wallet::isUsingKSecretsService KWallet::Wallet</field>
+    <field name="text">Returns true if the KSecretsService infrastructure is active</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::keyDoesNotExist</field>
+    <field name="args">(const QString &amp;wallet, const QString &amp;folder, const QString &amp;key)</field>
+    <field name="url">classKWallet_1_1Wallet.html#af480db9d17fdf17c94a333bacdf22785</field>
+    <field name="keywords">keyDoesNotExist KWallet::Wallet::keyDoesNotExist KWallet::Wallet</field>
+    <field name="text">This does not require decryption of the wallet This is a handy optimization to avoid prompting the user if your data is certainly not in the wallet wallet The wallet to look in folder The folder to look in key The key to look up Returns true if the key does NOT exist in the wallet or the folder or wallet does not exist</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::LocalWallet</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#ab1b58623275af43a137859e13a0f22ed</field>
+    <field name="keywords">LocalWallet KWallet::Wallet::LocalWallet KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::NetworkWallet</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a571cde1bda4b8d00b4b43d3eb08530bb</field>
+    <field name="keywords">NetworkWallet KWallet::Wallet::NetworkWallet KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::openWallet</field>
+    <field name="args">(const QString &amp;name, WId w, OpenType ot=Synchronous)</field>
+    <field name="url">classKWallet_1_1Wallet.html#acfdc7a90f734a614cd55f57568854a28</field>
+    <field name="keywords">openWallet KWallet::Wallet::openWallet KWallet::Wallet</field>
+    <field name="text">The user will be prompted to allow your application to open the wallet and may be prompted for a password You are responsible for deleting this object when you are done with it name The name of the wallet to open ot If Asynchronous the call will return immediately with a non-null pointer to an invalid wallet You must immediately connect the walletOpened() signal to a slot so that you will know when it is opened or when it fails w The window id to associate any dialogs with You can pass 0 if you don t have a window the password dialog should associate with Returns a pointer to the wallet if successful or a null pointer on error or if rejected A null pointer can also be returned if user choose to deactivate the wallet system</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::PasswordFolder</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a000df53c2ab5e6824ce93d3fcf44ebb7</field>
+    <field name="keywords">PasswordFolder KWallet::Wallet::PasswordFolder KWallet::Wallet</field>
+    <field name="text">It is automatically created when a wallet is created but the user may still delete it so you should check for its existence and recreate it if necessary and desired</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::users</field>
+    <field name="args">(const QString &amp;wallet)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a1aaf970f40573b4e39ae6167f4c2badd</field>
+    <field name="keywords">users KWallet::Wallet::users KWallet::Wallet</field>
+    <field name="text">wallet The wallet to query Returns a list of all DCOP application IDs using the wallet</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::walletList</field>
+    <field name="args">()</field>
+    <field name="url">classKWallet_1_1Wallet.html#a48ef2d3a1c1622cce7bb1c1655b2b842</field>
+    <field name="keywords">walletList KWallet::Wallet::walletList KWallet::Wallet</field>
+    <field name="text">Returns a list of the names of all wallets that are open</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::Wallet</field>
+    <field name="args">(int handle, const QString &amp;name)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a0dc090b1e78c54242ff4e14d8270013e</field>
+    <field name="keywords">Wallet KWallet::Wallet::Wallet KWallet::Wallet</field>
+    <field name="text">handle The handle for the wallet name The name of the wallet</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::Wallet</field>
+    <field name="args">(const Wallet &amp;)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a9183eb0d05e5cd53058570cb3596b3b0</field>
+    <field name="keywords">Wallet KWallet::Wallet::Wallet KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">KWallet::Wallet::virtual_hook</field>
+    <field name="args">(int id, void *data)</field>
+    <field name="url">classKWallet_1_1Wallet.html#a0e1702f5678c494c39bd1160debdd0b6</field>
+    <field name="keywords">virtual_hook KWallet::Wallet::virtual_hook KWallet::Wallet</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">index</field>
+    <field name="url">index.html</field>
+    <field name="keywords"></field>
+    <field name="text">KWallet Framework Safe desktop-wide storage for passwords Introduction This framework contains two main components Interface to KWallet the safe desktop-wide storage for passwords on KDE work spaces The kwalletd used to safely store the passwords on KDE work spaces The library can be built alone without kwalletd by setting the BUILD_KWALLETD option to OFF</field>
+  </doc>
+</add>

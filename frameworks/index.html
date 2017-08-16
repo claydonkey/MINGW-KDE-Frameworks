@@ -1,0 +1,3297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Documentation</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../resources/favicon.ico" />
+    <link rel="icon" href="../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../resources/css/kapidox.css" />
+
+
+  
+  <script type="text/javascript" src="../resources/js/notetip.js"></script>
+  <script type="text/javascript" src="../resources/js/subgroup.js"></script>
+  <script>
+  $(document).ready(main);
+  </script>
+
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../index.html">KDE API Reference</a></li>
+      
+        <li class="active"><a href="./index.html">The KDE Frameworks</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+    <div class="menu-title">
+    <h2>Table of Content</h2>
+    </div>
+    <div class="menu-content">
+    <ul>
+        <li>
+        <ul>
+            
+            
+            <li><a href="#sg-tier_1">Tier 1</a></li>
+            
+            <li><a href="#sg-tier_2">Tier 2</a></li>
+            
+            <li><a href="#sg-tier_3">Tier 3</a></li>
+            
+            <li><a href="#sg-tier_4">Tier 4</a></li>
+            
+            <li><a href="#sg-porting_aids">Porting Aids</a></li>
+            
+        </ul>
+        </li>
+    </ul>
+    </div>
+</div>
+
+<div class="menu-box">
+    <div class="menu-title">
+    <h2>Filters</h2>
+    </div>
+    <div class="menu-content">
+    <ul>
+        <li>
+        <label>
+            <input id="platform-filter" type="checkbox"> Filter by platform
+        </label>
+        <ul id="platform-filter-group" style="display: none">
+            <li><br><i>Only show libraries which supports all of:</i></li>
+            
+            <li>
+                <label>
+                <input data-platform="Android" class="platform-checkbox" type="checkbox" checked="1"> Android
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                <input data-platform="FreeBSD" class="platform-checkbox" type="checkbox" checked="1"> FreeBSD
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                <input data-platform="Linux" class="platform-checkbox" type="checkbox" checked="1"> Linux
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                <input data-platform="MacOSX" class="platform-checkbox" type="checkbox" checked="1"> MacOSX
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                <input data-platform="Windows" class="platform-checkbox" type="checkbox" checked="1"> Windows
+                </label>
+            </li>
+            
+            <br />
+        </ul>
+        </li>
+        <li>
+        <label>
+            <input id="showMaintainers" type="checkbox"> Show maintainers
+        </label>
+        </li>
+    </ul>
+    </div>
+</div>
+
+<div class="menu-box">
+    <div class="menu-title">
+    <h2>About</h2>
+    </div>
+    <div class="menu-content">
+    <p>Providing everything from simple utility classes to integrated solutions for common requirements of desktop applications</p>
+
+    <dl>
+        <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+    
+        <dt>Supported platforms</dt>
+        <dd>Android (partial), FreeBSD (partial), Linux, MacOSX (partial), Windows (partial)</dd>
+    
+        <dt>Community</dt>
+        <dd>IRC channel: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+    </dl>
+    </div>
+</div>
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a>
+    The KDE Frameworks
+</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+            <div class="contents">
+              <div class="textblock">
+                
+                    <p>The KDE Frameworks build on the <a href="http://qt-project.org">Qt framework</a>, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful KIO multi-protocol file access framework).</p>
+                
+                    <p>The KDE Frameworks can be used in CMake-based and QMake-based projects, and most of them are portable to at least Windows, Mac and Linux. The documentation of each framework has code snippets that show how to include the framework in a QMake or CMake project.</p>
+                
+                    <p>The frameworks are divided into four tiers, based on the kind of dependencies that they have. For instance, Tier 1 frameworks depend on Qt and possibly some third-party libraries, but not on other frameworks. This makes them easy to integrate into existing applications.</p>
+                
+
+              </div>
+              <h2>List of the libraries</h2>
+
+              
+              
+                <h3><a name="sg-tier_1"></a>Tier 1</h3>
+                <p> Tier 1 frameworks depend only on Qt (and possibly a small number of other third-party libraries), so can easily be used by any Qt-based project.</p>
+                
+  <table class="doxtable libraries">
+    <tr>
+      <th class="library-main-column">Framework</th>
+      <th class="library-detail-column library-maintainer-column">Maintainer</th>
+      <th class="library-detail-column library-type-column">Type</th>
+    </tr>
+  
+    <tr class="library-row" id="lib-attica-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/attica-5.26.0/html/index.html">Attica</a>
+        </div>
+        <span class="library-description">Open Collaboration Services API</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kapidox" data-platforms="Linux,FreeBSD,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              "
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kapidox/html/index.html">KApiDox</a>
+        </div>
+        <span class="library-description">Scripts and data for building API documentation (dox) in a standard format and style</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:olivier@churlaud.com">Olivier Churlaud</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-karchive-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/karchive-5.26.0/html/index.html">KArchive</a>
+        </div>
+        <span class="library-description">File compression</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kcodecs-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kcodecs-5.26.0/html/index.html">KCodecs</a>
+        </div>
+        <span class="library-description">Text encoding</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kconfig-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kconfig-5.26.0/html/index.html">KConfig</a>
+        </div>
+        <span class="library-description">Configuration system</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kcoreaddons-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kcoreaddons-5.26.0/html/index.html">KCoreAddons</a>
+        </div>
+        <span class="library-description">Addons to QtCore</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:mpyne@kde.org">Michael Pyne</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdbusaddons-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdbusaddons-5.26.0/html/index.html">KDBusAddons</a>
+        </div>
+        <span class="library-description">Addons to QtDBus</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdnssd-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdnssd-5.26.0/html/index.html">KDNSSD</a>
+        </div>
+        <span class="library-description">Abstraction to system DNSSD features</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kguiaddons-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kguiaddons-5.26.0/html/index.html">KGuiAddons</a>
+        </div>
+        <span class="library-description">Addons to QtGui</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-ki18n-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/ki18n-5.26.0/html/index.html">KI18n</a>
+        </div>
+        <span class="library-description">Advanced internationalization framework</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kidletime-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kidletime-5.26.0/html/index.html">KIdleTime</a>
+        </div>
+        <span class="library-description">Monitoring user activity</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kitemmodels-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kitemmodels-5.26.0/html/index.html">KItemModels</a>
+        </div>
+        <span class="library-description">Models for Qt Model/View system</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kitemviews-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kitemviews-5.26.0/html/index.html">KItemViews</a>
+        </div>
+        <span class="library-description">Widget addons for Qt Model/View</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:david@davidedmundson.co.uk">David Edmundson</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kplotting-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kplotting-5.26.0/html/index.html">KPlotting</a>
+        </div>
+        <span class="library-description">Lightweight plotting framework</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:cfeck@kde.org">Christoph Feck</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kwidgetsaddons-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kwidgetsaddons-5.26.0/html/index.html">KWidgetsAddons</a>
+        </div>
+        <span class="library-description">Addons to QtWidgets</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:cfeck@kde.org">Christoph Feck</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kwindowsystem-5.26.0" data-platforms="Linux,MacOSX,Windows">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+              <a data-note="Only platform X11 is supported" href="#">
+            
+                <span class="library-platform-text">Linux</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+              <a data-note="Not all features supported" href="#">
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+              <a data-note="Not all features supported" href="#">
+            
+                <span class="library-platform-text">Windows</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kwindowsystem-5.26.0/html/index.html">KWindowSystem</a>
+        </div>
+        <span class="library-description">Access to the windowing system</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-solid-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/solid-5.26.0/html/index.html">Solid</a>
+        </div>
+        <span class="library-description">Hardware integration and detection</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:afiestas@kde.org">Àlex Fiestas</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-sonnet-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/sonnet-5.26.0/html/index.html">Sonnet</a>
+        </div>
+        <span class="library-description">Support for spellchecking</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:martin.sandsmark@kde.org">Martin Tobias Holmedahl Sandsmark</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+  </table>
+
+              
+                <h3><a name="sg-tier_2"></a>Tier 2</h3>
+                <p> Tier 2 frameworks additionally depend on tier 1 frameworks, but still have easily manageable dependencies.</p>
+                
+  <table class="doxtable libraries">
+    <tr>
+      <th class="library-main-column">Framework</th>
+      <th class="library-detail-column library-maintainer-column">Maintainer</th>
+      <th class="library-detail-column library-type-column">Type</th>
+    </tr>
+  
+    <tr class="library-row" id="lib-kauth-5.26.0" data-platforms="MacOSX,Linux">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kauth-5.26.0/html/index.html">KAuth</a>
+        </div>
+        <span class="library-description">Abstraction to system policy and authentication features</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kcompletion-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kcompletion-5.26.0/html/index.html">KCompletion</a>
+        </div>
+        <span class="library-description">Text completion helpers and widgets</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:davidgiloliva@gmail.com">David Gil Oliva</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kcrash-5.26.0" data-platforms="Linux,Windows">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kcrash-5.26.0/html/index.html">KCrash</a>
+        </div>
+        <span class="library-description">Support for application crash analysis and bug report from apps</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdoctools-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdoctools-5.26.0/html/index.html">KDocTools</a>
+        </div>
+        <span class="library-description">Documentation generation from docbook</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:luigi.toscano@tiscali.it">Luigi Toscano</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kimageformats-5.26.0" data-platforms="Linux,MacOSX,Windows,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+              <a data-note="No EPS support on Windows" href="#">
+            
+                <span class="library-platform-text">Windows</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kimageformats-5.26.0/html/index.html">KImageFormats</a>
+        </div>
+        <span class="library-description">Image format plugins for Qt</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:alex.merry@kde.org">Alex Merry</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kjobwidgets-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kjobwidgets-5.26.0/html/index.html">KJobWidgets</a>
+        </div>
+        <span class="library-description">Widgets for tracking KJob instances</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-knotifications-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/knotifications-5.26.0/html/index.html">KNotifications</a>
+        </div>
+        <span class="library-description">Abstraction for system notifications</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:martin.klapetek@gmail.com">Martin Klapetek</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kunitconversion-5.26.0" data-platforms="Linux,Windows,MacOSX,Android">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              "
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kunitconversion-5.26.0/html/index.html">KUnitConversion</a>
+        </div>
+        <span class="library-description">Support for unit conversion</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:jlayt@kde.org">John Layt</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kpackage-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kpackage-5.26.0/html/index.html">Package</a>
+        </div>
+        <span class="library-description">Library to load and install packages of non binary files as they were a plugin</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+  </table>
+
+              
+                <h3><a name="sg-tier_3"></a>Tier 3</h3>
+                <p> Tier 3 frameworks are generally more powerful, comprehensive packages, and consequently have more complex dependencies.</p>
+                
+  <table class="doxtable libraries">
+    <tr>
+      <th class="library-main-column">Framework</th>
+      <th class="library-detail-column library-maintainer-column">Maintainer</th>
+      <th class="library-detail-column library-type-column">Type</th>
+    </tr>
+  
+    <tr class="library-row" id="lib-kbookmarks-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kbookmarks-5.26.0/html/index.html">KBookmarks</a>
+        </div>
+        <span class="library-description">Support for bookmarks and the XBEL format</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kcmutils-5.26.0" data-platforms="Linux">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kcmutils-5.26.0/html/index.html">KCMUtils</a>
+        </div>
+        <span class="library-description">Utilities for working with KCModules</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kconfigwidgets-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kconfigwidgets-5.26.0/html/index.html">KConfigWidgets</a>
+        </div>
+        <span class="library-description">Widgets for configuration dialogs</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdeclarative-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+              <a data-note="The supported remote Urls depends from what runtime kio slaves plugins are installed" href="#">
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdeclarative-5.26.0/html/index.html">KDeclarative</a>
+        </div>
+        <span class="library-description">Provides integration of QML and KDE Frameworks</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kded-5.26.0" data-platforms="Linux">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kded-5.26.0/html/index.html">KDED</a>
+        </div>
+        <span class="library-description">Extensible deamon for providing system level services</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:afiestas@kde.org">Àlex Fiestas</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdesignerplugin-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdesignerplugin-5.26.0/html/index.html">KDesignerPlugin</a>
+        </div>
+        <span class="library-description">Integration of Frameworks widgets in Qt Designer/Creator</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:alex.merry@kde.org">Alex Merry</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kdewebkit-5.36.0" data-platforms="Linux,FreeBSD,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              "
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kdewebkit-5.36.0/html/index.html">KDEWebKit</a>
+        </div>
+        <span class="library-description">KDE Integration for QtWebKit</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kglobalaccel-5.26.0" data-platforms="Linux">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+              <a data-note="Supports only platform X11" href="#">
+            
+                <span class="library-platform-text">Linux</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kglobalaccel-5.26.0/html/index.html">KGlobalAccel</a>
+        </div>
+        <span class="library-description">Add support for global workspace shortcuts</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kiconthemes-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kiconthemes-5.26.0/html/index.html">KIconThemes</a>
+        </div>
+        <span class="library-description">Support for icon themes</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:cfeck@kde.org">Christoph Feck</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kinit-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kinit-5.26.0/html/index.html">KInit</a>
+        </div>
+        <span class="library-description">Process launcher to speed up launching KDE applications</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kio-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kio-5.26.0/html/index.html">KIO</a>
+        </div>
+        <span class="library-description">Resource and network access abstraction</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kio-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kio-5.26.0/html/index.html">KIO</a>
+        </div>
+        <span class="library-description">Resource and network access abstraction</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-knewstuff-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/knewstuff-5.26.0/html/index.html">KNewStuff</a>
+        </div>
+        <span class="library-description">Support for downloading application assets from the network</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:jpwhiting@kde.org">Jeremy Whiting</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kparts-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kparts-5.26.0/html/index.html">KParts</a>
+        </div>
+        <span class="library-description">Document centric plugin system</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kservice-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kservice-5.26.0/html/index.html">KService</a>
+        </div>
+        <span class="library-description">Advanced plugin and service introspection</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-ktextwidgets-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/ktextwidgets-5.26.0/html/index.html">KTextWidgets</a>
+        </div>
+        <span class="library-description">Advanced text editing widgets</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:montel@kde.org">Laurent Montel</a>
+    </td>
+      <td class="library-detail-column library-type-column">functional</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kwallet-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kwallet-5.26.0/html/index.html">KWallet</a>
+        </div>
+        <span class="library-description">Secure and unified container for user passwords</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:valir@kde.org">Valentin Rusu</a>
+    </td>
+      <td class="library-detail-column library-type-column">solution</td>
+      </td>
+    </tr>
+  
+    <tr class="library-row" id="lib-kxmlgui-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+                <span class="library-platform-text">Linux</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/kxmlgui-5.26.0/html/index.html">KXmlGui</a>
+        </div>
+        <span class="library-description">User configurable main windows</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+  </table>
+
+              
+                <h3><a name="sg-tier_4"></a>Tier 4</h3>
+                <p> Tier 4 frameworks can be mostly ignored by application programmers; this tier consists of plugins acting behind the scenes to provide additional functionality or platform integration to existing frameworks (including Qt).</p>
+                
+  <table class="doxtable libraries">
+    <tr>
+      <th class="library-main-column">Framework</th>
+      <th class="library-detail-column library-maintainer-column">Maintainer</th>
+      <th class="library-detail-column library-type-column">Type</th>
+    </tr>
+  
+    <tr class="library-row" id="lib-frameworkintegration-5.26.0" data-platforms="Linux,Windows,MacOSX">
+      <td class="library-main-column">
+        <img class="indicator not-available-indicator" src="../resources/icons/bad.png"/>
+        <img class="indicator available-indicator" src="../resources/icons/ok.png"/>
+        <div>
+          <div class="library-platforms">
+          
+            <span class="library-platform
+              library-platform-Android
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">Android</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-FreeBSD
+              library-platform-unsupported"
+              >
+            
+                <span class="library-platform-text">FreeBSD</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Linux
+              "
+              >
+            
+              <a data-note="XCB is needed for KStyle" href="#">
+            
+                <span class="library-platform-text">Linux</span>
+            
+                <img class="warning-tooltip" src="../resources/icons/warning.png"/></a>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-MacOSX
+              "
+              >
+            
+                <span class="library-platform-text">MacOSX</span>
+            
+            </span>
+          
+            <span class="library-platform
+              library-platform-Windows
+              "
+              >
+            
+                <span class="library-platform-text">Windows</span>
+            
+            </span>
+          
+          </div>
+          <a class="library-fancyname" href="../frameworks/frameworkintegration-5.26.0/html/index.html">FrameworkIntegration</a>
+        </div>
+        <span class="library-description">Workspace and cross-framework integration plugins</span>
+      </td>
+      <td class="library-detail-column library-maintainer-column">    
+      <a href="mailto:afiestas@kde.org">Àlex Fiestas</a>
+    </td>
+      <td class="library-detail-column library-type-column">integration</td>
+      </td>
+    </tr>
+  
+  </table>
+
+              
+                <h3><a name="sg-porting_aids"></a>Porting Aids</h3>
+                <p> Porting Aids frameworks provide code and utilities to ease the transition from kdelibs 4 to KDE Frameworks 5. Code should aim to port away from this framework, new projects should avoid using these libraries.</p>
+                
+  <table class="doxtable libraries">
+    <tr>
+      <th class="library-main-column">Framework</th>
+      <th class="library-detail-column library-maintainer-column">Maintainer</th>
+      <th class="library-detail-column library-type-column">Type</th>
+    </tr>
+  
+  </table>
+
+              
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

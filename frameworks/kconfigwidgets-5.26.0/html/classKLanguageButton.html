@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KConfigWidgets - KLanguageButton Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KConfigWidgets</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KConfigWidgets"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKCModule.html">KCModule</option>
+        
+        <option value="classKCodecAction.html">KCodecAction</option>
+        
+        <option value="classKColorScheme.html">KColorScheme</option>
+        
+        <option value="classKColorSchemeManager.html">KColorSchemeManager</option>
+        
+        <option value="classKConfigDialog.html">KConfigDialog</option>
+        
+        <option value="classKConfigDialogManager.html">KConfigDialogManager</option>
+        
+        <option value="classKLanguageButton.html">KLanguageButton</option>
+        
+        <option value="classKPasteTextAction.html">KPasteTextAction</option>
+        
+        <option value="classKRecentFilesAction.html">KRecentFilesAction</option>
+        
+        <option value="classKStatefulBrush.html">KStatefulBrush</option>
+        
+        <option value="classKTipDatabase.html">KTipDatabase</option>
+        
+        <option value="classKTipDialog.html">KTipDialog</option>
+        
+        <option value="classKViewStateMaintainer.html">KViewStateMaintainer</option>
+        
+        <option value="namespaceKStandardAction.html">KStandardAction</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Widgets for configuration dialogs</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5ConfigWidgets)
+target_link_libraries(yourapp KF5::ConfigWidgets)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KConfigWidgets </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kconfigwidgets-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KConfigWidgets on <a href="https://cgit.kde.org/kconfigwidgets-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KConfigWidgets </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KLanguageButton">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKLanguageButton-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KLanguageButton Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="klanguagebutton_8h_source.html">klanguagebutton.h</a>&gt;</code></p>
+
+<p>Inherits QWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a56c9da8dce778202a715f42ff6f17427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a56c9da8dce778202a715f42ff6f17427">activated</a> (const QString &amp;languageCode)</td></tr>
+<tr class="separator:a56c9da8dce778202a715f42ff6f17427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457e2ac5919bb621a3ec06c9f10b6627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a457e2ac5919bb621a3ec06c9f10b6627">highlighted</a> (const QString &amp;languageCode)</td></tr>
+<tr class="separator:a457e2ac5919bb621a3ec06c9f10b6627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0b94b27f79da28a87c2edc13710a5f79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a0b94b27f79da28a87c2edc13710a5f79">KLanguageButton</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a0b94b27f79da28a87c2edc13710a5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade417a82f3fddf3bcc7a94407750c064"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#ade417a82f3fddf3bcc7a94407750c064">KLanguageButton</a> (const QString &amp;text, QWidget *parent=0)</td></tr>
+<tr class="separator:ade417a82f3fddf3bcc7a94407750c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6884ff312a1e38713a752b80d8480a98"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a6884ff312a1e38713a752b80d8480a98">~KLanguageButton</a> ()</td></tr>
+<tr class="separator:a6884ff312a1e38713a752b80d8480a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6892d6cb91a29c61c1e3f281456e629c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a6892d6cb91a29c61c1e3f281456e629c">clear</a> ()</td></tr>
+<tr class="separator:a6892d6cb91a29c61c1e3f281456e629c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac354ad352766d8f0ad82564cf0883605"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#ac354ad352766d8f0ad82564cf0883605">contains</a> (const QString &amp;languageCode) const</td></tr>
+<tr class="separator:ac354ad352766d8f0ad82564cf0883605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b0df6dede51b42f1b0ab3a7b55ffb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a11b0df6dede51b42f1b0ab3a7b55ffb0">count</a> () const</td></tr>
+<tr class="separator:a11b0df6dede51b42f1b0ab3a7b55ffb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c00979321aefeca10b24b29e6f05b8d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a1c00979321aefeca10b24b29e6f05b8d">current</a> () const</td></tr>
+<tr class="separator:a1c00979321aefeca10b24b29e6f05b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81348688ad80a52ccb2bfd18f667fcf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a81348688ad80a52ccb2bfd18f667fcf3">insertLanguage</a> (const QString &amp;languageCode, const QString &amp;name=QString(), int index=-1)</td></tr>
+<tr class="separator:a81348688ad80a52ccb2bfd18f667fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce5fb5c9ee3a5aa4977db224f952dc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a1ce5fb5c9ee3a5aa4977db224f952dc0">insertSeparator</a> (int index=-1)</td></tr>
+<tr class="separator:a1ce5fb5c9ee3a5aa4977db224f952dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45d6aad81c2e8aa5e05dba3f8493b38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#aa45d6aad81c2e8aa5e05dba3f8493b38">loadAllLanguages</a> ()</td></tr>
+<tr class="separator:aa45d6aad81c2e8aa5e05dba3f8493b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862513eae568b33230a0f2de4c4da217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a862513eae568b33230a0f2de4c4da217">setCurrentItem</a> (const QString &amp;languageCode)</td></tr>
+<tr class="separator:a862513eae568b33230a0f2de4c4da217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f8d4546a0ab933cd80f9f76a966a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#ac3f8d4546a0ab933cd80f9f76a966a63">setLocale</a> (const QString &amp;locale)</td></tr>
+<tr class="separator:ac3f8d4546a0ab933cd80f9f76a966a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11e2b0270e23709b45ab56da8b5b9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#ac11e2b0270e23709b45ab56da8b5b9d3">setText</a> (const QString &amp;text)</td></tr>
+<tr class="separator:ac11e2b0270e23709b45ab56da8b5b9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953475d3a59a5d22489e91f17d267182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKLanguageButton.html#a953475d3a59a5d22489e91f17d267182">showLanguageCodes</a> (bool show)</td></tr>
+<tr class="separator:a953475d3a59a5d22489e91f17d267182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKLanguageButton.html" title="KLanguageButton is a pushbutton which allows a language to be selected from a popup list...">KLanguageButton</a> is a pushbutton which allows a language to be selected from a popup list. </p>
+<p>Languages are identified by their ISO 639-1 codes, e.g. en, pt_BR.</p>
+<div class="image">
+<img src="klanguagebutton.png" alt="klanguagebutton.png"/>
+<div class="caption">
+KDE Language Selection Widget</div></div>
+ <dl class="section author"><dt>Author</dt><dd>Hans Petter Bieker <a href="#" onclick="location.href='mai'+'lto:'+'bie'+'ke'+'r@k'+'de'+'.or'+'g'; return false;">bieke<span style="display: none;">.nosp@m.</span>r@kd<span style="display: none;">.nosp@m.</span>e.org</a>, Martijn Klingens <a href="#" onclick="location.href='mai'+'lto:'+'kli'+'ng'+'ens'+'@k'+'de.'+'or'+'g'; return false;">kling<span style="display: none;">.nosp@m.</span>ens@<span style="display: none;">.nosp@m.</span>kde.o<span style="display: none;">.nosp@m.</span>rg</a>, David Jarvie <a href="#" onclick="location.href='mai'+'lto:'+'sof'+'tw'+'are'+'@a'+'str'+'oj'+'ar.'+'or'+'g.u'+'k'; return false;">softw<span style="display: none;">.nosp@m.</span>are@<span style="display: none;">.nosp@m.</span>astro<span style="display: none;">.nosp@m.</span>jar.<span style="display: none;">.nosp@m.</span>org.u<span style="display: none;">.nosp@m.</span>k</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8h_source.html#l00045">45</a> of file <a class="el" href="klanguagebutton_8h_source.html">klanguagebutton.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0b94b27f79da28a87c2edc13710a5f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b94b27f79da28a87c2edc13710a5f79">&#9670;&nbsp;</a></span>KLanguageButton() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLanguageButton::KLanguageButton </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a button whose text is determined by the current language in the popup list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent of the button </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00082">82</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ade417a82f3fddf3bcc7a94407750c064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade417a82f3fddf3bcc7a94407750c064">&#9670;&nbsp;</a></span>KLanguageButton() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLanguageButton::KLanguageButton </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a button with static text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>the text of the button </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent of the button </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00088">88</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6884ff312a1e38713a752b80d8480a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6884ff312a1e38713a752b80d8480a98">&#9670;&nbsp;</a></span>~KLanguageButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KLanguageButton::~KLanguageButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deconstructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00115">115</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56c9da8dce778202a715f42ff6f17427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c9da8dce778202a715f42ff6f17427">&#9670;&nbsp;</a></span>activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::activated </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>languageCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when a new item is activated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languageCode</td><td>code of the activated language </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6892d6cb91a29c61c1e3f281456e629c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6892d6cb91a29c61c1e3f281456e629c">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all combobox items. </p>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00226">226</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac354ad352766d8f0ad82564cf0883605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac354ad352766d8f0ad82564cf0883605">&#9670;&nbsp;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KLanguageButton::contains </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>languageCode</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the specified language is in the popup list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languageCode</td><td>the language's code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if in the list </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00241">241</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11b0df6dede51b42f1b0ab3a7b55ffb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b0df6dede51b42f1b0ab3a7b55ffb0">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KLanguageButton::count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the combo box. </p>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00221">221</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c00979321aefeca10b24b29e6f05b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c00979321aefeca10b24b29e6f05b8d">&#9670;&nbsp;</a></span>current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KLanguageButton::current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the language code of the combobox's current item. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current item's language code </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00246">246</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a457e2ac5919bb621a3ec06c9f10b6627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457e2ac5919bb621a3ec06c9f10b6627">&#9670;&nbsp;</a></span>highlighted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::highlighted </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>languageCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when a new item is highlighted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languageCode</td><td>code of the highlighted language </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81348688ad80a52ccb2bfd18f667fcf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81348688ad80a52ccb2bfd18f667fcf3">&#9670;&nbsp;</a></span>insertLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::insertLanguage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>languageCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts a language into the combo box. </p>
+<p>Normally the display name of the language is obtained automatically, but if either the language code does not exist, or there are special display requirements, the name of the language can be specified in <code>name</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languageCode</td><td>the code for the language </td></tr>
+    <tr><td class="paramname">name</td><td>language name. If empty, the name is obtained automatically. </td></tr>
+    <tr><td class="paramname">index</td><td>the insertion position, or -1 to insert in alphabetical order </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00136">136</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ce5fb5c9ee3a5aa4977db224f952dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce5fb5c9ee3a5aa4977db224f952dc0">&#9670;&nbsp;</a></span>insertSeparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::insertSeparator </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts a separator item into the combo box. </p>
+<p>A negative index will append the item.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the insertion position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00166">166</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa45d6aad81c2e8aa5e05dba3f8493b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45d6aad81c2e8aa5e05dba3f8493b38">&#9670;&nbsp;</a></span>loadAllLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::loadAllLanguages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load all known languages into the popup list. </p>
+<p>The current language in the list is set to the default language for the current locale (as modified by <a class="el" href="classKLanguageButton.html#ac3f8d4546a0ab933cd80f9f76a966a63" title="Sets the locale to display language names. ">setLocale()</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00175">175</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a862513eae568b33230a0f2de4c4da217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862513eae568b33230a0f2de4c4da217">&#9670;&nbsp;</a></span>setCurrentItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::setCurrentItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>languageCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a given language to be the current item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languageCode</td><td>the language's code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00261">261</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac3f8d4546a0ab933cd80f9f76a966a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f8d4546a0ab933cd80f9f76a966a63">&#9670;&nbsp;</a></span>setLocale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::setLocale </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>locale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the locale to display language names. </p>
+<p>By default, QLocale::system().name() is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">locale</td><td>locale to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00126">126</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac11e2b0270e23709b45ab56da8b5b9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11e2b0270e23709b45ab56da8b5b9d3">&#9670;&nbsp;</a></span>setText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::setText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a static button text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>button text </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00120">120</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a953475d3a59a5d22489e91f17d267182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953475d3a59a5d22489e91f17d267182">&#9670;&nbsp;</a></span>showLanguageCodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLanguageButton::showLanguageCodes </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies whether language codes should be shown alongside language names in the popup. </p>
+<p>Calling this method does not affect any previously inserted language texts, so it should normally be called before populating the list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">show</td><td>true to show codes, false to hide codes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="klanguagebutton_8cpp_source.html#l00131">131</a> of file <a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="klanguagebutton_8h_source.html">klanguagebutton.h</a></li>
+<li><a class="el" href="klanguagebutton_8cpp_source.html">klanguagebutton.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:25 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

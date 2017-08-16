@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KService - KPluginInfo Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KService</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KService"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAutostart.html">KAutostart</option>
+        
+        <option value="classKDBusServiceStarter.html">KDBusServiceStarter</option>
+        
+        <option value="classKMimeTypeTrader.html">KMimeTypeTrader</option>
+        
+        <option value="classKPluginInfo.html">KPluginInfo</option>
+        
+        <option value="classKPluginTrader.html">KPluginTrader</option>
+        
+        <option value="classKService.html">KService</option>
+        
+        <option value="classKServiceAction.html">KServiceAction</option>
+        
+        <option value="classKServiceGroup.html">KServiceGroup</option>
+        
+        <option value="classKServiceOffer.html">KServiceOffer</option>
+        
+        <option value="classKServiceType.html">KServiceType</option>
+        
+        <option value="classKServiceTypeTrader.html">KServiceTypeTrader</option>
+        
+        <option value="classKSycoca.html">KSycoca</option>
+        
+        <option value="classKSycocaEntry.html">KSycocaEntry</option>
+        
+        <option value="classKToolInvocation.html">KToolInvocation</option>
+        
+        <option value="namespaceKServiceTypeProfile.html">KServiceTypeProfile</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced plugin and service introspection</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Service)
+target_link_libraries(yourapp KF5::Service)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KService </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kservice-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KService on <a href="https://cgit.kde.org/kservice-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KService </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KPluginInfo">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classKPluginInfo-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KPluginInfo Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kplugininfo_8h_source.html">kplugininfo.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac2061040175c7bd6306eafcaecfd427d"><td class="memItemLeft" align="right" valign="top"><a id="ac2061040175c7bd6306eafcaecfd427d"></a>
+typedef QList&lt; <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>List</b></td></tr>
+<tr class="separator:ac2061040175c7bd6306eafcaecfd427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afd34697033cf2873834e81f17752a249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#afd34697033cf2873834e81f17752a249">KPluginInfo</a> (const QString &amp;filename)</td></tr>
+<tr class="separator:afd34697033cf2873834e81f17752a249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1dc91305cbcc4467dd8faefd9c54be"><td class="memItemLeft" align="right" valign="top">KSERVICE_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a9a1dc91305cbcc4467dd8faefd9c54be">KPluginInfo</a> (const KService::Ptr <a class="el" href="classKPluginInfo.html#a7827960deb230c5358a10c35d513e4c7">service</a>)</td></tr>
+<tr class="separator:a9a1dc91305cbcc4467dd8faefd9c54be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac644167de07fd370a518de99786dbf1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ac644167de07fd370a518de99786dbf1c">KPluginInfo</a> (const QVariantList &amp;args, const QString &amp;<a class="el" href="classKPluginInfo.html#a53bac006d1b7e89e20c128ed076f7706">libraryPath</a>=QString())</td></tr>
+<tr class="separator:ac644167de07fd370a518de99786dbf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4241fd0b6f35dcd9bb6a3d401dd671b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ae4241fd0b6f35dcd9bb6a3d401dd671b">KPluginInfo</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;md)</td></tr>
+<tr class="separator:ae4241fd0b6f35dcd9bb6a3d401dd671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4fa1c885fec8ade5a158877bb24b80c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ae4fa1c885fec8ade5a158877bb24b80c">KPluginInfo</a> ()</td></tr>
+<tr class="separator:ae4fa1c885fec8ade5a158877bb24b80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18bd651ffa8632bdb34af7dc56d4596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#aa18bd651ffa8632bdb34af7dc56d4596">KPluginInfo</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;copy)</td></tr>
+<tr class="separator:aa18bd651ffa8632bdb34af7dc56d4596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f4547a80d8c5f3575c8daff16ddbaf"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a81f4547a80d8c5f3575c8daff16ddbaf">author</a> () const</td></tr>
+<tr class="separator:a81f4547a80d8c5f3575c8daff16ddbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dccd40e1acfdcb932a950d62aa9472"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a08dccd40e1acfdcb932a950d62aa9472">category</a> () const</td></tr>
+<tr class="separator:a08dccd40e1acfdcb932a950d62aa9472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f13fdcb861689116e2498222103da1"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a75f13fdcb861689116e2498222103da1">comment</a> () const</td></tr>
+<tr class="separator:a75f13fdcb861689116e2498222103da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab977ed6e6aaeb39f8a870656eea6684b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a> () const</td></tr>
+<tr class="separator:ab977ed6e6aaeb39f8a870656eea6684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d62b88fec5f9fa67f9b18ca87f0234"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ab2d62b88fec5f9fa67f9b18ca87f0234">defaults</a> ()</td></tr>
+<tr class="separator:ab2d62b88fec5f9fa67f9b18ca87f0234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a6cd53ba0c58e82b782c58d47cefde"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#af8a6cd53ba0c58e82b782c58d47cefde">dependencies</a> () const</td></tr>
+<tr class="separator:af8a6cd53ba0c58e82b782c58d47cefde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5d314d6c5b9b2a44dc4aebe0bcb758"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ace5d314d6c5b9b2a44dc4aebe0bcb758">email</a> () const</td></tr>
+<tr class="separator:ace5d314d6c5b9b2a44dc4aebe0bcb758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44b4a572c4df96a5cc02bba4d28a222"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#aa44b4a572c4df96a5cc02bba4d28a222">entryPath</a> () const</td></tr>
+<tr class="separator:aa44b4a572c4df96a5cc02bba4d28a222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3f29b31cf3d4fa428134fd67883902"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a2e3f29b31cf3d4fa428134fd67883902">formFactors</a> () const</td></tr>
+<tr class="separator:a2e3f29b31cf3d4fa428134fd67883902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5615f2f3c219d1c092a1a7c2f92d15"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a4b5615f2f3c219d1c092a1a7c2f92d15">icon</a> () const</td></tr>
+<tr class="separator:a4b5615f2f3c219d1c092a1a7c2f92d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4f920e10d53ae0477afecdc0806fcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a2c4f920e10d53ae0477afecdc0806fcc">isHidden</a> () const</td></tr>
+<tr class="separator:a2c4f920e10d53ae0477afecdc0806fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9deb8ec530e91935a462e5610eae0fcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a9deb8ec530e91935a462e5610eae0fcb">isPluginEnabled</a> () const</td></tr>
+<tr class="separator:a9deb8ec530e91935a462e5610eae0fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6f89c894809fd3b40c6bf8a2f804a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a2c6f89c894809fd3b40c6bf8a2f804a4">isPluginEnabledByDefault</a> () const</td></tr>
+<tr class="separator:a2c6f89c894809fd3b40c6bf8a2f804a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1fb66e61ddda8e3ca8fc6332f0001a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a3b1fb66e61ddda8e3ca8fc6332f0001a">isValid</a> () const</td></tr>
+<tr class="separator:a3b1fb66e61ddda8e3ca8fc6332f0001a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531fce84a86216a1e43ac1762bcc5905"><td class="memItemLeft" align="right" valign="top">QList&lt; KService::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a531fce84a86216a1e43ac1762bcc5905">kcmServices</a> () const</td></tr>
+<tr class="separator:a531fce84a86216a1e43ac1762bcc5905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bac006d1b7e89e20c128ed076f7706"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a53bac006d1b7e89e20c128ed076f7706">libraryPath</a> () const</td></tr>
+<tr class="separator:a53bac006d1b7e89e20c128ed076f7706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686ac2922baae9c04fbec1dce1176b34"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a686ac2922baae9c04fbec1dce1176b34">license</a> () const</td></tr>
+<tr class="separator:a686ac2922baae9c04fbec1dce1176b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d9a5902333528ffca052e7bc406ad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#aa7d9a5902333528ffca052e7bc406ad8">load</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;<a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>())</td></tr>
+<tr class="separator:aa7d9a5902333528ffca052e7bc406ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c39863d1936db5197c524240eb491ce"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a8c39863d1936db5197c524240eb491ce">name</a> () const</td></tr>
+<tr class="separator:a8c39863d1936db5197c524240eb491ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f97cdc48882c8a5c15b53d88bde3801"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a6f97cdc48882c8a5c15b53d88bde3801">operator!=</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;rhs) const</td></tr>
+<tr class="separator:a6f97cdc48882c8a5c15b53d88bde3801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ac1d94b2fc92100ae769fef7dc9733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ac1ac1d94b2fc92100ae769fef7dc9733">operator&lt;</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;rhs) const</td></tr>
+<tr class="separator:ac1ac1d94b2fc92100ae769fef7dc9733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8e87e9b1fa622f452fae1aba0eab84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a4d8e87e9b1fa622f452fae1aba0eab84">operator=</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;rhs)</td></tr>
+<tr class="separator:a4d8e87e9b1fa622f452fae1aba0eab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932458d1c2ae412804b40dc6e1bb0155"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a932458d1c2ae412804b40dc6e1bb0155">operator==</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;rhs) const</td></tr>
+<tr class="separator:a932458d1c2ae412804b40dc6e1bb0155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b42d945b9b7bf9dc1074e8b6b7fde1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a91b42d945b9b7bf9dc1074e8b6b7fde1">operator&gt;</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;rhs) const</td></tr>
+<tr class="separator:a91b42d945b9b7bf9dc1074e8b6b7fde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f05c5154d54ac0aed75e9fba34acea"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a40f05c5154d54ac0aed75e9fba34acea">pluginName</a> () const</td></tr>
+<tr class="separator:a40f05c5154d54ac0aed75e9fba34acea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb84ddb4574476edfdcc0c97103de51"><td class="memItemLeft" align="right" valign="top">QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a1fb84ddb4574476edfdcc0c97103de51">properties</a> () const</td></tr>
+<tr class="separator:a1fb84ddb4574476edfdcc0c97103de51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5113be2858863d954563fcf5de741094"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a5113be2858863d954563fcf5de741094">property</a> (const QString &amp;key) const</td></tr>
+<tr class="separator:a5113be2858863d954563fcf5de741094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef67ef8d9bbf59f263b44ae081af2f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a1ef67ef8d9bbf59f263b44ae081af2f9">save</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> <a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>())</td></tr>
+<tr class="separator:a1ef67ef8d9bbf59f263b44ae081af2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7827960deb230c5358a10c35d513e4c7"><td class="memItemLeft" align="right" valign="top">KService::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a7827960deb230c5358a10c35d513e4c7">service</a> () const</td></tr>
+<tr class="separator:a7827960deb230c5358a10c35d513e4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81a7b45886835af09575080eb8bf28a"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ae81a7b45886835af09575080eb8bf28a">serviceTypes</a> () const</td></tr>
+<tr class="separator:ae81a7b45886835af09575080eb8bf28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1fd568345bb2093865b4b945d11048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a5e1fd568345bb2093865b4b945d11048">setConfig</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;<a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>)</td></tr>
+<tr class="separator:a5e1fd568345bb2093865b4b945d11048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac453ae934eb0711dd88647b5d0f0d2dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#ac453ae934eb0711dd88647b5d0f0d2dd">setPluginEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:ac453ae934eb0711dd88647b5d0f0d2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f8b1c76ad327e3916909edc9d1a0f5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a54f8b1c76ad327e3916909edc9d1a0f5">toMetaData</a> () const</td></tr>
+<tr class="separator:a54f8b1c76ad327e3916909edc9d1a0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb4259eb1786d7ec24d66805fa7feca"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a4eb4259eb1786d7ec24d66805fa7feca">version</a> () const</td></tr>
+<tr class="separator:a4eb4259eb1786d7ec24d66805fa7feca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d29050662d648eb02227fd12bbb9e2"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a63d29050662d648eb02227fd12bbb9e2">website</a> () const</td></tr>
+<tr class="separator:a63d29050662d648eb02227fd12bbb9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a452fd05d5272f6d526e607005c001b5b"><td class="memItemLeft" align="right" valign="top">static KPluginInfo::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a452fd05d5272f6d526e607005c001b5b">fromFiles</a> (const QStringList &amp;files, const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;<a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>())</td></tr>
+<tr class="separator:a452fd05d5272f6d526e607005c001b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace3e1a76876e98ffb20113930c8c978"><td class="memItemLeft" align="right" valign="top">static KPluginInfo::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#aace3e1a76876e98ffb20113930c8c978">fromKPartsInstanceName</a> (const QString &amp;componentName, const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;<a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>())</td></tr>
+<tr class="separator:aace3e1a76876e98ffb20113930c8c978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb626711e026f4d44a6d542954bad955"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKPluginInfo.html">KPluginInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#abb626711e026f4d44a6d542954bad955">fromMetaData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;meta)</td></tr>
+<tr class="separator:abb626711e026f4d44a6d542954bad955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7f95100d0ce40b9244b3daf2692091"><td class="memItemLeft" align="right" valign="top">static KPluginInfo::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a7d7f95100d0ce40b9244b3daf2692091">fromMetaData</a> (const QVector&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt; &amp;list)</td></tr>
+<tr class="separator:a7d7f95100d0ce40b9244b3daf2692091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641310294d240aa6d82dc014640bf3aa"><td class="memItemLeft" align="right" valign="top">static KSERVICE_DEPRECATED KPluginInfo::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a641310294d240aa6d82dc014640bf3aa">fromServices</a> (const KService::List &amp;services, const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;<a class="el" href="classKPluginInfo.html#ab977ed6e6aaeb39f8a870656eea6684b">config</a>=<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>())</td></tr>
+<tr class="separator:a641310294d240aa6d82dc014640bf3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4024b5ea6c9fc4aa131dde56c48935a6"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a4024b5ea6c9fc4aa131dde56c48935a6">toMetaData</a> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;info)</td></tr>
+<tr class="separator:a4024b5ea6c9fc4aa131dde56c48935a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dce06b098c7b609d615faf68b00bd6b"><td class="memItemLeft" align="right" valign="top">static QVector&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginInfo.html#a9dce06b098c7b609d615faf68b00bd6b">toMetaData</a> (const KPluginInfo::List &amp;list)</td></tr>
+<tr class="separator:a9dce06b098c7b609d615faf68b00bd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ac0c200d6d5ca2e28e1896d53e91a4905"><td class="memItemLeft" align="right" valign="top"><a id="ac0c200d6d5ca2e28e1896d53e91a4905"></a>
+KSERVICE_EXPORT uint&#160;</td><td class="memItemRight" valign="bottom"><b>qHash</b> (const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;)</td></tr>
+<tr class="separator:ac0c200d6d5ca2e28e1896d53e91a4905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Information about a plugin. </p>
+<p>This holds all the information about a plugin there is. It's used for the user to decide whether he wants to use this plugin or not.</p>
+<dl class="section author"><dt>Author</dt><dd>Matthias Kretz <a href="#" onclick="location.href='mai'+'lto:'+'kre'+'tz'+'@kd'+'e.'+'org'; return false;">kretz<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8h_source.html#l00043">43</a> of file <a class="el" href="kplugininfo_8h_source.html">kplugininfo.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afd34697033cf2873834e81f17752a249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd34697033cf2873834e81f17752a249">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read plugin info from <code>filename</code>. </p>
+<p>The file should be of the following form: </p><pre class="fragment">[Desktop Entry]
+Encoding=UTF-8
+Icon=mypluginicon
+Type=Service
+ServiceTypes=KPluginInfo
+
+Name=User Visible Name
+Comment=Description of what the plugin does
+
+X-KDE-PluginInfo-Author=Author's Name
+X-KDE-PluginInfo-Email=author@foo.bar
+X-KDE-PluginInfo-Name=internalname
+X-KDE-PluginInfo-Version=1.1
+X-KDE-PluginInfo-Website=http://www.plugin.org/
+X-KDE-PluginInfo-Category=playlist
+X-KDE-PluginInfo-Depends=plugin1,plugin3
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+</pre><p> The Name and Comment fields must always be present.</p>
+<p>The "X-KDE-PluginInfo" keys you may add further entries which will be available using <a class="el" href="classKPluginInfo.html#a5113be2858863d954563fcf5de741094">property()</a>. The Website,Category,Require keys are optional. For EnabledByDefault look at isPluginEnabledByDefault.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The filename of the .desktop file. </td></tr>
+    <tr><td class="paramname">resource</td><td>If filename is relative, you need to specify a resource type (e.g. "service", "apps"... KStandardDirs). Otherwise, resource isn't used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00254">254</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9a1dc91305cbcc4467dd8faefd9c54be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1dc91305cbcc4467dd8faefd9c54be">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramtype">const KService::Ptr&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read plugin info from a <a class="el" href="classKService.html" title="Represent a service, like an application or plugin bound to one or several mimetypes (or servicetypes...">KService</a> object. </p>
+<p>The .desktop file should look like this: </p><pre class="fragment">[Desktop Entry]
+Encoding=UTF-8
+Icon=mypluginicon
+Type=Service
+ServiceTypes=KPluginInfo
+
+X-KDE-PluginInfo-Author=Author's Name
+X-KDE-PluginInfo-Email=author@foo.bar
+X-KDE-PluginInfo-Name=internalname
+X-KDE-PluginInfo-Version=1.1
+X-KDE-PluginInfo-Website=http://www.plugin.org/
+X-KDE-PluginInfo-Category=playlist
+X-KDE-PluginInfo-Depends=plugin1,plugin3
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+
+Name=User Visible Name
+Comment=Description of what the plugin does
+</pre><p> In the first three entries the Icon entry is optional. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>since 5.0, use (Q|K)PluginLoader instead and build the metadata into the plugin using K_PLUGIN_FACTORY_WITH_JSON( ..., "mypluginmetadata.json", ...) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00302">302</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac644167de07fd370a518de99786dbf1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac644167de07fd370a518de99786dbf1c">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>libraryPath</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read plugin info from arguments passed to the plugin. </p>
+<p>These arguments should contain the plugin's metadata (as read from QPluginLoader::metaData(). This constructor uses the metadata read from the QVariantList. It reads the first QVariantMap it finds in a field called "MetaData".</p>
+<p>Use (Q|K)PluginLoader and build the metadata into the plugin using K_PLUGIN_FACTORY_WITH_JSON( ..., "mypluginmetadata.json", ...)</p>
+<p>You can use the "desktoptojson tool to generate a .json file from your .desktop file. The .json file should look like this:</p>
+<pre class="fragment"> {
+     "Comment": "Date and time by timezone",
+     "Icon": "preferences-system-time",
+     "Name": "Date and Time",
+     "Type": "Service",
+     "X-KDE-Library": "plasma_engine_time",
+     "X-KDE-PluginInfo-Author": "Aaron Seigo",
+     "X-KDE-PluginInfo-Category": "Date and Time",
+     "X-KDE-PluginInfo-Depends": [
+     ],
+     "X-KDE-PluginInfo-Email": "aseigo@kde.org",
+     "X-KDE-PluginInfo-EnabledByDefault": true,
+     "X-KDE-PluginInfo-License": "LGPL",
+     "X-KDE-PluginInfo-Name": "time",
+     "X-KDE-PluginInfo-Version": "1.0",
+     "X-KDE-PluginInfo-Website": "http://plasma.kde.org/",
+     "X-KDE-ServiceTypes": [
+         "Plasma/DataEngine"
+     ],
+     "X-KDE-FormFactors": [
+         "tablet",
+         "handset"
+     ]
+ }
+</pre> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>QVariantList with arguments, should contain a QVariantMap, keyed "MetaData" as provided by QPluginLoader::metaData() </td></tr>
+    <tr><td class="paramname">libraryPath</td><td>The path to the plugin file on disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#aa8bc10b3b6a9d95d2573b8f5e9d83708">K_PLUGIN_FACTORY_WITH_JSON()</a> </dd>
+<dd>
+KPluginFactory::factory() </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00277">277</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4241fd0b6f35dcd9bb6a3d401dd671b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4241fd0b6f35dcd9bb6a3d401dd671b">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>md</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read plugin info from a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">md</td><td>The <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> to read the information from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#aa8bc10b3b6a9d95d2573b8f5e9d83708">K_PLUGIN_FACTORY_WITH_JSON()</a> </dd>
+<dd>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginLoader.html">KPluginLoader</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00245">245</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4fa1c885fec8ade5a158877bb24b80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fa1c885fec8ade5a158877bb24b80c">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an invalid plugin. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPluginInfo.html#a3b1fb66e61ddda8e3ca8fc6332f0001a" title="Returns whether the object is valid. ">isValid</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00358">358</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa18bd651ffa8632bdb34af7dc56d4596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18bd651ffa8632bdb34af7dc56d4596">&#9670;&nbsp;</a></span>KPluginInfo() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::KPluginInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> object that shares the data with <code>copy</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00368">368</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a81f4547a80d8c5f3575c8daff16ddbaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f4547a80d8c5f3575c8daff16ddbaf">&#9670;&nbsp;</a></span>author()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::author </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The author of this plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00506">506</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08dccd40e1acfdcb932a950d62aa9472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08dccd40e1acfdcb932a950d62aa9472">&#9670;&nbsp;</a></span>category()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::category </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The category of this plugin (e.g. playlist/skin). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00520">520</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a75f13fdcb861689116e2498222103da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f13fdcb861689116e2498222103da1">&#9670;&nbsp;</a></span>comment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::comment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A comment describing the plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00488">488</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab977ed6e6aaeb39f8a870656eea6684b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab977ed6e6aaeb39f8a870656eea6684b">&#9670;&nbsp;</a></span>config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> KPluginInfo::config </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>If the <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> object has a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfig.html">KConfig</a> object set return it, else returns an invalid <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00609">609</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab2d62b88fec5f9fa67f9b18ca87f0234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d62b88fec5f9fa67f9b18ca87f0234">&#9670;&nbsp;</a></span>defaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPluginInfo::defaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restore defaults (enabled or not). </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00721">721</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af8a6cd53ba0c58e82b782c58d47cefde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a6cd53ba0c58e82b782c58d47cefde">&#9670;&nbsp;</a></span>dependencies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KPluginInfo::dependencies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of plugins required for this plugin to be enabled. Use the pluginName in this list. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00570">570</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace5d314d6c5b9b2a44dc4aebe0bcb758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5d314d6c5b9b2a44dc4aebe0bcb758">&#9670;&nbsp;</a></span>email()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::email </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The email address of the author. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00513">513</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa44b4a572c4df96a5cc02bba4d28a222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44b4a572c4df96a5cc02bba4d28a222">&#9670;&nbsp;</a></span>entryPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::entryPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The file containing the information about the plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00500">500</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e3f29b31cf3d4fa428134fd67883902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3f29b31cf3d4fa428134fd67883902">&#9670;&nbsp;</a></span>formFactors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KPluginInfo::formFactors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of FormFactors this plugin offers, corresponds to the "X-KDE-FormFactors" value in a .desktop service file, or to the "FormFactors" value in the "KPlugin" block of the json metadata. Formfactor values are freestyle, common values are "desktop", "handset", "tablet", "mediacenter". Values are comma-separated. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.14 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00526">526</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a452fd05d5272f6d526e607005c001b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452fd05d5272f6d526e607005c001b5b">&#9670;&nbsp;</a></span>fromFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &gt; KPluginInfo::fromFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects constructed from a list of filenames. If you make a lookup using, for example, KStandardDirs::findAllResources() you pass the list of files to this function.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">files</td><td>The list of files to construct the list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects from </td></tr>
+    <tr><td class="paramname">config</td><td>The config group where to save/load whether the plugin is enabled/disabled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00431">431</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aace3e1a76876e98ffb20113930c8c978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace3e1a76876e98ffb20113930c8c978">&#9670;&nbsp;</a></span>fromKPartsInstanceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &gt; KPluginInfo::fromKPartsInstanceName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects for the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kparts-5.26.0/html/KParts.tags:../../../frameworks/kparts-5.26.0/html/" href="../../../frameworks/kparts-5.26.0/html/structKParts_1_1BrowserArguments.html">KParts</a> plugins of a component.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentName</td><td>Use the component name to look up all <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kparts-5.26.0/html/KParts.tags:../../../frameworks/kparts-5.26.0/html/" href="../../../frameworks/kparts-5.26.0/html/structKParts_1_1BrowserArguments.html">KParts</a> plugins for it. </td></tr>
+    <tr><td class="paramname">config</td><td>The config group where to save/load whether the plugin is enabled/disabled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00442">442</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb626711e026f4d44a6d542954bad955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb626711e026f4d44a6d542954bad955">&#9670;&nbsp;</a></span>fromMetaData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPluginInfo.html">KPluginInfo</a> KPluginInfo::fromMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>meta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta</td><td>the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> object with equivalent meta data. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00732">732</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7d7f95100d0ce40b9244b3daf2692091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7f95100d0ce40b9244b3daf2692091">&#9670;&nbsp;</a></span>fromMetaData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::List KPluginInfo::fromMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the list of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> objects to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects with equivalent meta data. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00748">748</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a641310294d240aa6d82dc014640bf3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641310294d240aa6d82dc014640bf3aa">&#9670;&nbsp;</a></span>fromServices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &gt; KPluginInfo::fromServices </td>
+          <td>(</td>
+          <td class="paramtype">const KService::List &amp;&#160;</td>
+          <td class="paramname"><em>services</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects constructed from a list of <a class="el" href="classKService.html" title="Represent a service, like an application or plugin bound to one or several mimetypes (or servicetypes...">KService</a> objects. If you get a trader offer of the plugins you want to use you can just pass them to this function.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">services</td><td>The list of services to construct the list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects from </td></tr>
+    <tr><td class="paramname">config</td><td>The config group where to save/load whether the plugin is enabled/disabled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>since 5.0, use (Q|K)PluginLoader instead and build the metadata into the plugins using K_PLUGIN_FACTORY_WITH_JSON( ..., "mypluginmetadata.json", ...) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00416">416</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4b5615f2f3c219d1c092a1a7c2f92d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5615f2f3c219d1c092a1a7c2f92d15">&#9670;&nbsp;</a></span>icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::icon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The iconname for this plugin </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00494">494</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c4f920e10d53ae0477afecdc0806fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4f920e10d53ae0477afecdc0806fcc">&#9670;&nbsp;</a></span>isHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::isHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether the plugin should be hidden. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00455">455</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9deb8ec530e91935a462e5610eae0fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9deb8ec530e91935a462e5610eae0fcb">&#9670;&nbsp;</a></span>isPluginEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::isPluginEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether the plugin is currently loaded.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPluginInfo.html#ac453ae934eb0711dd88647b5d0f0d2dd" title="Set whether the plugin is currently loaded. ">setPluginEnabled()</a> </dd>
+<dd>
+<a class="el" href="classKPluginInfo.html#aa7d9a5902333528ffca052e7bc406ad8" title="Load the state of the plugin - enabled or not. ">load()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00468">468</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c6f89c894809fd3b40c6bf8a2f804a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6f89c894809fd3b40c6bf8a2f804a4">&#9670;&nbsp;</a></span>isPluginEnabledByDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::isPluginEnabledByDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The default value whether the plugin is enabled or not. Defaults to the value set in the desktop file, or if that isn't set to false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00475">475</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3b1fb66e61ddda8e3ca8fc6332f0001a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1fb66e61ddda8e3ca8fc6332f0001a">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the object is valid. </p>
+<p>Treat invalid <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects like you would treat a null pointer. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00363">363</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a531fce84a86216a1e43ac1762bcc5905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531fce84a86216a1e43ac1762bcc5905">&#9670;&nbsp;</a></span>kcmServices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; KService::Ptr &gt; KPluginInfo::kcmServices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of Service pointers if the plugin installs one or more <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00589">589</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53bac006d1b7e89e20c128ed076f7706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53bac006d1b7e89e20c128ed076f7706">&#9670;&nbsp;</a></span>libraryPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::libraryPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The absolute path of the plugin on disk. This can be used to load the plugin from, using <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginLoader.html">KPluginLoader</a> or QPluginLoader </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00538">538</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a686ac2922baae9c04fbec1dce1176b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686ac2922baae9c04fbec1dce1176b34">&#9670;&nbsp;</a></span>license()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::license </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The license keyword of this plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00556">556</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa7d9a5902333528ffca052e7bc406ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d9a5902333528ffca052e7bc406ad8">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPluginInfo::load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the state of the plugin - enabled or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>The <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> holding the information whether plugin is enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00706">706</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8c39863d1936db5197c524240eb491ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c39863d1936db5197c524240eb491ce">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The user visible name of the plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00482">482</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6f97cdc48882c8a5c15b53d88bde3801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f97cdc48882c8a5c15b53d88bde3801">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares two objects whether they don't share the same data. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00384">384</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac1ac1d94b2fc92100ae769fef7dc9733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ac1d94b2fc92100ae769fef7dc9733">&#9670;&nbsp;</a></span>operator<()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Less than relation comparing the categories and if they are the same using the names. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00389">389</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d8e87e9b1fa622f452fae1aba0eab84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8e87e9b1fa622f452fae1aba0eab84">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp; KPluginInfo::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> object to share the data with <code>copy</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00373">373</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a932458d1c2ae412804b40dc6e1bb0155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932458d1c2ae412804b40dc6e1bb0155">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares two objects whether they share the same data. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00379">379</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91b42d945b9b7bf9dc1074e8b6b7fde1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b42d945b9b7bf9dc1074e8b6b7fde1">&#9670;&nbsp;</a></span>operator>()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KPluginInfo::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Greater than relation comparing the categories and if they are the same using the names. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00400">400</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40f05c5154d54ac0aed75e9fba34acea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f05c5154d54ac0aed75e9fba34acea">&#9670;&nbsp;</a></span>pluginName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::pluginName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The internal name of the plugin (for <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kparts-5.26.0/html/KParts.tags:../../../frameworks/kparts-5.26.0/html/" href="../../../frameworks/kparts-5.26.0/html/structKParts_1_1BrowserArguments.html">KParts</a> Plugins this is the same name as set in the .rc file). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00532">532</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fb84ddb4574476edfdcc0c97103de51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb84ddb4574476edfdcc0c97103de51">&#9670;&nbsp;</a></span>properties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariantMap KPluginInfo::properties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>All properties of this object. This can be used to read custom values. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPluginInfo.html#a5113be2858863d954563fcf5de741094">KPluginInfo::property()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00686">686</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5113be2858863d954563fcf5de741094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5113be2858863d954563fcf5de741094">&#9670;&nbsp;</a></span>property()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant KPluginInfo::property </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The value associated to the <code>key</code>. You can use it if you want to read custom values. To do this you need to define your own servicetype and add it to the ServiceTypes keys. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00615">615</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ef67ef8d9bbf59f263b44ae081af2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef67ef8d9bbf59f263b44ae081af2f9">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPluginInfo::save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save state of the plugin - enabled or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>The <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> holding the information whether plugin is enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00691">691</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7827960deb230c5358a10c35d513e4c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7827960deb230c5358a10c35d513e4c7">&#9670;&nbsp;</a></span>service()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KService::Ptr KPluginInfo::service </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classKService.html" title="Represent a service, like an application or plugin bound to one or several mimetypes (or servicetypes...">KService</a> object for this plugin. You might need it if you want to read custom values. To do this you need to define your own servicetype and add it to the ServiceTypes keys. Then you can use the <a class="el" href="classKService.html#a76a45559bb26ba8d07b58de2427c7283" title="Returns the requested property. ">KService::property()</a> method to read your keys.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPluginInfo.html#a5113be2858863d954563fcf5de741094">property()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00583">583</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae81a7b45886835af09575080eb8bf28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81a7b45886835af09575080eb8bf28a">&#9670;&nbsp;</a></span>serviceTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KPluginInfo::serviceTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A list of ServiceTypes this plugin offers </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00576">576</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e1fd568345bb2093865b4b945d11048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1fd568345bb2093865b4b945d11048">&#9670;&nbsp;</a></span>setConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPluginInfo::setConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> to use for <a class="el" href="classKPluginInfo.html#aa7d9a5902333528ffca052e7bc406ad8" title="Load the state of the plugin - enabled or not. ">load()</a>ing and <a class="el" href="classKPluginInfo.html#a1ef67ef8d9bbf59f263b44ae081af2f9" title="Save state of the plugin - enabled or not. ">save()</a>ing the configuration. </p>
+<p>This will be overridden by the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> passed to <a class="el" href="classKPluginInfo.html#a1ef67ef8d9bbf59f263b44ae081af2f9" title="Save state of the plugin - enabled or not. ">save()</a> or <a class="el" href="classKPluginInfo.html#aa7d9a5902333528ffca052e7bc406ad8" title="Load the state of the plugin - enabled or not. ">load()</a> (if one is passed). </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00603">603</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac453ae934eb0711dd88647b5d0f0d2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac453ae934eb0711dd88647b5d0f0d2dd">&#9670;&nbsp;</a></span>setPluginEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KPluginInfo::setPluginEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether the plugin is currently loaded. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKPluginInfo.html#a9deb8ec530e91935a462e5610eae0fcb">isPluginEnabled()</a> </dd>
+<dd>
+<a class="el" href="classKPluginInfo.html#a1ef67ef8d9bbf59f263b44ae081af2f9" title="Save state of the plugin - enabled or not. ">save()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00461">461</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a54f8b1c76ad327e3916909edc9d1a0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f8b1c76ad327e3916909edc9d1a0f5">&#9670;&nbsp;</a></span>toMetaData() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> KPluginInfo::toMetaData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> object with equivalent meta data. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00737">737</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4024b5ea6c9fc4aa131dde56c48935a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4024b5ea6c9fc4aa131dde56c48935a6">&#9670;&nbsp;</a></span>toMetaData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> KPluginInfo::toMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKPluginInfo.html">KPluginInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>the <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> object to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> object with equivalent meta data. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00743">743</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9dce06b098c7b609d615faf68b00bd6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dce06b098c7b609d615faf68b00bd6b">&#9670;&nbsp;</a></span>toMetaData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &gt; KPluginInfo::toMetaData </td>
+          <td>(</td>
+          <td class="paramtype">const KPluginInfo::List &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the list of <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> objects to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> objects with equivalent meta data. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00758">758</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4eb4259eb1786d7ec24d66805fa7feca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb4259eb1786d7ec24d66805fa7feca">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The version of the plugin. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00544">544</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a63d29050662d648eb02227fd12bbb9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d29050662d648eb02227fd12bbb9e2">&#9670;&nbsp;</a></span>website()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KPluginInfo::website </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The website of the plugin/author. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugininfo_8cpp_source.html#l00550">550</a> of file <a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kplugininfo_8h_source.html">kplugininfo.h</a></li>
+<li><a class="el" href="kplugininfo_8cpp_source.html">kplugininfo.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:52 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

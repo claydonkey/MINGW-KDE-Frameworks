@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Package - Class Members - Functions</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">Package</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "Package"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKPackage_1_1Package.html">KPackage::Package</option>
+        
+        <option value="classKPackage_1_1PackageLoader.html">KPackage::PackageLoader</option>
+        
+        <option value="namespaceKPackage.html">KPackage</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Library to load and install packages of non binary files as they were a plugin</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Package)
+target_link_libraries(yourapp KF5::Package)</pre>
+        </dd>
+
+    
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kpackage-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>Package on <a href="https://cgit.kde.org/kpackage-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> Package </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="contents">
+&#160;
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>addDirectoryDefinition()
+: <a class="el" href="classKPackage_1_1Package.html#af6b028f7ba2b8f3eed6c3d953dc02cd4">KPackage::Package</a>
+</li>
+<li>addFileDefinition()
+: <a class="el" href="classKPackage_1_1Package.html#a9457b9721e713a026a78dca479945cfc">KPackage::Package</a>
+</li>
+<li>addKnownPackageStructure()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a737e46fd9ea0a9f9f77d64c301190032">KPackage::PackageLoader</a>
+</li>
+<li>allowExternalPaths()
+: <a class="el" href="classKPackage_1_1Package.html#ac7c546a8f691b12b75ab3ffca4510c5a">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>contentsHash()
+: <a class="el" href="classKPackage_1_1Package.html#a89876aba87fea055b412b02b8cfa809a">KPackage::Package</a>
+</li>
+<li>contentsPrefixPaths()
+: <a class="el" href="classKPackage_1_1Package.html#ac28b694bd82296872bf3d955fc461dc8">KPackage::Package</a>
+</li>
+<li>cryptographicHash()
+: <a class="el" href="classKPackage_1_1Package.html#a0b8d44882dad95be3af9f6855fa68771">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>defaultPackageRoot()
+: <a class="el" href="classKPackage_1_1Package.html#a42956f741658479b1043b4b6ec7d57a5">KPackage::Package</a>
+</li>
+<li>directories()
+: <a class="el" href="classKPackage_1_1Package.html#af2436381b0268a17172d9272cf1347d8">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>entryList()
+: <a class="el" href="classKPackage_1_1Package.html#a671fb4ea1e063a22e418912cbf48287f">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>fallbackPackage()
+: <a class="el" href="classKPackage_1_1Package.html#ab1c25e4943b6d73422235f90c416e528">KPackage::Package</a>
+</li>
+<li>filePath()
+: <a class="el" href="classKPackage_1_1Package.html#a935b5f3f1302c06dcf0fb348cea42c00">KPackage::Package</a>
+</li>
+<li>files()
+: <a class="el" href="classKPackage_1_1Package.html#ad02987e0916b09862e9689b1b6242853">KPackage::Package</a>
+</li>
+<li>findPackages()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a08944f550228611fa0d5bb65020ee186">KPackage::PackageLoader</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>hasValidStructure()
+: <a class="el" href="classKPackage_1_1Package.html#a27242b0250fb09264da2c9594b1d95b4">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>install()
+: <a class="el" href="classKPackage_1_1Package.html#a5e2ba569f2655e92f6fd767c87d55338">KPackage::Package</a>
+</li>
+<li>internalLoadPackage()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#ad55d500c4f2d58c3f4f634422f6e4143">KPackage::PackageLoader</a>
+</li>
+<li>isRequired()
+: <a class="el" href="classKPackage_1_1Package.html#a7ca5269711e6df819855c2309e219d8d">KPackage::Package</a>
+</li>
+<li>isValid()
+: <a class="el" href="classKPackage_1_1Package.html#a42c002590166a55c26e332f065c8efd6">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>listPackages()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#ad2480cf85aad0055e064487a10c3cb53">KPackage::PackageLoader</a>
+</li>
+<li>loadPackage()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a1d08c2f819966419fd2b362b87ad4ea1">KPackage::PackageLoader</a>
+</li>
+<li>loadPackageStructure()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a8e1b49ff73ccf6cf7a8c5afc61fa42e2">KPackage::PackageLoader</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>metadata()
+: <a class="el" href="classKPackage_1_1Package.html#aa73d0c22a411bc6442a981b71f99b197">KPackage::Package</a>
+</li>
+<li>mimeTypes()
+: <a class="el" href="classKPackage_1_1Package.html#afb541ef59717089754772f98b3a586f9">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>name()
+: <a class="el" href="classKPackage_1_1Package.html#a2bdeae6203245afc5137ef67d10ff416">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
+<li>operator=()
+: <a class="el" href="classKPackage_1_1Package.html#a13621692e42b91a259c268ebd38a8967">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>Package()
+: <a class="el" href="classKPackage_1_1Package.html#a92bb0aacac7ebce910ece58852eef618">KPackage::Package</a>
+</li>
+<li>path()
+: <a class="el" href="classKPackage_1_1Package.html#a817b5ee4ecbf8d3c6b28b79fb6690e6d">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>removeDefinition()
+: <a class="el" href="classKPackage_1_1Package.html#abf44e0421dbaee3b23acbe2298250291">KPackage::Package</a>
+</li>
+<li>requiredDirectories()
+: <a class="el" href="classKPackage_1_1Package.html#a7168fa0de8dfc4ee6dfca94b192e9a13">KPackage::Package</a>
+</li>
+<li>requiredFiles()
+: <a class="el" href="classKPackage_1_1Package.html#af2d0c3bae78f97744aa4dd2faad2206f">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>self()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a4f90700cbe677d3e6d4c40cefe618fce">KPackage::PackageLoader</a>
+</li>
+<li>setAllowExternalPaths()
+: <a class="el" href="classKPackage_1_1Package.html#a9e904f2155c95a824f26a155c317130e">KPackage::Package</a>
+</li>
+<li>setContentsPrefixPaths()
+: <a class="el" href="classKPackage_1_1Package.html#a03abf46f30a34d0187ec0aed71455b62">KPackage::Package</a>
+</li>
+<li>setDefaultMimeTypes()
+: <a class="el" href="classKPackage_1_1Package.html#afe7db278e405471f4274b9d5abd82f41">KPackage::Package</a>
+</li>
+<li>setDefaultPackageRoot()
+: <a class="el" href="classKPackage_1_1Package.html#a8e1fea647f3d2d7ecf9582c12bfdd72b">KPackage::Package</a>
+</li>
+<li>setFallbackPackage()
+: <a class="el" href="classKPackage_1_1Package.html#af1f796d20e7316a349c5638dfb6d49d0">KPackage::Package</a>
+</li>
+<li>setMimeTypes()
+: <a class="el" href="classKPackage_1_1Package.html#a283b27d6f0f9a8eac768d22598849347">KPackage::Package</a>
+</li>
+<li>setPackageLoader()
+: <a class="el" href="classKPackage_1_1PackageLoader.html#a2c36fba4b6299ee5ac085f87eda04832">KPackage::PackageLoader</a>
+</li>
+<li>setPath()
+: <a class="el" href="classKPackage_1_1Package.html#a33ecf5e38f16b34cf703247ac8fdf540">KPackage::Package</a>
+</li>
+<li>setRequired()
+: <a class="el" href="classKPackage_1_1Package.html#a1e24e397f3d2baa0fb8de30ca47fb230">KPackage::Package</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>uninstall()
+: <a class="el" href="classKPackage_1_1Package.html#ac14a4ce753193cca8de1ea0e073e0342">KPackage::Package</a>
+</li>
+<li>update()
+: <a class="el" href="classKPackage_1_1Package.html#a6862c15d981d22d34e5d88744bf88434">KPackage::Package</a>
+</li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:35 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - ThumbCreator Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=ThumbCreator">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classThumbCreator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ThumbCreator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="thumbcreator_8h_source.html">thumbcreator.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ThumbCreator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classThumbCreator__inherit__graph.png" border="0" usemap="#ThumbCreator_inherit__map" alt="Inheritance graph"/></div>
+<map name="ThumbCreator_inherit__map" id="ThumbCreator_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adcc1899c71c88a0278604af8fc728245"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245">Flags</a> { <a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245a0ee3ce28ac1eb74fdbef46590baeecb1">None</a> = 0,
+<a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245a46192c62e0b2b00e278686514f0f2f0b">DrawFrame</a> = 1,
+<a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245ac931f924208e2b75bab6b276d7d8c711">BlendIcon</a> = 2
+ }</td></tr>
+<tr class="separator:adcc1899c71c88a0278604af8fc728245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8b88448d52a382fb1fd16ffc7d4de292"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#a8b88448d52a382fb1fd16ffc7d4de292">~ThumbCreator</a> ()</td></tr>
+<tr class="separator:a8b88448d52a382fb1fd16ffc7d4de292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3f77c8af4bc59603da740947e7e54e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#aeb3f77c8af4bc59603da740947e7e54e">create</a> (const QString &amp;path, int width, int height, QImage &amp;img)=0</td></tr>
+<tr class="separator:aeb3f77c8af4bc59603da740947e7e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1564e00396e9ffb75bbbfdd2bb7b6f"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#a9f1564e00396e9ffb75bbbfdd2bb7b6f">createConfigurationWidget</a> ()</td></tr>
+<tr class="separator:a9f1564e00396e9ffb75bbbfdd2bb7b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff3c11ec163c9c1b4de96125e324b0e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245">Flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#a2ff3c11ec163c9c1b4de96125e324b0e">flags</a> () const</td></tr>
+<tr class="separator:a2ff3c11ec163c9c1b4de96125e324b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15db2ade4b9e6fb7a1b40e17aaa78162"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThumbCreator.html#a15db2ade4b9e6fb7a1b40e17aaa78162">writeConfiguration</a> (const QWidget *configurationWidget)</td></tr>
+<tr class="separator:a15db2ade4b9e6fb7a1b40e17aaa78162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for thumbnail generator plugins. </p>
+<p><a class="el" href="classKIO_1_1PreviewJob.html" title="KIO Job to get a thumbnail picture. ">KIO::PreviewJob</a>, via the "thumbnail" kioslave, uses instances of this class to generate the thumbnail previews.</p>
+<p>To add support for a new document type, subclass <a class="el" href="classThumbCreator.html" title="Base class for thumbnail generator plugins. ">ThumbCreator</a> and implement <a class="el" href="classThumbCreator.html#aeb3f77c8af4bc59603da740947e7e54e" title="Creates a thumbnail. ">create()</a> to generate a thumbnail for a given path. Then create a factory method called "new_creator" to return instances of your subclass: </p><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div><div class="line">{</div><div class="line">  Q_DECL_EXPORT <a class="code" href="classThumbCreator.html">ThumbCreator</a> *new_creator()</div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">new</span> FooThumbCreator();</div><div class="line">  }</div><div class="line">};</div></div><!-- fragment --><p>Compile your <a class="el" href="classThumbCreator.html" title="Base class for thumbnail generator plugins. ">ThumbCreator</a> as a module; for example, the relevant CMake code for a thumbnailer for the "foo" filetype might look like </p><div class="fragment"><div class="line"><span class="keyword">set</span>(foothumbnail_SRCS foothumbnail.cpp)</div><div class="line">add_library(foothumbnail MODULE ${foothumbnail_SRCS})</div><div class="line">target_link_libraries(foothumbnail PRIVATE KF5::KIOWidgets)</div><div class="line"></div><div class="line">install(TARGETS foothumbnail DESTINATION ${PLUGIN_INSTALL_DIR})</div></div><!-- fragment --><p>You also need to create a desktop file describing the thumbnailer. For example: </p><div class="fragment"><div class="line">[Desktop Entry]</div><div class="line">Encoding=UTF-8</div><div class="line">Type=Service</div><div class="line">Name=Foo Documents</div><div class="line">ServiceTypes=<a class="code" href="classThumbCreator.html">ThumbCreator</a></div><div class="line">MimeType=application/x-foo;</div><div class="line">CacheThumbnail=<span class="keyword">true</span></div><div class="line">X-KDE-Library=foothumbcreator</div></div><!-- fragment --><p>Of course, you will need to install it: </p><div class="fragment"><div class="line">install(FILES foothumbcreator.desktop DESTINATION ${SERVICES_INSTALL_DIR})</div></div><!-- fragment --><p>Note that you can supply a comma-separated list of mimetypes to the MimeTypes entry, naming all mimetypes your <a class="el" href="classThumbCreator.html" title="Base class for thumbnail generator plugins. ">ThumbCreator</a> supports. You can also use simple wildcards, like  "text/&#42;".<p>If the thumbnail creation is cheap (such as text previews), you can set </p><div class="fragment"><div class="line">CacheThumbnail=<span class="keyword">false</span></div></div><!-- fragment --><p> in the desktop file to prevent your thumbnails from being cached on disk.</p>
+<p>You can also use the "ThumbnailerVersion" optional property in the .desktop file, like </p><div class="fragment"><div class="line">ThumbnailerVersion=5</div></div><!-- fragment --><p> When this is incremented (or defined when it previously was not), all the previously-cached thumbnails for this creator will be discarded. You should increase the version if and only if old thumbnails need to be regenerated. </p>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8h_source.html#l00097">97</a> of file <a class="el" href="thumbcreator_8h_source.html">thumbcreator.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="adcc1899c71c88a0278604af8fc728245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc1899c71c88a0278604af8fc728245">&#9670;&nbsp;</a></span>Flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245">ThumbCreator::Flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flags to provide hints to the user of this plugin. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThumbCreator.html#a2ff3c11ec163c9c1b4de96125e324b0e" title="Returns the flags for this plugin. ">flags()</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adcc1899c71c88a0278604af8fc728245a0ee3ce28ac1eb74fdbef46590baeecb1"></a>None&#160;</td><td class="fielddoc"><p>No hints. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adcc1899c71c88a0278604af8fc728245a46192c62e0b2b00e278686514f0f2f0b"></a>DrawFrame&#160;</td><td class="fielddoc"><p>A frame should be painted around the preview. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adcc1899c71c88a0278604af8fc728245ac931f924208e2b75bab6b276d7d8c711"></a>BlendIcon&#160;</td><td class="fielddoc"><p>The mimetype icon should be blended over the preview. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8h_source.html#l00104">104</a> of file <a class="el" href="thumbcreator_8h_source.html">thumbcreator.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8b88448d52a382fb1fd16ffc7d4de292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b88448d52a382fb1fd16ffc7d4de292">&#9670;&nbsp;</a></span>~ThumbCreator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThumbCreator::~ThumbCreator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8cpp_source.html#l00024">24</a> of file <a class="el" href="thumbcreator_8cpp_source.html">thumbcreator.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeb3f77c8af4bc59603da740947e7e54e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3f77c8af4bc59603da740947e7e54e">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ThumbCreator::create </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QImage &amp;&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a thumbnail. </p>
+<p>Note that this method should not do any scaling. The <code>width</code> and <code>height</code> parameters are provided as hints for images that are generated from non-image data (like text).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of the file to create a preview for. This is always a local path. </td></tr>
+    <tr><td class="paramname">width</td><td>The requested preview width (see the note on scaling above). </td></tr>
+    <tr><td class="paramname">height</td><td>The requested preview height (see the note on scaling above). </td></tr>
+    <tr><td class="paramname">img</td><td>The QImage to store the preview in.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a preview was successfully generated and store in <code>img</code>, <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9f1564e00396e9ffb75bbbfdd2bb7b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1564e00396e9ffb75bbbfdd2bb7b6f">&#9670;&nbsp;</a></span>createConfigurationWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * ThumbCreator::createConfigurationWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a widget for configuring the thumb creator. </p>
+<p>The caller will take ownership of the returned instance and must ensure its deletion.</p>
+<p>The default implementation returns 0.</p>
+<p>The following key in the thumbcreator .desktop file must be set to mark the plugin as configurable: </p><div class="fragment"><div class="line">Configurable=<span class="keyword">true</span></div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A QWidget instance, which the caller takes ownership of, or 0. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8cpp_source.html#l00037">37</a> of file <a class="el" href="thumbcreator_8cpp_source.html">thumbcreator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ff3c11ec163c9c1b4de96125e324b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff3c11ec163c9c1b4de96125e324b0e">&#9670;&nbsp;</a></span>flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245">ThumbCreator::Flags</a> ThumbCreator::flags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the flags for this plugin. </p>
+<dl class="section return"><dt>Returns</dt><dd>XOR'd flags values. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThumbCreator.html#adcc1899c71c88a0278604af8fc728245" title="Flags to provide hints to the user of this plugin. ">Flags</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8cpp_source.html#l00028">28</a> of file <a class="el" href="thumbcreator_8cpp_source.html">thumbcreator.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15db2ade4b9e6fb7a1b40e17aaa78162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15db2ade4b9e6fb7a1b40e17aaa78162">&#9670;&nbsp;</a></span>writeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThumbCreator::writeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">const QWidget *&#160;</td>
+          <td class="paramname"><em>configurationWidget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the updated configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configurationWidget</td><td>An object returned by <a class="el" href="classThumbCreator.html#a9f1564e00396e9ffb75bbbfdd2bb7b6f" title="Create a widget for configuring the thumb creator. ">createConfigurationWidget()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="thumbcreator_8cpp_source.html#l00042">42</a> of file <a class="el" href="thumbcreator_8cpp_source.html">thumbcreator.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="thumbcreator_8h_source.html">thumbcreator.h</a></li>
+<li><a class="el" href="thumbcreator_8cpp_source.html">thumbcreator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:59 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

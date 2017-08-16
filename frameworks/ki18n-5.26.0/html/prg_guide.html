@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KI18n - Programmer&#39;s Guide</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KI18n</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KI18n"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="globals.html">File Members</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKLocalizedContext.html">KLocalizedContext</option>
+        
+        <option value="classKLocalizedString.html">KLocalizedString</option>
+        
+        <option value="classKLocalizedTranslator.html">KLocalizedTranslator</option>
+        
+        <option value="classKuitSetup.html">KuitSetup</option>
+        
+        <option value="namespaceKuit.html">Kuit</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced internationalization framework</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:caslav.ilic@gmx.net">Chusslove Illich</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5I18n)
+target_link_libraries(yourapp KF5::I18n)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KI18n </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/ki18n-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KI18n on <a href="https://cgit.kde.org/ki18n-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KI18n </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Programmer's Guide </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#write_i18n">Writing Messages</a><ul>
+<li><a href="#gen_usage">General Messages</a></li>
+<li><a href="#spec_usage">Specialized Messages</a></li>
+<li><a href="#subs_notes">Placeholder Substitution</a></li>
+<li><a href="#good_text">Writing Good Texts</a></li>
+<li><a href="#good_ctxt">Writing Good Contexts</a></li>
+<li><a href="#i18n_noop">Extraction-Only Macros</a></li>
+</ul>
+</li>
+<li><a href="#link_cat">Connecting Calls to Catalogs</a><ul>
+<li><a href="#link_prog">Connecting to Catalogs in Application Code</a></li>
+<li><a href="#link_lib">Connecting to Catalogs in Library Code</a></li>
+<li><a href="#link_noncode">Connecting to Catalogs in Non-Code Files</a></li>
+</ul>
+</li>
+<li><a href="#handle_cat">Handling Catalog Files</a><ul>
+<li><a href="#handle_extract">Extracting Templates</a></li>
+<li><a href="#handle_install">Placing and Installing Catalogs</a></li>
+<li><a href="#handle_update">Updating Catalogs</a></li>
+</ul>
+</li>
+<li><a href="#kuit_markup">Semantic Markup</a><ul>
+<li><a href="#kuit_def_tags">Defining Tags</a></li>
+<li><a href="#kuit_sel_fmt">Selecting Visual Format</a></li>
+<li><a href="#kuit_escape">Escaping</a></li>
+<li><a href="#kuit_tags">Predefined Tags</a></li>
+<li><a href="#kuit_ents">Predefined Entities</a></li>
+</ul>
+</li>
+<li><a href="#non_text">Localizing Non-Text Resources</a></li>
+<li><a href="#refs">Further References</a></li>
+</ul>
+<p><a class="anchor" id="intro"></a></p>
+<h2>Introduction</h2>
+<p><em>Internationalization</em> (i18n) is the process of preparing the source code such that the running program can receive and output user-visible information in various human languages, or, more precisely, <em>locales</em>. This is because the same language may be spoken at several places which differ in other details of relevance to the software internationalization (e.g. dialect, calendar, etc). I18n is performed by the programmer. <em>Localization</em> (l10n) is the process of adapting relevant program resources for a particular locale. L10n is performed by the translator, who is usually a native of the locale.</p>
+<p>User interface text is the most prominent resource needing l10n. In the source code, there are two general approaches to writing i18n'd user-visible strings, hereafter called <em>messages</em>. In the first approach, the programmer writes symbolic identifier in place of actual message text, and then for each language there is a file, called translation <em>catalog</em>, which contains the actual text linked to the appropriate identifier. For example, in the code:</p>
+<div class="fragment"><div class="line">QString msg = getId(&quot;out_of_disk_space&quot;);</div></div><!-- fragment --><p>and in the translation catalog:</p>
+<div class="fragment"><div class="line">out_of_disk_space &quot;There is no space left on the disk.&quot;</div></div><!-- fragment --><p>In the second approach, the programmer writes actual text inside the source code, in an agreed upon human language, which is usually American English. Then there is a translation catalog for every <em>other</em> language, in which English and translated text of the message are linked. For example, in the code:</p>
+<div class="fragment"><div class="line">QString msg = i18n(&quot;There is no space left on the disk.&quot;);</div></div><!-- fragment --><p>and in the translation catalog:</p>
+<div class="fragment"><div class="line">msgid &quot;There is no space left on the disk.&quot;</div><div class="line">msgstr &quot;Nema više prostora na disku.&quot;</div></div><!-- fragment --><p>One may observe that the second approach is technically a generalization of the first approach. However, in actual use there are non-negligible differences in the i18n/l10n workflow between these approaches, and therefore they are treated as qualitatively different.</p>
+<p>Both approaches &ndash; the symbolic-identifier and the actual-text &ndash; have some advantages and disadvantages over each other. That is why today both are in use, in software i18n in general. Within free software, though, the actual-text approach is considerably more widespread, as embodied in the GNU Gettext i18n system. Whether this is a historical accident, or due to sensibilities of people writing free software, is left to the interested reader to research.</p>
+<p>The KDE Ki18n library, being built atop Gettext, provides the actual-text approach. In the following it is described how to use Ki18n, from the viewpoint of programmers and maintainers. Basic instructions are split into three parts:</p>
+<ul>
+<li>The first part deals with how to write i18n messages in the code. This is the largest and the most important part, since there are many nuances to preparing quality messages for translation. Section: write_i18n.</li>
+</ul>
+<ul>
+<li>The second part describes how to connect particular translation calls with particular translation catalogs, so that the system can know in which catalogs to search for translations. In particular, there are some differences here depending on whether the piece of code is an application or a library. Section: link_cat.</li>
+</ul>
+<ul>
+<li>The third part explains how to <em>extract</em> messages from the code, in order to create the translation <em>template</em>. The template is simply a clean translation catalog (having only English part of each message), which the translator copies over and fills in the translations for a particular language. Then it is shown how and where to install translation catalogs, and how to update existing translation catalogs to newly extracted templates (after some new development has been done, causing new messages to appear, some to be removed, and some modified). Unlike in the GNU Gettext manual, here there are no dependencies or references to a particular software build system; this is left to the maintainer to choose. Section: handle_cat.</li>
+</ul>
+<p>There are also two special topics:</p>
+<ul>
+<li>Some programmers like to have more structure and consistency in message texts, and for them Ki18n provides a customizable semantic markup. Section: kuit_markup.</li>
+</ul>
+<ul>
+<li>Sometimes there are program resources other than text that require localization. Ki18n provides a generic, though rudimentary solution for such cases. Section: non_text.</li>
+</ul>
+<p><a class="anchor" id="write_i18n"></a></p>
+<h2>Writing Messages</h2>
+<p>Most messages can be internationalized with simple <code>i18n*</code> calls, which are described in the section gen_usage. A few messages may require treatment with <code>ki18n*</code> calls, and when this is needed is described in the section spec_usage. Argument substitution in messages is performed using the familiar Qt syntax <code>%&lt;number&gt;</code>, but there may be some differences; the section subs_notes gives some notes about placeholders. Finally, guidelines for writing good messages are given in sections good_text and good_ctxt.</p>
+<p><a class="anchor" id="gen_usage"></a></p>
+<h3>General Messages</h3>
+<p>General messages are wrapped with <code>i18n*</code> calls. These calls are <em>immediate</em>, which means that they return the final localized text (including substituted arguments) as a <code>QString</code> object, that can be passed to UI widgets.</p>
+<p>The most frequent message type, a simple text without any arguments, is handled like this:</p>
+<div class="fragment"><div class="line">QString msg = i18n(&quot;Just plain info.&quot;);</div></div><!-- fragment --><p>The message text may contain arbitrary Unicode characters, and the source file <em>must</em> be UTF-8 encoded. Ki18n supports no other character encoding.</p>
+<p>If there are some arguments to be substituted into the message, <code>%&lt;number&gt;</code> placeholders are put into the text at desired positions, and arguments are listed after the string:</p>
+<div class="fragment"><div class="line">QString msg = i18n(&quot;%1 has scored %2&quot;, playerName, score);</div></div><!-- fragment --><p>Arguments can be of any type for which there exists an overloaded <code><a class="el" href="classKLocalizedString.html#ad42dbcbdfedf9668a0029cd19c1889ca" title="Substitute an int argument into the message. ">KLocalizedString::subs</a></code> method. Up to 9 arguments can be inserted in this fashion, due to the fact that <code>i18n</code> calls are realized as overloaded templates. If more than 9 arguments are needed, which is extremely rare, a <code>ki18n*</code> call (described later) must be used.</p>
+<p>Sometimes a short message in English is ambiguous to translators, possibly leading to a wrong translations. Ambiguity can be resolved by providing a context string along the text, using the <code>i18nc</code> call. In it, the first argument is the context, which only the translator will see, and the second argument is the text which the user will see:</p>
+<div class="fragment"><div class="line">QString msg = i18nc(&quot;player name - score&quot;, &quot;%1 - %2&quot;, playerName, score);</div></div><!-- fragment --><p>Section good_ctxt gives a few pointers on when contexts are needed, and what they should contain.</p>
+<p>In messages stating how many of some kind of objects there are, where the number of objects is inserted at run time, it is necessary to differentiate between <em>plural forms</em> of the text. In English there are only two forms, one for number 1 (singular) and another form for any other number (plural). In other languages this might be more complicated (more than two forms), or it might be simpler (same form for all numbers). This is handled properly by using the <code>i18np</code> plural call:</p>
+<div class="fragment"><div class="line">QString msg = i18np(&quot;%1 image in album %2&quot;, &quot;%1 images in album %2&quot;,</div><div class="line">                    numImages, albumName);</div></div><!-- fragment --><p>The plural form is decided by the first integer-valued argument, which is <code>numImages</code> in this example. In rare cases when there are two or more integer arguments, they should be ordered carefully.</p>
+<p>In QML code, due to some limitations, always the first argument will be treated as plural-deciding, so it should be an appropriate number (integer or a round double); otherwise, behavior is undefined.</p>
+<p>It is also allowed to omit the plural-deciding placeholder, for example:</p>
+<div class="fragment"><div class="line">QString msg = i18np(&quot;One image in album %2&quot;, &quot;%1 images in album %2&quot;,</div><div class="line">                    numImages, albumName);</div></div><!-- fragment --><p>or even:</p>
+<div class="fragment"><div class="line">QString msg = i18np(&quot;One image in album %2&quot;, &quot;More images in album %2&quot;,</div><div class="line">                    numImages, albumName);</div></div><!-- fragment --><p>If the code context is such that the number is always greater than 1, the plural call must be used nevertheless. This is because in some languages there are different plural forms for different classes of numbers; in particular, the singular form may be used for numbers other than 1 (e.g. those ending in 1).</p>
+<p>If a message needs both context and plural forms, this is provided by <code>i18ncp</code> call:</p>
+<div class="fragment"><div class="line">QString msg = i18ncp(&quot;file on a person&quot;, &quot;1 file&quot;, &quot;%1 files&quot;, numFiles);</div></div><!-- fragment --><p>In the basic <code>i18n</code> call (no context, no plural) it is not allowed to put a literal string as the first argument for substitution. In debug mode this will even trigger a static assertion, resulting in compilation error. This serves to prevent misnamed calls: context or plural frequently needs to be added at a later point to a basic call, and at that moment the programmer may forget to update the call name from <code>i18n</code> to <code>i18nc/p</code>.</p>
+<p>Furthermore, an empty string should never be wrapped with a basic <code>i18n</code> call (no <code>i18n("")</code>), because in translation catalog the message with empty text has a special meaning, and is not intended for client use. The behavior of <code>i18n("")</code> is undefined, and there will be some warnings in debug mode.</p>
+<p>There is also a complement of <code>i18nd*</code> calls (<code>i18nd</code>, <code>i18ndc</code>, <code>i18ndp</code>, <code>i18ndcp</code>), which are not supposed to be used directly, but as will be explained in the section link_cat.</p>
+<p><a class="anchor" id="spec_usage"></a></p>
+<h3>Specialized Messages</h3>
+<p>There are some situations where <code>i18n*</code> calls are not sufficient, or are not convenient enough. One obvious case is if more than 9 arguments need to be substituted. Another case is if it would be easier to substitute arguments later on, after the line with the i18n call. For cases such as these, <code>ki18n*</code> calls can be used. These calls are <em>deferred</em>, which means that they do not return the final translated text as <code>QString</code>, but instead return a <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> instance which needs further treatment. Arguments are then substituted one by one using <code><a class="el" href="classKLocalizedString.html#ad42dbcbdfedf9668a0029cd19c1889ca" title="Substitute an int argument into the message. ">KLocalizedString::subs</a></code> methods, and after all arguments have been substituted, the translation is finalized by one of <code><a class="el" href="classKLocalizedString.html#a2ce655136d85997c70d734fb1587bd9b" title="Finalize the translation. ">KLocalizedString::toString</a></code> methods (which return <code>QString</code>). For example:</p>
+<div class="fragment"><div class="line">KLocalizedString ks;</div><div class="line">case (reportSource) {</div><div class="line">    SRC_ENG: ks = ki18n(&quot;Engineering reports: %1&quot;); break;</div><div class="line">    SRC_HEL: ks = ki18n(&quot;Helm reports: %1&quot;); break;</div><div class="line">    SRC_SON: ks = ki18n(&quot;Sonar reports: %1&quot;); break;</div><div class="line">    default: ks = ki18n(&quot;General report: %1&quot;);</div><div class="line">}</div><div class="line">QString msg = ks.subs(reportText).toString();</div></div><!-- fragment --><p><code>subs</code> methods do not update the <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> instance on which they are invoked, but return a copy of it with one argument slot filled. This allows to use <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> instances as a templates for constructing final texts, by supplying different arguments.</p>
+<p>Another use for deferred calls is when special formatting of arguments is needed, like requesting the field width or number of decimals. <code>subs</code> methods can take these formatting parameters. In particular, arguments should not be formatted in a custom way, because <code>subs</code> methods will also take care of proper localization (e.g. use either dot or comma as decimal separator in numbers, etc):</p>
+<div class="fragment"><div class="line">// BAD (number not localized):</div><div class="line">QString msg = i18n(&quot;Rounds: %1&quot;, myNumberFormat(n, 8));</div><div class="line">// Good:</div><div class="line">QString msg = ki18n(&quot;Rounds: %1&quot;).subs(n, 8).toString();</div></div><!-- fragment --><p>Like with <code>i18n</code>, there are context, plural, and context-plural variants of <code>ki18n:</code></p>
+<div class="fragment"><div class="line">ki18nc(&quot;No function&quot;, &quot;None&quot;).toString();</div><div class="line">ki18np(&quot;File found&quot;, &quot;%1 files found&quot;).subs(n).toString();</div><div class="line">ki18ncp(&quot;Personal file&quot;, &quot;One file&quot;, &quot;%1 files&quot;).subs(n).toString();</div></div><!-- fragment --><p><code>toString</code> methods can be used to override the global locale. To override only the language of the locale, <code>toString</code> can take a list of languages for which to look up translations (ordered by decreasing priority):</p>
+<div class="fragment"><div class="line">QStringList myLanguages;</div><div class="line">...</div><div class="line">QString msg = ki18n(&quot;Welcome&quot;).toString(myLanguages);</div></div><!-- fragment --><p>The section link_cat describes how to specify the translation <em>domain</em>, a canonical name for the catalog file from which <code>*i18n*</code> calls will draw translations. But <code>toString</code> can always be used to override the domain for a given call, by supplying a specific domain:</p>
+<div class="fragment"><div class="line">QString trName = ki18n(&quot;Georgia&quot;).toString(&quot;country-names&quot;);</div></div><!-- fragment --><p>Relevant here is the set of <code>ki18nd*</code> calls (<code>ki18nd</code>, <code>ki18ndc</code>, <code>ki18ndp</code>, <code>ki18ndcp</code>), which can be used for the same purpose, but which are not intended to be used directly. This will also be covered in the section link_cat.</p>
+<p><a class="anchor" id="dyn_ctxt"></a></p>
+<h4>Dynamic Contexts</h4>
+<p>Translators are provided with the capability to script translations, such that the text changes based on arguments supplied at run time. For the most part, this feature is transparent to the programmer. However, sometimes the programmer may help in this by providing a <em>dynamic</em> context to the message, through <code><a class="el" href="classKLocalizedString.html#a151066e1e9ffe55bb3c58fcd4f970900" title="Add dynamic context to the message. ">KLocalizedString::inContext</a></code> methods. Unlike the static context, the dynamic context changes at run time; translators have the means to fetch it and use it to script the translation properly. An example:</p>
+<div class="fragment"><div class="line">KLocalizedString ks = ki18nc(&quot;%1 is user name; may have &quot;</div><div class="line">                             &quot;dynamic context gender=[male,female]&quot;,</div><div class="line">                             &quot;%1 went offline&quot;);</div><div class="line">if (knownUsers.contains(user) &amp;&amp; !knownUsers[user].gender.isEmpty()) {</div><div class="line">    ks = ks.inContext(&quot;gender&quot;, knownUsers[user].gender);</div><div class="line">}</div><div class="line">QString msg = ks.subs(user).toString();</div></div><!-- fragment --><p>Any number of dynamic contexts, with different keys, can be added like this. Normally every message with a dynamic context should also have a static context, like in the previous example, informing the translator of the available dynamic context keys and possible values. Like <code>subs</code> methods, <code>inContext</code> does not modify the parent instance, but returns a copy of it.</p>
+<p><a class="anchor" id="subs_notes"></a></p>
+<h3>Placeholder Substitution</h3>
+<p>Hopefully, most of the time <code>%&lt;number&gt;</code> placeholders are substituted in the way one would intuitively expect them to be. Nevertheless, some details about substitution are as follows.</p>
+<p>Placeholders are substituted in one pass, so there is no need to worry about what will happen if one of the substituted arguments contains a placeholder, and another argument is substituted after it.</p>
+<p>All same-numbered placeholders are substituted with the same argument.</p>
+<p>Placeholders directly index arguments: they should be numbered from 1 upwards, without gaps in the sequence, until each argument is indexed. Otherwise, error marks will be inserted into message at run time (when the code is compiled in debug mode), and any invalid placeholder will be left unsubstituted. The exception is the plural-deciding argument in plural calls, where it is allowed to drop its placeholder, in either the singular or the plural text.</p>
+<p>If none of the arguments supplied to a plural call is integer-valued, an error mark will be inserted into the message at run time (when compiled in debug mode).</p>
+<p>Integer arguments will be by default formatted as if they denote an amount, according to locale rules (thousands separation, etc.) But sometimes an integer is a numerical identifier (e.g. port number), and then it should be manually converted into <code>QString</code> beforehand to avoid treatment as amount:</p>
+<div class="fragment"><div class="line">i18n(&quot;Listening on port %1.&quot;, QString::number(port));</div></div><!-- fragment --><p><a class="anchor" id="good_text"></a></p>
+<h3>Writing Good Texts</h3>
+<p>When writing message texts, sometimes it is tempting to assemble text from pieces such as to have less repetition. However, such shortcuts frequently cannot work for other languages, and are almost always confusing to translators. The first rule of writing good message texts is therefore to <em>keep sentences together and clearly structured</em> (or "no word puzzles"), even at the cost of some repetition.</p>
+<p>At its basic, this rule means always to use placeholders for insertion of run time arguments, rather than string concatenation. For example:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">i18n(&quot;File &quot;) + filePath + i18n(&quot; not found.&quot;);</div><div class="line">// Good:</div><div class="line">i18n(&quot;File %1 not found.&quot;, filePath);</div></div><!-- fragment --><p>This is rather obvious, since it also results in clearer and shorter code. But sometimes placeholders can be overused:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">i18n(&quot;This contact is now %1.&quot;,</div><div class="line">     isOnline ? i18n(&quot;online&quot;) : i18n(&quot;offline&quot;));</div><div class="line">// Good:</div><div class="line">isOnline ? i18n(&quot;This contact is now online.&quot;)</div><div class="line">         : i18n(&quot;This contact is now offline.&quot;);</div></div><!-- fragment --><p>The shorter version here is bad, because the sentence structure of translation may need to change by more than the one word, and also because a less thorough translator may fail to check in which way the short messages "online" and "offline" are used.</p>
+<p>If an otherwise long text needs to differ in only small part, then a reasonable solution is to split it at sentence level, but also explain the situation to translators through context:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">i18n(&quot;Something very long here. This contact is now %1.&quot;,</div><div class="line">     isOnline ? i18n(&quot;online&quot;) : i18n(&quot;offline&quot;));</div><div class="line">// Good:</div><div class="line">i18nc(&quot;%1 one of the &#39;This contact...&#39; messages below&quot;,</div><div class="line">      &quot;Something very long here. %1&quot;,</div><div class="line">      isOnline ? i18n(&quot;This contact is now online.&quot;)</div><div class="line">               : i18n(&quot;This contact is now offline.&quot;));</div><div class="line">// BAD:</div><div class="line">  i18n(&quot;Something very long here. &quot;)</div><div class="line">+ isOnline ? i18n(&quot;This contact is now online.&quot;)</div><div class="line">           : i18n(&quot;This contact is now offline.&quot;);</div></div><!-- fragment --><p>The third version above is bad because, firstly, the translator may wonder about the trailing space in the first message or simply overlook it, and secondly, there may be some cross-dependency between the translation of the long message and the short messages. In general, insertions of one message into another should <em>always</em> be accompanied by contexts, and composition-significant leading and trailing whitespace should be avoided.</p>
+<p>The second basic rule of writing good texts is to <em>expose every user-visible text for translation</em>. One should <em>never</em> make assumptions of the type "this does not need translation" or "it will be same in every language".</p>
+<p>One example where programmers sometimes make such assumption are compositions without any letters:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">QString(&quot;%1: %2&quot;).arg(albumName, playCount);</div><div class="line">// Good:</div><div class="line">i18nc(&quot;album name: play count&quot;, &quot;%1: %2&quot;, albumName, playCount)</div></div><!-- fragment --><p>Here, in some languages the arrangement of whitespace will need to differ (e.g. a space may be needed before the colon as well). Letter-free compositions should also normally be equipped with context, because, for example, separation may depend on type of arguments.</p>
+<p>Another example of user-visible texts sometimes wrongly omitted from i18n are proper names:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">label1-&gt;setText(i18n(&quot;Written by:&quot;));</div><div class="line">label2-&gt;setText(&quot;Roofus McBane&quot;);</div><div class="line">// Good:</div><div class="line">label1-&gt;setText(i18n(&quot;Written by:&quot;));</div><div class="line">label2-&gt;setText(i18n(&quot;Roofus McBane&quot;));</div></div><!-- fragment --><p>Proper names too may need localization, for example, transliteration when the target language uses a different writing system. This holds for proper names of people, and of anything else.</p>
+<p>When it comes to text markup, like the HTML subset supported by Qt rich text processing, opinions are divided on how much of it to expose for translation. One argument goes that markup may be confusing for translators, and that exposing it increases the chance of syntactical errors in translation. This is true as such, but it should be balanced with situations where, either, the translator needs to modify the markup, or, the markup will convey some context to translator. For example, typographical modifiers should always be left in:</p>
+<div class="fragment"><div class="line">// BAD:</div><div class="line">label-&gt;setText(&quot;&lt;b&gt;&quot; + i18n(&quot;Disk almost full:&quot;) + &quot;&lt;/b&gt;&quot;);</div><div class="line">// Good:</div><div class="line">label-&gt;setText(i18n(&quot;&lt;b&gt;Disk almost full:&lt;/b&gt;&quot;));</div></div><!-- fragment --><p>because the target language may have different typographical standards (e.g. CJK languages tend to avoid boldface in text body font sizes, as it makes ideographs harder to recognize). Especially if tags are found around internal parts of the message text, it would be ungainly to hide them, e.g. by placeholder insertion. But, values to tag attributes, such as links in <code>&lt;a href='...'&gt;</code>, tags, should be inserted through placeholders (unless it is expected that translators provide localized values). In this example:</p>
+<div class="fragment"><div class="line">// Good:</div><div class="line">i18n(&quot;&lt;p&gt;Preprocessing has failed.&lt;/p&gt;&quot;</div><div class="line">     &quot;&lt;p&gt;Please check your bracketed images stack.&lt;/p&gt;&quot;</div><div class="line">     &quot;&lt;p&gt;Click \&quot;Details\&quot; to show processing details.&lt;/p&gt;&quot;)</div></div><!-- fragment --><p><code>&lt;p&gt;</code> tags could be avoided by splitting this message into one message per sentence, but this should not be done, because paragraphs should be translated as single units of meaning.</p>
+<p>Another important point about XML-like text markup, is to try and keep it well-formed in XML sense on the level of standalone message. For example:</p>
+<div class="fragment"><div class="line">// BAD (for translation, although fine by HTML / Qt rich text):</div><div class="line">i18n(&quot;&lt;p&gt;Some sentence.&quot;</div><div class="line">     &quot;&lt;p&gt;Another sentence.&quot;);</div><div class="line">// Good:</div><div class="line">i18n(&quot;&lt;p&gt;Some sentence.&lt;/p&gt;&quot;</div><div class="line">     &quot;&lt;p&gt;Another sentence.&lt;/p&gt;&quot;);</div></div><!-- fragment --><p>Well-formedness is good because the most frequent error in translation in presence of markup is mistyping (or miscopying) a tag. If the original text is well-formed, a translation checker tool can require the same of translation, and signal when that is not so. The previous example of non-well-formedness was perhaps trivial; in practice, non-trivial examples usually break some other rules too (e.g. no word puzzles).</p>
+<p><a class="anchor" id="good_ctxt"></a></p>
+<h3>Writing Good Contexts</h3>
+<p>The message context, given as first argument in <code>*i18nc</code> calls, is of great help to translators. Unfortunately, to a programmer it is not always clear when a context is needed, or what it should state. So, the very first rule of writing good contexts is to <em>listen to the translators asking for contexts</em>. When taking suggestions from translators, there is no need to worry if the proposed context will be sufficient for "all" languages. It is fine to simply add the information that a translator into particular language requested, and wait for translators into other languages to maybe request some other context information as well.</p>
+<p>Having said this, some apriori guidelines on contexts can be followed.</p>
+<p>Since in English the form of an adjective does not change based on the gender of the noun it modifies, properly translating messages which are single standalone adjectives will be impossible in many languages without a context. So, in general, every message which is a standalone adjective should have context:</p>
+<div class="fragment"><div class="line">i18nc(&quot;new file&quot;, &quot;New&quot;);</div><div class="line">i18nc(&quot;default action&quot;, &quot;Default&quot;);</div></div><!-- fragment --><p>Lists of related items typically benefit from having the same context, since they should all be translated in the same style:</p>
+<div class="fragment"><div class="line">i18nc(&quot;IPv4 configuration method&quot;, &quot;Automatic (VPN)&quot;);</div><div class="line">i18nc(&quot;IPv4 configuration method&quot;, &quot;Automatic (VPN) addresses only&quot;);</div><div class="line">i18nc(&quot;IPv4 configuration method&quot;, &quot;Automatic (PPP)&quot;);</div><div class="line">i18nc(&quot;IPv4 configuration method&quot;, &quot;Automatic (PPP) addresses only&quot;);</div><div class="line">...</div></div><!-- fragment --><p>When there are placeholders in the text for which it is not clear, from the text alone, what kind of argument they represent, this should be explained in the context:</p>
+<div class="fragment"><div class="line">i18nc(&quot;%1 old file path, %2 new file path&quot;,</div><div class="line">      &quot;Cannot move &#39;%1&#39; to &#39;%2&#39;.&quot;, oldPath, newPath);</div><div class="line">i18nc(&quot;%1 track URL, %2 artist name&quot;,</div><div class="line">      &quot;%1 (by %2)&quot;, trackUrl, artistName);</div></div><!-- fragment --><p>It is frequently suggested to state in the context the grammar category of the message text, such as "this is a verb" or "this is a noun". Since the grammar category of the translation does not have to be the same as that of the original, this kind of context provides circumstantial information at best (see the section uimark_ctxt for what translators may use it to draw some real information about), and is worthless at worst. Also, due to relative absence of declension in English grammar, different programmers may have different opinion on the grammar category: the menu title "View", is it a verb or a noun?</p>
+<p><a class="anchor" id="uimark_ctxt"></a></p>
+<h4>User Interface Markers</h4>
+<p>In the same way there exists a HIG (Human Interface Guidelines) document for the programmers to follow, translators should establish HIG-like convention for their language concerning the forms of UI text. Therefore, for a proper translation, the translator will need too know not only what does the message mean, but also where it figures in the UI. E.g. is the message a button label, a menu title, a tooltip, etc.</p>
+<p>To this end a convention has been developed among KDE translators, which programmers can use to succinctly describe UI usage of messages. In this convention, the context string starts with an <em>UI marker</em> of the form <code>@&lt;major&gt;:&lt;minor&gt;</code>, and may be followed by any other usual context information, separated with a single space:</p>
+<div class="fragment"><div class="line">i18nc(&quot;@action:inmenu create new file&quot;, &quot;New&quot;);</div></div><!-- fragment --><p>The major and minor component of the UI marker are not arbitrary, but are drawn from the following table. For each component, the superscript states the Ki18n release when the component was introduced. </p><table class="doxtable">
+<tr>
+<th>Major</th><th>Minor</th><th>Description </th></tr>
+<tr>
+<td><b>@action</b><sup>5.0</sup></td><td></td><td>Labels of clickable widgets which cause an action to be performed. </td></tr>
+<tr>
+<td></td><td>:button<sup>5.0</sup> </td><td>Push buttons in windows and dialogs. </td></tr>
+<tr>
+<td></td><td>:inmenu<sup>5.0</sup> </td><td>Menu entries that perform an action (as opposed e.g. to being checked). </td></tr>
+<tr>
+<td></td><td>:intoolbar<sup>5.0</sup> </td><td>Toolbar buttons. </td></tr>
+<tr>
+<td><b>@title</b><sup>5.0</sup></td><td></td><td>Text that is the title of a major UI element or a widget container. </td></tr>
+<tr>
+<td></td><td>:window<sup>5.0</sup> </td><td>Title of a window or a (dockable) view/pane. </td></tr>
+<tr>
+<td></td><td>:menu<sup>5.0</sup> </td><td>Menu title. </td></tr>
+<tr>
+<td></td><td>:tab<sup>5.0</sup> </td><td>Tab name. </td></tr>
+<tr>
+<td></td><td>:group<sup>5.0</sup> </td><td>Title to a group of widgets, like a group of checkboxes or radio buttons. </td></tr>
+<tr>
+<td></td><td>:column<sup>5.0</sup> </td><td>Column name in a table header, e.g. in a table view widget. </td></tr>
+<tr>
+<td></td><td>:row<sup>5.0</sup> </td><td>Row name in a table. </td></tr>
+<tr>
+<td><b>@option</b><sup>5.0</sup></td><td></td><td>Labels of option selection widgets, which can be enable/disabled or selected between. </td></tr>
+<tr>
+<td></td><td>:check<sup>5.0</sup> </td><td>Checkbox label, also a checkable menu entry. </td></tr>
+<tr>
+<td></td><td>:radio<sup>5.0</sup> </td><td>Radio button label. </td></tr>
+<tr>
+<td><b>@label</b><sup>5.0</sup></td><td></td><td>Various widget labels which are not covered by any of @action, @title, or @option. </td></tr>
+<tr>
+<td></td><td>:slider<sup>5.0</sup> </td><td>Slider label. </td></tr>
+<tr>
+<td></td><td>:spinbox<sup>5.0</sup> </td><td>Spinbox label. </td></tr>
+<tr>
+<td></td><td>:listbox<sup>5.0</sup> </td><td>Label to a list box or combo box. </td></tr>
+<tr>
+<td></td><td>:textbox<sup>5.0</sup> </td><td>Label to a text box or text edit field. </td></tr>
+<tr>
+<td></td><td>:chooser<sup>5.0</sup> </td><td>Label to any special-purpose chooser widget, like color chooser, font chooser, etc. </td></tr>
+<tr>
+<td><b>@item</b><sup>5.0</sup></td><td></td><td>Strings that are items from a range of possibilities or properties of a given type. </td></tr>
+<tr>
+<td></td><td>:inmenu<sup>5.0</sup> </td><td>Item presented in menu (e.g. sort ordering, encoding name, etc). </td></tr>
+<tr>
+<td></td><td>:inlistbox<sup>5.0</sup> </td><td>Item presented in a list or combo box. </td></tr>
+<tr>
+<td></td><td>:intable<sup>5.0</sup> </td><td>Item presented in a table cell. </td></tr>
+<tr>
+<td></td><td>:inrange<sup>5.0</sup> </td><td>End range labels, e.g. on sliders. </td></tr>
+<tr>
+<td></td><td>:intext<sup>5.0</sup> </td><td>Words and short phrases which are inserted into a larger piece of text. </td></tr>
+<tr>
+<td><b>@info</b><sup>5.0</sup></td><td></td><td>Any transient information for the user. </td></tr>
+<tr>
+<td></td><td>:tooltip<sup>5.0</sup> </td><td>Expanded formulation of the widget's label, usually appearing automatically when the pointer hovers over the widget. </td></tr>
+<tr>
+<td></td><td>:whatsthis<sup>5.0</sup> </td><td>Longer description of a widget's purpose and behavior, usually manually called up by the user. </td></tr>
+<tr>
+<td></td><td>:status<sup>5.0</sup> </td><td>A piece of text displayed in application's status view (e.g in the status bar). </td></tr>
+<tr>
+<td></td><td>:progress<sup>5.0</sup> </td><td>Text describing the current step or state of an operation, possibly periodically updating. </td></tr>
+<tr>
+<td></td><td>:usagetip<sup>5.0</sup> </td><td>A tip that comes up to inform the user about a certain possibility in a given context, e.g. a "tip of the day" on application startup.<br />
+ Deprecated synonym: :tipoftheday. </td></tr>
+<tr>
+<td></td><td>:credit<sup>5.0</sup> </td><td>Contributor names and their contributions, e.g. in the about dialog. </td></tr>
+<tr>
+<td></td><td>:shell<sup>5.0</sup> </td><td>A note, warning or error sent to application's text output stream (stdout, stderr) rather than shown in the UI. </td></tr>
+</table>
+<p>If none of the minor components apply to a given message, a major component can be used standalone. For example, this would happen with a library-provided list of items without any immediate UI context (e.g. language or country names), where the appropriate UI marker would be just <code>@item</code>.</p>
+<p>One way to extend the context after the UI marker, which is simple for the programmer yet can be very helpful for translators, is simply to add the text of the (technically or logically) parent widget. For example, if the action "New" is in the menu "File", then:</p>
+<div class="fragment"><div class="line">i18nc(&quot;@action:inmenu File&quot;, &quot;New&quot;)</div></div><!-- fragment --><p>Or, if the item "Left" is found in the list box with the label "Vertical alignment":</p>
+<div class="fragment"><div class="line">i18nc(&quot;@item:inlistbox Vertical alignment&quot;, &quot;Left&quot;)</div></div><!-- fragment --><p><a class="anchor" id="nocpp_ctxt"></a></p>
+<h4>Adding Contexts in Non-C++ files</h4>
+<p>When Qt Designer is used to build the user interface, the <em>-tr</em> option of <code>uic</code> should be used to pass UI strings through Ki18n's <code>tr2i18n</code> function (see also link_ui). This function is the equivalent of <code>i18n</code> or <code>i18nc</code>, based on whether the second argument is null or not. If a string in the <code>.ui</code> file has the attribute <code>comment=</code>, its value will be automatically used as the context argument. (In Qt Designer, this is the "disambiguation" property of a string.) Alternatively, strings can be passed to Ki18n's <code>tr2xi18n</code> function (see kuit_markup).</p>
+<p>In KXmlGui (<code>.rc</code>) and KConfigXT (<code>.kcfg</code>) files, contexts can be added through <code>context=</code> attributes to <code>text</code>, <code>label</code>, and <code>whatsthis</code> tags.</p>
+<p><a class="anchor" id="ctxt_extc"></a></p>
+<h4>Disambiguation Context vs. Extracted Comment</h4>
+<p>The GNU Gettext system actually defines <em>two</em> types of context for translators. The type discussed so far, the first argument of <code>*i18nc*</code> calls, is called <em>disambiguation context</em>. The other type of context is <em>extracted comment</em>. In Ki18n, this other type of context is written as a code comment, in the line just preceding the message text, and starting with <em>i18n:</em> keyword:</p>
+<div class="fragment"><div class="line">// i18n: This is a short text containing all letter of the alphabet,</div><div class="line">// e.g. for testing fonts. Translate with a sentence which can</div><div class="line">// serve the same purpose in your language.</div><div class="line">i18n(&quot;The quick brown fox jumps over the lazy dog&quot;);</div></div><!-- fragment --><p>There are two main differences between disambiguation contexts and extracted comments.</p>
+<p>The first difference is that extracted comments <em>do not separate messages</em> in the translation catalog. For example, such two messages equipped with extracted comments:</p>
+<div class="fragment"><div class="line">// i18n: new file</div><div class="line">QString msg1 = i18n(&quot;New&quot;);</div><div class="line">// i18n: new folder</div><div class="line">QString msg2 = i18n(&quot;New&quot;);</div></div><!-- fragment --><p>will show up in the translation catalog as a single message with aggregate comments:</p>
+<div class="fragment"><div class="line">#. i18n: new file</div><div class="line">#. i18n: new folder</div><div class="line">msgid &quot;New&quot;</div><div class="line">msgstr &quot;&quot;</div></div><!-- fragment --><p>The same two messages equipped with disambiguation contexts:</p>
+<div class="fragment"><div class="line">QString msg1 = i18nc(&quot;new file&quot;, &quot;New&quot;);</div><div class="line">QString msg2 = i18nc(&quot;new folder&quot;, &quot;New&quot;);</div></div><!-- fragment --><p>will show up in the translation catalog as two messages:</p>
+<div class="fragment"><div class="line">msgctxt &quot;new file&quot;</div><div class="line">msgid &quot;New&quot;</div><div class="line">msgstr &quot;&quot;</div><div class="line"></div><div class="line">msgctxt &quot;new folder&quot;</div><div class="line">msgid &quot;New&quot;</div><div class="line">msgstr &quot;&quot;</div></div><!-- fragment --><p>The second difference is that a change in extracted comment <em>does not invalidate the existing translation</em>, i.e. it will not force translators to revisit the message and revise the translation (see the section handle_update for details on how this invalidation happens with disambiguation contexts). Thus, for example, if there is a "message freeze" before the next release of a piece of software, during which programmers must not modify messages so that translators can thoroughly complete their work, it is allowed to modify the extracted comment, but it is not allowed to modify the disambiguation context.</p>
+<p>The Gettext manual suggests to use extracted comments as the default way of providing context for translators, and to use disambiguation contexts only when message separation is necessary. However, we (the people in the KDE community) suggest the opposite &ndash; to use disambiguation context by default, and extracted comments only in special cases. This because there are two dangers associated with extracted comments: one is that programmer may fail to properly judge when two messages should be made separate for translation (and having to judge that all the time is a burden in the first place), and the other is that when the context change is such that translators really should revisit the message, they would not get any automatic signal about that. The message freeze advantage of extracted comments has not been observed to be very important.</p>
+<p>One special case when to an use extracted comment is when the context is a multi-sentence text explaining the purpose of the message, and the context is unlikely to change (in its meaning). Another case is when the context lists a fixed set of possible translations ("meta-messages", by which translators influence some aspect of text formatting), which may expand in the future, as new possibilities are introduced at request of translators into new languages.</p>
+<p><a class="anchor" id="i18n_noop"></a></p>
+<h3>Extraction-Only Macros</h3>
+<p>Sometimes it is convenient only to mark a message for extraction (into the catalog template, as described in handle_extract), and to place the actual <code>i18n</code> call somewhere else. A typical case of this are global static initializers, where only POD types can be safely used. For this purpose <code>I18N*_NOOP</code> macros are provided.</p>
+<p>The <code>I18N_NOOP</code> macro is the counterpart to <code>*i18n</code> calls, and it is used like this:</p>
+<div class="fragment"><div class="line">typedef struct</div><div class="line">{</div><div class="line">    const char *description;</div><div class="line">    const char *regExp;</div><div class="line">} term;</div><div class="line">// Inert I18N_NOOP macros here...</div><div class="line">static const term items[] = {</div><div class="line">    {I18N_NOOP(&quot;any character&quot;), &quot;.&quot;},</div><div class="line">    {I18N_NOOP(&quot;start of line&quot;), &quot;^&quot;},</div><div class="line">    {I18N_NOOP(&quot;end of line&quot;), &quot;$&quot;},</div><div class="line">    {I18N_NOOP(&quot;repeats, zero or more times&quot;), &quot;*&quot;},</div><div class="line">    ...</div><div class="line">};</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">void populatePatternMenu (QMenu *menu)</div><div class="line">{</div><div class="line">    for (uint i = 0; i &lt; sizeof(items) / sizeof(items[0]); i++) {</div><div class="line">        menu-&gt;addAction(new RegExpAction(menu,</div><div class="line">                                         // ...actual i18n call here.</div><div class="line">                                         i18n(items[i].description),</div><div class="line">                                         items[i].regExp));</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p>The <code>I18NC_NOOP</code> macro is the counterpart to <code>*i18nc</code> calls:</p>
+<div class="fragment"><div class="line">typedef struct</div><div class="line">{</div><div class="line">    const char *description, *abbrev;</div><div class="line">} unitDef;</div><div class="line">static const unitDef units[] = {</div><div class="line">    {I18N_NOOP2_NOSTRIP(&quot;unit for 2^10 bytes&quot;, &quot;KiB&quot;)},</div><div class="line">    {I18N_NOOP2_NOSTRIP(&quot;unit for 2^20 bytes&quot;, &quot;MiB&quot;)},</div><div class="line">    ...</div><div class="line">}</div><div class="line">...</div><div class="line">    QString unitAbbrev = i18nc(units[i].description, units[i].abbrev);</div></div><!-- fragment --><p>There are also two deprecated macros: <code>I18N_NOOP2_NOSTRIP</code> is simply the old name of <code>I18NC_NOOP</code>; <code>I18N_NOOP2</code> takes the context argument but discards it, which means that the context must be repeated verbatim in the corresponding <code>i18nc</code> call.</p>
+<p>In general, <code>I18N*_NOOP</code> macros make it harder to follow i18n in the code, and should be avoided when possible.</p>
+<p><a class="anchor" id="link_cat"></a></p>
+<h2>Connecting Calls to Catalogs</h2>
+<p>Every <code>i18n</code> call must look for translations in exactly one translation catalog for a given language of translation. For this purpose, a group of catalogs which have the same source text but translations into different languages, is identified by a unique canonical name, called the <em>domain</em>. Therefore, every <code>i18n</code> call must be connected to a domain. This connection is established differently for applications and libraries, though the difference is only for convenience: if desired, the more verbose library method can be used for application code as well.</p>
+<p><a class="anchor" id="link_prog"></a></p>
+<h3>Connecting to Catalogs in Application Code</h3>
+<p>All <code>*i18n*</code> calls in an application can be connected to a single domain by calling the static <code><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">KLocalizedString::setApplicationDomain</a></code> method with the domain as the argument:</p>
+<div class="fragment"><div class="line">#include &lt;klocalizedstring.h&gt;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">int main (int argc, char *argv[])</div><div class="line">{</div><div class="line">    ...</div><div class="line">    KLocalizedString::setApplicationDomain(&quot;fooapp&quot;);</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>This call can be made at any place in the code (e.g. there is no need to have <code>QApplication</code> constructed beforehand), but of course before any <code>i18n</code> call takes place.</p>
+<p>This is all there is to connecting calls and catalogs application's C++ source files. However, there may also be some non-code files that need connecting, and how to do this is some typical non-code files is described in the section link_noncode.</p>
+<p><a class="anchor" id="link_lib"></a></p>
+<h3>Connecting to Catalogs in Library Code</h3>
+<p><code>i18n</code> calls in libraries must be strictly connected to library's own translation domain no matter how the library is used, and this should be fully transparent to the library's client. In particular, if the client does not use Ki18n for internationalization of its own messages, library translation must still work as expected. Therefore, in library code, the call-domain connection is established in this way:</p>
+<div class="fragment"><div class="line">#define TRANSLATION_DOMAIN &quot;foolib&quot;</div><div class="line">#include &lt;klocalizedstring.h&gt;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">void some_library_function ()</div><div class="line">{</div><div class="line">    ...</div><div class="line">    QString msg = i18n(&quot;Greetings from Foolib!&quot;);</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>The definition of <code>TRANSLATION_DOMAIN</code> triggers the domain-specialization macro in <code><a class="el" href="klocalizedstring_8h.html">klocalizedstring.h</a></code>. It routes all <code>*i18n*</code> calls to their <code>*i18nd*</code> counterparts, which take the domain as their first argument. The <code>i18n</code> call from this example will thus expand into:</p>
+<div class="fragment"><div class="line">QString msg = i18nd(&quot;foolib&quot;, &quot;Greetings from Foolib!&quot;);</div></div><!-- fragment --><p>It is possible to use <code>*i18nd*</code> calls explicitly, but there should be no need for that. If there are any messages that should draw translations from a special domain, it is better style-wise to use the <code>ki18n("...").toString(domain)</code> construct.</p>
+<p>Definition of <code>TRANSLATION_DOMAIN</code> can be put into a private header file of the library, so that it does not have to be repeated at multiple locations. If there are some <code>i18n</code> calls in a <em>public</em> header file, definition of <code>TRANSLATION_DOMAIN</code> would propagate into and affect the application client code that uses Ki18n too. This is prevented by adding the following lines somewhere after the last <code>i18n</code> call in the public header:</p>
+<div class="fragment"><div class="line">#undef TRANSLATION_DOMAIN</div><div class="line">#include &lt;klocalizedstring.h&gt;</div></div><!-- fragment --><p>This will undefine all expansions of <code>*i18n*</code> into <code>*i18nd*</code>, leaving the client's environment clean. If instead the public header contains only <code>I18N_NOOP*</code> macros, defining <code>TRANSLATION_DOMAIN</code> is unnecessary in the first place, since actual <code>i18n</code> calls happen somewhere else.</p>
+<p><a class="anchor" id="link_noncode"></a></p>
+<h3>Connecting to Catalogs in Non-Code Files</h3>
+<p>Both KDE applications and libraries can include some non-code files which contain messages that need to be connected to a translation domain. This can be the same domain where messages from C++ code are found, or another domain, whatever seems more appropriate. In principle, each type of non-code file requires its own connection mechanism, and here it is explained how this works for typical types of non-code files found in KDE sources.</p>
+<p>It is assumed in the following that all messages in the non-code file are connected to the single domain. In other words, the connection is specified on the file level rather than on the message level.</p>
+<p><a class="anchor" id="link_ui"></a></p>
+<h4>Qt Designer (.ui) files</h4>
+<p>First, to have UI strings from <code>.ui</code> file passed through Ki18n, <code>uic</code> is run with <code>-tr tr2i18n</code>. This will replace all native Qt <code>tr</code> calls with Ki18n's <code>tr2i18n</code> calls in the resulting header file. Then, the generated header file needs to be post-processed to fix empty messages and include <code><a class="el" href="klocalizedstring_8h.html">klocalizedstring.h</a></code>. At this point, the <code>TRANSLATION_DOMAIN</code> can be defined just like in static C++ files.</p>
+<p>If CMake is used as the build system, a macro that performs all of the above is provided (<code>ki18n_wrap_ui</code>). Otherwise, one could use a shell snippet such as this:</p>
+<div class="fragment"><div class="line">domain=fooapp</div><div class="line">uifile=fooconfpage.ui</div><div class="line">uihfile=$uifile.h</div><div class="line">uic -tr tr2i18n $uifile -o $uihfile</div><div class="line">sed -i &#39;s/tr2i18n(&quot;&quot;)/QString::null/g&#39; $uihfile</div><div class="line">sed -i &#39;s/tr2i18n(&quot;&quot;, &quot;&quot;)/QString::null/g&#39; $uihfile</div><div class="line">sed -i &quot;1i\#define TRANSLATION_DOMAIN \&quot;$domain\&quot;\n#include &lt;klocalizedstring.h&gt;&quot; $uihfile</div></div><!-- fragment --><p>If strings contain KUIT markup (section kuit_markup), <code>tr2i18n</code> in the lines above should be replaced with <code>tr2xi18n</code>.</p>
+<p><a class="anchor" id="link_rc"></a></p>
+<h4>KXmlGui (.rc) files</h4>
+<p>Since <code>.rc</code> files are interpreted at runtime, the translation domain connection is established simply by adding the <code>translationDomain</code> attribute to the top element:</p>
+<div class="fragment"><div class="line">&lt;!DOCTYPE kpartgui SYSTEM &quot;kpartgui.dtd&quot;&gt;</div><div class="line">&lt;kpartgui name=&quot;foolib_part&quot; version=&quot;55&quot; translationDomain=&quot;foolib&quot;&gt;</div><div class="line">...</div></div><!-- fragment --><p>If the <code>.rc</code> file belongs to application rather than library source, it is not necessary to set <code>translationDomain</code>. If not set, translations will be looked up in the domain set with <code><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">KLocalizedString::setApplicationDomain</a></code> call in the code.</p>
+<p>If strings contain KUIT markup (section kuit_markup), additionally the attribute <code>translationMarkup="true"</code> should be set.</p>
+<p><a class="anchor" id="link_kcfg"></a></p>
+<h4>KConfigXT (.kcfg) files</h4>
+<p>Instructions for building the configuration code from a <code>.kcfg</code> file are contained in the <code>.kcfgc</code> file of the same base name; <code>kconfig_compiler</code> is invoked with both files as arguments. Then, the domain connection is established simply by adding the <code>TranslationSystem</code> and <code>TranslationDomain</code> fields in the <code>.kcfgc</code> file, to select Ki18n as the translation system and the appropriate translation domain:</p>
+<div class="fragment"><div class="line">File=foolib.kcfg</div><div class="line">...</div><div class="line">TranslationSystem=kde</div><div class="line">TranslationDomain=foolib</div></div><!-- fragment --><p>If the <code>.kcfg</code> file is part of an application rather than a library, the <code>TranslationDomain</code> field can be omitted in order to have messages looked up in the domain set by <code><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">KLocalizedString::setApplicationDomain</a></code> call in the code.</p>
+<p>If strings contain KUIT markup (section kuit_markup), additionaly the field <code>TranslationMarkup=true</code> should be set.</p>
+<p><a class="anchor" id="handle_cat"></a></p>
+<h2>Handling Catalog Files</h2>
+<p>For translators to start working, one or more translation catalog files should be prepared, based on the <code>i18n</code> calls in the source code. The procedure to do this is called <em>extraction</em> of messages. Extraction produces empty catalog files, called <em>templates</em>. These files are in the PO format, and have <code>.pot</code> extension. Section handle_extract explains how to perform extraction.</p>
+<p>Once templates are ready, a translators make copies of them, with <code>.po</code> extension, and start filling them out with translations into respective languages. When translation is done, the translated catalog is committed into the source code repository. The build system is set up to install translated catalogs. Section handle_install provides necessary steps for this.</p>
+<p>After some development has passed, the source repository will contain many translated catalogs which are out of date with respect to latest catalog templates. Of course, translators do not have to start translating from scratch, but there are specialized tools to carry over as much of existing translation as possible, so that only new and modified texts need to be considered. Section handle_update shows how this is done.</p>
+<p>A usual application or a library has one translation catalog, but there can be more if there is higher modularity of the source. The following subsections refer to a single catalog wherever the extension to case with multiple catalogs is obvious, and mention multiple catalogs only where necessary.</p>
+<p><a class="anchor" id="handle_extract"></a></p>
+<h3>Extracting Templates</h3>
+<p>The primary tool for collecting texts from <code>i18n</code> calls and writing out the catalog template is <code>xgettext</code>, from the official Gettext tools package. <code>xgettext</code> supports many programming languages and sublanguage environments, among which naturally C++ and Ki18n specifically.</p>
+<p>The extraction process from source code files is thus simple: <code>xgettext</code> runs with appropriate options over all files, and it writes out the catalog template. For the moment masking the complete list of options as <code>$EXTOPTS</code>, <code>xgettext</code> can be run for example like this at the top of Fooapp source to create the catalog template <code>fooapp.pot</code>:</p>
+<div class="fragment"><div class="line">find -name \*.cpp -o -name \*.h -o -name \*.qml | sort \</div><div class="line">| xargs xgettext $EXTOPTS -o fooapp.pot</div></div><!-- fragment --><p>Or, a list of source files that should be extracted from can be assembled separately and fed to <code>xgettext:</code></p>
+<div class="fragment"><div class="line"># ...create sources.list...</div><div class="line">xgettext $EXTOPTS -f sources.list -o fooapp.pot</div></div><!-- fragment --><p>One may want to assemble the list of source files by hand or semi-automatically in order to prioritize the order of translation (messages from most important files appearing first in the catalog), to exclude some portions of the source tree from extraction, and so on.</p>
+<p><code>$EXTOPTS</code> that cover everything from Ki18n, and some generalities, should look like this:</p>
+<div class="fragment"><div class="line">--c++ --kde \</div><div class="line">--from-code=UTF-8 \</div><div class="line">-c i18n \</div><div class="line">-ki18n:1 -ki18nc:1c,2 -ki18np:1,2 -ki18ncp:1c,2,3 \</div><div class="line">-kki18n:1 -kki18nc:1c,2 -kki18np:1,2 -kki18ncp:1c,2,3 \</div><div class="line">-kI18N_NOOP:1 -kI18NC_NOOP:1c,2 \</div><div class="line">--copyright-holder=&lt;author-of-original-text&gt; \</div><div class="line">--msgid-bugs-address=&lt;where-to-report-errors-in-original-text&gt;</div></div><!-- fragment --><p><code>--c++ --kde</code> options tell <code>xgettext</code> that source files are C++ with Ki18n. <code>--from-code=UTF-8</code> specifies the encoding of source files to be UTF-8, which must be so for Ki18n. <code>-c i18n</code> states that comments for extraction start with given keyword (<code>// i18n: ...</code>). The series of <code>-k</code> options informs <code>xgettext</code> of all possible translation call names and which of their arguments to extract. Finally, options <code>--copyright-holder</code> and <code>--msgid-bugs-address</code> automatically write the corresponding information into the catalog at proper place. If there are semantic markup calls in the code (section kuit_markup), the following <code>-k</code> options should be added as well:</p>
+<div class="fragment"><div class="line">-kxi18n:1 -kxi18nc:1c,2 -kxi18np:1,2 -kxi18ncp:1c,2,3 \</div><div class="line">-kkxi18n:1 -kkxi18nc:1c,2 -kkxi18np:1,2 -kkxi18ncp:1c,2,3 \</div></div><!-- fragment --><p><code>xgettext</code> unfortunately cannot be directly used to extract messages from the usual XML files appearing in Qt and KDE sources &ndash; Designer (<code>.ui</code>), KXmlGui (<code>.rc</code>) and KConfigXT (<code>.kcfg</code>) files. Therefore the <code>kdesdk</code> package provides the <code>extractrc</code> script, which extracts XML messages as dummy <code>i18n</code> calls into a dummy C++ file, This file can then be included into the list of files for <code>xgettext</code> run. The usual invocation of <code>extractrc</code> is:</p>
+<div class="fragment"><div class="line">find -name \*.ui -o -name \*.rc -o -name \*.kcfg | sort \</div><div class="line">| extractrc &gt; rc.cpp</div><div class="line"># ...run xgettext with rc.cpp included in source files...</div><div class="line">rm rc.cpp</div></div><!-- fragment --><p>If the catalog being extracted is an application catalog, i.e. given as <code><a class="el" href="classKLocalizedString.html#ad866b11bf396b9d93b7dc313a1930b7b" title="Set the given domain as application&#39;s main domain. ">KLocalizedString::setApplicationDomain</a></code> in the code, it should contain two meta-messages for translation credits which will be shown by <code><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKAboutApplicationDialog.html">KAboutApplicationDialog</a></code>. These messages are also written as dummy <code>i18n</code> calls, usually into the same dummy C++ file with XML messages, with the following context and text:</p>
+<div class="fragment"><div class="line">echo &#39;i18nc(&quot;NAME OF TRANSLATORS&quot;, &quot;Your names&quot;);&#39; &gt;&gt; rc.cpp</div><div class="line">echo &#39;i18nc(&quot;EMAIL OF TRANSLATORS&quot;, &quot;Your emails&quot;);&#39; &gt;&gt; rc.cpp</div></div><!-- fragment --><p>The extraction command sequence can be written down as a small script, to be run periodically by the maintainer, or it can be integrated into the build system.</p>
+<p>For the code residing in the official KDE repositories a special form of the extraction script is mandated. This enables automatic overnight template extraction and feeding into dedicated translation section of KDE repositories. Details can be found at <a href="http://techbase.kde.org/Development/Tutorials/Localization/i18n_Build_Systems">KDE Techbase</a>.</p>
+<p><a class="anchor" id="handle_install"></a></p>
+<h3>Placing and Installing Catalogs</h3>
+<p>For an application or a library which uses a single catalog, the usual organization of catalogs in the source tree is this:</p>
+<div class="fragment"><div class="line">fooapp/</div><div class="line">    src/</div><div class="line">    doc/</div><div class="line">    po/</div><div class="line">        fooapp.pot</div><div class="line">        aa.po</div><div class="line">        bb.po</div><div class="line">        cc.po</div><div class="line">        ...</div></div><!-- fragment --><p>Here translated catalog files are named by their language codes (<code>aa</code>, <code>bb</code>, <code>cc</code>...). In case of multiple catalogs, one directory per catalog can be created under the <code>po/</code> directory:</p>
+<div class="fragment"><div class="line">fooapp/</div><div class="line">    src/</div><div class="line">    lib</div><div class="line">    doc/</div><div class="line">    po/</div><div class="line">        fooapp/</div><div class="line">            fooapp.pot</div><div class="line">            aa.po</div><div class="line">            bb.po</div><div class="line">            ...</div><div class="line">        foolib/</div><div class="line">            foolib.pot</div><div class="line">            aa.po</div><div class="line">            bb.po</div><div class="line">            ...</div></div><!-- fragment --><p>An alternative organization is to have one directory per language, and name catalog files by the translation domain. In multiple catalog situation this would look like:</p>
+<div class="fragment"><div class="line">fooapp/</div><div class="line">    src/</div><div class="line">    lib</div><div class="line">    doc/</div><div class="line">    po/</div><div class="line">        templates/</div><div class="line">            fooapp.pot</div><div class="line">            foolib.pot</div><div class="line">        aa/</div><div class="line">            fooapp.po</div><div class="line">            foolib.po</div><div class="line">        bb/</div><div class="line">            fooapp.po</div><div class="line">            foolib.po</div><div class="line">        ...</div></div><!-- fragment --><p>Catalog templates are fully derived files, and therefore some maintainers do not like to keep them inside the repository. In that case, at least the tarball should contain the templates (i.e. they should be generated at packaging time), so that translators have somewhere to get them from. Another possibility is to upload the template to a <em>translation hub</em> (such as <a href="https://www.transifex.com/">Transifex</a>), which translators can use to upload translated catalogs back, and usually for some other features as well (assignment, review, etc).</p>
+<p>If the code resides in an official KDE repository, neither templates nor translated catalogs are kept inside the source tree. Instead, translated catalogs are fetched from an appropriate place when tarball is made, using a script provided for that purpose. Details can be found at <a href="http://techbase.kde.org/Development/Tutorials/Localization/i18n_Build_Systems">KDE Techbase</a>.</p>
+<p>No matter how the catalog files are named and organized inside the distribution tarball, they must be installed in exactly one way. The base name of the installed catalog must be their translation domain, and if the package is installed into <code>$PREFIX</code>, the installed directory tree must look like as follows:</p>
+<div class="fragment"><div class="line">$PREFIX/</div><div class="line">    share/</div><div class="line">        locales/</div><div class="line">            aa/</div><div class="line">                LC_MESSAGES/</div><div class="line">                    fooapp.mo</div><div class="line">                    foolib.mo</div><div class="line">            bb/</div><div class="line">                LC_MESSAGES/</div><div class="line">                    fooapp.mo</div><div class="line">                    foolib.mo</div><div class="line">            ...</div></div><!-- fragment --><p>Given that these directories are shared with other packages in the same prefix, by Gettext convention translation domains must be unique (like package names are).</p>
+<p>MO files are the compiled version of PO files, and they are produced using Gettext's <code>msgfmt</code> command:</p>
+<div class="fragment"><div class="line">msgfmt $SRCDIR/po/fooapp/aa.po -o $BUILDDIR/mo/aa/fooapp.mo</div></div><!-- fragment --><p>Compilation and installation of catalogs should naturally be integrated into the build system. In case <a href="http://www.cmake.org/">CMake</a> is used, KDE provides CMake macros for this purpose.</p>
+<p><a class="anchor" id="handle_transcript"></a></p>
+<h4>Placing and Installing Scripting Modules</h4>
+<p>Since Ki18n provides a run-time scripting capability for translators, some translators may also write the scripting module corresponding to the catalog. A scripting module is a directory named like the translation domain, and at least one JavaScript file inside, also with the same base name as the translation domain.</p>
+<p>Scripting modules can be placed like this in the source tree:</p>
+<div class="fragment"><div class="line">fooapp/</div><div class="line">    po/</div><div class="line">        fooapp.pot</div><div class="line">        aa.po</div><div class="line">        aa/</div><div class="line">            fooapp.js</div><div class="line">            ...</div><div class="line">        bb.po</div><div class="line">        ...</div></div><!-- fragment --><p>or in the per-language directory variant:</p>
+<div class="fragment"><div class="line">fooapp/</div><div class="line">    po/</div><div class="line">        templates/</div><div class="line">            fooapp.pot</div><div class="line">        aa/</div><div class="line">            fooapp.po</div><div class="line">            fooapp/</div><div class="line">                fooapp.js</div><div class="line">                ...</div><div class="line">        bb/</div><div class="line">            fooapp.po</div><div class="line">        ...</div></div><!-- fragment --><p>The installation location for scripting modules is like that for catalogs, only using <code>LC_SCRIPTS/</code> directory instead of <code>LC_MESSAGES/</code>:</p>
+<div class="fragment"><div class="line">$PREFIX/</div><div class="line">    share/</div><div class="line">        locales/</div><div class="line">            aa/</div><div class="line">                LC_SCRIPTS/</div><div class="line">                    fooapp/</div><div class="line">                        fooapp.js</div><div class="line">                        ...</div></div><!-- fragment --><p>When a translator inquires about adding a scripting module, or sends one in, the maintainer should check with the translator if perhaps the functions provided by the module are more widely applicable. If that is the case, they should rather become part of Ki18n's own scripting module, because then they will be accessible to all Ki18n-based translations in the given language.</p>
+<p><a class="anchor" id="handle_update"></a></p>
+<h3>Updating Catalogs</h3>
+<p>When new catalog template is extracted after some development has been done, existing translation should be updated against it. This is called <em>merging</em> with template, and it is performed by Gettext's <code>msgmerge</code> command. There are some merging options that can be examined here, but generally the best invocation of <code>msgmerge</code> is this:</p>
+<div class="fragment"><div class="line">msgmerge --update --backup=none --previous aa.po fooapp.pot</div></div><!-- fragment --><p>Options <code>--update --backup=none</code> mean to update the catalog in place, and not to make a backup file. Option <code>--previous</code> puts some additional information into every modified message, that translation editing tools can use to show to the translator all changes in the text. This command should be run once for every existing translation catalog.</p>
+<p>One thing to keep in mind is that a change in the context string of a message in the code (i.e. the first argument to <code>*i18nc*</code> calls), including adding or removing one, will also register as a modified message in the merged catalog. This will require that translators revisit it, which is exactly as intended: if the context has changed, especially if it was added, some changes in translation may be needed. However, this means that when a "message freeze" is declared so that translators can complete updating translations without disruption, contexts fall under same rules as text.</p>
+<p>There are a few possibilities for who and when should perform merging. For example, the maintainer can write a script that at the same time extracts the template and merges all catalogs, and run it periodically, committing updated catalogs to the repository for translators to pick up. This could even be integrated into the build system. Some maintainers do not like committing automatic changes, and instead expect translators to run the extraction-merging script for the language they maintain, update the translation, and commit only that updated catalog. This solution is cleaner with respect to repository history, but it may burden translators.</p>
+<p>When operating in an official KDE repository, maintainers do not have to deal with merging at all. The server-side automation which automatically extracts templates and provides them to translators, also performs merging. So the maintainer is left only to pick up whatever are the latest catalogs when making a tarball.</p>
+<p><a class="anchor" id="kuit_markup"></a></p>
+<h2>Semantic Markup</h2>
+<p>When composing user-interface text, some programmers ponder about the typographical conventions to use in certain contexts. For example, when a file name is inserted into the text, some typographical solutions that can be used are:</p>
+<div class="fragment"><div class="line">i18n(&quot;Cannot open %1 for reading.&quot;, filePath);</div><div class="line">i18n(&quot;Cannot open &#39;%1&#39; for reading.&quot;, filePath);</div><div class="line">i18n(&quot;Cannot open \&quot;%1\&quot; for reading.&quot;, filePath);</div></div><!-- fragment --><p>For the Qt widgets that have rich text capability, exposed as subset of HTML tags, additional solutions include:</p>
+<div class="fragment"><div class="line">i18n(&quot;Cannot open &lt;b&gt;%1&lt;/b&gt; for reading.&quot;, filePath);</div><div class="line">i18n(&quot;Cannot open &lt;i&gt;%1&lt;/i&gt; for reading.&quot;, filePath);</div><div class="line">i18n(&quot;Cannot open &lt;tt&gt;%1&lt;/tt&gt; for reading.&quot;, filePath);</div></div><!-- fragment --><p>The problem here is not so much to decide on one solution, as it is to follow it consistently through time and between contributors. One may also want to use two solutions, one in places where only plain text is allowed, and another where rich text is available. Wouldn't it then be easier to write everywhere:</p>
+<div class="fragment"><div class="line">xi18n(&quot;Cannot open &lt;filename&gt;%1&lt;/filename&gt; for reading.&quot;, filePath);</div></div><!-- fragment --><p>and have it automatically resolve into plain or rich text according to the UI context, using formatting patterns defined at one place? This approach is called <em>semantic</em> markup, because the author marks parts of the text according to what they <em>represent</em>.</p>
+<p>Ki18n implements such a semantic markup, called KUIT (KDE User Interface Text). It is accessed through the series of <code>xi18n*</code> and <code>kxi18n*</code> calls, which are the KUIT-aware counterparts of <code>i18n*</code> and <code>ki18n*</code> calls. Ordinary and KUIT-aware calls can be freely mixed within a given body of code.</p>
+<p>KUIT defines a number of semantic tags that are frequently of use, as listed in the section kuit_tags. But, KUIT also allows the programmer to define custom tags, as well as to change visual formatting patterns for predefined tags. This capability should lessen one important issue of semantic markups: when the author is forced to choose between several tags none of which exactly fits the desired meaning; with KUIT, the author can simply define a custom tag in that case.</p>
+<p><a class="anchor" id="kuit_def_tags"></a></p>
+<h3>Defining Tags</h3>
+<p>Tags are defined and redefined per translation domain, so that changes will not affect markup resolution in any other domain. Changes are performed through the <code><a class="el" href="classKuitSetup.html" title="Class for modifying KUIT markup in a given domain. ">KuitSetup</a></code> object associated with the domain, as returned by the <code><a class="el" href="namespaceKuit.html#a6e093c4b99e6d775bfdcedfe5bcbab37" title="Get hold of the KUIT setup object for a given domain. ">Kuit::setupForDomain</a></code> method. A tag is defined (or redefined) by defining (or redefining) its formatting patterns, with one call to <code><a class="el" href="classKuitSetup.html#a35b47834605e7442717394e1196b2884" title="Set the formatting string for a tag with attributes combination. ">KuitSetup::setTagPattern</a></code> for each desired combination of tag name, attribute names, and visual format. Here is an example of defining the tag <code>&lt;player&gt;</code>, which has an optional attribute <code>color=</code>, on the domain <code>foogame</code>:</p>
+<div class="fragment"><div class="line">KuitSetup *ks = Kuit::setupForDomain(&quot;foogame&quot;);</div><div class="line">QString tagName;</div><div class="line">QStringList attribNames;</div><div class="line"></div><div class="line">tagName = &quot;player&quot;;</div><div class="line">attribNames.clear()</div><div class="line">ks-&gt;setTagPattern(tagName, attribNames, Kuit::PlainText,</div><div class="line">                  ki18nc(&quot;tag-format-pattern &lt;player&gt; plain&quot;,</div><div class="line">                         &quot;&#39;%1&#39;&quot;));</div><div class="line">ks-&gt;setTagPattern(tagName, attribNames, Kuit::RichText,</div><div class="line">                  ki18nc(&quot;tag-format-pattern &lt;player&gt; rich&quot;,</div><div class="line">                         &quot;&lt;b&gt;%1&lt;/b&gt;&quot;));</div><div class="line">attribNames.append(&quot;color&quot;);</div><div class="line">ks-&gt;setTagPattern(tagName, attribNames, Kuit::RichText,</div><div class="line">                  ki18nc(&quot;tag-format-pattern &lt;player color= &gt; rich&quot;,</div><div class="line">                         &quot;&lt;font color=&#39;%2&#39;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&quot;));</div></div><!-- fragment --><p>The first two <code>setTagPattern</code> calls set up resolution of <code>&lt;player&gt;</code> without attributes, into plain and rich text. The third call sets up resolution for <code>&lt;player color="..."&gt;</code>, but only into rich text; since a plain text pattern is not defined for this tag-attribute combination, it will fall back to basic <code>&lt;player&gt;</code> plain text pattern. A fallback is always defined, the elementary fallback being a no-op, where tag is simply removed. Formatting patterns must be wrapped for translation too, since translators may need to tweak them; <em>ordinary</em> (not markup-aware) <code>ki18nc</code> calls must be used here, since patterns themselves are not KUIT markup. The <code>%1</code> placeholder in the pattern will be replaced by the text wrapped with the tag, and <code>%2</code> and upwards with attribute values, in the order of appearance in attribute names list.</p>
+<p>If a simple substitution pattern is insufficient for formatting, additionally a formatting function of type <code><a class="el" href="namespaceKuit.html#ab8a85c35e268e3d9e7af18bbc604e846" title="Functions accepted by tag formatting functions. ">Kuit::TagFormatter</a></code> can be given. The result of this function is substituted into the pattern; alternatively an empty pattern can be given (as <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString()</a></code>), in which case the result is used directly, no substitution is performed. The formatting function also receives the current element path, so that the resolution can depend on the markup tree context if needed. Anything in the function that may need translator input should be appropriately exposed through <code>i18nc*</code> or <code>ki18nc*</code> calls.</p>
+<p>In the section kuit_tags it is stated that every KUIT tag is classified either as a phrase tag or as a structuring tag, and explained what that means for processing. A newly defined tag is by default a phrase tag; method <code><a class="el" href="classKuitSetup.html#a3bcdcb05b65cc6e531572bd5ddf891a6" title="Set the KUIT class of the tag. ">KuitSetup::setTagClass</a></code> can be used to change its class:</p>
+<div class="fragment"><div class="line">tagName = &quot;list2&quot;;</div><div class="line">ks-&gt;setTagPattern(tagName, ...);</div><div class="line">ks-&gt;setTagClass(tagName, Kuit::StructTag);</div></div><!-- fragment --><p>In a library, changes to the KUIT setup may need to be private, applicable only in library's own domain, but they may also need to be public, applicable in clients' domains. For changes that should be public, the library should define a public function which takes the domain as the argument and performs all the changes on that domain:</p>
+<div class="fragment"><div class="line">void updateKuitSetup (const char *domain)</div><div class="line">{</div><div class="line">    KuitSetup *ks = Kuit::setupForDomain(domain);</div><div class="line">    ....</div><div class="line">}</div></div><!-- fragment --><p>The client code should then call this function in its initialization.</p>
+<p><a class="anchor" id="kuit_sel_fmt"></a></p>
+<h3>Selecting Visual Format</h3>
+<p>The target visual format for any given <code>xi18n</code> call can be selected in two ways.</p>
+<p>The primary way is by UI markers in the message context, which were described in the section uimark_ctxt. Every <code>@&lt;major&gt;:&lt;minor&gt;</code> marker combination has a default target visual format assigned, as follows: </p><table class="doxtable">
+<tr>
+<th>UI Marker </th><th>Visual Format </th></tr>
+<tr>
+<td>(none) </td><td>plain </td></tr>
+<tr>
+<td>@action:&lt;any&gt; </td><td>plain </td></tr>
+<tr>
+<td>@title:&lt;any&gt; </td><td>plain </td></tr>
+<tr>
+<td>@option:&lt;any&gt; </td><td>plain </td></tr>
+<tr>
+<td>@label:&lt;any&gt; </td><td>plain </td></tr>
+<tr>
+<td>@item:&lt;any&gt; </td><td>plain </td></tr>
+<tr>
+<td>@info, @info:tooltip, @info:whatsthis, @info:usagetip </td><td>rich </td></tr>
+<tr>
+<td>@info:status, @info:progress, @info:credit </td><td>plain </td></tr>
+<tr>
+<td>@info:shell </td><td>term  </td></tr>
+</table>
+<p>Target visual formats associated with UI markers can be changed using the <code>KUITSetup::setFormatForMarker</code> method:</p>
+<div class="fragment"><div class="line">KuitSetup *ks = Kuit::setupForDomain(&quot;fooapp&quot;);</div><div class="line">// Set standalone @info (no minor component) to plain text:</div><div class="line">ks-&gt;setFormatForMarker(&quot;@info&quot;, Kuit::PlainText);</div><div class="line">// Set @info:tooltip to rich text:</div><div class="line">ks-&gt;setFormatForMarker(&quot;@info:tooltip&quot;, Kuit::RichText);</div><div class="line">// Set all @info:&lt;minor&gt; to plain text:</div><div class="line">ks-&gt;setFormatForMarker(&quot;@info:&quot;, Kuit::PlainText);</div></div><!-- fragment --><p>The second way to select the visual format is by using a <code>kxi18n*</code> call, and passing the format type to the <code>toString</code> method:</p>
+<div class="fragment"><div class="line">kxi18n(&quot;@info&quot;, &quot;Logging paused.&quot;).toString(Kuit::PlainText);</div></div><!-- fragment --><p>This will override any format implied by the UI marker if present.</p>
+<p>If a library is making modifications in visual format association with UI markers, and these changes should be available to clients, the same approach as in the section kuit_def_tags should be used.</p>
+<p><a class="anchor" id="kuit_escape"></a></p>
+<h3>Escaping</h3>
+<p>While for <code>*i18n*</code> calls it was advised to keep each message text well-formed by itself with respect to Qt rich text markup, for <code>*xi18n*</code> calls well-formedness is mandatory. This means that markup-significant characters in plain-looking text need to be escaped, using standard XML entities:</p>
+<div class="fragment"><div class="line">xi18n(&quot;Installed Fooapp too old, need release &amp;gt;= 2.1.8.&quot;);</div><div class="line">xi18n(&quot;Set &amp;lt;themeId&amp;gt; as theme on startup&quot;);</div></div><!-- fragment --><p>The exception is the ampersand (&amp;) character, which in XML denotes the start of an entity, but in Qt denotes the accelerator marker. Therefore it is necessary to escape ampersand as <code>&amp;</code> only when it is in position which would result in valid entity syntax:</p>
+<div class="fragment"><div class="line">// Escaping not needed because not in entity-like position:</div><div class="line">xi18n(&quot;Remove &amp;all entries&quot;);</div><div class="line">// Escaping not needed for the same reason wrt. markup,</div><div class="line">// but ampersand doubled to escape it wrt. Qt accelerator marker:</div><div class="line">xi18n(&quot;Look &amp;&amp; Feel&quot;);</div><div class="line">// Escaping wrt. markup necessary:</div><div class="line">xi18n(&quot;Delete &amp;amp;everything; see if I care!&quot;);</div></div><!-- fragment --><p>The example for necessary escaping above is rather artificial, because in practice it is unlikely for ampersand to appear in entity-like position while not actually starting an entity.</p>
+<p>To assure the validity of markup when arguments are inserted into <code>xi18n</code>-wrapped text, all markup-significant characters in string arguments are automatically escaped. For example, this works as expected:</p>
+<div class="fragment"><div class="line">QString filePath(&quot;assignment03-&lt;yourname&gt;.txt&quot;);</div><div class="line">QString msg1 = kxi18n(&quot;Delete &lt;filename&gt;%1&lt;/filename&gt;?&quot;, filePath)</div><div class="line">                     .toString(Kuit::PlainText);</div><div class="line">// msg1 == &quot;Delete &#39;assignment03-&lt;yourname&gt;.txt&#39;?&quot;</div><div class="line">QString msg2 = kxi18n(&quot;Delete &lt;filename&gt;%1&lt;/filename&gt;?&quot;, filePath)</div><div class="line">                     .toString(Kuit::RichText);</div><div class="line">// msg2 == &quot;Delete `assignment03-&amp;lt;yourname&amp;gt;.txt`?&quot;</div></div><!-- fragment --><p>But, how then to compose a text where the arguments too should contain some KUIT markup? This is done by using non-finalization <code>kxi18n*</code> call to translate the argument text, and passing the returned <code><a class="el" href="classKLocalizedString.html" title="Class for producing and handling localized messages. ">KLocalizedString</a></code> object directly as argument:</p>
+<div class="fragment"><div class="line">KLocalizedString stateDesc = kxi18nc(</div><div class="line">    &quot;On &lt;emphasis&gt;indefinite&lt;/emphasis&gt; hold.&quot;);</div><div class="line">QString msg = xi18n(&quot;@info&quot;,</div><div class="line">                    &quot;&lt;para&gt;Task state:&lt;/para&gt;&quot;</div><div class="line">                    &quot;&lt;para&gt;%1&lt;/para&gt;&quot;, stateDesc);</div><div class="line">// msg == &quot;&lt;p&gt;Task state:&lt;/p&gt;&quot;</div><div class="line">//        &quot;&lt;p&gt;On &lt;i&gt;indefinite&lt;/i&gt; hold.&lt;/p&gt;&quot;</div></div><!-- fragment --><p>If the argument and the text have different visual formats implied by their UI markers, the outermost format overrides inner formats.</p>
+<p><a class="anchor" id="kuit_tags"></a></p>
+<h3>Predefined Tags</h3>
+<p>All KUIT tags belong to one of the two classes:</p><ul>
+<li>phrase tags, which describe parts of sentences or whole sentences inserted into running text;</li>
+<li>structuring tags, which split text into paragraph-level blocks.</li>
+</ul>
+<p>A text without any structuring tags is considered equivalent of one paragraph or sub-paragraph sentence or phrase. If at least one structuring tag appears in the text, then the text is considered multi-paragraph, and no content may appear outside of structuring tags. For example:</p>
+<div class="fragment"><div class="line">// Good:</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;You can configure the history sidebar here.&quot;);</div><div class="line">// BAD:</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;&lt;title&gt;History Sidebar&lt;/title&gt;&quot;</div><div class="line">      &quot;You can configure the history sidebar here.&quot;);</div><div class="line">// Good:</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;&lt;title&gt;History Sidebar&lt;/title&gt;&quot;</div><div class="line">      &quot;&lt;para&gt;You can configure the history sidebar here.&lt;/para&gt;&quot;);</div></div><!-- fragment --><p>The current set of predefined tags is presented below. For each tag the following information is stated: the tag name (in superscript: Ki18n release of first appearance), available attributes (in superscript: <em>*</em> if mandatory, Ki18n release of first appearance), admissible subtags, and description.</p>
+<table class="doxtable">
+<tr>
+<th>Phrase Tags  </th></tr>
+<tr>
+<td><p class="starttd"><b>&lt;application&gt;</b><sup>5.0</sup><br />
+ Name of an application.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@action:inmenu&quot;,</div><div class="line">      &quot;Open with &lt;application&gt;%1&lt;/application&gt;&quot;, appName);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;bcode&gt;</b><sup>5.0</sup><br />
+ Line-breaking body of code, for short code or output listings.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info:whatsthis&quot;,</div><div class="line">      &quot;You can try the following snippet:&lt;bcode&gt;&quot;</div><div class="line">      &quot;\\begin{equation}\n&quot;</div><div class="line">      &quot;  C_{x_i} = \\frac{C_z^2}{e \\pi \\lambda}\n&quot;</div><div class="line">      &quot;\\end{equation}\n&quot;</div><div class="line">      &quot;&lt;/bcode&gt;&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;command&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> section=<sup>5.0</sup><br />
+ Name of a shell command, system call, signal, etc. Its man section can be given with the <code>section=</code> attribute.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;This will call &lt;command&gt;%1&lt;/command&gt; internally.&quot;, cmdName);</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Consult the man entry of &quot;</div><div class="line">      &quot;&lt;command section=&#39;1&#39;&gt;%1&lt;/command&gt;&quot;, cmdName);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;email&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> address=<sup>5.0</sup><br />
+ Email address. Without attributes, the tag text is the address. If the address is explicitly given with the <code>address=</code> attribute, the tag text is the name or description attached to the address. In rich text, the phrase will be hyperlinked.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Send bug reports to &lt;email&gt;%1&lt;/email&gt;.&quot;, emailNull);</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Send praises to &lt;email address=&#39;%1&#39;&gt;the author&lt;/email&gt;.&quot;, emailMy);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><b>&lt;emphasis&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> strong=<sup>5.0</sup><br />
+ Emphasized word or phrase in the text. For strong emphasis, attribute <code>strong=</code> can be set to <code>[1|true|yes]</code>.  </td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;envar&gt;</b><sup>5.0</sup><br />
+ Environment variable. A <code>$</code>-sign will be prepended automatically in formatted text.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Assure that &lt;envar&gt;PATH&lt;/envar&gt; is properly set.&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;filename&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> &lt;envar&gt;, &lt;placeholder&gt;<br />
+ File or folder name or path. Slash (/) should be used as path separator, and it will be converted into native separator for the underlying platform.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;, &quot;Cannot read &lt;filename&gt;%1&lt;/filename&gt;.&quot;, filePath);</div><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;&lt;filename&gt;&lt;envar&gt;HOME&lt;/envar&gt;/.foorc&lt;/filename&gt; &quot;</div><div class="line">      &quot;does not exist.&quot;);</div></div><!-- fragment -->  </td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;icode&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> &lt;envar&gt;, &lt;placeholder&gt;<br />
+ Inline code, like a shell command line.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info:tooltip&quot;,</div><div class="line">      &quot;Execute &lt;icode&gt;svn merge&lt;/icode&gt; on selected revisions.&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;interface&gt;</b><sup>5.0</sup><br />
+ Path to a graphical user interface element. If a path of UI elements is needed, elements should be separated with <code>|</code> or <code>-&gt;</code>, which will be converted into the canonical separator.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info:whatsthis&quot;,</div><div class="line">      &quot;If you make a mistake, click &quot;</div><div class="line">      &quot;&lt;interface&gt;Reset&lt;/interface&gt; to start again.&quot;);</div><div class="line">i18nc(&quot;@info:whatsthis&quot;,</div><div class="line">      &quot;The line colors can be changed under &quot;</div><div class="line">      &quot;&lt;interface&gt;Settings-&gt;Visuals&lt;/interface&gt;.&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;link&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> url=<sup>5.0</sup><br />
+ Link to a URL-addressable resource. Without attributes, the tag text is the URL; alternatively, the URL can be given by <code>url=</code> attribute, and then the text serves as description. Separate URL and description are preferred if applicable. The phrase will be hyperlinked in rich text.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info:tooltip&quot;,</div><div class="line">      &quot;Go to &lt;link&gt;%1&lt;/link&gt; website.&quot;, urlKDE);</div><div class="line">i18nc(&quot;@info:tooltip&quot;,</div><div class="line">      &quot;Go to the &lt;link url=&#39;%1&#39;&gt;KDE website&lt;/link&gt;.&quot;, urlKDE);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;message&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ An external message inserted into the text.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;The fortune cookie says: &lt;message&gt;%1&lt;/message&gt;&quot;, cookieText);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;nl&gt;</b><sup>5.0</sup><br />
+ Line break.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;The server replied:&lt;nl/&gt;&quot;</div><div class="line">      &quot;&lt;message&gt;%1&lt;/message&gt;&quot;, serverReply);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;note&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> label=<sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ The sentence is a side note related to the topic. Prefix "Note:" will be added automatically; another prefix can be set with attribute <code>label=</code>.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Probably the best known of all duck species is the Mallard. &quot;</div><div class="line">      &quot;It breeds throughout the temperate areas around the world. &quot;</div><div class="line">      &quot;&lt;note&gt;Most domestic ducks are derived from Mallard.&lt;/note&gt;&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;placeholder&gt;</b><sup>5.0</sup><br />
+ A placeholder text. It could be something which the user should replace with actual text, or a generic item in a list.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Replace &lt;placeholder&gt;name&lt;/placeholder&gt; with your name.&quot;);</div><div class="line">i18nc(&quot;@item:inlistbox&quot;,</div><div class="line">      &quot;&lt;placeholder&gt;All images&lt;/placeholder&gt;&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;shortcut&gt;</b><sup>5.0</sup><br />
+ Combination of keyboard keys to press. Key names should be separated by "+" or "-", and the shortcut will be converted into canonical form.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info:whatsthis&quot;,</div><div class="line">      &quot;Cycle through layouts using &lt;shortcut&gt;Alt+Space&lt;/shortcut&gt;.&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><b>&lt;warning&gt;</b><sup>5.0</sup><br />
+ <em>Attributes:</em> label=<sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ The sentence is a warning. Prefix "Warning:" will be added automatically; another prefix can be set with attribute <code>label=</code>.</p>
+<div class="fragment"><div class="line">i18nc(&quot;@info&quot;,</div><div class="line">      &quot;Really delete this key? &quot;</div><div class="line">      &quot;&lt;warning&gt;This cannot be undone.&lt;/warning&gt;&quot;);</div></div><!-- fragment --><p class="endtd"></p>
+</td></tr>
+<tr>
+<th>Structuring Tags  </th></tr>
+<tr>
+<td><b>&lt;item&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ A list item.  </td></tr>
+<tr>
+<td><b>&lt;list&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> &lt;item&gt;<br />
+ List of items. List is considered an element of the paragraph, so <code>&lt;list&gt;</code> tags must be inside <code>&lt;para&gt;</code> tags.  </td></tr>
+<tr>
+<td><b>&lt;para&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags, &lt;list&gt;<br />
+ One paragraph of text.  </td></tr>
+<tr>
+<td><b>&lt;subtitle&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ The subtitle of the text. Must come after <code>&lt;title&gt;</code>.  </td></tr>
+<tr>
+<td><b>&lt;title&gt;</b><sup>5.0</sup><br />
+ <em>Subtags:</em> all phrase tags<br />
+ The title of the text. Must be the first tag in the text if present.  </td></tr>
+</table>
+<p>The criteria for adding new tags to the predefined set, particularly new phrase tags, are not very strict. If the tag is clearly useful to a class of applications, of which more than one are known to use Ki18n, it is reasonable to add it here. Adding synonymous tag names is also fine, where one finds that the original name is not sufficiently discoverable, or that it is too verbose for the given frequency of use.</p>
+<p><a class="anchor" id="kuit_ents"></a></p>
+<h3>Predefined Entities</h3>
+<p>KUIT defines a fixed set of XML entities, which means that unlike tags, entities cannot be added to, nor their character expansions changed. The standard XML entities are: </p><table class="doxtable">
+<tr>
+<th>Entity</th><th>Expansion </th></tr>
+<tr>
+<td><b>&amp;lt;</b></td><td>less-than (<code>&lt;</code>) </td></tr>
+<tr>
+<td><b>&amp;gt;</b></td><td>greater-than (<code>&gt;</code>) </td></tr>
+<tr>
+<td><b>&amp;amp;</b></td><td>ampersand (<code>&amp;</code>) </td></tr>
+<tr>
+<td><b>&amp;apos;</b></td><td>single quote (<code>'</code>) </td></tr>
+<tr>
+<td><b>&amp;quot;</b></td><td>double quote (<code>"</code>) </td></tr>
+</table>
+<p>The <code>&amp;apos;</code> and <code>&amp;quot;</code> are really needed only within attribute values (and even there they can be avoided by choosing the opposite quote sign for quoting the attribute value).</p>
+<p>Additional entities are (Ki18n release where they were introduced given in superscript): </p><table class="doxtable">
+<tr>
+<th>Entity</th><th>Expansion </th></tr>
+<tr>
+<td><b>&amp;nbsp;</b><sup>5.0</sup> </td><td>non-breaking space (<code>&#160;</code>)  </td></tr>
+</table>
+<p>The reason for not allowing custom entities can be demonstrated by the following example. An application programmer may think of defining the entity <code>&amp;appname;</code>, which would be used everywhere in text in place of the actual application name. In that way, seemingly, it would be easy to play with various names or spellings without disrupting translations. The problem, however, is that in many languages the structure of the sentence depends on the grammar properties of the particular name (e.g. its grammar gender or number), and conversely, the name may need modification according to sentence structure (e.g. by grammar case). Thus, custom entities are not allowed because they are misused too easily. If something <em>really</em> needs to be inserted verbatim into text, argument substitution is always at hand.</p>
+<p><a class="anchor" id="non_text"></a></p>
+<h2>Localizing Non-Text Resources</h2>
+<p>It sometimes happens that a non-textual application resource needs localization. The most frequent example are images that contain some text, like splash screens. Ki18n also provides a rudimentary facility for this situation, the <code><a class="el" href="classKLocalizedString.html#a3d3783117e93b53529a2d60690ef5f0e" title="Find a path to the localized file for the given original path. ">KLocalizedString::localizedFilePath</a></code> static method. When called with a resource file path as the argument, this method will check what are the active languages, and look if there exists a localized version of the resource at path <code>&lt;original-parent-dir&gt;/l10n/&lt;language&gt;/&lt;original-basename&gt;</code>. For example, if the active language is <code>aa</code>, and a candidate image for localization is installed as:</p>
+<div class="fragment"><div class="line">$PREFIX/share/fooapp/splash.png</div></div><!-- fragment --><p>then a call to</p>
+<div class="fragment"><div class="line">QString splashPath = QStandardPaths::locate(</div><div class="line">    QStandardPaths::GenericDataLocation, &quot;splash.png&quot;);</div><div class="line">splashPath = KLocalizedString::localizedFilePath(splashPath);</div></div><!-- fragment --><p>will check if there exist the file</p>
+<div class="fragment"><div class="line">$PREFIX/share/fooapp/l10n/aa/splash.png</div></div><!-- fragment --><p>and return that path if it does, or else the original path.</p>
+<p>Some KDE libraries will call <code><a class="el" href="classKLocalizedString.html#a3d3783117e93b53529a2d60690ef5f0e" title="Find a path to the localized file for the given original path. ">KLocalizedString::localizedFilePath</a></code> on their own behind the scene, for resources that may need localization but whose paths are not directly manipulated in application sources. An example here are icons handled through <code>KIcon</code> class, which are referred to in the code only by the icon name.</p>
+<p><a class="anchor" id="refs"></a></p>
+<h2>Further References</h2>
+<p>For details about the format of translation catalogs (PO) and various Gettext tools, the first stop is the <a href="http://www.gnu.org/software/gettext/manual/gettext.html">Gettext manual</a>.</p>
+<p><a href="http://techbase.kde.org/">KDE Techbase</a> contains a <a href="http://techbase.kde.org/Development/Tutorials/Localization">series of tutorials</a> on preparing the KDE code for localization, and on the internationalization process in general. </p>
+</div></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:06 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

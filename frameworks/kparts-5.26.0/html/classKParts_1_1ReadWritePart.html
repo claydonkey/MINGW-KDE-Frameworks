@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KParts - KParts::ReadWritePart Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KParts</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KParts"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="modules.html">Modules</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKParts_1_1BrowserExtension.html">KParts::BrowserExtension</option>
+        
+        <option value="classKParts_1_1BrowserHostExtension.html">KParts::BrowserHostExtension</option>
+        
+        <option value="classKParts_1_1BrowserInterface.html">KParts::BrowserInterface</option>
+        
+        <option value="classKParts_1_1BrowserOpenOrSaveQuestion.html">KParts::BrowserOpenOrSaveQuestion</option>
+        
+        <option value="classKParts_1_1BrowserRun.html">KParts::BrowserRun</option>
+        
+        <option value="classKParts_1_1Event.html">KParts::Event</option>
+        
+        <option value="classKParts_1_1FileInfoExtension.html">KParts::FileInfoExtension</option>
+        
+        <option value="classKParts_1_1GUIActivateEvent.html">KParts::GUIActivateEvent</option>
+        
+        <option value="classKParts_1_1HistoryProvider.html">KParts::HistoryProvider</option>
+        
+        <option value="classKParts_1_1HtmlExtension.html">KParts::HtmlExtension</option>
+        
+        <option value="classKParts_1_1HtmlSettingsInterface.html">KParts::HtmlSettingsInterface</option>
+        
+        <option value="classKParts_1_1ListingFilterExtension.html">KParts::ListingFilterExtension</option>
+        
+        <option value="classKParts_1_1ListingNotificationExtension.html">KParts::ListingNotificationExtension</option>
+        
+        <option value="classKParts_1_1LiveConnectExtension.html">KParts::LiveConnectExtension</option>
+        
+        <option value="classKParts_1_1MainWindow.html">KParts::MainWindow</option>
+        
+        <option value="classKParts_1_1OpenUrlArguments.html">KParts::OpenUrlArguments</option>
+        
+        <option value="classKParts_1_1OpenUrlEvent.html">KParts::OpenUrlEvent</option>
+        
+        <option value="classKParts_1_1Part.html">KParts::Part</option>
+        
+        <option value="classKParts_1_1PartActivateEvent.html">KParts::PartActivateEvent</option>
+        
+        <option value="classKParts_1_1PartBase.html">KParts::PartBase</option>
+        
+        <option value="classKParts_1_1PartManager.html">KParts::PartManager</option>
+        
+        <option value="classKParts_1_1PartSelectEvent.html">KParts::PartSelectEvent</option>
+        
+        <option value="classKParts_1_1Plugin.html">KParts::Plugin</option>
+        
+        <option value="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</option>
+        
+        <option value="classKParts_1_1ReadWritePart.html">KParts::ReadWritePart</option>
+        
+        <option value="classKParts_1_1ScriptableExtension.html">KParts::ScriptableExtension</option>
+        
+        <option value="classKParts_1_1SelectorInterface.html">KParts::SelectorInterface</option>
+        
+        <option value="classKParts_1_1StatusBarExtension.html">KParts::StatusBarExtension</option>
+        
+        <option value="classTerminalInterface.html">TerminalInterface</option>
+        
+        <option value="classKParts_1_1TextExtension.html">KParts::TextExtension</option>
+        
+        <option value="classKParts_1_1WindowArgs.html">KParts::WindowArgs</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Document centric plugin system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Parts)
+target_link_libraries(yourapp KF5::Parts)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KParts </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kparts-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KParts on <a href="https://cgit.kde.org/kparts-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KParts </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=ReadWritePart">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KParts</b></li><li class="navelem"><a class="el" href="classKParts_1_1ReadWritePart.html">ReadWritePart</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKParts_1_1ReadWritePart-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KParts::ReadWritePart Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="readwritepart_8h_source.html">readwritepart.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KParts::ReadWritePart:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKParts_1_1ReadWritePart__inherit__graph.png" border="0" usemap="#KParts_1_1ReadWritePart_inherit__map" alt="Inheritance graph"/></div>
+<map name="KParts_1_1ReadWritePart_inherit__map" id="KParts_1_1ReadWritePart_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:adb7caee3c74e13b22dd922f67a68f830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#adb7caee3c74e13b22dd922f67a68f830">sigQueryClose</a> (bool *handled, bool *abortClosing)</td></tr>
+<tr class="separator:adb7caee3c74e13b22dd922f67a68f830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKParts_1_1ReadOnlyPart"><td colspan="2" onclick="javascript:toggleInherit('signals_classKParts_1_1ReadOnlyPart')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</a></td></tr>
+<tr class="memitem:ab1083f7c30e868d66e1f326b94851d8c inherit signals_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#ab1083f7c30e868d66e1f326b94851d8c">canceled</a> (const QString &amp;errMsg)</td></tr>
+<tr class="separator:ab1083f7c30e868d66e1f326b94851d8c inherit signals_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbe7a0dd64ed631d7d7fc763167de31 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a7dbe7a0dd64ed631d7d7fc763167de31">completed</a> ()</td></tr>
+<tr class="separator:a7dbe7a0dd64ed631d7d7fc763167de31 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ddc679f4b303102237f8e33b29c904 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a48ddc679f4b303102237f8e33b29c904">completed</a> (bool pendingAction)</td></tr>
+<tr class="separator:a48ddc679f4b303102237f8e33b29c904 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1839e6f2741b7fca77cd4b04b5acdc6d inherit signals_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a1839e6f2741b7fca77cd4b04b5acdc6d">started</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/classKIO_1_1Job.html">KIO::Job</a> *)</td></tr>
+<tr class="separator:a1839e6f2741b7fca77cd4b04b5acdc6d inherit signals_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4407ef7bb67f18b963dc062bd8040e66 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a4407ef7bb67f18b963dc062bd8040e66">urlChanged</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a4407ef7bb67f18b963dc062bd8040e66 inherit signals_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_classKParts_1_1Part"><td colspan="2" onclick="javascript:toggleInherit('signals_classKParts_1_1Part')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classKParts_1_1Part.html">KParts::Part</a></td></tr>
+<tr class="memitem:a809740a79edf0fa0bbe1dd982a6c4d35 inherit signals_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a809740a79edf0fa0bbe1dd982a6c4d35">setStatusBarText</a> (const QString &amp;text)</td></tr>
+<tr class="separator:a809740a79edf0fa0bbe1dd982a6c4d35 inherit signals_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00982292ef3d8b80dedeb5fed2376099 inherit signals_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a00982292ef3d8b80dedeb5fed2376099">setWindowCaption</a> (const QString &amp;caption)</td></tr>
+<tr class="separator:a00982292ef3d8b80dedeb5fed2376099 inherit signals_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:abd2f5a4ce68f32b6f21635b7f97ce63a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#abd2f5a4ce68f32b6f21635b7f97ce63a">save</a> ()</td></tr>
+<tr class="separator:abd2f5a4ce68f32b6f21635b7f97ce63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62573db9600db7c877a05f57d81f3e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#af62573db9600db7c877a05f57d81f3e8">setModified</a> ()</td></tr>
+<tr class="separator:af62573db9600db7c877a05f57d81f3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93827f9da0f3fdcdbb2c53710afe43ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a93827f9da0f3fdcdbb2c53710afe43ae">waitSaveComplete</a> ()</td></tr>
+<tr class="separator:a93827f9da0f3fdcdbb2c53710afe43ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classKParts_1_1ReadOnlyPart"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classKParts_1_1ReadOnlyPart')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</a></td></tr>
+<tr class="memitem:a2d7ce3e9a4d68e36f1e2f6cb016670da inherit pub_slots_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a2d7ce3e9a4d68e36f1e2f6cb016670da">openUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a2d7ce3e9a4d68e36f1e2f6cb016670da inherit pub_slots_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a457ff937481a4b2d10c136ae90bae8fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a457ff937481a4b2d10c136ae90bae8fc">ReadWritePart</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a457ff937481a4b2d10c136ae90bae8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69aa70703adae4f0973a002b3054e47"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#ad69aa70703adae4f0973a002b3054e47">~ReadWritePart</a> ()</td></tr>
+<tr class="separator:ad69aa70703adae4f0973a002b3054e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d19e3faf1c9a79678653d34e36246b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b">closeUrl</a> () override</td></tr>
+<tr class="separator:ae9d19e3faf1c9a79678653d34e36246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac29e29d109c5f0a12898d0b746a5a72"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#aac29e29d109c5f0a12898d0b746a5a72">closeUrl</a> (bool promptToSave)</td></tr>
+<tr class="separator:aac29e29d109c5f0a12898d0b746a5a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8c59e327e0a2ffbfecb961e00685c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a7f8c59e327e0a2ffbfecb961e00685c1">isModified</a> () const</td></tr>
+<tr class="separator:a7f8c59e327e0a2ffbfecb961e00685c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae338c1d8c5a6a0531a0e4414aa2e6f02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#ae338c1d8c5a6a0531a0e4414aa2e6f02">isReadWrite</a> () const</td></tr>
+<tr class="separator:ae338c1d8c5a6a0531a0e4414aa2e6f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ead3990f91223ed2ebeb8dfa0d60ec"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a51ead3990f91223ed2ebeb8dfa0d60ec">queryClose</a> ()</td></tr>
+<tr class="separator:a51ead3990f91223ed2ebeb8dfa0d60ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f440b315af918d2c9bb2aa5ff182a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a58f440b315af918d2c9bb2aa5ff182a4">saveAs</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a58f440b315af918d2c9bb2aa5ff182a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6fe0168095b3333dc80884888f02f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a8d6fe0168095b3333dc80884888f02f2">setModified</a> (bool modified)</td></tr>
+<tr class="separator:a8d6fe0168095b3333dc80884888f02f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09288e0b4b17a2790e5375763d7bf72c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a09288e0b4b17a2790e5375763d7bf72c">setReadWrite</a> (bool readwrite=true)</td></tr>
+<tr class="separator:a09288e0b4b17a2790e5375763d7bf72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKParts_1_1ReadOnlyPart"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKParts_1_1ReadOnlyPart')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</a></td></tr>
+<tr class="memitem:a874486b9af2a3135e84df9b3dcd569f7 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a874486b9af2a3135e84df9b3dcd569f7">ReadOnlyPart</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a874486b9af2a3135e84df9b3dcd569f7 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6ac2807367409576ee2f4b369118e7 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a9e6ac2807367409576ee2f4b369118e7">~ReadOnlyPart</a> ()</td></tr>
+<tr class="separator:a9e6ac2807367409576ee2f4b369118e7 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56da65f13e8071941e8119eaee85eace inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKParts_1_1OpenUrlArguments.html">OpenUrlArguments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a56da65f13e8071941e8119eaee85eace">arguments</a> () const</td></tr>
+<tr class="separator:a56da65f13e8071941e8119eaee85eace inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18975c92231cd2f902055cd8ca837106 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKParts_1_1BrowserExtension.html">BrowserExtension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a18975c92231cd2f902055cd8ca837106">browserExtension</a> () const</td></tr>
+<tr class="separator:a18975c92231cd2f902055cd8ca837106 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa828fc225a2f32563624053f80f40257 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#aa828fc225a2f32563624053f80f40257">closeStream</a> ()</td></tr>
+<tr class="separator:aa828fc225a2f32563624053f80f40257 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1066f7ec170ffba4aef5e94604a27fe0 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a1066f7ec170ffba4aef5e94604a27fe0">isProgressInfoEnabled</a> () const</td></tr>
+<tr class="separator:a1066f7ec170ffba4aef5e94604a27fe0 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cb48e2c6ab9d7b4b40a0585fefb405 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a22cb48e2c6ab9d7b4b40a0585fefb405">openStream</a> (const QString &amp;mimeType, const QUrl &amp;url)</td></tr>
+<tr class="separator:a22cb48e2c6ab9d7b4b40a0585fefb405 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab893a47747cad8bb29f1f95316140de inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#aab893a47747cad8bb29f1f95316140de">setArguments</a> (const <a class="el" href="classKParts_1_1OpenUrlArguments.html">OpenUrlArguments</a> &amp;<a class="el" href="classKParts_1_1ReadOnlyPart.html#a56da65f13e8071941e8119eaee85eace">arguments</a>)</td></tr>
+<tr class="separator:aab893a47747cad8bb29f1f95316140de inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8af6ecaf7d70e2670af6420fee7af3 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a2d8af6ecaf7d70e2670af6420fee7af3">setProgressInfoEnabled</a> (bool show)</td></tr>
+<tr class="separator:a2d8af6ecaf7d70e2670af6420fee7af3 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57cae74a71dc5457df027100c666448 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top"><a id="ac57cae74a71dc5457df027100c666448"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showProgressInfo</b> (bool show)</td></tr>
+<tr class="separator:ac57cae74a71dc5457df027100c666448 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7738e261780c6ac5d9de08b069afe543 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a7738e261780c6ac5d9de08b069afe543">url</a> () const</td></tr>
+<tr class="separator:a7738e261780c6ac5d9de08b069afe543 inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4c1981f0f9bea442450895a43b4bcb inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#aea4c1981f0f9bea442450895a43b4bcb">writeStream</a> (const QByteArray &amp;data)</td></tr>
+<tr class="separator:aea4c1981f0f9bea442450895a43b4bcb inherit pub_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKParts_1_1Part"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKParts_1_1Part')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKParts_1_1Part.html">KParts::Part</a></td></tr>
+<tr class="memitem:aee55422c867e8e10fd3f713a74249357 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#aee55422c867e8e10fd3f713a74249357">Part</a> (QObject *parent=0)</td></tr>
+<tr class="separator:aee55422c867e8e10fd3f713a74249357 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1710faabd37355a2a4380b904ea37642 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a1710faabd37355a2a4380b904ea37642">~Part</a> ()</td></tr>
+<tr class="separator:a1710faabd37355a2a4380b904ea37642 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a4d92e9f945a898755bbffde3dd0d5 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ae4a4d92e9f945a898755bbffde3dd0d5">embed</a> (QWidget *parentWidget)</td></tr>
+<tr class="separator:ae4a4d92e9f945a898755bbffde3dd0d5 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a008e13075413a25e6005dffb9a1bd4 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKParts_1_1Part.html">Part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a1a008e13075413a25e6005dffb9a1bd4">hitTest</a> (QWidget *<a class="el" href="classKParts_1_1Part.html#a2d2efd56fe23904104c48dc56371c03d">widget</a>, const QPoint &amp;globalPos)</td></tr>
+<tr class="separator:a1a008e13075413a25e6005dffb9a1bd4 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0590a12e373494880f51eb459cf238c inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kiconthemes-5.26.0/html/KIconThemes.tags:../../../frameworks/kiconthemes-5.26.0/html/" href="../../../frameworks/kiconthemes-5.26.0/html/classKIconLoader.html">KIconLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ad0590a12e373494880f51eb459cf238c">iconLoader</a> ()</td></tr>
+<tr class="separator:ad0590a12e373494880f51eb459cf238c inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f9cf35587d5e7072eb435cfa1e6066 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a33f9cf35587d5e7072eb435cfa1e6066">isSelectable</a> () const</td></tr>
+<tr class="separator:a33f9cf35587d5e7072eb435cfa1e6066 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8752779c1e3664796ddd9ebf51b0c64 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKParts_1_1PartManager.html">PartManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ae8752779c1e3664796ddd9ebf51b0c64">manager</a> () const</td></tr>
+<tr class="separator:ae8752779c1e3664796ddd9ebf51b0c64 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa645dcacf25b33211e9d64e9eb65a29a inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#aa645dcacf25b33211e9d64e9eb65a29a">setAutoDeletePart</a> (bool autoDeletePart)</td></tr>
+<tr class="separator:aa645dcacf25b33211e9d64e9eb65a29a inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a08cc79d77952e389780eb63b68052 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ad2a08cc79d77952e389780eb63b68052">setAutoDeleteWidget</a> (bool autoDeleteWidget)</td></tr>
+<tr class="separator:ad2a08cc79d77952e389780eb63b68052 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2136ed1fc42f74f36472f00dd759bb inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a6e2136ed1fc42f74f36472f00dd759bb">setManager</a> (<a class="el" href="classKParts_1_1PartManager.html">PartManager</a> *<a class="el" href="classKParts_1_1Part.html#ae8752779c1e3664796ddd9ebf51b0c64">manager</a>)</td></tr>
+<tr class="separator:a6e2136ed1fc42f74f36472f00dd759bb inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770220e0beb227ba286b09df93ce3d15 inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a770220e0beb227ba286b09df93ce3d15">setSelectable</a> (bool selectable)</td></tr>
+<tr class="separator:a770220e0beb227ba286b09df93ce3d15 inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2efd56fe23904104c48dc56371c03d inherit pub_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a2d2efd56fe23904104c48dc56371c03d">widget</a> ()</td></tr>
+<tr class="separator:a2d2efd56fe23904104c48dc56371c03d inherit pub_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:afd87c7912f9feef662662dbfb66ee110 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#afd87c7912f9feef662662dbfb66ee110">PartBase</a> ()</td></tr>
+<tr class="separator:afd87c7912f9feef662662dbfb66ee110 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d451269133053c06247ec4cc647afc inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a95d451269133053c06247ec4cc647afc">~PartBase</a> ()</td></tr>
+<tr class="separator:a95d451269133053c06247ec4cc647afc inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d360cb6334059a5813d5441ddf8af8 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="ae5d360cb6334059a5813d5441ddf8af8"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>componentData</b> () const</td></tr>
+<tr class="separator:ae5d360cb6334059a5813d5441ddf8af8 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e95657ce8899e78e5f98f27914641f inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="a31e95657ce8899e78e5f98f27914641f"></a>
+QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>partObject</b> () const</td></tr>
+<tr class="separator:a31e95657ce8899e78e5f98f27914641f inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad672e8e40af0aed3c5edff69f737d920 inherit pub_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ad672e8e40af0aed3c5edff69f737d920">setPartObject</a> (QObject *object)</td></tr>
+<tr class="separator:ad672e8e40af0aed3c5edff69f737d920 inherit pub_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:a94a5e253d2f61f2d73ee26944b34391d inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a94a5e253d2f61f2d73ee26944b34391d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a94a5e253d2f61f2d73ee26944b34391d">KXMLGUIClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *parent)</td></tr>
+<tr class="separator:a94a5e253d2f61f2d73ee26944b34391d inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1895d52a8aee6bb2727782d2498e2fcc inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a1895d52a8aee6bb2727782d2498e2fcc"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a1895d52a8aee6bb2727782d2498e2fcc">action</a> (const char *name) const</td></tr>
+<tr class="separator:a1895d52a8aee6bb2727782d2498e2fcc inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f67052cd3af17ddcd5415310537c6 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a9d9f67052cd3af17ddcd5415310537c6"></a>
+virtual QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a9d9f67052cd3af17ddcd5415310537c6">action</a> (const QDomElement &amp;element) const</td></tr>
+<tr class="separator:a9d9f67052cd3af17ddcd5415310537c6 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638115232a877a631b53e741de7c17ab inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a638115232a877a631b53e741de7c17ab"></a>
+virtual <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKActionCollection.html">KActionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a638115232a877a631b53e741de7c17ab">actionCollection</a> () const</td></tr>
+<tr class="separator:a638115232a877a631b53e741de7c17ab inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6567b9217304a9abe367d152e3a082 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a7e6567b9217304a9abe367d152e3a082"></a>
+QList&lt; <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a7e6567b9217304a9abe367d152e3a082">childClients</a> ()</td></tr>
+<tr class="separator:a7e6567b9217304a9abe367d152e3a082 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2021ca953a60a2aedc5a0f07e095591 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ac2021ca953a60a2aedc5a0f07e095591"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html">KXMLGUIBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ac2021ca953a60a2aedc5a0f07e095591">clientBuilder</a> () const</td></tr>
+<tr class="separator:ac2021ca953a60a2aedc5a0f07e095591 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3751a68722bda0427bac1488c6018c04 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a3751a68722bda0427bac1488c6018c04"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3751a68722bda0427bac1488c6018c04">componentName</a> () const</td></tr>
+<tr class="separator:a3751a68722bda0427bac1488c6018c04 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aad0df1825891d465e5a0c599199b20 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4aad0df1825891d465e5a0c599199b20"></a>
+virtual QDomDocument&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4aad0df1825891d465e5a0c599199b20">domDocument</a> () const</td></tr>
+<tr class="separator:a4aad0df1825891d465e5a0c599199b20 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a588b37c85746d70fa030a68d411a2 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a81a588b37c85746d70fa030a68d411a2"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIFactory.html">KXMLGUIFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a81a588b37c85746d70fa030a68d411a2">factory</a> () const</td></tr>
+<tr class="separator:a81a588b37c85746d70fa030a68d411a2 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5dead4d8da7a6aa7d6bdf258aa43168 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ad5dead4d8da7a6aa7d6bdf258aa43168"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ad5dead4d8da7a6aa7d6bdf258aa43168">insertChildClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *child)</td></tr>
+<tr class="separator:ad5dead4d8da7a6aa7d6bdf258aa43168 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0424264fb1a70a0d6f7355a50493cb77 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a0424264fb1a70a0d6f7355a50493cb77"></a>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a0424264fb1a70a0d6f7355a50493cb77">parentClient</a> () const</td></tr>
+<tr class="separator:a0424264fb1a70a0d6f7355a50493cb77 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b09fd0cc566bd64b49f775501374ac6 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a7b09fd0cc566bd64b49f775501374ac6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a7b09fd0cc566bd64b49f775501374ac6">plugActionList</a> (const QString &amp;name, const QList&lt; QAction * &gt; &amp;actionList)</td></tr>
+<tr class="separator:a7b09fd0cc566bd64b49f775501374ac6 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4844c3b6a7362cd4dc2e05cc8211d5de inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4844c3b6a7362cd4dc2e05cc8211d5de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4844c3b6a7362cd4dc2e05cc8211d5de">reloadXML</a> ()</td></tr>
+<tr class="separator:a4844c3b6a7362cd4dc2e05cc8211d5de inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e2620214e77a8c4edc7597710b7b32 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a37e2620214e77a8c4edc7597710b7b32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a37e2620214e77a8c4edc7597710b7b32">removeChildClient</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *child)</td></tr>
+<tr class="separator:a37e2620214e77a8c4edc7597710b7b32 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3528715de4f96ee174bbc594402cb2ec inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a3528715de4f96ee174bbc594402cb2ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3528715de4f96ee174bbc594402cb2ec">replaceXMLFile</a> (const QString &amp;xmlfile, const QString &amp;localxmlfile, bool merge=false)</td></tr>
+<tr class="separator:a3528715de4f96ee174bbc594402cb2ec inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a2422a35274351314ac5eb4fc9a23e inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a95a2422a35274351314ac5eb4fc9a23e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a95a2422a35274351314ac5eb4fc9a23e">setClientBuilder</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIBuilder.html">KXMLGUIBuilder</a> *builder)</td></tr>
+<tr class="separator:a95a2422a35274351314ac5eb4fc9a23e inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1989539c961858a273ca841618e0bf7 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ab1989539c961858a273ca841618e0bf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ab1989539c961858a273ca841618e0bf7">setFactory</a> (<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIFactory.html">KXMLGUIFactory</a> *<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a81a588b37c85746d70fa030a68d411a2">factory</a>)</td></tr>
+<tr class="separator:ab1989539c961858a273ca841618e0bf7 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f952857036d4be2e42657fe4f981bb inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a90f952857036d4be2e42657fe4f981bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a90f952857036d4be2e42657fe4f981bb">setXMLGUIBuildDocument</a> (const QDomDocument &amp;doc)</td></tr>
+<tr class="separator:a90f952857036d4be2e42657fe4f981bb inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b212e793ec67d341d7f1ac9355b7fd inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a65b212e793ec67d341d7f1ac9355b7fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a65b212e793ec67d341d7f1ac9355b7fd">unplugActionList</a> (const QString &amp;name)</td></tr>
+<tr class="separator:a65b212e793ec67d341d7f1ac9355b7fd inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a64a13f335a218796081eccc37b51d inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a04a64a13f335a218796081eccc37b51d"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a04a64a13f335a218796081eccc37b51d">xmlFile</a> () const</td></tr>
+<tr class="separator:a04a64a13f335a218796081eccc37b51d inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e252a6ddd84eaf95bd61856d3951e5 inherit pub_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ae5e252a6ddd84eaf95bd61856d3951e5"></a>
+QDomDocument&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ae5e252a6ddd84eaf95bd61856d3951e5">xmlguiBuildDocument</a> () const</td></tr>
+<tr class="separator:ae5e252a6ddd84eaf95bd61856d3951e5 inherit pub_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a599af24081c3dc1c261c04dce1de4f41"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a599af24081c3dc1c261c04dce1de4f41">saveFile</a> ()=0</td></tr>
+<tr class="separator:a599af24081c3dc1c261c04dce1de4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8f01446db1864e1e2c7430fdb2522e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadWritePart.html#a6b8f01446db1864e1e2c7430fdb2522e">saveToUrl</a> ()</td></tr>
+<tr class="separator:a6b8f01446db1864e1e2c7430fdb2522e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKParts_1_1ReadOnlyPart"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKParts_1_1ReadOnlyPart')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</a></td></tr>
+<tr class="memitem:a5b5488a9c3e6d62f067cd55cc3c7bf8f inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top"><a id="a5b5488a9c3e6d62f067cd55cc3c7bf8f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ReadOnlyPart</b> (ReadOnlyPartPrivate &amp;dd, QObject *parent)</td></tr>
+<tr class="separator:a5b5488a9c3e6d62f067cd55cc3c7bf8f inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23121934cc4a6419a85d911142b2abc inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#aa23121934cc4a6419a85d911142b2abc">abortLoad</a> ()</td></tr>
+<tr class="separator:aa23121934cc4a6419a85d911142b2abc inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b4ad8bc010422aba489ca8a68deba6 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#af6b4ad8bc010422aba489ca8a68deba6">guiActivateEvent</a> (<a class="el" href="classKParts_1_1GUIActivateEvent.html">GUIActivateEvent</a> *event) override</td></tr>
+<tr class="separator:af6b4ad8bc010422aba489ca8a68deba6 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577bf2ace32aedddca4d3fc4a43cc7db inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">KPARTS_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a577bf2ace32aedddca4d3fc4a43cc7db">isLocalFileTemporary</a> () const</td></tr>
+<tr class="separator:a577bf2ace32aedddca4d3fc4a43cc7db inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4d077c20fcc1e4b0ddaf760f010b2a inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#ade4d077c20fcc1e4b0ddaf760f010b2a">localFilePath</a> () const</td></tr>
+<tr class="separator:ade4d077c20fcc1e4b0ddaf760f010b2a inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83657296ba8c8b17592a1a16b7fb8e1a inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a83657296ba8c8b17592a1a16b7fb8e1a">openFile</a> ()</td></tr>
+<tr class="separator:a83657296ba8c8b17592a1a16b7fb8e1a inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bbf4b06d031cb046102981c1ff1e27 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a50bbf4b06d031cb046102981c1ff1e27">setLocalFilePath</a> (const QString &amp;<a class="el" href="classKParts_1_1ReadOnlyPart.html#ade4d077c20fcc1e4b0ddaf760f010b2a">localFilePath</a>)</td></tr>
+<tr class="separator:a50bbf4b06d031cb046102981c1ff1e27 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84452e9039419eb69ede96ec6e741e21 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">KPARTS_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a84452e9039419eb69ede96ec6e741e21">setLocalFileTemporary</a> (bool temp)</td></tr>
+<tr class="separator:a84452e9039419eb69ede96ec6e741e21 inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be6bf63d9ddb3ad42d347c274678ada inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1ReadOnlyPart.html#a0be6bf63d9ddb3ad42d347c274678ada">setUrl</a> (const QUrl &amp;url)</td></tr>
+<tr class="separator:a0be6bf63d9ddb3ad42d347c274678ada inherit pro_methods_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKParts_1_1Part"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKParts_1_1Part')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKParts_1_1Part.html">KParts::Part</a></td></tr>
+<tr class="memitem:ad6e7427098a46579efeb8bc17833c969 inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top"><a id="ad6e7427098a46579efeb8bc17833c969"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Part</b> (PartPrivate &amp;dd, QObject *parent)</td></tr>
+<tr class="separator:ad6e7427098a46579efeb8bc17833c969 inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5774787704b5ea74ac8d23a7a5adc2bb inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a5774787704b5ea74ac8d23a7a5adc2bb">customEvent</a> (QEvent *event) override</td></tr>
+<tr class="separator:a5774787704b5ea74ac8d23a7a5adc2bb inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d27796d0a5fb6b1be321b8367b0e7e inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a79d27796d0a5fb6b1be321b8367b0e7e">hostContainer</a> (const QString &amp;containerName)</td></tr>
+<tr class="separator:a79d27796d0a5fb6b1be321b8367b0e7e inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c41d68c9667995a86cd142f1cd14de inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a95c41d68c9667995a86cd142f1cd14de">loadPlugins</a> ()</td></tr>
+<tr class="separator:a95c41d68c9667995a86cd142f1cd14de inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab268f00ee4e3984a2ea21c364c09681f inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ab268f00ee4e3984a2ea21c364c09681f">partActivateEvent</a> (<a class="el" href="classKParts_1_1PartActivateEvent.html">PartActivateEvent</a> *event)</td></tr>
+<tr class="separator:ab268f00ee4e3984a2ea21c364c09681f inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20573e8db0c4f08d3ff04422df51b461 inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a20573e8db0c4f08d3ff04422df51b461">partSelectEvent</a> (<a class="el" href="classKParts_1_1PartSelectEvent.html">PartSelectEvent</a> *event)</td></tr>
+<tr class="separator:a20573e8db0c4f08d3ff04422df51b461 inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399fea8c8f8d4ee321118d1ec85775db inherit pro_methods_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#a399fea8c8f8d4ee321118d1ec85775db">setWidget</a> (QWidget *<a class="el" href="classKParts_1_1Part.html#a2d2efd56fe23904104c48dc56371c03d">widget</a>)</td></tr>
+<tr class="separator:a399fea8c8f8d4ee321118d1ec85775db inherit pro_methods_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:aeffb59831ec40f998a860021c915c165 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="aeffb59831ec40f998a860021c915c165"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PartBase</b> (PartBasePrivate &amp;dd)</td></tr>
+<tr class="separator:aeffb59831ec40f998a860021c915c165 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc6495c1dd313ee16e903ce396a1df0 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#abdc6495c1dd313ee16e903ce396a1df0">loadPlugins</a> (QObject *parent, <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a> *parentGUIClient, const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;aboutData)</td></tr>
+<tr class="separator:abdc6495c1dd313ee16e903ce396a1df0 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9088a2da884260f9dafa07513ae9af1 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ac9088a2da884260f9dafa07513ae9af1">setComponentData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;componentData)</td></tr>
+<tr class="separator:ac9088a2da884260f9dafa07513ae9af1 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad508aa84a1e2109e5dcdabe3bdde3af8 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#ad508aa84a1e2109e5dcdabe3bdde3af8">setComponentData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> &amp;pluginData, bool <a class="el" href="classKParts_1_1PartBase.html#abdc6495c1dd313ee16e903ce396a1df0">loadPlugins</a>)</td></tr>
+<tr class="separator:ad508aa84a1e2109e5dcdabe3bdde3af8 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ed59560edb848e787c4b3cee878b1 inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a5a9ed59560edb848e787c4b3cee878b1">setPluginInterfaceVersion</a> (int <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/namespaceKPackage.html#a54e3f7be495f220dd0071ca568f6cdfd">version</a>)</td></tr>
+<tr class="separator:a5a9ed59560edb848e787c4b3cee878b1 inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e418df2d77f5f915aa7addfeec455e inherit pro_methods_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a49e418df2d77f5f915aa7addfeec455e">setPluginLoadingMode</a> (<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76">PluginLoadingMode</a> loadingMode)</td></tr>
+<tr class="separator:a49e418df2d77f5f915aa7addfeec455e inherit pro_methods_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:aa0900256f3909953bf8948886b26dda6 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="aa0900256f3909953bf8948886b26dda6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#aa0900256f3909953bf8948886b26dda6">loadStandardsXmlFile</a> ()</td></tr>
+<tr class="separator:aa0900256f3909953bf8948886b26dda6 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecde1988dfb60a54990a50c6c158039 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="afecde1988dfb60a54990a50c6c158039"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#afecde1988dfb60a54990a50c6c158039">setComponentName</a> (const QString &amp;<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a3751a68722bda0427bac1488c6018c04">componentName</a>, const QString &amp;componentDisplayName)</td></tr>
+<tr class="separator:afecde1988dfb60a54990a50c6c158039 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17566d518fa7c2b45f81b85fb8c4fc97 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a17566d518fa7c2b45f81b85fb8c4fc97"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a17566d518fa7c2b45f81b85fb8c4fc97">setDOMDocument</a> (const QDomDocument &amp;document, bool merge=false)</td></tr>
+<tr class="separator:a17566d518fa7c2b45f81b85fb8c4fc97 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986969c71e595c2b849847ba2d35da21 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a986969c71e595c2b849847ba2d35da21"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a986969c71e595c2b849847ba2d35da21">setLocalXMLFile</a> (const QString &amp;file)</td></tr>
+<tr class="separator:a986969c71e595c2b849847ba2d35da21 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6518f2d8705ed69f24fceec4ec88cb3 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="ab6518f2d8705ed69f24fceec4ec88cb3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#ab6518f2d8705ed69f24fceec4ec88cb3">setXML</a> (const QString &amp;document, bool merge=false)</td></tr>
+<tr class="separator:ab6518f2d8705ed69f24fceec4ec88cb3 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de555afb77fb964db93d306a5122368 inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a6de555afb77fb964db93d306a5122368"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a6de555afb77fb964db93d306a5122368">setXMLFile</a> (const QString &amp;file, bool merge=false, bool setXMLDoc=true)</td></tr>
+<tr class="separator:a6de555afb77fb964db93d306a5122368 inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5c7bb39d27c6082ea989e19b3e3bcf inherit pro_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a4a5c7bb39d27c6082ea989e19b3e3bcf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a4a5c7bb39d27c6082ea989e19b3e3bcf">stateChanged</a> (const QString &amp;newstate, ReverseStateChange reverse=StateNoReverse)</td></tr>
+<tr class="separator:a4a5c7bb39d27c6082ea989e19b3e3bcf inherit pro_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header properties_classKParts_1_1ReadOnlyPart"><td colspan="2" onclick="javascript:toggleInherit('properties_classKParts_1_1ReadOnlyPart')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classKParts_1_1ReadOnlyPart.html">KParts::ReadOnlyPart</a></td></tr>
+<tr class="memitem:af0c7403f8b805b2e39a74be98ffb45c8 inherit properties_classKParts_1_1ReadOnlyPart"><td class="memItemLeft" align="right" valign="top"><a id="af0c7403f8b805b2e39a74be98ffb45c8"></a>
+QUrl&#160;</td><td class="memItemRight" valign="bottom"><b>url</b></td></tr>
+<tr class="separator:af0c7403f8b805b2e39a74be98ffb45c8 inherit properties_classKParts_1_1ReadOnlyPart"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:a73b04eba759c3505ac722b2ceaaa8b76 inherit pro_types_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76">PluginLoadingMode</a> { <a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76a3ffe0a5005d5e1d00b4d3fd8c4d51a1e">DoNotLoadPlugins</a> = 0,
+<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76aeff505f5627f1539e03730d042e39522">LoadPlugins</a> = 1,
+<a class="el" href="classKParts_1_1PartBase.html#a73b04eba759c3505ac722b2ceaaa8b76aeaf6ca999ef635e22e3f52234226e931">LoadPluginsIfEnabled</a> = 2
+ }</td></tr>
+<tr class="separator:a73b04eba759c3505ac722b2ceaaa8b76 inherit pro_types_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_slots_classKParts_1_1Part"><td colspan="2" onclick="javascript:toggleInherit('pro_slots_classKParts_1_1Part')"><img src="closed.png" alt="-"/>&#160;Protected Slots inherited from <a class="el" href="classKParts_1_1Part.html">KParts::Part</a></td></tr>
+<tr class="memitem:ae6789f7047afd8d87ade140428cbe7b3 inherit pro_slots_classKParts_1_1Part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKParts_1_1Part.html#ae6789f7047afd8d87ade140428cbe7b3">slotWidgetDestroyed</a> ()</td></tr>
+<tr class="separator:ae6789f7047afd8d87ade140428cbe7b3 inherit pro_slots_classKParts_1_1Part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classKXMLGUIClient"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classKXMLGUIClient')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html">KXMLGUIClient</a></td></tr>
+<tr class="memitem:a596dde78a1cee1b8699ef9f5585dd773 inherit pro_static_methods_classKXMLGUIClient"><td class="memItemLeft" align="right" valign="top"><a id="a596dde78a1cee1b8699ef9f5585dd773"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKXMLGUIClient.html#a596dde78a1cee1b8699ef9f5585dd773">standardsXmlFileLocation</a> ()</td></tr>
+<tr class="separator:a596dde78a1cee1b8699ef9f5585dd773 inherit pro_static_methods_classKXMLGUIClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classKParts_1_1PartBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKParts_1_1PartBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKParts_1_1PartBase.html">KParts::PartBase</a></td></tr>
+<tr class="memitem:a5655e19a6338ea12c0e0a92956277e08 inherit pro_attribs_classKParts_1_1PartBase"><td class="memItemLeft" align="right" valign="top"><a id="a5655e19a6338ea12c0e0a92956277e08"></a>
+PartBasePrivate *&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a5655e19a6338ea12c0e0a92956277e08 inherit pro_attribs_classKParts_1_1PartBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for an "editor" part. </p>
+<p>This class handles network transparency for you. Anything that can open a URL, allow modifications, and save (to the same URL or a different one).</p>
+<p>A read-write part can be set to read-only mode, using <a class="el" href="classKParts_1_1ReadWritePart.html#a09288e0b4b17a2790e5375763d7bf72c" title="Changes the behavior of this part to readonly or readwrite. ">setReadWrite()</a>.</p>
+<p><a class="el" href="classKParts_1_1Part.html" title="Base class for parts. ">Part</a> writers : Any part inheriting <a class="el" href="classKParts_1_1ReadWritePart.html" title="Base class for an &quot;editor&quot; part. ">ReadWritePart</a> should check isReadWrite before allowing any action that modifies the part. The part probably wants to reimplement setReadWrite, disable those actions. Don't forget to call the parent setReadWrite. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8h_source.html#l00047">47</a> of file <a class="el" href="readwritepart_8h_source.html">readwritepart.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a457ff937481a4b2d10c136ae90bae8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457ff937481a4b2d10c136ae90bae8fc">&#9670;&nbsp;</a></span>ReadWritePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadWritePart::ReadWritePart </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor See parent constructor for instructions. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00045">45</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad69aa70703adae4f0973a002b3054e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69aa70703adae4f0973a002b3054e47">&#9670;&nbsp;</a></span>~ReadWritePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadWritePart::~ReadWritePart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor Applications using a <a class="el" href="classKParts_1_1ReadWritePart.html" title="Base class for an &quot;editor&quot; part. ">ReadWritePart</a> should make sure, before destroying it, to call <a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b" title="Called when closing the current url (e.g. ">closeUrl()</a>. </p>
+<p>In <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#af8c5708414be62f259114b0453ef8432">KMainWindow::queryClose()</a>, for instance, they should allow closing only if the return value of <a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b" title="Called when closing the current url (e.g. ">closeUrl()</a> was true. This allows to cancel. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00050">50</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae9d19e3faf1c9a79678653d34e36246b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d19e3faf1c9a79678653d34e36246b">&#9670;&nbsp;</a></span>closeUrl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::closeUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when closing the current url (e.g. </p>
+<p>document), for instance when switching to another url (note that <a class="el" href="classKParts_1_1ReadOnlyPart.html#a2d7ce3e9a4d68e36f1e2f6cb016670da" title="Only reimplement openUrl if you don&#39;t want the network transparency support to download from the url ...">openUrl()</a> calls it automatically in this case).</p>
+<p>If the current URL is not fully loaded yet, aborts loading.</p>
+<p>If <a class="el" href="classKParts_1_1ReadWritePart.html#a7f8c59e327e0a2ffbfecb961e00685c1">isModified()</a>, <a class="el" href="classKParts_1_1ReadWritePart.html#a51ead3990f91223ed2ebeb8dfa0d60ec" title="If the document has been modified, ask the user to save changes. ">queryClose()</a> will be called.</p>
+<dl class="section return"><dt>Returns</dt><dd>false on cancel </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classKParts_1_1ReadOnlyPart.html#ab189d22c6f431b8b892cbfe8a4d0f946">KParts::ReadOnlyPart</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00134">134</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac29e29d109c5f0a12898d0b746a5a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac29e29d109c5f0a12898d0b746a5a72">&#9670;&nbsp;</a></span>closeUrl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::closeUrl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>promptToSave</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call this method instead of the above if you need control if the save prompt is shown. </p>
+<p>For example, if you call <a class="el" href="classKParts_1_1ReadWritePart.html#a51ead3990f91223ed2ebeb8dfa0d60ec" title="If the document has been modified, ask the user to save changes. ">queryClose()</a> from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#af8c5708414be62f259114b0453ef8432">KMainWindow::queryClose()</a>, you would not want to prompt again when closing the url.</p>
+<p>Equivalent to promptToSave ? <a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b" title="Called when closing the current url (e.g. ">closeUrl()</a> : <a class="el" href="classKParts_1_1ReadOnlyPart.html#ab189d22c6f431b8b892cbfe8a4d0f946" title="Called when closing the current url (e.g. ">ReadOnlyPart::closeUrl()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00146">146</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f8c59e327e0a2ffbfecb961e00685c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8c59e327e0a2ffbfecb961e00685c1">&#9670;&nbsp;</a></span>isModified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::isModified </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the document has been modified. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00305">305</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae338c1d8c5a6a0531a0e4414aa2e6f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae338c1d8c5a6a0531a0e4414aa2e6f02">&#9670;&nbsp;</a></span>isReadWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::isReadWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the part is in read-write mode </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00298">298</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51ead3990f91223ed2ebeb8dfa0d60ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ead3990f91223ed2ebeb8dfa0d60ec">&#9670;&nbsp;</a></span>queryClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::queryClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the document has been modified, ask the user to save changes. </p>
+<p>This method is meant to be called from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKMainWindow.html#af8c5708414be62f259114b0453ef8432">KMainWindow::queryClose()</a>. It will also be called from <a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b" title="Called when closing the current url (e.g. ">closeUrl()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="classKParts_1_1ReadWritePart.html#ae9d19e3faf1c9a79678653d34e36246b" title="Called when closing the current url (e.g. ">closeUrl()</a> can be called without the user losing important data, false if the user chooses to cancel. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00083">83</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abd2f5a4ce68f32b6f21635b7f97ce63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2f5a4ce68f32b6f21635b7f97ce63a">&#9670;&nbsp;</a></span>save</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the file in the location from which it was opened. </p>
+<p>You can connect this to the "save" action. Calls <a class="el" href="classKParts_1_1ReadWritePart.html#a599af24081c3dc1c261c04dce1de4f41" title="Save to a local file. ">saveFile()</a> and <a class="el" href="classKParts_1_1ReadWritePart.html#a6b8f01446db1864e1e2c7430fdb2522e" title="Save the file. ">saveToUrl()</a>, no need to reimplement. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00151">151</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58f440b315af918d2c9bb2aa5ff182a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f440b315af918d2c9bb2aa5ff182a4">&#9670;&nbsp;</a></span>saveAs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::saveAs </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the file to a new location. </p>
+<p>Calls <a class="el" href="classKParts_1_1ReadWritePart.html#abd2f5a4ce68f32b6f21635b7f97ce63a" title="Save the file in the location from which it was opened. ">save()</a>, no need to reimplement </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00167">167</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a599af24081c3dc1c261c04dce1de4f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599af24081c3dc1c261c04dce1de4f41">&#9670;&nbsp;</a></span>saveFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool KParts::ReadWritePart::saveFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save to a local file. </p>
+<p>You need to implement it, to save to the local file. The framework takes care of re-uploading afterwards.</p>
+<dl class="section return"><dt>Returns</dt><dd>true on success, false on failure. On failure the function should inform the user about the problem with an appropriate message box. Standard error messages can be constructed using KIO::buildErrorString() in combination with the error codes defined in kio/global.h </dd></dl>
+
+</div>
+</div>
+<a id="a6b8f01446db1864e1e2c7430fdb2522e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8f01446db1864e1e2c7430fdb2522e">&#9670;&nbsp;</a></span>saveToUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::saveToUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the file. </p>
+<p>Uploads the file, if <code>url</code> is remote. This will emit <a class="el" href="classKParts_1_1ReadOnlyPart.html#a1839e6f2741b7fca77cd4b04b5acdc6d" title="The part emits this when starting data. ">started()</a>, and either <a class="el" href="classKParts_1_1ReadOnlyPart.html#a7dbe7a0dd64ed631d7d7fc763167de31" title="Emit this when you have completed loading data. ">completed()</a> or <a class="el" href="classKParts_1_1ReadOnlyPart.html#ab1083f7c30e868d66e1f326b94851d8c" title="Emit this if loading is canceled by the user or by an error. ">canceled()</a>, in case you want to provide feedback. </p><dl class="section return"><dt>Returns</dt><dd>true on success, false on failure. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00232">232</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d6fe0168095b3333dc80884888f02f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6fe0168095b3333dc80884888f02f2">&#9670;&nbsp;</a></span>setModified() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWritePart::setModified </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>modified</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the modified flag of the part. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00066">66</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af62573db9600db7c877a05f57d81f3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62573db9600db7c877a05f57d81f3e8">&#9670;&nbsp;</a></span>setModified <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWritePart::setModified </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call <a class="el" href="classKParts_1_1ReadWritePart.html#af62573db9600db7c877a05f57d81f3e8" title="Call setModified() whenever the contents get modified. ">setModified()</a> whenever the contents get modified. </p>
+<p>This is a slot for convenience, since it simply calls setModified(true), so that you can connect it to a signal, like textChanged(). </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00078">78</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09288e0b4b17a2790e5375763d7bf72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09288e0b4b17a2790e5375763d7bf72c">&#9670;&nbsp;</a></span>setReadWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWritePart::setReadWrite </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readwrite</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the behavior of this part to readonly or readwrite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">readwrite</td><td>set to true to enable readwrite mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00058">58</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb7caee3c74e13b22dd922f67a68f830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7caee3c74e13b22dd922f67a68f830">&#9670;&nbsp;</a></span>sigQueryClose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KParts::ReadWritePart::sigQueryClose </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>handled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>abortClosing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set handled to true, if you don't want the default handling set abortClosing to true, if you handled the request, but for any reason don't want to allow closing the document </p>
+
+</div>
+</div>
+<a id="a93827f9da0f3fdcdbb2c53710afe43ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93827f9da0f3fdcdbb2c53710afe43ae">&#9670;&nbsp;</a></span>waitSaveComplete</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReadWritePart::waitSaveComplete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Waits for any pending upload job to finish and returns whether the last <a class="el" href="classKParts_1_1ReadWritePart.html#abd2f5a4ce68f32b6f21635b7f97ce63a" title="Save the file in the location from which it was opened. ">save()</a> action was successful. </p>
+
+<p class="definition">Definition at line <a class="el" href="readwritepart_8cpp_source.html#l00312">312</a> of file <a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="readwritepart_8h_source.html">readwritepart.h</a></li>
+<li><a class="el" href="readwritepart_8cpp_source.html">readwritepart.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:41 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KService - KPluginTrader Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KService</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KService"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAutostart.html">KAutostart</option>
+        
+        <option value="classKDBusServiceStarter.html">KDBusServiceStarter</option>
+        
+        <option value="classKMimeTypeTrader.html">KMimeTypeTrader</option>
+        
+        <option value="classKPluginInfo.html">KPluginInfo</option>
+        
+        <option value="classKPluginTrader.html">KPluginTrader</option>
+        
+        <option value="classKService.html">KService</option>
+        
+        <option value="classKServiceAction.html">KServiceAction</option>
+        
+        <option value="classKServiceGroup.html">KServiceGroup</option>
+        
+        <option value="classKServiceOffer.html">KServiceOffer</option>
+        
+        <option value="classKServiceType.html">KServiceType</option>
+        
+        <option value="classKServiceTypeTrader.html">KServiceTypeTrader</option>
+        
+        <option value="classKSycoca.html">KSycoca</option>
+        
+        <option value="classKSycocaEntry.html">KSycocaEntry</option>
+        
+        <option value="classKToolInvocation.html">KToolInvocation</option>
+        
+        <option value="namespaceKServiceTypeProfile.html">KServiceTypeProfile</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced plugin and service introspection</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Service)
+target_link_libraries(yourapp KF5::Service)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KService </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kservice-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KService on <a href="https://cgit.kde.org/kservice-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KService </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KPluginTrader">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classKPluginTrader-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KPluginTrader Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kplugintrader_8h_source.html">KPluginTrader</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a46b7e49b85b106b3d6976c033327efdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginTrader.html#a46b7e49b85b106b3d6976c033327efdc">~KPluginTrader</a> ()</td></tr>
+<tr class="separator:a46b7e49b85b106b3d6976c033327efdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3efbd1a45a5b1b384bb44f392592cc2"><td class="memItemLeft" align="right" valign="top">KPluginInfo::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginTrader.html#af3efbd1a45a5b1b384bb44f392592cc2">query</a> (const QString &amp;subDirectory, const QString &amp;serviceType=QString(), const QString &amp;constraint=QString())</td></tr>
+<tr class="separator:af3efbd1a45a5b1b384bb44f392592cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aea08eb90f0f0fe34382503f9d2472207"><td class="memItemLeft" align="right" valign="top"><a id="aea08eb90f0f0fe34382503f9d2472207"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>applyConstraints</b> (KPluginInfo::List &amp;lst, const QString &amp;constraint)</td></tr>
+<tr class="separator:aea08eb90f0f0fe34382503f9d2472207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54220c5d965f7660b8bf76b009bb15af"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a54220c5d965f7660b8bf76b009bb15af"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classKPluginTrader.html#a54220c5d965f7660b8bf76b009bb15af">createInstanceFromQuery</a> (const QString &amp;subDirectory, const QString &amp;serviceType=QString(), const QString &amp;constraint=QString(), QObject *parent=0, const QVariantList &amp;args=QVariantList(), QString *error=0)</td></tr>
+<tr class="separator:a54220c5d965f7660b8bf76b009bb15af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d6904331628dd48c830adbbde49889"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a67d6904331628dd48c830adbbde49889"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classKPluginTrader.html#a67d6904331628dd48c830adbbde49889">createInstanceFromQuery</a> (const QString &amp;subDirectory, const QString &amp;serviceType, const QString &amp;constraint, QObject *parent, QWidget *parentWidget, const QVariantList &amp;args=QVariantList(), QString *error=0)</td></tr>
+<tr class="separator:a67d6904331628dd48c830adbbde49889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055bc78100f53a622169c5cc0ba82bce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKPluginTrader.html">KPluginTrader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKPluginTrader.html#a055bc78100f53a622169c5cc0ba82bce">self</a> ()</td></tr>
+<tr class="separator:a055bc78100f53a622169c5cc0ba82bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for plugins. </p>
+<p><a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> provides an easy way to load a plugin instance from a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html">KPluginFactory</a>, or just querying for existing plugins.</p>
+<p><a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> provides a way for an application to query directories in the Qt plugin paths, accessed through QCoreApplication::libraryPaths(). Plugins may match a specific set of requirements. This allows to find specific plugins at run-time without having to hard-code their names and/or paths. <a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> does not search recursively, you are rather encouraged to install plugins into specific subdirectories to further speed searching.</p>
+<p><a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> exclusively searches within the plugin binaries' metadata (via QPluginLoader::metaData()). It does not search these directories recursively.</p>
+<p><a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> does not use <a class="el" href="classKServiceTypeTrader.html" title="KDE&#39;s trader interface (similar to the CORBA Trader), which provides a way to query the KDE infrastru...">KServiceTypeTrader</a> or KSyCoCa. As such, it will only find binary plugins. If you are looking for a generic way to query for services, use <a class="el" href="classKServiceTypeTrader.html" title="KDE&#39;s trader interface (similar to the CORBA Trader), which provides a way to query the KDE infrastru...">KServiceTypeTrader</a>. For anything relating to mimetypes (type of files), use <a class="el" href="classKMimeTypeTrader.html" title="KDE&#39;s trader for services associated to a given mimetype. ">KMimeTypeTrader</a>.</p>
+<dl class="section user"><dt>Example</dt><dd></dd></dl>
+<p>If you want to find all plugins for your application, you would define a KMyApp/Plugin servicetype, and then you can query the trader for it: </p><div class="fragment"><div class="line">KPluginInfo::List offers =</div><div class="line">    <a class="code" href="classKPluginTrader.html#a055bc78100f53a622169c5cc0ba82bce">KPluginTrader::self</a>()-&gt;<a class="code" href="classKPluginTrader.html#af3efbd1a45a5b1b384bb44f392592cc2">query</a>(<span class="stringliteral">&quot;KMyApp/Plugin&quot;</span>, <span class="stringliteral">&quot;kf5&quot;</span>);</div></div><!-- fragment --><p>You can add a constraint in the "trader query language". For instance: </p><div class="fragment"><div class="line"><a class="code" href="classKPluginTrader.html#a055bc78100f53a622169c5cc0ba82bce">KPluginTrader::self</a>()-&gt;<a class="code" href="classKPluginTrader.html#af3efbd1a45a5b1b384bb44f392592cc2">query</a>(<span class="stringliteral">&quot;KMyApp/Plugin&quot;</span>, <span class="stringliteral">&quot;kf5&quot;</span>,</div><div class="line">                                  <span class="stringliteral">&quot;[X-KMyApp-InterfaceVersion] &gt; 15&quot;</span>);</div></div><!-- fragment --><p>Please note that when including property names containing arithmetic operators like - or +, then you have to put brackets around the property name, in order to correctly separate arithmetic operations from the name. So for example a constraint expression like </p><div class="fragment"><div class="line">X-KMyApp-InterfaceVersion &gt; 4 <span class="comment">// wrong!</span></div></div><!-- fragment --><p> needs to be written as </p><div class="fragment"><div class="line">[X-KMyApp-InterfaceVersion] &gt; 4</div></div><!-- fragment --><p> otherwise it could also be interpreted as Subtract the numeric value of the property "KMyApp" and "InterfaceVersion" from the property "X" and make sure it is greater than 4.<br />
+Instead of the other meaning, make sure that the numeric value of "X-KMyApp-InterfaceVersion" is greater than 4.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKMimeTypeTrader.html" title="KDE&#39;s trader for services associated to a given mimetype. ">KMimeTypeTrader</a>, <a class="el" href="classKServiceTypeTrader.html" title="KDE&#39;s trader interface (similar to the CORBA Trader), which provides a way to query the KDE infrastru...">KServiceTypeTrader</a>, <a class="el" href="classKPluginInfo.html" title="Information about a plugin. ">KPluginInfo</a> </dd>
+<dd>
+QCoreApplication::libraryPaths </dd>
+<dd>
+QT_PLUGIN_PATH (env variable) </dd>
+<dd>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html">KPluginFactory</a> </dd>
+<dd>
+kservice_desktop_to_json (Cmake macro) </dd>
+<dd>
+<a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#aa8bc10b3b6a9d95d2573b8f5e9d83708">K_PLUGIN_FACTORY_WITH_JSON</a> (macro defined in <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html">KPluginFactory</a>)</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8h_source.html#l00088">88</a> of file <a class="el" href="kplugintrader_8h_source.html">kplugintrader.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a46b7e49b85b106b3d6976c033327efdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b7e49b85b106b3d6976c033327efdc">&#9670;&nbsp;</a></span>~KPluginTrader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginTrader::~KPluginTrader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Standard destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8cpp_source.html#l00053">53</a> of file <a class="el" href="kplugintrader_8cpp_source.html">kplugintrader.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a54220c5d965f7660b8bf76b009bb15af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54220c5d965f7660b8bf76b009bb15af">&#9670;&nbsp;</a></span>createInstanceFromQuery() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T* KPluginTrader::createInstanceFromQuery </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>serviceType</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>constraint</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>error</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a plugin from a trader query. </p>
+<p>Example: </p><div class="fragment"><div class="line">KMyAppPlugin* plugin = KPluginTrader::createInstanceFromQuery&lt;KMyAppPlugin&gt;(subDirectory, serviceType, QString(), parentObject );</div><div class="line"><span class="keywordflow">if</span> ( plugin ) {</div><div class="line">    ....</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subDirectory</td><td>The subdirectory under the Qt plugin pathes to search in </td></tr>
+    <tr><td class="paramname">serviceType</td><td>The type of service for which to find a plugin </td></tr>
+    <tr><td class="paramname">constraint</td><td>An optional constraint to pass to the trader (see KTrader) </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent object for the part itself </td></tr>
+    <tr><td class="paramname">args</td><td>A list of arguments passed to the service component </td></tr>
+    <tr><td class="paramname">error</td><td>The string passed here will contain an error description. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created object or a null pointer if the factory was unable to create an object of the given type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8h_source.html#l00189">189</a> of file <a class="el" href="kplugintrader_8h_source.html">kplugintrader.h</a>.</p>
+
+</div>
+</div>
+<a id="a67d6904331628dd48c830adbbde49889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d6904331628dd48c830adbbde49889">&#9670;&nbsp;</a></span>createInstanceFromQuery() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T* KPluginTrader::createInstanceFromQuery </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>serviceType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>constraint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parentWidget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>error</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a plugin from a trader query. </p>
+<p>This method works like createInstanceFromQuery(const QString&amp;, const QString&amp; ,const QString&amp;, QObject*, const QVariantList&amp;, QString*), but you can specify an additional parent widget. This is important for a KPart, for example.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subDirectory</td><td>The subdirectory under the Qt plugin pathes to search in </td></tr>
+    <tr><td class="paramname">serviceType</td><td>the type of service for which to find a plugin </td></tr>
+    <tr><td class="paramname">constraint</td><td>an optional constraint to pass to the trader (see KTrader) </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent object for the part itself </td></tr>
+    <tr><td class="paramname">parentWidget</td><td>the parent widget for the plugin </td></tr>
+    <tr><td class="paramname">args</td><td>A list of arguments passed to the service component </td></tr>
+    <tr><td class="paramname">error</td><td>The string passed here will contain an error description. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created object or a null pointer if the factory was unable to create an object of the given type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8h_source.html#l00218">218</a> of file <a class="el" href="kplugintrader_8h_source.html">kplugintrader.h</a>.</p>
+
+</div>
+</div>
+<a id="af3efbd1a45a5b1b384bb44f392592cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3efbd1a45a5b1b384bb44f392592cc2">&#9670;&nbsp;</a></span>query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KPluginInfo::List KPluginTrader::query </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>serviceType</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>constraint</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The main function in the <a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> class. </p>
+<p>It will return a list of plugins that match your specifications. Required parameter is the service type and subdirectory. This method will append the subDirectory to every path found in QCoreApplication::libraryPaths(), append the subDirectory parameter, and search through the plugin's metadata</p>
+<p><a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> exclusively searches within the plugin binaries' metadata (via QPluginLoader::metaData()). It does not search these directories recursively.</p>
+<p>The constraint parameter is used to limit the possible choices returned based on the constraints you give it.</p>
+<p>The <code>constraint</code> language is rather full. The most common keywords are AND, OR, NOT, IN, and EXIST, all used in an almost spoken-word form. An example is: </p><div class="fragment"><div class="line">(Type == <span class="stringliteral">&#39;Service&#39;</span>) and ((<span class="stringliteral">&#39;KParts/ReadOnlyPart&#39;</span> in ServiceTypes) or (exist Exec))</div></div><!-- fragment --><p>If you want to load a list of plugins from a specific subdirectory, you can do the following:</p>
+<div class="fragment"><div class="line">KPluginInfo::List plugins = <a class="code" href="classKPluginTrader.html#a055bc78100f53a622169c5cc0ba82bce">KPluginTrader::self</a>()-&gt;<a class="code" href="classKPluginTrader.html#af3efbd1a45a5b1b384bb44f392592cc2">query</a>(<span class="stringliteral">&quot;plasma/engines&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">foreach</span> (<span class="keyword">const</span> <a class="code" href="classKPluginInfo.html">KPluginInfo</a> &amp;info, plugins) {</div><div class="line">     <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginLoader.html">KPluginLoader</a> loader(info.<a class="code" href="classKPluginInfo.html#a53bac006d1b7e89e20c128ed076f7706">libraryPath</a>());</div><div class="line">     <span class="keyword">const</span> QVariantList argsWithMetaData = QVariantList() &lt;&lt; loader.<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginLoader.html#aef87229b778a4b30d09680539579b910">metaData</a>().toVariantMap();</div><div class="line">     <span class="comment">// In many cases, plugins are actually based on KPluginFactory, this is how that works:</span></div><div class="line">     <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/structKPluginFactory_1_1InheritanceChecker.html">KPluginFactory</a>* factory = loader.factory();</div><div class="line">     <span class="keywordflow">if</span> (factory) {</div><div class="line">         Engine* component = factory-&gt;<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#a93e83b1985db058c44e67515bdcae1f6">create</a>&lt;Engine&gt;(parent, argsWithMetaData);</div><div class="line">         <span class="keywordflow">if</span> (component) {</div><div class="line">             <span class="comment">// Do whatever you want to do with the resulting object</span></div><div class="line">         }</div><div class="line">     }</div><div class="line">     <span class="comment">// Otherwise, just use the normal QPluginLoader methods</span></div><div class="line">     Engine *myengine = qobject_cast&lt;Engine*&gt;(loader.instance());</div><div class="line">     <span class="keywordflow">if</span> (myengine) {</div><div class="line">         <span class="comment">// etc. ...</span></div><div class="line">     }</div><div class="line">}</div></div><!-- fragment --><p>If you have a specific query for just one plugin, use the createInstanceFromQuery method.</p>
+<p>The keys used in the query (Type, ServiceType, Exec) are all fields found in the .json files which are compiled into the plugin binaries.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subDirectory</td><td>The subdirectory under the Qt plugin path </td></tr>
+    <tr><td class="paramname">servicetype</td><td>A service type like 'KMyApp/Plugin' or 'KFilePlugin' </td></tr>
+    <tr><td class="paramname">constraint</td><td>A constraint to limit the choices returned, QString() to get all services of the given <code>servicetype</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of services that satisfy the query </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="http://techbase.kde.org/Development/Tutorials/Services/Traders#The_KTrader_Query_Language">http://techbase.kde.org/Development/Tutorials/Services/Traders#The_KTrader_Query_Language</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8cpp_source.html#l00081">81</a> of file <a class="el" href="kplugintrader_8cpp_source.html">kplugintrader.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a055bc78100f53a622169c5cc0ba82bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a055bc78100f53a622169c5cc0ba82bce">&#9670;&nbsp;</a></span>self()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKPluginTrader.html">KPluginTrader</a> * KPluginTrader::self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is a static pointer to the <a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> singleton. </p>
+<p>You will need to use this to access the <a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> functionality since the constructors are protected.</p>
+<dl class="section return"><dt>Returns</dt><dd>Static <a class="el" href="classKPluginTrader.html" title="A trader interface which provides a way to query specific subdirectories in the Qt plugin paths for p...">KPluginTrader</a> instance </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kplugintrader_8cpp_source.html#l00043">43</a> of file <a class="el" href="kplugintrader_8cpp_source.html">kplugintrader.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kplugintrader_8h_source.html">kplugintrader.h</a></li>
+<li><a class="el" href="kplugintrader_8cpp_source.html">kplugintrader.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

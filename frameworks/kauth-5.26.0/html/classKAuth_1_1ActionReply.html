@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAuth - KAuth::ActionReply Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KAuth</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KAuth"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAuth_1_1Action.html">KAuth::Action</option>
+        
+        <option value="classKAuth_1_1ActionReply.html">KAuth::ActionReply</option>
+        
+        <option value="classKAuth_1_1ExecuteJob.html">KAuth::ExecuteJob</option>
+        
+        <option value="classKAuth_1_1ObjectDecorator.html">KAuth::ObjectDecorator</option>
+        
+        <option value="namespaceKAuth.html">KAuth</option>
+        
+        <option value="namespaceKAuth_1_1HelperSupport.html">KAuth::HelperSupport</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction to system policy and authentication features</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Auth)
+target_link_libraries(yourapp KF5::Auth)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KAuth </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kauth-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KAuth on <a href="https://cgit.kde.org/kauth-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KAuth </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=ActionReply">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceKAuth.html">KAuth</a></li><li class="navelem"><a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classKAuth_1_1ActionReply-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KAuth::ActionReply Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kauthactionreply_8h_source.html">kauthactionreply.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a703af1f9b49e6436a3990c0273900619"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">Error</a> { <br />
+&#160;&#160;<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7e3401e3c1494b6a81dae185ce0f26c0">NoError</a> = 0,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7811678991b25ae9d6c90467d480ace2">NoResponderError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619ae55e60ddd7a74ba59eaa6bd1ac8c2557">NoSuchActionError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7752b96fe189ca70f436bb900c2ef0bf">InvalidActionError</a>,
+<br />
+&#160;&#160;<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a652eca3258c4f2c32eb24e4bb0562103">AuthorizationDeniedError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619aec2a77cf2836479bc01bc207814eaf41">UserCancelledError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619ae03e2be0694d735440cf434d8d2129eb">HelperBusyError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619afafb9d0d4311e8a8312ca06e3ec131f6">AlreadyStartedError</a>,
+<br />
+&#160;&#160;<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a1180872d9c4956b0596435e6095e7edd">DBusError</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619aa4b7095583c7c78c64fd134987aa765b">BackendError</a>
+<br />
+ }</td></tr>
+<tr class="separator:a703af1f9b49e6436a3990c0273900619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab106612933b81a97f990e224828bcbb6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">Type</a> { <a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6a1243d1178c7d227b478aa7cce10a0308">KAuthErrorType</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6ae7dbb87b29cff766c83dce23fbe21924">HelperErrorType</a>,
+<a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6aee9697ab8a2037cd6d5ee2260650b2ba">SuccessType</a>
+ }</td></tr>
+<tr class="separator:ab106612933b81a97f990e224828bcbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a802f0c35863997ac02a1b7a2209a9a6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a802f0c35863997ac02a1b7a2209a9a6b">ActionReply</a> ()</td></tr>
+<tr class="separator:a802f0c35863997ac02a1b7a2209a9a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6917d9e45e367e22fe5ff7d942dcad6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a6917d9e45e367e22fe5ff7d942dcad6f">ActionReply</a> (<a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">Type</a> <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18">type</a>)</td></tr>
+<tr class="separator:a6917d9e45e367e22fe5ff7d942dcad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22148e48f6cda0193529ce744f697057"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a22148e48f6cda0193529ce744f697057">ActionReply</a> (int <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327">errorCode</a>)</td></tr>
+<tr class="separator:a22148e48f6cda0193529ce744f697057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad459585af21a87b144c753e328719787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#ad459585af21a87b144c753e328719787">ActionReply</a> (const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;reply)</td></tr>
+<tr class="separator:ad459585af21a87b144c753e328719787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2589a886eaa36db85d228f9bd715b901"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a2589a886eaa36db85d228f9bd715b901">~ActionReply</a> ()</td></tr>
+<tr class="separator:a2589a886eaa36db85d228f9bd715b901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7f188241bde0d90af9a43fa4844b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a2a7f188241bde0d90af9a43fa4844b51">addData</a> (const QString &amp;key, const QVariant &amp;value)</td></tr>
+<tr class="separator:a2a7f188241bde0d90af9a43fa4844b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeece469d67b3c1ae2b232e9ad5b26d07"><td class="memItemLeft" align="right" valign="top">QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07">data</a> () const</td></tr>
+<tr class="separator:aeece469d67b3c1ae2b232e9ad5b26d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13dbb2074c0b4480bae0f93053ba2327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327">errorCode</a> () const</td></tr>
+<tr class="separator:a13dbb2074c0b4480bae0f93053ba2327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7d8c9c5ef3a797d11cafc2594f5f19"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a5c7d8c9c5ef3a797d11cafc2594f5f19">errorDescription</a> () const</td></tr>
+<tr class="separator:a5c7d8c9c5ef3a797d11cafc2594f5f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0beb913953d6f5411dd1347e4b5f93b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#af0beb913953d6f5411dd1347e4b5f93b">failed</a> () const</td></tr>
+<tr class="separator:af0beb913953d6f5411dd1347e4b5f93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c16bfe0b2fb3c40dadc3d3bf1fb31a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a23c16bfe0b2fb3c40dadc3d3bf1fb31a">operator!=</a> (const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;reply) const</td></tr>
+<tr class="separator:a23c16bfe0b2fb3c40dadc3d3bf1fb31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294dce9c0a6ac8391436a25f3b9837f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a294dce9c0a6ac8391436a25f3b9837f0">operator=</a> (const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;reply)</td></tr>
+<tr class="separator:a294dce9c0a6ac8391436a25f3b9837f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371adc5f7040e8a90a026ea67ae3f5cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a371adc5f7040e8a90a026ea67ae3f5cc">operator==</a> (const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;reply) const</td></tr>
+<tr class="separator:a371adc5f7040e8a90a026ea67ae3f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2f15ccc0808ebbb03339f735e0bf9e"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#aca2f15ccc0808ebbb03339f735e0bf9e">serialized</a> () const</td></tr>
+<tr class="separator:aca2f15ccc0808ebbb03339f735e0bf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ca4b8d1f95c7af136b939d5b83cc79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#ac1ca4b8d1f95c7af136b939d5b83cc79">setData</a> (const QVariantMap &amp;<a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07">data</a>)</td></tr>
+<tr class="separator:ac1ca4b8d1f95c7af136b939d5b83cc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e7456f138e08c61468569e3bdb0085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a74e7456f138e08c61468569e3bdb0085">setErrorCode</a> (<a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">Error</a> <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327">errorCode</a>)</td></tr>
+<tr class="separator:a74e7456f138e08c61468569e3bdb0085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44992c12cdf172fd1d00467805da2085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a44992c12cdf172fd1d00467805da2085">setErrorDescription</a> (const QString &amp;error)</td></tr>
+<tr class="separator:a44992c12cdf172fd1d00467805da2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3861ac8b616d7c16b6e3f68e27d1016f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a3861ac8b616d7c16b6e3f68e27d1016f">setType</a> (<a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">Type</a> <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18">type</a>)</td></tr>
+<tr class="separator:a3861ac8b616d7c16b6e3f68e27d1016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90081f0965f973c263d19e5ecad6aaaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a90081f0965f973c263d19e5ecad6aaaa">succeeded</a> () const</td></tr>
+<tr class="separator:a90081f0965f973c263d19e5ecad6aaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7221bc7e89859f978b5d1756ab74be18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18">type</a> () const</td></tr>
+<tr class="separator:a7221bc7e89859f978b5d1756ab74be18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abdd0aae711be85150492cc7228af8213"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#abdd0aae711be85150492cc7228af8213">AlreadyStartedReply</a> ()</td></tr>
+<tr class="separator:abdd0aae711be85150492cc7228af8213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3afbb8ad997e3a868536a9538f2711a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#ab3afbb8ad997e3a868536a9538f2711a">AuthorizationDeniedReply</a> ()</td></tr>
+<tr class="separator:ab3afbb8ad997e3a868536a9538f2711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a079e43a997b5b63ae4080f680fd696"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a6a079e43a997b5b63ae4080f680fd696">DBusErrorReply</a> ()</td></tr>
+<tr class="separator:a6a079e43a997b5b63ae4080f680fd696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980d590a5dc126e2e7d542a7abd8d283"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a980d590a5dc126e2e7d542a7abd8d283">deserialize</a> (const QByteArray &amp;<a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07">data</a>)</td></tr>
+<tr class="separator:a980d590a5dc126e2e7d542a7abd8d283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c02ef4a88d4cafc963e9dcdc891bdf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a93c02ef4a88d4cafc963e9dcdc891bdf">HelperBusyReply</a> ()</td></tr>
+<tr class="separator:a93c02ef4a88d4cafc963e9dcdc891bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6577154e215e68fe4889484465bda2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a4d6577154e215e68fe4889484465bda2">HelperErrorReply</a> ()</td></tr>
+<tr class="separator:a4d6577154e215e68fe4889484465bda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227a3224f0a9b0671639ef414baa1042"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a227a3224f0a9b0671639ef414baa1042">InvalidActionReply</a> ()</td></tr>
+<tr class="separator:a227a3224f0a9b0671639ef414baa1042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8111a31393927973343c195eb9bcce"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a8c8111a31393927973343c195eb9bcce">NoResponderReply</a> ()</td></tr>
+<tr class="separator:a8c8111a31393927973343c195eb9bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359e820a545560aa10f1f4d42a86b532"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a359e820a545560aa10f1f4d42a86b532">NoSuchActionReply</a> ()</td></tr>
+<tr class="separator:a359e820a545560aa10f1f4d42a86b532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211040c1fd29b3575b1921c4da647225"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a211040c1fd29b3575b1921c4da647225">SuccessReply</a> ()</td></tr>
+<tr class="separator:a211040c1fd29b3575b1921c4da647225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22425100fef7028be8018cb8ca3e309"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#aa22425100fef7028be8018cb8ca3e309">UserCancelledReply</a> ()</td></tr>
+<tr class="separator:aa22425100fef7028be8018cb8ca3e309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3c8b9312dd8665c0cdd72dece65a3f61"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#a3c8b9312dd8665c0cdd72dece65a3f61">operator&lt;&lt;</a> (QDataStream &amp;, const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;)</td></tr>
+<tr class="separator:a3c8b9312dd8665c0cdd72dece65a3f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad767536584f1e4264686eeb131ae5ab7"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKAuth_1_1ActionReply.html#ad767536584f1e4264686eeb131ae5ab7">operator&gt;&gt;</a> (QDataStream &amp;, <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;)</td></tr>
+<tr class="separator:ad767536584f1e4264686eeb131ae5ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that encapsulates a reply coming from the helper after executing an action. </p>
+<p>An instance of <a class="el" href="classKAuth_1_1ActionReply.html" title="Class that encapsulates a reply coming from the helper after executing an action. ...">ActionReply</a> is returned every time you execute an action with the <a class="el" href="classKAuth_1_1Action.html" title="Class to access, authorize and execute actions. ">Action</a> class. You get the reply directly from the <a class="el" href="classKAuth_1_1Action.html#ac2afcc97d09158b94fa550cb67485520" title="Synchronously executes the action. ">Action::execute()</a> method or indirectly as a parameter of the ActionWatcher::actionPerformed() signal.</p>
+<p><a class="el" href="classKAuth_1_1ActionReply.html" title="Class that encapsulates a reply coming from the helper after executing an action. ...">ActionReply</a> objects can contain both data from a successful action or an error indicator. In case of success, the <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> is <a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619a7e3401e3c1494b6a81dae185ce0f26c0" title="No error. ">ActionReply::NoError</a> (zero) and the <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> is ActionReply::Success. The <a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07" title="Returns the custom data coming from the helper. ">data()</a> method returns a QVariantMap object that may contain custom data sent back by the helper.</p>
+<p>In case of errors coming from the library, the <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> is ActionReply::KAuthError. In this case, <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> will always be one of the predefined errors from the <a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619" title="The enumeration of the possible values of errorCode() when type() is ActionReply::KAuthError. ">ActionReply::Error</a> enum. An error reply of KAuthError type always contains an empty <a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07" title="Returns the custom data coming from the helper. ">data()</a> object. For some kind of errors you could get a human-readable description with <a class="el" href="classKAuth_1_1ActionReply.html#a5c7d8c9c5ef3a797d11cafc2594f5f19" title="Gets a human-readble description of the error, if available. ">errorDescription()</a>.</p>
+<p>If, instead, the helper itself has to report some errors occurred during the action execution, the <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> will be (and has to be) ActionReply::HelperError. In this case the <a class="el" href="classKAuth_1_1ActionReply.html#aeece469d67b3c1ae2b232e9ad5b26d07" title="Returns the custom data coming from the helper. ">data()</a> object can contain custom data from the helper, and the <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> and <a class="el" href="classKAuth_1_1ActionReply.html#a5c7d8c9c5ef3a797d11cafc2594f5f19" title="Gets a human-readble description of the error, if available. ">errorDescription()</a> values are application-dependent.</p>
+<p>In the helper, to create an action reply object you have two choices: using the constructor, or the predefined replies. For example, to create a successful reply you can use the default constructor but to create a helper error reply, instead of writing <em>ActionReply(ActionReply::HelperError)</em> you could use the more convenient <em><a class="el" href="classKAuth_1_1ActionReply.html#a4d6577154e215e68fe4889484465bda2" title="An empty reply with type() == HelperError. ">ActionReply::HelperErrorReply</a></em> constant.</p>
+<p>You should not use the predefined error replies to create and return new errors. Replies with the KAuthError type are intended to be returned by the library only. However, you can use them for comparisons.</p>
+<p>To quickly check for success or failure of an action, you can use <a class="el" href="classKAuth_1_1ActionReply.html#a90081f0965f973c263d19e5ecad6aaaa" title="Returns true if type() == Success. ">succeeded()</a> or <a class="el" href="classKAuth_1_1ActionReply.html#af0beb913953d6f5411dd1347e4b5f93b" title="Returns true if type() != Success. ">failed()</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8h_source.html#l00507">507</a> of file <a class="el" href="kauthactionreply_8h_source.html">kauthactionreply.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a703af1f9b49e6436a3990c0273900619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703af1f9b49e6436a3990c0273900619">&#9670;&nbsp;</a></span>Error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">KAuth::ActionReply::Error</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The enumeration of the possible values of <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> when <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> is ActionReply::KAuthError. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619a7e3401e3c1494b6a81dae185ce0f26c0"></a>NoError&#160;</td><td class="fielddoc"><p>No error. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619a7811678991b25ae9d6c90467d480ace2"></a>NoResponderError&#160;</td><td class="fielddoc"><p>The helper responder object hasn't been set. This shouldn't happen if you use the KAUTH_HELPER macro in the helper source. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619ae55e60ddd7a74ba59eaa6bd1ac8c2557"></a>NoSuchActionError&#160;</td><td class="fielddoc"><p>The action you tried to execute doesn't exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619a7752b96fe189ca70f436bb900c2ef0bf"></a>InvalidActionError&#160;</td><td class="fielddoc"><p>You tried to execute an invalid action object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619a652eca3258c4f2c32eb24e4bb0562103"></a>AuthorizationDeniedError&#160;</td><td class="fielddoc"><p>You don't have the authorization to execute the action. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619aec2a77cf2836479bc01bc207814eaf41"></a>UserCancelledError&#160;</td><td class="fielddoc"><p><a class="el" href="classKAuth_1_1Action.html" title="Class to access, authorize and execute actions. ">Action</a> execution has been cancelled by the user. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619ae03e2be0694d735440cf434d8d2129eb"></a>HelperBusyError&#160;</td><td class="fielddoc"><p>The helper is busy executing another action (or group of actions). Try later. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619afafb9d0d4311e8a8312ca06e3ec131f6"></a>AlreadyStartedError&#160;</td><td class="fielddoc"><p>The action was already started and is currently running. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619a1180872d9c4956b0596435e6095e7edd"></a>DBusError&#160;</td><td class="fielddoc"><p>An error from D-Bus occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a703af1f9b49e6436a3990c0273900619aa4b7095583c7c78c64fd134987aa765b"></a>BackendError&#160;</td><td class="fielddoc"><p>The underlying backend reported an error. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8h_source.html#l00534">534</a> of file <a class="el" href="kauthactionreply_8h_source.html">kauthactionreply.h</a>.</p>
+
+</div>
+</div>
+<a id="ab106612933b81a97f990e224828bcbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab106612933b81a97f990e224828bcbb6">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">KAuth::ActionReply::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration of the different kinds of replies. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab106612933b81a97f990e224828bcbb6a1243d1178c7d227b478aa7cce10a0308"></a>KAuthErrorType&#160;</td><td class="fielddoc"><p>An error reply generated by the library itself. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab106612933b81a97f990e224828bcbb6ae7dbb87b29cff766c83dce23fbe21924"></a>HelperErrorType&#160;</td><td class="fielddoc"><p>An error reply generated by the helper. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab106612933b81a97f990e224828bcbb6aee9697ab8a2037cd6d5ee2260650b2ba"></a>SuccessType&#160;</td><td class="fielddoc"><p>The action has been completed successfully. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8h_source.html#l00513">513</a> of file <a class="el" href="kauthactionreply_8h_source.html">kauthactionreply.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a802f0c35863997ac02a1b7a2209a9a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802f0c35863997ac02a1b7a2209a9a6b">&#9670;&nbsp;</a></span>ActionReply() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAuth::ActionReply::ActionReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. Sets <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> to Success and <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> to zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00094">94</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6917d9e45e367e22fe5ff7d942dcad6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6917d9e45e367e22fe5ff7d942dcad6f">&#9670;&nbsp;</a></span>ActionReply() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAuth::ActionReply::ActionReply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">ActionReply::Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor to directly set the type. </p>
+<p>This constructor directly sets the reply type. You shouldn't need to directly call this constructor, because you can use the more convenient predefined replies constants. You also shouldn't create a reply with the KAuthError type because it's reserved for errors coming from the library.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the new reply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00101">101</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a22148e48f6cda0193529ce744f697057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22148e48f6cda0193529ce744f697057">&#9670;&nbsp;</a></span>ActionReply() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAuth::ActionReply::ActionReply </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>errorCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that creates a KAuthError reply with a specified error code. </p>
+<p>Do not use outside the library.</p>
+<p>This constructor is for internal use only, since it creates a reply with KAuthError type, which is reserved for errors coming from the library.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>The error code of the new reply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00108">108</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad459585af21a87b144c753e328719787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad459585af21a87b144c753e328719787">&#9670;&nbsp;</a></span>ActionReply() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAuth::ActionReply::ActionReply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00089">89</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2589a886eaa36db85d228f9bd715b901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2589a886eaa36db85d228f9bd715b901">&#9670;&nbsp;</a></span>~ActionReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAuth::ActionReply::~ActionReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00115">115</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a7f188241bde0d90af9a43fa4844b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7f188241bde0d90af9a43fa4844b51">&#9670;&nbsp;</a></span>addData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAuth::ActionReply::addData </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience method to add some data to the reply. </p>
+<p>This method adds the pair <code>key/value</code> to the QVariantMap used to report back custom data to the application.</p>
+<p>Use this method if you don't want to create a new QVariantMap only to add a new entry.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The new entry's key </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the new entry </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00124">124</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abdd0aae711be85150492cc7228af8213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd0aae711be85150492cc7228af8213">&#9670;&nbsp;</a></span>AlreadyStartedReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::AlreadyStartedReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == AlreadyStartedError </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00079">79</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab3afbb8ad997e3a868536a9538f2711a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3afbb8ad997e3a868536a9538f2711a">&#9670;&nbsp;</a></span>AuthorizationDeniedReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::AuthorizationDeniedReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == AuthorizationDenied </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00067">67</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeece469d67b3c1ae2b232e9ad5b26d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeece469d67b3c1ae2b232e9ad5b26d07">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariantMap KAuth::ActionReply::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the custom data coming from the helper. </p>
+<p>This method is used to get the object that contains the custom data coming from the helper. In the helper's code, you can set it using <a class="el" href="classKAuth_1_1ActionReply.html#ac1ca4b8d1f95c7af136b939d5b83cc79" title="Sets the custom data to send back to the application. ">setData()</a> or the convenience method <a class="el" href="classKAuth_1_1ActionReply.html#a2a7f188241bde0d90af9a43fa4844b51" title="Convenience method to add some data to the reply. ">addData()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The data coming from (or that will be sent by) the helper </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00129">129</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a079e43a997b5b63ae4080f680fd696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a079e43a997b5b63ae4080f680fd696">&#9670;&nbsp;</a></span>DBusErrorReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::DBusErrorReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == DBusError </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00083">83</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a980d590a5dc126e2e7d542a7abd8d283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980d590a5dc126e2e7d542a7abd8d283">&#9670;&nbsp;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserialize a reply from a QByteArray. </p>
+<p>This method returns a reply from a QByteArray obtained from the <a class="el" href="classKAuth_1_1ActionReply.html#aca2f15ccc0808ebbb03339f735e0bf9e" title="Serialize the reply into a QByteArray. ">serialized()</a> method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A QByteArray obtained with <a class="el" href="classKAuth_1_1ActionReply.html#aca2f15ccc0808ebbb03339f735e0bf9e" title="Serialize the reply into a QByteArray. ">serialized()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00187">187</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13dbb2074c0b4480bae0f93053ba2327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13dbb2074c0b4480bae0f93053ba2327">&#9670;&nbsp;</a></span>errorCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">ActionReply::Error</a> KAuth::ActionReply::errorCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the error code of an error reply. </p>
+<p>The error code returned is one of the values in the <a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619" title="The enumeration of the possible values of errorCode() when type() is ActionReply::KAuthError. ">ActionReply::Error</a> enumeration if <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == KAuthError, or is totally application-dependent if <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == HelperError. It also should be zero for successful replies.</p>
+<dl class="section return"><dt>Returns</dt><dd>The reply error code </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00154">154</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c7d8c9c5ef3a797d11cafc2594f5f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7d8c9c5ef3a797d11cafc2594f5f19">&#9670;&nbsp;</a></span>errorDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KAuth::ActionReply::errorDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a human-readble description of the error, if available. </p>
+<p>Currently, replies of type KAuthError rarely report an error description. This situation could change in the future.</p>
+<p>By now, you can use this method for custom errors of type HelperError.</p>
+<dl class="section return"><dt>Returns</dt><dd>The error human-readable description </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00167">167</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af0beb913953d6f5411dd1347e4b5f93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0beb913953d6f5411dd1347e4b5f93b">&#9670;&nbsp;</a></span>failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KAuth::ActionReply::failed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> != Success. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00149">149</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a93c02ef4a88d4cafc963e9dcdc891bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c02ef4a88d4cafc963e9dcdc891bdf">&#9670;&nbsp;</a></span>HelperBusyReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::HelperBusyReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == HelperBusy </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00075">75</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d6577154e215e68fe4889484465bda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6577154e215e68fe4889484465bda2">&#9670;&nbsp;</a></span>HelperErrorReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::HelperErrorReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An empty reply with <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == HelperError. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00051">51</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a227a3224f0a9b0671639ef414baa1042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227a3224f0a9b0671639ef414baa1042">&#9670;&nbsp;</a></span>InvalidActionReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::InvalidActionReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == InvalidAction </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00063">63</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8c8111a31393927973343c195eb9bcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8111a31393927973343c195eb9bcce">&#9670;&nbsp;</a></span>NoResponderReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::NoResponderReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == NoResponder </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00055">55</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a359e820a545560aa10f1f4d42a86b532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359e820a545560aa10f1f4d42a86b532">&#9670;&nbsp;</a></span>NoSuchActionReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::NoSuchActionReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == NoSuchAction </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00059">59</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a23c16bfe0b2fb3c40dadc3d3bf1fb31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c16bfe0b2fb3c40dadc3d3bf1fb31a">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KAuth::ActionReply::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Negated comparison operator. </p>
+<p>See the <a class="el" href="classKAuth_1_1ActionReply.html#a371adc5f7040e8a90a026ea67ae3f5cc" title="Comparison operator. ">operator==()</a> for an important notice. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00215">215</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a294dce9c0a6ac8391436a25f3b9837f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294dce9c0a6ac8391436a25f3b9837f0">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp; KAuth::ActionReply::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assignment operator. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00199">199</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a371adc5f7040e8a90a026ea67ae3f5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a371adc5f7040e8a90a026ea67ae3f5cc">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KAuth::ActionReply::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comparison operator. </p>
+<p>This operator checks if the type and the error code of two replies are the same. It <b>doesn't</b> compare the data or the error descriptions, so be careful.</p>
+<p>The suggested use it to compare a reply agains one of the predefined error replies: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>(reply == <a class="code" href="classKAuth_1_1ActionReply.html#a93c02ef4a88d4cafc963e9dcdc891bdf">ActionReply::HelperBusyReply</a>) {</div><div class="line">   <span class="comment">// Do something...</span></div><div class="line">}</div></div><!-- fragment --><p>Note that you can do it also by compare <a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> with the relative enumeration value. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00210">210</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aca2f15ccc0808ebbb03339f735e0bf9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2f15ccc0808ebbb03339f735e0bf9e">&#9670;&nbsp;</a></span>serialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray KAuth::ActionReply::serialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize the reply into a QByteArray. </p>
+<p>This is a convenience method used internally to sent the reply to a remote peer. To recreate the reply, use <a class="el" href="classKAuth_1_1ActionReply.html#a980d590a5dc126e2e7d542a7abd8d283" title="Deserialize a reply from a QByteArray. ">deserialize()</a></p>
+<dl class="section return"><dt>Returns</dt><dd>A QByteArray representation of this reply </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00177">177</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac1ca4b8d1f95c7af136b939d5b83cc79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ca4b8d1f95c7af136b939d5b83cc79">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAuth::ActionReply::setData </td>
+          <td>(</td>
+          <td class="paramtype">const QVariantMap &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the custom data to send back to the application. </p>
+<p>In the helper's code you can use this function to set an QVariantMap with custom data that will be sent back to the application.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The new QVariantMap object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00119">119</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a74e7456f138e08c61468569e3bdb0085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e7456f138e08c61468569e3bdb0085">&#9670;&nbsp;</a></span>setErrorCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAuth::ActionReply::setErrorCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKAuth_1_1ActionReply.html#a703af1f9b49e6436a3990c0273900619">Error</a>&#160;</td>
+          <td class="paramname"><em>errorCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the error code of an error reply. </p>
+<p>If you're setting the error code in the helper because you need to return an error to the application, please make sure you already have set the type to HelperError, either by calling <a class="el" href="classKAuth_1_1ActionReply.html#a3861ac8b616d7c16b6e3f68e27d1016f" title="Sets the reply type. ">setType()</a> or by creating the reply in the right way.</p>
+<p>If the type is Success when you call this method, it will become KAuthError</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>The new reply error code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00159">159</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a44992c12cdf172fd1d00467805da2085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44992c12cdf172fd1d00467805da2085">&#9670;&nbsp;</a></span>setErrorDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAuth::ActionReply::setErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a human-readble description of the error. </p>
+<p>Call this method from the helper if you want to send back a description for a custom error. Note that this method doesn't affect the errorCode in any way</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>The new error description </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00172">172</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3861ac8b616d7c16b6e3f68e27d1016f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3861ac8b616d7c16b6e3f68e27d1016f">&#9670;&nbsp;</a></span>setType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KAuth::ActionReply::setType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">ActionReply::Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the reply type. </p>
+<p>Every time you create an action reply, you implicitly set a type. Default constructed replies or <a class="el" href="classKAuth_1_1ActionReply.html#a211040c1fd29b3575b1921c4da647225" title="An empty successful reply. Same as using the default constructor. ">ActionReply::SuccessReply</a> have <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == Success. <a class="el" href="classKAuth_1_1ActionReply.html#a4d6577154e215e68fe4889484465bda2" title="An empty reply with type() == HelperError. ">ActionReply::HelperErrorReply</a> has <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == HelperError. Predefined error replies have <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == KAuthError.</p>
+<p>This means you rarely need to change the type after the creation, but if you need to, don't set it to KAuthError, because it's reserved for errors coming from the library.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The new reply type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00139">139</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a90081f0965f973c263d19e5ecad6aaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90081f0965f973c263d19e5ecad6aaaa">&#9670;&nbsp;</a></span>succeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KAuth::ActionReply::succeeded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if <a class="el" href="classKAuth_1_1ActionReply.html#a7221bc7e89859f978b5d1756ab74be18" title="Returns the reply&#39;s type. ">type()</a> == Success. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00144">144</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a211040c1fd29b3575b1921c4da647225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211040c1fd29b3575b1921c4da647225">&#9670;&nbsp;</a></span>SuccessReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::SuccessReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An empty successful reply. Same as using the default constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00047">47</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7221bc7e89859f978b5d1756ab74be18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7221bc7e89859f978b5d1756ab74be18">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKAuth_1_1ActionReply.html#ab106612933b81a97f990e224828bcbb6">ActionReply::Type</a> KAuth::ActionReply::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the reply's type. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00134">134</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa22425100fef7028be8018cb8ca3e309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22425100fef7028be8018cb8ca3e309">&#9670;&nbsp;</a></span>UserCancelledReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> KAuth::ActionReply::UserCancelledReply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classKAuth_1_1ActionReply.html#a13dbb2074c0b4480bae0f93053ba2327" title="Returns the error code of an error reply. ">errorCode()</a> == UserCancelled </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00071">71</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3c8b9312dd8665c0cdd72dece65a3f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8b9312dd8665c0cdd72dece65a3f61">&#9670;&nbsp;</a></span>operator<<</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output streaming operator for QDataStream. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00220">220</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad767536584f1e4264686eeb131ae5ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad767536584f1e4264686eeb131ae5ab7">&#9670;&nbsp;</a></span>operator>></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classKAuth_1_1ActionReply.html">ActionReply</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Input streaming operator for QDataStream. </p>
+
+<p class="definition">Definition at line <a class="el" href="kauthactionreply_8cpp_source.html#l00225">225</a> of file <a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kauthactionreply_8h_source.html">kauthactionreply.h</a></li>
+<li><a class="el" href="kauthactionreply_8cpp_source.html">kauthactionreply.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:22:57 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KCMUtils - KCModuleProxy Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KCMUtils</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KCMUtils"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSettings_1_1Dialog.html">KSettings::Dialog</option>
+        
+        <option value="classKCModuleContainer.html">KCModuleContainer</option>
+        
+        <option value="classKCModuleInfo.html">KCModuleInfo</option>
+        
+        <option value="classKCModuleProxy.html">KCModuleProxy</option>
+        
+        <option value="classKCMultiDialog.html">KCMultiDialog</option>
+        
+        <option value="classKPluginSelector.html">KPluginSelector</option>
+        
+        <option value="classKSettings_1_1PluginPage.html">KSettings::PluginPage</option>
+        
+        <option value="namespaceKCModuleLoader.html">KCModuleLoader</option>
+        
+        <option value="namespaceKSettings.html">KSettings</option>
+        
+        <option value="namespaceKSettings_1_1Dispatcher.html">KSettings::Dispatcher</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Utilities for working with KCModules</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KCMUtils)
+target_link_libraries(yourapp KF5::KCMUtils)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KCMUtils </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kcmutils-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KCMUtils on <a href="https://cgit.kde.org/kcmutils-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KCMUtils </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCModuleProxy">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classKCModuleProxy-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCModuleProxy Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcmoduleproxy_8h_source.html">kcmoduleproxy.h</a>&gt;</code></p>
+
+<p>Inherits QWidget.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:acb872091a131fd6f5c52b75ea4ffbfba"><td class="memItemLeft" align="right" valign="top"><a id="acb872091a131fd6f5c52b75ea4ffbfba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> (bool state)</td></tr>
+<tr class="separator:acb872091a131fd6f5c52b75ea4ffbfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8b1e4801637e804d8b247b361db492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#acd8b1e4801637e804d8b247b361db492">changed</a> (<a class="el" href="classKCModuleProxy.html">KCModuleProxy</a> *mod)</td></tr>
+<tr class="separator:acd8b1e4801637e804d8b247b361db492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d414891c7a428e42e8a72666461438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a13d414891c7a428e42e8a72666461438">childClosed</a> ()</td></tr>
+<tr class="separator:a13d414891c7a428e42e8a72666461438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56e388e97c44d303a787b9c49813438"><td class="memItemLeft" align="right" valign="top"><a id="aa56e388e97c44d303a787b9c49813438"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>quickHelpChanged</b> ()</td></tr>
+<tr class="separator:aa56e388e97c44d303a787b9c49813438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a564d47d826e86554978924ee0f00d839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a564d47d826e86554978924ee0f00d839">defaults</a> ()</td></tr>
+<tr class="separator:a564d47d826e86554978924ee0f00d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ccc8c6b1cd7f49447812024b3b976f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a50ccc8c6b1cd7f49447812024b3b976f">deleteClient</a> ()</td></tr>
+<tr class="separator:a50ccc8c6b1cd7f49447812024b3b976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a323017ecc2ace187756227be955454c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a323017ecc2ace187756227be955454c4">KCModuleProxy</a> (const <a class="el" href="classKCModuleInfo.html">KCModuleInfo</a> &amp;info, QWidget *parent=0, const QStringList &amp;args=QStringList())</td></tr>
+<tr class="separator:a323017ecc2ace187756227be955454c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d695f2adab5721d76306f419e5c604"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#ad7d695f2adab5721d76306f419e5c604">KCModuleProxy</a> (const QString &amp;serviceName, QWidget *parent=0, const QStringList &amp;args=QStringList())</td></tr>
+<tr class="separator:ad7d695f2adab5721d76306f419e5c604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8947c02a6052a83db92a6c57a243d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#adf8947c02a6052a83db92a6c57a243d2">KCModuleProxy</a> (const KService::Ptr &amp;service, QWidget *parent=0, const QStringList &amp;args=QStringList())</td></tr>
+<tr class="separator:adf8947c02a6052a83db92a6c57a243d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a6f8d829a0cac4d9f9dce1ff090d18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#ad9a6f8d829a0cac4d9f9dce1ff090d18">~KCModuleProxy</a> ()</td></tr>
+<tr class="separator:ad9a6f8d829a0cac4d9f9dce1ff090d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d2aa990d76c164fbfa79571348e8cf"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a92d2aa990d76c164fbfa79571348e8cf">aboutData</a> () const</td></tr>
+<tr class="separator:a92d2aa990d76c164fbfa79571348e8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44841bab691525077e74c2d72ee6846b"><td class="memItemLeft" align="right" valign="top">KCModule::Buttons&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a44841bab691525077e74c2d72ee6846b">buttons</a> () const</td></tr>
+<tr class="separator:a44841bab691525077e74c2d72ee6846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154cd6d09489d91476a6caff2517c5a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a154cd6d09489d91476a6caff2517c5a9">changed</a> () const</td></tr>
+<tr class="separator:a154cd6d09489d91476a6caff2517c5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f8203c3366265b0b752e1782b6a0cb"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#ab2f8203c3366265b0b752e1782b6a0cb">dbusPath</a> () const</td></tr>
+<tr class="separator:ab2f8203c3366265b0b752e1782b6a0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cffa5316e5cd044a265b66283d37b2"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a22cffa5316e5cd044a265b66283d37b2">dbusService</a> () const</td></tr>
+<tr class="separator:a22cffa5316e5cd044a265b66283d37b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8c3283771767a2a2f907a27d09c64c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#acf8c3283771767a2a2f907a27d09c64c">load</a> ()</td></tr>
+<tr class="separator:acf8c3283771767a2a2f907a27d09c64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe3d419395f6100d202d590a58535a3"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#abfe3d419395f6100d202d590a58535a3">minimumSizeHint</a> () const override</td></tr>
+<tr class="separator:abfe3d419395f6100d202d590a58535a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba5bffdb3b004831b17e17b89635fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKCModuleInfo.html">KCModuleInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a0ba5bffdb3b004831b17e17b89635fab">moduleInfo</a> () const</td></tr>
+<tr class="separator:a0ba5bffdb3b004831b17e17b89635fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1baf39a1e32e725def898b434bfdc8ba"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a1baf39a1e32e725def898b434bfdc8ba">quickHelp</a> () const</td></tr>
+<tr class="separator:a1baf39a1e32e725def898b434bfdc8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c61146a8d353460a2933849575d5f9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a00c61146a8d353460a2933849575d5f9">realModule</a> () const</td></tr>
+<tr class="separator:a00c61146a8d353460a2933849575d5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a578508c3a025c2813536fc6c8a558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#a73a578508c3a025c2813536fc6c8a558">save</a> ()</td></tr>
+<tr class="separator:a73a578508c3a025c2813536fc6c8a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aaf88a0463f14fc47eecb54d8440519ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCModuleProxy.html#aaf88a0463f14fc47eecb54d8440519ec">showEvent</a> (QShowEvent *) override</td></tr>
+<tr class="separator:aaf88a0463f14fc47eecb54d8440519ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a345d7d0635b8d53145520c198f35b7dc"><td class="memItemLeft" align="right" valign="top"><a id="a345d7d0635b8d53145520c198f35b7dc"></a>
+KCModuleProxyPrivate *const&#160;</td><td class="memItemRight" valign="bottom"><b>d_ptr</b></td></tr>
+<tr class="separator:a345d7d0635b8d53145520c198f35b7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Encapsulates a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> for embedding. </p>
+<p><a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> is a wrapper for <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> intended for cases where modules are to be displayed. It ensures layout is consistent and in general takes care of the details needed for making a module available in an interface. A <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> can be treated as a QWidget, without worrying about the details specific for modules such as library loading. <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> is not a sub class of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> but its API closely resembles <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a>'s.<br />
+Usually, an instance is created by passing one of the constructors a KService::Ptr, <a class="el" href="classKCModuleInfo.html" title="A class that provides information about a KCModule. ">KCModuleInfo</a> or simply the name of the module and then added to the layout as any other widget. <br />
+When the user has changed the module, changed(bool) as well as <a class="el" href="classKCModuleProxy.html#acd8b1e4801637e804d8b247b361db492" title="This is emitted in the same situations as in the one above. ">changed(KCModuleProxy *)</a> is emitted. <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> does not take care of prompting for saving - if the object is deleted while changes is not saved the changes will be lost. <a class="el" href="classKCModuleProxy.html#a154cd6d09489d91476a6caff2517c5a9">changed()</a> returns true if changes are unsaved. <br />
+<br />
+<a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> does not take care of authorization of KCModules. <br />
+<a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> implements lazy loading, meaning the library will not be loaded or any other initialization done before its show() function is called. This means modules will only be loaded when they are actually needed as well as it is possible to load many <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> without any speed penalty.</p>
+<p><a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> should be used in all cases where modules are embedded in order to promote code efficiency and usability consistency.</p>
+<dl class="section author"><dt>Author</dt><dd>Frans Englich <a href="#" onclick="location.href='mai'+'lto:'+'fra'+'ns'+'.en'+'gl'+'ich'+'@t'+'eli'+'a.'+'com'; return false;">frans<span style="display: none;">.nosp@m.</span>.eng<span style="display: none;">.nosp@m.</span>lich@<span style="display: none;">.nosp@m.</span>teli<span style="display: none;">.nosp@m.</span>a.com</a> </dd>
+<dd>
+Matthias Kretz <a href="#" onclick="location.href='mai'+'lto:'+'kre'+'tz'+'@kd'+'e.'+'org'; return false;">kretz<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8h_source.html#l00066">66</a> of file <a class="el" href="kcmoduleproxy_8h_source.html">kcmoduleproxy.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a323017ecc2ace187756227be955454c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323017ecc2ace187756227be955454c4">&#9670;&nbsp;</a></span>KCModuleProxy() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCModuleProxy::KCModuleProxy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKCModuleInfo.html">KCModuleInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> from a <a class="el" href="classKCModuleInfo.html" title="A class that provides information about a KCModule. ">KCModuleInfo</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>The <a class="el" href="classKCModuleInfo.html" title="A class that provides information about a KCModule. ">KCModuleInfo</a> to construct the module from. </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent QWidget. </td></tr>
+    <tr><td class="paramname">args</td><td>This is used in the implementation and is internal. Use the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00245">245</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad7d695f2adab5721d76306f419e5c604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d695f2adab5721d76306f419e5c604">&#9670;&nbsp;</a></span>KCModuleProxy() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCModuleProxy::KCModuleProxy </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>serviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> from a module's service name, which is equivalent to the desktop file for the kcm without the ".desktop" part. </p>
+<p>Otherwise equal to the one above.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serviceName</td><td>The module's service name to construct from. </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent QWidget. </td></tr>
+    <tr><td class="paramname">args</td><td>This is used in the implementation and is internal. Use the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00252">252</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adf8947c02a6052a83db92a6c57a243d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8947c02a6052a83db92a6c57a243d2">&#9670;&nbsp;</a></span>KCModuleProxy() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCModuleProxy::KCModuleProxy </td>
+          <td>(</td>
+          <td class="paramtype">const KService::Ptr &amp;&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> from <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kservice-5.26.0/html/KService.tags:../../../frameworks/kservice-5.26.0/html/" href="../../../frameworks/kservice-5.26.0/html/classKService.html">KService</a>. </p>
+<p>Otherwise equal to the one above.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>The <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kservice-5.26.0/html/KService.tags:../../../frameworks/kservice-5.26.0/html/" href="../../../frameworks/kservice-5.26.0/html/classKService.html">KService</a> to construct from. </td></tr>
+    <tr><td class="paramname">parent</td><td>the parent QWidget. </td></tr>
+    <tr><td class="paramname">args</td><td>This is used in the implementation and is internal. Use the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00238">238</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9a6f8d829a0cac4d9f9dce1ff090d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a6f8d829a0cac4d9f9dce1ff090d18">&#9670;&nbsp;</a></span>~KCModuleProxy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCModuleProxy::~KCModuleProxy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00206">206</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a92d2aa990d76c164fbfa79571348e8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d2aa990d76c164fbfa79571348e8cf">&#9670;&nbsp;</a></span>aboutData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> * KCModuleProxy::aboutData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the module's <a class="el" href="classKCModuleProxy.html#a92d2aa990d76c164fbfa79571348e8cf">aboutData()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00290">290</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a44841bab691525077e74c2d72ee6846b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44841bab691525077e74c2d72ee6846b">&#9670;&nbsp;</a></span>buttons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCModule::Buttons KCModuleProxy::buttons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>what buttons the module needs </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00295">295</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a154cd6d09489d91476a6caff2517c5a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154cd6d09489d91476a6caff2517c5a9">&#9670;&nbsp;</a></span>changed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCModuleProxy::changed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the module is modified and needs to be saved. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00303">303</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd8b1e4801637e804d8b247b361db492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8b1e4801637e804d8b247b361db492">&#9670;&nbsp;</a></span>changed <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::changed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCModuleProxy.html">KCModuleProxy</a> *&#160;</td>
+          <td class="paramname"><em>mod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is emitted in the same situations as in the one above. </p>
+<p>Practical when several KCModuleProxys are loaded. </p>
+
+</div>
+</div>
+<a id="a13d414891c7a428e42e8a72666461438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d414891c7a428e42e8a72666461438">&#9670;&nbsp;</a></span>childClosed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::childClosed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When a module running with root privileges and exits, returns to normal mode, the <a class="el" href="classKCModuleProxy.html#a13d414891c7a428e42e8a72666461438" title="When a module running with root privileges and exits, returns to normal mode, the childClosed() signa...">childClosed()</a> signal is emitted. </p>
+
+</div>
+</div>
+<a id="ab2f8203c3366265b0b752e1782b6a0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f8203c3366265b0b752e1782b6a0cb">&#9670;&nbsp;</a></span>dbusPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCModuleProxy::dbusPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the DBUS Path. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00321">321</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a22cffa5316e5cd044a265b66283d37b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cffa5316e5cd044a265b66283d37b2">&#9670;&nbsp;</a></span>dbusService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCModuleProxy::dbusService </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the DBUS Service name. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00315">315</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a564d47d826e86554978924ee0f00d839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564d47d826e86554978924ee0f00d839">&#9670;&nbsp;</a></span>defaults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::defaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calling it will cause the contained module to load its default values. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00277">277</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50ccc8c6b1cd7f49447812024b3b976f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ccc8c6b1cd7f49447812024b3b976f">&#9670;&nbsp;</a></span>deleteClient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::deleteClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calling this, results in deleting the contained module, and unregistering from DCOP. </p>
+<p>A similar result is achieved by deleting the <a class="el" href="classKCModuleProxy.html" title="Encapsulates a KCModule for embedding. ">KCModuleProxy</a> itself. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00214">214</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf8c3283771767a2a2f907a27d09c64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8c3283771767a2a2f907a27d09c64c">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calling it will cause the contained module to run its <a class="el" href="classKCModuleProxy.html#acf8c3283771767a2a2f907a27d09c64c" title="Calling it will cause the contained module to run its load() routine. ">load()</a> routine. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00259">259</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abfe3d419395f6100d202d590a58535a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe3d419395f6100d202d590a58535a3">&#9670;&nbsp;</a></span>minimumSizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KCModuleProxy::minimumSizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the recommended minimum size for the widget. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00327">327</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ba5bffdb3b004831b17e17b89635fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba5bffdb3b004831b17e17b89635fab">&#9670;&nbsp;</a></span>moduleInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKCModuleInfo.html">KCModuleInfo</a> KCModuleProxy::moduleInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classKCModuleInfo.html" title="A class that provides information about a KCModule. ">KCModuleInfo</a> for the encapsulated module </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00309">309</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1baf39a1e32e725def898b434bfdc8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1baf39a1e32e725def898b434bfdc8ba">&#9670;&nbsp;</a></span>quickHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCModuleProxy::quickHelp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the module's <a class="el" href="classKCModuleProxy.html#a1baf39a1e32e725def898b434bfdc8ba">quickHelp()</a>; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00285">285</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a00c61146a8d353460a2933849575d5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c61146a8d353460a2933849575d5f9">&#9670;&nbsp;</a></span>realModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfigwidgets-5.26.0/html/KConfigWidgets.tags:../../../frameworks/kconfigwidgets-5.26.0/html/" href="../../../frameworks/kconfigwidgets-5.26.0/html/classKCModule.html">KCModule</a> * KCModuleProxy::realModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to the actual module. </p>
+<p>It may return NULL if anything goes wrong.</p>
+<dl class="section return"><dt>Returns</dt><dd>the encapsulated module. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00071">71</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73a578508c3a025c2813536fc6c8a558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a578508c3a025c2813536fc6c8a558">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calling it will cause the contained module to run its <a class="el" href="classKCModuleProxy.html#a73a578508c3a025c2813536fc6c8a558" title="Calling it will cause the contained module to run its save() routine. ">save()</a> routine. </p>
+<p>If the module was not modified, it will not be asked to save. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00268">268</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf88a0463f14fc47eecb54d8440519ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf88a0463f14fc47eecb54d8440519ec">&#9670;&nbsp;</a></span>showEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCModuleProxy::showEvent </td>
+          <td>(</td>
+          <td class="paramtype">QShowEvent *&#160;</td>
+          <td class="paramname"><em>ev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented for internal purposes. </p>
+<p>Makes sure the encapsulated module is loaded before the show event is taken care of. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcmoduleproxy_8cpp_source.html#l00191">191</a> of file <a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcmoduleproxy_8h_source.html">kcmoduleproxy.h</a></li>
+<li><a class="el" href="kcmoduleproxy_8cpp_source.html">kcmoduleproxy.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:05 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

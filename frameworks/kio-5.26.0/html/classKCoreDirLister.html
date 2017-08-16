@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - KCoreDirLister Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KCoreDirLister">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKCoreDirLister-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KCoreDirLister Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KCoreDirLister:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKCoreDirLister__inherit__graph.png" border="0" usemap="#KCoreDirLister_inherit__map" alt="Inheritance graph"/></div>
+<map name="KCoreDirLister_inherit__map" id="KCoreDirLister_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab23142318e83abbd075772d9a86736e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5">OpenUrlFlag</a> { <a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b">NoFlags</a> = 0x0,
+<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5a55a91f2568dda3c1e4fd609bd41a15c2">Keep</a> = 0x1,
+<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5a22e97811a0252e9b5fa99242b7ec0b2f">Reload</a> = 0x2
+ }</td></tr>
+<tr class="separator:ab23142318e83abbd075772d9a86736e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d24c490b5bbe4b5795de207c6a3b256"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> { <b>AllItems</b> = 0,
+<b>FilteredItems</b> = 1
+ }</td></tr>
+<tr class="separator:a3d24c490b5bbe4b5795de207c6a3b256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ab5265912260f0feed8b3988f94d9a236"><td class="memItemLeft" align="right" valign="top"><a id="ab5265912260f0feed8b3988f94d9a236"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoUpdate</b></td></tr>
+<tr class="separator:ab5265912260f0feed8b3988f94d9a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ef540c4e6df0e2119b2c8acfe01909"><td class="memItemLeft" align="right" valign="top"><a id="a60ef540c4e6df0e2119b2c8acfe01909"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delayedMimeTypes</b></td></tr>
+<tr class="separator:a60ef540c4e6df0e2119b2c8acfe01909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3bf956acdd4b0617b5a723c4dc1243"><td class="memItemLeft" align="right" valign="top"><a id="a5b3bf956acdd4b0617b5a723c4dc1243"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dirOnlyMode</b></td></tr>
+<tr class="separator:a5b3bf956acdd4b0617b5a723c4dc1243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdd733a137729d880d7e1dc76840074"><td class="memItemLeft" align="right" valign="top"><a id="a2cdd733a137729d880d7e1dc76840074"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>mimeFilter</b></td></tr>
+<tr class="separator:a2cdd733a137729d880d7e1dc76840074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade868c0f37f372c6bc59cd7934bb2911"><td class="memItemLeft" align="right" valign="top"><a id="ade868c0f37f372c6bc59cd7934bb2911"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>nameFilter</b></td></tr>
+<tr class="separator:ade868c0f37f372c6bc59cd7934bb2911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae751852954dfbbfd205d3b8746f37cde"><td class="memItemLeft" align="right" valign="top"><a id="ae751852954dfbbfd205d3b8746f37cde"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>showingDotFiles</b></td></tr>
+<tr class="separator:ae751852954dfbbfd205d3b8746f37cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ac161a24689e6ad0c3b1cf728c0eb5baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ac161a24689e6ad0c3b1cf728c0eb5baf">canceled</a> ()</td></tr>
+<tr class="separator:ac161a24689e6ad0c3b1cf728c0eb5baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab47670aedb99916b3c260ca112cc9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a0ab47670aedb99916b3c260ca112cc9c">canceled</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a0ab47670aedb99916b3c260ca112cc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee2899a6baaf848a5dff7f9d5bd5dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3ee2899a6baaf848a5dff7f9d5bd5dd4">clear</a> ()</td></tr>
+<tr class="separator:a3ee2899a6baaf848a5dff7f9d5bd5dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e99cec180a19160904745d8b4cd9fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a2e99cec180a19160904745d8b4cd9fa3">clear</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a2e99cec180a19160904745d8b4cd9fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb08430ff6d75a34648b3c98dd989e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#acb08430ff6d75a34648b3c98dd989e68">completed</a> ()</td></tr>
+<tr class="separator:acb08430ff6d75a34648b3c98dd989e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7272f3ccf6be1c655c00330f345fefe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a7272f3ccf6be1c655c00330f345fefe3">completed</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a7272f3ccf6be1c655c00330f345fefe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9ae3ea1f9c65e6fb81bbe0a7a913bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#abf9ae3ea1f9c65e6fb81bbe0a7a913bb">infoMessage</a> (const QString &amp;msg)</td></tr>
+<tr class="separator:abf9ae3ea1f9c65e6fb81bbe0a7a913bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5896ae48077cb860102be0d4cb89293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#af5896ae48077cb860102be0d4cb89293">itemsAdded</a> (const QUrl &amp;directoryUrl, const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:af5896ae48077cb860102be0d4cb89293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2dceaad89e37165e68c52724f5e8c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aaa2dceaad89e37165e68c52724f5e8c8">itemsDeleted</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:aaa2dceaad89e37165e68c52724f5e8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df76c13d5a6bc296d1c1fab57b5822c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a5df76c13d5a6bc296d1c1fab57b5822c">itemsFilteredByMime</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:a5df76c13d5a6bc296d1c1fab57b5822c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c295baa9a066163fa220bd1b54bf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29">newItems</a> (const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:ac6c295baa9a066163fa220bd1b54bf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12498b08a166a626170877523ca6fffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a12498b08a166a626170877523ca6fffb">percent</a> (int percent)</td></tr>
+<tr class="separator:a12498b08a166a626170877523ca6fffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb901acaf246dd5652c0e8bae399ce47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#afb901acaf246dd5652c0e8bae399ce47">processedSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size)</td></tr>
+<tr class="separator:afb901acaf246dd5652c0e8bae399ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9f2a825d7a0f7754ce7ab47f5b3f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#adb9f2a825d7a0f7754ce7ab47f5b3f42">redirection</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:adb9f2a825d7a0f7754ce7ab47f5b3f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c03aeac405ef36d97626f34bac42892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9c03aeac405ef36d97626f34bac42892">redirection</a> (const QUrl &amp;oldUrl, const QUrl &amp;newUrl)</td></tr>
+<tr class="separator:a9c03aeac405ef36d97626f34bac42892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7d7f9745a0991138e607465e36bb8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a8c7d7f9745a0991138e607465e36bb8a">refreshItems</a> (const QList&lt; QPair&lt; <a class="el" href="classKFileItem.html">KFileItem</a>, <a class="el" href="classKFileItem.html">KFileItem</a> &gt; &gt; &amp;<a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a>)</td></tr>
+<tr class="separator:a8c7d7f9745a0991138e607465e36bb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f7bddedb29c361af0ba0c2bb3b7740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a03f7bddedb29c361af0ba0c2bb3b7740">speed</a> (int bytes_per_second)</td></tr>
+<tr class="separator:a03f7bddedb29c361af0ba0c2bb3b7740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b52d80cdab488416c4c33ec04b84d78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a4b52d80cdab488416c4c33ec04b84d78">started</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a4b52d80cdab488416c4c33ec04b84d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6302fdeb4fbf21cf908a385a7e8f6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a2e6302fdeb4fbf21cf908a385a7e8f6f">totalSize</a> (<a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a> size)</td></tr>
+<tr class="separator:a2e6302fdeb4fbf21cf908a385a7e8f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad697fd59d69652f37a97e9e79be75cb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ad697fd59d69652f37a97e9e79be75cb7">KCoreDirLister</a> (QObject *parent=0)</td></tr>
+<tr class="separator:ad697fd59d69652f37a97e9e79be75cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a821a80dac989ae87ed5c190359af3f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a5a821a80dac989ae87ed5c190359af3f">~KCoreDirLister</a> ()</td></tr>
+<tr class="separator:a5a821a80dac989ae87ed5c190359af3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31d044b7a2726cfe79210269f182e94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#af31d044b7a2726cfe79210269f182e94">autoUpdate</a> () const</td></tr>
+<tr class="separator:af31d044b7a2726cfe79210269f182e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9666624feaa9036bc14af37a32778c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ad9666624feaa9036bc14af37a32778c5">clearMimeFilter</a> ()</td></tr>
+<tr class="separator:ad9666624feaa9036bc14af37a32778c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae01c8857f80c43b56ca764cac8853b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#afae01c8857f80c43b56ca764cac8853b">delayedMimeTypes</a> () const</td></tr>
+<tr class="separator:afae01c8857f80c43b56ca764cac8853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba61ce25c2d1658c7a0416dd8c59a55"><td class="memItemLeft" align="right" valign="top">QList&lt; QUrl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a4ba61ce25c2d1658c7a0416dd8c59a55">directories</a> () const</td></tr>
+<tr class="separator:a4ba61ce25c2d1658c7a0416dd8c59a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3070d9e48b5612f48924eb1ef1d9f27f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3070d9e48b5612f48924eb1ef1d9f27f">dirOnlyMode</a> () const</td></tr>
+<tr class="separator:a3070d9e48b5612f48924eb1ef1d9f27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014cb76ebe7cf9edf4ba7c925aeb4b8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e">emitChanges</a> ()</td></tr>
+<tr class="separator:a014cb76ebe7cf9edf4ba7c925aeb4b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d223b9b499d67b9fcff66e7f296e9f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aa8d223b9b499d67b9fcff66e7f296e9f">findByName</a> (const QString &amp;name) const</td></tr>
+<tr class="separator:aa8d223b9b499d67b9fcff66e7f296e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab931adf0d9ca988b31582f72f6c963e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab931adf0d9ca988b31582f72f6c963e3">findByUrl</a> (const QUrl &amp;_url) const</td></tr>
+<tr class="separator:ab931adf0d9ca988b31582f72f6c963e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf720a4a7a3f42f61e7944d08f6e17cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#abf720a4a7a3f42f61e7944d08f6e17cb">isFinished</a> () const</td></tr>
+<tr class="separator:abf720a4a7a3f42f61e7944d08f6e17cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbb0044f4c9bb9d38259739e8835431"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItemList.html">KFileItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431">items</a> (<a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> which=FilteredItems) const</td></tr>
+<tr class="separator:a6bbb0044f4c9bb9d38259739e8835431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366890bc3a2a74236ef4ba1e1b06ab6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItemList.html">KFileItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a366890bc3a2a74236ef4ba1e1b06ab6d">itemsForDir</a> (const QUrl &amp;dir, <a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a> which=FilteredItems) const</td></tr>
+<tr class="separator:a366890bc3a2a74236ef4ba1e1b06ab6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dae984ac3182dd1c6481affcee9df40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a1dae984ac3182dd1c6481affcee9df40">matchesFilter</a> (const QString &amp;name) const</td></tr>
+<tr class="separator:a1dae984ac3182dd1c6481affcee9df40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5690bba3a3e21defc7f2678e7b6aca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca">matchesMimeFilter</a> (const QString &amp;mime) const</td></tr>
+<tr class="separator:a9f5690bba3a3e21defc7f2678e7b6aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835ed3bc9c82d415985e5f54342ba648"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a835ed3bc9c82d415985e5f54342ba648">mimeFilters</a> () const</td></tr>
+<tr class="separator:a835ed3bc9c82d415985e5f54342ba648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dbffb4ab7ed887701b5380281a1f50"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a89dbffb4ab7ed887701b5380281a1f50">nameFilter</a> () const</td></tr>
+<tr class="separator:a89dbffb4ab7ed887701b5380281a1f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368d4dea91fd99a19bc4f8fbe770aee1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1">openUrl</a> (const QUrl &amp;_url, OpenUrlFlags _flags=<a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b">NoFlags</a>)</td></tr>
+<tr class="separator:a368d4dea91fd99a19bc4f8fbe770aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab719951e81378b4378614bcb0adf54da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab719951e81378b4378614bcb0adf54da">rootItem</a> () const</td></tr>
+<tr class="separator:ab719951e81378b4378614bcb0adf54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a407dce9c53f682b41bb797e94b8cb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a8a407dce9c53f682b41bb797e94b8cb5">setAutoUpdate</a> (bool enable)</td></tr>
+<tr class="separator:a8a407dce9c53f682b41bb797e94b8cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d642557de6e1ca12fb213b24a89898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a73d642557de6e1ca12fb213b24a89898">setDelayedMimeTypes</a> (bool delayedMimeTypes)</td></tr>
+<tr class="separator:a73d642557de6e1ca12fb213b24a89898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8ddc1e6e29633fa3823ac2cb6914f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aaa8ddc1e6e29633fa3823ac2cb6914f3">setDirOnlyMode</a> (bool dirsOnly)</td></tr>
+<tr class="separator:aaa8ddc1e6e29633fa3823ac2cb6914f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f08c37eb1002d5c68ae9afc1a03a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a50f08c37eb1002d5c68ae9afc1a03a10">setMimeExcludeFilter</a> (const QStringList &amp;mimeList)</td></tr>
+<tr class="separator:a50f08c37eb1002d5c68ae9afc1a03a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7d40876cc95468bc036af4453dec04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04">setMimeFilter</a> (const QStringList &amp;mimeList)</td></tr>
+<tr class="separator:a9d7d40876cc95468bc036af4453dec04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdea4a1b8f59e76351c50151e625b93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a3fdea4a1b8f59e76351c50151e625b93">setNameFilter</a> (const QString &amp;filter)</td></tr>
+<tr class="separator:a3fdea4a1b8f59e76351c50151e625b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b60eec6f6fc7fe9bb34aa6d6dceab4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a60b60eec6f6fc7fe9bb34aa6d6dceab4">setShowingDotFiles</a> (bool _showDotFiles)</td></tr>
+<tr class="separator:a60b60eec6f6fc7fe9bb34aa6d6dceab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7683a9e778c8b33d5dbcec276fba10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#aee7683a9e778c8b33d5dbcec276fba10">showingDotFiles</a> () const</td></tr>
+<tr class="separator:aee7683a9e778c8b33d5dbcec276fba10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d382e30ad7c791237021f7c73d822b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a16d382e30ad7c791237021f7c73d822b">stop</a> ()</td></tr>
+<tr class="separator:a16d382e30ad7c791237021f7c73d822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f2300e2dc8f17cf5e8bd86a7c8c5b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a27f2300e2dc8f17cf5e8bd86a7c8c5b7">stop</a> (const QUrl &amp;_url)</td></tr>
+<tr class="separator:a27f2300e2dc8f17cf5e8bd86a7c8c5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d09ec0ce117e0f8d62a3ccd7a0f001"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ab7d09ec0ce117e0f8d62a3ccd7a0f001">updateDirectory</a> (const QUrl &amp;_dir)</td></tr>
+<tr class="separator:ab7d09ec0ce117e0f8d62a3ccd7a0f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525468385e8b870a92b0885dd4e9f9c8"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8">url</a> () const</td></tr>
+<tr class="separator:a525468385e8b870a92b0885dd4e9f9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a21e56ed46b616a2264fbe19f2afc5430"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKFileItem.html">KFileItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a21e56ed46b616a2264fbe19f2afc5430">cachedItemForUrl</a> (const QUrl &amp;<a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8">url</a>)</td></tr>
+<tr class="separator:a21e56ed46b616a2264fbe19f2afc5430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a369751eafebc6a7809fd4eee745a4591"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a369751eafebc6a7809fd4eee745a4591">Changes</a> { <br />
+&#160;&#160;<b>NONE</b> = 0,
+<b>NAME_FILTER</b> = 1,
+<b>MIME_FILTER</b> = 2,
+<b>DOT_FILES</b> = 4,
+<br />
+&#160;&#160;<b>DIR_ONLY_MODE</b> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a369751eafebc6a7809fd4eee745a4591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acbcb0fafe5a8c8ef7d9b9483eccfb3e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#acbcb0fafe5a8c8ef7d9b9483eccfb3e0">doMimeFilter</a> (const QString &amp;mime, const QStringList &amp;filters) const</td></tr>
+<tr class="separator:acbcb0fafe5a8c8ef7d9b9483eccfb3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3bbf87623e64af692a70d1d029074b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#ada3bbf87623e64af692a70d1d029074b">doNameFilter</a> (const QString &amp;name, const QList&lt; QRegExp &gt; &amp;filters) const</td></tr>
+<tr class="separator:ada3bbf87623e64af692a70d1d029074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fefc33b214875885063e727880b0896"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a1fefc33b214875885063e727880b0896">handleError</a> (<a class="el" href="classKIO_1_1Job.html">KIO::Job</a> *)</td></tr>
+<tr class="separator:a1fefc33b214875885063e727880b0896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acace62ce471ec11523c336f414b6a307"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#acace62ce471ec11523c336f414b6a307">handleErrorMessage</a> (const QString &amp;message)</td></tr>
+<tr class="separator:acace62ce471ec11523c336f414b6a307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b87c24d4b267443617016561fe4e11b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a0b87c24d4b267443617016561fe4e11b">jobStarted</a> (<a class="el" href="classKIO_1_1ListJob.html">KIO::ListJob</a> *)</td></tr>
+<tr class="separator:a0b87c24d4b267443617016561fe4e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f06bc0fd1c6dfc72d5ad83456c62541"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a9f06bc0fd1c6dfc72d5ad83456c62541">matchesFilter</a> (const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;) const</td></tr>
+<tr class="separator:a9f06bc0fd1c6dfc72d5ad83456c62541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938cfd79459de536e0d0c4c05f5274e5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKCoreDirLister.html#a938cfd79459de536e0d0c4c05f5274e5">matchesMimeFilter</a> (const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;) const</td></tr>
+<tr class="separator:a938cfd79459de536e0d0c4c05f5274e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class for the kiojob used to list and update a directory. </p>
+<p>The dir lister deals with the kiojob used to list and update a directory and has signals for the user of this class (e.g. konqueror view or kdesktop) to create/destroy its items when asked.</p>
+<p>This class is independent from the graphical representation of the dir (icon container, tree view, ...) and it stores the items (as KFileItems).</p>
+<p>Typical usage : </p><ul>
+<li>Create an instance. </li>
+<li>Connect to at least update, clear, itemsAdded, and itemsDeleted. </li>
+<li>Call openUrl - the signals will be called. </li>
+<li>Reuse the instance when opening a new url (openUrl). </li>
+<li>Destroy the instance when not needed anymore (usually destructor).</li>
+</ul>
+<p>Advanced usage : call openUrl with OpenUrlFlag::Keep to list directories without forgetting the ones previously read (e.g. for a tree view)</p>
+<dl class="section author"><dt>Author</dt><dd>Michael Brade <a href="#" onclick="location.href='mai'+'lto:'+'bra'+'de'+'@kd'+'e.'+'org'; return false;">brade<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8h_source.html#l00060">60</a> of file <a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a369751eafebc6a7809fd4eee745a4591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369751eafebc6a7809fd4eee745a4591">&#9670;&nbsp;</a></span>Changes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKCoreDirLister.html#a369751eafebc6a7809fd4eee745a4591">KCoreDirLister::Changes</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>and unused, ignore this </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8h_source.html#l00552">552</a> of file <a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a>.</p>
+
+</div>
+</div>
+<a id="ab23142318e83abbd075772d9a86736e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23142318e83abbd075772d9a86736e5">&#9670;&nbsp;</a></span>OpenUrlFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5">KCoreDirLister::OpenUrlFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b"></a>NoFlags&#160;</td><td class="fielddoc"><p>No additional flags specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23142318e83abbd075772d9a86736e5a55a91f2568dda3c1e4fd609bd41a15c2"></a>Keep&#160;</td><td class="fielddoc"><p>Previous directories aren't forgotten. </p>
+<p>(they are still watched by kdirwatch and their items are kept for this <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>). This is useful for e.g. a treeview. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23142318e83abbd075772d9a86736e5a22e97811a0252e9b5fa99242b7ec0b2f"></a>Reload&#160;</td><td class="fielddoc"><p>Indicates whether to use the cache or to reread. </p>
+<p>the directory from the disk. Use only when opening a dir not yet listed by this lister without using the cache. Otherwise use updateDirectory. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8h_source.html#l00074">74</a> of file <a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d24c490b5bbe4b5795de207c6a3b256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d24c490b5bbe4b5795de207c6a3b256">&#9670;&nbsp;</a></span>WhichItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">KCoreDirLister::WhichItems</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by <a class="el" href="classKCoreDirLister.html#a6bbb0044f4c9bb9d38259739e8835431" title="Returns the items listed for the current url(). ">items()</a> and <a class="el" href="classKCoreDirLister.html#a366890bc3a2a74236ef4ba1e1b06ab6d" title="Returns the items listed for the given dir. ">itemsForDir()</a> to specify whether you want all items for a directory or just the filtered ones. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8h_source.html#l00357">357</a> of file <a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad697fd59d69652f37a97e9e79be75cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad697fd59d69652f37a97e9e79be75cb7">&#9670;&nbsp;</a></span>KCoreDirLister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCoreDirLister::KCoreDirLister </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a directory lister. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02126">2126</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a821a80dac989ae87ed5c190359af3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a821a80dac989ae87ed5c190359af3f">&#9670;&nbsp;</a></span>~KCoreDirLister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KCoreDirLister::~KCoreDirLister </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy the directory lister. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02138">2138</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af31d044b7a2726cfe79210269f182e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31d044b7a2726cfe79210269f182e94">&#9670;&nbsp;</a></span>autoUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::autoUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKDirWatch.html">KDirWatch</a> will automatically update directories. </p>
+<p>This is enabled by default. </p><dl class="section return"><dt>Returns</dt><dd>true if <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKDirWatch.html">KDirWatch</a> is used to automatically update directories. </dd></dl>
+
+</div>
+</div>
+<a id="a21e56ed46b616a2264fbe19f2afc5430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e56ed46b616a2264fbe19f2afc5430">&#9670;&nbsp;</a></span>cachedItemForUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItem.html">KFileItem</a> KCoreDirLister::cachedItemForUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a> for the given URL, if we listed it recently and it's still in the cache - which is always the case if a directory view is currently showing this item. </p>
+<p>If not, then it might be in the cache, or it might not, in which case you get a null <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a>. If you really need a <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a> for this URL in all cases, then use <a class="el" href="namespaceKIO.html#a539a9986a33af9a038cec7d57fadcda0" title="Find all details for one file or directory. ">KIO::stat()</a> instead.</p>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02836">2836</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac161a24689e6ad0c3b1cf728c0eb5baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac161a24689e6ad0c3b1cf728c0eb5baf">&#9670;&nbsp;</a></span>canceled <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::canceled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the view that the user canceled the listing. </p>
+<p>No running jobs are left. </p>
+
+</div>
+</div>
+<a id="a0ab47670aedb99916b3c260ca112cc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab47670aedb99916b3c260ca112cc9c">&#9670;&nbsp;</a></span>canceled <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::canceled </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the view that the listing of the directory <code>_url</code> was canceled. </p>
+<p>There might be other running jobs left. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the directory URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ee2899a6baaf848a5dff7f9d5bd5dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee2899a6baaf848a5dff7f9d5bd5dd4">&#9670;&nbsp;</a></span>clear <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to clear all items. </p>
+<p>Make sure to connect to this signal to avoid doubled items. </p>
+
+</div>
+</div>
+<a id="a2e99cec180a19160904745d8b4cd9fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e99cec180a19160904745d8b4cd9fa3">&#9670;&nbsp;</a></span>clear <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::clear </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to empty the directory <code>_url</code>. </p>
+<p>It is only emitted if the lister is holding more than one directory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the directory that will be emptied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9666624feaa9036bc14af37a32778c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9666624feaa9036bc14af37a32778c5">&#9670;&nbsp;</a></span>clearMimeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::clearMimeFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the mime based filter. </p>
+<p>You need to call <a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e" title="Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilt...">emitChanges()</a> afterwards.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04" title="Set mime-based filter to only list items matching the given mimetypes. ">setMimeFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02373">2373</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acb08430ff6d75a34648b3c98dd989e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb08430ff6d75a34648b3c98dd989e68">&#9670;&nbsp;</a></span>completed <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::completed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the view that listing is finished. </p>
+<p>There are no jobs running anymore. </p>
+
+</div>
+</div>
+<a id="a7272f3ccf6be1c655c00330f345fefe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7272f3ccf6be1c655c00330f345fefe3">&#9670;&nbsp;</a></span>completed <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::completed </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the view that the listing of the directory <code>_url</code> is finished. </p>
+<p>There might be other running jobs left. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the directory URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afae01c8857f80c43b56ca764cac8853b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae01c8857f80c43b56ca764cac8853b">&#9670;&nbsp;</a></span>delayedMimeTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::delayedMimeTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the "delayed mimetypes" feature was enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a73d642557de6e1ca12fb213b24a89898" title="Delayed mimetypes feature: If enabled, mime types will be fetched on demand, which leads to a faster ...">setDelayedMimeTypes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4ba61ce25c2d1658c7a0416dd8c59a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba61ce25c2d1658c7a0416dd8c59a55">&#9670;&nbsp;</a></span>directories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QUrl &gt; KCoreDirLister::directories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns all URLs that are listed by this <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. </p>
+<p>This is only useful if you called <a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1" title="Run the directory lister on the given url. ">openUrl()</a> with OpenUrlFlag::Keep, as it happens in a treeview, for example. (Note that the base url is included in the list as well, of course.)</p>
+<dl class="section return"><dt>Returns</dt><dd>the list of all listed URLs </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02223">2223</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3070d9e48b5612f48924eb1ef1d9f27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3070d9e48b5612f48924eb1ef1d9f27f">&#9670;&nbsp;</a></span>dirOnlyMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::dirOnlyMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a> only lists directories or all files. </p>
+<p>By default this option is disabled (all files will be shown). </p><dl class="section return"><dt>Returns</dt><dd>true if setDirOnlyMode(true) was called </dd></dl>
+
+</div>
+</div>
+<a id="acbcb0fafe5a8c8ef7d9b9483eccfb3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcb0fafe5a8c8ef7d9b9483eccfb3e0">&#9670;&nbsp;</a></span>doMimeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::doMimeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>mime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>filters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by the public <a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca" title="Checks whether mime matches a filter in the list of mime types. ">matchesMimeFilter()</a> to do the actual filtering. </p>
+<p>Those methods may be reimplemented to customize filtering. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mime</td><td>the mime type to filter </td></tr>
+    <tr><td class="paramname">filters</td><td>the list of mime types to filter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02437">2437</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada3bbf87623e64af692a70d1d029074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3bbf87623e64af692a70d1d029074b">&#9670;&nbsp;</a></span>doNameFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::doNameFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QList&lt; QRegExp &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by the public <a class="el" href="classKCoreDirLister.html#a1dae984ac3182dd1c6481affcee9df40" title="Checks whether name matches a filter in the list of name filters. ">matchesFilter()</a> to do the actual filtering. </p>
+<p>Those methods may be reimplemented to customize filtering. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name to filter </td></tr>
+    <tr><td class="paramname">filters</td><td>a list of regular expressions for filtering </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02427">2427</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a014cb76ebe7cf9edf4ba7c925aeb4b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014cb76ebe7cf9edf4ba7c925aeb4b8e">&#9670;&nbsp;</a></span>emitChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::emitChanges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilter. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02228">2228</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8d223b9b499d67b9fcff66e7f296e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d223b9b499d67b9fcff66e7f296e9f">&#9670;&nbsp;</a></span>findByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItem.html">KFileItem</a> KCoreDirLister::findByName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find an item by its name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the item name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02320">2320</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab931adf0d9ca988b31582f72f6c963e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab931adf0d9ca988b31582f72f6c963e3">&#9670;&nbsp;</a></span>findByUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItem.html">KFileItem</a> KCoreDirLister::findByUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find an item by its URL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the item URL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02310">2310</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fefc33b214875885063e727880b0896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fefc33b214875885063e727880b0896">&#9670;&nbsp;</a></span>handleError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::handleError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKIO_1_1Job.html">KIO::Job</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplement to customize error handling. </p>
+
+<p>Reimplemented in <a class="el" href="classKDirLister.html#aebdce9903fecb78e605005432d3551c7">KDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02475">2475</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acace62ce471ec11523c336f414b6a307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acace62ce471ec11523c336f414b6a307">&#9670;&nbsp;</a></span>handleErrorMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::handleErrorMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplement to customize error handling. </p>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classKDirLister.html#a68b09ea1589ecd8fe9d08a90ebdfc98d">KDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02480">2480</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf9ae3ea1f9c65e6fb81bbe0a7a913bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9ae3ea1f9c65e6fb81bbe0a7a913bb">&#9670;&nbsp;</a></span>infoMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::infoMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted to display information about running jobs. </p>
+<p>Examples of message are "Resolving host", "Connecting to host...", etc. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>the info message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf720a4a7a3f42f61e7944d08f6e17cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf720a4a7a3f42f61e7944d08f6e17cb">&#9670;&nbsp;</a></span>isFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::isFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if no io operation is currently in progress. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if finished, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02300">2300</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6bbb0044f4c9bb9d38259739e8835431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbb0044f4c9bb9d38259739e8835431">&#9670;&nbsp;</a></span>items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItemList.html">KFileItemList</a> KCoreDirLister::items </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a>&#160;</td>
+          <td class="paramname"><em>which</em> = <code>FilteredItems</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the items listed for the current <a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8" title="Returns the top level URL that is listed by this KCoreDirLister. ">url()</a>. </p>
+<p>This method will NOT start listing a directory, you should only call this when receiving the finished() signal.</p>
+<p>The items in the <a class="el" href="classKFileItemList.html" title="List of KFileItems, which adds a few helper methods to QList&lt;KFileItem&gt;. ">KFileItemList</a> are copies of the items used by <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">which</td><td>specifies whether the returned list will contain all entries or only the ones that passed the nameFilter(), mimeFilter(), etc. Note that the latter causes iteration over all the items, filtering them. If this is too slow for you, use the <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a> signal, sending out filtered items in chunks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the items listed for the current <a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8" title="Returns the top level URL that is listed by this KCoreDirLister. ">url()</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02740">2740</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5896ae48077cb860102be0d4cb89293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5896ae48077cb860102be0d4cb89293">&#9670;&nbsp;</a></span>itemsAdded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::itemsAdded </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>directoryUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;&#160;</td>
+          <td class="paramname"><em>items</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal that new items were found during directory listing. </p>
+<p>Alternative signal emitted at the same time as <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a>, but itemsAdded also passes the url of the parent directory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>a list of new items </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.2 </dd></dl>
+
+</div>
+</div>
+<a id="aaa2dceaad89e37165e68c52724f5e8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2dceaad89e37165e68c52724f5e8c8">&#9670;&nbsp;</a></span>itemsDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::itemsDeleted </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal that items have been deleted. </p>
+<dl class="section since"><dt>Since</dt><dd>4.1.2 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>the list of deleted items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5df76c13d5a6bc296d1c1fab57b5822c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df76c13d5a6bc296d1c1fab57b5822c">&#9670;&nbsp;</a></span>itemsFilteredByMime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::itemsFilteredByMime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a list of items filtered-out by mime-type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>the list of filtered items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a366890bc3a2a74236ef4ba1e1b06ab6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366890bc3a2a74236ef4ba1e1b06ab6d">&#9670;&nbsp;</a></span>itemsForDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItemList.html">KFileItemList</a> KCoreDirLister::itemsForDir </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classKCoreDirLister.html#a3d24c490b5bbe4b5795de207c6a3b256">WhichItems</a>&#160;</td>
+          <td class="paramname"><em>which</em> = <code>FilteredItems</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the items listed for the given <code>dir</code>. </p>
+<p>This method will NOT start listing <code>dir</code>, you should only call this when receiving the finished() signal.</p>
+<p>The items in the <a class="el" href="classKFileItemList.html" title="List of KFileItems, which adds a few helper methods to QList&lt;KFileItem&gt;. ">KFileItemList</a> are copies of the items used by <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>specifies the url for which the items should be returned. This is only useful if you use <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a> with multiple URLs i.e. using bool OpenUrlFlag::Keep in <a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1" title="Run the directory lister on the given url. ">openUrl()</a>. </td></tr>
+    <tr><td class="paramname">which</td><td>specifies whether the returned list will contain all entries or only the ones that passed the nameFilter, mimeFilter, etc. Note that the latter causes iteration over all the items, filtering them. If this is too slow for you, use the <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a> signal, sending out filtered items in chunks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the items listed for <code>dir</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02745">2745</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b87c24d4b267443617016561fe4e11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b87c24d4b267443617016561fe4e11b">&#9670;&nbsp;</a></span>jobStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::jobStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKIO_1_1ListJob.html">KIO::ListJob</a> *&#160;</td>
+          <td class="paramname"><em>job</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented by <a class="el" href="classKDirLister.html" title="Subclass of KCoreDirLister which uses QWidgets to show error messages and to associate jobs with wind...">KDirLister</a> to associate windows with jobs. </p>
+<dl class="section since"><dt>Since</dt><dd>5.0 </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classKDirLister.html#af56dea4d1432c8e0f423baced55abab7">KDirLister</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02714">2714</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1dae984ac3182dd1c6481affcee9df40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dae984ac3182dd1c6481affcee9df40">&#9670;&nbsp;</a></span>matchesFilter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::matchesFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether <code>name</code> matches a filter in the list of name filters. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>name</code> matches a filter in the list, otherwise false. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a3fdea4a1b8f59e76351c50151e625b93" title="Set a name filter to only list items matching this name, e.g. ">setNameFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02385">2385</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f06bc0fd1c6dfc72d5ad83456c62541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f06bc0fd1c6dfc72d5ad83456c62541">&#9670;&nbsp;</a></span>matchesFilter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::matchesFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called for every new item before emitting <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a>. </p>
+<p>You may reimplement this method in a subclass to implement your own filtering. The default implementation filters out ".." and everything not matching the name filter(s) </p><dl class="section return"><dt>Returns</dt><dd>true if the item is "ok". false if the item shall not be shown in a view, e.g. files not matching a pattern *.cpp ( <a class="el" href="classKFileItem.html#ae2f58fc15bbc97393b3042795aa4e6cf" title="Checks whether the file is hidden. ">KFileItem::isHidden()</a>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a1dae984ac3182dd1c6481affcee9df40" title="Checks whether name matches a filter in the list of name filters. ">matchesFilter</a> </dd>
+<dd>
+<a class="el" href="classKCoreDirLister.html#a3fdea4a1b8f59e76351c50151e625b93" title="Set a name filter to only list items matching this name, e.g. ">setNameFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02398">2398</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f5690bba3a3e21defc7f2678e7b6aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5690bba3a3e21defc7f2678e7b6aca">&#9670;&nbsp;</a></span>matchesMimeFilter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::matchesMimeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>mime</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether <code>mime</code> matches a filter in the list of mime types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mime</td><td>the mimetype to find in the filter list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>name</code> matches a filter in the list, otherwise false. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04" title="Set mime-based filter to only list items matching the given mimetypes. ">setMimeFilter</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02390">2390</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a938cfd79459de536e0d0c4c05f5274e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938cfd79459de536e0d0c4c05f5274e5">&#9670;&nbsp;</a></span>matchesMimeFilter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::matchesMimeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKFileItem.html">KFileItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called for every new item before emitting <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a>. </p>
+<p>You may reimplement this method in a subclass to implement your own filtering. The default implementation filters out ".." and everything not matching the name filter(s) </p><dl class="section return"><dt>Returns</dt><dd>true if the item is "ok". false if the item shall not be shown in a view, e.g. files not matching a pattern *.cpp ( <a class="el" href="classKFileItem.html#ae2f58fc15bbc97393b3042795aa4e6cf" title="Checks whether the file is hidden. ">KFileItem::isHidden()</a>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca" title="Checks whether mime matches a filter in the list of mime types. ">matchesMimeFilter</a> </dd>
+<dd>
+<a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04" title="Set mime-based filter to only list items matching the given mimetypes. ">setMimeFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02417">2417</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a835ed3bc9c82d415985e5f54342ba648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835ed3bc9c82d415985e5f54342ba648">&#9670;&nbsp;</a></span>mimeFilters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KCoreDirLister::mimeFilters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the list of mime based filters, as set via <a class="el" href="classKCoreDirLister.html#a9d7d40876cc95468bc036af4453dec04" title="Set mime-based filter to only list items matching the given mimetypes. ">setMimeFilter()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>the list of mime based filters. Empty, when no mime filter is set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02380">2380</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a89dbffb4ab7ed887701b5380281a1f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89dbffb4ab7ed887701b5380281a1f50">&#9670;&nbsp;</a></span>nameFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KCoreDirLister::nameFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current name filter, as set via <a class="el" href="classKCoreDirLister.html#a3fdea4a1b8f59e76351c50151e625b93" title="Set a name filter to only list items matching this name, e.g. ">setNameFilter()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>the current name filter, can be QString() if filtering is turned off </dd></dl>
+
+</div>
+</div>
+<a id="ac6c295baa9a066163fa220bd1b54bf29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c295baa9a066163fa220bd1b54bf29">&#9670;&nbsp;</a></span>newItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::newItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKFileItemList.html">KFileItemList</a> &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal new items. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>a list of new items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a368d4dea91fd99a19bc4f8fbe770aee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368d4dea91fd99a19bc4f8fbe770aee1">&#9670;&nbsp;</a></span>openUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::openUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenUrlFlags&#160;</td>
+          <td class="paramname"><em>_flags</em> = <code><a class="el" href="classKCoreDirLister.html#ab23142318e83abbd075772d9a86736e5aec92ff46e5db8c8445b26d9992c6ed5b">NoFlags</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the directory lister on the given url. </p>
+<p>This method causes <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a> to emit <em>all</em> the items of <code>_url</code>, in any case. Depending on _flags, either <a class="el" href="classKCoreDirLister.html#a3ee2899a6baaf848a5dff7f9d5bd5dd4" title="Signal to clear all items. ">clear()</a> or <a class="el" href="classKCoreDirLister.html#a2e99cec180a19160904745d8b4cd9fa3" title="Signal to empty the directory _url. ">clear(const QUrl &amp;)</a> will be emitted first.</p>
+<p>The <a class="el" href="classKCoreDirLister.html#ac6c295baa9a066163fa220bd1b54bf29" title="Signal new items. ">newItems()</a> signal may be emitted more than once to supply you with KFileItems, up until the signal <a class="el" href="classKCoreDirLister.html#acb08430ff6d75a34648b3c98dd989e68" title="Tell the view that listing is finished. ">completed()</a> is emitted (and <a class="el" href="classKCoreDirLister.html#abf720a4a7a3f42f61e7944d08f6e17cb" title="Returns true if no io operation is currently in progress. ">isFinished()</a> returns true).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the directory URL. </td></tr>
+    <tr><td class="paramname">_flags</td><td>whether to keep previous directories, and whether to reload, see OpenUrlFlags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise (e.g. invalid <code>_url</code>) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02151">2151</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a12498b08a166a626170877523ca6fffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12498b08a166a626170877523ca6fffb">&#9670;&nbsp;</a></span>percent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::percent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Progress signal showing the overall progress of the <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. </p>
+<p>This allows using a progress bar very easily. (see QProgressBar) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>the progress in percent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb901acaf246dd5652c0e8bae399ce47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb901acaf246dd5652c0e8bae399ce47">&#9670;&nbsp;</a></span>processedSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::processedSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Regularly emitted to show the progress of this <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the processed size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb9f2a825d7a0f7754ce7ab47f5b3f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9f2a825d7a0f7754ce7ab47f5b3f42">&#9670;&nbsp;</a></span>redirection <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::redirection </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal a redirection. </p>
+<p>Only emitted if there's just one directory to list, i.e. most probably <a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1" title="Run the directory lister on the given url. ">openUrl()</a> has been called without OpenUrlFlag::Keep. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the new URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c03aeac405ef36d97626f34bac42892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c03aeac405ef36d97626f34bac42892">&#9670;&nbsp;</a></span>redirection <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::redirection </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>oldUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>newUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal a redirection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldUrl</td><td>the original URL </td></tr>
+    <tr><td class="paramname">newUrl</td><td>the new URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c7d7f9745a0991138e607465e36bb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7d7f9745a0991138e607465e36bb8a">&#9670;&nbsp;</a></span>refreshItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::refreshItems </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; QPair&lt; <a class="el" href="classKFileItem.html">KFileItem</a>, <a class="el" href="classKFileItem.html">KFileItem</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal an item to refresh (its mimetype/icon/name has changed). </p>
+<p>Note: <a class="el" href="classKFileItem.html#afcd50458f3068076a1101c5b6a3b140a" title="Throw away and re-read (for local files) all information about the file. ">KFileItem::refresh</a> has already been called on those items. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>the items to refresh. This is a list of pairs, where the first item in the pair is the OLD item, and the second item is the NEW item. This allows to track which item has changed, especially after a renaming. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab719951e81378b4378614bcb0adf54da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab719951e81378b4378614bcb0adf54da">&#9670;&nbsp;</a></span>rootItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKFileItem.html">KFileItem</a> KCoreDirLister::rootItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the file item of the URL. </p>
+<p>Can return an empty <a class="el" href="classKFileItem.html" title="A KFileItem is a generic class to handle a file, local or remote. ">KFileItem</a>. </p><dl class="section return"><dt>Returns</dt><dd>the file item for <a class="el" href="classKCoreDirLister.html#a525468385e8b870a92b0885dd4e9f9c8" title="Returns the top level URL that is listed by this KCoreDirLister. ">url()</a> itself (".") </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02305">2305</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8a407dce9c53f682b41bb797e94b8cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a407dce9c53f682b41bb797e94b8cb5">&#9670;&nbsp;</a></span>setAutoUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setAutoUpdate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable/disable automatic directory updating, when a directory changes (using <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKDirWatch.html">KDirWatch</a>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true to enable, false to disable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02178">2178</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73d642557de6e1ca12fb213b24a89898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d642557de6e1ca12fb213b24a89898">&#9670;&nbsp;</a></span>setDelayedMimeTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setDelayedMimeTypes </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>delayedMimeTypes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delayed mimetypes feature: If enabled, mime types will be fetched on demand, which leads to a faster initial directory listing, where icons get progressively replaced with the correct one while KMimeTypeResolver is going through the items with unknown or imprecise mimetype (e.g. </p>
+<p>files with no extension or an unknown extension). </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02773">2773</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa8ddc1e6e29633fa3823ac2cb6914f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8ddc1e6e29633fa3823ac2cb6914f3">&#9670;&nbsp;</a></span>setDirOnlyMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setDirOnlyMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dirsOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call this to list only directories. </p>
+<p>You need to call <a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e" title="Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilt...">emitChanges()</a> afterwards. By default this option is disabled (all files will be shown). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirsOnly</td><td>true to list only directories </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02208">2208</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50f08c37eb1002d5c68ae9afc1a03a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f08c37eb1002d5c68ae9afc1a03a10">&#9670;&nbsp;</a></span>setMimeExcludeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setMimeExcludeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>mimeList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filtering should be done with KFileFilter. </p>
+<p>This will be implemented in a later revision of <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. This method may be removed then.</p>
+<p>Set mime-based exclude filter to only list items not matching the given mimetypes</p>
+<p>NOTE: setting the filter does not automatically reload directory. Also calling this function will not affect any named filter already set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeList</td><td>a list of mime-types. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#ad9666624feaa9036bc14af37a32778c5" title="Clears the mime based filter. ">clearMimeFilter</a> </dd>
+<dd>
+<a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca" title="Checks whether mime matches a filter in the list of mime types. ">matchesMimeFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02363">2363</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d7d40876cc95468bc036af4453dec04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7d40876cc95468bc036af4453dec04">&#9670;&nbsp;</a></span>setMimeFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setMimeFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>mimeList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set mime-based filter to only list items matching the given mimetypes. </p>
+<p>NOTE: setting the filter does not automatically reload directory. Also calling this function will not affect any named filter already set.</p>
+<p>You need to call <a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e" title="Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilt...">emitChanges()</a> afterwards.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeList</td><td>a list of mime-types.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#ad9666624feaa9036bc14af37a32778c5" title="Clears the mime based filter. ">clearMimeFilter</a> </dd>
+<dd>
+<a class="el" href="classKCoreDirLister.html#a9f5690bba3a3e21defc7f2678e7b6aca" title="Checks whether mime matches a filter in the list of mime types. ">matchesMimeFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02349">2349</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fdea4a1b8f59e76351c50151e625b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdea4a1b8f59e76351c50151e625b93">&#9670;&nbsp;</a></span>setNameFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setNameFilter </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a name filter to only list items matching this name, e.g. </p>
+<p>"*.cpp".</p>
+<p>You can set more than one filter by separating them with whitespace, e.g "*.cpp *.h". Note: the directory is not automatically reloaded. You need to call <a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e" title="Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilt...">emitChanges()</a> afterwards.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>the new filter, QString() to disable filtering </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a1dae984ac3182dd1c6481affcee9df40" title="Checks whether name matches a filter in the list of name filters. ">matchesFilter</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02327">2327</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60b60eec6f6fc7fe9bb34aa6d6dceab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b60eec6f6fc7fe9bb34aa6d6dceab4">&#9670;&nbsp;</a></span>setShowingDotFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::setShowingDotFiles </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_showDotFiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the "is viewing dot files" setting. </p>
+<p>You need to call <a class="el" href="classKCoreDirLister.html#a014cb76ebe7cf9edf4ba7c925aeb4b8e" title="Actually emit the changes made with setShowingDotFiles, setDirOnlyMode, setNameFilter and setMimeFilt...">emitChanges()</a> afterwards. By default this option is disabled (hidden files will not be shown). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_showDotFiles</td><td>true to enable showing hidden files, false to disable </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>showingDotFiles() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02193">2193</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aee7683a9e778c8b33d5dbcec276fba10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7683a9e778c8b33d5dbcec276fba10">&#9670;&nbsp;</a></span>showingDotFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KCoreDirLister::showingDotFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether hidden files (files beginning with a dot) will be shown. </p>
+<p>By default this option is disabled (hidden files will be not shown). </p><dl class="section return"><dt>Returns</dt><dd>true if dot files are shown, false otherwise </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKCoreDirLister.html#a60b60eec6f6fc7fe9bb34aa6d6dceab4" title="Changes the &quot;is viewing dot files&quot; setting. ">setShowingDotFiles()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a03f7bddedb29c361af0ba0c2bb3b7740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f7bddedb29c361af0ba0c2bb3b7740">&#9670;&nbsp;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::speed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bytes_per_second</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted to display information about the speed of the jobs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bytes_per_second</td><td>the speed in bytes/s </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b52d80cdab488416c4c33ec04b84d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b52d80cdab488416c4c33ec04b84d78">&#9670;&nbsp;</a></span>started</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::started </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell the view that we started to list <code>_url</code>. </p>
+<p>NOTE: this does <em>not</em> imply that there is really a job running! I.e. KCoreDirLister::jobs() may return an empty list. In this case the items are taken from the cache.</p>
+<p>The view knows that openUrl should start it, so it might seem useless, but the view also needs to know when an automatic update happens. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the URL to list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16d382e30ad7c791237021f7c73d822b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d382e30ad7c791237021f7c73d822b">&#9670;&nbsp;</a></span>stop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop listing all directories currently being listed. </p>
+<p>Emits <a class="el" href="classKCoreDirLister.html#ac161a24689e6ad0c3b1cf728c0eb5baf" title="Tell the view that the user canceled the listing. ">canceled()</a> if there was at least one job running. Emits <a class="el" href="classKCoreDirLister.html#a0ab47670aedb99916b3c260ca112cc9c" title="Tell the view that the listing of the directory _url was canceled. ">canceled( const QUrl&amp; )</a> for each stopped job if there are at least two directories being watched by <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02163">2163</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a27f2300e2dc8f17cf5e8bd86a7c8c5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f2300e2dc8f17cf5e8bd86a7c8c5b7">&#9670;&nbsp;</a></span>stop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::stop </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop listing the given directory. </p>
+<p>Emits <a class="el" href="classKCoreDirLister.html#ac161a24689e6ad0c3b1cf728c0eb5baf" title="Tell the view that the user canceled the listing. ">canceled()</a> if the killed job was the last running one. Emits <a class="el" href="classKCoreDirLister.html#a0ab47670aedb99916b3c260ca112cc9c" title="Tell the view that the listing of the directory _url was canceled. ">canceled( const QUrl&amp; )</a> for the killed job if there are at least two directories being watched by <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. No signal is emitted if there was no job running for <code>_url</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_url</td><td>the directory URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02168">2168</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e6302fdeb4fbf21cf908a385a7e8f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6302fdeb4fbf21cf908a385a7e8f6f">&#9670;&nbsp;</a></span>totalSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::totalSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceKIO.html#ae23f31bba47142a720d099c89399a25e">KIO::filesize_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when we know the size of the jobs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the total size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7d09ec0ce117e0f8d62a3ccd7a0f001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d09ec0ce117e0f8d62a3ccd7a0f001">&#9670;&nbsp;</a></span>updateDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KCoreDirLister::updateDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>_dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the directory <code>_dir</code>. </p>
+<p>This method causes <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a> to <em>only</em> emit the items of <code>_dir</code> that actually changed compared to the current state in the cache and updates the cache.</p>
+<p>The current implementation calls updateDirectory automatically for local files, using <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKDirWatch.html">KDirWatch</a> (if autoUpdate() is true), but it might be useful to force an update manually.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_dir</td><td>the directory URL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02295">2295</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a525468385e8b870a92b0885dd4e9f9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525468385e8b870a92b0885dd4e9f9c8">&#9670;&nbsp;</a></span>url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl KCoreDirLister::url </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the top level URL that is listed by this <a class="el" href="classKCoreDirLister.html" title="Helper class for the kiojob used to list and update a directory. ">KCoreDirLister</a>. </p>
+<p>It might be different from the one given with <a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1" title="Run the directory lister on the given url. ">openUrl()</a> if there was a redirection. If you called <a class="el" href="classKCoreDirLister.html#a368d4dea91fd99a19bc4f8fbe770aee1" title="Run the directory lister on the given url. ">openUrl()</a> with OpenUrlFlag::Keep this is the first url opened (e.g. in a treeview this is the root).</p>
+<dl class="section return"><dt>Returns</dt><dd>the url used by this instance to list the files. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kcoredirlister_8cpp_source.html#l02218">2218</a> of file <a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kcoredirlister_8h_source.html">kcoredirlister.h</a></li>
+<li><a class="el" href="kcoredirlister_8cpp_source.html">kcoredirlister.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:57 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

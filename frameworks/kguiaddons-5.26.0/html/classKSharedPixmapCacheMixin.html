@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KGuiAddons - KSharedPixmapCacheMixin&lt; T &gt; Class Template Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KGuiAddons</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KGuiAddons"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKColorCollection.html">KColorCollection</option>
+        
+        <option value="classKDateValidator.html">KDateValidator</option>
+        
+        <option value="classKLocalImageCacheImplementation.html">KLocalImageCacheImplementation</option>
+        
+        <option value="classKModifierKeyInfo.html">KModifierKeyInfo</option>
+        
+        <option value="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</option>
+        
+        <option value="classKWordWrap.html">KWordWrap</option>
+        
+        <option value="namespaceKColorMimeData.html">KColorMimeData</option>
+        
+        <option value="namespaceKColorUtils.html">KColorUtils</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Addons to QtGui</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Android, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5GuiAddons)
+target_link_libraries(yourapp KF5::GuiAddons)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KGuiAddons </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kguiaddons-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KGuiAddons on <a href="https://cgit.kde.org/kguiaddons-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KGuiAddons </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KSharedPixmapCacheMixin">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classKSharedPixmapCacheMixin-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KSharedPixmapCacheMixin&lt; T &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KSharedPixmapCacheMixin&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKSharedPixmapCacheMixin__inherit__graph.png" border="0" usemap="#KSharedPixmapCacheMixin_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="KSharedPixmapCacheMixin_3_01T_01_4_inherit__map" id="KSharedPixmapCacheMixin_3_01T_01_4_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a88dfdbef8c701ee32afd905f87ad05fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#a88dfdbef8c701ee32afd905f87ad05fa">KSharedPixmapCacheMixin</a> (const QString &amp;cacheName, unsigned defaultCacheSize, unsigned expectedItemSize=0)</td></tr>
+<tr class="separator:a88dfdbef8c701ee32afd905f87ad05fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283e2241efc01b194cf564d8a1375772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#a283e2241efc01b194cf564d8a1375772">clear</a> ()</td></tr>
+<tr class="separator:a283e2241efc01b194cf564d8a1375772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab78db32f6b3b053156eda3caa1ef28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#a9ab78db32f6b3b053156eda3caa1ef28">findImage</a> (const QString &amp;key, QImage *destination) const</td></tr>
+<tr class="separator:a9ab78db32f6b3b053156eda3caa1ef28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fd268be8c78a8edcd6740faf8b4ef2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#a46fd268be8c78a8edcd6740faf8b4ef2">findPixmap</a> (const QString &amp;key, QPixmap *destination) const</td></tr>
+<tr class="separator:a46fd268be8c78a8edcd6740faf8b4ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2a0c75a07b4fd3252e98e70e35f841"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#aed2a0c75a07b4fd3252e98e70e35f841">insertImage</a> (const QString &amp;key, const QImage &amp;image)</td></tr>
+<tr class="separator:aed2a0c75a07b4fd3252e98e70e35f841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3d37a4d3709bfc28fdd783607b79c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSharedPixmapCacheMixin.html#acc3d37a4d3709bfc28fdd783607b79c1">insertPixmap</a> (const QString &amp;key, const QPixmap &amp;pixmap)</td></tr>
+<tr class="separator:acc3d37a4d3709bfc28fdd783607b79c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class KSharedPixmapCacheMixin&lt; T &gt;</h3>
+
+<p>A simple wrapping layer over <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKSharedDataCache.html">KSharedDataCache</a> to support caching images and pixmaps. </p>
+<p>This class can be used to share images between different processes, which is useful when it is known that such images will be used across many processes, or when creating the image is expensive.</p>
+<p>In addition, the class also supports caching QPixmaps <em>in a single process</em> using the setPixmapCaching() function.</p>
+<p>Tips for use: If you already have QPixmaps that you intend to use, and you do not need access to the actual image data, then try to store and retrieve QPixmaps for use.</p>
+<p>On the other hand, if you will need to store and retrieve actual image data (to modify the image after retrieval for instance) then you should use QImage to save the conversion cost from QPixmap to QImage.</p>
+<p><a class="el" href="classKSharedPixmapCacheMixin.html" title="A simple wrapping layer over KSharedDataCache to support caching images and pixmaps. ">KSharedPixmapCacheMixin</a> is a subclass of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKSharedDataCache.html">KSharedDataCache</a>, so all of the methods that can be used with <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKSharedDataCache.html">KSharedDataCache</a> can be used with <a class="el" href="classKSharedPixmapCacheMixin.html" title="A simple wrapping layer over KSharedDataCache to support caching images and pixmaps. ">KSharedPixmapCacheMixin</a>, <em>with the exception of <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKSharedDataCache.html#ac655ec627e842f24ce6148e12c57c477">KSharedDataCache::insert()</a> and <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKSharedDataCache.html#aed74e53a0eccdd1fd111d70e4e98ac91">KSharedDataCache::find()</a></em>.</p>
+<dl class="section author"><dt>Author</dt><dd>Michael Pyne <a href="#" onclick="location.href='mai'+'lto:'+'mpy'+'ne'+'@kd'+'e.'+'org'; return false;">mpyne<span style="display: none;">.nosp@m.</span>@kde<span style="display: none;">.nosp@m.</span>.org</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.5 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00069">69</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a88dfdbef8c701ee32afd905f87ad05fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dfdbef8c701ee32afd905f87ad05fa">&#9670;&nbsp;</a></span>KSharedPixmapCacheMixin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::<a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a> </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>cacheName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>defaultCacheSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>expectedItemSize</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an image cache, named by <code>cacheName</code>, with a default size of <code>defaultCacheSize</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cacheName</td><td>Name of the cache to use. </td></tr>
+    <tr><td class="paramname">defaultCacheSize</td><td>The default size, in bytes, of the cache. The actual on-disk size will be slightly larger. If the cache already exists, it will not be resized. If it is required to resize the cache then use the deleteCache() function to remove that cache first. </td></tr>
+    <tr><td class="paramname">expectedItemSize</td><td>The expected general size of the items to be added to the image cache, in bytes. Use 0 if you just want a default item size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00085">85</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a283e2241efc01b194cf564d8a1375772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283e2241efc01b194cf564d8a1375772">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes all entries from the cache. </p>
+<p>In addition any cached pixmaps (as per setPixmapCaching()) are also removed. </p>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00188">188</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ab78db32f6b3b053156eda3caa1ef28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab78db32f6b3b053156eda3caa1ef28">&#9670;&nbsp;</a></span>findImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::findImage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QImage *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies the cached image identified by <code>key</code> to <code>destination</code>. </p>
+<p>If no such image exists <code>destination</code> is unchanged.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the image identified by <code>key</code> existed, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00170">170</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<a id="a46fd268be8c78a8edcd6740faf8b4ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fd268be8c78a8edcd6740faf8b4ef2">&#9670;&nbsp;</a></span>findPixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::findPixmap </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPixmap *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies the cached pixmap identified by <code>key</code> to <code>destination</code>. </p>
+<p>If no such pixmap exists <code>destination</code> is unchanged.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the pixmap identified by <code>key</code> existed, false otherwise. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>setPixmapCaching() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00143">143</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<a id="aed2a0c75a07b4fd3252e98e70e35f841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2a0c75a07b4fd3252e98e70e35f841">&#9670;&nbsp;</a></span>insertImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::insertImage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inserts the <code>image</code> into the shared cache, accessible with <code>key</code>. </p>
+<p>This variant is preferred over <a class="el" href="classKSharedPixmapCacheMixin.html#acc3d37a4d3709bfc28fdd783607b79c1" title="Inserts the pixmap given by pixmap to the cache, accessible with key. ">insertPixmap()</a> if your source data is already a QImage, if it is essential that the image be in shared memory (such as for SVG icons which have a high render time), or if it will need to be in QImage form after it is retrieved from the cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Name to access <code>image</code> with. </td></tr>
+    <tr><td class="paramname">image</td><td>The image to add to the shared cache. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the image was successfully cached, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00126">126</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<a id="acc3d37a4d3709bfc28fdd783607b79c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3d37a4d3709bfc28fdd783607b79c1">&#9670;&nbsp;</a></span>insertPixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classKSharedPixmapCacheMixin.html">KSharedPixmapCacheMixin</a>&lt; T &gt;::insertPixmap </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inserts the pixmap given by <code>pixmap</code> to the cache, accessible with <code>key</code>. </p>
+<p>The pixmap must be converted to a QImage in order to be stored into shared memory. In order to prevent unnecessary conversions from taking place <code>pixmap</code> will also be cached (but not in shared memory) and would be accessible using <a class="el" href="classKSharedPixmapCacheMixin.html#a46fd268be8c78a8edcd6740faf8b4ef2" title="Copies the cached pixmap identified by key to destination. ">findPixmap()</a> if pixmap caching is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Name to access <code>pixmap</code> with. </td></tr>
+    <tr><td class="paramname">pixmap</td><td>The pixmap to add to the cache. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the pixmap was successfully cached, false otherwise. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>setPixmapCaching() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kimagecache_8h_source.html#l00104">104</a> of file <a class="el" href="kimagecache_8h_source.html">kimagecache.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="kimagecache_8h_source.html">kimagecache.h</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:03 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

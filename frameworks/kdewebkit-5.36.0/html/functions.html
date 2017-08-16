@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDEWebKit - Class Members</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDEWebKit</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDEWebKit"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKGraphicsWebView.html">KGraphicsWebView</option>
+        
+        <option value="classKWebPage.html">KWebPage</option>
+        
+        <option value="classKWebPluginFactory.html">KWebPluginFactory</option>
+        
+        <option value="classKWebView.html">KWebView</option>
+        
+        <option value="classKWebWallet.html">KWebWallet</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>KDE Integration for QtWebKit</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:kde-devel@kde.org">The KDE Community</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            FreeBSD, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WebKit)
+target_link_libraries(yourapp KF5::WebKit)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDEWebKit </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdewebkit-5.36.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDEWebKit on <a href="https://cgit.kde.org/kdewebkit-5.36.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDEWebKit </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="contents">
+<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>acceptNavigationRequest()
+: <a class="el" href="classKWebPage.html#a6962fb1549415bb4e3a0c97bc9b8ea9b">KWebPage</a>
+</li>
+<li>acceptSaveFormDataRequest()
+: <a class="el" href="classKWebWallet.html#a762ce276bec132574ea05d08bd60c281">KWebWallet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>create()
+: <a class="el" href="classKWebPluginFactory.html#a39e7b31f62769eb165abc6ee812fcfaf">KWebPluginFactory</a>
+</li>
+<li>createPartInstanceFrom()
+: <a class="el" href="classKWebPluginFactory.html#ab3d6c7b162757feef8c8fe6d68ee1113">KWebPluginFactory</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>downloadRequest()
+: <a class="el" href="classKWebPage.html#ab8890aa6053f2538983d28949f67a7f5">KWebPage</a>
+</li>
+<li>downloadResponse()
+: <a class="el" href="classKWebPage.html#adb849007c3c3488d45411fd251d08414">KWebPage</a>
+</li>
+<li>downloadUrl()
+: <a class="el" href="classKWebPage.html#addfd82f9d64c38c245d6727e1a4b21d8">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>excludedMimeType()
+: <a class="el" href="classKWebPluginFactory.html#a9462339ee76e2a6ef931cd4bffde75d4">KWebPluginFactory</a>
+</li>
+<li>extractGuessedMimeType()
+: <a class="el" href="classKWebPluginFactory.html#a7ee83dd08a3f1158cb2b5a0786bb0347">KWebPluginFactory</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>fields
+: <a class="el" href="structKWebWallet_1_1WebForm.html#ad2aeb9baff901b9e56001b0852966238">KWebWallet::WebForm</a>
+</li>
+<li>fillFormData()
+: <a class="el" href="classKWebWallet.html#a2f3dbcfe38ea9c889c1a44eeff34b750">KWebWallet</a>
+</li>
+<li>fillFormDataFromCache()
+: <a class="el" href="classKWebWallet.html#ad31853836117ed2b6d259f09d56585a0">KWebWallet</a>
+</li>
+<li>fillFormRequestCompleted()
+: <a class="el" href="classKWebWallet.html#a002cbd329a0a1e15b289a0a7206a82c0">KWebWallet</a>
+</li>
+<li>fillWebForm()
+: <a class="el" href="classKWebWallet.html#acf504068fb12acd1f7e74c4d2045693b">KWebWallet</a>
+</li>
+<li>formsToDelete()
+: <a class="el" href="classKWebWallet.html#a4109329f49a671ea7c8fac6bf64d19d6">KWebWallet</a>
+</li>
+<li>formsToFill()
+: <a class="el" href="classKWebWallet.html#af254c422d4aed6dc31c61acf7da1efe6">KWebWallet</a>
+</li>
+<li>formsToSave()
+: <a class="el" href="classKWebWallet.html#a129ce136523f7444e850657f31e77c01">KWebWallet</a>
+</li>
+<li>formsWithCachedData()
+: <a class="el" href="classKWebWallet.html#a6afef57ae50b7212c8872c83b363733b">KWebWallet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>KGraphicsWebView()
+: <a class="el" href="classKGraphicsWebView.html#abd715540c55873f449f3c3025e5531cf">KGraphicsWebView</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>handleReply()
+: <a class="el" href="classKWebPage.html#a8422fbc70e39b7886a89998524dc50eb">KWebPage</a>
+</li>
+<li>hasCachedFormData()
+: <a class="el" href="classKWebWallet.html#a7044766c7c1f2bc5ce1addcdb3692f1b">KWebWallet</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>index
+: <a class="el" href="structKWebWallet_1_1WebForm.html#a6eff4d5aac3ad40bc17f245eb76ab649">KWebWallet::WebForm</a>
+</li>
+<li>IntegrationFlags
+: <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dca">KWebPage</a>
+</li>
+<li>isExternalContentAllowed()
+: <a class="el" href="classKGraphicsWebView.html#a75d82123c58e1780f5ac9edc5d765568">KGraphicsWebView</a>
+, <a class="el" href="classKWebPage.html#afcbcbcdb9b2b0bff3f6c78ca2d06704a">KWebPage</a>
+, <a class="el" href="classKWebView.html#ae97d997d99a94de6007469a0b9702a8d">KWebView</a>
+</li>
+<li>KIOIntegration
+: <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa111ea913f1ec92d7e3cc461856fe03a6">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>linkMiddleOrCtrlClicked()
+: <a class="el" href="classKGraphicsWebView.html#a3bcb21b42662022ff8256e5b3e4bfd32">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#ac816342615e01a3077b68396b23eff76">KWebView</a>
+</li>
+<li>linkShiftClicked()
+: <a class="el" href="classKGraphicsWebView.html#a45cbfda830c680d90180acf42cfa1975">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#aac25da0a9bea1c705b926d0dc91c4629">KWebView</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>mousePressEvent()
+: <a class="el" href="classKGraphicsWebView.html#a96ea7c8ad51d7be2a1d4306078545182">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#a18f3d3f31cd2292937aa01082905a873">KWebView</a>
+</li>
+<li>mouseReleaseEvent()
+: <a class="el" href="classKGraphicsWebView.html#ab7260b011520bd74f7aff7f05966e31a">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#a1bed2c1a4c841c565362fb86009007db">KWebView</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="structKWebWallet_1_1WebForm.html#a3d7cbe267e057064cc4259caa4904f83">KWebWallet::WebForm</a>
+</li>
+<li>NoIntegration
+: <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaadfc4da385b216bfb1a6fd729892797a7">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>KPartsIntegration
+: <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa9ff4cd4d85d105ce1e314ebbf2179cd3">KWebPage</a>
+</li>
+<li>plugins()
+: <a class="el" href="classKWebPluginFactory.html#a4905cc739eaf2794dfceb9c6cd7785bc">KWebPluginFactory</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>rejectSaveFormDataRequest()
+: <a class="el" href="classKWebWallet.html#ab7f1828b449e9f79699ce0f17cfe465e">KWebWallet</a>
+</li>
+<li>removeFormData()
+: <a class="el" href="classKWebWallet.html#afc1daf4fa78cb2b253561961f866a0c8">KWebWallet</a>
+</li>
+<li>removeFormDataFromCache()
+: <a class="el" href="classKWebWallet.html#a8faf58c90dbd11e5d7e86cc8fbe9478d">KWebWallet</a>
+</li>
+<li>removeRequestMetaData()
+: <a class="el" href="classKWebPage.html#ab5773e74d14d61b37b10639eaa6a7755">KWebPage</a>
+</li>
+<li>removeSessionMetaData()
+: <a class="el" href="classKWebPage.html#aed5974b67f245ad100045769d4bdb466">KWebPage</a>
+</li>
+<li>requestMetaData()
+: <a class="el" href="classKWebPage.html#ad5d9ebed6ecea87999f63e62109d3940">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>saveFormData()
+: <a class="el" href="classKWebWallet.html#ab20ac4bfb3886e65f8ff67a423fc94cb">KWebWallet</a>
+</li>
+<li>saveFormDataCompleted()
+: <a class="el" href="classKWebWallet.html#a06698ef9d0572c0265f66b7e8f18416b">KWebWallet</a>
+</li>
+<li>saveFormDataRequested()
+: <a class="el" href="classKWebWallet.html#ada3b0bb3b288bac65d45f5dfc6bf8e5e">KWebWallet</a>
+</li>
+<li>saveFormDataToCache()
+: <a class="el" href="classKWebWallet.html#aa53a4cacc023d2745338494ba39d7dd0">KWebWallet</a>
+</li>
+<li>selectionClipboardUrlPasted()
+: <a class="el" href="classKGraphicsWebView.html#a5c7801a846d8e3ae9e982219b77319f0">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#a5305ae0f9fad6d521a159547c4a670a0">KWebView</a>
+</li>
+<li>sessionMetaData()
+: <a class="el" href="classKWebPage.html#a3a41492885b72239ead00bec9ef7f5c6">KWebPage</a>
+</li>
+<li>setAllowExternalContent()
+: <a class="el" href="classKGraphicsWebView.html#ad04cf1851da746be887969c3943b4fd1">KGraphicsWebView</a>
+, <a class="el" href="classKWebPage.html#adc97054aad8c8c07d8031dc209222aa6">KWebPage</a>
+, <a class="el" href="classKWebView.html#a38306892ef42320dc8524f3091c8e026">KWebView</a>
+</li>
+<li>setRequestMetaData()
+: <a class="el" href="classKWebPage.html#a2e98e79b90a35fac062bd3ff98f0fa35">KWebPage</a>
+</li>
+<li>setSessionMetaData()
+: <a class="el" href="classKWebPage.html#a0d6808e64a840e8615d1e4553e7cd65d">KWebPage</a>
+</li>
+<li>setWallet()
+: <a class="el" href="classKWebPage.html#a9e58a4aa6900a6b5ea4341c0939c7041">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>url
+: <a class="el" href="structKWebWallet_1_1WebForm.html#a738ed7b51d5733c89694a6e5009b5e73">KWebWallet::WebForm</a>
+</li>
+<li>userAgentForUrl()
+: <a class="el" href="classKWebPage.html#adc1eb02f6466d77492534557f17525f7">KWebPage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>KWalletIntegration
+: <a class="el" href="classKWebPage.html#a2b9db8392addba15e635fa9699606dcaa87897276aab2366a6c1f57f7d5ccf14b">KWebPage</a>
+</li>
+<li>KWebPage()
+: <a class="el" href="classKWebPage.html#a11052bfc159527fc84f3e8706c2b1d6d">KWebPage</a>
+</li>
+<li>KWebPluginFactory()
+: <a class="el" href="classKWebPluginFactory.html#a2e1d45ed9f790ce50f883ab2df1c7afc">KWebPluginFactory</a>
+</li>
+<li>KWebView()
+: <a class="el" href="classKWebView.html#a7e870af8e52e2a80c899a4aa4dc678e4">KWebView</a>
+</li>
+<li>KWebWallet()
+: <a class="el" href="classKWebWallet.html#a9dfa1819674ce5f5bb7a96855989e4cf">KWebWallet</a>
+</li>
+<li>wallet()
+: <a class="el" href="classKWebPage.html#aea8504e350519cdc159ada70cfe7b631">KWebPage</a>
+</li>
+<li>walletClosed()
+: <a class="el" href="classKWebWallet.html#a3e6061f3724d8246c92d1f4ff1131fe8">KWebWallet</a>
+</li>
+<li>WebField
+: <a class="el" href="structKWebWallet_1_1WebForm.html#a16d969236a5456551bdbdceb0b30dff3">KWebWallet::WebForm</a>
+</li>
+<li>WebFormList
+: <a class="el" href="classKWebWallet.html#a9bfe4ddb35cc93a3754f0b4813109cf6">KWebWallet</a>
+</li>
+<li>wheelEvent()
+: <a class="el" href="classKGraphicsWebView.html#a485daf5e516db87f46d7d16379e3fe27">KGraphicsWebView</a>
+, <a class="el" href="classKWebView.html#a770f0514ba6a0492b002afd1bd667b3c">KWebView</a>
+</li>
+</ul>
+
+
+<h3><a id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~KGraphicsWebView()
+: <a class="el" href="classKGraphicsWebView.html#ad088a724531d6aacb2224a1e6f120c72">KGraphicsWebView</a>
+</li>
+<li>~KWebPage()
+: <a class="el" href="classKWebPage.html#a3e3eac29ff1e4d7b1a1a0efaecd84ae9">KWebPage</a>
+</li>
+<li>~KWebPluginFactory()
+: <a class="el" href="classKWebPluginFactory.html#a2f302df1871b40e8bba7cd50470fb682">KWebPluginFactory</a>
+</li>
+<li>~KWebView()
+: <a class="el" href="classKWebView.html#a5a724473976cba60b6c561cfe6a76682">KWebView</a>
+</li>
+<li>~KWebWallet()
+: <a class="el" href="classKWebWallet.html#a91368c85fe2cb980c35915921b3d847a">KWebWallet</a>
+</li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:50 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

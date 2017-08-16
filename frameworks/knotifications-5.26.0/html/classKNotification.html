@@ -1,0 +1,2313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KNotifications - KNotification Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KNotifications</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KNotifications"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKNotification.html">KNotification</option>
+        
+        <option value="classKNotificationPlugin.html">KNotificationPlugin</option>
+        
+        <option value="classKNotificationRestrictions.html">KNotificationRestrictions</option>
+        
+        <option value="classKNotifyConfig.html">KNotifyConfig</option>
+        
+        <option value="classKNotifyImage.html">KNotifyImage</option>
+        
+        <option value="classKPassivePopup.html">KPassivePopup</option>
+        
+        <option value="classKStatusNotifierItem.html">KStatusNotifierItem</option>
+        
+        <option value="classNotifyByPopupGrowl.html">NotifyByPopupGrowl</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction for system notifications</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:martin.klapetek@gmail.com">Martin Klapetek</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Notifications)
+target_link_libraries(yourapp KF5::Notifications)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KNotifications </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/knotifications-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KNotifications on <a href="https://cgit.kde.org/knotifications-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KNotifications </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KNotification">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="classKNotification-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KNotification Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="knotification_8h_source.html">knotification.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa57e3424c13e47db62de5c1dd9721aae"><td class="memItemLeft" align="right" valign="top">typedef QPair&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae">Context</a></td></tr>
+<tr class="separator:aa57e3424c13e47db62de5c1dd9721aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a6b60b3a6b0fd92e6a8fc155063d1d"><td class="memItemLeft" align="right" valign="top"><a id="aa9a6b60b3a6b0fd92e6a8fc155063d1d"></a>
+typedef QList&lt; <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae">Context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ContextList</b></td></tr>
+<tr class="separator:aa9a6b60b3a6b0fd92e6a8fc155063d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9430ebe5109e91358334f6e20599774"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774">NotificationFlag</a> { <br />
+&#160;&#160;<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774ae3f9719fcbedb6abfda1d7dc2dc1bb3f">RaiseWidgetOnActivation</a> = 0x01,
+<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a> = 0x00,
+<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a5bfeb35c8fde522675101d7b880845c7">Persistent</a> = 0x02,
+<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a3eb20f7f7a620d6015c20e41897462d2">CloseWhenWidgetActivated</a> = 0x04,
+<br />
+&#160;&#160;<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774acd6ba88bb126a65222eb0ae3b6dd600f">LoopSound</a> = 0x08,
+<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a80dc1ede4410bd803ad29ed0aa30143f">SkipGrouping</a> = 0x10,
+<a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a48d48c530417f3bc3ccbd12ff3b05f5f">DefaultEvent</a> = 0xF000
+<br />
+ }</td></tr>
+<tr class="separator:ad9430ebe5109e91358334f6e20599774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab58c7fa6de1eb697a2cf2739fa3845d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> { <b>Notification</b>,
+<b>Warning</b>,
+<b>Error</b>,
+<b>Catastrophe</b>
+ }</td></tr>
+<tr class="separator:aab58c7fa6de1eb697a2cf2739fa3845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a9f26d02d5e4279775b74291f534038c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a9f26d02d5e4279775b74291f534038c4">action1Activated</a> ()</td></tr>
+<tr class="separator:a9f26d02d5e4279775b74291f534038c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752413516dac4d02baaacd77532badcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a752413516dac4d02baaacd77532badcd">action2Activated</a> ()</td></tr>
+<tr class="separator:a752413516dac4d02baaacd77532badcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563ad09b6d92c448a6debbc7d13ae85e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a563ad09b6d92c448a6debbc7d13ae85e">action3Activated</a> ()</td></tr>
+<tr class="separator:a563ad09b6d92c448a6debbc7d13ae85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23693b0d9ad4dab2f05d9899a61e173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ac23693b0d9ad4dab2f05d9899a61e173">activated</a> ()</td></tr>
+<tr class="separator:ac23693b0d9ad4dab2f05d9899a61e173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e260f21b73ee6c2ff381be1daf2a14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a51e260f21b73ee6c2ff381be1daf2a14">activated</a> (unsigned int action)</td></tr>
+<tr class="separator:a51e260f21b73ee6c2ff381be1daf2a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e92ab2ac1c5fcdb1c7d60f3f33b9910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a3e92ab2ac1c5fcdb1c7d60f3f33b9910">closed</a> ()</td></tr>
+<tr class="separator:a3e92ab2ac1c5fcdb1c7d60f3f33b9910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e761970c60fed897de6970d264abbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ad0e761970c60fed897de6970d264abbb">ignored</a> ()</td></tr>
+<tr class="separator:ad0e761970c60fed897de6970d264abbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ae49ddf67fb01571288e19cbbd18db1f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ae49ddf67fb01571288e19cbbd18db1f5">activate</a> (unsigned int action=0)</td></tr>
+<tr class="separator:ae49ddf67fb01571288e19cbbd18db1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a815de945cb7da4f0cfc0538add445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a50a815de945cb7da4f0cfc0538add445">close</a> ()</td></tr>
+<tr class="separator:a50a815de945cb7da4f0cfc0538add445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5190f75306a0587b0e8590ab47ff59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#afd5190f75306a0587b0e8590ab47ff59">deref</a> ()</td></tr>
+<tr class="separator:afd5190f75306a0587b0e8590ab47ff59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58972e149a21c049612727966cf2b67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ad58972e149a21c049612727966cf2b67">raiseWidget</a> ()</td></tr>
+<tr class="separator:ad58972e149a21c049612727966cf2b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37dbd2cccd26af667bea20a7df831c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ac37dbd2cccd26af667bea20a7df831c3">ref</a> ()</td></tr>
+<tr class="separator:ac37dbd2cccd26af667bea20a7df831c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11db3389218f37f37a4909893575232c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a11db3389218f37f37a4909893575232c">sendEvent</a> ()</td></tr>
+<tr class="separator:a11db3389218f37f37a4909893575232c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc8d032f41df3709982d36a1fd9821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a47cc8d032f41df3709982d36a1fd9821">update</a> ()</td></tr>
+<tr class="separator:a47cc8d032f41df3709982d36a1fd9821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a34579a8a833d21ec37f87cbb209c30b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a34579a8a833d21ec37f87cbb209c30b0">KNotification</a> (const QString &amp;<a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout)</td></tr>
+<tr class="separator:a34579a8a833d21ec37f87cbb209c30b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812d949eaf3c35c5a84cbcf9cfd65072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a812d949eaf3c35c5a84cbcf9cfd65072">KNotification</a> (const QString &amp;<a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const NotificationFlags &amp;<a class="el" href="classKNotification.html#a60b11401b564919003c154161aae8130">flags</a>, QObject *parent=NULL)</td></tr>
+<tr class="separator:a812d949eaf3c35c5a84cbcf9cfd65072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2b51485aea1b39fc2f94cb4bd6abea"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a1f2b51485aea1b39fc2f94cb4bd6abea">actions</a> () const</td></tr>
+<tr class="separator:a1f2b51485aea1b39fc2f94cb4bd6abea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63a684db8939ed36a7f83111b2a3c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ad63a684db8939ed36a7f83111b2a3c58">addContext</a> (const <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae">Context</a> &amp;context)</td></tr>
+<tr class="separator:ad63a684db8939ed36a7f83111b2a3c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099e2cda1ca8f6fbd14a620faaf1313e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a099e2cda1ca8f6fbd14a620faaf1313e">addContext</a> (const QString &amp;context_key, const QString &amp;context_value)</td></tr>
+<tr class="separator:a099e2cda1ca8f6fbd14a620faaf1313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb3148e0b8b1cb6603b750e0bcc478c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a9fb3148e0b8b1cb6603b750e0bcc478c">appName</a> () const</td></tr>
+<tr class="separator:a9fb3148e0b8b1cb6603b750e0bcc478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0bbbd4115714d0c0d23425af317813"><td class="memItemLeft" align="right" valign="top">ContextList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#afa0bbbd4115714d0c0d23425af317813">contexts</a> () const</td></tr>
+<tr class="separator:afa0bbbd4115714d0c0d23425af317813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc0429abfe0736e59a4131c13e74b40"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a> () const</td></tr>
+<tr class="separator:a2cc0429abfe0736e59a4131c13e74b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b11401b564919003c154161aae8130"><td class="memItemLeft" align="right" valign="top">NotificationFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a60b11401b564919003c154161aae8130">flags</a> () const</td></tr>
+<tr class="separator:a60b11401b564919003c154161aae8130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cceb4e05558bcfd3d7fefc8789538b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a25cceb4e05558bcfd3d7fefc8789538b">iconName</a> () const</td></tr>
+<tr class="separator:a25cceb4e05558bcfd3d7fefc8789538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011738c4aac562f2c468a6dbcfa373bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a011738c4aac562f2c468a6dbcfa373bd">id</a> ()</td></tr>
+<tr class="separator:a011738c4aac562f2c468a6dbcfa373bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4708e0a3c172cf631e8f090913c6a9e6"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a4708e0a3c172cf631e8f090913c6a9e6">pixmap</a> () const</td></tr>
+<tr class="separator:a4708e0a3c172cf631e8f090913c6a9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac45eeff3b873b7d4897715ee060cba8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ac45eeff3b873b7d4897715ee060cba8a">setActions</a> (const QStringList &amp;<a class="el" href="classKNotification.html#a1f2b51485aea1b39fc2f94cb4bd6abea">actions</a>)</td></tr>
+<tr class="separator:ac45eeff3b873b7d4897715ee060cba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b3667f80481ec60965df9d7ff7262d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#aa2b3667f80481ec60965df9d7ff7262d">setComponentName</a> (const QString &amp;componentName)</td></tr>
+<tr class="separator:aa2b3667f80481ec60965df9d7ff7262d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413f3bf74e3e8bc6f804d89779ccdea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a413f3bf74e3e8bc6f804d89779ccdea7">setContexts</a> (const ContextList &amp;<a class="el" href="classKNotification.html#afa0bbbd4115714d0c0d23425af317813">contexts</a>)</td></tr>
+<tr class="separator:a413f3bf74e3e8bc6f804d89779ccdea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b63788f43bfad07f6e34b4d768703e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a61b63788f43bfad07f6e34b4d768703e">setFlags</a> (const NotificationFlags &amp;<a class="el" href="classKNotification.html#a60b11401b564919003c154161aae8130">flags</a>)</td></tr>
+<tr class="separator:a61b63788f43bfad07f6e34b4d768703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9533d08af1499da4da7e1c92b8cd3b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a9533d08af1499da4da7e1c92b8cd3b70">setIconName</a> (const QString &amp;icon)</td></tr>
+<tr class="separator:a9533d08af1499da4da7e1c92b8cd3b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b66b837046d60028983ed8a1c695ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a6b66b837046d60028983ed8a1c695ba5">setPixmap</a> (const QPixmap &amp;pix)</td></tr>
+<tr class="separator:a6b66b837046d60028983ed8a1c695ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2874b264291273e990aef8dfe38009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#afd2874b264291273e990aef8dfe38009">setText</a> (const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>)</td></tr>
+<tr class="separator:afd2874b264291273e990aef8dfe38009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2222a832f2871d2c7e215ad034c3d605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a2222a832f2871d2c7e215ad034c3d605">setTitle</a> (const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>)</td></tr>
+<tr class="separator:a2222a832f2871d2c7e215ad034c3d605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc779d2f7861274612fb0395987717ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#adc779d2f7861274612fb0395987717ce">setWidget</a> (QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>)</td></tr>
+<tr class="separator:adc779d2f7861274612fb0395987717ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cd7b71c40584151707280b0d9a5861"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a> () const</td></tr>
+<tr class="separator:ac8cd7b71c40584151707280b0d9a5861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e60b39e2e1b697903adbaaedb9ab846"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a> () const</td></tr>
+<tr class="separator:a3e60b39e2e1b697903adbaaedb9ab846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c45ddb368851719eadeb91a8f31e971"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a> () const</td></tr>
+<tr class="separator:a1c45ddb368851719eadeb91a8f31e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5ce1cf40bb66d911f639a54aa3b987ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a5ce1cf40bb66d911f639a54aa3b987ce">beep</a> (const QString &amp;reason=QString(), QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L)</td></tr>
+<tr class="separator:a5ce1cf40bb66d911f639a54aa3b987ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8717a5c05793ac19f6970732c97f50dd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd">event</a> (const QString &amp;<a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>, const QPixmap &amp;<a class="el" href="classKNotification.html#a4708e0a3c172cf631e8f090913c6a9e6">pixmap</a>=QPixmap(), QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout, const QString &amp;componentName=QString())</td></tr>
+<tr class="separator:a8717a5c05793ac19f6970732c97f50dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e36456b3f5281d1d81b4880f9342ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a93e36456b3f5281d1d81b4880f9342ba">event</a> (const QString &amp;<a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>=QString(), const QPixmap &amp;<a class="el" href="classKNotification.html#a4708e0a3c172cf631e8f090913c6a9e6">pixmap</a>=QPixmap(), QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout, const QString &amp;componentName=QString())</td></tr>
+<tr class="separator:a93e36456b3f5281d1d81b4880f9342ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734235be35c4b925fa0a0232e76796c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a734235be35c4b925fa0a0232e76796c0">event</a> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>=QString(), const QPixmap &amp;<a class="el" href="classKNotification.html#a4708e0a3c172cf631e8f090913c6a9e6">pixmap</a>=QPixmap(), QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout)</td></tr>
+<tr class="separator:a734235be35c4b925fa0a0232e76796c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba92a7dabb3e184fc4de48ff197e420"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a5ba92a7dabb3e184fc4de48ff197e420">event</a> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>, const QPixmap &amp;<a class="el" href="classKNotification.html#a4708e0a3c172cf631e8f090913c6a9e6">pixmap</a>, QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout)</td></tr>
+<tr class="separator:a5ba92a7dabb3e184fc4de48ff197e420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0efcce935da76eb4c70df3492e69d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#adb0efcce935da76eb4c70df3492e69d7">event</a> (const QString &amp;<a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>, const QString &amp;<a class="el" href="classKNotification.html#a25cceb4e05558bcfd3d7fefc8789538b">iconName</a>, QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout, const QString &amp;componentName=QString())</td></tr>
+<tr class="separator:adb0efcce935da76eb4c70df3492e69d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4472ee1fabb67051efd5678d4fa87fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#aa4472ee1fabb67051efd5678d4fa87fd">event</a> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>, const QString &amp;<a class="el" href="classKNotification.html#a25cceb4e05558bcfd3d7fefc8789538b">iconName</a>, QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout)</td></tr>
+<tr class="separator:aa4472ee1fabb67051efd5678d4fa87fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3539986219f0fbc4b9da9bab430aea2c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classKNotification.html">KNotification</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a3539986219f0fbc4b9da9bab430aea2c">event</a> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a2cc0429abfe0736e59a4131c13e74b40">eventId</a>, const QString &amp;<a class="el" href="classKNotification.html#a3e60b39e2e1b697903adbaaedb9ab846">title</a>, const QString &amp;<a class="el" href="classKNotification.html#ac8cd7b71c40584151707280b0d9a5861">text</a>, QWidget *<a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a>=0L, const NotificationFlags &amp;flags=CloseOnTimeout)</td></tr>
+<tr class="separator:a3539986219f0fbc4b9da9bab430aea2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5c4c8e14263cb915b3bdb9cf8502b759"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKNotification.html#a5c4c8e14263cb915b3bdb9cf8502b759">eventFilter</a> (QObject *watched, QEvent *<a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd">event</a>) override</td></tr>
+<tr class="separator:a5c4c8e14263cb915b3bdb9cf8502b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a83df3f1b63350dfc6701202b76364ce7"><td class="memItemLeft" align="right" valign="top"><a id="a83df3f1b63350dfc6701202b76364ce7"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>standardEventToEventId</b> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd">event</a>)</td></tr>
+<tr class="separator:a83df3f1b63350dfc6701202b76364ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db773ff513f5d882eab9b732c8c206f"><td class="memItemLeft" align="right" valign="top"><a id="a6db773ff513f5d882eab9b732c8c206f"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>standardEventToIconName</b> (<a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a> <a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd">event</a>)</td></tr>
+<tr class="separator:a6db773ff513f5d882eab9b732c8c206f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a> is used to notify the user of an event. </p>
+<h1><a class="anchor" id="introduction"></a>
+introduction</h1>
+<p>There are two main kinds of notifications:</p>
+<ul>
+<li>Feedback events: For notifying the user that he/she just performed an operation, like maximizing a window. This allows us to play sounds when a dialog appears. This is an instant notification. It ends automatically after a small timeout.</li>
+</ul>
+<ul>
+<li>persistant notifications: Notify when the user received a new message, or when something else important happened the user has to know about. This notification has a start and a end. It begins when the event actually occurs, and finishes when the message is acknowledged or read.</li>
+</ul>
+<p>Example of a persistent notification in an instant messaging application: The application emits the notification when the message is actually received, and closes it only when the user has read the message (when the message window has received the focus) using the <a class="el" href="classKNotification.html#a50a815de945cb7da4f0cfc0538add445" title="Close the notification without activating it. ">close()</a> slot Persistent notifications must have the Persistent flag.</p>
+<p>By default a notification will use the application name as title, but you can also provide a brief text in the title and a more precise description in the body text. This is especially useful for notifications coming from applications which should be considered "part of the system", like a battery monitor or a network connection manager. For example a battery indicator could use "Low Battery" as a title and "Only
+12 minutes left." as a body text.</p>
+<p>In order to perform a notification, you need to create a description file, which contains default parameters of the notification, and use <a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd" title="emit an event ">KNotification::event</a> at the place in the application code where the notification occurs. The returned <a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a> pointer may be used to connect signals or slots</p>
+<h1><a class="anchor" id="file"></a>
+The global config file</h1>
+<p>Your application should install a file called <em>knotifications5/appname.notifyrc</em> in a QStandardPaths::GenericDataLocation directory.</p>
+<p>The filename should either match QCoreApplication::applicationName or be specified as the component name to the <a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a> object.</p>
+<p>You can do this with the following CMake command: install(FILES appname.notifyrc DESTINATION ${KNOTIFYRC_INSTALL_DIR}))</p>
+<p>This file contains mainly 3 parts </p><ol>
+<li>
+<a class="el" href="classKNotification.html#global">Global information</a> </li>
+<li>
+<a class="el" href="classKNotification.html#context">Context information</a> </li>
+<li>
+<a class="el" href="classKNotification.html#events">Definition of individual events</a></li>
+</ol>
+<h2><a class="anchor" id="global"></a>
+Global information</h2>
+<p>The global part looks like that </p><pre>
+        [Global]
+        IconName=Filename
+        Comment=Friendly Name of app
+        Name=Name of app
+</pre><p> The icon filename is just the name, without extension, it's found with the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kiconthemes-5.26.0/html/KIconThemes.tags:../../../frameworks/kiconthemes-5.26.0/html/" href="../../../frameworks/kiconthemes-5.26.0/html/classKIconLoader.html">KIconLoader</a>. The Comment field will be used in KControl to describe the application. The Name field is optional and may be used as the application name for popup, if Name is not present, Comment is used instead</p>
+<h2><a class="anchor" id="context"></a>
+Context information</h2>
+<p>This part consists of hints for the configuration widget </p><pre>
+        [Context/group]
+        Name=Group name
+        Comment=The name of the group for contacts</pre><pre>        [Context/folder]
+        Name=Group name
+ </pre><p> The second part of the groupname is the context identifier. It should not contain special characters. The Name field is the one the user will see (and which is translated)</p>
+<h2><a class="anchor" id="events"></a>
+Definition of Events</h2>
+<p>The definition of the events forms the most important part of the config file </p><pre>
+        [Event/newmail]
+        Name=New email
+        Comment=You have got a new email
+        Contexts=folder,group
+        Action=Sound|Popup</pre><pre>        [Event/contactOnline]
+        Name=Contact goes online
+        Comment=One of your contact has been connected
+        Contexts=group
+        Sound=filetoplay.ogg
+        Action=None
+ </pre><p> These are the default settings for each notifiable event. Action is the string representing the action. Actions can be added to <a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a> as plugins, by deriving from <a class="el" href="classKNotificationPlugin.html" title="abstract class for KNotification actions ">KNotificationPlugin</a>. At the time of writing, the following actions are available: Taskbar, Sound, Popup, Logfile, TTS, Execute. Actions can be combined by seperating them with '|'.</p>
+<p>Contexts is a comma separated list of possible context for this event.</p>
+<h1><a class="anchor" id="userfile"></a>
+The user's config file</h1>
+<p>This is an implementation detail, and is described here for your information.</p>
+<p>In the config file, there are two parts: the event configuration, and the context information </p>
+<h2><a class="anchor" id="context"></a>
+Context information</h2>
+<p>These are hints for the configuration dialog. They contain both the internal id of the context, and the user visible string. </p><pre>
+        [Context/group]
+        Values=1:Friends,2:Work,3:Family
+ </pre> <h2><a class="anchor" id="event"></a>
+Events configuration</h2>
+<p>This contains the configuration of events for the user. It contains the same fields as the description file. The key of groups is in the form <em>Event/&lt;EventName&gt;/&lt;ContextName&gt;/&lt;ContextValue&gt;</em> </p><pre>
+        [Event/contactOnline]
+        Action=Sound
+        Sound=/usr/share/sounds/super.ogg</pre><pre>        [Event/contactOnline/group/1]
+        Action=Popup|Sound
+</pre><h1><a class="anchor" id="example"></a>
+Example of code</h1>
+<p>This portion of code will fire the event for the "contactOnline" event</p>
+<div class="fragment"><div class="line"><a class="code" href="classKNotification.html">KNotification</a> *notification= <span class="keyword">new</span> <a class="code" href="classKNotification.html#a34579a8a833d21ec37f87cbb209c30b0">KNotification</a> ( <span class="stringliteral">&quot;contactOnline&quot;</span>, <a class="code" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971">widget</a> );</div><div class="line">notification-&gt;<a class="code" href="classKNotification.html#afd2874b264291273e990aef8dfe38009">setText</a>( i18n(<span class="stringliteral">&quot;The contact &lt;i&gt;%1&lt;/i&gt; has gone online&quot;</span>, contact-&gt;name() );</div><div class="line">notification-&gt;<a class="code" href="classKNotification.html#a6b66b837046d60028983ed8a1c695ba5">setPixmap</a>( contact-&gt;pixmap() );</div><div class="line">notification-&gt;<a class="code" href="classKNotification.html#ac45eeff3b873b7d4897715ee060cba8a">setActions</a>( QStringList( i18n( <span class="stringliteral">&quot;Open chat&quot;</span> ) ) );</div><div class="line"></div><div class="line"><span class="keywordflow">foreach</span>( <span class="keyword">const</span> QString &amp;group , contact-&gt;groups() ) {</div><div class="line">    notification-&gt;<a class="code" href="classKNotification.html#ad63a684db8939ed36a7f83111b2a3c58">addContext</a>( <span class="stringliteral">&quot;group&quot;</span> , group ) ;</div><div class="line">}</div><div class="line"></div><div class="line">connect(notification, SIGNAL(<a class="code" href="classKNotification.html#ac23693b0d9ad4dab2f05d9899a61e173">activated</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> )), contact , SLOT(slotOpenChat()) );</div><div class="line"></div><div class="line">notification-&gt;<a class="code" href="classKNotification.html#a11db3389218f37f37a4909893575232c">sendEvent</a>();</div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Olivier Goffart &lt;ogoffart at kde.org&gt; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8h_source.html#l00182">182</a> of file <a class="el" href="knotification_8h_source.html">knotification.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa57e3424c13e47db62de5c1dd9721aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57e3424c13e47db62de5c1dd9721aae">&#9670;&nbsp;</a></span>Context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QPair&lt;QString, QString&gt; <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae">KNotification::Context</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sometimes the user may want different notifications for the same event, depending the source of the event. </p>
+<p>Example, you want to be notified for mails that arrive in your folder "personal inbox" but not for those in "spam" folder</p>
+<p>A notification context is a pair of two strings. The first string is a key from what the context is. example "group" or "filter" (not translated). The second is the id of the context. In our example, the group id or the filter id in the applications. These strings are the ones present in the config file, and are in theory not shown in the user interface.</p>
+<p>The order of contexts in the list is is important, the most important context should be placed first. They are processed in that order when the notification occurs.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#a8717a5c05793ac19f6970732c97f50dd" title="emit an event ">event</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8h_source.html#l00205">205</a> of file <a class="el" href="knotification_8h_source.html">knotification.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad9430ebe5109e91358334f6e20599774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9430ebe5109e91358334f6e20599774">&#9670;&nbsp;</a></span>NotificationFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774">KNotification::NotificationFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774ae3f9719fcbedb6abfda1d7dc2dc1bb3f"></a>RaiseWidgetOnActivation&#160;</td><td class="fielddoc"><p>When the notification is activated, raise the notification's widget. </p>
+<p>This will change the desktop, raise the window, and switch to the tab. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>doesn't work yet </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f"></a>CloseOnTimeout&#160;</td><td class="fielddoc"><p>The notification will be automatically closed after a timeout. </p>
+<p>(this is the default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774a5bfeb35c8fde522675101d7b880845c7"></a>Persistent&#160;</td><td class="fielddoc"><p>The notification will NOT be automatically closed after a timeout. </p>
+<p>You will have to track the notification, and close it with the close function manually when the event is done, otherwise there will be a memory leak </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774a3eb20f7f7a620d6015c20e41897462d2"></a>CloseWhenWidgetActivated&#160;</td><td class="fielddoc"><p>The notification will be automatically closed if the <a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971" title="the widget associated to the notification ">widget()</a> becomes activated. </p>
+<p>If the widget is already activated when the notification occurs, the notification will be closed after a small timeout.</p>
+<p>This only works if the widget is the toplevel widget </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>make it work with tabulated widget </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774acd6ba88bb126a65222eb0ae3b6dd600f"></a>LoopSound&#160;</td><td class="fielddoc"><p>The audio plugin will loop the sound until the notification is closed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774a80dc1ede4410bd803ad29ed0aa30143f"></a>SkipGrouping&#160;</td><td class="fielddoc"><p>Sends a hint to Plasma to skip grouping for this notification. </p>
+<dl class="section since"><dt>Since</dt><dd>: 5.18 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ad9430ebe5109e91358334f6e20599774a48d48c530417f3bc3ccbd12ff3b05f5f"></a>DefaultEvent&#160;</td><td class="fielddoc"><p>The event is a standard kde event, and not an event of the application </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8h_source.html#l00208">208</a> of file <a class="el" href="knotification_8h_source.html">knotification.h</a>.</p>
+
+</div>
+</div>
+<a id="aab58c7fa6de1eb697a2cf2739fa3845d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab58c7fa6de1eb697a2cf2739fa3845d">&#9670;&nbsp;</a></span>StandardEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">KNotification::StandardEvent</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default events you can use in the event function </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8h_source.html#l00266">266</a> of file <a class="el" href="knotification_8h_source.html">knotification.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a34579a8a833d21ec37f87cbb209c30b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34579a8a833d21ec37f87cbb209c30b0">&#9670;&nbsp;</a></span>KNotification() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KNotification::KNotification </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new notification. </p>
+<p>You have to use sendEvent to show the notification.</p>
+<p>The pointer is automatically deleted when the event is closed.</p>
+<p>Make sure you use one of the NotificationFlags CloseOnTimeOut or CloseWhenWidgetActivated, if not, you have to close the notification yourself.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00072">72</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a812d949eaf3c35c5a84cbcf9cfd65072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812d949eaf3c35c5a84cbcf9cfd65072">&#9670;&nbsp;</a></span>KNotification() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KNotification::KNotification </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new notification. </p>
+<p>You have to use sendEvent to show the notification.</p>
+<p>The pointer is automatically deleted when the event is closed.</p>
+<p>Make sure you use one of the NotificationFlags CloseOnTimeOut or CloseWhenWidgetActivated, if not, you have to close the notification yourself.</p>
+<dl class="section since"><dt>Since</dt><dd>4.4</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00083">83</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f26d02d5e4279775b74291f534038c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f26d02d5e4279775b74291f534038c4">&#9670;&nbsp;</a></span>action1Activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::action1Activated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience signal that is emitted when the first action is activated. </p>
+
+</div>
+</div>
+<a id="a752413516dac4d02baaacd77532badcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752413516dac4d02baaacd77532badcd">&#9670;&nbsp;</a></span>action2Activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::action2Activated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a563ad09b6d92c448a6debbc7d13ae85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563ad09b6d92c448a6debbc7d13ae85e">&#9670;&nbsp;</a></span>action3Activated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::action3Activated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a1f2b51485aea1b39fc2f94cb4bd6abea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2b51485aea1b39fc2f94cb4bd6abea">&#9670;&nbsp;</a></span>actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList KNotification::actions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the list of actions </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00193">193</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae49ddf67fb01571288e19cbbd18db1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49ddf67fb01571288e19cbbd18db1f5">&#9670;&nbsp;</a></span>activate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::activate </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>action</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activate the action specified action If the action is zero, then the default action is activated. </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00246">246</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac23693b0d9ad4dab2f05d9899a61e173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23693b0d9ad4dab2f05d9899a61e173">&#9670;&nbsp;</a></span>activated <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::activated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted only when the default activation has occurred. </p>
+
+</div>
+</div>
+<a id="a51e260f21b73ee6c2ff381be1daf2a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e260f21b73ee6c2ff381be1daf2a14">&#9670;&nbsp;</a></span>activated <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::activated </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when an action has been activated. </p>
+<p>The parameter passed by the signal is the index of the action in the QStringList set by <a class="el" href="classKNotification.html#ac45eeff3b873b7d4897715ee060cba8a" title="Set the list of actions shown in the popup. ">setActions()</a> call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>will be 0 is the default aciton was activated, or the index of the action in the actions QStringList </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad63a684db8939ed36a7f83111b2a3c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63a684db8939ed36a7f83111b2a3c58">&#9670;&nbsp;</a></span>addContext() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::addContext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae">Context</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>append a context at the list of contexts, see KNotificaiton::Context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the context which is added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00221">221</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a099e2cda1ca8f6fbd14a620faaf1313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099e2cda1ca8f6fbd14a620faaf1313e">&#9670;&nbsp;</a></span>addContext() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::addContext </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>context_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>context_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context_key</td><td>is the key of the context </td></tr>
+    <tr><td class="paramname">context_value</td><td>is the value of the context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00226">226</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fb3148e0b8b1cb6603b750e0bcc478c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb3148e0b8b1cb6603b750e0bcc478c">&#9670;&nbsp;</a></span>appName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KNotification::appName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>appname used for the dbus object </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00408">408</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ce1cf40bb66d911f639a54aa3b987ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce1cf40bb66d911f639a54aa3b987ce">&#9670;&nbsp;</a></span>beep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::beep </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is a simple substitution for QApplication::beep() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>a short text explaining what has happened (may be empty) </td></tr>
+    <tr><td class="paramname">widget</td><td>the widget the notification refers to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00385">385</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50a815de945cb7da4f0cfc0538add445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a815de945cb7da4f0cfc0538add445">&#9670;&nbsp;</a></span>close</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close the notification without activating it. </p>
+<p>This will delete the notification. </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00269">269</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e92ab2ac1c5fcdb1c7d60f3f33b9910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e92ab2ac1c5fcdb1c7d60f3f33b9910">&#9670;&nbsp;</a></span>closed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::closed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the notification is closed. </p>
+<p>Can be closed either by the user clicking the close button, the timeout running out or when an action was triggered. </p>
+
+</div>
+</div>
+<a id="afa0bbbd4115714d0c0d23425af317813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0bbbd4115714d0c0d23425af317813">&#9670;&nbsp;</a></span>contexts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KNotification::ContextList KNotification::contexts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the list of contexts, see <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae" title="Sometimes the user may want different notifications for the same event, depending the source of the e...">KNotification::Context</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00211">211</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd5190f75306a0587b0e8590ab47ff59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5190f75306a0587b0e8590ab47ff59">&#9670;&nbsp;</a></span>deref</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::deref </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a reference made with <a class="el" href="classKNotification.html#ac37dbd2cccd26af667bea20a7df831c3" title="The notification will automatically be closed if all presentations are finished. ">ref()</a>. </p>
+<p>If the ref counter hits zero, the notification will be closed and deleted.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#ac37dbd2cccd26af667bea20a7df831c3" title="The notification will automatically be closed if all presentations are finished. ">ref</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00376">376</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8717a5c05793ac19f6970732c97f50dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8717a5c05793ac19f6970732c97f50dd">&#9670;&nbsp;</a></span>event() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em> = <code>QPixmap()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentName</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit an event </p>
+<p>This method creates the <a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a>, setting every parameter, and fire the event. You don't need to call sendEvent</p>
+<p>A popup may be displayed or a sound may be played, depending the config.</p>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classKNotification.html" title="KNotification is used to notify the user of an event. ">KNotification</a> . You may use that pointer to connect some signals or slot. the pointer is automatically deleted when the event is closed.</dd></dl>
+<p>Make sure you use one of the CloseOnTimeOut or CloseWhenWidgetActivated, if not, you have to close yourself the notification.</p>
+<dl class="section note"><dt>Note</dt><dd>the text is shown in a QLabel, you should escape HTML, if needed.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">title</td><td>is title of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">pixmap</td><td>is a picture which may be shown in the popup. </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+    <tr><td class="paramname">componentName</td><td>used to determine the location of the config file. by default, appname is used </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00311">311</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a93e36456b3f5281d1d81b4880f9342ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e36456b3f5281d1d81b4880f9342ba">&#9670;&nbsp;</a></span>event() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em> = <code>QPixmap()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentName</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">pixmap</td><td>is a picture which may be shown in the popup. </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+    <tr><td class="paramname">componentName</td><td>used to determine the location of the config file. by default, plasma_workspace is used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00325">325</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a734235be35c4b925fa0a0232e76796c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734235be35c4b925fa0a0232e76796c0">&#9670;&nbsp;</a></span>event() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a>&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em> = <code>QPixmap()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup </td></tr>
+    <tr><td class="paramname">pixmap</td><td>is a picture which may be shown in the popup </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00338">338</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ba92a7dabb3e184fc4de48ff197e420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba92a7dabb3e184fc4de48ff197e420">&#9670;&nbsp;</a></span>event() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a>&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">title</td><td>is title of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup </td></tr>
+    <tr><td class="paramname">pixmap</td><td>is a picture which may be shown in the popup </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00331">331</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb0efcce935da76eb4c70df3492e69d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0efcce935da76eb4c70df3492e69d7">&#9670;&nbsp;</a></span>event() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>iconName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentName</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event with the possibility of setting an icon by icon name </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>is the name of the event </td></tr>
+    <tr><td class="paramname">title</td><td>is title of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup </td></tr>
+    <tr><td class="paramname">iconName</td><td>a Freedesktop compatible icon name to be shown in the popup </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+    <tr><td class="paramname">componentName</td><td>used to determine the location of the config file. by default, plasma_workspace is used </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00344">344</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa4472ee1fabb67051efd5678d4fa87fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4472ee1fabb67051efd5678d4fa87fd">&#9670;&nbsp;</a></span>event() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a>&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>iconName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event with the possibility of setting an icon by icon name </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event with a custom icon</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>the type of the standard (not app-defined) event </td></tr>
+    <tr><td class="paramname">title</td><td>is title of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup </td></tr>
+    <tr><td class="paramname">iconName</td><td>a Freedesktop compatible icon name to be shown in the popup </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.9 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00359">359</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3539986219f0fbc4b9da9bab430aea2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3539986219f0fbc4b9da9bab430aea2c">&#9670;&nbsp;</a></span>event() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKNotification.html">KNotification</a> * KNotification::event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKNotification.html#aab58c7fa6de1eb697a2cf2739fa3845d">StandardEvent</a>&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>0L</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classKNotification.html#ad9430ebe5109e91358334f6e20599774a0532b8f9563e57e9163567018584fe4f">CloseOnTimeout</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>emit a standard event </p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>This will emit a standard event with its standard icon</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>the type of the standard (not app-defined) event </td></tr>
+    <tr><td class="paramname">title</td><td>is title of the notification to show in the popup. </td></tr>
+    <tr><td class="paramname">text</td><td>is the text of the notification to show in the popup </td></tr>
+    <tr><td class="paramname">widget</td><td>is a widget where the notification reports to </td></tr>
+    <tr><td class="paramname">flags</td><td>is a bitmask of NotificationFlag </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.9 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00366">366</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c4c8e14263cb915b3bdb9cf8502b759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4c8e14263cb915b3bdb9cf8502b759">&#9670;&nbsp;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KNotification::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>watched</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reimplemented for internal reasons </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00430">430</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2cc0429abfe0736e59a4131c13e74b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc0429abfe0736e59a4131c13e74b40">&#9670;&nbsp;</a></span>eventId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KNotification::eventId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the name of the event </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00106">106</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60b11401b564919003c154161aae8130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b11401b564919003c154161aae8130">&#9670;&nbsp;</a></span>flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KNotification::NotificationFlags KNotification::flags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the notification flags. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00231">231</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25cceb4e05558bcfd3d7fefc8789538b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cceb4e05558bcfd3d7fefc8789538b">&#9670;&nbsp;</a></span>iconName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KNotification::iconName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the icon shown in the popup </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#a9533d08af1499da4da7e1c92b8cd3b70" title="Set the icon that will be shown in the popup. ">setIconName</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>5.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00174">174</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a011738c4aac562f2c468a6dbcfa373bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011738c4aac562f2c468a6dbcfa373bd">&#9670;&nbsp;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KNotification::id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the id given by the notification manager </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00400">400</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0e761970c60fed897de6970d264abbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e761970c60fed897de6970d264abbb">&#9670;&nbsp;</a></span>ignored</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::ignored </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The notification has been ignored. </p>
+
+</div>
+</div>
+<a id="a4708e0a3c172cf631e8f090913c6a9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4708e0a3c172cf631e8f090913c6a9e6">&#9670;&nbsp;</a></span>pixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap KNotification::pixmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the pixmap shown in the popup </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#a6b66b837046d60028983ed8a1c695ba5" title="Set the pixmap that will be shown in the popup. ">setPixmap</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00179">179</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad58972e149a21c049612727966cf2b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58972e149a21c049612727966cf2b67">&#9670;&nbsp;</a></span>raiseWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::raiseWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Raise the widget. </p>
+<p>This will change the desktop, activate the window, and the tab if needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00282">282</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac37dbd2cccd26af667bea20a7df831c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37dbd2cccd26af667bea20a7df831c3">&#9670;&nbsp;</a></span>ref</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::ref </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The notification will automatically be closed if all presentations are finished. </p>
+<p>if you want to show your own presentation in your application, you should use this function, so it will not be automatically closed when there is nothing to show.</p>
+<p>Don't forgot to deref, or the notification may be never closed if there is no timeout.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#afd5190f75306a0587b0e8590ab47ff59" title="Remove a reference made with ref(). ">deref</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00372">372</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11db3389218f37f37a4909893575232c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11db3389218f37f37a4909893575232c">&#9670;&nbsp;</a></span>sendEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::sendEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send the notification to the server. </p>
+<p>This will cause all the configured plugins to execute their actions on this notification (eg. a sound will play, a popup will show, a command will be executed etc). </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00390">390</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac45eeff3b873b7d4897715ee060cba8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45eeff3b873b7d4897715ee060cba8a">&#9670;&nbsp;</a></span>setActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setActions </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>actions</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the list of actions shown in the popup. </p>
+<p>The strings passed in that QStringList will be used as labels for those actions, so ideally they should be wrapped in i18n() or tr() calls. In Plasma workspace, these will be shown as buttons inside the notification popup.</p>
+<p>The visual representation of actions however depends on the notification server</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actions</td><td>List of strings used as action labels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00198">198</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2b3667f80481ec60965df9d7ff7262d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b3667f80481ec60965df9d7ff7262d">&#9670;&nbsp;</a></span>setComponentName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setComponentName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>componentName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The componentData is used to determine the location of the config file. </p>
+<p>If no componentName is set, the app name is used by default</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentName</td><td>the new component name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00241">241</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a413f3bf74e3e8bc6f804d89779ccdea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413f3bf74e3e8bc6f804d89779ccdea7">&#9670;&nbsp;</a></span>setContexts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setContexts </td>
+          <td>(</td>
+          <td class="paramtype">const ContextList &amp;&#160;</td>
+          <td class="paramname"><em>contexts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the list of contexts, see <a class="el" href="classKNotification.html#aa57e3424c13e47db62de5c1dd9721aae" title="Sometimes the user may want different notifications for the same event, depending the source of the e...">KNotification::Context</a> </p>
+<p>The list of contexts must be set before calling sendEvent; </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00216">216</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61b63788f43bfad07f6e34b4d768703e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b63788f43bfad07f6e34b4d768703e">&#9670;&nbsp;</a></span>setFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setFlags </td>
+          <td>(</td>
+          <td class="paramtype">const NotificationFlags &amp;&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the notification flags. </p>
+<p>These must be set before calling <a class="el" href="classKNotification.html#a11db3389218f37f37a4909893575232c" title="Send the notification to the server. ">sendEvent()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00236">236</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9533d08af1499da4da7e1c92b8cd3b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9533d08af1499da4da7e1c92b8cd3b70">&#9670;&nbsp;</a></span>setIconName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setIconName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>icon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the icon that will be shown in the popup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icon</td><td>the icon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.4 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00161">161</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b66b837046d60028983ed8a1c695ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b66b837046d60028983ed8a1c695ba5">&#9670;&nbsp;</a></span>setPixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setPixmap </td>
+          <td>(</td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the pixmap that will be shown in the popup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pix</td><td>the pixmap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00184">184</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd2874b264291273e990aef8dfe38009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2874b264291273e990aef8dfe38009">&#9670;&nbsp;</a></span>setText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the notification text that will appear in the popup. </p>
+<p>In Plasma workspace, the text is shown in a QML label which uses Text.StyledText, ie. it supports a small subset of HTML entities (mostly just formatting tags)</p>
+<p>If the notifications server does not advertise "body-markup" capability, all HTML tags are stripped before sending it to the server</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text to display in the notification popup </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00148">148</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2222a832f2871d2c7e215ad034c3d605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2222a832f2871d2c7e215ad034c3d605">&#9670;&nbsp;</a></span>setTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setTitle </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the title of the notification popup. </p>
+<p>If no title is set, the application name will be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The title of the notification </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>4.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00135">135</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc779d2f7861274612fb0395987717ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc779d2f7861274612fb0395987717ce">&#9670;&nbsp;</a></span>setWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::setWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the widget associated to the notification. </p>
+<p>The notification is reparented to the new widget. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#a1c45ddb368851719eadeb91a8f31e971" title="the widget associated to the notification ">widget()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>the new widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00126">126</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8cd7b71c40584151707280b0d9a5861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cd7b71c40584151707280b0d9a5861">&#9670;&nbsp;</a></span>text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KNotification::text </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the notification text </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#afd2874b264291273e990aef8dfe38009" title="Set the notification text that will appear in the popup. ">setText</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00116">116</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e60b39e2e1b697903adbaaedb9ab846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e60b39e2e1b697903adbaaedb9ab846">&#9670;&nbsp;</a></span>title()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KNotification::title </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the notification title </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKNotification.html#a2222a832f2871d2c7e215ad034c3d605" title="Set the title of the notification popup. ">setTitle</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.3 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00111">111</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47cc8d032f41df3709982d36a1fd9821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cc8d032f41df3709982d36a1fd9821">&#9670;&nbsp;</a></span>update</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KNotification::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>update the texts, the icon, and the actions of one existing notification </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00423">423</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c45ddb368851719eadeb91a8f31e971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c45ddb368851719eadeb91a8f31e971">&#9670;&nbsp;</a></span>widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * KNotification::widget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the widget associated to the notification </p>
+<p>If the widget is destroyed, the notification will be automatically cancelled. If the widget is activated, the notification will be automatically closed if the NotificationFlags specify that</p>
+<p>When the notification is activated, the widget might be raised. Depending on the configuration, the taskbar entry of the window containing the widget may blink. </p>
+
+<p class="definition">Definition at line <a class="el" href="knotification_8cpp_source.html#l00121">121</a> of file <a class="el" href="knotification_8cpp_source.html">knotification.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="knotification_8h_source.html">knotification.h</a></li>
+<li><a class="el" href="knotification_8cpp_source.html">knotification.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:31 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

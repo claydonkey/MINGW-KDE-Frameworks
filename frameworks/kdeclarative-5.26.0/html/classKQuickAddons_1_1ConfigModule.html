@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDeclarative - KQuickAddons::ConfigModule Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDeclarative</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDeclarative"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKQuickAddons_1_1ConfigModule.html">KQuickAddons::ConfigModule</option>
+        
+        <option value="classDeclarativeMimeData.html">DeclarativeMimeData</option>
+        
+        <option value="classImageTexturesCache.html">ImageTexturesCache</option>
+        
+        <option value="classKDeclarativeMouseEvent.html">KDeclarativeMouseEvent</option>
+        
+        <option value="classKUserProxy.html">KUserProxy</option>
+        
+        <option value="classKWindowSystemProxy.html">KWindowSystemProxy</option>
+        
+        <option value="classManagedTextureNode.html">ManagedTextureNode</option>
+        
+        <option value="classMimeDataWrapper.html">MimeDataWrapper</option>
+        
+        <option value="classPlotData.html">PlotData</option>
+        
+        <option value="classKDeclarative_1_1QmlObject.html">KDeclarative::QmlObject</option>
+        
+        <option value="classKDeclarative_1_1QmlObjectSharedEngine.html">KDeclarative::QmlObjectSharedEngine</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Provides integration of QML and KDE Frameworks</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:notmart@gmail.com">Marco Martin</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Declarative)
+target_link_libraries(yourapp KF5::Declarative)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDeclarative </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdeclarative-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDeclarative on <a href="https://cgit.kde.org/kdeclarative-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDeclarative </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=ConfigModule">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KQuickAddons</b></li><li class="navelem"><a class="el" href="classKQuickAddons_1_1ConfigModule.html">ConfigModule</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classKQuickAddons_1_1ConfigModule-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KQuickAddons::ConfigModule Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="configmodule_8h_source.html">configmodule.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af01b919b1a15263445b7a27fc08e6225"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#af01b919b1a15263445b7a27fc08e6225">Button</a> { <b>NoAdditionalButton</b> = 0,
+<b>Help</b> = 1,
+<b>Default</b> = 2,
+<b>Apply</b> = 4
+ }</td></tr>
+<tr class="separator:af01b919b1a15263445b7a27fc08e6225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a1a161b3317be619f2e6a46b9b79d44c3"><td class="memItemLeft" align="right" valign="top"><a id="a1a161b3317be619f2e6a46b9b79d44c3"></a>
+KQuickAddons::ConfigModule::Buttons&#160;</td><td class="memItemRight" valign="bottom"><b>buttons</b></td></tr>
+<tr class="separator:a1a161b3317be619f2e6a46b9b79d44c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb6fac0909aabf5aa71cbec8ef92dcb"><td class="memItemLeft" align="right" valign="top"><a id="a1cb6fac0909aabf5aa71cbec8ef92dcb"></a>
+QQuickItem&#160;</td><td class="memItemRight" valign="bottom"><b>mainUi</b></td></tr>
+<tr class="separator:a1cb6fac0909aabf5aa71cbec8ef92dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd38866bcd0fa8045869980c6250d503"><td class="memItemLeft" align="right" valign="top"><a id="abd38866bcd0fa8045869980c6250d503"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>needsAuthorization</b></td></tr>
+<tr class="separator:abd38866bcd0fa8045869980c6250d503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5402de9d229d785a38b31b5e38dd54a4"><td class="memItemLeft" align="right" valign="top"><a id="a5402de9d229d785a38b31b5e38dd54a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>needsSave</b></td></tr>
+<tr class="separator:a5402de9d229d785a38b31b5e38dd54a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc8f85fde5375f3447cecf4cab348b7"><td class="memItemLeft" align="right" valign="top"><a id="a1bc8f85fde5375f3447cecf4cab348b7"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>quickHelp</b></td></tr>
+<tr class="separator:a1bc8f85fde5375f3447cecf4cab348b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95ae6ec09a5bb13b0d4522c6e914f52"><td class="memItemLeft" align="right" valign="top"><a id="ad95ae6ec09a5bb13b0d4522c6e914f52"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>rootOnlyMessage</b></td></tr>
+<tr class="separator:ad95ae6ec09a5bb13b0d4522c6e914f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf1381e4d84e7ef2afde47272d8644a"><td class="memItemLeft" align="right" valign="top"><a id="a0bf1381e4d84e7ef2afde47272d8644a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>useRootOnlyMessage</b></td></tr>
+<tr class="separator:a0bf1381e4d84e7ef2afde47272d8644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a7def293c57916041b4a89743316f1cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a7def293c57916041b4a89743316f1cce">authActionNameChanged</a> ()</td></tr>
+<tr class="separator:a7def293c57916041b4a89743316f1cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e3f1c566a75ee1d6e90aea7d340560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#ad0e3f1c566a75ee1d6e90aea7d340560">buttonsChanged</a> ()</td></tr>
+<tr class="separator:ad0e3f1c566a75ee1d6e90aea7d340560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d2fcff0069b0582f9d55d355b9396e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a07d2fcff0069b0582f9d55d355b9396e">needsAuthorizationChanged</a> ()</td></tr>
+<tr class="separator:a07d2fcff0069b0582f9d55d355b9396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7633b09cee3e3e419a73c991ae9e49f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a7633b09cee3e3e419a73c991ae9e49f4">needsSaveChanged</a> ()</td></tr>
+<tr class="separator:a7633b09cee3e3e419a73c991ae9e49f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1510b4319baf0d7af2fc68f3428494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#aca1510b4319baf0d7af2fc68f3428494">quickHelpChanged</a> ()</td></tr>
+<tr class="separator:aca1510b4319baf0d7af2fc68f3428494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6acbb858354c23005c7634af63e13fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#ab6acbb858354c23005c7634af63e13fc">rootOnlyMessageChanged</a> ()</td></tr>
+<tr class="separator:ab6acbb858354c23005c7634af63e13fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a4b066039a4f1f0cb7572d357ca4ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#ad6a4b066039a4f1f0cb7572d357ca4ae">useRootOnlyMessageChanged</a> ()</td></tr>
+<tr class="separator:ad6a4b066039a4f1f0cb7572d357ca4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a0565e9c7878ab7ddc4a1b83aa2796102"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a0565e9c7878ab7ddc4a1b83aa2796102">defaults</a> ()</td></tr>
+<tr class="separator:a0565e9c7878ab7ddc4a1b83aa2796102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5880e378b8f40325a54b2a54de5bb1a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a5880e378b8f40325a54b2a54de5bb1a2">load</a> ()</td></tr>
+<tr class="separator:a5880e378b8f40325a54b2a54de5bb1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a95833182941b69cf99e311d0ece5bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb">save</a> ()</td></tr>
+<tr class="separator:a2a95833182941b69cf99e311d0ece5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a42991e8f4f94c87f0856f90395a656e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a42991e8f4f94c87f0856f90395a656e9">ConfigModule</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *<a class="el" href="classKQuickAddons_1_1ConfigModule.html#a4f7a2c65040e6f42c8a31f086ecf03ee">aboutData</a>, QObject *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:a42991e8f4f94c87f0856f90395a656e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b887e68a9a2ef37d0f59aa805151c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a88b887e68a9a2ef37d0f59aa805151c6">ConfigModule</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;metaData, QObject *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:a88b887e68a9a2ef37d0f59aa805151c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92db6ba3881c9fac41bdfd318cf9f91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#ab92db6ba3881c9fac41bdfd318cf9f91">ConfigModule</a> (QObject *parent=0, const QVariantList &amp;args=QVariantList())</td></tr>
+<tr class="separator:ab92db6ba3881c9fac41bdfd318cf9f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30c800456c5c7c43f79247a7abf92ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#ac30c800456c5c7c43f79247a7abf92ce">~ConfigModule</a> ()</td></tr>
+<tr class="separator:ac30c800456c5c7c43f79247a7abf92ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7a2c65040e6f42c8a31f086ecf03ee"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a4f7a2c65040e6f42c8a31f086ecf03ee">aboutData</a> () const</td></tr>
+<tr class="separator:a4f7a2c65040e6f42c8a31f086ecf03ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3277c743fe3e1a6091adb93d5a8efd"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2b3277c743fe3e1a6091adb93d5a8efd">authActionName</a> () const</td></tr>
+<tr class="separator:a2b3277c743fe3e1a6091adb93d5a8efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42076b8a5df83498be320300d4565d3"><td class="memItemLeft" align="right" valign="top">Buttons&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#aa42076b8a5df83498be320300d4565d3">buttons</a> () const</td></tr>
+<tr class="separator:aa42076b8a5df83498be320300d4565d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a837141e0b4175c4329239b7650e69"><td class="memItemLeft" align="right" valign="top">QQmlEngine *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a29a837141e0b4175c4329239b7650e69">engine</a> () const</td></tr>
+<tr class="separator:a29a837141e0b4175c4329239b7650e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f4c116a5be72f91da9b67edab641a3"><td class="memItemLeft" align="right" valign="top">QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a53f4c116a5be72f91da9b67edab641a3">mainUi</a> ()</td></tr>
+<tr class="separator:a53f4c116a5be72f91da9b67edab641a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fb814369411e92cfd9c12fb9f02d17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a23fb814369411e92cfd9c12fb9f02d17">needsAuthorization</a> () const</td></tr>
+<tr class="separator:a23fb814369411e92cfd9c12fb9f02d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f530e459530a73cbb4ae46ecd76059"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a59f530e459530a73cbb4ae46ecd76059">needsSave</a> ()</td></tr>
+<tr class="separator:a59f530e459530a73cbb4ae46ecd76059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c34a82278908af5f43e7532b48e139a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a0c34a82278908af5f43e7532b48e139a">quickHelp</a> () const</td></tr>
+<tr class="separator:a0c34a82278908af5f43e7532b48e139a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea4e576cd40aa4a86111e178e0809b9"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a8ea4e576cd40aa4a86111e178e0809b9">rootOnlyMessage</a> () const</td></tr>
+<tr class="separator:a8ea4e576cd40aa4a86111e178e0809b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fba18519127c8139f02e272f1ac3fdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a0fba18519127c8139f02e272f1ac3fdd">setAboutData</a> (const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *about)</td></tr>
+<tr class="separator:a0fba18519127c8139f02e272f1ac3fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb62ff7ad8266a12ca15f27fa0b45f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#addb62ff7ad8266a12ca15f27fa0b45f5">setAuthActionName</a> (const QString &amp;action)</td></tr>
+<tr class="separator:addb62ff7ad8266a12ca15f27fa0b45f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109e25082f42134c37c8ea4ea4b7c56f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a109e25082f42134c37c8ea4ea4b7c56f">setButtons</a> (const Buttons btn)</td></tr>
+<tr class="separator:a109e25082f42134c37c8ea4ea4b7c56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8483a64dcf93b733e1cfd1db4fd8b989"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a8483a64dcf93b733e1cfd1db4fd8b989">setNeedsAuthorization</a> (bool needsAuth)</td></tr>
+<tr class="separator:a8483a64dcf93b733e1cfd1db4fd8b989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7a3b5ca7b60e821d547937d6a3d992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a1f7a3b5ca7b60e821d547937d6a3d992">setNeedsSave</a> (bool needs)</td></tr>
+<tr class="separator:a1f7a3b5ca7b60e821d547937d6a3d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d304a8726f89da333d38adbbae0952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a32d304a8726f89da333d38adbbae0952">setQuickHelp</a> (const QString &amp;help)</td></tr>
+<tr class="separator:a32d304a8726f89da333d38adbbae0952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c7b133ef78fc9d0ae704519babe933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a27c7b133ef78fc9d0ae704519babe933">setRootOnlyMessage</a> (const QString &amp;message)</td></tr>
+<tr class="separator:a27c7b133ef78fc9d0ae704519babe933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89189ff460977c6d350f956eb58ae36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a89189ff460977c6d350f956eb58ae36e">setUseRootOnlyMessage</a> (bool on)</td></tr>
+<tr class="separator:a89189ff460977c6d350f956eb58ae36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7b5767d350f98b6343ffcf6a64c771"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a1a7b5767d350f98b6343ffcf6a64c771">useRootOnlyMessage</a> () const</td></tr>
+<tr class="separator:a1a7b5767d350f98b6343ffcf6a64c771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:add53934ca9f202e38e8e7e2997a2085b"><td class="memItemLeft" align="right" valign="top"><a id="add53934ca9f202e38e8e7e2997a2085b"></a>
+static <a class="el" href="classKQuickAddons_1_1ConfigModule.html">ConfigModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>qmlAttachedProperties</b> (QObject *object)</td></tr>
+<tr class="separator:add53934ca9f202e38e8e7e2997a2085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The base class for configuration modules. </p>
+<p>Configuration modules are realized as plugins that are loaded only when needed.</p>
+<p>The module in principle is a simple widget displaying the item to be changed. The module has a very small interface.</p>
+<p>All the necessary glue logic and the GUI bells and whistles are provided by the control center and must not concern the module author.</p>
+<p>To write a config module, you have to create a C++ library and an accompaining QML user interface. The library must contain a factory function like the following:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;KPluginFactory&gt;</span></div><div class="line"></div><div class="line"><a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginFactory.html#a8acc809ba542c82fa8f1941cce24170c">K_PLUGIN_FACTORY</a>(MyConfigModuleFactory, registerPlugin&lt;MyConfigModule&gt;() )</div></div><!-- fragment --><p>The constructor of the <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> then looks like this: </p><div class="fragment"><div class="line">YourConfigModule::YourConfigModule( QObject* parent )</div><div class="line">  : <a class="code" href="classKQuickAddons_1_1ConfigModule.html#a42991e8f4f94c87f0856f90395a656e9">ConfigModule</a>( parent )</div><div class="line">{</div><div class="line">  <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKMessageBox.html#aa36304133832d679a67022a94a17259b">about</a> = <span class="keyword">new</span> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a>(</div><div class="line">    &lt;kcm name&gt;, i18n( <span class="stringliteral">&quot;...&quot;</span> ),</div><div class="line">    KDE_VERSION_STRING, QString(), KAboutLicense::GPL,</div><div class="line">    i18n( <span class="stringliteral">&quot;Copyright 2006 ...&quot;</span> ) );</div><div class="line">  about-&gt;<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html#adea6c2b5a028f7482e7d07e6b67f59b8">addAuthor</a>( i18n(...) );</div><div class="line">  setAboutData( about );</div><div class="line">  .</div><div class="line">  .</div><div class="line">  .</div><div class="line">}</div></div><!-- fragment --><p>The QML part must be in the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/namespaceKPackage.html">KPackage</a> format, installed under share/kpackage/kcms. </p><dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kpackage-5.26.0/html/Package.tags:../../../frameworks/kpackage-5.26.0/html/" href="../../../frameworks/kpackage-5.26.0/html/classKPackage_1_1Package.html">KPackage::Package</a> The package must have the same name as the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> componentName, to be installed by CMake with the command: kpackage_install_package(package kcm_componentName kcms) given "package" is the subdirectory in the source tree where the package sources are located, and "kcm_componentName" is the componentname passed to the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> in the C++ part. The main config dialog UI will be the file ui/main.qml from the package (or what X-KPackage-MainScript value is in the package metadata desktop file).</dd></dl>
+<p>The QML part can access all the properties of <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> (together with the properties defined in its subclass) by accessing to the global object "kcm", or with the import of "org.kde.kcm 1.0" the <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> attached property.</p>
+<div class="fragment"><div class="line"><span class="keyword">import</span> QtQuick 2.1</div><div class="line">import QtQuick.Controls 1.0 as QtControls</div><div class="line"><span class="keyword">import</span> org.kde.kcm 1.0</div><div class="line">import org.kde.plasma.core 2.0 as PlasmaCore</div><div class="line"></div><div class="line">Item {</div><div class="line">    <span class="comment">//implicitWidth and implicitHeight will be used as initial size</span></div><div class="line">    <span class="comment">//when loaded in kcmshell5</span></div><div class="line">    implicitWidth: units.gridUnit * 20</div><div class="line">    implicitHeight: units.gridUnit * 20</div><div class="line"></div><div class="line">    <a class="code" href="classKQuickAddons_1_1ConfigModule.html#a42991e8f4f94c87f0856f90395a656e9">ConfigModule</a>.buttons: <a class="code" href="classKQuickAddons_1_1ConfigModule.html#a42991e8f4f94c87f0856f90395a656e9">ConfigModule</a>.Help|<a class="code" href="classKQuickAddons_1_1ConfigModule.html#a42991e8f4f94c87f0856f90395a656e9">ConfigModule</a>.Apply</div><div class="line">    Label {</div><div class="line">        text: kcm.needsSave</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p>If you want to make the <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> available only conditionally (i.e. show in the list of available modules only if some test succeeds) then you can use Hidden in the .desktop file. An example: </p><div class="fragment"><div class="line">Hidden[$e]=$(<span class="keywordflow">if</span> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kwidgetsaddons-5.26.0/html/KWidgetsAddons.tags:../../../frameworks/kwidgetsaddons-5.26.0/html/" href="../../../frameworks/kwidgetsaddons-5.26.0/html/namespaceKStandardGuiItem.html#ad0978464527e1406c7422ae63ccac7fb">test</a> -e /dev/js*; then echo <span class="stringliteral">&quot;false&quot;</span>; <span class="keywordflow">else</span> echo <span class="stringliteral">&quot;true&quot;</span>; fi)</div></div><!-- fragment --><p> The example executes the given code in a shell and uses the stdout output for the Hidden value (so it's either Hidden=true or Hidden=false).</p>
+<p>See <a href="http://techbase.kde.org/Development/Tutorials/KCM_HowTo">http://techbase.kde.org/Development/Tutorials/KCM_HowTo</a> for more detailed documentation. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8h_source.html#l00135">135</a> of file <a class="el" href="configmodule_8h_source.html">configmodule.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="af01b919b1a15263445b7a27fc08e6225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01b919b1a15263445b7a27fc08e6225">&#9670;&nbsp;</a></span>Button</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classKQuickAddons_1_1ConfigModule.html#af01b919b1a15263445b7a27fc08e6225">KQuickAddons::ConfigModule::Button</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumeration type for the buttons used by this module. </p>
+<p>You should only use Help, Default and Apply. The rest is obsolete. NoAdditionalButton can be used when we do not want have other button that Ok Cancel</p>
+<dl class="section see"><dt>See also</dt><dd>ConfigModule::buttons </dd>
+<dd>
+<a class="el" href="classKQuickAddons_1_1ConfigModule.html#a109e25082f42134c37c8ea4ea4b7c56f" title="Sets the buttons to display. ">ConfigModule::setButtons</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8h_source.html#l00157">157</a> of file <a class="el" href="configmodule_8h_source.html">configmodule.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a42991e8f4f94c87f0856f90395a656e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42991e8f4f94c87f0856f90395a656e9">&#9670;&nbsp;</a></span>ConfigModule() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KQuickAddons::ConfigModule::ConfigModule </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td>
+          <td class="paramname"><em>aboutData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base class for all KControlModules. </p>
+<dl class="section note"><dt>Note</dt><dd>do not emit changed signals here, since they are not yet connected to any slot. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aboutData</td><td>becomes owned by the <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00082">82</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a88b887e68a9a2ef37d0f59aa805151c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b887e68a9a2ef37d0f59aa805151c6">&#9670;&nbsp;</a></span>ConfigModule() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KQuickAddons::ConfigModule::ConfigModule </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKPluginMetaData.html">KPluginMetaData</a> &amp;&#160;</td>
+          <td class="paramname"><em>metaData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>do not emit changed signals here, since they are not yet connected to any slot. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metaData</td><td>description for the plugin: it will generate a <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> from that </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00088">88</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab92db6ba3881c9fac41bdfd318cf9f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92db6ba3881c9fac41bdfd318cf9f91">&#9670;&nbsp;</a></span>ConfigModule() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KQuickAddons::ConfigModule::ConfigModule </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariantList &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code>QVariantList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base class for all KControlModules. </p>
+<dl class="section note"><dt>Note</dt><dd>do not emit changed signals here, since they are not yet connected to any slot. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00099">99</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac30c800456c5c7c43f79247a7abf92ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30c800456c5c7c43f79247a7abf92ce">&#9670;&nbsp;</a></span>~ConfigModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KQuickAddons::ConfigModule::~ConfigModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the module. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00104">104</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4f7a2c65040e6f42c8a31f086ecf03ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7a2c65040e6f42c8a31f086ecf03ee">&#9670;&nbsp;</a></span>aboutData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> * KQuickAddons::ConfigModule::aboutData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is generally only called for the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kxmlgui-5.26.0/html/KXmlGui.tags:../../../frameworks/kxmlgui-5.26.0/html/" href="../../../frameworks/kxmlgui-5.26.0/html/classKBugReport.html">KBugReport</a>. </p>
+<p>If you override you should have it return a pointer to a constant.</p>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> for this module </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00228">228</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2b3277c743fe3e1a6091adb93d5a8efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3277c743fe3e1a6091adb93d5a8efd">&#9670;&nbsp;</a></span>authActionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KQuickAddons::ConfigModule::authActionName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the action previously set with <a class="el" href="classKQuickAddons_1_1ConfigModule.html#addb62ff7ad8266a12ca15f27fa0b45f5" title="Set if the module&#39;s save() method requires authorization to be executed. ">setAuthActionName()</a>. </p>
+<p>By default its an invalid action.</p>
+<dl class="section return"><dt>Returns</dt><dd>The action that has to be authorized to execute the <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb" title="Save the configuration data. ">save()</a> method. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00204">204</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7def293c57916041b4a89743316f1cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7def293c57916041b4a89743316f1cce">&#9670;&nbsp;</a></span>authActionNameChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::authActionNameChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The auth action name has changed: this signal will relay it to the actual KCM. </p>
+
+</div>
+</div>
+<a id="aa42076b8a5df83498be320300d4565d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42076b8a5df83498be320300d4565d3">&#9670;&nbsp;</a></span>buttons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Buttons KQuickAddons::ConfigModule::buttons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate which buttons will be used. </p>
+<p>The return value is a value or'ed together from the Button enumeration type.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a109e25082f42134c37c8ea4ea4b7c56f" title="Sets the buttons to display. ">ConfigModule::setButtons</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad0e3f1c566a75ee1d6e90aea7d340560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e3f1c566a75ee1d6e90aea7d340560">&#9670;&nbsp;</a></span>buttonsChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::buttonsChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Buttons to display changed. </p>
+
+</div>
+</div>
+<a id="a0565e9c7878ab7ddc4a1b83aa2796102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0565e9c7878ab7ddc4a1b83aa2796102">&#9670;&nbsp;</a></span>defaults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::defaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the configuration to sensible default values. </p>
+<p>This method is called when the user clicks the "Default" button. It should set the display to useful values. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00224">224</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a29a837141e0b4175c4329239b7650e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a837141e0b4175c4329239b7650e69">&#9670;&nbsp;</a></span>engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQmlEngine * KQuickAddons::ConfigModule::engine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the qml engine that built the main config UI </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00209">209</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5880e378b8f40325a54b2a54de5bb1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5880e378b8f40325a54b2a54de5bb1a2">&#9670;&nbsp;</a></span>load</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the configuration data into the module. </p>
+<p>The load method sets the user interface elements of the module to reflect the current settings stored in the configuration files.</p>
+<p>This method is invoked whenever the module should read its configuration (most of the times from a config file) and update the user interface. This happens when the user clicks the "Reset" button in the control center, to undo all of his changes and restore the currently valid settings. It is also called right after construction. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00214">214</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53f4c116a5be72f91da9b67edab641a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f4c116a5be72f91da9b67edab641a3">&#9670;&nbsp;</a></span>mainUi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuickItem* KQuickAddons::ConfigModule::mainUi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The main UI for this configuration module. It's a QQuickItem coming from the QML package named the same as the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a>'s component name for this config module </dd></dl>
+
+</div>
+</div>
+<a id="a23fb814369411e92cfd9c12fb9f02d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fb814369411e92cfd9c12fb9f02d17">&#9670;&nbsp;</a></span>needsAuthorization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KQuickAddons::ConfigModule::needsAuthorization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value previously set with <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a8483a64dcf93b733e1cfd1db4fd8b989" title="Set if the module&#39;s save() method requires authorization to be executed. ">setNeedsAuthorization()</a> or <a class="el" href="classKQuickAddons_1_1ConfigModule.html#addb62ff7ad8266a12ca15f27fa0b45f5" title="Set if the module&#39;s save() method requires authorization to be executed. ">setAuthActionName()</a>. </p>
+<p>By default it's <code>false</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the module's <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb" title="Save the configuration data. ">save()</a> method requires authorization, <code>false</code> otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a07d2fcff0069b0582f9d55d355b9396e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d2fcff0069b0582f9d55d355b9396e">&#9670;&nbsp;</a></span>needsAuthorizationChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::needsAuthorizationChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emits this signal whenever the need for root authorization to save changes. </p>
+
+</div>
+</div>
+<a id="a59f530e459530a73cbb4ae46ecd76059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f530e459530a73cbb4ae46ecd76059">&#9670;&nbsp;</a></span>needsSave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KQuickAddons::ConfigModule::needsSave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True when the module has something changed and needs save. </p>
+
+</div>
+</div>
+<a id="a7633b09cee3e3e419a73c991ae9e49f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7633b09cee3e3e419a73c991ae9e49f4">&#9670;&nbsp;</a></span>needsSaveChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::needsSaveChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicate that the state of the modules contents has changed. </p>
+<p>This signal is emitted whenever the state of the configuration shown in the module changes. It allows the module container to keep track of unsaved changes. </p>
+
+</div>
+</div>
+<a id="a0c34a82278908af5f43e7532b48e139a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c34a82278908af5f43e7532b48e139a">&#9670;&nbsp;</a></span>quickHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KQuickAddons::ConfigModule::quickHelp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a quick-help text. </p>
+<p>This method is called when the module is docked. The quick-help text should contain a short description of the module and links to the module's help files. You can use HTML formatting tags in the text.</p>
+<dl class="section note"><dt>Note</dt><dd>make sure the quick help text gets translated (use i18n()). </dd></dl>
+
+</div>
+</div>
+<a id="aca1510b4319baf0d7af2fc68f3428494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1510b4319baf0d7af2fc68f3428494">&#9670;&nbsp;</a></span>quickHelpChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::quickHelpChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicate that the module's quickhelp has changed. </p>
+<p>Emit this signal whenever the module's quickhelp changes. Modules implemented as tabbed dialogs might want to implement per-tab quickhelp for example. </p>
+
+</div>
+</div>
+<a id="a8ea4e576cd40aa4a86111e178e0809b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea4e576cd40aa4a86111e178e0809b9">&#9670;&nbsp;</a></span>rootOnlyMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString KQuickAddons::ConfigModule::rootOnlyMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the RootOnly message for this module. </p>
+<p>When the module must be run as root, or acts differently for root and a normal user, it is sometimes useful to customize the message that appears at the top of the module when used as a normal user. This function returns this customized message. If none has been set, a default message will be used.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a27c7b133ef78fc9d0ae704519babe933" title="Sets the RootOnly message. ">ConfigModule::setRootOnlyMessage</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab6acbb858354c23005c7634af63e13fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6acbb858354c23005c7634af63e13fc">&#9670;&nbsp;</a></span>rootOnlyMessageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::rootOnlyMessageChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicate that the module's root message has changed. </p>
+<p>Emits this signal whenever the module's root message changes. </p>
+
+</div>
+</div>
+<a id="a2a95833182941b69cf99e311d0ece5bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a95833182941b69cf99e311d0ece5bb">&#9670;&nbsp;</a></span>save</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the configuration data. </p>
+<p>The save method stores the config information as shown in the user interface in the config files.</p>
+<p>If necessary, this method also updates the running system, e.g. by restarting applications. This normally does not apply for <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcmutils-5.26.0/html/KCMUtils.tags:../../../frameworks/kcmutils-5.26.0/html/" href="../../../frameworks/kcmutils-5.26.0/html/classKSettings_1_1Dialog.html">KSettings::Dialog</a> modules where the updating is taken care of by <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcmutils-5.26.0/html/KCMUtils.tags:../../../frameworks/kcmutils-5.26.0/html/" href="../../../frameworks/kcmutils-5.26.0/html/namespaceKSettings_1_1Dispatcher.html">KSettings::Dispatcher</a>.</p>
+<p>save is called when the user clicks "Apply" or "Ok". </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00219">219</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0fba18519127c8139f02e272f1ac3fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fba18519127c8139f02e272f1ac3fdd">&#9670;&nbsp;</a></span>setAboutData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setAboutData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> *&#160;</td>
+          <td class="paramname"><em>about</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This sets the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags:../../../frameworks/kcoreaddons-5.26.0/html/" href="../../../frameworks/kcoreaddons-5.26.0/html/classKAboutData.html">KAboutData</a> returned by <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a4f7a2c65040e6f42c8a31f086ecf03ee" title="This is generally only called for the KBugReport. ">aboutData()</a> The about data is now owned by <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00233">233</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addb62ff7ad8266a12ca15f27fa0b45f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb62ff7ad8266a12ca15f27fa0b45f5">&#9670;&nbsp;</a></span>setAuthActionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setAuthActionName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set if the module's <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb" title="Save the configuration data. ">save()</a> method requires authorization to be executed. </p>
+<p>It will still have to execute the action itself using the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kauth-5.26.0/html/KAuth.tags:../../../frameworks/kauth-5.26.0/html/" href="../../../frameworks/kauth-5.26.0/html/namespaceKAuth.html">KAuth</a> library, so this method is not technically needed to perform the action, but using this method will ensure that hosting applications like System Settings or kcmshell behave correctly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>the action that will be used by this <a class="el" href="classKQuickAddons_1_1ConfigModule.html" title="The base class for configuration modules. ">ConfigModule</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00191">191</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a109e25082f42134c37c8ea4ea4b7c56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109e25082f42134c37c8ea4ea4b7c56f">&#9670;&nbsp;</a></span>setButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setButtons </td>
+          <td>(</td>
+          <td class="paramtype">const Buttons&#160;</td>
+          <td class="paramname"><em>btn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the buttons to display. </p>
+<p>Help: shows a "Help" button.</p>
+<p>Default: shows a "Use Defaults" button.</p>
+<p>Apply: in kcontrol this will show an "Apply" and "Reset" button, in kcmshell this will show an "Ok", "Apply" and "Cancel" button.</p>
+<p>If Apply is not specified, kcmshell will show a "Close" button.</p>
+<dl class="section see"><dt>See also</dt><dd>ConfigModule::buttons </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00157">157</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8483a64dcf93b733e1cfd1db4fd8b989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8483a64dcf93b733e1cfd1db4fd8b989">&#9670;&nbsp;</a></span>setNeedsAuthorization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setNeedsAuthorization </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>needsAuth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set if the module's <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb" title="Save the configuration data. ">save()</a> method requires authorization to be executed. </p>
+<p>The module can set this property to <code>true</code> if it requires authorization. It will still have to execute the action itself using the <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kauth-5.26.0/html/KAuth.tags:../../../frameworks/kauth-5.26.0/html/" href="../../../frameworks/kauth-5.26.0/html/namespaceKAuth.html">KAuth</a> library, so this method is not technically needed to perform the action, but using this and/or the <a class="el" href="classKQuickAddons_1_1ConfigModule.html#addb62ff7ad8266a12ca15f27fa0b45f5" title="Set if the module&#39;s save() method requires authorization to be executed. ">setAuthActionName()</a> method will ensure that hosting applications like System Settings or kcmshell behave correctly.</p>
+<p>Called with <code>true</code>, this method will set the action to "org.kde.kcontrol.name.save" where "name" is <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a4f7a2c65040e6f42c8a31f086ecf03ee" title="This is generally only called for the KBugReport. ">aboutData()</a>-&gt;appName() return value. This default action won't be set if the <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a4f7a2c65040e6f42c8a31f086ecf03ee" title="This is generally only called for the KBugReport. ">aboutData()</a> object is not valid.</p>
+<p>Note that called with <code>false</code>, this method will reset the action name set with <a class="el" href="classKQuickAddons_1_1ConfigModule.html#addb62ff7ad8266a12ca15f27fa0b45f5" title="Set if the module&#39;s save() method requires authorization to be executed. ">setAuthActionName()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">needsAuth</td><td>Tells if the module's <a class="el" href="classKQuickAddons_1_1ConfigModule.html#a2a95833182941b69cf99e311d0ece5bb" title="Save the configuration data. ">save()</a> method requires authorization to be executed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00167">167</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1f7a3b5ca7b60e821d547937d6a3d992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7a3b5ca7b60e821d547937d6a3d992">&#9670;&nbsp;</a></span>setNeedsSave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setNeedsSave </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>needs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set this property to true when the user changes something in the module, signaling that a save (such as user pressing Ok or Apply) is needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00288">288</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a32d304a8726f89da333d38adbbae0952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d304a8726f89da333d38adbbae0952">&#9670;&nbsp;</a></span>setQuickHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setQuickHelp </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>help</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the quick help. </p>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00272">272</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a27c7b133ef78fc9d0ae704519babe933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c7b133ef78fc9d0ae704519babe933">&#9670;&nbsp;</a></span>setRootOnlyMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setRootOnlyMessage </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the RootOnly message. </p>
+<p>This message will be shown at the top of the module if useRootOnlyMessage is set. If no message is set, a default one will be used.</p>
+<dl class="section see"><dt>See also</dt><dd>ConfigModule::rootOnlyMessage </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00241">241</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a89189ff460977c6d350f956eb58ae36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89189ff460977c6d350f956eb58ae36e">&#9670;&nbsp;</a></span>setUseRootOnlyMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::setUseRootOnlyMessage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change whether or not the RootOnly message should be shown. </p>
+<p>Following the value of <code>on</code>, the RootOnly message will be shown or not.</p>
+<dl class="section see"><dt>See also</dt><dd>ConfigModule::useRootOnlyMessage </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="configmodule_8cpp_source.html#l00256">256</a> of file <a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1a7b5767d350f98b6343ffcf6a64c771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7b5767d350f98b6343ffcf6a64c771">&#9670;&nbsp;</a></span>useRootOnlyMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KQuickAddons::ConfigModule::useRootOnlyMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tell if KControl should show a RootOnly message when run as a normal user. </p>
+<p>In some cases, the module don't want a RootOnly message to appear (for example if it has already one). This function tells KControl if a RootOnly message should be shown</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKQuickAddons_1_1ConfigModule.html#a89189ff460977c6d350f956eb58ae36e" title="Change whether or not the RootOnly message should be shown. ">ConfigModule::setUseRootOnlyMessage</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad6a4b066039a4f1f0cb7572d357ca4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a4b066039a4f1f0cb7572d357ca4ae">&#9670;&nbsp;</a></span>useRootOnlyMessageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KQuickAddons::ConfigModule::useRootOnlyMessageChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emits this signal whenever the the root only message gets used or discarded. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="configmodule_8h_source.html">configmodule.h</a></li>
+<li><a class="el" href="configmodule_8cpp_source.html">configmodule.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:42 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

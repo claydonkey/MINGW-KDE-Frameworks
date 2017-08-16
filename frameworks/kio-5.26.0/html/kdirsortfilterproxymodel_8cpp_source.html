@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KIO - kdirsortfilterproxymodel.cpp Source File</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KIO</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KIO"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKIO_1_1AccessManager.html">KIO::AccessManager</option>
+        
+        <option value="classKIO_1_1AuthInfo.html">KIO::AuthInfo</option>
+        
+        <option value="classKIO_1_1ChmodJob.html">KIO::ChmodJob</option>
+        
+        <option value="classKIO_1_1Integration_1_1CookieJar.html">KIO::Integration::CookieJar</option>
+        
+        <option value="classKIO_1_1CopyJob.html">KIO::CopyJob</option>
+        
+        <option value="classKIO_1_1DavJob.html">KIO::DavJob</option>
+        
+        <option value="classKIO_1_1DeleteJob.html">KIO::DeleteJob</option>
+        
+        <option value="classKIO_1_1DesktopExecParser.html">KIO::DesktopExecParser</option>
+        
+        <option value="classKIO_1_1DirectorySizeJob.html">KIO::DirectorySizeJob</option>
+        
+        <option value="classDiscSpaceUtil.html">DiscSpaceUtil</option>
+        
+        <option value="classKIO_1_1DndPopupMenuPlugin.html">KIO::DndPopupMenuPlugin</option>
+        
+        <option value="classKIO_1_1DropJob.html">KIO::DropJob</option>
+        
+        <option value="classKIO_1_1EmptyTrashJob.html">KIO::EmptyTrashJob</option>
+        
+        <option value="classKIO_1_1FavIconRequestJob.html">KIO::FavIconRequestJob</option>
+        
+        <option value="classKIO_1_1FileCopyJob.html">KIO::FileCopyJob</option>
+        
+        <option value="classKIO_1_1FileJob.html">KIO::FileJob</option>
+        
+        <option value="classKIO_1_1FileSystemFreeSpaceJob.html">KIO::FileSystemFreeSpaceJob</option>
+        
+        <option value="classKIO_1_1FileUndoManager.html">KIO::FileUndoManager</option>
+        
+        <option value="classKIO_1_1ForwardingSlaveBase.html">KIO::ForwardingSlaveBase</option>
+        
+        <option value="classKIO_1_1IdleSlave.html">KIO::IdleSlave</option>
+        
+        <option value="classKIO_1_1Job.html">KIO::Job</option>
+        
+        <option value="classKIO_1_1JobUiDelegate.html">KIO::JobUiDelegate</option>
+        
+        <option value="classKIO_1_1JobUiDelegateExtension.html">KIO::JobUiDelegateExtension</option>
+        
+        <option value="classKIO_1_1JobUiDelegateFactory.html">KIO::JobUiDelegateFactory</option>
+        
+        <option value="classKAbstractFileItemActionPlugin.html">KAbstractFileItemActionPlugin</option>
+        
+        <option value="classKACL.html">KACL</option>
+        
+        <option value="classKBuildSycocaProgressDialog.html">KBuildSycocaProgressDialog</option>
+        
+        <option value="classKCoreDirLister.html">KCoreDirLister</option>
+        
+        <option value="classKDirLister.html">KDirLister</option>
+        
+        <option value="classKDirModel.html">KDirModel</option>
+        
+        <option value="classKDirOperator.html">KDirOperator</option>
+        
+        <option value="classKDirSortFilterProxyModel.html">KDirSortFilterProxyModel</option>
+        
+        <option value="classKEncodingFileDialog.html">KEncodingFileDialog</option>
+        
+        <option value="classKFile.html">KFile</option>
+        
+        <option value="classKFileCopyToMenu.html">KFileCopyToMenu</option>
+        
+        <option value="classKFileItem.html">KFileItem</option>
+        
+        <option value="classKFileItemActions.html">KFileItemActions</option>
+        
+        <option value="classKFileItemDelegate.html">KFileItemDelegate</option>
+        
+        <option value="classKFileItemList.html">KFileItemList</option>
+        
+        <option value="classKFileItemListProperties.html">KFileItemListProperties</option>
+        
+        <option value="classKFilePlaceEditDialog.html">KFilePlaceEditDialog</option>
+        
+        <option value="classKFilePlacesModel.html">KFilePlacesModel</option>
+        
+        <option value="classKFilePlacesView.html">KFilePlacesView</option>
+        
+        <option value="classKFilePreviewGenerator.html">KFilePreviewGenerator</option>
+        
+        <option value="classKFileWidget.html">KFileWidget</option>
+        
+        <option value="classKImageFilePreview.html">KImageFilePreview</option>
+        
+        <option value="classKInterProcessLock.html">KInterProcessLock</option>
+        
+        <option value="classKLocalSocket.html">KLocalSocket</option>
+        
+        <option value="classKLocalSocketServer.html">KLocalSocketServer</option>
+        
+        <option value="classKMountPoint.html">KMountPoint</option>
+        
+        <option value="classKNameAndUrlInputDialog.html">KNameAndUrlInputDialog</option>
+        
+        <option value="classKNewFileMenu.html">KNewFileMenu</option>
+        
+        <option value="classKNFSShare.html">KNFSShare</option>
+        
+        <option value="classKNTLM.html">KNTLM</option>
+        
+        <option value="classKOpenWithDialog.html">KOpenWithDialog</option>
+        
+        <option value="classKOverlayIconPlugin.html">KOverlayIconPlugin</option>
+        
+        <option value="classKPreviewWidgetBase.html">KPreviewWidgetBase</option>
+        
+        <option value="classKPropertiesDialog.html">KPropertiesDialog</option>
+        
+        <option value="classKPropertiesDialogPlugin.html">KPropertiesDialogPlugin</option>
+        
+        <option value="classKProtocolInfo.html">KProtocolInfo</option>
+        
+        <option value="classKProtocolManager.html">KProtocolManager</option>
+        
+        <option value="classKRecentDocument.html">KRecentDocument</option>
+        
+        <option value="classKRemoteEncoding.html">KRemoteEncoding</option>
+        
+        <option value="classKRun.html">KRun</option>
+        
+        <option value="classKSambaShare.html">KSambaShare</option>
+        
+        <option value="classKSambaShareData.html">KSambaShareData</option>
+        
+        <option value="classKShellCompletion.html">KShellCompletion</option>
+        
+        <option value="classKShortUriFilter.html">KShortUriFilter</option>
+        
+        <option value="classKSslErrorUiData.html">KSslErrorUiData</option>
+        
+        <option value="classKSslInfoDialog.html">KSslInfoDialog</option>
+        
+        <option value="classKSSLSettings.html">KSSLSettings</option>
+        
+        <option value="classKStatusBarOfflineIndicator.html">KStatusBarOfflineIndicator</option>
+        
+        <option value="classKUriFilter.html">KUriFilter</option>
+        
+        <option value="classKUriFilterData.html">KUriFilterData</option>
+        
+        <option value="classKUriFilterPlugin.html">KUriFilterPlugin</option>
+        
+        <option value="classKUriFilterSearchProvider.html">KUriFilterSearchProvider</option>
+        
+        <option value="classKIO_1_1KUriFilterSearchProviderActions.html">KIO::KUriFilterSearchProviderActions</option>
+        
+        <option value="classKUrlComboBox.html">KUrlComboBox</option>
+        
+        <option value="classKUrlCompletion.html">KUrlCompletion</option>
+        
+        <option value="classKUrlNavigator.html">KUrlNavigator</option>
+        
+        <option value="classKUrlPixmapProvider.html">KUrlPixmapProvider</option>
+        
+        <option value="classKUrlRequester.html">KUrlRequester</option>
+        
+        <option value="classKUrlRequesterDialog.html">KUrlRequesterDialog</option>
+        
+        <option value="classKMountPoint_1_1List.html">KMountPoint::List</option>
+        
+        <option value="classKIO_1_1ListJob.html">KIO::ListJob</option>
+        
+        <option value="classKIO_1_1MetaData.html">KIO::MetaData</option>
+        
+        <option value="classKIO_1_1MimetypeJob.html">KIO::MimetypeJob</option>
+        
+        <option value="classKIO_1_1MkdirJob.html">KIO::MkdirJob</option>
+        
+        <option value="classKIO_1_1MkpathJob.html">KIO::MkpathJob</option>
+        
+        <option value="classKIO_1_1MultiGetJob.html">KIO::MultiGetJob</option>
+        
+        <option value="classKIO_1_1NetRC.html">KIO::NetRC</option>
+        
+        <option value="classKIO_1_1OpenFileManagerWindowJob.html">KIO::OpenFileManagerWindowJob</option>
+        
+        <option value="classOrgKdeKDirNotifyInterface.html">OrgKdeKDirNotifyInterface</option>
+        
+        <option value="classKIO_1_1PasteJob.html">KIO::PasteJob</option>
+        
+        <option value="classKIO_1_1PreviewJob.html">KIO::PreviewJob</option>
+        
+        <option value="classKIO_1_1RenameDialog.html">KIO::RenameDialog</option>
+        
+        <option value="classKIO_1_1RestoreJob.html">KIO::RestoreJob</option>
+        
+        <option value="classKIO_1_1Scheduler.html">KIO::Scheduler</option>
+        
+        <option value="classKIO_1_1SimpleJob.html">KIO::SimpleJob</option>
+        
+        <option value="classKIO_1_1SkipDialog.html">KIO::SkipDialog</option>
+        
+        <option value="classKIO_1_1SlaveBase.html">KIO::SlaveBase</option>
+        
+        <option value="classKIO_1_1SlaveConfig.html">KIO::SlaveConfig</option>
+        
+        <option value="classKIO_1_1SlaveInterface.html">KIO::SlaveInterface</option>
+        
+        <option value="classKIO_1_1SpecialJob.html">KIO::SpecialJob</option>
+        
+        <option value="classKIO_1_1StatJob.html">KIO::StatJob</option>
+        
+        <option value="classKIO_1_1StoredTransferJob.html">KIO::StoredTransferJob</option>
+        
+        <option value="classKIO_1_1TCPSlaveBase.html">KIO::TCPSlaveBase</option>
+        
+        <option value="classThumbCreator.html">ThumbCreator</option>
+        
+        <option value="classThumbCreatorV2.html">ThumbCreatorV2</option>
+        
+        <option value="classThumbSequenceCreator.html">ThumbSequenceCreator</option>
+        
+        <option value="classKIO_1_1TransferJob.html">KIO::TransferJob</option>
+        
+        <option value="classTrashConfigModule.html">TrashConfigModule</option>
+        
+        <option value="classTrashImpl.html">TrashImpl</option>
+        
+        <option value="classTrashSizeCache.html">TrashSizeCache</option>
+        
+        <option value="classKIO_1_1UDSEntry.html">KIO::UDSEntry</option>
+        
+        <option value="classKIO_1_1FileUndoManager_1_1UiInterface.html">KIO::FileUndoManager::UiInterface</option>
+        
+        <option value="namespaceKDesktopFileActions.html">KDesktopFileActions</option>
+        
+        <option value="namespaceKIO.html">KIO</option>
+        
+        <option value="namespaceKIO_1_1HostInfo.html">KIO::HostInfo</option>
+        
+        <option value="namespaceKRecentDirs.html">KRecentDirs</option>
+        
+        <option value="namespaceKUrlAuthorized.html">KUrlAuthorized</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Resource and network access abstraction</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5KIO)
+target_link_libraries(yourapp KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KIOCore KIOFileWidgets KIOWidgets KNTLM </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kio-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KIO on <a href="https://cgit.kde.org/kio-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KIO </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_413e470d760bf901f5641c9eb8d400f1.html">mingw-w64-kio-qt5 - Copy</a></li><li class="navelem"><a class="el" href="dir_6206d1bc68dd9b07f7e6027ae432b791.html">src</a></li><li class="navelem"><a class="el" href="dir_cd1fc410479695bfec72c4647d245a83.html">kio-5.26.0</a></li><li class="navelem"><a class="el" href="dir_904192df72df8135d067fa8e2c3ed040.html">src</a></li><li class="navelem"><a class="el" href="dir_1d67470e28049a0acddb0ca8f871e089.html">filewidgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">kdirsortfilterproxymodel.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 2006 by Peter Penz &lt;peter.penz@gmx.at&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">   Copyright (C) 2006 by Dominic Battre &lt;dominic@battre.de&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   Copyright (C) 2006 by Martin Pool &lt;mbp@canonical.com&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   Separated from Dolphin by Nick Shaforostoff &lt;shafff@ukr.net&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">   This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   modify it under the terms of the GNU Library General Public</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   License version 2 as published by the Free Software Foundation.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   Library General Public License for more details.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   You should have received a copy of the GNU Library General Public License</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   along with this library; see the file COPYING.LIB.  If not, write to</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   Boston, MA 02110-1301, USA.</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;kdirsortfilterproxymodel.h&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;kdirmodel.h&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;kfileitem.h&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/ki18n-5.26.0/html/KI18n.tags:../../../frameworks/ki18n-5.26.0/html/" href="../../../frameworks/ki18n-5.26.0/html/klocalizedstring_8h.html">klocalizedstring.h</a>&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;kconfiggroup.h&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;ksharedconfig.h&gt;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;QCollator&gt;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>KDirSortFilterProxyModel::KDirSortFilterProxyModelPrivate</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    KDirSortFilterProxyModelPrivate();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> compare(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, Qt::CaseSensitivity caseSensitivity  = Qt::CaseSensitive);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> slotNaturalSortingChanged();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> m_sortFoldersFirst;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> m_naturalSorting;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QCollator m_collator;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;KDirSortFilterProxyModel::KDirSortFilterProxyModelPrivate::KDirSortFilterProxyModelPrivate() :</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_sortFoldersFirst(true)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    slotNaturalSortingChanged();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> KDirSortFilterProxyModel::KDirSortFilterProxyModelPrivate::compare(<span class="keyword">const</span> QString &amp;a,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> QString &amp;b,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Qt::CaseSensitivity caseSensitivity)</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> result;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (m_naturalSorting) {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        m_collator.setCaseSensitivity(caseSensitivity);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        result = m_collator.compare(a, b);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        result = QString::compare(a, b, caseSensitivity);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (caseSensitivity == Qt::CaseSensitive || result != 0) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Only return the result, if the strings are not equal. If they are equal by a case insensitive</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// comparison, still a deterministic sort order is required. A case sensitive</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// comparison is done as fallback.</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> QString::compare(a, b, Qt::CaseSensitive);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> KDirSortFilterProxyModel::KDirSortFilterProxyModelPrivate::slotNaturalSortingChanged()</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a> g(<a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kconfig-5.26.0/html/KConfig.tags:../../../frameworks/kconfig-5.26.0/html/" href="../../../frameworks/kconfig-5.26.0/html/classKSharedConfig.html#a328208649f2e3f0ee895c9b11aa82205">KSharedConfig::openConfig</a>(), <span class="stringliteral">&quot;KDE&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_naturalSorting = g.readEntry(<span class="stringliteral">&quot;NaturalSorting&quot;</span>, <span class="keyword">true</span>);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;KDirSortFilterProxyModel::KDirSortFilterProxyModel(QObject *parent)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    : <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kitemviews-5.26.0/html/KItemViews.tags:../../../frameworks/kitemviews-5.26.0/html/" href="../../../frameworks/kitemviews-5.26.0/html/classKCategorizedSortFilterProxyModel.html">KCategorizedSortFilterProxyModel</a>(parent), d(new KDirSortFilterProxyModelPrivate)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    setDynamicSortFilter(<span class="keyword">true</span>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// sort by the user visible string for now</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    setSortCaseSensitivity(Qt::CaseInsensitive);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    sort(KDirModel::Name, Qt::AscendingOrder);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;Qt::DropActions KDirSortFilterProxyModel::supportedDragOptions()<span class="keyword"> const</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> Qt::CopyAction | Qt::MoveAction | Qt::LinkAction | Qt::IgnoreAction;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;KDirSortFilterProxyModel::~KDirSortFilterProxyModel()</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">delete</span> d;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#a6cff2bf6a87144e35027302ac1ef5f1c">  102</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKDirSortFilterProxyModel.html#a6cff2bf6a87144e35027302ac1ef5f1c">KDirSortFilterProxyModel::hasChildren</a>(<span class="keyword">const</span> QModelIndex &amp;parent)<span class="keyword"> const</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> QModelIndex sourceParent = mapToSource(parent);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> sourceModel()-&gt;hasChildren(sourceParent);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#ae2baacfd5c62a8c9ed09dc9c97f99c71">  108</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKDirSortFilterProxyModel.html#ae2baacfd5c62a8c9ed09dc9c97f99c71">KDirSortFilterProxyModel::canFetchMore</a>(<span class="keyword">const</span> QModelIndex &amp;parent)<span class="keyword"> const</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">const</span> QModelIndex sourceParent = mapToSource(parent);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> sourceModel()-&gt;canFetchMore(sourceParent);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#a2ea33565836249cea072a88263b1462d">  114</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classKDirSortFilterProxyModel.html#a2ea33565836249cea072a88263b1462d">KDirSortFilterProxyModel::pointsForPermissions</a>(<span class="keyword">const</span> QFileInfo &amp;info)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> points = 0;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QFile::Permission permissionsCheck[] = { QFile::ReadUser,</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                             QFile::WriteUser,</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                             QFile::ExeUser,</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                             QFile::ReadGroup,</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                             QFile::WriteGroup,</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                             QFile::ExeGroup,</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                             QFile::ReadOther,</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                             QFile::WriteOther,</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                             QFile::ExeOther</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                           };</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 9; i++) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        points += info.permission(permissionsCheck[i]) ? 1 : 0;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> points;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#af0ac8eae439685f49c834b3d0a0b8d5f">  136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classKDirSortFilterProxyModel.html#af0ac8eae439685f49c834b3d0a0b8d5f">KDirSortFilterProxyModel::setSortFoldersFirst</a>(<span class="keywordtype">bool</span> foldersFirst)</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    d-&gt;m_sortFoldersFirst = foldersFirst;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#ae1724a5efce1a4f6e82a451bd7301cd3">  141</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKDirSortFilterProxyModel.html#ae1724a5efce1a4f6e82a451bd7301cd3">KDirSortFilterProxyModel::sortFoldersFirst</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_sortFoldersFirst;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classKDirSortFilterProxyModel.html#a6eaf3750a935e21d1ca0ef0a59f32a63">  146</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classKDirSortFilterProxyModel.html#a6eaf3750a935e21d1ca0ef0a59f32a63">KDirSortFilterProxyModel::subSortLessThan</a>(<span class="keyword">const</span> QModelIndex &amp;left,</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">const</span> QModelIndex &amp;right)<span class="keyword"> const</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="classKDirModel.html">KDirModel</a> *dirModel = <span class="keyword">static_cast&lt;</span><a class="code" href="classKDirModel.html">KDirModel</a> *<span class="keyword">&gt;</span>(sourceModel());</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">const</span> <a class="code" href="classKFileItem.html">KFileItem</a> leftFileItem  = dirModel-&gt;<a class="code" href="classKDirModel.html#aa3ea66daf91ff903970c470880b0bc46">itemForIndex</a>(left);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> <a class="code" href="classKFileItem.html">KFileItem</a> rightFileItem = dirModel-&gt;<a class="code" href="classKDirModel.html#aa3ea66daf91ff903970c470880b0bc46">itemForIndex</a>(right);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> isLessThan = (sortOrder() == Qt::AscendingOrder);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// Folders go before files if the corresponding setting is set.</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (d-&gt;m_sortFoldersFirst) {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> leftItemIsDir  = leftFileItem.<a class="code" href="classKFileItem.html#ac9957a0a981987c2c31809a2061f63a2">isDir</a>();</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> rightItemIsDir = rightFileItem.<a class="code" href="classKFileItem.html#ac9957a0a981987c2c31809a2061f63a2">isDir</a>();</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> (leftItemIsDir &amp;&amp; !rightItemIsDir) {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> isLessThan;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!leftItemIsDir &amp;&amp; rightItemIsDir) {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">return</span> !isLessThan;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Hidden elements go before visible ones.</span></div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> leftItemIsHidden  = leftFileItem.<a class="code" href="classKFileItem.html#ae2f58fc15bbc97393b3042795aa4e6cf">isHidden</a>();</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> rightItemIsHidden = rightFileItem.<a class="code" href="classKFileItem.html#ae2f58fc15bbc97393b3042795aa4e6cf">isHidden</a>();</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (leftItemIsHidden &amp;&amp; !rightItemIsHidden) {</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> isLessThan;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!leftItemIsHidden &amp;&amp; rightItemIsHidden) {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> !isLessThan;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">switch</span> (left.column()) {</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">case</span> KDirModel::Name: {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">int</span> result = d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity());</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (result == 0) {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">// KFileItem::text() may not be unique in case UDS_DISPLAY_NAME is used</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            result = d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#ae31de636473c6fec8a8ab8731bd17e77">name</a>(sortCaseSensitivity() == Qt::CaseInsensitive),</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                rightFileItem.<a class="code" href="classKFileItem.html#ae31de636473c6fec8a8ab8731bd17e77">name</a>(sortCaseSensitivity() == Qt::CaseInsensitive),</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                sortCaseSensitivity());</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span> (result == 0) {</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="comment">// If KFileItem::text() is also not unique most probably a search protocol is used</span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="comment">// that allows showing the same file names from different directories</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                result = d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#aff7e04d608417647c8857a2c1cd8d06a">url</a>().toString(), rightFileItem.<a class="code" href="classKFileItem.html#aff7e04d608417647c8857a2c1cd8d06a">url</a>().toString(), sortCaseSensitivity());</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> result &lt; 0;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">case</span> KDirModel::Size: {</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="comment">// If we have two folders, what we have to measure is the number of</span></div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="comment">// items that contains each other</span></div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span> (leftFileItem.<a class="code" href="classKFileItem.html#ac9957a0a981987c2c31809a2061f63a2">isDir</a>() &amp;&amp; rightFileItem.<a class="code" href="classKFileItem.html#ac9957a0a981987c2c31809a2061f63a2">isDir</a>()) {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            QVariant leftValue = dirModel-&gt;<a class="code" href="classKDirModel.html#a2712ae8d673134987e1f4183e3f6bf85">data</a>(left, <a class="code" href="classKDirModel.html#a5cffa317cb8e222b5f5bd26e8697aceda5d480842fb01f837fa0b64a5543be2bc">KDirModel::ChildCountRole</a>);</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordtype">int</span> leftCount = (leftValue.type() == QVariant::Int) ? leftValue.toInt() : KDirModel::ChildCountUnknown;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            QVariant rightValue = dirModel-&gt;<a class="code" href="classKDirModel.html#a2712ae8d673134987e1f4183e3f6bf85">data</a>(right, <a class="code" href="classKDirModel.html#a5cffa317cb8e222b5f5bd26e8697aceda5d480842fb01f837fa0b64a5543be2bc">KDirModel::ChildCountRole</a>);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordtype">int</span> rightCount = (rightValue.type() == QVariant::Int) ? rightValue.toInt() : KDirModel::ChildCountUnknown;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="comment">// In the case they two have the same child items, we sort them by</span></div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="comment">// their names. So we have always everything ordered. We also check</span></div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="comment">// if we are taking in count their cases.</span></div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">if</span> (leftCount == rightCount) {</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="comment">// If one of them has unknown child items, place them on the end. If we</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="comment">// were comparing two unknown childed items, the previous comparation</span></div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="comment">// sorted them by QCollator between them. This case is when we</span></div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="comment">// have an unknown childed item, and another known.</span></div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">if</span> (leftCount == KDirModel::ChildCountUnknown) {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">if</span> (rightCount == KDirModel::ChildCountUnknown) {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            }</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="comment">// If they had different number of items, we sort them depending</span></div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="comment">// on how many items had each other.</span></div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> leftCount &lt; rightCount;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// If what we are measuring is two files and they have the same size,</span></div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="comment">// sort them by their file names.</span></div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">if</span> (leftFileItem.<a class="code" href="classKFileItem.html#a5f07a33c0b985808b50a9f08a933bca2">size</a>() == rightFileItem.<a class="code" href="classKFileItem.html#a5f07a33c0b985808b50a9f08a933bca2">size</a>()) {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">// If their sizes are different, sort them by their sizes, as expected.</span></div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> leftFileItem.<a class="code" href="classKFileItem.html#a5f07a33c0b985808b50a9f08a933bca2">size</a>() &lt; rightFileItem.<a class="code" href="classKFileItem.html#a5f07a33c0b985808b50a9f08a933bca2">size</a>();</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">case</span> KDirModel::ModifiedTime: {</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        QDateTime leftModifiedTime = leftFileItem.<a class="code" href="classKFileItem.html#aea3c557bb49bec410136e6f7cf9ee85b">time</a>(KFileItem::ModificationTime).toLocalTime();</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        QDateTime rightModifiedTime = rightFileItem.<a class="code" href="classKFileItem.html#aea3c557bb49bec410136e6f7cf9ee85b">time</a>(KFileItem::ModificationTime).toLocalTime();</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">if</span> (leftModifiedTime == rightModifiedTime) {</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> leftModifiedTime &lt; rightModifiedTime;</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">case</span> KDirModel::Permissions: {</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> leftPermissions = leftFileItem.<a class="code" href="classKFileItem.html#a87e9840e9f1e22fb495772bd17000e55">permissions</a>();</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> rightPermissions = rightFileItem.<a class="code" href="classKFileItem.html#a87e9840e9f1e22fb495772bd17000e55">permissions</a>();</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span> (leftPermissions == rightPermissions) {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">return</span> leftPermissions &gt; rightPermissions;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">case</span> KDirModel::Owner: {</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span> (leftFileItem.<a class="code" href="classKFileItem.html#a5cc754c2c0b965282e36e8d21c7f51d9">user</a>() == rightFileItem.<a class="code" href="classKFileItem.html#a5cc754c2c0b965282e36e8d21c7f51d9">user</a>()) {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#a5cc754c2c0b965282e36e8d21c7f51d9">user</a>(), rightFileItem.<a class="code" href="classKFileItem.html#a5cc754c2c0b965282e36e8d21c7f51d9">user</a>()) &lt; 0;</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">case</span> KDirModel::Group: {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (leftFileItem.<a class="code" href="classKFileItem.html#aa6fdf3e26e12f2775b42b0a4b8313344">group</a>() == rightFileItem.<a class="code" href="classKFileItem.html#aa6fdf3e26e12f2775b42b0a4b8313344">group</a>()) {</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#aa6fdf3e26e12f2775b42b0a4b8313344">group</a>(), rightFileItem.<a class="code" href="classKFileItem.html#aa6fdf3e26e12f2775b42b0a4b8313344">group</a>()) &lt; 0;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">case</span> KDirModel::Type: {</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span> (leftFileItem.<a class="code" href="classKFileItem.html#a84fd45304c5bbfc8a1c2f0c88724ad7c">mimetype</a>() == rightFileItem.<a class="code" href="classKFileItem.html#a84fd45304c5bbfc8a1c2f0c88724ad7c">mimetype</a>()) {</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), rightFileItem.<a class="code" href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">text</a>(), sortCaseSensitivity()) &lt; 0;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">return</span> d-&gt;compare(leftFileItem.<a class="code" href="classKFileItem.html#af814304bc22c7543a860a4d63c8d8b3b">mimeComment</a>(), rightFileItem.<a class="code" href="classKFileItem.html#af814304bc22c7543a860a4d63c8d8b3b">mimeComment</a>()) &lt; 0;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// We have set a SortRole and trust the ProxyModel to do</span></div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// the right thing for now.</span></div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kitemviews-5.26.0/html/KItemViews.tags:../../../frameworks/kitemviews-5.26.0/html/" href="../../../frameworks/kitemviews-5.26.0/html/classKCategorizedSortFilterProxyModel.html#a19fd2582e615f048cc31e0f712b083cb">KCategorizedSortFilterProxyModel::subSortLessThan</a>(left, right);</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#include &quot;moc_kdirsortfilterproxymodel.cpp&quot;</span></div><div class="ttc" id="classKFileItem_html_af814304bc22c7543a860a4d63c8d8b3b"><div class="ttname"><a href="classKFileItem.html#af814304bc22c7543a860a4d63c8d8b3b">KFileItem::mimeComment</a></div><div class="ttdeci">QString mimeComment() const</div><div class="ttdoc">Returns the user-readable string representing the type of this file, like &quot;OpenDocument Text File&quot;...</div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00782">kfileitem.cpp:782</a></div></div>
+<div class="ttc" id="classKFileItem_html_ae31de636473c6fec8a8ab8731bd17e77"><div class="ttname"><a href="classKFileItem.html#ae31de636473c6fec8a8ab8731bd17e77">KFileItem::name</a></div><div class="ttdeci">QString name(bool lowerCase=false) const</div><div class="ttdoc">Return the name of the file item (without a path). </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01441">kfileitem.cpp:1441</a></div></div>
+<div class="ttc" id="classKCategorizedSortFilterProxyModel_html_a19fd2582e615f048cc31e0f712b083cb"><div class="ttname"><a href="../../../frameworks/kitemviews-5.26.0/html/classKCategorizedSortFilterProxyModel.html#a19fd2582e615f048cc31e0f712b083cb">KCategorizedSortFilterProxyModel::subSortLessThan</a></div><div class="ttdeci">virtual bool subSortLessThan(const QModelIndex &amp;left, const QModelIndex &amp;right) const</div></div>
+<div class="ttc" id="classKDirModel_html_aa3ea66daf91ff903970c470880b0bc46"><div class="ttname"><a href="classKDirModel.html#aa3ea66daf91ff903970c470880b0bc46">KDirModel::itemForIndex</a></div><div class="ttdeci">KFileItem itemForIndex(const QModelIndex &amp;index) const</div><div class="ttdoc">Return the fileitem for a given index. </div><div class="ttdef"><b>Definition:</b> <a href="kdirmodel_8cpp_source.html#l01019">kdirmodel.cpp:1019</a></div></div>
+<div class="ttc" id="classKDirModel_html_a2712ae8d673134987e1f4183e3f6bf85"><div class="ttname"><a href="classKDirModel.html#a2712ae8d673134987e1f4183e3f6bf85">KDirModel::data</a></div><div class="ttdeci">QVariant data(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</div><div class="ttdoc">Reimplemented from QAbstractItemModel. </div><div class="ttdef"><b>Definition:</b> <a href="kdirmodel_8cpp_source.html#l00713">kdirmodel.cpp:713</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_af0ac8eae439685f49c834b3d0a0b8d5f"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#af0ac8eae439685f49c834b3d0a0b8d5f">KDirSortFilterProxyModel::setSortFoldersFirst</a></div><div class="ttdeci">void setSortFoldersFirst(bool foldersFirst)</div><div class="ttdoc">Choose if files and folders are sorted separately (with folders first) or not. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00136">kdirsortfilterproxymodel.cpp:136</a></div></div>
+<div class="ttc" id="classKFileItem_html_a87e9840e9f1e22fb495772bd17000e55"><div class="ttname"><a href="classKFileItem.html#a87e9840e9f1e22fb495772bd17000e55">KFileItem::permissions</a></div><div class="ttdeci">mode_t permissions() const</div><div class="ttdoc">Returns the permissions of the file (stat.st_mode containing only permissions). </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01396">kfileitem.cpp:1396</a></div></div>
+<div class="ttc" id="classKCategorizedSortFilterProxyModel_html"><div class="ttname"><a href="../../../frameworks/kitemviews-5.26.0/html/classKCategorizedSortFilterProxyModel.html">KCategorizedSortFilterProxyModel</a></div></div>
+<div class="ttc" id="classKFileItem_html_aea3c557bb49bec410136e6f7cf9ee85b"><div class="ttname"><a href="classKFileItem.html#aea3c557bb49bec410136e6f7cf9ee85b">KFileItem::time</a></div><div class="ttdeci">QDateTime time(FileTimes which) const</div><div class="ttdoc">Requests the modification, access or creation time, depending on which. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00652">kfileitem.cpp:652</a></div></div>
+<div class="ttc" id="classKDirModel_html_a5cffa317cb8e222b5f5bd26e8697aceda5d480842fb01f837fa0b64a5543be2bc"><div class="ttname"><a href="classKDirModel.html#a5cffa317cb8e222b5f5bd26e8697aceda5d480842fb01f837fa0b64a5543be2bc">KDirModel::ChildCountRole</a></div><div class="ttdoc">returns the number of items in a directory, or ChildCountUnknown </div><div class="ttdef"><b>Definition:</b> <a href="kdirmodel_8h_source.html#l00138">kdirmodel.h:138</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_ae1724a5efce1a4f6e82a451bd7301cd3"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#ae1724a5efce1a4f6e82a451bd7301cd3">KDirSortFilterProxyModel::sortFoldersFirst</a></div><div class="ttdeci">bool sortFoldersFirst() const</div><div class="ttdoc">Returns if files and folders are sorted separately (with folders first) or not. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00141">kdirsortfilterproxymodel.cpp:141</a></div></div>
+<div class="ttc" id="classKFileItem_html_ae2f58fc15bbc97393b3042795aa4e6cf"><div class="ttname"><a href="classKFileItem.html#ae2f58fc15bbc97393b3042795aa4e6cf">KFileItem::isHidden</a></div><div class="ttdeci">bool isHidden() const</div><div class="ttdoc">Checks whether the file is hidden. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01135">kfileitem.cpp:1135</a></div></div>
+<div class="ttc" id="classKFileItem_html_ac9957a0a981987c2c31809a2061f63a2"><div class="ttname"><a href="classKFileItem.html#ac9957a0a981987c2c31809a2061f63a2">KFileItem::isDir</a></div><div class="ttdeci">bool isDir() const</div><div class="ttdoc">Returns true if this item represents a directory. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01161">kfileitem.cpp:1161</a></div></div>
+<div class="ttc" id="classKFileItem_html_aff7e04d608417647c8857a2c1cd8d06a"><div class="ttname"><a href="classKFileItem.html#aff7e04d608417647c8857a2c1cd8d06a">KFileItem::url</a></div><div class="ttdeci">QUrl url() const</div><div class="ttdoc">Returns the url of the file. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01387">kfileitem.cpp:1387</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_a6eaf3750a935e21d1ca0ef0a59f32a63"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#a6eaf3750a935e21d1ca0ef0a59f32a63">KDirSortFilterProxyModel::subSortLessThan</a></div><div class="ttdeci">virtual bool subSortLessThan(const QModelIndex &amp;left, const QModelIndex &amp;right) const override</div><div class="ttdoc">Reimplemented from KCategorizedSortFilterProxyModel. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00146">kdirsortfilterproxymodel.cpp:146</a></div></div>
+<div class="ttc" id="classKFileItem_html_a5f07a33c0b985808b50a9f08a933bca2"><div class="ttname"><a href="classKFileItem.html#a5f07a33c0b985808b50a9f08a933bca2">KFileItem::size</a></div><div class="ttdeci">KIO::filesize_t size() const</div><div class="ttdoc">Returns the size of the file, if known. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00601">kfileitem.cpp:601</a></div></div>
+<div class="ttc" id="classKFileItem_html_aa6fdf3e26e12f2775b42b0a4b8313344"><div class="ttname"><a href="classKFileItem.html#aa6fdf3e26e12f2775b42b0a4b8313344">KFileItem::group</a></div><div class="ttdeci">QString group() const</div><div class="ttdoc">Returns the group of the file. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00670">kfileitem.cpp:670</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_ae2baacfd5c62a8c9ed09dc9c97f99c71"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#ae2baacfd5c62a8c9ed09dc9c97f99c71">KDirSortFilterProxyModel::canFetchMore</a></div><div class="ttdeci">bool canFetchMore(const QModelIndex &amp;parent) const override</div><div class="ttdoc">Reimplemented from QAbstractItemModel. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00108">kdirsortfilterproxymodel.cpp:108</a></div></div>
+<div class="ttc" id="classKFileItem_html_adbe1ea037250360583f906db91cae1db"><div class="ttname"><a href="classKFileItem.html#adbe1ea037250360583f906db91cae1db">KFileItem::text</a></div><div class="ttdeci">QString text() const</div><div class="ttdoc">Returns the text of the file item. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l01432">kfileitem.cpp:1432</a></div></div>
+<div class="ttc" id="classKSharedConfig_html_a328208649f2e3f0ee895c9b11aa82205"><div class="ttname"><a href="../../../frameworks/kconfig-5.26.0/html/classKSharedConfig.html#a328208649f2e3f0ee895c9b11aa82205">KSharedConfig::openConfig</a></div><div class="ttdeci">static KSharedConfig::Ptr openConfig(const QString &amp;fileName=QString(), OpenFlags mode=FullConfig, QStandardPaths::StandardLocation type=QStandardPaths::GenericConfigLocation)</div></div>
+<div class="ttc" id="classKConfigGroup_html"><div class="ttname"><a href="../../../frameworks/kconfig-5.26.0/html/classKConfigGroup.html">KConfigGroup</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_a6cff2bf6a87144e35027302ac1ef5f1c"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#a6cff2bf6a87144e35027302ac1ef5f1c">KDirSortFilterProxyModel::hasChildren</a></div><div class="ttdeci">bool hasChildren(const QModelIndex &amp;parent=QModelIndex()) const override</div><div class="ttdoc">Reimplemented from QAbstractItemModel. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00102">kdirsortfilterproxymodel.cpp:102</a></div></div>
+<div class="ttc" id="classKFileItem_html_a5cc754c2c0b965282e36e8d21c7f51d9"><div class="ttname"><a href="classKFileItem.html#a5cc754c2c0b965282e36e8d21c7f51d9">KFileItem::user</a></div><div class="ttdeci">QString user() const</div><div class="ttdoc">Returns the owner of the file. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00661">kfileitem.cpp:661</a></div></div>
+<div class="ttc" id="klocalizedstring_8h_html"><div class="ttname"><a href="../../../frameworks/ki18n-5.26.0/html/klocalizedstring_8h.html">klocalizedstring.h</a></div></div>
+<div class="ttc" id="classKDirSortFilterProxyModel_html_a2ea33565836249cea072a88263b1462d"><div class="ttname"><a href="classKDirSortFilterProxyModel.html#a2ea33565836249cea072a88263b1462d">KDirSortFilterProxyModel::pointsForPermissions</a></div><div class="ttdeci">static int pointsForPermissions(const QFileInfo &amp;info)</div><div class="ttdoc">Returns the permissions in &quot;points&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="kdirsortfilterproxymodel_8cpp_source.html#l00114">kdirsortfilterproxymodel.cpp:114</a></div></div>
+<div class="ttc" id="classKDirModel_html"><div class="ttname"><a href="classKDirModel.html">KDirModel</a></div><div class="ttdoc">A model for a KIO-based directory tree. </div><div class="ttdef"><b>Definition:</b> <a href="kdirmodel_8h_source.html#l00048">kdirmodel.h:48</a></div></div>
+<div class="ttc" id="classKFileItem_html"><div class="ttname"><a href="classKFileItem.html">KFileItem</a></div><div class="ttdoc">A KFileItem is a generic class to handle a file, local or remote. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8h_source.html#l00045">kfileitem.h:45</a></div></div>
+<div class="ttc" id="classKFileItem_html_a84fd45304c5bbfc8a1c2f0c88724ad7c"><div class="ttname"><a href="classKFileItem.html#a84fd45304c5bbfc8a1c2f0c88724ad7c">KFileItem::mimetype</a></div><div class="ttdeci">QString mimetype() const</div><div class="ttdoc">Returns the mimetype of the file item. </div><div class="ttdef"><b>Definition:</b> <a href="kfileitem_8cpp_source.html#l00702">kfileitem.cpp:702</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:24:54 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

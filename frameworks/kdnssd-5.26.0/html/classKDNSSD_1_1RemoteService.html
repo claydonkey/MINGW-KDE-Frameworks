@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDNSSD - KDNSSD::RemoteService Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KDNSSD</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KDNSSD"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKDNSSD_1_1DomainBrowser.html">KDNSSD::DomainBrowser</option>
+        
+        <option value="classKDNSSD_1_1DomainModel.html">KDNSSD::DomainModel</option>
+        
+        <option value="classKDNSSD_1_1PublicService.html">KDNSSD::PublicService</option>
+        
+        <option value="classKDNSSD_1_1RemoteService.html">KDNSSD::RemoteService</option>
+        
+        <option value="classKDNSSD_1_1Responder.html">KDNSSD::Responder</option>
+        
+        <option value="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</option>
+        
+        <option value="classKDNSSD_1_1ServiceBrowser.html">KDNSSD::ServiceBrowser</option>
+        
+        <option value="classKDNSSD_1_1ServiceModel.html">KDNSSD::ServiceModel</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Abstraction to system DNSSD features</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:matthew@mjdsystems.ca">Matthew Dawson</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5DNSSD)
+target_link_libraries(yourapp KF5::DNSSD)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KDNSSD </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kdnssd-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KDNSSD on <a href="https://cgit.kde.org/kdnssd-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KDNSSD </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=RemoteService">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>KDNSSD</b></li><li class="navelem"><a class="el" href="classKDNSSD_1_1RemoteService.html">RemoteService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKDNSSD_1_1RemoteService-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KDNSSD::RemoteService Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="remoteservice_8h_source.html">KDNSSD/RemoteService</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for KDNSSD::RemoteService:</div>
+<div class="dyncontent">
+<div class="center"><img src="classKDNSSD_1_1RemoteService__inherit__graph.png" border="0" usemap="#KDNSSD_1_1RemoteService_inherit__map" alt="Inheritance graph"/></div>
+<map name="KDNSSD_1_1RemoteService_inherit__map" id="KDNSSD_1_1RemoteService_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae7761f47c774754fb8b6d955833b23c0"><td class="memItemLeft" align="right" valign="top"><a id="ae7761f47c774754fb8b6d955833b23c0"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKDNSSD_1_1RemoteService.html">RemoteService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:ae7761f47c774754fb8b6d955833b23c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a9eb18a7d61af123459a6e347e99a0586 inherit pub_types_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9eb18a7d61af123459a6e347e99a0586"></a>
+typedef QExplicitlySharedDataPointer&lt; <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:a9eb18a7d61af123459a6e347e99a0586 inherit pub_types_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ac9147f01be1f9c9c319419a51d120e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1RemoteService.html#ac9147f01be1f9c9c319419a51d120e99">resolved</a> (bool successful)</td></tr>
+<tr class="separator:ac9147f01be1f9c9c319419a51d120e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6ae39c3823a94623be14f8379bb42649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1RemoteService.html#a6ae39c3823a94623be14f8379bb42649">RemoteService</a> (const QString &amp;name, const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a>, const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a>)</td></tr>
+<tr class="separator:a6ae39c3823a94623be14f8379bb42649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812db85170fd32c0755c7bff9148aec5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1RemoteService.html#a812db85170fd32c0755c7bff9148aec5">isResolved</a> () const</td></tr>
+<tr class="separator:a812db85170fd32c0755c7bff9148aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad402252765bcb063942db007501587d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1RemoteService.html#ad402252765bcb063942db007501587d2">resolve</a> ()</td></tr>
+<tr class="separator:ad402252765bcb063942db007501587d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b5db6504bbb771a4bfe16273dcb0f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1RemoteService.html#a71b5db6504bbb771a4bfe16273dcb0f3">resolveAsync</a> ()</td></tr>
+<tr class="separator:a71b5db6504bbb771a4bfe16273dcb0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a047fd77b4121314c481a8c8f0d325b88 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a047fd77b4121314c481a8c8f0d325b88">ServiceBase</a> (const QString &amp;name=QString(), const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a>=QString(), const QString &amp;<a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a>=QString(), const QString &amp;host=QString(), unsigned short <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a>=0)</td></tr>
+<tr class="separator:a047fd77b4121314c481a8c8f0d325b88 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e65320d438f5abc261f2b77b96ccaa8 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a9e65320d438f5abc261f2b77b96ccaa8">domain</a> () const</td></tr>
+<tr class="separator:a9e65320d438f5abc261f2b77b96ccaa8 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97cdc587b1d12b2081e6e23035e2c51 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#ab97cdc587b1d12b2081e6e23035e2c51">hostName</a> () const</td></tr>
+<tr class="separator:ab97cdc587b1d12b2081e6e23035e2c51 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82318b112c1ba1ed77f07ab902b18883 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a82318b112c1ba1ed77f07ab902b18883">operator!=</a> (const <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &amp;o) const</td></tr>
+<tr class="separator:a82318b112c1ba1ed77f07ab902b18883 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369ff4a29370f64ba4adaf8a9f8e9ff5 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a369ff4a29370f64ba4adaf8a9f8e9ff5">operator==</a> (const <a class="el" href="classKDNSSD_1_1ServiceBase.html">ServiceBase</a> &amp;o) const</td></tr>
+<tr class="separator:a369ff4a29370f64ba4adaf8a9f8e9ff5 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a718efe26f11a438a88bf156d80384 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384">port</a> () const</td></tr>
+<tr class="separator:a91a718efe26f11a438a88bf156d80384 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6fe19b279b51d62ff1cecc7b432c50 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a8f6fe19b279b51d62ff1cecc7b432c50">serviceName</a> () const</td></tr>
+<tr class="separator:a8f6fe19b279b51d62ff1cecc7b432c50 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ae1592b4f6a94187aa643506a70852 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QMap&lt; QString, QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#a96ae1592b4f6a94187aa643506a70852">textData</a> () const</td></tr>
+<tr class="separator:a96ae1592b4f6a94187aa643506a70852 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeced7db9b94078a9b44fc3f1dffe879 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKDNSSD_1_1ServiceBase.html#aeeced7db9b94078a9b44fc3f1dffe879">type</a> () const</td></tr>
+<tr class="separator:aeeced7db9b94078a9b44fc3f1dffe879 inherit pub_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7b93a1e37bceca26caf30e61be64f609"><td class="memItemLeft" align="right" valign="top"><a id="a7b93a1e37bceca26caf30e61be64f609"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>virtual_hook</b> (int id, void *data) override</td></tr>
+<tr class="separator:a7b93a1e37bceca26caf30e61be64f609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a89ba842e674befa55284718d16dcbe1b inherit pro_methods_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a89ba842e674befa55284718d16dcbe1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceBase</b> (ServiceBasePrivate *const d)</td></tr>
+<tr class="separator:a89ba842e674befa55284718d16dcbe1b inherit pro_methods_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classKDNSSD_1_1ServiceBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKDNSSD_1_1ServiceBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKDNSSD_1_1ServiceBase.html">KDNSSD::ServiceBase</a></td></tr>
+<tr class="memitem:a623c69f2cd9a7eb62c51ff62f57958b0 inherit pro_attribs_classKDNSSD_1_1ServiceBase"><td class="memItemLeft" align="right" valign="top"><a id="a623c69f2cd9a7eb62c51ff62f57958b0"></a>
+ServiceBasePrivate *const&#160;</td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
+<tr class="separator:a623c69f2cd9a7eb62c51ff62f57958b0 inherit pro_attribs_classKDNSSD_1_1ServiceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes a service published over DNS-SD, typically on a remote machine. </p>
+<p>This class allows delayed or asynchronous resolution of services. As the name suggests, the service is normally on a remote machine, but the service could just as easily be published on the local machine.</p>
+<p><a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> instances are normally provided by <a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a>, but can be used to resolve any service if you know the name, type and domain for it.</p>
+<dl class="section author"><dt>Author</dt><dd>Jakub Stachowski</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html" title="Browses for network services advertised over DNS-SD. ">ServiceBrowser</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="remoteservice_8h_source.html#l00050">50</a> of file <a class="el" href="remoteservice_8h_source.html">remoteservice.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6ae39c3823a94623be14f8379bb42649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae39c3823a94623be14f8379bb42649">&#9670;&nbsp;</a></span>RemoteService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KDNSSD::RemoteService::RemoteService </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>domain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an unresolved <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> representing the service with the given name, type and domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the service </td></tr>
+    <tr><td class="paramname">type</td><td>the type of the service (see <a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ae2965fa63de2fb977e1bff806ab452f5" title="Create a ServiceBrowser for a particular service type. ">ServiceBrowser::ServiceBrowser()</a>) </td></tr>
+    <tr><td class="paramname">domain</td><td>the domain of the service</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1ServiceBrowser.html#ac0f402d7933c305570bb4dbc2f4ac961" title="Checks availability of DNS-SD services. ">ServiceBrowser::isAvailable()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-remoteservice_8cpp_source.html#l00032">32</a> of file <a class="el" href="avahi-remoteservice_8cpp_source.html">avahi-remoteservice.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a812db85170fd32c0755c7bff9148aec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812db85170fd32c0755c7bff9148aec5">&#9670;&nbsp;</a></span>isResolved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::RemoteService::isResolved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the service has been successfully resolved. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="classKDNSSD_1_1ServiceBase.html#ab97cdc587b1d12b2081e6e23035e2c51" title="The hostname of the service. ">hostName()</a> and <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384" title="The port number of the service. ">port()</a> will return valid values, <code>false</code> otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-remoteservice_8cpp_source.html#l00078">78</a> of file <a class="el" href="avahi-remoteservice_8cpp_source.html">avahi-remoteservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad402252765bcb063942db007501587d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad402252765bcb063942db007501587d2">&#9670;&nbsp;</a></span>resolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KDNSSD::RemoteService::resolve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolves the host name and port of service synchronously. </p>
+<p>The host name is not resolved into an IP address - use KResolver for that.</p>
+<p><a class="el" href="classKDNSSD_1_1RemoteService.html#ac9147f01be1f9c9c319419a51d120e99" title="Emitted when resolving is complete. ">resolved(bool)</a> is emitted before this function is returned.</p>
+<p><a class="el" href="classKDNSSD_1_1RemoteService.html#ad402252765bcb063942db007501587d2" title="Resolves the host name and port of service synchronously. ">resolve()</a> will not cause <a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> to monitor for changes in the hostname or port of the service.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if successful, <code>false</code> on failure</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1RemoteService.html#a71b5db6504bbb771a4bfe16273dcb0f3" title="Resolves the host name and port of service asynchronously. ">resolveAsync()</a>, <a class="el" href="classKDNSSD_1_1ServiceBase.html#ab97cdc587b1d12b2081e6e23035e2c51" title="The hostname of the service. ">hostName()</a>, <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384" title="The port number of the service. ">port()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-remoteservice_8cpp_source.html#l00041">41</a> of file <a class="el" href="avahi-remoteservice_8cpp_source.html">avahi-remoteservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a71b5db6504bbb771a4bfe16273dcb0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b5db6504bbb771a4bfe16273dcb0f3">&#9670;&nbsp;</a></span>resolveAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::RemoteService::resolveAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolves the host name and port of service asynchronously. </p>
+<p>The host name is not resolved into an IP address - use KResolver for that.</p>
+<p>The <a class="el" href="classKDNSSD_1_1RemoteService.html#ac9147f01be1f9c9c319419a51d120e99" title="Emitted when resolving is complete. ">resolved(bool)</a> signal will be emitted when the resolution is complete, or when it fails.</p>
+<p>Note that <a class="el" href="classKDNSSD_1_1RemoteService.html#ac9147f01be1f9c9c319419a51d120e99" title="Emitted when resolving is complete. ">resolved(bool)</a> may be emitted before this function returns in case of immediate failure.</p>
+<p><a class="el" href="classKDNSSD_1_1RemoteService.html" title="Describes a service published over DNS-SD, typically on a remote machine. ">RemoteService</a> will keep monitoring the service for changes in hostname and port, and re-emit <a class="el" href="classKDNSSD_1_1RemoteService.html#ac9147f01be1f9c9c319419a51d120e99" title="Emitted when resolving is complete. ">resolved(bool)</a> when either changes.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKDNSSD_1_1RemoteService.html#ad402252765bcb063942db007501587d2" title="Resolves the host name and port of service synchronously. ">resolve()</a>, <a class="el" href="classKDNSSD_1_1ServiceBase.html#ab97cdc587b1d12b2081e6e23035e2c51" title="The hostname of the service. ">hostName()</a>, <a class="el" href="classKDNSSD_1_1ServiceBase.html#a91a718efe26f11a438a88bf156d80384" title="The port number of the service. ">port()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="avahi-remoteservice_8cpp_source.html#l00051">51</a> of file <a class="el" href="avahi-remoteservice_8cpp_source.html">avahi-remoteservice.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9147f01be1f9c9c319419a51d120e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9147f01be1f9c9c319419a51d120e99">&#9670;&nbsp;</a></span>resolved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KDNSSD::RemoteService::resolved </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>successful</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when resolving is complete. </p>
+<p>If operating in asynchronous mode this signal can be emitted several times (when the hostName or port of the service changes).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">successful</td><td><code>true</code> if the hostName and port were successfully resolved, <code>false</code> otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="remoteservice_8h_source.html">remoteservice.h</a></li>
+<li><a class="el" href="avahi-remoteservice_8cpp_source.html">avahi-remoteservice.cpp</a></li>
+<li><a class="el" href="dummy-remoteservice_8cpp_source.html">dummy-remoteservice.cpp</a></li>
+<li><a class="el" href="mdnsd-remoteservice_8cpp_source.html">mdnsd-remoteservice.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:23:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

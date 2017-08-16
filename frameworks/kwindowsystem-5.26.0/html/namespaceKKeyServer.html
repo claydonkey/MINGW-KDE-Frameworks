@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - KKeyServer Namespace Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">KKeyServer Namespace Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae407cb37157ddc3ea23894f32d782812"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812">accelModMaskX</a> ()</td></tr>
+<tr class="separator:ae407cb37157ddc3ea23894f32d782812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0157b0fddba456a8941e42b5c1f158"><td class="memItemLeft" align="right" valign="top"><a id="a3a0157b0fddba456a8941e42b5c1f158"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkDisplay</b> ()</td></tr>
+<tr class="separator:a3a0157b0fddba456a8941e42b5c1f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5689dda8aa8d0f785d0ff5f220998a99"><td class="memItemLeft" align="right" valign="top"><a id="a5689dda8aa8d0f785d0ff5f220998a99"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>codeWinToKeyQt</b> (uint sym, int *keyQt)</td></tr>
+<tr class="separator:a5689dda8aa8d0f785d0ff5f220998a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad3a4b50c3364f62b4f78e4cfe7d8fe"><td class="memItemLeft" align="right" valign="top"><a id="a1ad3a4b50c3364f62b4f78e4cfe7d8fe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>codeXToSym</b> (uchar codeX, uint modX, uint *sym)</td></tr>
+<tr class="separator:a1ad3a4b50c3364f62b4f78e4cfe7d8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c1e639751551e5757992275cef8732"><td class="memItemLeft" align="right" valign="top"><a id="ae8c1e639751551e5757992275cef8732"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>getModsRequired</b> (uint sym)</td></tr>
+<tr class="separator:ae8c1e639751551e5757992275cef8732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54671bed2d347e7ab104e5c1a89ad87d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a54671bed2d347e7ab104e5c1a89ad87d">initializeMods</a> ()</td></tr>
+<tr class="separator:a54671bed2d347e7ab104e5c1a89ad87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed67a6e0b4f5684f3fb317df934ff7b"><td class="memItemLeft" align="right" valign="top"><a id="a5ed67a6e0b4f5684f3fb317df934ff7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>intializeKKeyLabels</b> ()</td></tr>
+<tr class="separator:a5ed67a6e0b4f5684f3fb317df934ff7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c69e9757d72c01d46dd59d046e41575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a8c69e9757d72c01d46dd59d046e41575">isShiftAsModifierAllowed</a> (int keyQt)</td></tr>
+<tr class="separator:a8c69e9757d72c01d46dd59d046e41575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b4ad168b54f4bc462bec08e0d49fb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a99b4ad168b54f4bc462bec08e0d49fb8">keyboardHasMetaKey</a> ()</td></tr>
+<tr class="separator:a99b4ad168b54f4bc462bec08e0d49fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae970c91d26c7f6aca92420b2ffa071"><td class="memItemLeft" align="right" valign="top">KWINDOWSYSTEM_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#adae970c91d26c7f6aca92420b2ffa071">keyQtToCodeMac</a> (int keyQt, QList&lt; uint &gt; &amp;keyCodes)</td></tr>
+<tr class="separator:adae970c91d26c7f6aca92420b2ffa071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b70be8f930c1d8ea63681d94799f78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ae6b70be8f930c1d8ea63681d94799f78">keyQtToCodeWin</a> (int keyQt, uint *sym)</td></tr>
+<tr class="separator:ae6b70be8f930c1d8ea63681d94799f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52937263a8d8f238b78a9c1884eeaf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#aa52937263a8d8f238b78a9c1884eeaf2">keyQtToCodeX</a> (int keyQt, int *keyCode)</td></tr>
+<tr class="separator:aa52937263a8d8f238b78a9c1884eeaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b33d4b55841ad2f034df72712cd2479"><td class="memItemLeft" align="right" valign="top">KWINDOWSYSTEM_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a8b33d4b55841ad2f034df72712cd2479">keyQtToModMac</a> (int keyQt, uint &amp;mod)</td></tr>
+<tr class="separator:a8b33d4b55841ad2f034df72712cd2479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fa4238363153cb6f9bccb70fa13c19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ab2fa4238363153cb6f9bccb70fa13c19">keyQtToModWin</a> (int keyQt, uint *mod)</td></tr>
+<tr class="separator:ab2fa4238363153cb6f9bccb70fa13c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c14557db238d8da20e7f1cf4be93d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ae8c14557db238d8da20e7f1cf4be93d7">keyQtToModX</a> (int keyQt, uint *mod)</td></tr>
+<tr class="separator:ae8c14557db238d8da20e7f1cf4be93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2da6221631e4b6928cada693f501918"><td class="memItemLeft" align="right" valign="top">KWINDOWSYSTEM_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ae2da6221631e4b6928cada693f501918">keyQtToSymMac</a> (int keyQt, int &amp;sym)</td></tr>
+<tr class="separator:ae2da6221631e4b6928cada693f501918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a7efde5c1c83084651ffba90d1516"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a872a7efde5c1c83084651ffba90d1516">keyQtToSymX</a> (int keyQt, int *sym)</td></tr>
+<tr class="separator:a872a7efde5c1c83084651ffba90d1516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de5e5aa5034059e6d0822f4752354c7"><td class="memItemLeft" align="right" valign="top"><a id="a1de5e5aa5034059e6d0822f4752354c7"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>modToString</b> (uint mod, bool bUserSpace)</td></tr>
+<tr class="separator:a1de5e5aa5034059e6d0822f4752354c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca4c09c25ba39c3c91790c7be931d1b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#aeca4c09c25ba39c3c91790c7be931d1b">modToStringUser</a> (uint mod)</td></tr>
+<tr class="separator:aeca4c09c25ba39c3c91790c7be931d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72600b516dccf9f45f96e7709a1f1203"><td class="memItemLeft" align="right" valign="top"><a id="a72600b516dccf9f45f96e7709a1f1203"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>modWinToKeyQt</b> (uint mod, int *keyQt)</td></tr>
+<tr class="separator:a72600b516dccf9f45f96e7709a1f1203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e73f99014a7ad204a9d97a23c539ace"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a2e73f99014a7ad204a9d97a23c539ace">modXAlt</a> ()</td></tr>
+<tr class="separator:a2e73f99014a7ad204a9d97a23c539ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c0576a00ef44c42cbf9da014da10b7"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#aa3c0576a00ef44c42cbf9da014da10b7">modXCtrl</a> ()</td></tr>
+<tr class="separator:aa3c0576a00ef44c42cbf9da014da10b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d399ef8dfe78e0c26642132fab2c69e"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a2d399ef8dfe78e0c26642132fab2c69e">modXLock</a> ()</td></tr>
+<tr class="separator:a2d399ef8dfe78e0c26642132fab2c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eadea9f61890f68a0c85331928186a7"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a2eadea9f61890f68a0c85331928186a7">modXMeta</a> ()</td></tr>
+<tr class="separator:a2eadea9f61890f68a0c85331928186a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b0d854bdd80bb11a0001abcec3506c"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ad6b0d854bdd80bb11a0001abcec3506c">modXModeSwitch</a> ()</td></tr>
+<tr class="separator:ad6b0d854bdd80bb11a0001abcec3506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22ba15a4b093319ababf4a6fea1d8a3"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#af22ba15a4b093319ababf4a6fea1d8a3">modXNumLock</a> ()</td></tr>
+<tr class="separator:af22ba15a4b093319ababf4a6fea1d8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5012bf9d5ad000d9fce354826b369eb"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ab5012bf9d5ad000d9fce354826b369eb">modXScrollLock</a> ()</td></tr>
+<tr class="separator:ab5012bf9d5ad000d9fce354826b369eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef307d03b6c77dca1a69b345fc7c7ba"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#abef307d03b6c77dca1a69b345fc7c7ba">modXShift</a> ()</td></tr>
+<tr class="separator:abef307d03b6c77dca1a69b345fc7c7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e636fc3b5281cac0a8439ed4a4e5b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#ad4e636fc3b5281cac0a8439ed4a4e5b2">modXToQt</a> (uint modX, int *modQt)</td></tr>
+<tr class="separator:ad4e636fc3b5281cac0a8439ed4a4e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610a599d70821c37cda8daced3577e53"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a610a599d70821c37cda8daced3577e53">stringUserToMod</a> (const QString &amp;mod)</td></tr>
+<tr class="separator:a610a599d70821c37cda8daced3577e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e183f739e9a6b0d718100f29609c28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#aa5e183f739e9a6b0d718100f29609c28">symXToKeyQt</a> (uint sym, int *keyQt)</td></tr>
+<tr class="separator:aa5e183f739e9a6b0d718100f29609c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecda09c5614e4386835a11b743643aec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#aecda09c5614e4386835a11b743643aec">xcbKeyPressEventToQt</a> (xcb_generic_event_t *e, int *keyModQt)</td></tr>
+<tr class="separator:aecda09c5614e4386835a11b743643aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794ff3fe9ff31d9b93bf04a68c3d789c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a794ff3fe9ff31d9b93bf04a68c3d789c">xcbKeyPressEventToQt</a> (xcb_key_press_event_t *e, int *keyModQt)</td></tr>
+<tr class="separator:a794ff3fe9ff31d9b93bf04a68c3d789c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf038dbe7813c08a74906b5913b63d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKKeyServer.html#a9cf038dbe7813c08a74906b5913b63d6">xEventToQt</a> (XEvent *e, int *keyModQt)</td></tr>
+<tr class="separator:a9cf038dbe7813c08a74906b5913b63d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1c0c3271d901901798d3e965e41fc18b"><td class="memItemLeft" align="right" valign="top"><a id="a1c0c3271d901901798d3e965e41fc18b"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_alt_mask</b></td></tr>
+<tr class="separator:a1c0c3271d901901798d3e965e41fc18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5010fd5c988365bb62d9d6f50b03892a"><td class="memItemLeft" align="right" valign="top"><a id="a5010fd5c988365bb62d9d6f50b03892a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_bInitializedKKeyLabels</b></td></tr>
+<tr class="separator:a5010fd5c988365bb62d9d6f50b03892a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fb3a07ae79ecea6ccba945bcdb9ffe"><td class="memItemLeft" align="right" valign="top"><a id="ab7fb3a07ae79ecea6ccba945bcdb9ffe"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_bInitializedMods</b></td></tr>
+<tr class="separator:ab7fb3a07ae79ecea6ccba945bcdb9ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc018abe47655f700264891c54c219ec"><td class="memItemLeft" align="right" valign="top"><a id="adc018abe47655f700264891c54c219ec"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_bMacLabels</b></td></tr>
+<tr class="separator:adc018abe47655f700264891c54c219ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ce0ed80cb2fb4ded26a6ee880742c6"><td class="memItemLeft" align="right" valign="top"><a id="ad8ce0ed80cb2fb4ded26a6ee880742c6"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_hyper_mask</b></td></tr>
+<tr class="separator:ad8ce0ed80cb2fb4ded26a6ee880742c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78f12f6db92466166ffbc4a0cccefef"><td class="memItemLeft" align="right" valign="top"><a id="ad78f12f6db92466166ffbc4a0cccefef"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_meta_mask</b></td></tr>
+<tr class="separator:ad78f12f6db92466166ffbc4a0cccefef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ceccb77c2035800cbb46a8bed407b3c"><td class="memItemLeft" align="right" valign="top"><a id="a7ceccb77c2035800cbb46a8bed407b3c"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_modXModeSwitch</b></td></tr>
+<tr class="separator:a7ceccb77c2035800cbb46a8bed407b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01fa9680a4a9e3a3fd862681e50244d"><td class="memItemLeft" align="right" valign="top"><a id="ac01fa9680a4a9e3a3fd862681e50244d"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_modXNumLock</b></td></tr>
+<tr class="separator:ac01fa9680a4a9e3a3fd862681e50244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2367dfa0438033f30288e7d350379a4b"><td class="memItemLeft" align="right" valign="top"><a id="a2367dfa0438033f30288e7d350379a4b"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_modXScrollLock</b></td></tr>
+<tr class="separator:a2367dfa0438033f30288e7d350379a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd64aa81277a920a62fa9e2ea23b4c8"><td class="memItemLeft" align="right" valign="top">static ModInfo&#160;</td><td class="memItemRight" valign="bottom"><b>g_rgModInfo</b> [4]</td></tr>
+<tr class="separator:a6cd64aa81277a920a62fa9e2ea23b4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628b86564d9f4440dbfe67b223bd6b7b"><td class="memItemLeft" align="right" valign="top"><a id="a628b86564d9f4440dbfe67b223bd6b7b"></a>
+static const TransKey&#160;</td><td class="memItemRight" valign="bottom"><b>g_rgQtToSymX</b> []</td></tr>
+<tr class="separator:a628b86564d9f4440dbfe67b223bd6b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68c751c4c41a54f2821b63ca42741d7"><td class="memItemLeft" align="right" valign="top">static X11ModInfo&#160;</td><td class="memItemRight" valign="bottom"><b>g_rgX11ModInfo</b> [4]</td></tr>
+<tr class="separator:ae68c751c4c41a54f2821b63ca42741d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe6fffd7a7da955e548089f05dbb0ad"><td class="memItemLeft" align="right" valign="top"><a id="affe6fffd7a7da955e548089f05dbb0ad"></a>
+static uint&#160;</td><td class="memItemRight" valign="bottom"><b>g_super_mask</b></td></tr>
+<tr class="separator:affe6fffd7a7da955e548089f05dbb0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f59effe9cb6399f1f12e0be15694021"><td class="memItemLeft" align="right" valign="top"><a id="a6f59effe9cb6399f1f12e0be15694021"></a>
+static const TransKey&#160;</td><td class="memItemRight" valign="bottom"><b>KeyTbl</b> []</td></tr>
+<tr class="separator:a6f59effe9cb6399f1f12e0be15694021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfbd63394c1c3db2325ddbf37ecdbde"><td class="memItemLeft" align="right" valign="top"><a id="a4dfbd63394c1c3db2325ddbf37ecdbde"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>MODE_SWITCH</b> = 0x2000</td></tr>
+<tr class="separator:a4dfbd63394c1c3db2325ddbf37ecdbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of functions for the conversion of key presses and their modifiers from the window system specific format to the generic format and vice-versa. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae407cb37157ddc3ea23894f32d782812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae407cb37157ddc3ea23894f32d782812">&#9670;&nbsp;</a></span>accelModMaskX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::accelModMaskX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns bitwise OR'ed mask containing Shift, Ctrl, Alt, and Win (if available). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#abef307d03b6c77dca1a69b345fc7c7ba" title="Returns the X11 Shift modifier mask/flag. ">modXShift()</a> </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#a2d399ef8dfe78e0c26642132fab2c69e" title="Returns the X11 Lock modifier mask/flag. ">modXLock()</a> </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#aa3c0576a00ef44c42cbf9da014da10b7" title="Returns the X11 Ctrl modifier mask/flag. ">modXCtrl()</a> </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#a2e73f99014a7ad204a9d97a23c539ace" title="Returns the X11 Alt (Mod1) modifier mask/flag. ">modXAlt()</a> </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#af22ba15a4b093319ababf4a6fea1d8a3" title="Returns the X11 NumLock modifier mask/flag. ">modXNumLock()</a> </dd>
+<dd>
+modXWin() </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#ab5012bf9d5ad000d9fce354826b369eb" title="Returns the X11 ScrollLock modifier mask/flag. ">modXScrollLock()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00843">843</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a54671bed2d347e7ab104e5c1a89ad87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54671bed2d347e7ab104e5c1a89ad87d">&#9670;&nbsp;</a></span>initializeMods()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::initializeMods </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialises the values to return for the mod*() functions below. </p>
+<p>Called automatically by those functions if not already initialized. </p>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00471">471</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8c69e9757d72c01d46dd59d046e41575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c69e9757d72c01d46dd59d046e41575">&#9670;&nbsp;</a></span>isShiftAsModifierAllowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::isShiftAsModifierAllowed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if the shift modifier should be recorded for a given key. </p>
+<p>For example, if shift+5 produces '' Qt wants ctrl+shift+5 recorded as ctrl+% and in that case this function would return false.</p>
+<dl class="section since"><dt>Since</dt><dd>4.7.1 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kkeyserver_8cpp_source.html#l00107">107</a> of file <a class="el" href="kkeyserver_8cpp_source.html">kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99b4ad168b54f4bc462bec08e0d49fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b4ad168b54f4bc462bec08e0d49fb8">&#9670;&nbsp;</a></span>keyboardHasMetaKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyboardHasMetaKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the current keyboard layout supports the Meta key. </p>
+<p>Specifically, whether the Super or Meta keys are assigned to an X modifier. </p><dl class="section return"><dt>Returns</dt><dd>true if the keyboard has a Meta key </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#a2eadea9f61890f68a0c85331928186a7" title="Returns the X11 Win (Mod3) modifier mask/flag. ">modXMeta()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00662">662</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adae970c91d26c7f6aca92420b2ffa071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae970c91d26c7f6aca92420b2ffa071">&#9670;&nbsp;</a></span>keyQtToCodeMac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToCodeMac </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keyCodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts all the scancodes from the given Qt key. </p>
+<p>The returned values can change if a different keyboard layout is selected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">keyCodes</td><td>if successful, a list of scancodes will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ae6b70be8f930c1d8ea63681d94799f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b70be8f930c1d8ea63681d94799f78">&#9670;&nbsp;</a></span>keyQtToCodeWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToCodeWin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *&#160;</td>
+          <td class="paramname"><em>sym</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the symbol from the given Qt key and converts it to a Windows symbol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">sym</td><td>if successful, the symbol will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2windows_2kkeyserver_8cpp_source.html#l00236">236</a> of file <a class="el" href="platforms_2windows_2kkeyserver_8cpp_source.html">platforms/windows/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa52937263a8d8f238b78a9c1884eeaf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52937263a8d8f238b78a9c1884eeaf2">&#9670;&nbsp;</a></span>keyQtToCodeX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToCodeX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>keyCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the code from the given Qt key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">keyCode</td><td>if successful, the symbol will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00708">708</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b33d4b55841ad2f034df72712cd2479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b33d4b55841ad2f034df72712cd2479">&#9670;&nbsp;</a></span>keyQtToModMac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToModMac </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>mod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the modifiers from the given Qt key and converts them in a mask of OSX modifiers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">mod</td><td>if successful, the modifiers will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ab2fa4238363153cb6f9bccb70fa13c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fa4238363153cb6f9bccb70fa13c19">&#9670;&nbsp;</a></span>keyQtToModWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToModWin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *&#160;</td>
+          <td class="paramname"><em>mod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the modifiers from the given Qt key and converts them in a mask of Windows modifiers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">mod</td><td>if successful, the modifiers will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2windows_2kkeyserver_8cpp_source.html#l00198">198</a> of file <a class="el" href="platforms_2windows_2kkeyserver_8cpp_source.html">platforms/windows/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae8c14557db238d8da20e7f1cf4be93d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c14557db238d8da20e7f1cf4be93d7">&#9670;&nbsp;</a></span>keyQtToModX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToModX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *&#160;</td>
+          <td class="paramname"><em>mod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the modifiers from the given Qt key and converts them in a mask of X11 modifiers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">mod</td><td>if successful, the modifiers will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00785">785</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae2da6221631e4b6928cada693f501918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2da6221631e4b6928cada693f501918">&#9670;&nbsp;</a></span>keyQtToSymMac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToSymMac </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>sym</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the symbol from the given Qt key, and converts it to an OSX symbol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">sym</td><td>if successful, the symbol will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a872a7efde5c1c83084651ffba90d1516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872a7efde5c1c83084651ffba90d1516">&#9670;&nbsp;</a></span>keyQtToSymX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::keyQtToSymX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keyQt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sym</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the symbol from the given Qt key and converts it to an X11 symbol + modifiers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyQt</td><td>the qt key code </td></tr>
+    <tr><td class="paramname">sym</td><td>if successful, the symbol will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00732">732</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeca4c09c25ba39c3c91790c7be931d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca4c09c25ba39c3c91790c7be931d1b">&#9670;&nbsp;</a></span>modToStringUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT QString KKeyServer::modToStringUser </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>mod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the mask of ORed KKey::ModFlag modifiers to a user-readable string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>the mask of ORed KKey::ModFlag modifiers </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the user-readable string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kkeyserver_8cpp_source.html#l00092">92</a> of file <a class="el" href="kkeyserver_8cpp_source.html">kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e73f99014a7ad204a9d97a23c539ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e73f99014a7ad204a9d97a23c539ace">&#9670;&nbsp;</a></span>modXAlt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXAlt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Alt (Mod1) modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Alt (Mod1) modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00626">626</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa3c0576a00ef44c42cbf9da014da10b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c0576a00ef44c42cbf9da014da10b7">&#9670;&nbsp;</a></span>modXCtrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXCtrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Ctrl modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Ctrl modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00622">622</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d399ef8dfe78e0c26642132fab2c69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d399ef8dfe78e0c26642132fab2c69e">&#9670;&nbsp;</a></span>modXLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Lock modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Lock modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00645">645</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2eadea9f61890f68a0c85331928186a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eadea9f61890f68a0c85331928186a7">&#9670;&nbsp;</a></span>modXMeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXMeta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Win (Mod3) modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Win (Mod3) modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>keyboardHasWinKey() </dd>
+<dd>
+<a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00632">632</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6b0d854bdd80bb11a0001abcec3506c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b0d854bdd80bb11a0001abcec3506c">&#9670;&nbsp;</a></span>modXModeSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXModeSwitch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Mode_switch modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Mode_switch modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00655">655</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af22ba15a4b093319ababf4a6fea1d8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22ba15a4b093319ababf4a6fea1d8a3">&#9670;&nbsp;</a></span>modXNumLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXNumLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 NumLock modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 NumLock modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00639">639</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5012bf9d5ad000d9fce354826b369eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5012bf9d5ad000d9fce354826b369eb">&#9670;&nbsp;</a></span>modXScrollLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXScrollLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 ScrollLock modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 ScrollLock modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00649">649</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abef307d03b6c77dca1a69b345fc7c7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef307d03b6c77dca1a69b345fc7c7ba">&#9670;&nbsp;</a></span>modXShift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::modXShift </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the X11 Shift modifier mask/flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>the X11 Shift modifier mask/flag. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceKKeyServer.html#ae407cb37157ddc3ea23894f32d782812" title="Returns bitwise OR&#39;ed mask containing Shift, Ctrl, Alt, and Win (if available). ">accelModMaskX()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00618">618</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4e636fc3b5281cac0a8439ed4a4e5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e636fc3b5281cac0a8439ed4a4e5b2">&#9670;&nbsp;</a></span>modXToQt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::modXToQt </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>modX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>modQt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the mask of ORed X11 modifiers to a mask of ORed Qt key code modifiers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modX</td><td>the mask of X11 modifiers </td></tr>
+    <tr><td class="paramname">modQt</td><td>the mask of Qt key code modifiers will be written here if successful </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00806">806</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a610a599d70821c37cda8daced3577e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610a599d70821c37cda8daced3577e53">&#9670;&nbsp;</a></span>stringUserToMod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT uint KKeyServer::stringUserToMod </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>mod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the modifier given as user-readable string to KKey::ModFlag modifier, or 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="kkeyserver_8cpp_source.html#l00097">97</a> of file <a class="el" href="kkeyserver_8cpp_source.html">kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5e183f739e9a6b0d718100f29609c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e183f739e9a6b0d718100f29609c28">&#9670;&nbsp;</a></span>symXToKeyQt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::symXToKeyQt </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>sym</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>keyQt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the given symbol to a Qt key code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sym</td><td>the symbol </td></tr>
+    <tr><td class="paramname">keyQt</td><td>if successful, the qt key code will be written here </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00756">756</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aecda09c5614e4386835a11b743643aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecda09c5614e4386835a11b743643aec">&#9670;&nbsp;</a></span>xcbKeyPressEventToQt() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::xcbKeyPressEventToQt </td>
+          <td>(</td>
+          <td class="paramtype">xcb_generic_event_t *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>keyModQt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts an XCB keypress event into a Qt key + modifier code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>the XCB keypress event </td></tr>
+    <tr><td class="paramname">keyModQt</td><td>the Qt keycode and mask of Qt key code modifiers will be written here if successful </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00894">894</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a794ff3fe9ff31d9b93bf04a68c3d789c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794ff3fe9ff31d9b93bf04a68c3d789c">&#9670;&nbsp;</a></span>xcbKeyPressEventToQt() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::xcbKeyPressEventToQt </td>
+          <td>(</td>
+          <td class="paramtype">xcb_key_press_event_t *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>keyQt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overloaded method for convenience. </p>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00902">902</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9cf038dbe7813c08a74906b5913b63d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf038dbe7813c08a74906b5913b63d6">&#9670;&nbsp;</a></span>xEventToQt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KWINDOWSYSTEM_EXPORT bool KKeyServer::xEventToQt </td>
+          <td>(</td>
+          <td class="paramtype">XEvent *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>keyModQt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts an X keypress event into a Qt key + modifier code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>the X11 keypress event </td></tr>
+    <tr><td class="paramname">keyModQt</td><td>the Qt keycode and mask of Qt key code modifiers will be written here if successful </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00848">848</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6cd64aa81277a920a62fa9e2ea23b4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd64aa81277a920a62fa9e2ea23b4c8">&#9670;&nbsp;</a></span>g_rgModInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModInfo KKeyServer::g_rgModInfo[4]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    { Qt::SHIFT,   <span class="stringliteral">&quot;Shift&quot;</span>, 0 },</div><div class="line">    { Qt::CTRL,    <span class="stringliteral">&quot;Ctrl&quot;</span>, 0 },</div><div class="line">    { Qt::ALT,     <span class="stringliteral">&quot;Alt&quot;</span>, 0 },</div><div class="line">    { Qt::META,    <span class="stringliteral">&quot;Meta&quot;</span>, 0 }</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="kkeyserver_8cpp_source.html#l00044">44</a> of file <a class="el" href="kkeyserver_8cpp_source.html">kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae68c751c4c41a54f2821b63ca42741d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68c751c4c41a54f2821b63ca42741d7">&#9670;&nbsp;</a></span>g_rgX11ModInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">X11ModInfo KKeyServer::g_rgX11ModInfo[4]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    { Qt::SHIFT,   X11_ONLY(ShiftMask) },</div><div class="line">    { Qt::CTRL,    X11_ONLY(ControlMask) },</div><div class="line">    { Qt::ALT,     X11_ONLY(Mod1Mask) },</div><div class="line">    { Qt::META,    X11_ONLY(Mod4Mask) }</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html#l00077">77</a> of file <a class="el" href="platforms_2xcb_2kkeyserver_8cpp_source.html">platforms/xcb/kkeyserver.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

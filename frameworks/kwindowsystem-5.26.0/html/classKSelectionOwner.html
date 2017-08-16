@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWindowSystem - KSelectionOwner Class Reference</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KWindowSystem</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KWindowSystem"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKSelectionOwner.html">KSelectionOwner</option>
+        
+        <option value="classKSelectionWatcher.html">KSelectionWatcher</option>
+        
+        <option value="classKStartupInfo.html">KStartupInfo</option>
+        
+        <option value="classKStartupInfoData.html">KStartupInfoData</option>
+        
+        <option value="classKStartupInfoId.html">KStartupInfoId</option>
+        
+        <option value="classKWindowInfo.html">KWindowInfo</option>
+        
+        <option value="classKWindowSystem.html">KWindowSystem</option>
+        
+        <option value="classKXMessages.html">KXMessages</option>
+        
+        <option value="classNET.html">NET</option>
+        
+        <option value="classNETRootInfo.html">NETRootInfo</option>
+        
+        <option value="classNETWinInfo.html">NETWinInfo</option>
+        
+        <option value="namespaceKKeyServer.html">KKeyServer</option>
+        
+        <option value="namespaceKWindowEffects.html">KWindowEffects</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Access to the windowing system</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:mgraesslin@kde.org">Martin Flöser</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5WindowSystem)
+target_link_libraries(yourapp KF5::WindowSystem)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KWindowSystem </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kwindowsystem-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KWindowSystem on <a href="https://cgit.kde.org/kwindowsystem-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KWindowSystem </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KSelectionOwner">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classKSelectionOwner-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">KSelectionOwner Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="kselectionowner_8h_source.html">kselectionowner.h</a>&gt;</code></p>
+
+<p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a850f95606e259ec5782a34dee81151d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a850f95606e259ec5782a34dee81151d9">claimedOwnership</a> ()</td></tr>
+<tr class="separator:a850f95606e259ec5782a34dee81151d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587d9e43f65da3743bca98b3194628d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a587d9e43f65da3743bca98b3194628d5">failedToClaimOwnership</a> ()</td></tr>
+<tr class="separator:a587d9e43f65da3743bca98b3194628d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ce76fb9a643416242ba45420c8b260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#ab8ce76fb9a643416242ba45420c8b260">lostOwnership</a> ()</td></tr>
+<tr class="separator:ab8ce76fb9a643416242ba45420c8b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9ba1fbe497e7bec7f8e5cc9003134bd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a9ba1fbe497e7bec7f8e5cc9003134bd7">KSelectionOwner</a> (xcb_atom_t selection, int screen=-1, QObject *parent=NULL)</td></tr>
+<tr class="separator:a9ba1fbe497e7bec7f8e5cc9003134bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cd860a3e62f3599bc37b483eecfefc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a46cd860a3e62f3599bc37b483eecfefc">KSelectionOwner</a> (const char *selection, int screen=-1, QObject *parent=NULL)</td></tr>
+<tr class="separator:a46cd860a3e62f3599bc37b483eecfefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f2c2bf5fbdad7b7c6ee4cb886e703a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a50f2c2bf5fbdad7b7c6ee4cb886e703a">KSelectionOwner</a> (xcb_atom_t selection, xcb_connection_t *c, xcb_window_t root, QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:a50f2c2bf5fbdad7b7c6ee4cb886e703a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2583b55cc0c30c7e4feb0c485757bd29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a2583b55cc0c30c7e4feb0c485757bd29">KSelectionOwner</a> (const char *selection, xcb_connection_t *c, xcb_window_t root, QObject *parent=Q_NULLPTR)</td></tr>
+<tr class="separator:a2583b55cc0c30c7e4feb0c485757bd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15673162d1adae28e855bc9d8c2691ba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a15673162d1adae28e855bc9d8c2691ba">~KSelectionOwner</a> ()</td></tr>
+<tr class="separator:a15673162d1adae28e855bc9d8c2691ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7de74271def7cfb3075b69eecbb5c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#aae7de74271def7cfb3075b69eecbb5c2">claim</a> (bool force, bool force_kill=true)</td></tr>
+<tr class="separator:aae7de74271def7cfb3075b69eecbb5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1abaab1b03179ed7a6e59fd4660f6ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#ae1abaab1b03179ed7a6e59fd4660f6ca">filterEvent</a> (void *ev_P)</td></tr>
+<tr class="separator:ae1abaab1b03179ed7a6e59fd4660f6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4070624e3733be27195f4e34b2e66880"><td class="memItemLeft" align="right" valign="top">xcb_window_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a4070624e3733be27195f4e34b2e66880">ownerWindow</a> () const</td></tr>
+<tr class="separator:a4070624e3733be27195f4e34b2e66880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209f6993ec407d44c5c363c3b75558a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a209f6993ec407d44c5c363c3b75558a3">release</a> ()</td></tr>
+<tr class="separator:a209f6993ec407d44c5c363c3b75558a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eadd8947302aea87abcfd5b7345cc10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a5eadd8947302aea87abcfd5b7345cc10">timerEvent</a> (QTimerEvent *event)</td></tr>
+<tr class="separator:a5eadd8947302aea87abcfd5b7345cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0ede03a255665f463fef6b2c5eae3eae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a0ede03a255665f463fef6b2c5eae3eae">genericReply</a> (xcb_atom_t target, xcb_atom_t property, xcb_window_t requestor)</td></tr>
+<tr class="separator:a0ede03a255665f463fef6b2c5eae3eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba05e98469b6178d4aca6c518f8596a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#aba05e98469b6178d4aca6c518f8596a5">getAtoms</a> ()</td></tr>
+<tr class="separator:aba05e98469b6178d4aca6c518f8596a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56f45844958115800d8a34015294b89"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#ae56f45844958115800d8a34015294b89">replyTargets</a> (xcb_atom_t property, xcb_window_t requestor)</td></tr>
+<tr class="separator:ae56f45844958115800d8a34015294b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23943c7a17a0452a6dfb61708f680c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKSelectionOwner.html#a23943c7a17a0452a6dfb61708f680c57">setData</a> (uint32_t extra1, uint32_t extra2)</td></tr>
+<tr class="separator:a23943c7a17a0452a6dfb61708f680c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements claiming and owning manager selections, as described in the ICCCM, section 2.8. </p>
+<p>The selection atom is passed to the constructor, <a class="el" href="classKSelectionOwner.html#aae7de74271def7cfb3075b69eecbb5c2" title="Try to claim ownership of the manager selection using the current X timestamp. ">claim()</a> attemps to claim ownership of the selection, <a class="el" href="classKSelectionOwner.html#a209f6993ec407d44c5c363c3b75558a3" title="If the selection is owned, the ownership is given up. ">release()</a> gives up the selection ownership. Signal <a class="el" href="classKSelectionOwner.html#ab8ce76fb9a643416242ba45420c8b260" title="This signal is emitted if the selection was owned and the ownership has been lost due to another clie...">lostOwnership()</a> is emitted when the selection is claimed by another owner. ICCCM manager selection owner</p>
+<p>This class is only useful on the xcb platform. On other platforms the code is only functional if the constructor overloads taking an xcb_connection_t are used. In case you inherit from this class ensure that you don't use xcb and/or XLib without verifying the platform. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8h_source.html#l00047">47</a> of file <a class="el" href="kselectionowner_8h_source.html">kselectionowner.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9ba1fbe497e7bec7f8e5cc9003134bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba1fbe497e7bec7f8e5cc9003134bd7">&#9670;&nbsp;</a></span>KSelectionOwner() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSelectionOwner::KSelectionOwner </td>
+          <td>(</td>
+          <td class="paramtype">xcb_atom_t&#160;</td>
+          <td class="paramname"><em>selection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>screen</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This constructor initializes the object, but doesn't perform any operation on the selection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selection</td><td>atom representing the manager selection </td></tr>
+    <tr><td class="paramname">screen</td><td>X screen, or -1 for default </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object, or NULL if there is none </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00152">152</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a46cd860a3e62f3599bc37b483eecfefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46cd860a3e62f3599bc37b483eecfefc">&#9670;&nbsp;</a></span>KSelectionOwner() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSelectionOwner::KSelectionOwner </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>selection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>screen</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. This constructor accepts the selection name and creates the appropriate atom for it automatically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selection</td><td>name of the manager selection </td></tr>
+    <tr><td class="paramname">screen</td><td>X screen, or -1 for default </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object, or NULL if there is none </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00158">158</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50f2c2bf5fbdad7b7c6ee4cb886e703a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f2c2bf5fbdad7b7c6ee4cb886e703a">&#9670;&nbsp;</a></span>KSelectionOwner() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSelectionOwner::KSelectionOwner </td>
+          <td>(</td>
+          <td class="paramtype">xcb_atom_t&#160;</td>
+          <td class="paramname"><em>selection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_connection_t *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>Q_NULLPTR</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. This constructor accepts the xcb_connection_t and root window and doesn't depend on running on the xcb platform. </p>
+<p>Otherwise this constructor behaves like the similar one without the xcb_connection_t.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selection</td><td>atom representing the manager selection </td></tr>
+    <tr><td class="paramname">c</td><td>the xcb connection this <a class="el" href="classKSelectionWatcher.html" title="This class implements watching manager selections, as described in the ICCCM section 2...">KSelectionWatcher</a> should use </td></tr>
+    <tr><td class="paramname">root</td><td>the root window this <a class="el" href="classKSelectionWatcher.html" title="This class implements watching manager selections, as described in the ICCCM section 2...">KSelectionWatcher</a> should use </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object, or NULL if there is none </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00164">164</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2583b55cc0c30c7e4feb0c485757bd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2583b55cc0c30c7e4feb0c485757bd29">&#9670;&nbsp;</a></span>KSelectionOwner() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSelectionOwner::KSelectionOwner </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>selection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_connection_t *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>Q_NULLPTR</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. This constructor accepts the xcb_connection_t and root window and doesn't depend on running on the xcb platform. </p>
+<p>Otherwise this constructor behaves like the similar one without the xcb_connection_t.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selection</td><td>name of the manager selection </td></tr>
+    <tr><td class="paramname">c</td><td>the xcb connection this <a class="el" href="classKSelectionWatcher.html" title="This class implements watching manager selections, as described in the ICCCM section 2...">KSelectionWatcher</a> should use </td></tr>
+    <tr><td class="paramname">root</td><td>the root window this <a class="el" href="classKSelectionWatcher.html" title="This class implements watching manager selections, as described in the ICCCM section 2...">KSelectionWatcher</a> should use </td></tr>
+    <tr><td class="paramname">parent</td><td>parent object, or NULL if there is none </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00170">170</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15673162d1adae28e855bc9d8c2691ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15673162d1adae28e855bc9d8c2691ba">&#9670;&nbsp;</a></span>~KSelectionOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KSelectionOwner::~KSelectionOwner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Calls <a class="el" href="classKSelectionOwner.html#a209f6993ec407d44c5c363c3b75558a3" title="If the selection is owned, the ownership is given up. ">release()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00176">176</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aae7de74271def7cfb3075b69eecbb5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7de74271def7cfb3075b69eecbb5c2">&#9670;&nbsp;</a></span>claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::claim </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_kill</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to claim ownership of the manager selection using the current X timestamp. </p>
+<p>This function returns immediately, but it may take up to one second for the claim to succeed or fail, at which point either the <a class="el" href="classKSelectionOwner.html#a850f95606e259ec5782a34dee81151d9" title="This signal is emitted when claim() was succesful in claiming ownership of the selection. ">claimedOwnership()</a> or <a class="el" href="classKSelectionOwner.html#a587d9e43f65da3743bca98b3194628d5" title="This signal is emitted when claim() failed to claim ownership of the selection. ">failedToClaimOwnership()</a> signal is emitted. The claim will not be completed until the caller has returned to the event loop.</p>
+<p>If <code>force</code> is false, and the selection is already owned, the selection is not claimed, and <a class="el" href="classKSelectionOwner.html#a587d9e43f65da3743bca98b3194628d5" title="This signal is emitted when claim() failed to claim ownership of the selection. ">failedToClaimOwnership()</a> is emitted. If <code>force</code> is true and the selection is owned by another client, the client will be given one second to relinquish ownership of the selection. If <code>force_kill</code> is true, and the previous owner fails to disown the selection in time, it will be forcibly killed. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00264">264</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a850f95606e259ec5782a34dee81151d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850f95606e259ec5782a34dee81151d9">&#9670;&nbsp;</a></span>claimedOwnership</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::claimedOwnership </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when <a class="el" href="classKSelectionOwner.html#aae7de74271def7cfb3075b69eecbb5c2" title="Try to claim ownership of the manager selection using the current X timestamp. ">claim()</a> was succesful in claiming ownership of the selection. </p>
+
+</div>
+</div>
+<a id="a587d9e43f65da3743bca98b3194628d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587d9e43f65da3743bca98b3194628d5">&#9670;&nbsp;</a></span>failedToClaimOwnership</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::failedToClaimOwnership </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted when <a class="el" href="classKSelectionOwner.html#aae7de74271def7cfb3075b69eecbb5c2" title="Try to claim ownership of the manager selection using the current X timestamp. ">claim()</a> failed to claim ownership of the selection. </p>
+
+</div>
+</div>
+<a id="ae1abaab1b03179ed7a6e59fd4660f6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1abaab1b03179ed7a6e59fd4660f6ca">&#9670;&nbsp;</a></span>filterEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSelectionOwner::filterEvent </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ev_P</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00350">350</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ede03a255665f463fef6b2c5eae3eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ede03a255665f463fef6b2c5eae3eae">&#9670;&nbsp;</a></span>genericReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KSelectionOwner::genericReply </td>
+          <td>(</td>
+          <td class="paramtype">xcb_atom_t&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_atom_t&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>requestor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called for every X event received on the window used for owning the selection. </p>
+<p>If true is returned, the event is filtered out. Called when a SelectionRequest event is received. A reply should be sent using the selection handling mechanism described in the ICCCM section 2.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>requested target type </td></tr>
+    <tr><td class="paramname">property</td><td>property to use for the reply data </td></tr>
+    <tr><td class="paramname">requestor</td><td>requestor window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00563">563</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aba05e98469b6178d4aca6c518f8596a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba05e98469b6178d4aca6c518f8596a5">&#9670;&nbsp;</a></span>getAtoms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::getAtoms </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called to create atoms needed for claiming the selection and communication using the selection handling mechanism. </p>
+<p>The default implementation must be called if reimplemented. This method may be called repeatedly. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00568">568</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab8ce76fb9a643416242ba45420c8b260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ce76fb9a643416242ba45420c8b260">&#9670;&nbsp;</a></span>lostOwnership</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::lostOwnership </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This signal is emitted if the selection was owned and the ownership has been lost due to another client claiming it, this signal is emitted. </p>
+<p>IMPORTANT: It's not safe to delete the instance in a slot connected to this signal. </p>
+
+</div>
+</div>
+<a id="a4070624e3733be27195f4e34b2e66880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4070624e3733be27195f4e34b2e66880">&#9670;&nbsp;</a></span>ownerWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xcb_window_t KSelectionOwner::ownerWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If the selection is owned, returns the window used internally for owning the selection. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00329">329</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a209f6993ec407d44c5c363c3b75558a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209f6993ec407d44c5c363c3b75558a3">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If the selection is owned, the ownership is given up. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00312">312</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae56f45844958115800d8a34015294b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56f45844958115800d8a34015294b89">&#9670;&nbsp;</a></span>replyTargets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::replyTargets </td>
+          <td>(</td>
+          <td class="paramtype">xcb_atom_t&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xcb_window_t&#160;</td>
+          <td class="paramname"><em>requestor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called to announce the supported targets, as described in the ICCCM section 2.6. </p>
+<p>The default implementation announces the required targets MULTIPLE, TIMESTAMP and TARGETS. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00550">550</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a23943c7a17a0452a6dfb61708f680c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23943c7a17a0452a6dfb61708f680c57">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::setData </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>extra1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>extra2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets extra data to be sent in the message sent to root window after successfully claiming a selection. </p>
+<p>These extra data are in data.l[3] and data.l[4] fields of the XClientMessage. </p>
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00341">341</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5eadd8947302aea87abcfd5b7345cc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eadd8947302aea87abcfd5b7345cc10">&#9670;&nbsp;</a></span>timerEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KSelectionOwner::timerEvent </td>
+          <td>(</td>
+          <td class="paramtype">QTimerEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kselectionowner_8cpp_source.html#l00434">434</a> of file <a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="kselectionowner_8h_source.html">kselectionowner.h</a></li>
+<li><a class="el" href="kselectionowner_8cpp_source.html">kselectionowner.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:26:41 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

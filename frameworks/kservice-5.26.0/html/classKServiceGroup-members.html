@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KService - Member List</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KService</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KService"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="namespaces.html">Namespace List</a></li>
+    
+      <li><a href="namespacemembers.html">Namespace Members</a></li>
+    
+      <li><a href="classes.html">Alphabetical List</a></li>
+    
+      <li><a href="annotated.html">Class List</a></li>
+    
+      <li><a href="hierarchy.html">Class Hierarchy</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+        <option value="classKAutostart.html">KAutostart</option>
+        
+        <option value="classKDBusServiceStarter.html">KDBusServiceStarter</option>
+        
+        <option value="classKMimeTypeTrader.html">KMimeTypeTrader</option>
+        
+        <option value="classKPluginInfo.html">KPluginInfo</option>
+        
+        <option value="classKPluginTrader.html">KPluginTrader</option>
+        
+        <option value="classKService.html">KService</option>
+        
+        <option value="classKServiceAction.html">KServiceAction</option>
+        
+        <option value="classKServiceGroup.html">KServiceGroup</option>
+        
+        <option value="classKServiceOffer.html">KServiceOffer</option>
+        
+        <option value="classKServiceType.html">KServiceType</option>
+        
+        <option value="classKServiceTypeTrader.html">KServiceTypeTrader</option>
+        
+        <option value="classKSycoca.html">KSycoca</option>
+        
+        <option value="classKSycocaEntry.html">KSycocaEntry</option>
+        
+        <option value="classKToolInvocation.html">KToolInvocation</option>
+        
+        <option value="namespaceKServiceTypeProfile.html">KServiceTypeProfile</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Advanced plugin and service introspection</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:faure@kde.org">David Faure</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+      <dt>Use with <a href="https://techbase.kde.org/Development/Tutorials/CMake">CMake</a></dt>
+        <dd><pre class="fragment">find_package(KF5Service)
+target_link_libraries(yourapp KF5::Service)</pre>
+        </dd>
+
+    
+    
+      <dt>Use with QMake</dt>
+        <dd><pre class="fragment">QT += KService </pre></dd>
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kservice-5.26.0.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KService on <a href="https://cgit.kde.org/kservice-5.26.0.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KService </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+<ul class="additional_info">
+  <li><a href="http://lxr.kde.org/ident?v=kf5-qt5&amp;_i=KServiceGroup-members">View on LXR</a></li>
+</ul>
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">KServiceGroup Member List</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is the complete list of members for <a class="el" href="classKServiceGroup.html">KServiceGroup</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#ae69e711f3692bf56fa3ed4425a5aa836">addEntry</a>(const KSycocaEntry::Ptr &amp;entry)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a9e135302533265025d7e6ef807d8033f">allowInline</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>AllowSeparators</b> enum value (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#ab54c4ba1787f8e05af1d1a31ad517eb1">baseGroupName</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#abd2fc42c31919c2f4c156730f3249f41">caption</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a299819cfb1c319f5cf5605ca3d8de082">childCount</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a496c863535654d966a8cc264807cdbc7">childGroup</a>(const QString &amp;parent)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a1e345bca464a0d8cc6be246bf55e827d">comment</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>d_ptr</b> (defined in <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a>)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a7e0315bd3f803785e9e08a3d4a16551c">directoryEntryPath</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a53c3ee84bbeeb4b52effb50af9b13e78">entries</a>(bool sorted, bool excludeNoDisplay, bool allowSeparators, bool sortByGenericName=false)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>entries</b>(bool sorted, bool excludeNoDisplay) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a78a65875af07f209221912b6c8c56c5b">entries</a>(bool sorted=false)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a353eb95e9c765011b878f725152ddd61">EntriesOption</a> enum name</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKSycocaEntry.html#a9b09ff62f097ad6b190dcce59899cec5">entryPath</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>ExcludeNoDisplay</b> enum value (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a467aa6329a262f56c9b834bc444d53cc">group</a>(const QString &amp;relPath)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a84fbc01ae305b700ce2360b2182f2476">groupEntries</a>(EntriesOptions options=ExcludeNoDisplay)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#aa10d4023401b230a5a225fe4cb0d43a4">icon</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a66aae636c15539cf29c9c865b809479e">inlineAlias</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#adec0bbe2030016f739abdf9c706d3a90">inlineValue</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#a5d850905e3ef323a170d03446f23552f">isDeleted</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>isSeparator</b>() const (defined in <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a>)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#a88dc388711eeb2a9d2cc8c1e632580b7">isType</a>(KSycocaType t) const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKSycocaEntry.html#a3759073883ad2fc631457223bc8cc129">isValid</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#aa8c35fdbaf9bed3da282e7719f1c2a48">KServiceGroup</a>(const QString &amp;name)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a4afbe0ca4bdee578e1397ab448f496c1">KServiceGroup</a>(const QString &amp;_fullpath, const QString &amp;_relpath)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>KSycocaEntry</b>() (defined in <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a>)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>KSycocaEntry</b>(KSycocaEntryPrivate &amp;d) (defined in <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a>)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#a8d7866d3d103bc78626732de5abed81e">KSycocaType</a> enum name</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a567aa69be9527394aca2fd5fff6bd716">layoutInfo</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>List</b> typedef (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKSycocaEntry.html#a47cc0b9a4e968ddf6593b9a99696b2a2">name</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a699192f67a0c0fab4c754aa1b299fd9a">noDisplay</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NoOptions</b> enum value (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#afadf03696e1a19e8f791771564ada80e">property</a>(const QString &amp;name) const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKSycocaEntry.html#afb64d0c6b1c26a0f0b5f2926fa6d17d9">propertyNames</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Ptr</b> typedef (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a43bafb47424325de346e96789ae74517">relPath</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a15af7f321c6daae6e1ec9fe054b86870">root</a>()</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a7607c43c9ec641b45c41df20684550b5">serviceEntries</a>(EntriesOptions options=ExcludeNoDisplay)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setAllowInline</b>(bool _b) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKSycocaEntry.html#ac1ad5b6b0858402d63ff5cb6630174e3">setDeleted</a>(bool deleted)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setInlineAlias</b>(bool _b) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setInlineValue</b>(int _val) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a0d4b6693d371909b46853d2123287ab0">setLayoutInfo</a>(const QStringList &amp;layout)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setShowEmptyMenu</b>(bool b) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setShowInlineHeader</b>(bool _b) (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a9a87a88a51cc62c833c141450025509e">showEmptyMenu</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKServiceGroup.html#a95ba636215b7eed1aed8771a05d6acff">showInlineHeader</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>SortByGenericName</b> enum value (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>SortEntries</b> enum value (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>SPtr</b> typedef (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#a1817b45fae1b0c54fa80a471c5f7c07a">storageId</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKServiceGroup.html#a0d50ba9f5d9088b88388e2fedca4d40a">suppressGenericNames</a>() const</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classKSycocaEntry.html#ad9f3bd1a835af09339d7e87d23c21366">sycocaType</a>() const</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~KServiceGroup</b>() (defined in <a class="el" href="classKServiceGroup.html">KServiceGroup</a>)</td><td class="entry"><a class="el" href="classKServiceGroup.html">KServiceGroup</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~KSycocaEntry</b>() (defined in <a class="el" href="classKSycocaEntry.html">KSycocaEntry</a>)</td><td class="entry"><a class="el" href="classKSycocaEntry.html">KSycocaEntry</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:25:53 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

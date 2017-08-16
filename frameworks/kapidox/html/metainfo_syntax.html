@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KApiDox - Description of the metainfo.yml syntax</title>
+
+    <style type="text/css">
+      .cp-doNotDisplay { display: none; }
+      @media aural, braille, handheld, tty { .cp-doNotDisplay { display: inline; speak: normal; }}
+      .cp-edit { text-align: right; }
+      @media print, embossed { .cp-edit { display: none; }}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="meta" href="http://www.kde.org/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+    <meta name="trademark" content="KDE e.V." />
+    <meta name="description" content="K Desktop Environment Homepage, KDE.org" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="robots" content="all" />
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection" />
+   
+    <script type="text/javascript" src="../../../resources/3rd-party/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link rel="shortcut icon" href="../../../resources/favicon.ico" />
+    <link rel="icon" href="../../../resources/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../resources/3rd-party/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="doxygen.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../../../resources/css/kapidox.css" />
+
+
+  
+</head>
+
+<body>
+
+  <ul class="cp-doNotDisplay">
+    <li><a href="#cp-content" accesskey="2">Skip to content</a></li>
+    <li><a href="#cp-menu" accesskey="5">Skip to link menu</a></li>
+  </ul>
+
+  <nav id="navbar" class="navbar navbar-static-top bg-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" id="navbar-logo" src="../../../resources/kde-white.svg"/>
+        </a>
+      </div>
+      <p id="navbar-title" class="navbar-text">
+        API Documentation 
+      </p>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <div class="container">
+      <ol class="breadcrumb navbar-nav">
+      
+        <li><a href="../../../index.html">KDE API Reference</a></li>
+      
+        <li><a href="../../index.html">The KDE Frameworks</a></li>
+      
+        <li class="active"><a href="index.html">KApiDox</a></li>
+      
+      </ol>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.kde.org/">KDE Home</a></li>
+          <li><a href="http://kde.org/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- /header -->
+
+  <div id="body_wrapper" class="container">
+    <div class="row">
+      <div id="left" class="col-md-3">
+        
+    <div class="menu-box">
+  <a name="cp-menu" />
+  <div class="menu-title">
+    <h2 id="cp-menu-project">Quick Links</h2>
+    <a href="#cp-skip-project" class="cp-doNotDisplay">Skip menu "KApiDox"</a>
+  </div>
+  <div class="menu-content">
+  
+    <ul>
+    
+      <li><a href="index.html">Main Page</a></li>
+    
+      <li><a href="files.html">File List</a></li>
+    
+      <li><a href="pages.html">Related Pages</a></li>
+    
+    </ul>
+  
+  </div>
+</div>
+
+
+<div class="menu_box">
+  <div class="menu-title">
+    <h2>Class Picker</h2>
+  </div>
+  <div class="menu-content">
+    <form name="guideform">
+      <select class="form-control" name="guidelinks" style="width:100%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+        <option value="annotated.html">-- Choose --</option>
+        
+      </select>
+    </form>
+  </div>
+</div>
+
+
+
+  <div class="menu-box">
+  <div class="menu-title">
+    <h2>About</h2>
+  </div>
+  <div class="menu-content">
+    <p>Scripts and data for building API documentation (dox) in a standard format and style</p>
+
+    <dl>
+      <dt>Maintainer</dt>
+        <dd>    
+      <a href="mailto:olivier@churlaud.com">Olivier Churlaud</a>
+    </dd>
+
+  
+
+      <dt>Supported platforms</dt>
+        <dd>
+      
+        
+            FreeBSD, 
+        
+      
+        
+            Linux, 
+        
+      
+        
+            MacOSX, 
+        
+      
+        
+            Windows
+        
+      
+         </dd>
+
+      <dt>Community</dt>
+        <dd>IRC: <a href="irc://freenode/#kde-devel">#kde-devel</a> on Freenode</dd>
+        <dd>Mailing list: <a href="https://mail.kde.org/mailman/listinfo/kde-frameworks-devel">kde-frameworks-devel</a></dd>
+
+    
+    
+
+      <dt>Clone</dt>
+        <dd><pre class="fragment">git clone git://anongit.kde.org/kapidox.git</pre></dd>
+      <dt>Browse source</dt>
+        <dd>KApiDox on <a href="https://cgit.kde.org/kapidox.git/tree">cgit.kde.org</a></dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+      </div> <!-- /left -->
+
+      <!-- begin main content -->
+      <div id="right" class="col-md-9">
+        <div class="row-fluid">
+          <div class="page-header">
+
+            <form action="search.html" method="get" class="form-inline">
+              <div id="search" class="input-group pull-right">
+                <input type="text" id="search-input" name="query" aria-label="Search input" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" aria-label="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <div>
+              <h1><a name="content"></a> KApiDox </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid content">
+          <div id="main">
+            
+
+
+
+<div id="top"> <!-- Doxygen will close this div -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Description of the metainfo.yml syntax </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>The name is the folder name. The fancyname is the project name used in CMake.</p>
+<p>Each group must contain one and only one library with the <code>group_info</code> block. If more are defined, the behavior is unknown.</p>
+<p><b>Be sure to to set <code>public_lib</code> to true, or the library will be ignored.</b> Most of the other keys are optionals. See below for a simplier example.</p>
+<h2>All possible keys.</h2>
+<p>```yaml description: Library doing X and Y fancyname: The FancyName # optional, else replaced by the <code>project()</code> value of the <code>CMakeLists.txt</code> maintainer: ochurlaud # optional, replaced by The KDE Community group: frameworks # optional subgroup: tier 1 # optional, a group must be defined type: functional # optional logo: relative/path/to/logo.png # Used only if not part of a group platforms: # optional, name accepted: all, Linux, Windows, MacOSX</p><ul>
+<li>name: Linux note: Functional only with running BlueZ 5 # optional public_lib: true # if not defined, the library is ignored public_source_dirs: # optional, default to src, must be a list</li>
+</ul>
+<p>src1</p><ul>
+<li>src2 public_doc_dir: docs # optional, default to docs public_example_dir: examples # optional, default to examples</li>
+</ul>
+<p>portingAid: true/false # optional, default to false deprecated: true/false # optional, default to false libraries: KF5::MyLib # optional</p>
+<p>libraries: # optional</p><ul>
+<li>qmake: BluezQt cmake: KF5::BluezQt cmakename: KF5BluezQt # optional</li>
+</ul>
+<p>irc: kde # optional, overwrite group field, if both not defined, default to kde-devel mailinglist: mylib-dev # optional, overwrite group field, if both not defined, default to kde-devel</p>
+<p>group_info: # optional, only once per group name: frameworks # optional, else the name is defined by the 'group' key above. fancyname: The KDE Frameworks maintainer: dfaure irc: kde-devel mailinglist: kde-core-devel platforms:</p><ul>
+<li>Linux</li>
+<li>Windows (partial)</li>
+<li>MacOSX (partial) description: Providing everything from simple utility classes to .. logo: relative/path/to/logo.png long_description: # optional, one item per paragraph, html authorized</li>
+<li>The KDE Frameworks build on the <a href="http://qt-project.org">Qt framework</a>, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful <a class="elRef" doxygen="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kio-5.26.0/html/KIO.tags:../../../frameworks/kio-5.26.0/html/" href="../../../frameworks/kio-5.26.0/html/namespaceKIO.html">KIO</a> multi-protocol file access framework).</li>
+<li>.... subgroups: # every subgroup must be declared here or will be ignored</li>
+<li>name: Tier 1 description: Tier 1 frameworks depend only on Qt (and possibly a small number of other third-party libraries), so can easily be used by an Qt-based project.</li>
+<li>name: Tier 2 description: Tier 2 frameworks additionally depend on tier 1 frameworks, but still have easily manageable dependencies.</li>
+<li>.. <div class="fragment"><div class="line">## Simple example 1</div><div class="line"></div><div class="line">In this case, the library is not part of a group, and the source is in `src`. If</div><div class="line">there is no logo, a default one is used.</div><div class="line"></div><div class="line">```yaml</div><div class="line">description: Library doing X</div><div class="line">maintainer: ochurlaud</div><div class="line">public_lib: true</div><div class="line">logo: libX.png</div></div><!-- fragment --></li>
+</ul>
+<h2>Simple example 2</h2>
+<p>In this case, the libraries X and Y are part of the same group <code>XY</code>, and the source is in <code>src</code>.</p>
+<p>### libX </p><div class="fragment"><div class="line">description: Library doing X</div><div class="line">maintainer: ochurlaud</div><div class="line">public_lib: true</div><div class="line">platforms:</div><div class="line">  - name: Linux</div><div class="line">  - name: Windows</div><div class="line">    note: doesn&#39;t work with Windows10</div><div class="line">group: XY</div><div class="line"></div><div class="line">group_info:</div><div class="line">  fancyname: XY Libraries</div><div class="line">  maintainer: arandomguy</div><div class="line">  platforms:</div><div class="line">    - Linux</div><div class="line">    - Windows (partial)</div><div class="line">  description: XY provides ...</div><div class="line">  logo: logo_XY.png</div><div class="line">  long_description:</div><div class="line">    - XY does this and this</div><div class="line">    - If you want to contribute please write to ...</div></div><!-- fragment --><h3>libY</h3>
+<div class="fragment"><div class="line">description: Library doing Y</div><div class="line">maintainer: otherrandomguy</div><div class="line">public_lib: true</div><div class="line">platforms:</div><div class="line">  - name: Linux</div><div class="line">group: XY</div></div><!-- fragment --> </div></div><!-- contents -->
+
+<div class="copyrights">
+  This file is part of the KDE documentation.<br/>
+  Documentation copyright &copy; 1996-2017 The KDE developers.<br/>
+  Generated on Wed Aug 16 2017 09:22:43 by
+  <a href="http://www.doxygen.org/">doxygen</a> 1.8.13 written
+  by <a href="mailto:dimitri@stack.nl">Dimitri van Heesch</a>, &copy;&nbsp;1997-2006
+  <p>
+  KDE's <a href="http://community.kde.org/Policies/Library_Documentation_Policy">Doxygen guidelines</a> are available online.
+  </p>
+</div>
+
+
+          </div>
+        </div>
+      </div> <!-- /right -->
+    </div> <!-- /body -->
+  </div> <!-- /body_wrapper -->
+
+  <footer class="footer bg-primary">
+    <div id="footer-text" class="center-block col-md-7" style="float:none;">
+        <p>Report problems with this website to <a href="https://go.kde.org/u/systickets">our bug tracking system</a>.<br />
+Contact the specific authors with questions and comments about the page contents.<p>
+<p>KDE<sup>&#174;</sup> and <a href="/media/images/kde_gear_black.png">the K Desktop Environment<sup>&#174;</sup> logo</a> are registered trademarks of <a href="http://ev.kde.org/" title="Homepage of the KDE non-profit Organization">KDE e.V.</a> | <a href="http://www.kde.org/contact/impressum.php">Legal</a></p>
+    </div>
+    
+  </footer>
+
+<!--
+WARNING: DO NOT SEND MAIL TO THE FOLLOWING EMAIL ADDRESS! YOU WILL
+BE BLOCKED INSTANTLY AND PERMANENTLY!
+<a href="mailto:aaaatrap-45abe0e0c3bebc77@kde.org">Block me</a>
+WARNING END
+-->
+
+</body>
+</html>

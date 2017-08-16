@@ -1,0 +1,24 @@
+digraph "KIO::TransferJob"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="KIO::TransferJob",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="KIO::SimpleJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1SimpleJob.html",tooltip="A simple job (one url and one command). "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="KIO::Job",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1Job.html",tooltip="The base class for all jobs. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="KCompositeJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags$classKCompositeJob.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="KJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="D:/Users/anthony/Documents/MINGW-KDE-Frameworks/frameworks/kcoreaddons-5.26.0/html/KCoreAddons.tags$classKJob.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="KIO::DavJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1DavJob.html",tooltip="The transfer job pumps data into and/or out of a Slave. "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="KIO::MimetypeJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1MimetypeJob.html",tooltip="A MimetypeJob is a TransferJob that allows you to get the mime type of an URL. "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="KIO::MultiGetJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1MultiGetJob.html",tooltip="The MultiGetJob is a TransferJob that allows you to get several files from a single server..."];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="KIO::SpecialJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1SpecialJob.html",tooltip="A class that sends a special command to an ioslave. "];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="KIO::StoredTransferJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classKIO_1_1StoredTransferJob.html",tooltip="StoredTransferJob is a TransferJob (for downloading or uploading data) that also stores a QByteArray ..."];
+}
