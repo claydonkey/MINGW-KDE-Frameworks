@@ -2,6 +2,7 @@
 Initial MINGW-KDE-Frameworks
 The KDE Frameworks build on the Qt framework, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful KIO multi-protocol file access framework).
 
+
 # Using Hosted Binaries
 ### 1. Add to MSYS pacman config:
 
@@ -60,6 +61,4 @@ using build-kf5
 
 ```
 
-### To Do:
 
-kdelib4support
