@@ -1,0 +1,19 @@
+--- src/kdewin/CMakeLists.txt	2017-08-11 14:46:24.497326100 +0100
++++ src/kdewin/CMakeLists.txt	2017-08-11 17:48:36.257044000 +0100
+@@ -126,13 +126,13 @@
+     install(FILES ${CMAKE_BINARY_DIR}/KDEWinConfig.cmake ${CMAKE_BINARY_DIR}/KDEWinConfigVersion.cmake DESTINATION lib/cmake/KDEWin)
+     install(EXPORT KDEWin_targets FILE KDEWinTargets.cmake DESTINATION lib/cmake/KDEWin)
+     install(FILES readme.txt  DESTINATION share/doc/kdewin-${KDEWIN_VERSION_STR})
+-    install(FILES cmake/modules/FindKDEWin.cmake  DESTINATION share/apps/cmake/modules)
+-    install(FILES cmake/modules/FindKDEWIN32.cmake  DESTINATION share/apps/cmake/modules)
++    install(FILES cmake/modules/FindKDEWin.cmake  DESTINATION share/cmake-3.8/modules)
++    install(FILES cmake/modules/FindKDEWIN32.cmake  DESTINATION share/cmake-3.8/modules)
+ endif()
+ 
+ # kdewin package support 
+ if (BUILD_BASE_LIB OR BUILD_BASE_LIB_WITH_QT)
+-    install(FILES cmake/modules/FindKDEWIN_Packager.cmake       DESTINATION share/apps/cmake/modules)
++    install(FILES cmake/modules/FindKDEWIN_Packager.cmake       DESTINATION share/cmake/modules)
+ endif (BUILD_BASE_LIB OR BUILD_BASE_LIB_WITH_QT)
+ 
+ if (KDEWIN_PACKAGER_FOUND)
