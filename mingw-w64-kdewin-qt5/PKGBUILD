@@ -6,8 +6,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 _realname=kdewin
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kdewin"
-pkgver=.1086.939897a
+pkgbase=mingw-w64-${_realname}
+pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}-qt5"
+pkgver=v0.5.11.1086.939897a
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
@@ -21,12 +22,12 @@ source=(${_realname}::git+https://github.com/KDE/${_realname}.git
 0001-CMakeFindPath.patch
 )
 sha256sums=('SKIP'
-            '1a6b463830466b46dde933754daa771a6a667bd469630a32dcc19e26df55ff42')
+            '16b5d481378d2cdf882236befee1217ec5e5f189540c8514ef945a45483daf25')
 
 
 pkgver() {
  cd "${srcdir}/${_realname}"
-  printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  printf "%s%s.%s.%s" "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 prepare()

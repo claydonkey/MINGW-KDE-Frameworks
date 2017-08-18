@@ -3,7 +3,8 @@
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
- _realname='libsndfile'
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_realname='libsndfile'
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
 pkgver=1.0.27
@@ -12,10 +13,8 @@ pkgdesc="A C library for reading and writing files containing sampled sound (min
 arch=('any')
 url="http://www.mega-nerd.com/libsndfile"
 license=('LGPL')
-#makedepends=("${MINGW_PACKAGE_PREFIX}-configure")
 depends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libogg" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKAGE_PREFIX}-crt-git")
-makedepends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libogg" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKA~/Documents/Minnow/Source/MINGW-KDE-Frameworks/mingw-w64-extra-cmake-modulesGE_PREFIX}-crt-git")
-options=('staticlibs' '!strip' '!buildflags')
+makedepends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libogg" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKAGE_PREFIX}-crt-git")
 source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-${pkgver}.tar.gz)
 md5sums=('fd1d97c6077f03b5d984d7956ffedb7a')
 options=(${_stripped} ${_releasetype})
@@ -23,6 +22,7 @@ options=(${_stripped} ${_releasetype})
 prepare(){
     mkdir -p build-${CARCH}${_variant}
 }
+
 build() {
   local -a extra_config 
       cd  build-${CARCH}${_variant} 
@@ -39,13 +39,6 @@ build() {
 }
 
 package() {
-
   cd build-${CARCH}${_variant}
   make DESTDIR=${pkgdir} install
-#local WIN=$(cygpath -wm ${MINGW_PREFIX})
-#sed -i "s|${WIN} |${MINGW_PREFIX}|g" \
- # ${pkgdir}${MINGW_PREFIX}/lib/pkgconfig/sndfile.pc
-  #install -Dm644 "${srcdir}/${_realname}-${pkgver}/COPYING" "${pkgdir}${MINGW_PREFIX}/share/licenses/${_realname}/COPYING"
-}
-}
 }

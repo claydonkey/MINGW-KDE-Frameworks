@@ -144,18 +144,22 @@ kemoticons
 kdelibs4support-qt5
 kirigami2-qt5
 gpgmepp
-#kleopatra #needs gpgme 1.8 to work
-
-)
-
-declare -a pack=(
 kmediaplayer-git-qt5
+#kleopatra #needs gpgme 1.8 to work
 )
 
-#_REPACK="R"
+declare -a repkgs=(
+#kplotting-qt5
+#kunitconversion-qt5
+#kdesignerplugin-qt5
+libsndfile
+kdelibs4support-qt5
+)
+
+# _REPACK="R"
 
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
-for pkg in "${pack[@]}"; do
+for pkg in "${repkgs[@]}"; do
   pushd $DIR/../mingw-w64-${pkg} > /dev/null
 
   export KF5_VARIANT=${_VARIANT}
@@ -210,7 +214,7 @@ fi
 done
 
   if [[ ${_OPTIONS} == *"upload-version"* ]]; then
-  echo -e "\e[34m\e[1m==> [UPLOADING]\e[39m to Database \e[32m'DB${_SFLAG}${_BFLAG}'"
+  echo -e "\e[34m\e[1m==> [UPLOADING]\e[39m Pacman Database from \e[32m'DB${_SFLAG}${_BFLAG} to ${_VERSION}${_SFLAG}${_BFLAG}'"
 for f in $DIR/../DB${_SFLAG}${_BFLAG}/kde* 
 do 
 	echo -e "\e[34m\e[1m   ->\e[39m  $(basename $f)"

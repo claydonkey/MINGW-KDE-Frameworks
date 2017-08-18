@@ -1,7 +1,16 @@
 #!/usr/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if  [ -z $2 ]; then
-echo "syntax - build-upload PASSPHRASE VERSION [EMAIL]"
+
+if  [ -z $1 ]; then
+	echo "syntax - build-upload VERSION [GPGPHRASE]  [EMAIL]"	
 else
-$DIR/build-kf5  -release -shared -strip  -install -sign $1 -upload-version $2 -email $3
+	if  [ -z $2 ]; then
+		$DIR/build-kf5  -debug -shared -nostrip   -upload-version $1 
+	else
+		if  [ -z $3 ]; then
+			$DIR/build-kf5  -debug -shared -nostrip   -sign $2 -upload-version $1 
+		else
+			$DIR/build-kf5  -debug -shared -nostrip   -sign $2 -upload-version $1 -email $3
+		fi
+	fi	
 fi

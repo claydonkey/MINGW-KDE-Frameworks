@@ -8,7 +8,7 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _realname="extra-cmake-modules"
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=.2923.89a5796
+pkgver=v5.37.0.2923.89a5796
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
@@ -27,7 +27,7 @@ options=(${_stripped} ${_releasetype})
 
 pkgver() {
   cd "${srcdir}/${_realname}"
- printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+ printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 prepare() {

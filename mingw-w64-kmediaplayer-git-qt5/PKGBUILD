@@ -1,20 +1,19 @@
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
+# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>s
 
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kmediaplayer-git"
-pkgver=.143.616a7d3
+pkgver=v5.37.0.143.616a7d3
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
-pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
+pkgdesc="Interface for media player KParts (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "git")
 depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-kparts-qt5" 
 groups=('kf5')
 source=(${_realname}::git+https://anongit.kde.org/kmediaplayer.git)
 sha256sums=('SKIP')
@@ -22,7 +21,7 @@ sha256sums=('SKIP')
   
 pkgver() {
   cd "${srcdir}/${_realname}"
- printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+ printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 build() {
