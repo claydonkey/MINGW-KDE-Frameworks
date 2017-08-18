@@ -152,14 +152,14 @@ declare -a repkgs=(
 #kplotting-qt5
 #kunitconversion-qt5
 #kdesignerplugin-qt5
-libsndfile
-kdelibs4support-qt5
+#libsndfile
+#kdelibs4support-qt5
 )
 
 # _REPACK="R"
 
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
-for pkg in "${repkgs[@]}"; do
+for pkg in "${pkgs[@]}"; do
   pushd $DIR/../mingw-w64-${pkg} > /dev/null
 
   export KF5_VARIANT=${_VARIANT}
