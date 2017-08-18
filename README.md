@@ -14,7 +14,7 @@ Include = /etc/pacman.d/mirrorlist.kde
 $ patch  -i pacmanconf.patch  /etc/pacman.conf
 ```
 ```
-$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/v0.1/' > /etc/pacman.d/mirrorlist.kde 
+$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/' > /etc/pacman.d/mirrorlist.kde 
 ```
 ### 2. Update pacman db
 
