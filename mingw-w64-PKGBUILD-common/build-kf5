@@ -107,7 +107,6 @@ kconfigwidgets-qt5
 kdbusaddons-qt5
 kcrash-qt5
 kwidgetsaddons-qt5
-kconfigwidgets-qt5
 kjobwidgets-qt5
 kiconthemes-qt5
 kservice-qt5
@@ -120,7 +119,6 @@ kio-qt5
 kinit-qt5
 kwallet-qt5
 kded-qt5
-kitemviews-qt5
 knewstuff-qt5
 kdnssd-qt5
 kdeclarative-qt5
@@ -145,15 +143,27 @@ libkdegames-qt5
 kemoticons
 kdelibs4support-qt5
 kirigami2-qt5
+gpgmepp
+#kleopatra #needs gpgme 1.8 to work
+
 )
+
+declare -a pack=(
+kmediaplayer-git-qt5
+)
+
+#_REPACK="R"
+
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
-for pkg in "${pkgs[@]}"; do
+for pkg in "${pack[@]}"; do
   pushd $DIR/../mingw-w64-${pkg} > /dev/null
 
   export KF5_VARIANT=${_VARIANT}
   export KF5_STRIP=${_STRIP}
   export KF5_RELEASE=${_BUILDTYPE}
-  #rm -rf *pkg*xz src pkg 
+ if [[ ! ${_REPACK} == "R" ]]; then
+    rm -rf *pkg*xz src pkg  
+fi
   rm  -f *sig
   echo  ${pkg} [STARTING]  |  mutt -s 'MinGW-KDE Compilation Starting '${pkg} ${_EMAIL} ; 
   makepkg -${_REPACK}fs${_INSTALL} --noconfirm || {  echo -e "\e[34m\e[1m==> FAILURE: \e[39m ${pkg}" ;\

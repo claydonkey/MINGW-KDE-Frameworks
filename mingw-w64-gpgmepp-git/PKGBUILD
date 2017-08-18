@@ -1,43 +1,39 @@
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
-
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
-_realname=kdewin
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kdewin"
-pkgver=.1086.939897a
+_kde_f5_init_package "${_variant}" "gpgmepp"
+_ver_base=0.1.0
+pkgver=0.1.0.1111.2aca8d3
+#0.1.0.240.772830b
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
-pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
+pkgdesc="C++ bindings/wrapper for gpgme (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
-depends=()
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-gpgme" "${MINGW_PACKAGE_PREFIX}-boost" "python" "git")
+depends=( )
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=(${_realname}::git+https://github.com/KDE/${_realname}.git
-0001-CMakeFindPath.patch
-)
-sha256sums=('SKIP'
-            '1a6b463830466b46dde933754daa771a6a667bd469630a32dcc19e26df55ff42')
-
+source=("${_realname}"::"git://anongit.kde.org/${_basename}.git" )
+sha256sums=('SKIP')
+options=(${_stripped} ${_releasetype})
 
 pkgver() {
- cd "${srcdir}/${_realname}"
+ cd "${srcdir}"/${_realname}
   printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
-prepare()
-{
-   patch -Np1 -i ${srcdir}/0001-CMakeFindPath.patch
-   mkdir -p build-${CARCH}${_variant}
-
+ 
+prepare() {
+  cd "${srcdir}"/${_realname}  
 }
 
 build() {
   local -a extra_config
+  mkdir -p build-${CARCH}${_variant}
   cd build-${CARCH}${_variant}
   if [ "${_variant}" = "-static" ]; then
     extra_config+=( -DBUILD_SHARED_LIBS=NO )
@@ -45,10 +41,10 @@ build() {
     export PATH=${QT5_PREFIX}/bin:"$PATH"
   else
     QT5_PREFIX=${MINGW_PREFIX}
-  fi 
+  fi
 
   MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX \
-    cmake ../${_realname} \
+  cmake ../${_realname} \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
     -DLIB_INSTALL_DIR=lib \

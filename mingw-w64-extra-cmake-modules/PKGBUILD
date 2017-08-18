@@ -1,50 +1,70 @@
-# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
+# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 
-_realname=extra-cmake-modules
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+_realname="extra-cmake-modules"
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=5.37.0
+pkgver=.2923.89a5796
 pkgrel=1
-pkgdesc='Extra CMake modules (mingw-w64)'
 arch=('any')
-url='https://projects.kde.org/projects/kdesupport/extra-cmake-modules'
+url='https://projects.kde.org/projects/frameworks/${_basename}'
+pkgdesc="Extra modules and scripts for CMake.  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-depends=("${MINGW_PACKAGE_PREFIX}-cmake"
-         "${MINGW_PACKAGE_PREFIX}-png2ico")
+depends=("${MINGW_PACKAGE_PREFIX}-cmake" "${MINGW_PACKAGE_PREFIX}-png2ico")
 makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx") # qt5-tools for QtHelp pages
-source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_realname}-${pkgver}.tar.xz"
-        "set-AUTOSTATICPLUGINS.patch")
-sha256sums=(
-'26198cf05c084c158bb23f0585a9df5bba1aa16b746252c80bdf4f0261b527cb'
-  'e4462b868350d8f6e3008d78502de4ae25cbe6ab740d5fa94e1e08a16ea9e2a8')
+groups=('kf5')
+source=("${_realname}"::git+https://github.com/KDE/${_realname}.git
+    "set-AUTOSTATICPLUGINS.patch")
+sha256sums=('SKIP'
+            'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
+options=(${_stripped} ${_releasetype})
 
-  options=(${_stripped} ${_releasetype})
-  
-#'6e120bb40411ef559583ef693c0c03a41df3bb40a932bf7444c97e04266d5daf'
+
+
+pkgver() {
+  cd "${srcdir}/${_realname}"
+ printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 prepare() {
-  mkdir -p build-${CARCH}
+  mkdir -p build-${CARCH}${_variant}
 
   # Apply patches
-  cd "${srcdir}/${_realname}-${pkgver}"
+  cd "${srcdir}/${_realname}"
   patch -p1 -i "${srcdir}/set-AUTOSTATICPLUGINS.patch"
 }
 
 build() {
-  mkdir -p build-${CARCH}
-  cd build-${CARCH}
-  MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX= \
-  cmake ../${_realname}-${pkgver} \
-    -G'MSYS Makefiles' \
-    -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DBUILD_HTML_DOCS=OFF
+  local -a extra_config
+ 
+  cd build-${CARCH}${_variant}
+  if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi 
 
-  make
+  MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX \
+    cmake ../${_realname} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+    -DLIB_INSTALL_DIR=lib \
+    -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX} \
+    -DQt5_DIR=${QT5_PREFIX}/lib/cmake/Qt5 \
+    -DBUILD_TESTING=OFF \
+    -DECM_DIR=${MINGW_PREFIX}/share/ECM \
+    "${extra_config[@]}" \
+    -G'MSYS Makefiles'
+  make VERBOSE=1
 }
 
 package() {
-  cd build-${CARCH}
+  cd build-${CARCH}${_variant}
   make DESTDIR="${pkgdir}" install
 }
