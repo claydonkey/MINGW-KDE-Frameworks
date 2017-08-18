@@ -45,16 +45,21 @@ pacman -Sy
 ```
 
 
-### Building all packages:
+### Building packages:
+
+Uses github-release.exe (package in repo) and mutt.
 
 ```
 cd mingw-w64-PKGBUILD-common
 ```
-
+#### To build and install locally
 ```
 ./build-install VERSION [GPGPHRASE]
 ```
+#### To build and upload
+./build-upload VERSION [GPGPHRASE] [EMAIL]
 
+#### Generic command
 using build-kf5
 ```
 ./build-kf5 -[shared static] -[release debug] -[nostrip strip] -[install] -[version] VERSION -[sign] GPGPHRASE 
