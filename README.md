@@ -13,8 +13,8 @@ The KDE Frameworks build on the Qt framework, providing everything from simple u
 Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
 
 ```
-$ echo '[kde] Include = /etc/pacman.d/mirrorlist.kde' >> /etc/pacman.conf
-$ echo 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/' > /etc/pacman.d/mirrorlist.kde 
+$ printf '[kde]\nInclude = /etc/pacman.d/mirrorlist.kde' >> /etc/pacman.conf
+$ printf 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/' > /etc/pacman.d/mirrorlist.kde 
 ```
 ### 2. Update pacman db
 
