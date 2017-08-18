@@ -1,11 +1,11 @@
---- src/kconfigwidgets-5.26.0/CMakeLists.txt	2016-09-06 13:57:34.000000000 +0200
-+++ src/kconfigwidgets-5.26.0/CMakeLists.txt	2017-07-02 21:58:05.943562800 +0200
-@@ -22,6 +22,8 @@
- set(KF5_VERSION "5.26.0") # handled by release scripts
- set(KF5_DEP_VERSION "5.26.0") # handled by release scripts
+--- src/kconfigwidgets-5.37.0/CMakeLists.txt	2017-08-06 18:58:35.000000000 +0100
++++ src/kconfigwidgets-5.37.0/CMakeLists.new	2017-08-17 18:18:40.772521400 +0100
+@@ -4,6 +4,8 @@
+ set(KF5_DEP_VERSION "5.37.0") # handled by release scripts
+ project(KConfigWidgets VERSION ${KF5_VERSION})
  
 +cmake_policy(SET CMP0053 NEW)
 +
- ecm_setup_version(${KF5_VERSION} VARIABLE_PREFIX KCONFIGWIDGETS
-                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
-                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
+ include(FeatureSummary)
+ find_package(ECM 5.37.0  NO_MODULE)
+ set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")

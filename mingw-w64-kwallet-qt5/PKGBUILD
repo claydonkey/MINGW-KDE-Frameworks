@@ -6,7 +6,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kwallet"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
@@ -15,9 +15,9 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 depends=( "${MINGW_PACKAGE_PREFIX}-bzip2" )
 _kde_f5_add_depends  "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5" "${MINGW_PACKAGE_PREFIX}-kservice-qt5"  "${MINGW_PACKAGE_PREFIX}-knotifications-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )
-sha256sums=('5a766b2be10d936f149bd1b9bbf3bee32239eb66a053d126af0bf9fcd3017428')
+sha256sums=('5fc368410da498dcd9eb9d5b7119f37c87f3a6b9859bbb2ce4a2ff0cfca0f2d0')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

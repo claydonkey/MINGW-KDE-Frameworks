@@ -1,30 +1,26 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
-# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kjs"
-pkgver=5.12.0
+_kde_f5_init_package "${_variant}" "kirigami2"
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
-pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
+pkgdesc="Kirigami is a set of QtQuick components at the moment targeted for mobile use  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
-depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
+depends=( "${MINGW_PACKAGE_PREFIX}-bzip2" )
+_kde_f5_add_depends "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/portingAids/${_basename}-${pkgver}.tar.xz"
-"0001-CMakePolicy0063.patch")
-sha256sums=('faa68493b57f7f3a3e1b05775da0a0477320f712e62cde499f6d0f0befb54caa'
-'8f7cc873f5c046c3983fbf4097d820274c0efccaf02f942c7ddc5a0ed8dd943d')
-
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+)
+sha256sums=('ad252c1ff20060f1de5afd41fade9b86e046bc9a7da38af6ca507f8ba2ce82fc')
 options=(${_stripped} ${_releasetype})
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
-patch -Np1 -i 0001-CMakePolicy0063.patch
 }
 
 build() {
@@ -43,16 +39,16 @@ build() {
       -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
       -DKDE_INSTALL_LIBDIR=lib \
-	  -DKJS_FORCE_DISABLE_PCRE=ON \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
       -DBUILD_TESTING=OFF \
       -DECM_DIR=${MINGW_PREFIX}/share/ECM \
       "${extra_config[@]}" \
       -G'MSYS Makefiles'
-  make
+make
 }
 
 package() {
   cd build-${CARCH}${_variant}
   make DESTDIR="${pkgdir}" install
 }
+

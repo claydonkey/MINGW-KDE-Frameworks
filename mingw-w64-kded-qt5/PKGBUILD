@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kded"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Icon GUI utilities (mingw-w64-qt5${_namesuff})"
@@ -14,8 +14,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=( "${MINGW_PACKAGE_PREFIX}-bzip2"   ) 
 _kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-kinit-qt5" 
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('145892109c2984ee62e3cb485b2f62f9c29a9d88e181c7e475989bb700946866')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('fea1c5e9fb1444be0988455c1e51fb2a8cc846db522297108a0b2c2c3a2e5a98')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

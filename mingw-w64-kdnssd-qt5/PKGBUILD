@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdnssd"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Network service discovery using Zeroconf'
 arch=('any')
@@ -14,9 +14,8 @@ license=('LGPL')
 depends=()
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('03030e86da46b8e8a4debff42ea1a9b6d18b64857c87f92557a0dccecffe5549'
-            )
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('bf30e680be8e1a00fde32a97517c368045cfa91e60ad51896d966361ed372d0f')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

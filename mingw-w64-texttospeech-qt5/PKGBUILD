@@ -14,7 +14,7 @@ url='http://qt-project.org/'
 license=(GPL3 LGPL3 FDL custom)
 pkgdesc='Qt module to make text to speech and speech recognition easy'
 depends=(${MINGW_PACKAGE_PREFIX}-qt5${_namesuff})
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-docbook-xsl" "${MINGW_PACKAGE_PREFIX}-docbook-xml" )
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  )
 optdepends=('flite: flite TTS backend' 'speech-dispatcher: speech-dispatcher TTS backend')
 groups=('qt ''qt5')
 _pkgfqn="${sourcename/5-/}-opensource-src-${_qtver}"
@@ -33,11 +33,9 @@ build() {
   fi
    
      local -a extra_config
-#PREFIX="$(cygpath -w ${pkgdir})"
-    for _config in "${_configurations[@]}"; do
-      msg2 "Building ${_config##*=} version for ${CARCH} ${_variant} "
-      mkdir -p build-${CARCH}-${_config##*=} && pushd build-${CARCH}-${_config##*=} 
-	  qmake  PREFIX=$(cygpath -w ${pkgdir})  -spec win32-g++ ${srcdir}/${_pkgfqn}/${_qt_module}.pro ${_config}
+ 
+      mkdir -p build-${CARCH}${_variant} && pushd build-${CARCH}${_variant}
+	  qmake  PREFIX=/$(cygpath -u ${MINGW_PREFIX})  -spec win32-g++ ${srcdir}/${_pkgfqn}/${_qt_module}.pro ${_config}
  if [ "${_variant}" = "-static" ]; then
     extra_config+=( -DBUILD_SHARED_LIBS=NO )
     QT5_PREFIX=${MINGW_PREFIX}/qt5-static
@@ -45,38 +43,26 @@ build() {
   else
     QT5_PREFIX=${MINGW_PREFIX}
   fi
+ make
+  }
 
- 
-  #    make PREFIX=/tempo  qmake_all
-      # find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
-	  #	    find . -type f -exec sed -i 's/.\:\/[^/]*\/mingw64/\/mingw64/gw /dev/stdout' {} \;
-	  #grep . --color -r  -He ".\:/[^/]*/mingw64/"
-	  #$(cygpath -u ${MINGW_PREFIX})
-	  #workaround - Remove windows drive letter from Makefile.Debug and Makefile.Release.
-      popd 
-    done
-}
+package() {    
+ cd ${srcdir}/build-${CARCH}${_variant}
+#	make     INSTALL_DIR=${srcdir}/${pkgdir}  install 
+install  -d   ${pkgdir}${MINGW_PREFIX}/bin
+install -m 755  ${srcdir}/build-${CARCH}${_variant}/bin/*.* ${pkgdir}${MINGW_PREFIX}/bin
+install -m 755  ${srcdir}/build-${CARCH}${_variant}/examples/speech/hello_speak/debug/*.exe ${pkgdir}${MINGW_PREFIX}/bin
+install  -d   ${pkgdir}/${MINGW_PREFIX}/lib
+cp -r  ${srcdir}/build-${CARCH}${_variant}/lib ${pkgdir}${MINGW_PREFIX}
+rm ${pkgdir}${MINGW_PREFIX}/lib/*.dll
+rm ${pkgdir}${MINGW_PREFIX}/lib/cmake/Qt5TextToSpeech/ExtraSourceIncludes.cmake
+install  -d   ${pkgdir}${MINGW_PREFIX}/include/QtTextToSpeech
+install -m 755  ${srcdir}/build-${CARCH}${_variant}/include/QtTextToSpeech/* ${pkgdir}${MINGW_PREFIX}/include/QtTextToSpeech
+cp -r ${srcdir}/${_pkgfqn}/include/QtTextToSpeech ${pkgdir}${MINGW_PREFIX}/include/
+install  -d   ${pkgdir}${MINGW_PREFIX}/share/qt5  
+cp -r   ${srcdir}/build-${CARCH}${_variant}/mkspecs ${pkgdir}${MINGW_PREFIX}/share/qt5
+install  -d   ${pkgdir}${MINGW_PREFIX}/share/qt5/plugins/texttospeech
+install -m 755  ${srcdir}/build-${CARCH}${_variant}/plugins/texttospeech/*.* ${pkgdir}${MINGW_PREFIX}/share/qt5/plugins/texttospeech
+cp -r  ${srcdir}/build-${CARCH}${_variant}/lib ${pkgdir}${MINGW_PREFIX}
 
-package() { 
-    #find . -type f -exec sed -i 's/.\:\/[^/]*\/mingw64/\/mingw64/gw /dev/stdout' {} \;
-   #msg2 "Package to $(cygpath -m ${pkgdir}) for ${pkgdir}${MINGW_PREFIX}  $(cygpath -u ${MINGW_PREFIX})"
-         #find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
-	
-    for _config in "${_configurations[@]}"; do
-      pushd ${srcdir}/build-${CARCH}-${_config##*=} 
-	#  find . -type f -exec sed -i 's/.\:\$/\$/gw /dev/stdout' {} \;
-	#   make    DESTDIR=${pkgdir}   install
-#make  install
-	make INSTALL_ROOT=${pkgname} install
- 
-      popd
-	mv 'C:\'${pkgname}  $PWD/../pkg;
-	mv  $PWD/../pkg/${pkgname}/msys2/mingw64  $PWD/../pkg/${pkgname}/mingw64    ;
-	rm -r $PWD/../pkg/${pkgname}/mingw64/lib;
- 	 rm -r $PWD/../pkg/${pkgname}/msys2;
-	for _config in "${_configurations[@]}"; do
-	 mv  ${srcdir}/build-${CARCH}-${_config##*=}/bin   $PWD/../pkg/${pkgname}/mingw64    ;
-	 mv  ${srcdir}/build-${CARCH}-${_config##*=}/lib   $PWD/../pkg/${pkgname}/mingw64    ;
-    done
-  done
 }

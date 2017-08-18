@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if  [ -z $2 ]; then
-echo "use - build-upload PASSPHRASE VERSION [EMAIL]"
+echo "syntax - build-upload PASSPHRASE VERSION [EMAIL]"
 else
-./build-kf5  -release -shared -strip  -install -sign $1 -upload-version $2 -email $3
+$DIR/build-kf5  -release -shared -strip  -install -sign $1 -upload-version $2 -email $3
 fi

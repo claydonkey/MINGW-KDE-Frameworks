@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdelibs4support"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Legacy support for kdelibs 4 compatibility'
 arch=('any')
@@ -15,9 +15,9 @@ depends=( )
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kparts-qt5"  "${MINGW_PACKAGE_PREFIX}-kdesignerplugin-qt5"  "${MINGW_PACKAGE_PREFIX}-kunitconversion-qt5"  
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/portingAids/${_basename}-${pkgver}.tar.xz" "0001-CMakeTargetInclude.patch")
-sha256sums=('e8336d25de7911c4536f6ebeca5a10efb00d4de967dae8ddcee258763f2e8049'  
-'3c022e5cb94154b39700a3b140463ac128f0c86a140a8e291a3eaa8a4fff0ee1')
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/portingAids/${_basename}-${pkgver}.tar.xz" "0001-CMakeTargetInclude.patch")
+sha256sums=('09d2a7817dbfd0aec82886fb2c5a83321d8b535a438013ed78d5611d2a00e1ff'
+            '9d4641db9eacc11adc554a7cf5041544994e749a2f229d7f96289464dd027cc9')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

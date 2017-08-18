@@ -6,7 +6,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kidletime"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Reporting of idle time of user and system (mingw-w64-qt5${_namesuff})"
@@ -15,8 +15,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('02f82e84429487d4f14a6c665ed00a12c40b8c8f4e1ec34cb8436a39f274978f')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('3a472778722f38e5175ac55ff71a5e464ec98ecfd2ec759b7003612fe8c0a406')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

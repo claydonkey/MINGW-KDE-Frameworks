@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kservice"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Advanced plugin and service introspection (mingw-w64-qt5${_namesuff})"
@@ -14,8 +14,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5" "${MINGW_PACKAGE_PREFIX}-kdbusaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcrash-qt5" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('f96d1df9b4815aa77a62b610e21ca8cd4832963c22eaf13772977f02b9957080')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('196e9bdbdb28bfda75120cf1f7d49f68bc345f248cdca8f718bee6d1be2fbaff')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

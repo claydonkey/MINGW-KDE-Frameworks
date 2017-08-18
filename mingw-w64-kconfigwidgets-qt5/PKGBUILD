@@ -4,7 +4,7 @@
 _variant=-${KF5_VARIANT:-static}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kconfigwidgets"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Widgets for configuration dialogs (mingw-w64-qt5${_namesuff})"
@@ -13,10 +13,10 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=( "${MINGW_PACKAGE_PREFIX}-bzip2" )
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5" "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5" "${MINGW_PACKAGE_PREFIX}-kguiaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kauth-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
        001-cmakepolicy-0053.patch)
-sha256sums=('9111a98a6436e77d1dc37bf13f451c066f75c946b0e375042a283a0461365922'
-             'bf3bf7c95d18b3b12fa1f7416cf65266e5be15a53146e667347fc978d3c3ce3e')
+sha256sums=('46af20c09871dd720f8bc46d3bf7ed5eaae2b7cd25549ec3a1b71b8ca40d2d00'
+            '664144b49ca8bbc738370e2655042bd36c408e621b379d3cb5f8194ee6e5ed7e')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

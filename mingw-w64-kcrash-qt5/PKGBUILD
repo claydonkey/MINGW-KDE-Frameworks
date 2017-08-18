@@ -8,7 +8,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcrash"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Support for application crash analysis and bug report from apps (mingw-w64-qt5${_namesuff})"
@@ -17,8 +17,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=("${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('481a22b799669d3b8ec98fada5da7e93d49ae87b4f21751d1afa0cff05cfc074')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('c097aaca2c6ca8a177d697a8cccd4bd8bec2d09c07efd4bc7a4d0d3d1cbf629a')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

@@ -6,7 +6,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kwidgetsaddons"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Addons to QtWidgets (mingw-w64-qt5${_namesuff})"
@@ -15,10 +15,9 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREF
 depends=("${MINGW_PACKAGE_PREFIX}-bzip2")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" 
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakepolicy0053.patch")
-sha256sums=('9601108491e9564630a6152f296de8143decb91bd63c6ea15f91a591d02155c9'
-'2a47a2ccfde6bec73468f38905bdc0d87cfc12ddad2c4f1c26fc0b25c8eaa041'
-)
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakepolicy0053.patch")
+sha256sums=('a4c54b371a6fc748108f3e2ce2f40d422e8ef03210b243a3d091c090cf19b3ca'
+            'c7c29f9e940294290446dcd6aee24b745ab06764cf37f6d50ada16c732d68d3e')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

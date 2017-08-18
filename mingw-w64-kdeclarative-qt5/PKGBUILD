@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdeclarative"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Provides integration of QML and KDE Frameworks'
 arch=('any')
@@ -15,17 +15,16 @@ depends=( )
 makedepends=(   "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kio-qt5" "${MINGW_PACKAGE_PREFIX}-kpackage-qt5" 
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakePathMax.patch" "0002-CMakePolicy.patch")
-sha256sums=('6872df49e35e6556b9d1398700f1b75295a4c5e2ff8bc3357529a652a402b242'
-'122354d2a77dc19da725a47b1f956cfd914a37e584b4d69d2b55f5101593a873'
-'61db0e250950834a8a706192769c5902923e6ce8380540a42abcab1fb4f3b4b0'
-            )
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" "0001-CMakePathMax.patch" "0002-CMakePolicy.patch")
+sha256sums=('f2bdd7e1c6d0f39b4e1573b11078317e9ec72803c63ce4acc4d7de26aa2150c7'
+            '45e1755f2fe0e77a9f38adc638f3643f09cbf972ea08ab300da3f7c285fc2b74'
+            '83691c8cb660163d522d91fd35ed6ff580e88d1d1fa17fab32ea0aec6b5cd0dc')
 options=(${_stripped} ${_releasetype})
 
 prepare() {
  mkdir -p build-${CARCH}${_variant}
- patch -Np1 -i ${srcdir}/0001-CMakePathMax.patch
- patch -Np1 -i ${srcdir}/0002-CMakePolicy.patch
+# patch -Np1 -i ${srcdir}/0001-CMakePathMax.patch
+# patch -Np1 -i ${srcdir}/0002-CMakePolicy.patch
 }
 
 build() {

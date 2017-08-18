@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kbookmarks"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="Plugins allowing Qt applications to access further types of images (mingw-w64-qt5${_namesuff})"
@@ -15,8 +15,8 @@ depends=("${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-kxml
 "${MINGW_PACKAGE_PREFIX}-bzip2")
 _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kxmlgui-qt5"   
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('f21439ad5dc53090b5a895af50c811ac539c4fe7dd741477713e86b07b71105e')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('815843ae3c6e8f36e1ea31aa9750dfa1b18be86c415edfcce362c2b3809cd950')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

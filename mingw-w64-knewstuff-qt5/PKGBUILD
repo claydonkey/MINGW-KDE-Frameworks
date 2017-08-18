@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "knewstuff"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Support for downloading application assets from the network'
 arch=('any')
@@ -15,9 +15,8 @@ _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kio-qt5"
 depends=()
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "doxygen") 
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('c4e70933e535c427a99715dcd557ffb4e452ccca1c374e666b8188df2a07a849'
-            )
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('dea2875aa1787525545e789fcafef75ddd0cc02e1175432b27123dd23bec96e9')
 #validpgpkeys=(53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB) # David Faure <faure@kde.org>
 options=(${_stripped} ${_releasetype})
 

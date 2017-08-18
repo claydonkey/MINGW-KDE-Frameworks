@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kunitconversion"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Network service discovery using Zeroconf'
 arch=('any')
@@ -15,9 +15,8 @@ depends=( )
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5"  
 groups=('kf5')
-source=("https://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('914ce8fc2929b145d668a4018febcc2903c633c09ae164b67abb126a4e14cd22'
-            )
+source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+sha256sums=('514b768a1077ad35454859aa8897511dc4aa4ee7b297d86c91caa6bd743078e3')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

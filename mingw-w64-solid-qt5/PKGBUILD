@@ -6,7 +6,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "solid"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
@@ -16,10 +16,10 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 "0001-CMakePolicy0053.patch")
-sha256sums=('43822796f7d2cfd7596f94fa54f6ced2e8d58668f728a3c568f5388f5bb294b6' 
-'2874ca436ccd19bdec0435190d695d6a5e03d4f30107cf707f8908ab9ff7e4d3')
+sha256sums=('14bd7b814f3fb87ea7d26338a05966380b1703d6679d44972a380415ae7d69bd' 
+'a7100a6726d640db827aa116a6d7600d9bacabc4f7e90a8846df9acb8ca12b5f')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

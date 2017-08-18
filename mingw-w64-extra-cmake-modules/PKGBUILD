@@ -5,7 +5,7 @@
 _realname=extra-cmake-modules
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=5.36.0
+pkgver=5.37.0
 pkgrel=1
 pkgdesc='Extra CMake modules (mingw-w64)'
 arch=('any')
@@ -17,8 +17,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx") # qt5-tools for QtHelp pa
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_realname}-${pkgver}.tar.xz"
         "set-AUTOSTATICPLUGINS.patch")
 sha256sums=(
-'6e120bb40411ef559583ef693c0c03a41df3bb40a932bf7444c97e04266d5daf'
-  'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
+'26198cf05c084c158bb23f0585a9df5bba1aa16b746252c80bdf4f0261b527cb'
+  'e4462b868350d8f6e3008d78502de4ae25cbe6ab740d5fa94e1e08a16ea9e2a8')
 
   options=(${_stripped} ${_releasetype})
   

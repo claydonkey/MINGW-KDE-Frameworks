@@ -5,7 +5,7 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdoctools"
-pkgver=5.26.0
+pkgver=5.37.0
 pkgrel=1
 arch=('any')
 pkgdesc="KF5 doc tools (mingw-w64-qt5${_namesuff})"
@@ -14,10 +14,10 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREF
 depends=("${MINGW_PACKAGE_PREFIX}-docbook-xsl" "${MINGW_PACKAGE_PREFIX}-docbook-xml")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-karchive-qt5"   "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"  "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/Attic/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
      001-docbookxml-find.patch)
-sha256sums=('48c9f4c3f5c68c9f82cd526bf9bfe136319fd64b16acc5f7ec0c70c5c353068c'
-     '59009ed1173dc664e15cf1be0b7f4a6839f7efae78c4a5542f2d5d44b3aa6da8')
+sha256sums=('f4031fccb1e7c6017456840daee1589d2e6b7d36ee263a371446981a312e6c3d'
+            '22a3ed8c6043302c60f3e86db51b2b17060b0034722b04dd66ebbf6d6b0eab87')
 options=(${_stripped} ${_releasetype})
 
 	 

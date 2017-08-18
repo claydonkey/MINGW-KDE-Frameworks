@@ -1,5 +1,5 @@
---- src/kio-5.26.0/CMakeLists.txt	2017-07-31 23:30:38.298052900 +0100
-+++ src/kio-5.26.0/CMakeLists.orig	2017-07-31 23:33:26.595255000 +0100
+--- src/kio-5.37.0/CMakeLists.txt	2017-07-31 23:30:38.298052900 +0100
++++ src/kio-5.37.0/CMakeLists.orig	2017-07-31 23:33:26.595255000 +0100
 @@ -6,6 +6,10 @@
      cmake_policy(SET CMP0048 OLD)
  endif()
@@ -9,7 +9,7 @@
 +endif()
 +
  include(FeatureSummary)
- find_package(ECM 5.26.0  NO_MODULE)
+ find_package(ECM 5.37.0  NO_MODULE)
  set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")
 @@ -57,6 +61,7 @@
  find_package(KF5IconThemes ${KF5_DEP_VERSION} REQUIRED)
