@@ -10,12 +10,12 @@ pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
 pkgver=5.37.0.2923.89a5796
 pkgrel=1
-arch=('any')
+arch=('x86_64')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Extra modules and scripts for CMake.  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 depends=("${MINGW_PACKAGE_PREFIX}-cmake" "${MINGW_PACKAGE_PREFIX}-png2ico")
-makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx") # qt5-tools for QtHelp pages
+makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx" mingw-w64-x86_64-libidn) # qt5-tools for QtHelp pages
 groups=('kf5')
 source=("${_realname}"::git+https://github.com/KDE/${_realname}.git
     "set-AUTOSTATICPLUGINS.patch")
