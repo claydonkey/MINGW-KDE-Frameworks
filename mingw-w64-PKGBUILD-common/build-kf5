@@ -115,9 +115,10 @@ ktextwidgets-qt5
 kglobalaccel-qt5
 kxmlgui-qt5
 kbookmarks-qt5
+#gpgmepp-git not working at mo
+kwallet-qt5
 kio-qt5
 kinit-qt5
-kwallet-qt5
 kded-qt5
 knewstuff-qt5
 kdnssd-qt5
@@ -143,23 +144,18 @@ libkdegames-qt5
 kemoticons
 kdelibs4support-qt5
 kirigami2-qt5
-gpgmepp
 kmediaplayer-git-qt5
 #kleopatra #needs gpgme 1.8 to work
 )
 
 declare -a repkgs=(
-#kplotting-qt5
-#kunitconversion-qt5
-#kdesignerplugin-qt5
-#libsndfile
-#kdelibs4support-qt5
+kdeclarative-qt5
 )
 
-# _REPACK="R"
+  _REPACK="R"
 
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
-for pkg in "${pkgs[@]}"; do
+for pkg in "${repkgs[@]}"; do
   pushd $DIR/../mingw-w64-${pkg} > /dev/null
 
   export KF5_VARIANT=${_VARIANT}

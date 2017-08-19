@@ -13,7 +13,7 @@ pkgdesc="Desktop notifications (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
 depends=( "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"    "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2" )
-_kde_f5_add_depends  "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5"  "${MINGW_PACKAGE_PREFIX}-phonon-qt5"   "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"  "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5"  "${MINGW_PACKAGE_PREFIX}-phonon-qt5"   "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"  "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )

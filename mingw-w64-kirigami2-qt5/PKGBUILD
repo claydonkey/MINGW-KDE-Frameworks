@@ -12,7 +12,7 @@ pkgdesc="Kirigami is a set of QtQuick components at the moment targeted for mobi
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
 depends=( "${MINGW_PACKAGE_PREFIX}-bzip2" )
-_kde_f5_add_depends "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
+_kde_f5_add_depends  "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )
