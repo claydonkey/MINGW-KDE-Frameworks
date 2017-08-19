@@ -5,12 +5,12 @@ if  [ -z $1 ]; then
 	echo "syntax - build-upload VERSION [GPGPHRASE]  [EMAIL]"	
 else
 	if  [ -z $2 ]; then
-		$DIR/build-kf5  -debug -shared -nostrip   -upload-version $1 
+		$DIR/build-kf5  -debug -shared -nostrip  -install  -upload-version $1 
 	else
 		if  [ -z $3 ]; then
-			$DIR/build-kf5  -debug -shared -nostrip   -sign $2 -upload-version $1 
+			$DIR/build-kf5  -debug -shared -nostrip  -install   -sign $2 -upload-version $1 
 		else
-			$DIR/build-kf5  -debug -shared -nostrip   -sign $2 -upload-version $1 -email $3
+			$DIR/build-kf5  -debug -shared -nostrip  -install   -sign $2 -upload-version $1 -email $3
 		fi
 	fi	
 fi

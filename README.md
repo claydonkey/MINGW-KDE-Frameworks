@@ -1,4 +1,9 @@
-# MINGW-KDE-Frameworks
+MINGW-KDE-Frameworks 
+====================
+[![Build Status](https://travis-ci.org/claydonkey/MINGW-KDE-Frameworks.svg?branch=master)](https://travis-ci.org/claydonkey/MINGW-KDE-Frameworks)
+ [![Build Status](https://ci.appveyor.com/api/projects/status/r5myh087cwi35bh0?svg=true)](https://ci.appveyor.com/project/claydonkey/mingw-kde-frameworks)
+ 
+
 Initial MINGW-KDE-Frameworks
 The KDE Frameworks build on the Qt framework, providing everything from simple utility classes (such as those in KCoreAddons) to integrated solutions for common requirements of desktop applications (such as KNewStuff, for fetching downloadable add-on content in an application, or the powerful KIO multi-protocol file access framework).
 

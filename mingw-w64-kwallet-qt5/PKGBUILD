@@ -11,9 +11,9 @@ pkgrel=1
 arch=('any')
 pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
-depends=( "${MINGW_PACKAGE_PREFIX}-bzip2" )
-_kde_f5_add_depends  "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5" "${MINGW_PACKAGE_PREFIX}-kservice-qt5"  "${MINGW_PACKAGE_PREFIX}-knotifications-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules") 
+depends=( "${MINGW_PACKAGE_PREFIX}-bzip2")
+_kde_f5_add_depends  "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5" "${MINGW_PACKAGE_PREFIX}-kservice-qt5"  "${MINGW_PACKAGE_PREFIX}-knotifications-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )

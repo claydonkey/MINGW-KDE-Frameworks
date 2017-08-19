@@ -1,4 +1,4 @@
-# Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
+ #Maintainer (KDE): Anthony Campbell <anthony@claydonkey.com>
 
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
@@ -8,14 +8,14 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _realname="extra-cmake-modules"
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=v5.37.0.2923.89a5796
+pkgver=5.37.0.2923.89a5796
 pkgrel=1
-arch=('any')
+arch=('x86_64')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Extra modules and scripts for CMake.  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 depends=("${MINGW_PACKAGE_PREFIX}-cmake" "${MINGW_PACKAGE_PREFIX}-png2ico")
-makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx") # qt5-tools for QtHelp pages
+makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx" mingw-w64-x86_64-libidn) # qt5-tools for QtHelp pages
 groups=('kf5')
 source=("${_realname}"::git+https://github.com/KDE/${_realname}.git
     "set-AUTOSTATICPLUGINS.patch")
@@ -23,17 +23,13 @@ sha256sums=('SKIP'
             'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
 options=(${_stripped} ${_releasetype})
 
-
-
 pkgver() {
   cd "${srcdir}/${_realname}"
- printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+ printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)" | cut -c 2-
 }
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
-
-  # Apply patches
   cd "${srcdir}/${_realname}"
   patch -p1 -i "${srcdir}/set-AUTOSTATICPLUGINS.patch"
 }
