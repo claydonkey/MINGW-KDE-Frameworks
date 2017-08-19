@@ -8,8 +8,8 @@
 cd "$(dirname "$0")"
 source 'ci-library.sh'
 deploy_enabled && mkdir artifacts
-git_config user.email 'ci@msys2.org'
-git_config user.name  'MSYS2 Continuous Integration'
+git_config user.email 'anthony@claydonkey.com'
+git_config user.name  'Claydonkey KDE MINGW Continuous Integration'
 git remote add upstream 'https://github.com/claydonkey/MINGW-KDE-Frameworks'
 git fetch --quiet upstream
 
