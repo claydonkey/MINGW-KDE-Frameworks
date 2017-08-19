@@ -1,3 +1,7 @@
+language: cpp
+
+matrix:
+  include:
 - os: linux
       compiler: x86_64-w64-mingw32-g++
       env: OPJ_CI_CC=x86_64-w64-mingw32-gcc OPJ_CI_CXX=x86_64-w64-mingw32-g++ OPJ_CI_ARCH=x86_64 OPJ_CI_BUILD_CONFIGURATION=Release
