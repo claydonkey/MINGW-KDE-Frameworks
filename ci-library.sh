@@ -16,9 +16,9 @@ _status() {
     local status="${package:+${package}: }${2}"
     local items=("${@:3}")
     case "${type}" in
-        failure) local -n nameref_color='red';   title='[MSYS2 CI] FAILURE:' ;;
-        success) local -n nameref_color='green'; title='[MSYS2 CI] SUCCESS:' ;;
-        message) local -n nameref_color='cyan';  title='[MSYS2 CI]'
+        failure) local -n nameref_color='red';   title='[MSYS2 KDE CI] FAILURE:' ;;
+        success) local -n nameref_color='green'; title='[MSYS2 KDE CI] SUCCESS:' ;;
+        message) local -n nameref_color='cyan';  title='[MSYS2 KDE CI]'
     esac
     printf "\n${nameref_color}${title}${normal} ${status}\n\n"
     printf "${items:+\t%s\n}" "${items:+${items[@]}}"
@@ -130,6 +130,7 @@ execute(){
 # Update system
 update_system() {
     repman add ci.msys 'https://dl.bintray.com/alexpux/msys2' || return 1
+    repman add ci.msys 'https://dl.bintray.com/claydonkey/MINGW-KDE-FRAMEWORKS' || return 1
     pacman --noconfirm --noprogressbar --sync --refresh --refresh --sysupgrade --sysupgrade || return 1
     test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --noprogressbar --sync ci.msys/pactoys
