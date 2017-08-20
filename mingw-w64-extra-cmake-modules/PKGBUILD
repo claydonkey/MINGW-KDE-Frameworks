@@ -30,8 +30,6 @@ pkgver() {
 
 prepare() {
   mkdir -p build-${CARCH}${_variant}
-
-  # Apply patches
   cd "${srcdir}/${_realname}"
   patch -p1 -i "${srcdir}/set-AUTOSTATICPLUGINS.patch"
 }
