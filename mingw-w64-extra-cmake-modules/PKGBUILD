@@ -24,7 +24,7 @@ options=(${_stripped} ${_releasetype})
 
 pkgver() {
   cd "${srcdir}/${_realname}"
- printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)" | cut -c 2-
+  printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)" | cut -c 2-
 }
 
 prepare() {
