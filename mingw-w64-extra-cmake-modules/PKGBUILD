@@ -14,7 +14,7 @@ url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Extra modules and scripts for CMake.  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 depends=("${MINGW_PACKAGE_PREFIX}-cmake" "${MINGW_PACKAGE_PREFIX}-png2ico")
-makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx" mingw-w64-x86_64-libidn) # 
+makedepends=("${MINGW_PACKAGE_PREFIX}-python3-sphinx" mingw-w64-x86_64-libidn)  
 groups=('kf5')
 source=("${_realname}"::git+https://github.com/KDE/${_realname}.git
     "set-AUTOSTATICPLUGINS.patch")
