@@ -17,7 +17,7 @@ git fetch --quiet upstream
 list_commits  || failure 'Could not detect added commits'
 list_packages || failure 'Could not detect changed files'
 message 'Processing changes' "${commits[@]}"
-message 'directory' $(ls $(dirname ${BASH_SOURCE[0]}))
+#message 'directory' $(ls $(dirname ${BASH_SOURCE[0]}))
 test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
