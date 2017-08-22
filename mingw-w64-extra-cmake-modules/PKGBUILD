@@ -34,8 +34,7 @@ prepare() {
 }
 
 build() {
-  local -a extra_config
- 
+  local -a extra_config 
   cd build-${CARCH}${_variant}
   if [ "${_variant}" = "-static" ]; then
     extra_config+=( -DBUILD_SHARED_LIBS=NO )
