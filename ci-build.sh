@@ -21,11 +21,12 @@ test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
 # Build
+message 'directory' $(dirname ${BASH_SOURCE[0]})
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
 for package in "${packages[@]}"; do
-    execute 'Building binary' makepkg --noconfirm --noprogressbar --skippgpcheck --nocheck --syncdeps --rmdeps --cleanbuild
+    execute 'Building binary' makepkg --noconfirm  --skippgpcheck --nocheck --syncdeps --rmdeps --cleanbuild
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource --config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     deploy_enabled && mv "${package}"/*.pkg.tar.xz artifacts
