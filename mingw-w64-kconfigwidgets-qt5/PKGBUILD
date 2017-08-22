@@ -1,12 +1,14 @@
 # Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
 # Contributor (MSYS2): Ray Donnelly <mingw.android@gmail.com>
 
-_variant=-${KF5_VARIANT:-static}
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kconfigwidgets"
 pkgver=5.37.0
 pkgrel=1
-arch=('any')
+arch=('x86_64')
 pkgdesc="Widgets for configuration dialogs (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")

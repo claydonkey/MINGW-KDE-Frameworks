@@ -3,12 +3,13 @@
 _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
+_realname="kdeclarative"
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdeclarative"
 pkgver=5.37.0
 pkgrel=1
-pkgdesc='Provides integration of QML and KDE Frameworks'
-arch=('any')
+pkgdesc="Provides integration of QML and KDE Frameworks (mingw-w64-qt5${_namesuff})"
+arch=('x86_64')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
 depends=( )
@@ -53,8 +54,6 @@ make
 }
 
 package() {
-msg2 "PKGDIR=${pkgdir}"  
-cd build-${CARCH}${_variant}
+  cd build-${CARCH}${_variant}
   make DESTDIR="${pkgdir}" install
-
 }
