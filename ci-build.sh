@@ -17,11 +17,11 @@ git fetch --quiet upstream
 list_commits  || failure 'Could not detect added commits'
 list_packages || failure 'Could not detect changed files'
 message 'Processing changes' "${commits[@]}"
+message 'directory' $(dirname ${BASH_SOURCE[0]})
 test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
 # Build
-message 'directory' $(dirname ${BASH_SOURCE[0]})
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
