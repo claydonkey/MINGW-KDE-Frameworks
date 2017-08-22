@@ -1,6 +1,5 @@
 MINGW-KDE-Frameworks 
 ====================
-[![Build Status](https://travis-ci.org/claydonkey/MINGW-KDE-Frameworks.svg?branch=master)](https://travis-ci.org/claydonkey/MINGW-KDE-Frameworks)
  [![Build Status](https://ci.appveyor.com/api/projects/status/r5myh087cwi35bh0?svg=true)](https://ci.appveyor.com/project/claydonkey/mingw-kde-frameworks)
  
 
