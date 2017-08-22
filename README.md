@@ -9,7 +9,13 @@ The KDE Frameworks build on the Qt framework, providing everything from simple u
 
 
 # Using Hosted Binaries
-### 1. Add to MSYS pacman config:
+
+### Option 1. Using repman
+```
+repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+```
+
+### Option 2. Manually add to MSYS pacman config:
 
 #### pacman.conf
 [kde] Include = /etc/pacman.d/mirrorlist.kde
