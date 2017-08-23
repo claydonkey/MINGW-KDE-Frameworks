@@ -7,7 +7,8 @@
 # Configure
 cd "$(dirname "$0")"
 source 'ci-library.sh'
-deploy_enabled && mkdir artifacts
+deploy_enabled 
+mkdir artifacts
 git_config user.email 'anthony@claydonkey.com'
 git_config user.name  'Claydonkey KDE MINGW Continuous Integration'
 git remote add upstream 'https://github.com/claydonkey/MINGW-KDE-Frameworks'
@@ -38,7 +39,8 @@ for package in "${packages[@]}"; do
 done
 
 # Deploy
-deploy_enabled && cd artifacts || success 'All packages built successfully'
+deploy_enabled 
+cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'Generating build references'  create_build_references  "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'SHA-256 checksums' sha256sum *
