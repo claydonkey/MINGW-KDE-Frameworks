@@ -3,6 +3,7 @@ clone_folder: C:\M
 environment:
     DEPLOY_PROVIDER: bintray
     BINTRAY_ACCOUNT: claydonkey
+    BINTRAY_SUBJECT: minnowinmotion
     BINTRAY_REPOSITORY: MINGW-KDE-Frameworks 
     PACMAN_REPOSITORY_NAME: ci.kde
     BUILD_URL: https://ci.appveyor.com/project/$(APPVEYOR_ACCOUNT_NAME)/$(APPVEYOR_PROJECT_NAME)/build/$(APPVEYOR_BUILD_VERSION)
@@ -23,7 +24,7 @@ deploy:
 
     - provider: BinTray
       username: $(BINTRAY_ACCOUNT)
-      subject: $(BINTRAY_ACCOUNT)
+      subject: $(BINTRAY_SUBJECT)
       repo: $(BINTRAY_REPOSITORY)
       package: $(PACMAN_REPOSITORY_NAME)
       version: latest
