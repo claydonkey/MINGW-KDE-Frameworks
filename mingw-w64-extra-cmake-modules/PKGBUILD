@@ -55,7 +55,7 @@ build() {
     -DECM_DIR=${MINGW_PREFIX}/share/ECM \
     "${extra_config[@]}" \
     -G'MSYS Makefiles'
-  make VERBOSE=1
+  make
 }
 
 package() {
