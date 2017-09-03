@@ -22,10 +22,10 @@ test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
 # Build
-MINGW_PREFIX='mingw-w64'
-MINGW_PACKAGE_PREFIX='mingw-w64-x86_64'
-export MINGW_PREFIX=mingw-w64
-export MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+MINGW_PREFIX="/mingw64"
+MINGW_PACKAGE_PREFIX="mingw-w64-x86_64"
+export MINGW_PREFIX="/mingw64"
+export MINGW_PACKAGE_PREFIX="mingw-w64-x86_64"
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Location of cmake' whereis cmake
@@ -38,7 +38,7 @@ for package in "${packages[@]}"; do
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     mv "${package}"/*.pkg.tar.xz artifacts
     mv "${package}"/*.src.tar.gz artifacts
-    execute 'List directory - post install' ls 
+    execute 'List directory - post install' ls -l
     unset package
 done
 
