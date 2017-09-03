@@ -22,7 +22,6 @@ sha256sums=('SKIP'
             'a246d25065ac7472b3a4e5995b3c6cb32081ffa21c7de7455006398431e6c886')
 options=(${_stripped} ${_releasetype})
 
-
 pkgver() {
   cd "${srcdir}/${_realname}"
   printf "%s%s.%s.%s"  "$(git describe --tags $(git rev-list --tags --max-count=1))" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)" | cut -c 2-
