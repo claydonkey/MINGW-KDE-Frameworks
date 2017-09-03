@@ -10,6 +10,10 @@ The KDE Frameworks build on the Qt framework, providing everything from simple u
 # Using Hosted Binaries
 
 ### Option 1. Using repman
+install pactoys if not already
+'''
+pacman -S pactoys-git
+'''
 ```
 repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
 ```
