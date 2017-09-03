@@ -35,9 +35,9 @@ for package in "${packages[@]}"; do
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps --rmdeps --cleanbuild
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
-    message 'List directory - post install' $(ls $(dirname ${BASH_SOURCE[0]}))
     deploy_enabled && mv "${package}"/*.pkg.tar.xz artifacts
     deploy_enabled && mv "${package}"/*.src.tar.gz artifacts
+    message 'List directory - post install' $(ls $(dirname ${BASH_SOURCE[0]}))
     unset package
 done
 
