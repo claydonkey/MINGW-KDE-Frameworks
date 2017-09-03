@@ -26,7 +26,7 @@ deploy:
    - provider: GitHub
      release: MINGW-KDE-Frameworks-v$(appveyor_build_version)
      description: 'appveyor artifact release'
-     artifact: /.*\.pkg\.tar\.xz.*/            # upload all pacman packages to release assets
+     #artifact: /.*\.pkg\.tar\.xz.*/            # upload all pacman packages to release assets
      draft: false
      prerelease: true
      auth_token:
