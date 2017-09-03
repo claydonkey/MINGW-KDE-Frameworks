@@ -23,7 +23,6 @@ only_commits:
     - '**/*.patch'
 
 deploy:
-
     #- provider: BinTray
     #  username: $(BINTRAY_ACCOUNT)
     #  subject: $(BINTRAY_SUBJECT)
@@ -34,15 +33,14 @@ deploy:
     #  override: true
     #  api_key:
     #     secure: 7Wxl2M3l9rgWh6DvgfOHN7VTYyWIFJT/M0pEBMU0fOq5FzRFH1Shtdoy0+0kD3O7
-
    - provider: GitHub
-    auth_token:
-       secure: 0BBkMe2anAAI88pOGrOqlD1sXi2QR176jYKo4t3c2Jo/03ffdcXNW1DLFJcH59/s
-    release: MINGW-KDE-Frameworks-v$(appveyor_build_version)
-    description: 'appveyor artifact release'
-    artifact: /.*\.pkg\.tar\.xz.*/            # upload all NuGet packages to release assets
-    draft: false
-    prerelease: true
-    on:
-       branch: master                 # release from master branch only
-       appveyor_repo_tag: true        # deploy on tag push only
+   auth_token:
+      secure: 0BBkMe2anAAI88pOGrOqlD1sXi2QR176jYKo4t3c2Jo/03ffdcXNW1DLFJcH59/s
+   release: MINGW-KDE-Frameworks-v$(appveyor_build_version)
+   description: 'appveyor artifact release'
+   artifact: /.*\.pkg\.tar\.xz.*/            # upload all pacman packages to release assets
+   draft: false
+   prerelease: true
+   on:
+      branch: master                              # release from master branch only
+      appveyor_repo_tag: true              # deploy on tag push only
