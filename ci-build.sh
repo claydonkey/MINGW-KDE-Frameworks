@@ -24,8 +24,8 @@ define_build_order || failure 'Could not determine build order'
 # Build
 MINGW_PREFIX='mingw-w64'
 MINGW_PACKAGE_PREFIX='mingw-w64-x86_64'
-#export MINGW_PREFIX=mingw-w64
-#export MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+export MINGW_PREFIX=mingw-w64
+export MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
@@ -33,7 +33,7 @@ execute 'Approving recipe quality' check_recipe_quality
 for package in "${packages[@]}"; do
     execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps --rmdeps --cleanbuild
-    execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource --config '/etc/makepkg_mingw64.conf'
+    execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     deploy_enabled && mv "${package}"/*.pkg.tar.xz artifacts
     deploy_enabled && mv "${package}"/*.src.tar.gz artifacts
