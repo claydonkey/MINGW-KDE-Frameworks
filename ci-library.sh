@@ -133,9 +133,10 @@ update_system() {
     #repman add ci.kde 'https://dl.bintray.com/minnowinmotion/MINGW-KDE-Frameworks' || return 1
     message "Retrieving MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
-    pacman --noconfirm --noprogressbar --sync --refresh --refresh --sysupgrade --sysupgrade || return 1
+    pacman --noconfirm --noprogressbar --sync --refresh --sysupgrade || return 1
     test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --noprogressbar --sync ci.msys/pactoys
+    pacman --noconfirm --needed --noprogressbar --sync ci.kde/mingw-w64-x86_64-extra-cmake-modules
 }
 
 # Sort packages by dependency
