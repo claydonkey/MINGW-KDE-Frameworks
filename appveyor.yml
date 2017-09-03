@@ -9,6 +9,7 @@ environment:
     PACMAN_REPOSITORY_NAME: ci.kde
     BUILD_URL: https://ci.appveyor.com/project/$(APPVEYOR_ACCOUNT_NAME)/$(APPVEYOR_PROJECT_NAME)/build/$(APPVEYOR_BUILD_VERSION)
     GITHUB_ACCOUNT: claydonkey
+    GITHUB_BUILD_VERSION: 5.37.0.81
 
 build_script:
     - C:\msys64\usr\bin\pacman --noconfirm --sync --refresh --refresh --sysupgrade --sysupgrade
@@ -24,7 +25,8 @@ only_commits:
 
 deploy:
    - provider: GitHub
-     release: MINGW-KDE-Frameworks-v$(appveyor_build_version)
+     #release: MINGW-KDE-Frameworks-v$(APPVEYOR_BUILD_VERSION)
+     release: MINGW-KDE-Frameworks-v$(GITHUB_BUILD_VERSION)
      description: 'appveyor artifact release'
      artifact: /.*/ #/.*\.pkg\.tar\.xz.*/            # upload all pacman packages to release assets
      draft: false
