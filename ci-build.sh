@@ -37,7 +37,7 @@ for package in "${packages[@]}"; do
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     deploy_enabled && mv "${package}"/*.pkg.tar.xz artifacts
     deploy_enabled && mv "${package}"/*.src.tar.gz artifacts
-    message 'List directory - post install' $(ls $(dirname ${BASH_SOURCE[0]}))
+    message 'List directory - post install' ls
     unset package
 done
 
