@@ -8,8 +8,8 @@
 cd "$(dirname "$0")"
 source 'ci-library.sh'
 mkdir artifacts
-git_config user.email 'anthony@claydonkey.com'
-git_config user.name  'Claydonkey KDE MINGW Continuous Integration'
+git_config user.email 'ci@claydonkey.com'
+git_config user.name  'Claydonkey Continuous Integration'
 git remote add upstream 'https://github.com/claydonkey/MINGW-KDE-Frameworks'
 git fetch --quiet upstream
 
@@ -39,6 +39,7 @@ for package in "${packages[@]}"; do
     mv "${package}"/*.pkg.tar.xz artifacts
     mv "${package}"/*.src.tar.gz artifacts
     execute 'List directory - post install' ls -l
+    execute 'List directory - post install' ls /mingw64/share
     unset package
 done
 
@@ -47,4 +48,4 @@ cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'Generating build references'  create_build_references  "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'SHA-256 checksums' sha256sum *
-success 'All artifacts built successfully'
+success 'All artifacts built successfully'x
