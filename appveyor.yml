@@ -1,12 +1,14 @@
 clone_folder: C:\M
 
 environment:
-    DEPLOY_PROVIDER: bintray
+    #DEPLOY_PROVIDER: bintray
+    DEPLOY_PROVIDER:  GitHub
     BINTRAY_ACCOUNT: claydonkey
     BINTRAY_SUBJECT: minnowinmotion
     BINTRAY_REPOSITORY: MINGW-KDE-Frameworks 
     PACMAN_REPOSITORY_NAME: ci.kde
     BUILD_URL: https://ci.appveyor.com/project/$(APPVEYOR_ACCOUNT_NAME)/$(APPVEYOR_PROJECT_NAME)/build/$(APPVEYOR_BUILD_VERSION)
+    GITHUB_ACCOUNT: claydonkey
 
 build_script:
     - C:\msys64\usr\bin\pacman --noconfirm --sync --refresh --refresh --sysupgrade --sysupgrade
@@ -22,13 +24,25 @@ only_commits:
 
 deploy:
 
-    - provider: BinTray
-      username: $(BINTRAY_ACCOUNT)
-      subject: $(BINTRAY_SUBJECT)
-      repo: $(BINTRAY_REPOSITORY)
-      package: $(PACMAN_REPOSITORY_NAME)
-      version: latest
-      publish: true
-      override: true
-      api_key:
-         secure: 7Wxl2M3l9rgWh6DvgfOHN7VTYyWIFJT/M0pEBMU0fOq5FzRFH1Shtdoy0+0kD3O7
+    #- provider: BinTray
+    #  username: $(BINTRAY_ACCOUNT)
+    #  subject: $(BINTRAY_SUBJECT)
+    #  repo: $(BINTRAY_REPOSITORY)
+    #  package: $(PACMAN_REPOSITORY_NAME)
+    #  version: latest
+    #  publish: true
+    #  override: true
+    #  api_key:
+    #     secure: 7Wxl2M3l9rgWh6DvgfOHN7VTYyWIFJT/M0pEBMU0fOq5FzRFH1Shtdoy0+0kD3O7
+
+   - provider: GitHub
+    auth_token:
+       secure: 0BBkMe2anAAI88pOGrOqlD1sXi2QR176jYKo4t3c2Jo/03ffdcXNW1DLFJcH59/s
+    release: MINGW-KDE-Frameworks-v$(appveyor_build_version)
+    description: 'appveyor artifact release'
+    artifact: /.*\.pkg\.tar\.xz.*/            # upload all NuGet packages to release assets
+    draft: false
+    prerelease: true
+    on:
+       branch: master                 # release from master branch only
+       appveyor_repo_tag: true        # deploy on tag push only
