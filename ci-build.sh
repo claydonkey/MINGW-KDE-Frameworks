@@ -33,7 +33,7 @@ execute 'Approving recipe quality' check_recipe_quality
 
 for package in "${packages[@]}"; do
     execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
-    execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps --rmdeps --cleanbuild
+    execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps  --cleanbuild #--rmdeps
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     mv "${package}"/*.pkg.tar.xz artifacts
