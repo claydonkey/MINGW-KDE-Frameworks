@@ -136,6 +136,8 @@ update_system() {
     pacman --noconfirm --noprogressbar --sync --refresh --sysupgrade || return 1
     test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --noprogressbar --sync ci.msys/pactoys
+    pacman --noconfirm --needed --noprogressbar --sync mingw64/mingw-w64-x86_64-python3-sphinx
+    pacman --noconfirm --needed --noprogressbar --sync mingw64/mingw-w64-x86_64-python2-sphinx
    # pacman --noconfirm --needed --noprogressbar --sync ci.kde/mingw-w64-x86_64-extra-cmake-modules
 
 }
