@@ -38,12 +38,12 @@ for package in "${packages[@]}"; do
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
     mv "${package}"/*.pkg.tar.xz artifacts
     mv "${package}"/*.src.tar.gz artifacts
-    execute 'List directory - post install' ls -l
-    execute 'List directory - post install' ls /mingw64/share
-    execute 'Where directory - post install' whereis sphinx-build
     unset package
 done
-
+execute 'List root directory - post install' ls -l
+execute 'List 64 share directory - post install' ls /mingw64/share
+execute 'List share directory - post install' ls /usr/share
+execute 'Location of sphinx-build - post install' whereis sphinx-build
 # Deploy
 cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
