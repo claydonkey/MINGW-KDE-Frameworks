@@ -40,6 +40,7 @@ for package in "${packages[@]}"; do
     mv "${package}"/*.src.tar.gz artifacts
     execute 'List directory - post install' ls -l
     execute 'List directory - post install' ls /mingw64/share
+    execute 'Where directory - post install' whereis sphinx-build
     unset package
 done
 
