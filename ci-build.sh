@@ -19,6 +19,7 @@ list_packages || failure 'Could not detect changed files'
 message 'MSYSTEM' $MSYSTEM
 message 'Processing changes' "${commits[@]}"
 message 'List directory' $(ls $(dirname ${BASH_SOURCE[0]}))
+execute 'kf5 database - pre install' pacman --sync --search kf5
 test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
@@ -30,9 +31,8 @@ define_build_order || failure 'Could not determine build order'
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
-
-for package in "${packages[@]}"; do
     execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
+for package in "${packages[@]}"; do
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps  --cleanbuild #--rmdeps
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
@@ -40,10 +40,12 @@ for package in "${packages[@]}"; do
     mv "${package}"/*.src.tar.gz artifacts
     unset package
 done
+
+execute 'kf5 database - post install' pacman --sync --search kf5
 execute 'List root directory - post install' ls -l
 execute 'List 64 share directory - post install' ls -l /mingw64/bin
 execute 'List share directory - post install' ls -l /usr/share
-#execute 'Location of sphinx-build - post install' whereis sphinx-build
+#execute 'Location of sphinx-build - post  install' whereis sphinx-build
 # Deploy
 cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
