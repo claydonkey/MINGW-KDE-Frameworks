@@ -134,9 +134,10 @@ update_system() {
     message "Retrieving ci.kde DB from MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
     pacman --noconfirm  --sync --refresh --sysupgrade || return 1
-    test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
+    #test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --sync ci.msys/pactoys
-    pacman --noconfirm --needed  --sync ci.kde/mingw-w64-x86_64-extra-cmake-modules
+    pacman --noconfirm --needed --sync mingw64/mingw-w64-x86_64-python3-sphinx
+ #   pacman --noconfirm --needed --sync ci.kde/mingw-w64-x86_64-extra-cmake-modules
 }
 
 # Sort packages by dependency
