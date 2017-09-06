@@ -16,6 +16,7 @@ git fetch --quiet upstream
 # Detect
 list_commits  || failure 'Could not detect added commits'
 list_packages || failure 'Could not detect changed files'
+message 'MSYSTEM' $MSYSTEM
 message 'Processing changes' "${commits[@]}"
 message 'List directory' $(ls $(dirname ${BASH_SOURCE[0]}))
 test -z "${packages}" && success 'No changes in package recipes'
@@ -28,8 +29,6 @@ define_build_order || failure 'Could not determine build order'
 #export MINGW_PACKAGE_PREFIX="mingw-w64-x86_64"
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
-execute 'Location of cmake' whereis cmake
-execute 'Location of cmake' whereis pactoys
 execute 'Approving recipe quality' check_recipe_quality
 
 for package in "${packages[@]}"; do
@@ -42,9 +41,9 @@ for package in "${packages[@]}"; do
     unset package
 done
 execute 'List root directory - post install' ls -l
-execute 'List 64 share directory - post install' ls /mingw64/share
-execute 'List share directory - post install' ls /usr/share
-execute 'Location of sphinx-build - post install' whereis sphinx-build
+execute 'List 64 share directory - post install' ls -l /mingw64/bin
+execute 'List share directory - post install' ls -l /usr/share
+#execute 'Location of sphinx-build - post install' whereis sphinx-build
 # Deploy
 cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
