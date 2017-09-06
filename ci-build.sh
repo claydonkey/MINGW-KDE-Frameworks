@@ -29,6 +29,7 @@ export MINGW_PACKAGE_PREFIX="mingw-w64-x86_64"
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Location of cmake' whereis cmake
+execute 'Location of cmake' whereis pactoys
 execute 'Approving recipe quality' check_recipe_quality
 
 for package in "${packages[@]}"; do
