@@ -53,4 +53,4 @@ cd artifacts || success 'All packages built successfully'
 execute 'Generating pacman repository' create_pacman_repository "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'Generating build references'  create_build_references  "${PACMAN_REPOSITORY_NAME:-ci-build}"
 execute 'SHA-256 checksums' sha256sum *
-success 'All artifacts built successfully'x
+success 'All artifacts built successfully'
