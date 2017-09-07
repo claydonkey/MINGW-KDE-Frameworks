@@ -15,7 +15,7 @@ install pactoys if not already
 pacman -S pactoys-git
 ```
 add pgp key:
-'''
+````
 $ gpg --keyserver hkp://keys.gnupg.net --recv-keys CBD471804F360D3F
 $ pacman-key --lsign-key CBD471804F360D3F
 ```
