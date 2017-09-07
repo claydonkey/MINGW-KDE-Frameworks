@@ -137,7 +137,8 @@ update_system() {
     pacman --noconfirm --noprogressbar --sync --refresh --refresh --sysupgrade --sysupgrade || return 1
     #test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --sync ci.msys/pactoys
-    execute 'Add PGP key for ci.kde pacman db' gpg --keyserver hkp://keys.gnupg.net --recv-keys ${KDE_PGP_KEY}	
+    execute 'Add PGP key for ci.kde pacman db' gpg --keyserver hkp://keys.gnupg.net --recv-keys ${KDE_PGP_KEY}
+    pacman-key -r ${KDE_PGP_KEY}
     pacman-key --lsign-key ${KDE_PGP_KEY}
     # Refresh Keys
     rm -fr /etc/pacman.d/gnupg
