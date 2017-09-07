@@ -19,7 +19,7 @@ list_packages || failure 'Could not detect changed files'
 message 'MSYSTEM' $MSYSTEM
 message 'Processing changes' "${commits[@]}"
 message 'List directory' $(ls $(dirname ${BASH_SOURCE[0]}))
-execute 'kf5 database - pre install' pacman --sync --search kf5
+
 test -z "${packages}" && success 'No changes in package recipes'
 define_build_order || failure 'Could not determine build order'
 
@@ -31,7 +31,9 @@ define_build_order || failure 'Could not determine build order'
 message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
-    execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
+execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
+execute 'kf5 database - pre install' pacman --sync --search kf5
+
 for package in "${packages[@]}"; do
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps  --cleanbuild #--rmdeps
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
