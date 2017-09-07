@@ -184,7 +184,7 @@ list_commits()  {
 }
 
 # Changed recipes
-list_packages() {/
+list_packages() {
     local _packages
     _list_changes _packages '*/PKGBUILD' '%/PKGBUILD' --pretty=format: --name-only || return 1
     for _package in "${_packages[@]}"; do
