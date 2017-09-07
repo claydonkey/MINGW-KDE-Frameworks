@@ -3,6 +3,7 @@
 # Continuous Integration Library for MSYS2
 # Author: Renato Silva <br.renatosilva@gmail.com>
 # Author: Qian Hong <fracting@gmail.com>
+# Additions for Min-KDE-Frameworks: Anthony Campbell <anthony@claydonkey.com>
 
 # Enable colors
 normal=$(tput sgr0)
@@ -139,6 +140,7 @@ update_system() {
     execute 'Add PGP key for ci.kde pacman db' gpg --keyserver hkp://keys.gnupg.net --recv-keys ${KDE_PGP_KEY}	
     pacman-key --lsign-key ${KDE_PGP_KEY}
     # Refresh Keys
+    rm -fr /etc/pacman.d/gnupg
     pacman-key --init
     pacman-key --populate
     pacman-key --refresh-keys

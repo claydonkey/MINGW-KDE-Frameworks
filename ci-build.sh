@@ -3,6 +3,7 @@
 # AppVeyor and Drone Continuous Integration for MSYS2
 # Author: Renato Silva <br.renatosilva@gmail.com>
 # Author: Qian Hong <fracting@gmail.com>
+# Additions for Min-KDE-Frameworks: Anthony Campbell <anthony@claydonkey.com>
 
 # Configure
 cd "$(dirname "$0")"
