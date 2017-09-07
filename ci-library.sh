@@ -138,14 +138,14 @@ update_system() {
     #test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --sync ci.msys/pactoys
     execute 'Add PGP key for ci.kde pacman db'  gpg --keyserver hkp://keys.gnupg.net --recv-keys ${KDE_PGP_KEY}
-    execute 'PGP receive' gpg --recv-keys ${KDE_PGP_KEY}
+    execute 'PGP receive' pacman-key --recv-keys ${KDE_PGP_KEY}
     execute 'PGP sign' pacman-key --lsign-key ${KDE_PGP_KEY}
     # Refresh Keys
     rm -fr /etc/pacman.d/gnupg
     execute 'PGP init' pacman-key --init
     execute 'PGP populate' pacman-key --populate
     execute 'PGP refresh'  pacman-key --refresh-keys
-    execute 'PGP receive' gpg --recv-keys ${KDE_PGP_KEY}
+    execute 'PGP receive' pacman-key --recv-keys ${KDE_PGP_KEY}
     execute 'PGP sign'  pacman-key --lsign-key ${KDE_PGP_KEY}
     message "Retrieving ci.kde db from MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
