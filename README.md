@@ -14,26 +14,18 @@ install pactoys if not already
 ```
 pacman -S pactoys-git
 ```
-```
-yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
-```
-First attempt will fail with
-```
-error: kde: signature from "Anthony Campbell (claydonkey) <anthony@claydonkey.com>" is unknown trust
-...
-Could not add repository kde.
-```
-execute:
-```
+add pgp key:
+'''
+$ gpg --keyserver hkp://keys.gnupg.net --recv-keys CBD471804F360D3F
 $ pacman-key --lsign-key CBD471804F360D3F
 ```
 alternatively (if only key):
 ```
-pacman-key --lsign-key $(gpg --list-keys --with-colons --keyid-format long | awk -F: '/^pub:/ { print $5 }')
+$ pacman-key --lsign-key $(gpg --list-keys --with-colons --keyid-format long | awk -F: '/^pub:/ { print $5 }')
 ```
-and repeat:
+and add database to local cache:
 ```
-yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+$ yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
 ```
 
 ### Option 2. Manually add to MSYS pacman config:
