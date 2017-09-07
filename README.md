@@ -27,6 +27,10 @@ execute:
 ```
 $ pacman-key --lsign-key CBD471804F360D3F
 ```
+alternatively (if only key):
+```
+pacman-key --lsign-key $(gpg --list-keys --with-colons --keyid-format long | awk -F: '/^pub:/ { print $5 }')
+```
 and repeat:
 ```
 yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
