@@ -138,6 +138,10 @@ update_system() {
     pacman --noconfirm --needed --sync ci.msys/pactoys
     execute 'Add PGP key for ci.kde pacman db' gpg --keyserver hkp://keys.gnupg.net --recv-keys ${KDE_PGP_KEY}	
     pacman-key --lsign-key ${KDE_PGP_KEY}
+    # Refresh Keys
+    pacman-key --init
+    pacman-key --populate
+    pacman-key --refresh-keys
     message "Retrieving ci.kde db from MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
     pacman --noconfirm --needed --sync mingw64/mingw-w64-x86_64-python3-sphinx
