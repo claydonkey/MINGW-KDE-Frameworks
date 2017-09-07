@@ -94,9 +94,10 @@ _build_add() {
 # Download previous artifact
 _download_previous() {
     local filenames=("${@}")
-    [[ "${DEPLOY_PROVIDER}" = bintray ]] || return 1
+  #  [[ "${DEPLOY_PROVIDER}" = bintray ]] || return 1
     for filename in "${filenames[@]}"; do
-        if ! wget --no-verbose "https://dl.bintray.com/${BINTRAY_ACCOUNT}/${BINTRAY_REPOSITORY}/${filename}"; then
+      #  if ! wget --no-verbose "https://dl.bintray.com/${BINTRAY_ACCOUNT}/${BINTRAY_REPOSITORY}/${filename}"; then
+       if ! wget  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}}/${filename}"; then
             rm -f "${filenames[@]}"
             return 1
         fi
@@ -133,7 +134,7 @@ update_system() {
     #repman add ci.kde 'https://dl.bintray.com/minnowinmotion/MINGW-KDE-Frameworks' || return 1
     message "Retrieving ci.kde DB from MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
-    pacman --noconfirm  --sync --refresh --sysupgrade || return 1
+    pacman --noconfirm --noprogressbar --sync --refresh --refresh --sysupgrade --sysupgrade || return 1
     #test -n "${DISABLE_QUALITY_CHECK}" && return 0 # TODO: remove this option when not anymore needed
     pacman --noconfirm --needed --sync ci.msys/pactoys
     pacman --noconfirm --needed --sync mingw64/mingw-w64-x86_64-python3-sphinx
@@ -183,7 +184,7 @@ list_commits()  {
 }
 
 # Changed recipes
-list_packages() {
+list_packages() {/
     local _packages
     _list_changes _packages '*/PKGBUILD' '%/PKGBUILD' --pretty=format: --name-only || return 1
     for _package in "${_packages[@]}"; do
