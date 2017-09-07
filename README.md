@@ -15,7 +15,7 @@ install pactoys if not already
 pacman -S pactoys-git
 ```
 ```
-repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
 ```
 First attempt will fail with
 ```
@@ -29,7 +29,7 @@ $ pacman-key --lsign-key CBD471804F360D3F
 ```
 and repeat:
 ```
-repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
 ```
 
 ### Option 2. Manually add to MSYS pacman config:
