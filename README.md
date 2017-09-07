@@ -10,12 +10,12 @@ The KDE Frameworks build on the Qt framework, providing everything from simple u
 # Using Hosted Binaries
 
 ### Option 1. Using repman
-install pactoys if not already
+install pactoys (if not installed already):
 ```
 pacman -S pactoys-git
 ```
 add pgp key:
-````
+```
 $ gpg --keyserver hkp://keys.gnupg.net --recv-keys CBD471804F360D3F
 $ pacman-key --lsign-key CBD471804F360D3F
 ```
