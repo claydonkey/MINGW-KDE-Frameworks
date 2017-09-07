@@ -39,7 +39,7 @@ for package in "${packages[@]}"; do
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps  --cleanbuild #--rmdeps
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
     execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
-    execute 'Signing'  echo ${GPG_PASSPHRASE} | gpg -b --passphrase-fd 0 *.pkg.tar.xz
+    execute 'Signing Package'  echo $GPG_PASSPHRASE | gpg -b --passphrase-fd 0 *.pkg.tar.xz
     mv "${package}"/*.pkg.tar.xz artifacts
     mv "${package}"/*.pkg.tar.xz.sig artifacts
     mv "${package}"/*.src.tar.gz artifacts
