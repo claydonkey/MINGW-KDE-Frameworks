@@ -46,10 +46,10 @@ for package in "${packages[@]}"; do
     unset package
 done
 
-execute 'kf5 database - post install' pacman --sync --search kf5
-execute 'List root directory - post install' ls -l
-execute 'List 64 share directory - post install' ls -l /mingw64/bin
-execute 'List share directory - post install' ls -l /usr/share
+#execute 'kf5 database - post install' pacman --sync --search kf5
+#execute 'List root directory - post install' ls -l
+#execute 'List 64 share directory - post install' ls -l /mingw64/bin
+#execute 'List share directory - post install' ls -l /usr/share
 #execute 'Location of sphinx-build - post  install' whereis sphinx-build
 # Deploy
 cd artifacts || success 'All packages built successfully'
