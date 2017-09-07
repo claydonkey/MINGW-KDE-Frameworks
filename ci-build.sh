@@ -32,7 +32,6 @@ message 'Building packages' "${packages[@]}"
 execute 'Updating system' update_system
 execute 'Approving recipe quality' check_recipe_quality
 execute 'Check Prefixes' echo $MINGW_PREFIX " " $MINGW_PACKAGE_PREFIX
-execute 'Add PGP key' gpg --keyserver hkp://keys.gnupg.net --recv-keys CBD471804F360D3F
 execute 'kf5 database - pre install' pacman --sync --search kf5
 
 for package in "${packages[@]}"; do
