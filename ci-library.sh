@@ -147,6 +147,7 @@ update_system() {
     #execute 'PGP refresh'  pacman-key --refresh-keys
     execute 'PGP receive' pacman-key --recv-keys $KDE_PGP_KEY
     execute 'PGP sign'  pacman-key --lsign-key $KDE_PGP_KEY
+    execute 'List PGP Keys' gpg --list-keys
     message "Retrieving ci.kde db from MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}"
     repman add ci.kde  "https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/MINGW-KDE-Frameworks-v${GITHUB_BUILD_VERSION}" || return 1
     pacman --noconfirm --needed --sync mingw64/mingw-w64-x86_64-python3-sphinx
