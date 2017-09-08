@@ -17,6 +17,7 @@ git fetch --quiet upstream
 # Detect
 list_commits  || failure 'Could not detect added commits'
 list_packages || failure 'Could not detect changed files'
+message 'Encrypt var test' $TEST_SECURE
 message 'MSYSTEM' $MSYSTEM
 message 'Processing changes' "${commits[@]}"
 message 'List directory' $(ls $(dirname ${BASH_SOURCE[0]}))
