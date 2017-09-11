@@ -39,7 +39,7 @@ execute 'kf5 database - pre install' pacman --sync --search kf5
 for package in "${packages[@]}"; do
     execute 'Building binary' makepkg  --noconfirm  --skippgpcheck --nocheck --syncdeps  --cleanbuild #--rmdeps
     execute 'Building source' makepkg --noconfirm --noprogressbar --skippgpcheck --allsource #--config '/etc/makepkg_mingw64.conf'
-    execute 'Installing' yes:pacman --noprogressbar --upgrade *.pkg.tar.xz
+    execute 'Installing' yes:pacman --noprogressbar --upgrade --force *.pkg.tar.xz
     message 'Signing Package' 
     echo $KDE_PGP_PASSPHRASE | gpg -b --passphrase-fd 0  --default-key $KDE_PGP_KEY *.pkg.tar.xz
     mv "${package}"/*.pkg.tar.xz artifacts
