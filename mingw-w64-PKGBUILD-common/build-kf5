@@ -142,15 +142,16 @@ libkcw-qt5
 # libogg #not required as exists in main repository mingw64/mingw-w64-x86_64-libogg
 libsndfile
 libkdegames-qt5
-kemoticons
+kemoticons-qt5
 kdelibs4support-qt5
 kirigami2-qt5
 kmediaplayer-git-qt5
+gpgmepp-qt5
 #kleopatra #needs gpgme 1.8 to work
 )
 
 declare -a repkgs=(
-libkcw-qt5
+kemoticons-qt5
 )
 
   _REPACK="R"
@@ -176,7 +177,7 @@ fi
 
  if [[ ${_OPTIONS} == *"sign"* ]]; then
    echo -e "\e[34m\e[1m==> [SIGNING]\e[39m with passphrase...";
-   echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 *-any.pkg.tar.xz
+   echo ${_PASSPHRASE} | gpg -u CBD471804F360D3F -b --passphrase-fd 0 *-any.pkg.tar.xz
  fi
  if [[ ${_OPTIONS} == *"upload-version"* ]]; then
  	echo -e "\e[34m\e[1m==> [UPLOADING]\e[39m to \e[32m'${_VERSION}${_SFLAG}${_BFLAG}'"
@@ -201,7 +202,7 @@ if [[ ${_OPTIONS} == *"email"* ]]; then \
    if [[ ${_OPTIONS} == *"sign"* ]]; then
 	for dbfile in $PWD/*  ; do
 	echo -e "\e[34m\e[1m   -->\e[39m  $(basename $dbfile)"
-	echo ${_PASSPHRASE} | gpg -b --passphrase-fd 0 ${dbfile}
+	echo ${_PASSPHRASE} | gpg -u CBD471804F360D3F -b --passphrase-fd 0 ${dbfile}
 	done
      popd	 > /dev/null
 fi
