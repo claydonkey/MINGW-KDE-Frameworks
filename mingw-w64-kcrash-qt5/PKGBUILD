@@ -17,7 +17,9 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
 depends=("${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"{,.sig})
+validpgpkeys=(CA262C6C83DE4D2FB28A332A3A6A4DB839EAA6D7  # Albert Astals Cid <aacid@kde.org>
+              F23275E4BF10AFC1DF6914A6DBD2CE893E2D1C87) # Christoph Feck <cfeck@kde.org>
 sha256sums=('c097aaca2c6ca8a177d697a8cccd4bd8bec2d09c07efd4bc7a4d0d3d1cbf629a')
 options=(${_stripped} ${_releasetype})
 
