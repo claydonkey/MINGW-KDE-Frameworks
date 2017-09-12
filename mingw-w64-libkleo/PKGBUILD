@@ -14,6 +14,7 @@ pkgdesc=" (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 depends=()
+description="This lib provides crypto for mails"
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
 source=("${_realname}"::"git://github.com/KDE/${_basename}.git#branch=Applications/17.04")
