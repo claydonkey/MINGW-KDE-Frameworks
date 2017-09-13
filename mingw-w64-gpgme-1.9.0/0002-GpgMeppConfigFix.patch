@@ -1,0 +1,31 @@
+--- src/gpgme-1.9.0/lang/cpp/src/GpgmeppConfig-w32.cmake.in.in	2016-11-16 09:17:20.000000000 +0000
++++ src/gpgme-1.9.0/lang/cpp/src/GpgmeppConfig-w32.cmake.in.in	2017-09-13 10:41:47.773898300 +0100
+@@ -61,14 +61,23 @@
+ # Create imported target Gpgmepp
+ add_library(Gpgmepp SHARED IMPORTED)
+ 
++# Compute the installation prefix relative to this file.
++get_filename_component(_IMPORT_PREFIX "${CMAKE_CURRENT_LIST_FILE}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++if(_IMPORT_PREFIX STREQUAL "/")
++  set(_IMPORT_PREFIX "")
++endif()
++
+ set_target_properties(Gpgmepp PROPERTIES
+-  IMPORTED_IMPLIB "@resolved_libdir@/libgpgmepp.dll.a"
+-  INTERFACE_INCLUDE_DIRECTORIES "@resolved_includedir@/gpgme++;@resolved_includedir@"
+-  INTERFACE_LINK_LIBRARIES "pthread;@resolved_libdir@/libgpgme.dll.a;@LIBASSUAN_LIBS@"
+-  IMPORTED_LOCATION "@resolved_bindir@/libgpgmepp-6.dll"
++  IMPORTED_IMPLIB "${_IMPORT_PREFIX}/lib/libgpgmepp.dll.a"
++  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/gpgme++;${_IMPORT_PREFIX}/include"
++  INTERFACE_LINK_LIBRARIES "pthread;${_IMPORT_PREFIX}/lib/libgpgme.dll.a;-lassuan -lws2_32 -L${_IMPORT_PREFIX}/lib -lgpg-error"
++  IMPORTED_LOCATION "${_IMPORT_PREFIX}/bin/libgpgmepp-6.dll"
+ )
+ list(APPEND _IMPORT_CHECK_TARGETS Gpgmepp )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_Gpgmepp "@resolved_libdir@/libgpgmepp.dll.a" "@resolved_bindir@/libgpgmepp-6.dll" )
++list(APPEND _IMPORT_CHECK_FILES_FOR_Gpgmepp "${_IMPORT_PREFIX}/lib/libgpgmepp.dll.a" "${_IMPORT_PREFIX}/bin/libgpgmepp-6.dll" )
+ 
+ 
+ if(CMAKE_VERSION VERSION_LESS 2.8.12)

@@ -1,0 +1,34 @@
+--- src/gpgme-1.9.0/lang/qt/src/QGpgmeConfig-w32.cmake.in.in	2016-11-16 09:17:20.000000000 +0000
++++ src/gpgme-1.9.0/lang/qt/src/QGpgmeConfig-w32.cmake.in.in	2017-09-13 11:01:23.250301800 +0100
+@@ -57,19 +57,26 @@
+ unset(_targetsDefined)
+ unset(_targetsNotDefined)
+ unset(_expectedTargets)
+-
++# Compute the installation prefix relative to this file.
++get_filename_component(_IMPORT_PREFIX "${CMAKE_CURRENT_LIST_FILE}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
++if(_IMPORT_PREFIX STREQUAL "/")
++  set(_IMPORT_PREFIX "")
++endif()
+ # Create imported target QGpgme
+ add_library(QGpgme SHARED IMPORTED)
+ 
+ set_target_properties(QGpgme PROPERTIES
+-  IMPORTED_IMPLIB_RELEASE "@resolved_libdir@/libqgpgme.dll.a"
+-  INTERFACE_INCLUDE_DIRECTORIES "@resolved_includedir@/qgpgme;@resolved_includedir@"
++  IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/lib/libqgpgme.dll.a"
++  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/qgpgme;${_IMPORT_PREFIX}/include"
+   INTERFACE_LINK_LIBRARIES "Gpgmepp;Qt5::Core"
+-  IMPORTED_LOCATION "@resolved_libdir@/libqgpgme-7.dll"
++  IMPORTED_LOCATION "${_IMPORT_PREFIX}/bin/libqgpgme-7.dll"
+ )
+ 
+ list(APPEND _IMPORT_CHECK_TARGETS QGgpme )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_Qgpgme "@resolved_libdir@/libqgpgme.dll.a" "@resolved_bindir@/libqgpgme-7.dll" )
++list(APPEND _IMPORT_CHECK_FILES_FOR_Qgpgme "${_IMPORT_PREFIX}/lib/libqgpgme.dll.a" "${_IMPORT_PREFIX}/bin/libqgpgme-7.dll" )
+ 
+ if(CMAKE_VERSION VERSION_LESS 2.8.12)
+   message(FATAL_ERROR "This file relies on consumers using CMake 2.8.12 or greater.")

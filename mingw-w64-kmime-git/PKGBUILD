@@ -4,17 +4,17 @@ _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "libkleo"
+_kde_f5_init_package "${_variant}" "kmime"
 _ver_base=0.1.0
-pkgver=0.1.0.175.cc0718f
+pkgver=0.1.0.1130.578845f
 pkgrel=1
 arch=('x86_64')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc=" (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
-makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-gettext"  python)
 depends=()
-_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
+_kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2" "${MINGW_PACKAGE_PREFIX}-ki18n-qt5"  "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"
 groups=('kf5')
 source=("${_realname}"::"git://github.com/KDE/${_basename}.git#branch=Applications/17.04")
 sha256sums=('SKIP')
