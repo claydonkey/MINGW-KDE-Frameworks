@@ -1,0 +1,21 @@
+--- src/zbar/doc/Makefile.am.inc	2017-09-13 20:42:20.963031400 +0100
++++ src/zbar/doc/Makefile.am.inc	2017-09-13 20:47:44.138011400 +0100
+@@ -6,12 +6,12 @@
+ 
+ # man page targets to distribute and install
+ dist_man_MANS =
+-if HAVE_MAGICK
+-dist_man_MANS += doc/man/zbarimg.1
+-endif
+-if HAVE_VIDEO
+-dist_man_MANS += doc/man/zbarcam.1
+-endif
++#if HAVE_MAGICK
++#dist_man_MANS += doc/man/zbarimg.1
++#endif
++#if HAVE_VIDEO
++#dist_man_MANS += doc/man/zbarcam.1
++#endif
+ 
+ # witness to man page build (many-to-many workaround)
+ man_stamp = doc/man/man.stamp

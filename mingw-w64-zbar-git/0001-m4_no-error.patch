@@ -1,0 +1,38 @@
+*** src/zbar/configure.ac	Wed Sep 13 16:50:05 2017
+--- src/zbar/configure.ac	Fri Sep 08 12:16:18 2017
+***************
+*** 3,9 ****
+  AC_INIT([zbar], [0.10], [spadix@users.sourceforge.net])
+  AC_CONFIG_AUX_DIR(config)
+  AC_CONFIG_MACRO_DIR(config)
+! AM_INIT_AUTOMAKE([1.10 -Wall -Werror foreign subdir-objects std-options dist-bzip2])
+  AC_CONFIG_HEADERS([include/config.h])
+  AC_CONFIG_SRCDIR(zbar/scanner.c)
+  LT_PREREQ([2.2])
+--- 3,11 ----
+  AC_INIT([zbar], [0.10], [spadix@users.sourceforge.net])
+  AC_CONFIG_AUX_DIR(config)
+  AC_CONFIG_MACRO_DIR(config)
+! AM_INIT_AUTOMAKE([1.10 -Wall -Wno-error foreign subdir-objects std-options dist-bzip2])
+! m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
+! LT_INIT
+  AC_CONFIG_HEADERS([include/config.h])
+  AC_CONFIG_SRCDIR(zbar/scanner.c)
+  LT_PREREQ([2.2])
+***************
+*** 47,53 ****
+    [Library revision])
+  
+  AM_CPPFLAGS="-I$srcdir/include"
+! AM_CFLAGS="-Wall -Wno-parentheses -Werror"
+  AM_CXXFLAGS="$AM_CFLAGS"
+  AC_SUBST([AM_CPPFLAGS])
+  AC_SUBST([AM_CFLAGS])
+--- 49,55 ----
+    [Library revision])
+  
+  AM_CPPFLAGS="-I$srcdir/include"
+! AM_CFLAGS="-Wall -Wno-parentheses -Wno-error"
+  AM_CXXFLAGS="$AM_CFLAGS"
+  AC_SUBST([AM_CPPFLAGS])
+  AC_SUBST([AM_CFLAGS])

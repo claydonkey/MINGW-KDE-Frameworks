@@ -1,0 +1,71 @@
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+
+_realname=zbar
+pkgbase=mingw-w64-${_realname}
+pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
+pkgver=1.9.0
+pkgrel=2
+pkgdesc="open source software suite for reading bar codes from various sources (mingw-w64)"
+arch=('any')
+url="http://zbar.sourceforge.net/"
+license=('LGPL')
+makedepends=(
+         "${MINGW_PACKAGE_PREFIX}-ghostscript"
+         "${MINGW_PACKAGE_PREFIX}-graphicsmagick"
+         )
+options=('!libtool')
+source=(${_realname}::git+"https://github.com/ZBar/ZBar.git"
+     0001-m4_no-error.patch
+     0002-LongPointerUD.patch
+     0003-zbarimgman.patch
+)
+sha256sums=('SKIP'
+            'fc7d1d9e298c5231ee3c75195aff31aa11c859f6c702f3bfe371fc5989cfb2a4'
+            'bcd563a755ff3cecc27c4c19879ceed30a4cc0f0f364108a93e0b5a82edca113'
+            '0be1d7f50aadc86382d020ccec6ea99ef14c569669618f55e2f96fdc292b80c6')
+
+
+prepare() {
+   patch -Np1  -i "${srcdir}"/0001-m4_no-error.patch
+   patch -Np1  -i "${srcdir}"/0002-LongPointerUD.patch
+   patch -Np1  -i "${srcdir}"/0003-zbarimgman.patch
+   cd "${srcdir}"/${_realname}
+    printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  # libtoolize  && aclocal && autoconf && autoheader && automake --add-missing
+   autoreconf -ivf
+}
+
+build() {
+  [[ -d "${srcdir}"/build-${MINGW_CHOST} ]] && rm -rf "${srcdir}"/build-${MINGW_CHOST}
+  mkdir -p "${srcdir}"/build-${MINGW_CHOST} && cd "${srcdir}"/build-${MINGW_CHOST}
+
+
+  "${srcdir}"/${_realname}/configure \
+    --prefix=${MINGW_PREFIX} \
+    --build=${MINGW_CHOST} \
+    --host=${MINGW_CHOST} \
+    --target=${MINGW_CHOST} \
+    --libexecdir=${MINGW_PREFIX}/bin \
+    --enable-shared \
+    --enable-static \
+    --without-xshm \
+    --without-xv \
+    --disable-video \
+    --without-qt \
+    --without-gtk \
+    --without-python \
+    --without-imagemagick  \
+    --with-graphicsmagick
+
+
+  make  LDFLAGS='-no-undefined'
+}
+
+#check() {
+ # cd "${srcdir}"/build-${MINGW_CHOST}
+#}
+
+package() {
+  cd "${srcdir}"/build-${MINGW_CHOST}
+  make DESTDIR=${pkgdir} install
+}
