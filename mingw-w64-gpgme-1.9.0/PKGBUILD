@@ -17,11 +17,12 @@ depends=("${MINGW_PACKAGE_PREFIX}-glib2"
          "${MINGW_PACKAGE_PREFIX}-npth"
          "${MINGW_PACKAGE_PREFIX}-qt5"
          )
-options=('!emptydirs') # '!strip' 'debug')
+options=('!strip' 'debug')
 source=("https://www.gnupg.org/ftp/gcrypt/${_realname}/${_realname}-${pkgver}.tar.bz2"{,.sig}
         0001-qtnodocsnotests.patch
         0002-GpgMeppConfigFix.patch
         0003-QGpgMeConfigFix.patch
+        0004-gpgme-find-gnupg.patch
   )
 #These might be signed by any of these keys https://gnupg.org/signature_key.html
 validpgpkeys=('D8692123C4065DEA5E0F3AB5249B39D24F25E3B6'
@@ -29,17 +30,20 @@ validpgpkeys=('D8692123C4065DEA5E0F3AB5249B39D24F25E3B6'
               '031EC2536E580D8EA286A9F22071B08A33BD3F06'
               'D238EA65D64C67ED4C3073F28A861B1C7EFD60D9')
 sha256sums=('1b29fedb8bfad775e70eafac5b0590621683b2d9869db994568e6401f4034ceb'
-          'SKIP'
-          'a5c105d53e0c5b1d69605a89538179b632785c74e8bf554440c7565ea4039842'
-          '88bac22f499d40eb987128594cd76e52b7ce06a887da633c8b8070cf4fcc1cb8'
-          'aa5094ea2b787073b1354fc0efa835448671556d923a11f0564744f22509f62b')
+            'SKIP'
+            'a5c105d53e0c5b1d69605a89538179b632785c74e8bf554440c7565ea4039842'
+            '88bac22f499d40eb987128594cd76e52b7ce06a887da633c8b8070cf4fcc1cb8'
+            'aa5094ea2b787073b1354fc0efa835448671556d923a11f0564744f22509f62b'
+            '31725bb1a2d5d6901e9e5f4ca143b5435f6614299801a78577c96429253d8d3b')
 
 prepare() {
    patch -Np1  -i "${srcdir}"/0001-qtnodocsnotests.patch
    patch -Np1  -i "${srcdir}"/0002-GpgMeppConfigFix.patch
    patch -Np1  -i "${srcdir}"/0003-QGpgMeConfigFix.patch
+#   patch -Np1  -i "${srcdir}"/0004-gpgme-find-gnupg.patch
    cd "${srcdir}"/${_realname}-${pkgver}
-   aclocal && autoconf && autoheader && automake --add-missing
+
+ #  aclocal && libtoolize && autoconf && autoheader && automake --add-missing
    autoreconf -ivf
 }
 
@@ -49,17 +53,20 @@ build() {
 
 
   "${srcdir}"/${_realname}-${pkgver}/configure \
+    --disable-fd-passing \
+    --enable-shared \
+    --enable-static \
     --prefix=${MINGW_PREFIX} \
     --build=${MINGW_CHOST} \
     --host=${MINGW_CHOST} \
     --target=${MINGW_CHOST} \
-    --libexecdir=${MINGW_PREFIX}/bin \
-    --disable-fd-passing \
-    --enable-shared \
-    --enable-static \
-    --disable-gpg-test  \
+    --with-gnu-ld \
+    --disable-gpg-test \
     --disable-gpgsm-test
-
+    #CFLAGS="-g3 -gdwarf-2" \
+    #CXXFLAGS="-g3 -gdwarf-2" \
+   #--libexecdir=${MINGW_PREFIX}/bin \
+ 
   make
 }
 
