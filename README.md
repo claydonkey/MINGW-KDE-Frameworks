@@ -35,11 +35,11 @@ $ yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releas
 [kde] Include = /etc/pacman.d/mirrorlist.kde
 
 #### mirrorlist.kde
-Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.38.0-1v0.9sr/
 
 ```
 $ printf '[kde]\nInclude = /etc/pacman.d/mirrorlist.kde' >> /etc/pacman.conf
-$ printf 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/' > /etc/pacman.d/mirrorlist.kde 
+$ printf 'Server = https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.38.0-1v0.9sr/' > /etc/pacman.d/mirrorlist.kde 
 ```
 ### 2. Update pacman db
 
