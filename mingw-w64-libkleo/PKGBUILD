@@ -55,9 +55,12 @@ build() {
     "${extra_config[@]}" \
     -G'MSYS Makefiles'
   make 
+
 }
 
 package() {
   cd build-${CARCH}${_variant}
+ echo  $(cygpath -d ${MINGW_PREFIX})
+  mv "${pkgdir}${MINGW_PREFIX}"/lib/*.dll "${pkgdir}${MINGW_PREFIX}"/bin/
   make DESTDIR="${pkgdir}" install
 }

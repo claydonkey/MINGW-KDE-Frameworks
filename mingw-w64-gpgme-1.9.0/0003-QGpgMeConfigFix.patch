@@ -19,7 +19,7 @@
  set_target_properties(QGpgme PROPERTIES
 -  IMPORTED_IMPLIB_RELEASE "@resolved_libdir@/libqgpgme.dll.a"
 -  INTERFACE_INCLUDE_DIRECTORIES "@resolved_includedir@/qgpgme;@resolved_includedir@"
-+  IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/lib/libqgpgme.dll.a"
++  IMPORTED_IMPLIB "${_IMPORT_PREFIX}/lib/libqgpgme.dll.a"
 +  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/qgpgme;${_IMPORT_PREFIX}/include"
    INTERFACE_LINK_LIBRARIES "Gpgmepp;Qt5::Core"
 -  IMPORTED_LOCATION "@resolved_libdir@/libqgpgme-7.dll"

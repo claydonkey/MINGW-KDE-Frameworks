@@ -1,0 +1,79 @@
+--- src/kleopatra-qt5/autotests/CMakeLists.txt	Tue Sep 19 11:58:08 2017
++++ src/kleopatra-qt5/autotests/CMakeLists.txt	Tue Sep 19 11:29:07 2017
+@@ -7,4 +7,6 @@
+ add_executable(kuniqueservicetest ${kuniqueservicetest_src})
+ add_test(kuniqueservicetest kuniqueservicetest)
+ ecm_mark_as_test(kuniqueservicetest)
+-target_link_libraries(kuniqueservicetest Qt5::Test ${_kleopatra_dbusaddons_libs})
++target_link_libraries(kuniqueservicetest Qt5::Test    KF5::DBusAddons ${_kleopatra_dbusaddons_libs})
++
++
+--- src/kleopatra-qt5/src/conf/CMakeLists.txt	Tue Sep 19 11:58:08 2017
++++ src/kleopatra-qt5/src/conf/CMakeLists.txt	Tue Sep 19 11:55:45 2017
+@@ -65,6 +65,7 @@
+   KF5::I18n
+   KF5::WidgetsAddons
+   KF5::ConfigWidgets
++  Qt5::DBus
+   ${_kcm_kleopatra_extra_libs}
+   ${_kleopatra_dbusaddons_libs}
+   ${_kcm_kleopatra_libkleopatraclient_extra_LIBS}
+--- src/kleopatra-qt5/src/CMakeLists.txt	Tue Sep 19 11:58:08 2017
++++ src/kleopatra-qt5/src/CMakeLists.txt	Tue Sep 19 11:54:31 2017
+@@ -278,11 +278,18 @@
+ add_executable(kleopatra_bin ${_kleopatra_SRCS} ${_kleopatra_uiserver_SRCS})
+ set_target_properties(kleopatra_bin PROPERTIES OUTPUT_NAME kleopatra)
+ 
++#remove includes as exception header clashes with gcc system libs
++set_target_properties(KF5::Libkleo PROPERTIES
++  INTERFACE_INCLUDE_DIRECTORIES ""
++  INTERFACE_LINK_LIBRARIES "QGpgme;Gpgmepp"
++)
++
++
++
+ target_link_libraries(kleopatra_bin
+   Gpgmepp
+   QGpgme
+   ${_kleopatra_extra_libs}
+-  KF5::Libkleo
+   KF5::Mime
+   KF5::I18n
+   KF5::XmlGui
+@@ -290,12 +297,15 @@
+   KF5::WindowSystem
+   KF5::CoreAddons
+   KF5::ItemModels
++  KF5::DBusAddons
+   Qt5::Network
+   Qt5::PrintSupport # Printing secret keys
+   ${_kleopatra_uiserver_extra_libs}
+   ${_kleopatra_dbusaddons_libs}
+   kleopatraclientcore
++  KF5::Libkleo
+ )
++
+ 
+ install(TARGETS kleopatra_bin ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+ 
+--- src/kleopatra-qt5/src/kleopatraapplication.cpp	Tue Sep 19 11:58:09 2017
++++ src/kleopatra-qt5/src/kleopatraapplication.cpp	Tue Sep 19 11:39:21 2017
+@@ -297,7 +297,7 @@
+         // WId is not a portable type as it is a pointer type on Windows.
+         // casting it from an integer is ok though as the values are guranteed to
+         // be compatible in the documentation.
+-        parentId = reinterpret_cast<WId>(parser.value(QStringLiteral("parent-windowid")).toUInt());
++        parentId = static_cast<WId>(parser.value(QStringLiteral("parent-windowid")).toUInt());
+ #else
+         parentId = parser.value(QStringLiteral("parent-windowid")).toUInt();
+ #endif
+--- src/kleopatra-qt5/tests/CMakeLists.txt	Tue Sep 19 11:58:10 2017
++++ src/kleopatra-qt5/tests/CMakeLists.txt	Tue Sep 19 11:29:25 2017
+@@ -67,6 +67,7 @@
+   KF5::CoreAddons
+   KF5::I18n
+   Qt5::Widgets
++  KF5::DBusAddons
+ )
+ 
+ ########### next target ###############

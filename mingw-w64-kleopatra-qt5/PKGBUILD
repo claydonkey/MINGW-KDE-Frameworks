@@ -16,8 +16,10 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("${_realname}"::"git://anongit.kde.org/${_basename}.git#branch=Applications/17.04")
-sha256sums=('SKIP')
+source=("${_realname}"::"git://anongit.kde.org/${_basename}.git#branch=Applications/17.04"
+	"0001-caseExcep_cast_deps.patch")
+sha256sums=('SKIP'
+            '3b5ecb8a7c47b36c2f43db270651095cb09fe102b17cf83bd29adc3f15d4a72d')
 options=(${_stripped} ${_releasetype})
 
 pkgver() {
@@ -27,7 +29,8 @@ pkgver() {
 
  
 prepare() {
-  cd "${srcdir}"/${_realname}
+   patch -Np1 -i  0001-caseExcep_cast_deps.patch
+   cd "${srcdir}"/${_realname}
 }
 
 build() {
@@ -43,16 +46,16 @@ build() {
   fi
 
   MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX \
-  cmake ../${_realname} \
+  cmake ../${_realname} -G'MSYS Makefiles' \
     -DCMAKE_BUILD_TYPE=Release \
+       "${extra_config[@]}" \
     -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
-    -DLIB_INSTALL_DIR=lib \
+   -DLIB_INSTALL_DIR=lib \
     -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX} \
     -DQt5_DIR=${QT5_PREFIX}/lib/cmake/Qt5 \
     -DBUILD_TESTING=OFF \
-    -DECM_DIR=${MINGW_PREFIX}/share/ECM \
-    "${extra_config[@]}" \
-    -G'MSYS Makefiles'
+    -DECM_DIR=${MINGW_PREFIX}/share/ECM 
+
   make 
 }
 
