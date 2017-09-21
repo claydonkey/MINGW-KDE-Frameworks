@@ -138,31 +138,32 @@ declare -a pkgs=(
 # kparts-qt5
 # # kdewebkit-qt5 #needs attention (Qt5Network version)
 # kunitconversion-qt5
-#  kdesignerplugin-qt5
+# kdesignerplugin-qt5
 # kdewin-qt5
 # libkcw-git-qt5 #backup version
 # libkcw-qt5
 # libogg #not required as exists in main repository mingw64/mingw-w64-x86_64-libogg
-#libsndfile
-#libkdegames-qt5
-#kemoticons-qt5
-#kdelibs4support-qt5
-#kirigami2-qt5
-#kmediaplayer-git-qt5
-#gpgmepp-qt5
-#syntax-highlighting-qt5
-#gpgme-1.9.0
-libkleo-qt5
-#kmime-git
-#zbar-git
-kleopatra-qt5
+# libsndfile
+# libkdegames-qt5
+# kemoticons-qt5
+# kdelibs4support-qt5
+# kirigami2-qt5
+# kmediaplayer-git-qt5
+ # kgpgmepp-qt5
+# syntax-highlighting-qt5
+# gpgme-1.9.0
+# libkleo-qt5
+# kmime-git
+# zbar-git
+# kleopatra-qt5
+kubrick
 )
 
 declare -a repkgs=(
 gpgme-1.9.0
 )
 
-  #_REPACK="R"
+  _REPACK="R"
 
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
 for pkg in "${pkgs[@]}"; do
