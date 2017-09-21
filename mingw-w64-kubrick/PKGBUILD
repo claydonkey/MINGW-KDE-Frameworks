@@ -13,7 +13,7 @@ url='https://www.kde.org/applications/games/${_basename}'
 pkgdesc="Kubrick - 3-D Game based on Rubik's Cube (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
-depends=()
+depends=("${MINGW_PACKAGE_PREFIX}-knewstuff-qt5")
 _kde_f5_add_depends "${_variant}"  \
 "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"  \
 "${MINGW_PACKAGE_PREFIX}-bzip2"  \
