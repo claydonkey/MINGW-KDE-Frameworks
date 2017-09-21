@@ -1,0 +1,44 @@
+--- src/kubrick-qt5/src/gameglview.cpp	Thu Sep 21 18:23:41 2017
++++ src/kubrick-qt5/src/gameglview.cpp	Thu Sep 21 18:25:50 2017
+@@ -148,7 +148,7 @@
+     // Set the perspective projection.
+     glMatrixMode (GL_PROJECTION);
+     glLoadIdentity();
+-    gluPerspective (viewAngle, glAspect, minZ, maxZ);
++   gluPerspective (viewAngle, glAspect, 1.0, 20.0);
+     glMatrixMode (GL_MODELVIEW);
+ 
+     // Calculate the depth and size of the background rectangle.
++++ src/kubrick-qt5/src/kbkglobal.h	Thu Sep 21 18:22:58 2017
+--- src/kubrick-qt5/src/kbkglobal.h	Thu Sep 21 18:25:50 2017
+@@ -56,8 +56,8 @@
+ enum	MouseEvent	{ButtonDown, Tracking, ButtonUp};
+ 
+ #define viewAngle       30.0	// Angle of field of view in Y direction.
+-#define minZ             1.0	// Nearest point represented in the view.
+-#define maxZ            20.0	// Furthest point represented in the view.
++//#define minZ             1.0	// Nearest point represented in the view.
++//#define maxZ            20.0	// Furthest point represented in the view.
+ 
+ #define cubeCentreZ	-5.0	// Z-value for all centres of cubes.
+ 
++++ src/kubrick-qt5/src/movetracker.cpp	Thu Sep 21 18:23:22 2017
+--- src/kubrick-qt5/src/movetracker.cpp	Thu Sep 21 18:25:50 2017
+@@ -120,7 +120,7 @@
+ 	}
+ 	v = cubeViews.at (cubeID);
+
+-	if (position[Z] > (-maxZ + 0.1)) {
++	if (position[Z] > (-20.0 + 0.1)) {
+ 	    // Get the mouse position relative to the centre of the cube found.
+ 	    // Use the transformation matrix for the translated and standardly
+ 	    // aligned view of that cube, without including any user's rotation.
+@@ -303,7 +303,7 @@
+ 	depth = getMousePosition (mX, mY, position);
+ 
+ 	// Continue only if the mouse hit a cube, not the background.
+-	if (position[Z] > (-maxZ + 0.1)) {
++	if (position[Z] > (-20.0 + 0.1)) {
+ 
+ 	    // Find which picture of a cube the mouse is on.
+ 	    int cubeID = findWhichCube (sceneID, cubeViews, position);

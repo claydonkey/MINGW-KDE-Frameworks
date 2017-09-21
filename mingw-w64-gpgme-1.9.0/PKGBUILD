@@ -17,7 +17,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-glib2"
          "${MINGW_PACKAGE_PREFIX}-npth"
          "${MINGW_PACKAGE_PREFIX}-qt5"
          )
-options=('!libtool' 'strip' '!debug')
+options=('strip' '!debug')
 source=("https://www.gnupg.org/ftp/gcrypt/${_realname}/${_realname}-${pkgver}.tar.bz2"{,.sig}
         0001-qtnodocsnotests.patch
         0002-GpgMeppConfigFix.patch
@@ -53,12 +53,10 @@ build() {
   "${srcdir}"/${_realname}-${pkgver}/configure \
     --disable-fd-passing \
     --enable-shared \
-    --enable-static \
     --prefix=${MINGW_PREFIX} \
     --build=${MINGW_CHOST} \
     --host=${MINGW_CHOST} \
     --target=${MINGW_CHOST} \
-    --with-gnu-ld \
     --disable-gpg-test \
     --disable-gpgsm-test \
     --libexecdir=${MINGW_PREFIX}/bin 
