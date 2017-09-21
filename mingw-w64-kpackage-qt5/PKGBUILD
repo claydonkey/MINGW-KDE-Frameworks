@@ -5,10 +5,10 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kpackage"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
 pkgdesc='Support for downloading application assets from the network'
-arch=('x86_64')
+arch=('any')
 url='https://community.kde.org/Frameworks'
 license=('LGPL')
 
@@ -17,7 +17,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python" "${MINGW_PAC
 groups=('kf5')
 optdepends=("${MINGW_PACKAGE_PREFIX}-doctools-qt5")
 source=("https://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('fac4d94dc33760aa71078f869fa0fc090c25a7aaf9547cc1a91bcd2b70296ec6')
+sha256sums=('b6eb027aa8fbb0a45d87b026ae7117f14c08385628b5da5ba55994f7f01c926c')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

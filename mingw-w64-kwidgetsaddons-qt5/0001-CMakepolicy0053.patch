@@ -1,11 +1,11 @@
---- src/kwidgetsaddons-5.37.0/CMakeLists.txt	2017-08-06 19:12:17.000000000 +0100
-+++ src/kwidgetsaddons-5.37.0/CMakeLists.txt.new.txt	2017-08-17 19:10:21.746759400 +0100
+--- src/kwidgetsaddons-5.38.0/CMakeLists.txt	2017-08-06 19:12:17.000000000 +0100
++++ src/kwidgetsaddons-5.38.0/CMakeLists.txt.new.txt	2017-08-17 19:10:21.746759400 +0100
 @@ -2,7 +2,7 @@
  
- set(KF5_VERSION "5.37.0") # handled by release scripts
+ set(KF5_VERSION "5.38.0") # handled by release scripts
  project(KWidgetsAddons VERSION ${KF5_VERSION})
 -
 +cmake_policy(SET CMP0053 NEW)
  include(FeatureSummary)
- find_package(ECM 5.37.0  NO_MODULE)
+ find_package(ECM 5.38.0  NO_MODULE)
  set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")

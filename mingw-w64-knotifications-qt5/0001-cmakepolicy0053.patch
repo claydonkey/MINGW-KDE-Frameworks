@@ -1,0 +1,11 @@
+--- src/knotifications-5.38.0/CMakeLists.txt	Tue Sep 19 18:25:04 2017
++++ src/knotifications-5.38.0/CMakeLists.txt	Sun Sep 03 09:11:24 2017
+@@ -11,7 +11,7 @@
+ feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKAGES)
+ 
+ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+-
++cmake_policy(SET CMP0053 NEW)
+ 
+ include(GenerateExportHeader)
+ include(ECMSetupVersion)

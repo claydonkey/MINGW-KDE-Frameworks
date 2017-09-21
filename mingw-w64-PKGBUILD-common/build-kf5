@@ -85,85 +85,87 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Listed in tier-order
 declare -a pkgs=(
-extra-cmake-modules
-#github-release
-solid-qt5
-phonon-qt5
-syntax-highlighting-qt5
-attica-qt5
-sonnet-qt5
-kguiaddons-qt5
-kitemviews-qt5
-karchive-qt5
-ki18n-qt5
-kdoctools-qt5
-kcoreaddons-qt5
-kpackage-qt5
-kconfig-qt5
-kcodecs-qt5
-kwindowsystem-qt5
-texttospeech-qt5
-knotifications-qt5
-kauth-qt5 #works but needs backend
-kconfigwidgets-qt5
-kdbusaddons-qt5
-kcrash-qt5
-kwidgetsaddons-qt5
-kjobwidgets-qt5
-kiconthemes-qt5
-kservice-qt5
-kcompletion-qt5
-ktextwidgets-qt5
-kglobalaccel-qt5
-kxmlgui-qt5
-kbookmarks-qt5
-#gpgmepp-git not working at mo
-kwallet-qt5
-kio-qt5
-kinit-qt5
-kded-qt5
-knewstuff-qt5
-kdnssd-qt5
-kdeclarative-qt5
-kcmutils-qt5
-kplotting-qt5
-hicolor-icon-theme
-#kcwsh-qt5-git #omit this....
-kframeworkintegration-qt5
-kidletime-qt5
-kimageformats-qt5
-kitemmodels-qt5
-kparts-qt5
-# kdewebkit-qt5 #needs attention (Qt5Network version)
-kunitconversion-qt5
-kdesignerplugin-qt5
-kdewin-qt5-git
+#extra-cmake-modules
+##github-release
+# solid-qt5
+# phonon-qt5
+# syntax-highlighting-qt5
+# attica-qt5
+# sonnet-qt5
+# kguiaddons-qt5
+# kitemviews-qt5
+# karchive-qt5
+# ki18n-qt5
+# kdoctools-qt5
+# kcoreaddons-qt5
+# kpackage-qt5
+# kconfig-qt5
+# kcodecs-qt5
+# kwindowsystem-qt5
+# texttospeech-qt5
+# knotifications-qt5
+# kauth-qt5 #works but needs backend
+# kconfigwidgets-qt5
+# kdbusaddons-qt5
+# kcrash-qt5
+# kwidgetsaddons-qt5
+# kjobwidgets-qt5
+# kiconthemes-qt5
+# kservice-qt5
+# kcompletion-qt5
+# ktextwidgets-qt5
+# kglobalaccel-qt5
+# kxmlgui-qt5
+# kbookmarks-qt5
+# #gpgmepp-git not working at mo
+# kwallet-qt5
+# kio-qt5
+# kinit-qt5
+# kded-qt5
+# knewstuff-qt5
+# kdnssd-qt5
+# kdeclarative-qt5
+# kcmutils-qt5
+# kplotting-qt5
+# hicolor-icon-theme
+# #kcwsh-qt5-git #omit this....nnnnnnnnn
+# libdbusmenu-qt5
+# knotifications-qt5
+# kframeworkintegration-qt5
+# kidletime-qt5
+# kimageformats-qt5
+# kitemmodels-qt5
+# kparts-qt5
+# # kdewebkit-qt5 #needs attention (Qt5Network version)
+# kunitconversion-qt5
+#  kdesignerplugin-qt5
+# kdewin-qt5
 # libkcw-git-qt5 #backup version
-libkcw-qt5
+# libkcw-qt5
 # libogg #not required as exists in main repository mingw64/mingw-w64-x86_64-libogg
-libsndfile
-libkdegames-qt5
-kemoticons-qt5
-kdelibs4support-qt5
-kirigami2-qt5
-kmediaplayer-git-qt5
-gpgmepp-qt5
-syntax-highlighting-qt5
-gpgme-1.9.0
-libkleo
-kmime-git
-zbar-git
-#kleopatra #needs gpgme 1.8 to work
+#libsndfile
+#libkdegames-qt5
+#kemoticons-qt5
+#kdelibs4support-qt5
+#kirigami2-qt5
+#kmediaplayer-git-qt5
+#gpgmepp-qt5
+#syntax-highlighting-qt5
+#gpgme-1.9.0
+#libkleo-qt5
+#kmime-git
+#zbar-git
+kleopatra-qt5
 )
 
 declare -a repkgs=(
 gpgme-1.9.0
 )
 
-  _REPACK="R"
+  #_REPACK="R"
 
   mkdir   $DIR/../DB${_SFLAG}${_BFLAG}
-for pkg in "${repkgs[@]}"; do
+for pkg in "${pkgs[@]}"; do
   pushd $DIR/../mingw-w64-${pkg} > /dev/null
 
   export KF5_VARIANT=${_VARIANT}
@@ -173,6 +175,7 @@ for pkg in "${repkgs[@]}"; do
     rm -rf *pkg*xz src pkg  
 fi
   rm  -f *sig
+  $PWD/../UpdateShas.sh
   echo  ${pkg} [STARTING]  |  mutt -s 'MinGW-KDE Compilation Starting '${pkg} ${_EMAIL} ; 
   makepkg -${_REPACK}fs${_INSTALL} --noconfirm || {  echo -e "\e[34m\e[1m==> FAILURE: \e[39m ${pkg}" ;\
    echo ${pkg} [FAILURE]  >> ../compile.log  ; \

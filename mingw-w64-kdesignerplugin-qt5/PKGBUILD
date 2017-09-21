@@ -5,9 +5,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kdesignerplugin"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Integrating KDE frameworks widgets with Qt Designer (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-bzip2")
@@ -15,7 +15,7 @@ depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kplotting-qt5"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" 
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('bc691bf91e4ea15323be728bf47c3eb02905adc85a2967acd7b731bc06002785')
+sha256sums=('c6038ac44f05083e6d1e7e2d8b950b31d493f1bf587f4b89984fefae5f973b66')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

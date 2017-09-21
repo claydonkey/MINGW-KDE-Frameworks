@@ -8,9 +8,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kio"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Network transparent access to files and data (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  )
@@ -23,11 +23,11 @@ source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${p
 "0003-GUIAddons.patch"
 "0004-GSSAPIFix.patch"
        )
-sha256sums=('49448ebcfe182805f8f9cd40c1e2c8e686578cc2e7fa3688204d5ca4e182ac5b'
-            'c660310f04e0030d2d34052d6a47ac9886a993700fc67460061ac65d39d9a5ee'
-            '2ab2faef572ca8593f5cdf86a41dd5ff5006bf8ddea166e5471953b03a9227a3'
-            'afa13593b75fff37d0220f5c31aebb192662770e10ad07395ca0462535b852f2'
-            '78fd95d282a4d16510419498107e5a4691e0119549f111cde558213e2a0917c2')
+sha256sums=('f43ab29c0ab51c78bd323e57fa6bba4aedf2d26d70df973b7ef7c80c9fc81597'
+            'bf566016c0179b4a29495d93f2fda85fa4e0cb8d78c3372896da90d1db79607b'
+            'b1856277f7c349623e7a5c0b90bbe17500811a97ec1ddac395132585ed28d775'
+            'd196ac08c4b73808a23e4e82eafbe76b52f5de80ee010ed876532d93d42b8292'
+            '91b07b630d3de2f6402e7133ff24dddd6594f5f3f28801d3ab479b145ffb3d5b')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

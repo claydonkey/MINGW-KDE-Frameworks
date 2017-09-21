@@ -1,0 +1,33 @@
+--- src/kdewin/CMakeLists.txt	Thu Sep 21 11:36:46 2017
++++ src/kdewin/CMakeLists.txt	Thu Sep 21 11:03:34 2017
+@@ -13,7 +13,12 @@
+ if (POLICY CMP0020)
+    cmake_policy(SET CMP0020 NEW)
+ endif()
+-
++if (POLICY CMP0054)
++cmake_policy(SET CMP0054 NEW)
++endif()
++if (POLICY CMP0022)
++cmake_policy(SET CMP0022 NEW)
++endif()
+ project(${NAME})
+ 
+ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/modules")
+@@ -126,13 +131,13 @@
+     install(FILES ${CMAKE_BINARY_DIR}/KDEWinConfig.cmake ${CMAKE_BINARY_DIR}/KDEWinConfigVersion.cmake DESTINATION lib/cmake/KDEWin)
+     install(EXPORT KDEWin_targets FILE KDEWinTargets.cmake DESTINATION lib/cmake/KDEWin)
+     install(FILES readme.txt  DESTINATION share/doc/kdewin-${KDEWIN_VERSION_STR})
+-    install(FILES cmake/modules/FindKDEWin.cmake  DESTINATION share/apps/cmake/modules)
+-    install(FILES cmake/modules/FindKDEWIN32.cmake  DESTINATION share/apps/cmake/modules)
++    install(FILES cmake/modules/FindKDEWin.cmake  DESTINATION share/apps/cmake/modules)
++    install(FILES cmake/modules/FindKDEWIN32.cmake  DESTINATION share/apps/cmake/modules)
+ endif()
+ 
+ # kdewin package support 
+ if (BUILD_BASE_LIB OR BUILD_BASE_LIB_WITH_QT)
+-    install(FILES cmake/modules/FindKDEWIN_Packager.cmake       DESTINATION share/apps/cmake/modules)
++    install(FILES cmake/modules/FindKDEWIN_Packager.cmake       DESTINATION share/apps/cmake/modules)
+ endif (BUILD_BASE_LIB OR BUILD_BASE_LIB_WITH_QT)
+ 
+ if (KDEWIN_PACKAGER_FOUND)

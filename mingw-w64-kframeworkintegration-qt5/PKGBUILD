@@ -5,10 +5,10 @@ _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kframeworkintegration"
-pkgver=5.37.0
+_kde_f5_init_package "${_variant}" "frameworkintegration"
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Workspace and cross-framework integration plugins  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  )
@@ -16,7 +16,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-bzip2")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kio-qt5"   "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('aa8ca045ba97899b739077e07a961b9e402520a0abfcee8be90baa85251c9e5d')
+sha256sums=('08cb88ef7c7ceb7cd43cbc7f3040daf7128d22bb75f8eb3956d55afd3e1b3670')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

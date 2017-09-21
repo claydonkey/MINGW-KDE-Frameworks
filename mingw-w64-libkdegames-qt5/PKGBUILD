@@ -9,15 +9,15 @@ pkgver=17.04.2
 pkgrel=1
 pkgdesc="Common code and data for many KDE games"
 url="https://www.kde.org/applications/games/"
-arch=('x86_64')
+arch=('any')
 groups=('kf5')
 license=('GPL' 'LGPL' 'FDL')
 depends=( "${MINGW_PACKAGE_PREFIX}-openal")
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "python")
 _kde_f5_add_depends "${_variant}"   "${MINGW_PACKAGE_PREFIX}-ktextwidgets-qt5"  "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5"    "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"    "${MINGW_PACKAGE_PREFIX}-kitemviews-qt5"  "${MINGW_PACKAGE_PREFIX}-kdnssd-qt5"
 source=("https://download.kde.org/stable/applications/${pkgver}/src/${_basename}-${pkgver}.tar.xz" "0001-Sleep.patch")
-sha256sums=('9348f5d1599d0fab0ad6a793133c552d313cb8b9a726a5fe86e61d7e0e107a1f' 
-'6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')
+sha256sums=('9348f5d1599d0fab0ad6a793133c552d313cb8b9a726a5fe86e61d7e0e107a1f'
+            '6804a9bade6cef3aad51da0c02a11b6a969d3eecbc0f0c907055e2c21991051d')
  description=('Common code and data for many KDE games ')
  options=(${_stripped} ${_releasetype})
    

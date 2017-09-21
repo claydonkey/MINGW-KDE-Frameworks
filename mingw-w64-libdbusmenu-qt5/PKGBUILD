@@ -1,0 +1,68 @@
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
+
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+_realname=libdbusmenu
+_basename=${_realname}-qt
+pkgname=${MINGW_PACKAGE_PREFIX}-${_basename}
+pkgver=0.9.3+16.04.20160218
+#pkgver=16.04.1+17.04.20170109.1
+_qt_module=libdbusmenu
+pkgrel=1
+arch=('any')
+url='http://launchpad.net/libdbusmenu-qt'
+license=(GNU LGPL2)
+pkgdesc='A library that provides a Qt implementation of the DBusMenu spec'
+depends=(${MINGW_PACKAGE_PREFIX}-qt5${_namesuff})
+makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "${MINGW_PACKAGE_PREFIX}-dbus")
+optdepends=()
+groups=('qt ''qt5')
+#https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu_16.04.1+17.04.20170109.1.orig.tar.gz
+#source=("launchpad.net/ubuntu/+archive/primary/+files/${_basename}/${_basename}_${pkgver}.orig.tar.gz")
+
+source=("http://archive.ubuntu.com/ubuntu/pool/main/libd/${_basename}/${_basename}_${pkgver}.orig.tar.gz"
+#{,.asc}
+       "0001-FixesForMingwGcc.patch" 
+       "qdbusconnectionfix.h")
+#source=("https://launchpad.net/${sourcename}/trunk/${pkgver}/+download/libdbusmenu-qt-${pkgver}.tar.bz2"{,.asc})
+sha256sums=('a8e6358a31c44ccdf1bfc46c95a77a6bfc7fc1f536aadb913ed4f4405c570cf6'
+            '66a5013473cda28951a5f92514795fc796b60a74dce1f696e10a60c95ff74277'
+            'c7755ebec2236e386d84fb66b53a5d3da00d630a29728bfe49f0882210d18388')
+options=(${_stripped} ${_releasetype} !makeflags)
+validpgpkeys=('45C43F82329D77F384214CCABEED35A5EEE34473') #Guillermo Gonzalez < guillermo.gonzalez@canonical.com>" #"Aurelien Gateau <agateau@kde.org>" 
+
+prepare() {
+  mkdir -p build-${CARCH}${_variant}
+  patch -Np1 -i 0001-FixesForMingwGcc.patch
+  rm  ${_basename}-${pkgver}/src/dbusmenu_export.h
+  #libdbusmenu-qt-0.9.3+16.04.20160218\src
+  cp  qdbusconnectionfix.h ${_basename}-${pkgver}/src/qdbusconnectionfix.h
+}
+
+build() {
+  local -a extra_config
+  cd build-${CARCH}${_variant}
+  if [ "${_variant}" = "-static" ]; then
+    extra_config+=( -DBUILD_SHARED_LIBS=NO )
+    QT5_PREFIX=${MINGW_PREFIX}/qt5-static
+    export PATH=${QT5_PREFIX}/bin:"$PATH"
+  else
+    QT5_PREFIX=${MINGW_PREFIX}
+  fi
+
+  MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
+    cmake ../${_basename}-${pkgver} \
+      -DCMAKE_CXX_FLAGS=-Wno-attributes \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
+      -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \
+      -DECM_DIR=${MINGW_PREFIX}/share/ECM \
+      "${extra_config[@]}" \
+      -G'MSYS Makefiles'
+make
+}
+package() {    
+ cd ${srcdir}/build-${CARCH}${_variant}
+  make DESTDIR="${pkgdir}" install
+}

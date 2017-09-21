@@ -1,0 +1,215 @@
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/src/CMakeLists.txt	Thu Feb 18 11:13:58 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/src/CMakeLists.txt	Thu Sep 21 09:14:02 2017
+@@ -57,6 +57,7 @@
+     dbusmenutypes_p.cpp
+     dbusmenushortcut_p.cpp
+     utils.cpp
++    qdbusconnectionfix.h
+     )
+ 
+ include_directories(
+@@ -82,6 +83,7 @@
+     )
+ 
+ add_library(dbusmenu-${QT_SUFFIX} SHARED ${dbusmenu_qt_SRCS})
++generate_export_header(dbusmenu-${QT_SUFFIX} BASE_NAME DBUSMENU)
+ set_target_properties(dbusmenu-${QT_SUFFIX} PROPERTIES
+     VERSION ${dbusmenu_qt_lib_VERSION}
+     SOVERSION ${dbusmenu_qt_lib_SOVERSION}
+@@ -106,15 +108,9 @@
+ # Make sure linking to the target adds dbusmenu-qt install directory
+ target_include_directories(dbusmenu-${QT_SUFFIX}
+     INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}>")
++target_include_directories(dbusmenu-${QT_SUFFIX} PUBLIC "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src;${CMAKE_BINARY_DIR}/src>")
+ 
+-install(TARGETS dbusmenu-${QT_SUFFIX}
+-    EXPORT dbusmenu-${QT_SUFFIX}-targets
+-    LIBRARY DESTINATION ${LIB_DESTINATION}
+-    RUNTIME DESTINATION bin
+-    )
+ 
+-install(EXPORT dbusmenu-${QT_SUFFIX}-targets
+-    DESTINATION ${CMAKECONFIG_INSTALL_DIR})
+ 
+ install(DIRECTORY .
+     DESTINATION ${INCLUDE_INSTALL_DIR}
+@@ -122,6 +118,27 @@
+     PATTERN "*_p.h" EXCLUDE
+     )
+ 
++IF(MINGW)
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libdbusmenu-${QT_SUFFIX}.dll.a
++            DESTINATION ${LIB_DESTINATION})
++
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dbusmenu_export.h
++        DESTINATION ${INCLUDE_INSTALL_DIR})
++ENDIF(MINGW)
++
+ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dbusmenu_version.h
+     DESTINATION ${INCLUDE_INSTALL_DIR}
+     )
++
++install(TARGETS dbusmenu-${QT_SUFFIX}
++        EXPORT dbusmenu-${QT_SUFFIX}-targets
++        LIBRARY DESTINATION ${LIB_DESTINATION}
++        ARCHIVE DESTINATION ${LIB_DESTINATION}
++        RUNTIME DESTINATION bin
++        )
++
++include(ECMGeneratePriFile)
++
++
++ecm_generate_pri_file(BASE_NAME libdbusmenu LIB_NAME libdbusmenu DEPS "core" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/libdbusmenu)
++install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
+\ No newline at end of file
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/src/dbusmenuimporter.cpp	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/src/dbusmenuimporter.cpp	Wed Sep 20 16:15:18 2017
+@@ -22,7 +22,7 @@
+ 
+ // Qt
+ #include <QCoreApplication>
+-#include <QDBusConnection>
++#include "QDBusConnectionFix.h"
+ #include <QDBusInterface>
+ #include <QDBusReply>
+ #include <QDBusVariant>
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/CMakeLists.txt	Thu Feb 18 11:13:58 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/CMakeLists.txt	Wed Sep 20 16:15:18 2017
+@@ -120,5 +120,14 @@
+     ${test_LIBRARIES}
+     )
+ 
++IF(MINGW)
++    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dbusmenuexportertest.exe
++            ${CMAKE_CURRENT_BINARY_DIR}/dbusmenuimportertest.exe
++            ${CMAKE_CURRENT_BINARY_DIR}/dbusmenushortcuttest.exe
++            ${CMAKE_CURRENT_BINARY_DIR}/slowmenu.exe
++            DESTINATION bin
++            )
++ENDIF(MINGW)
++
+ # Keep this at the end
+ create_check_target()
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuexportertest.cpp	Thu Feb 18 11:13:58 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuexportertest.cpp	Wed Sep 20 16:15:18 2017
+@@ -22,7 +22,7 @@
+ #include "dbusmenuexportertest.h"
+ 
+ // Qt
+-#include <QDBusConnection>
++#include "QDBusConnectionFix.h"
+ #include <QDBusInterface>
+ #include <QDBusReply>
+ #include <QIcon>
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuexportertest.h	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuexportertest.h	Wed Sep 20 16:15:18 2017
+@@ -21,7 +21,9 @@
+ #ifndef DBUSMENUEXPORTERTEST_H
+ #define DBUSMENUEXPORTERTEST_H
+ 
++#ifndef QT_GUI_LIB
+ #define QT_GUI_LIB
++#endif
+ #include <QtGui>
+ 
+ // Qt
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuimportertest.cpp	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuimportertest.cpp	Wed Sep 20 16:15:18 2017
+@@ -22,7 +22,7 @@
+ #include "dbusmenuimportertest.h"
+ 
+ // Qt
+-#include <QDBusConnection>
++#include "QDBusConnectionFix.h"
+ #include <QDBusInterface>
+ #include <QDBusReply>
+ #include <QIcon>
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuimportertest.h	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenuimportertest.h	Wed Sep 20 16:15:18 2017
+@@ -21,7 +21,9 @@
+ #ifndef DBUSMENUIMPORTERTEST_H
+ #define DBUSMENUIMPORTERTEST_H
+ 
++#ifndef QT_GUI_LIB
+ #define QT_GUI_LIB
++#endif
+ #include <QtGui>
+ 
+ // Qt
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenushortcuttest.h	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tests/dbusmenushortcuttest.h	Wed Sep 20 16:15:18 2017
+@@ -20,8 +20,9 @@
+ */
+ #ifndef DBUSMENUSHORTCUTTEST_H
+ #define DBUSMENUSHORTCUTTEST_H
+-
++#ifndef QT_GUI_LIB
+ #define QT_GUI_LIB
++#endif
+ #include <QtGui>
+ 
+ // Qt
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/tools/testapp/main.cpp	Thu Feb 18 11:13:53 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/tools/testapp/main.cpp	Wed Sep 20 16:15:18 2017
+@@ -19,7 +19,7 @@
+    Boston, MA 02110-1301, USA.
+ */
+ #include <QApplication>
+-#include <QDBusConnection>
++#include "QDBusConnectionFix.h"
+ #include <QDebug>
+ #include <QFile>
+ #include <QMenu>
+--- src/libdbusmenu-qt-0.9.3+16.04.20160218/CMakeLists.txt	Thu Feb 18 11:13:58 2016
++++ src/libdbusmenu-qt-0.9.3+16.04.20160218/CMakeLists.txt	Thu Sep 21 08:32:45 2017
+@@ -1,10 +1,38 @@
+-project(dbusmenu-qt)
+-cmake_minimum_required(VERSION 2.8.11)
++cmake_minimum_required(VERSION 3.0)
++set(KF5_VERSION "5.38.0") # handled by release scripts
++project(dbusmenu-qt VERSION ${KF5_VERSION})
+ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules")
+ 
+ # Build options
+ option(WITH_DOC "Build documentation (requires Doxygen)" ON)
+ 
++# ECM setup
++include(FeatureSummary)
++find_package(ECM 5.38.0  NO_MODULE)
++set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")
++feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKAGES)
++
++set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
++set(LIBRARY_NAMELINK)
++
++include(GenerateExportHeader)
++include(CMakePackageConfigHelpers)
++include(ECMSetupVersion)
++include(ECMGenerateHeaders)
++include(ECMAddQch)
++include(ECMGeneratePriFile)
++include(ECMQtDeclareLoggingCategory)
++include(ECMAddTests)
++include(ECMCoverageOption)
++
++ecm_setup_version(
++        PROJECT
++        VARIABLE_PREFIX dbusmenu-qt
++        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/dbusmenu-qt_version.h"
++        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/dbusmenu-qtConfigVersion.cmake"
++        SOVERSION 5)
++
++
+ # Versions
+ ## Package version
+ set(dbusmenu_qt_VERSION_MAJOR 0)
+@@ -101,6 +129,9 @@
+ add_dependencies(distcheck dist)
+ 
+ configure_file(dbusmenu-qt.pc.in ${CMAKE_BINARY_DIR}/dbusmenu-${QT_SUFFIX}.pc @ONLY)
++
++install(EXPORT dbusmenu-${QT_SUFFIX}-targets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE dbusmenu-${QT_SUFFIX}-targets.cmake )
++
+ 
+ install(FILES ${CMAKE_BINARY_DIR}/dbusmenu-${QT_SUFFIX}.pc
+         DESTINATION ${LIB_DESTINATION}/pkgconfig

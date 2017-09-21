@@ -6,9 +6,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kemoticons"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Convert text emoticons to graphical emoticons (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
@@ -17,7 +17,7 @@ _kde_f5_add_depends   "${_variant}" "${MINGW_PACKAGE_PREFIX}-kiconthemes-qt5" "$
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )
-sha256sums=('d8c6bd991b04b85a6a7ab891132e6e3f46427467b67a45a00c7bd416343aa9b3')
+sha256sums=('a5b54d48822055e409f04fe4a85bb057798c0b0c815a5f7c6ca24bd47c4809b0')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

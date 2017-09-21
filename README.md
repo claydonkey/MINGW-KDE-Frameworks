@@ -26,7 +26,7 @@ $ pacman-key --lsign-key $(gpg --list-keys --with-colons --keyid-format long | a
 ```
 and add database to local cache:
 ```
-$ yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.37.0-1v0.9sr/
+$ yes | repman add kde https://github.com/claydonkey/MINGW-KDE-Frameworks/releases/download/5.38.0-1v0.9sr/
 ```
 
 ### Option 2. Manually add to MSYS pacman config:

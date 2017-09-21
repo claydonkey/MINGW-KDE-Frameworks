@@ -6,9 +6,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "solid"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
@@ -18,8 +18,8 @@ _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${M
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 "0001-CMakePolicy0053.patch")
-sha256sums=('14bd7b814f3fb87ea7d26338a05966380b1703d6679d44972a380415ae7d69bd' 
-'a7100a6726d640db827aa116a6d7600d9bacabc4f7e90a8846df9acb8ca12b5f')
+sha256sums=('1052830aaed16391563dc35fe0e01bba2813acf2e0c70fa2223d54d2732b6cac'
+            '57d24867681f28b8d4635fd16dcbad5116a70708f0aa4e7a1d706daf770c1bcf')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

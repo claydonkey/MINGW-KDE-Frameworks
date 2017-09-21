@@ -10,7 +10,7 @@ pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}-qt5"
 pkgver=v0.5.11.1086.939897a
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
@@ -18,11 +18,12 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=(${_realname}::git+https://github.com/KDE/${_realname}.git
-0001-CMakeFindPath.patch
+source=(${_realname}::git+https://github.com/KDE/${_realname}.git#commit=939897a0ecf6316fd1f6923cfeec7ad07a856216
+#0001-CMakeFindPath.patch FIXED in 939897a0ecf6316fd1f6923cfeec7ad07a856216
+0002-CMakePolicies.patch
 )
 sha256sums=('SKIP'
-            '16b5d481378d2cdf882236befee1217ec5e5f189540c8514ef945a45483daf25')
+            '18a4bf779365e967f4f8cd712b735c1164b09deacd4312d3866acc75e8680bea')
 
 
 pkgver() {
@@ -32,8 +33,9 @@ pkgver() {
 
 prepare()
 {
-   patch -Np1 -i ${srcdir}/0001-CMakeFindPath.patch
-   mkdir -p build-${CARCH}${_variant}
+ #patch -Np1 -i ${srcdir}/0001-CMakeFindPath.patch
+ patch -Np1 -i ${srcdir}/0002-CMakePolicies.patch
+ mkdir -p build-${CARCH}${_variant}
 
 }
 

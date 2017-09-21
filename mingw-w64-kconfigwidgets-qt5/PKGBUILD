@@ -6,9 +6,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kconfigwidgets"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Widgets for configuration dialogs (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
@@ -17,8 +17,8 @@ _kde_f5_add_depends "${_variant}"  "${MINGW_PACKAGE_PREFIX}-kdoctools-qt5" "${MI
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
        001-cmakepolicy-0053.patch)
-sha256sums=('46af20c09871dd720f8bc46d3bf7ed5eaae2b7cd25549ec3a1b71b8ca40d2d00'
-            '664144b49ca8bbc738370e2655042bd36c408e621b379d3cb5f8194ee6e5ed7e')
+sha256sums=('1d70a761eefe60e6f7beb3517ed64edbb6266cfe85bbb65603c9764e524b6170'
+            '39fcd05e85430dcc4761766446e2a6dc12bb34ab9292cc00bfc483d0f65ea757')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

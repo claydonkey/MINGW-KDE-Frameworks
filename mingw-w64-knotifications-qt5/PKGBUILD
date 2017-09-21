@@ -6,9 +6,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "knotifications"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Desktop notifications (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
@@ -16,11 +16,14 @@ depends=( "${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"    "${MINGW_PACKAGE_PREF
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kcoreaddons-qt5" "${MINGW_PACKAGE_PREFIX}-kwidgetsaddons-qt5"  "${MINGW_PACKAGE_PREFIX}-kconfig-qt5"  "${MINGW_PACKAGE_PREFIX}-phonon-qt5"   "${MINGW_PACKAGE_PREFIX}-kcodecs-qt5"  "${MINGW_PACKAGE_PREFIX}-kwindowsystem-qt5"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
+	0001-cmakepolicy0053.patch
 )
-sha256sums=('66cdfddaa31f773a538d429026d0117e60f8a0a7f2a90c861f95d84395347b3f')
+sha256sums=('ed7d33414840c8b25ce0f7fc446516bd85458b4e349825da026eb511a1d875cb'
+            'e34fa2d49808537f3fdf6763a2a4a2f9ef53d4cce60247646e029dd3b8b8ae4e')
 options=(${_stripped} ${_releasetype})
 
 prepare() {
+  patch -Np1 -i ${srcdir}/0001-cmakepolicy0053.patch
   mkdir -p build-${CARCH}${_variant}
 }
 

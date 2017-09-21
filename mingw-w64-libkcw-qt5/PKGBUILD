@@ -5,9 +5,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkcw"
-pkgver=.38.bb9a877
+pkgver=.223.ed829b2
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 url='https://projects.kde.org/projects/frameworks/${_basename}'
 pkgdesc="Plugins to allow QImage to support extra file formats (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
@@ -19,10 +19,12 @@ source=("${_realname}"::"git://anongit.kde.org/${_basename}.git")
 sha256sums=('SKIP')
  options=(${_stripped} ${_releasetype})
 
-
-pkgver() {
- 
+pkgver() { 
   printf "%s.%s.%s" "$_ver_base" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+prepare() {
+  cd "${srcdir}"/${_realname}
 }
 
 build() {
@@ -38,17 +40,12 @@ build() {
   fi
 
   MSYS2_ARG_CONV_EXCL=-DCMAKE_INSTALL_PREFIX \
-    cmake ../${_realname} \
-    -DCMAKE_BUILD_TYPE=Release \
+  cmake ../${_realname} \
+    -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
     -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
-    -DLIB_INSTALL_DIR=lib \
-    -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX} \
-    -DQt5_DIR=${QT5_PREFIX}/lib/cmake/Qt5 \
-    -DBUILD_TESTING=OFF \
-    -DECM_DIR=${MINGW_PREFIX}/share/ECM \
     "${extra_config[@]}" \
-    -G'MSYS Makefiles'
-  make VERBOSE=1
+    -G 'MSYS Makefiles'
+  make
 }
 
 package() {

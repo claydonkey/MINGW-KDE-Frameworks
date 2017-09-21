@@ -5,9 +5,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "syntax-highlighting"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Syntax highlighting engine for Kate syntax definitions (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  "${MINGW_PACKAGE_PREFIX}-bzip2")
@@ -15,7 +15,7 @@ depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('e2d075482bc5409646db40374c6caa0b055276e1a5cd8e30065e9f4fd0baa6d0')
+sha256sums=('d4b887e2b4c0bb0d0c723325b11897d1ab38a644e3276d57eae8393928783680')
 options=(${_stripped} ${_releasetype})
 
 

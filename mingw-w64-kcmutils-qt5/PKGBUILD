@@ -8,9 +8,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcmutils"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Utilities for KDE System Settings modules (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules"  )
@@ -18,7 +18,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-bzip2" )
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kdeclarative-qt5"   
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz" )
-sha256sums=('fdefa93d5e796d82165c7ff0592d63c18da123534d989d77d55c9be00a2861c6')
+sha256sums=('0b15971ece6003636d012e37760324b005b06050d4d076bbe30eed427717ce58')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

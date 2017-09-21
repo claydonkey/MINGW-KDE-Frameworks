@@ -7,36 +7,40 @@ source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-framework
 _realname='libsndfile'
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=1.0.27
+pkgver=1.0.28
 pkgrel=1
 pkgdesc="A C library for reading and writing files containing sampled sound (mingw-w64)"
-arch=('x86_64')
+arch=('any')
 url="http://www.mega-nerd.com/libsndfile"
 license=('LGPL')
 depends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libogg" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKAGE_PREFIX}-crt-git")
 makedepends=("${MINGW_PACKAGE_PREFIX}-flac" "${MINGW_PACKAGE_PREFIX}-libogg" "${MINGW_PACKAGE_PREFIX}-libvorbis" "${MINGW_PACKAGE_PREFIX}-crt-git")
 source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-${pkgver}.tar.gz)
-md5sums=('fd1d97c6077f03b5d984d7956ffedb7a')
-options=(${_stripped} ${_releasetype})
+md5sums=('646b5f98ce89ac60cdb060fcd398247c')
+options=(${_stripped} ${_releasetype} "libtool")
  
 prepare(){
     mkdir -p build-${CARCH}${_variant}
 }
 
 build() {
-  local -a extra_config 
-      cd  build-${CARCH}${_variant} 
-    LIBS="`pkg-config --libs vorbis ogg`"
-   ../libsndfile-${pkgver}/configure \
-     --prefix=${MINGW_PREFIX} \
-     --build=${MINGW_CHOST} \
-     --host=${MINGW_CHOST} \
-     --disable-sqlite \
-     --enable-shared \
-     --enable-static
-   make
- 
-}
+ local -a extra_config 
+ cd libsndfile-${pkgver}
+ autoreconf -ivf
+ cd ../build-${CARCH}${_variant} 
+LIBS=  pkg-config  --libs vorbis ogg
+    ../libsndfile-${pkgver}/configure \
+  --prefix=${MINGW_PREFIX} \
+  --build=${MINGW_CHOST} \
+  --host=${MINGW_CHOST} \
+  --disable-sqlite \
+  --enable-shared \
+  --enable-static \
+  CXXFLAGS='-w' \
+ CFLAGS='-w'
+ make   CXXFLAGS='-w' \
+ CFLAGS='-w'
+ }
 
 package() {
   cd build-${CARCH}${_variant}

@@ -5,9 +5,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kinit"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Helper library to speed up start of applications on KDE workspaces (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules")
@@ -15,7 +15,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-bzip2")
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-kio-qt5"  "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" 
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz")
-sha256sums=('b9686968cb277a027169bc48ff37a25f44691b1d828af7cee4c6790c89f7ed2c')
+sha256sums=('ae49e0a3cf8a86868afb57bfd820c65be60939e4a79d39e54608fcc9f307914c')
 options=(${_stripped} ${_releasetype})
 
 prepare() {

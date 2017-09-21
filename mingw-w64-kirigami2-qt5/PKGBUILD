@@ -5,9 +5,9 @@ _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kirigami2"
-pkgver=5.37.0
+pkgver=5.38.0
 pkgrel=1
-arch=('x86_64')
+arch=('any')
 pkgdesc="Kirigami is a set of QtQuick components at the moment targeted for mobile use  (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" ) 
@@ -16,7 +16,7 @@ _kde_f5_add_depends  "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${_basename}-${pkgver}.tar.xz"
 )
-sha256sums=('ad252c1ff20060f1de5afd41fade9b86e046bc9a7da38af6ca507f8ba2ce82fc')
+sha256sums=('6c84eca0fdb7cd852aae36c45f40195dd16e17608aec2ce8fbf555198b0c64a2')
 options=(${_stripped} ${_releasetype})
 
 prepare() {
