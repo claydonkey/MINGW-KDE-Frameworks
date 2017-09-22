@@ -4,16 +4,16 @@ _variant=-${KF5_VARIANT:-shared}
 _stripped=${KF5_STRIP:strip}
 _releasetype=${KF5_RELEASE:!debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
-_kde_f5_init_package "${_variant}" "kubrick"
+_kde_f5_init_package "${_variant}" "granatier"
 _ver_base=0.1.0
-pkgver=0.1.0.236.d7b18b7
+pkgver=0.1.0.787.c382838
 pkgrel=1
 arch=('any')
 url='https://www.kde.org/applications/games/${_basename}'
-pkgdesc="Kubrick - 3-D Game based on Rubik's Cube (mingw-w64-qt5${_namesuff})"
+pkgdesc="Granatier - A Bomberjack Clone (mingw-w64-qt5${_namesuff})"
 license=('LGPL')
 makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" )
-depends=("${MINGW_PACKAGE_PREFIX}-knewstuff-qt5")
+depends=("${MINGW_PACKAGE_PREFIX}${_target}-knewstuff-qt5")
 _kde_f5_add_depends "${_variant}"  \
 "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}"  \
 "${MINGW_PACKAGE_PREFIX}-bzip2"  \
@@ -29,10 +29,10 @@ _kde_f5_add_depends "${_variant}"  \
 "${MINGW_PACKAGE_PREFIX}-knewstuff-qt5"
 groups=('kf5')
 source=("${_realname}"::"git://anongit.kde.org/${_basename}.git"
-	0001-fixDefineGcc.patch
+
 )
 sha256sums=('SKIP'
-            'cc4875967c5b7cfda6a60848f307ec872555649a4bebe8c64dc278970807d5d1')
+            )
 options=(${_stripped} ${_releasetype})
 
 pkgver() {
@@ -42,7 +42,6 @@ pkgver() {
 
  
 prepare() {
-   patch -Np1 -i "${srcdir}"/0001-fixDefineGcc.patch
    cd "${srcdir}"/${_realname}
 }
 
@@ -63,9 +62,8 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
        "${extra_config[@]}" \
     -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
-   -DLIB_INSTALL_DIR=lib \
-    -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX} \
-    -DQt5_DIR=${QT5_PREFIX}/lib/cmake/Qt5 \
+   -DKDE_INSTALL_LIBDIR=lib \
+        -DQt5_DIR=${QT5_PREFIX}/lib/cmake/Qt5 \
     -DBUILD_TESTING=OFF \
     -DECM_DIR=${MINGW_PREFIX}/share/ECM 
 

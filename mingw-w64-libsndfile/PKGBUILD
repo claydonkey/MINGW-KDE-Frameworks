@@ -25,11 +25,11 @@ prepare(){
 
 build() {
  local -a extra_config 
- cd libsndfile-${pkgver}
+ cd ${_realname}-${pkgver}
  autoreconf -ivf
  cd ../build-${CARCH}${_variant} 
 LIBS=  pkg-config  --libs vorbis ogg
-    ../libsndfile-${pkgver}/configure \
+    ../${_realname-${pkgver}/configure \
   --prefix=${MINGW_PREFIX} \
   --build=${MINGW_CHOST} \
   --host=${MINGW_CHOST} \

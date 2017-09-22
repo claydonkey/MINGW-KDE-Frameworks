@@ -4,8 +4,8 @@
 # Contributor (ArchLinux): Andrea Scarpino <andrea@archlinux.org>
 
 _variant=-${KF5_VARIANT:-shared}
-_stripped=${KF5_STRIP:strip}
-_releasetype=${KF5_RELEASE:!debug}
+_stripped=${KF5_STRIP:!strip}
+_releasetype=${KF5_RELEASE:debug}
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "kcrash"
 pkgver=5.38.0
@@ -40,7 +40,7 @@ build() {
 
   MSYS2_ARG_CONV_EXCL="-DCMAKE_INSTALL_PREFIX=;-DECM_MKSPECS_INSTALL_DIR=" \
     cmake ../${_basename}-${pkgver} \
-      -DCMAKE_BUILD_TYPE=$(_kde_f5_CMAKE_BUILD_TYPE) \
+      -DCMAKE_BUILD_TYPE=Debug #$(_kde_f5_CMAKE_BUILD_TYPE) \
       -DCMAKE_INSTALL_PREFIX=${QT5_PREFIX} \
       -DKDE_INSTALL_LIBDIR=lib \
       -DECM_MKSPECS_INSTALL_DIR=${QT5_PREFIX}/share/qt5/mkspecs \

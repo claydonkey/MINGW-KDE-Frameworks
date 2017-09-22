@@ -1,0 +1,47 @@
+# Maintainer (KF5): Anthony Campbell <anthony@claydonkey.com>
+# Maintainer (MSYS2): Ray Donnelly <mingw.android@gmail.com>
+
+_variant=-${KF5_VARIANT:-shared}
+_stripped=${KF5_STRIP:strip}
+_releasetype=${KF5_RELEASE:!debug}
+_realname='pinentry'
+source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
+pkgver=1.0.0
+pkgrel=1
+arch=('any')
+pkgdesc="Pinentry is a collection of passphrase entry dialogs which is required for almost all usages of GnuPG."
+license=('LGPL')
+depends=()
+groups=('kf5')
+source=("https://gnupg.org/ftp/gcrypt/${_realname}/${_realname}-${pkgver}.tar.bz2"{,.sig})
+sha256sums=('1672c2edc1feb036075b187c0773787b2afd0544f55025c645a71b4c2f79275a'
+            'SKIP')
+validpgpkeys=('D8692123C4065DEA5E0F3AB5249B39D24F25E3B6')
+options=(${_stripped} ${_releasetype})
+
+prepare(){
+    mkdir -p build-${CARCH}${_variant}
+}
+
+build() {
+ local -a extra_config 
+ cd ${_realname}-${pkgver}
+ autoreconf -ivf
+ cd ../build-${CARCH}${_variant} 
+
+    ../${_realname}-${pkgver}/configure \
+  --prefix=${MINGW_PREFIX} \
+  --build=${MINGW_CHOST} \
+  --host=${MINGW_CHOST} \
+  --enable-shared \
+  --enable-static \
+  CXXFLAGS='-w' \
+ CFLAGS='-w'
+ make   CXXFLAGS='-w' \
+ CFLAGS='-w'
+ }
+
+package() {
+  cd build-${CARCH}${_variant}
+  make DESTDIR=${pkgdir} install
+}
