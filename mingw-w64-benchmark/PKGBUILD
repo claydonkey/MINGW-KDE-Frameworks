@@ -1,0 +1,41 @@
+# Maintainer: Anthony Campbell <anthony@claydonkey.com>
+
+_realname=benchmark
+_branch=master
+_releasetype=release
+pkgbase=mingw-w64-${_realname}
+pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
+_pkgver=5.212.0-alpha2
+pkgver=5.212.0alpha2
+pkgrel=1
+pkgdesc="A library to support the benchmarking of functions, similar to unit-tests. (mingw-w64)"
+arch=('any')
+url="https://github.com/google/benchmark"
+options=(!strip)
+license=(AL2.0)
+makedepends=("git"
+           )
+depends=("git")
+source=(https://github.com/google/${_realname}/archive/${_branch}.tar.gz)
+sha256sums=('e58c9add4086f93e0f245174ea9fc6625f7234507e73cfade3cb3dfc68347321')
+
+prepare() {
+    mkdir -p build-${MINGW_CHOST}-${_releasetype}
+}
+
+build() {
+  local -a extra_config
+  cd build-${MINGW_CHOST}-${_releasetype}
+  ${MINGW_PREFIX}/bin/cmake ${srcdir}/${_realname}-${_branch} \
+    -G"MSYS Makefiles" \
+    -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
+    -DCMAKE_BUILD_TYPE=Release 
+  make
+
+}
+
+package() {
+
+  cd ${srcdir}/build-${MINGW_CHOST}-${_releasetype}
+  make DESTDIR="${pkgdir}" install
+}
