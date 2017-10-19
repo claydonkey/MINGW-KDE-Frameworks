@@ -3,7 +3,7 @@ _variant=-shared
 _realname='hidrd'
 pkgbase=mingw-w64-${_realname}
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}")
-pkgver=0.2w32.412.5ca1ef6
+pkgver=0.2w32.423.20166da
 pkgrel=1
 pkgdesc='Hidrd - A library and a tool for reading, writing and converting HID report descriptors in/between various formats (mingw-w64)'
 arch=('any')
@@ -12,10 +12,10 @@ license=('GPL')
 depends=()
 makedepends=("${MINGW_PACKAGE_PREFIX}-gcc")
 options=('!debug' 'strip')
-source=(${_realname}::git+"https://github.com/claydonkey/hidrd.git#tag=0.2w32")
+source=(${_realname}::git+"https://github.com/claydonkey/hidrd.git")
+#tag=0.2w32")
 validpgpkeys=('lkjfsdl;fosaiuf098as098e')
-sha256sums=('SKIP'
-            )
+sha256sums=('SKIP')
 
 pkgver() {
   cd "${srcdir}"/${_realname}

@@ -28,7 +28,7 @@ build() {
   cd build-${MINGW_CHOST}-${_releasetype}
   ${MINGW_PREFIX}/bin/cmake ${srcdir}/${_realname}-${_branch} \
     -G"MSYS Makefiles" \
-    -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
+    -DCMAKE_INSTALL_PREFIX=/${MINGW_PREFIX} \
     -DCMAKE_BUILD_TYPE=Release 
   make
 
